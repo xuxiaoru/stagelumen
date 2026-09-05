@@ -1,0 +1,27 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Env / secrets (don't commit)
+.env
+.env.local
+.env.*.local
+
+# Build artifacts (for future npm-based workflows)
+node_modules/
+dist/
+.cache/
+
+# Cloudflare Pages build output (auto-generated)
+/.wrangler/
+/.cloudflare/
+
+# Temporary
+*.tmp
+*.bak

@@ -1,0 +1,37 @@
+/*
+  Cloudflare Pages Headers
+  https://developers.cloudflare.com/pages/configuration/headers/
+*/
+
+/*
+  Security & Caching for all pages
+*/
+/
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+  Strict-Transport-Security: max-age=63072000; includeSubDomains; preload
+
+/*
+  Static assets - long-term caching (1 year, immutable)
+*/
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.css
+  Content-Type: text/css; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+/*.js
+  Content-Type: application/javascript; charset=utf-8
+  Cache-Control: public, max-age=31536000, immutable
+
+/*
+  HTML files - short-term caching (browser must revalidate)
+*/
+  Cache-Control: public, max-age=3600, must-revalidate
+
+/*
+  SEO & AI bot rules
+*/
+  X-Robots-Tag: index, follow

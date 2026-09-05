@@ -1,0 +1,17 @@
+# Cloudflare Pages Redirects
+# https://developers.cloudflare.com/pages/configuration/redirects/
+
+# Common alias redirects (improves UX & SEO)
+/quote       /rfq.html       301
+/contact     /rfq.html       301
+/get-quote   /rfq.html       301
+/catalog     /products.html  301
+/products    /products.html  301
+/about-us    /about.html     301
+/company     /about.html     301
+/privacy     /privacy.html   301
+/terms       /terms.html     301
+/cookies     /cookies.html   301
+
+# Trailing-slash redirects (optional)
+/index.html   /              301
