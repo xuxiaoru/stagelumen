@@ -18,6 +18,14 @@ logo_url: https://stagelumen.pages.dev/assets/images/logo.png
 search: true
 locale: en
 
+# Media folder — where uploaded images go (must be in repo)
+media_folder: "assets/images/uploads"
+public_folder: "/assets/images/uploads"
+media_library:
+  name: uploadcare
+  config:
+    publicKey: ""
+
 # ============================================
 # COLLECTIONS
 # ============================================
@@ -278,49 +286,55 @@ collections:
   # ---------------------------------------------------------
   - name: testimonials
     label: "Customer Testimonials"
-    file: content/testimonials.yml
-    format: yaml
-    fields:
-      - name: items
+    files:
+      - name: testimonials
         label: "Testimonials"
-        widget: list
-        summary: "{{fields.name}} — {{fields.company}}"
+        file: content/testimonials.yml
+        format: yaml
         fields:
-          - { name: name, label: "Customer Name", widget: string }
-          - { name: company, label: "Company / Role", widget: string }
-          - { name: country, label: "Country", widget: string, required: false }
-          - { name: avatar, label: "Avatar (initials)", widget: string, default: "?" }
-          - { name: rating, label: "Stars (1–5)", widget: number, min: 1, max: 5, default: 5 }
-          - { name: quote, label: "Quote", widget: text }
-          - { name: product, label: "Related Product ID", widget: string, required: false, hint: "e.g. sl-b230" }
+          - name: items
+            label: "Testimonials"
+            widget: list
+            summary: "{{fields.name}} — {{fields.company}}"
+            fields:
+              - { name: name, label: "Customer Name", widget: string }
+              - { name: company, label: "Company / Role", widget: string }
+              - { name: country, label: "Country", widget: string, required: false }
+              - { name: avatar, label: "Avatar (initials)", widget: string, default: "?" }
+              - { name: rating, label: "Stars (1–5)", widget: number, min: 1, max: 5, default: 5 }
+              - { name: quote, label: "Quote", widget: text }
+              - { name: product, label: "Related Product ID", widget: string, required: false, hint: "e.g. sl-b230" }
 
   # ---------------------------------------------------------
   # SITE SETTINGS
   # ---------------------------------------------------------
   - name: settings
     label: "Site Settings"
-    file: content/settings.yml
-    format: yaml
-    fields:
-      - { name: brand, label: "Brand Name", widget: string }
-      - { name: tagline, label: "Site Tagline", widget: string }
-      - { name: email, label: "Sales Email", widget: string }
-      - { name: phone, label: "Sales Phone", widget: string }
-      - { name: whatsapp, label: "WhatsApp Number", widget: string, required: false }
-      - { name: address, label: "Factory Address", widget: string }
-      - { name: founded, label: "Founded Year", widget: number, value_type: int }
-      - { name: teamSize, label: "Team Size", widget: string }
-      - { name: factoryArea, label: "Factory Area (m²)", widget: string }
-      - { name: countriesServed, label: "Countries Served", widget: string }
-      - { name: skus, label: "Total SKUs", widget: string }
-      - { name: primaryColor, label: "Primary Color (HEX)", widget: color, default: "#ff6b00" }
-      - { name: accentColor, label: "Accent Color (HEX)", widget: color, default: "#00d4ff" }
-      - name: social
-        label: "Social Links"
-        widget: object
+    files:
+      - name: settings
+        label: "Site Settings"
+        file: content/settings.yml
+        format: yaml
         fields:
-          - { name: youtube, label: "YouTube URL", widget: string, required: false }
-          - { name: instagram, label: "Instagram URL", widget: string, required: false }
-          - { name: facebook, label: "Facebook URL", widget: string, required: false }
-          - { name: linkedin, label: "LinkedIn URL", widget: string, required: false }
-          - { name: tiktok, label: "TikTok URL", widget: string, required: false }
+          - { name: brand, label: "Brand Name", widget: string }
+          - { name: tagline, label: "Site Tagline", widget: string }
+          - { name: email, label: "Sales Email", widget: string }
+          - { name: phone, label: "Sales Phone", widget: string }
+          - { name: whatsapp, label: "WhatsApp Number", widget: string, required: false }
+          - { name: address, label: "Factory Address", widget: string }
+          - { name: founded, label: "Founded Year", widget: number, value_type: int }
+          - { name: teamSize, label: "Team Size", widget: string }
+          - { name: factoryArea, label: "Factory Area (m²)", widget: string }
+          - { name: countriesServed, label: "Countries Served", widget: string }
+          - { name: skus, label: "Total SKUs", widget: string }
+          - { name: primaryColor, label: "Primary Color (HEX)", widget: color, default: "#ff6b00" }
+          - { name: accentColor, label: "Accent Color (HEX)", widget: color, default: "#00d4ff" }
+          - name: social
+            label: "Social Links"
+            widget: object
+            fields:
+              - { name: youtube, label: "YouTube URL", widget: string, required: false }
+              - { name: instagram, label: "Instagram URL", widget: string, required: false }
+              - { name: facebook, label: "Facebook URL", widget: string, required: false }
+              - { name: linkedin, label: "LinkedIn URL", widget: string, required: false }
+              - { name: tiktok, label: "TikTok URL", widget: string, required: false }
