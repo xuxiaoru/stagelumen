@@ -1,0 +1,27 @@
+# Customer Testimonials
+# Edit via CMS at /admin/ — content/testimonials.yml
+
+items:
+  - name: "Michael K."
+    company: "Buying Director, ProStage USA"
+    country: "United States"
+    avatar: "MK"
+    rating: 5
+    quote: "We've been sourcing from StageLumen for 3 years. QC is consistent, RFQs always come back within 24h, and our customers love the 3-year warranty pitch."
+    product: ""
+
+  - name: "Sofia D."
+    company: "Lighting Designer, Spain"
+    country: "Spain"
+    avatar: "SD"
+    rating: 5
+    quote: "The Beam 230 replaced our previous brand across all 12 venues. Color mixing is cleaner, fans are quieter, and rigging is faster. Worth every dollar."
+    product: "sl-b230"
+
+  - name: "Lin Z."
+    company: "Procurement Lead, Sourcing Partner"
+    country: "China"
+    avatar: "LZ"
+    rating: 5
+    quote: "我们 3 年长期合作。R&D 团队响应快，OEM 配合度高，是我们见过最专业的跨境供应商之一。"
+    product: ""

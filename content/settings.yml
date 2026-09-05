@@ -1,0 +1,23 @@
+# Site Settings
+# Edit via CMS at /admin/ — content/settings.yml
+
+brand: "StageLumen"
+tagline: "Pro Stage Lighting Manufacturer · OEM / ODM"
+email: "sales@stagelumen.com"
+phone: "+86 138 0000 0000"
+whatsapp: ""
+address: "Guangzhou, Guangdong, China"
+founded: 2010
+teamSize: "320+"
+factoryArea: "8,000 m²"
+countriesServed: "60+"
+skus: "500+"
+primaryColor: "#ff6b00"
+accentColor: "#00d4ff"
+
+social:
+  youtube: ""
+  instagram: ""
+  facebook: ""
+  linkedin: ""
+  tiktok: ""

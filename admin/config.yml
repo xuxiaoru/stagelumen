@@ -1,0 +1,193 @@
+# StageLumen CMS Configuration
+# Documentation: https://decapcms.org/docs/configuration-options/
+
+backend:
+  name: github
+  repo: xuxiaoru/stagelumen          # GitHub repo (update if forked)
+  branch: main
+  base_url: https://stagelumen.pages.dev/admin/  # CMS URL (or your custom domain)
+  auth_endpoint: api.auth-cms.github.com
+
+# Optional: enable Editorial Workflow (draft → review → publish)
+publish_mode: editorial_workflow
+
+# Local backend for testing on http://localhost:8000/admin/
+local_backend: true
+
+site_url: https://stagelumen.pages.dev
+display_url: https://stagelumen.pages.dev
+logo_url: https://stagelumen.pages.dev/assets/images/logo.png
+
+search: true
+locale: en
+
+# ============================================
+# COLLECTIONS
+# ============================================
+collections:
+
+  # ---------------------------------------------------------
+  # PRODUCTS — Main product catalog (data/products.json)
+  # ---------------------------------------------------------
+  - name: products
+    label: "Products"
+    label_singular: "Product"
+    folder: data/products
+    create: false                              # products.json is a single file
+    extension: json
+    format: json
+    summary: "{{name}} — {{tagline}} · ${{price}}"
+    sortable_fields: ['name', 'price', 'sold', 'reviews']
+    fields:
+      - { name: meta, label: "Catalog Metadata", widget: object, collapsed: true, fields: [
+        - { name: version, label: "Schema Version", widget: string, default: "1.0" }
+        - { name: lastUpdated, label: "Last Updated", widget: datetime }
+        - { name: currency, label: "Currency Code", widget: string, default: "USD" }
+        - { name: currencySymbol, label: "Currency Symbol", widget: string, default: "$" }
+        - { name: defaultMOQ, label: "Default MOQ", widget: number, default: 4 }
+        - { name: defaultLeadTime, label: "Default Lead Time", widget: string, default: "7-15 days" }
+      ]}
+      - { name: categories, label: "Category Definitions", widget: object, collapsed: true, fields: [
+        - { name: moving, label: "Moving Heads", widget: object, fields: [
+          - { name: label, widget: string }
+          - { name: color, widget: string }
+          - { name: icon, widget: string }
+        ]}
+        - { name: par, label: "LED PAR", widget: object, fields: [
+          - { name: label, widget: string }
+          - { name: color, widget: string }
+          - { name: icon, widget: string }
+        ]}
+        - { name: laser, label: "Laser", widget: object, fields: [
+          - { name: label, widget: string }
+          - { name: color, widget: string }
+          - { name: icon, widget: string }
+        ]}
+        - { name: outdoor, label: "Outdoor IP65", widget: object, fields: [
+          - { name: label, widget: string }
+          - { name: color, widget: string }
+          - { name: icon, widget: string }
+        ]}
+        - { name: controller, label: "DMX Controllers", widget: object, fields: [
+          - { name: label, widget: string }
+          - { name: color, widget: string }
+          - { name: icon, widget: string }
+        ]}
+        - { name: package, label: "Packages & Kits", widget: object, fields: [
+          - { name: label, widget: string }
+          - { name: color, widget: string }
+          - { name: icon, widget: string }
+        ]}
+      ]}
+      - name: products
+        label: "Product List"
+        widget: list
+        summary: "{{fields.name}} — {{fields.tagline}} · ${{fields.price}}"
+        fields:
+          - { name: id, label: "URL Slug (unique)", widget: string, hint: "lowercase, hyphens, e.g. sl-b230" }
+          - { name: name, label: "Full Name", widget: string }
+          - { name: model, label: "Model Number", widget: string }
+          - { name: category, label: "Category", widget: select, options: ["moving", "par", "laser", "outdoor", "controller", "package"] }
+          - { name: price, label: "Price (USD)", widget: number, value_type: int, min: 0 }
+          - { name: badge, label: "Badge", widget: select, required: false, options: ["hot", "new", "Kit"], default: "" }
+          - { name: rating, label: "Rating (0–5)", widget: number, value_type: float, min: 0, max: 5, step: 0.1, default: 5 }
+          - { name: reviews, label: "Review Count", widget: number, value_type: int, default: 0 }
+          - { name: sold, label: "Units Sold (display)", widget: string, hint: "e.g. 1,200+" }
+          - { name: icon, label: "Icon Glyph", widget: string, hint: "Single emoji or unicode char" }
+          - { name: iconColor, label: "Icon Color (HEX)", widget: color }
+          - { name: tagline, label: "Tagline (1 line)", widget: string }
+          - { name: shortDesc, label: "Short Description", widget: text }
+          - { name: longDesc, label: "Long Description", widget: text }
+          - { name: moq, label: "MOQ", widget: number, value_type: int, default: 4 }
+          - { name: leadTime, label: "Lead Time", widget: string }
+          - { name: oemFrom, label: "OEM From (units)", widget: number, value_type: int }
+          - { name: warranty, label: "Warranty", widget: string, default: "3 years" }
+          - { name: specs, label: "Quick Specs (12 rows)", widget: list, summary: "{{fields.label}}: {{fields.value}}", fields: [
+            - { name: label, widget: string }
+            - { name: value, widget: string }
+          ]}
+          - { name: features, label: "Key Features (bullets)", widget: list, field: { name: feature, widget: string } }
+          - { name: applications, label: "Applications", widget: list, summary: "{{fields.title}}", fields: [
+            - { name: title, widget: string }
+            - { name: desc, widget: string }
+          ]}
+          - { name: fullSpecs, label: "Full Specifications (extended)", widget: list, summary: "{{fields.label}}: {{fields.value}}", fields: [
+            - { name: label, widget: string }
+            - { name: value, widget: string }
+          ]}
+          - { name: downloads, label: "Downloadable Resources", widget: list, summary: "{{fields.label}}", fields: [
+            - { name: label, widget: string }
+            - { name: filename, widget: string }
+          ]}
+
+  # ---------------------------------------------------------
+  # BLOG POSTS — content/blog/*.md
+  # ---------------------------------------------------------
+  - name: blog
+    label: "Blog Posts"
+    folder: content/blog
+    create: true
+    extension: md
+    format: yaml-frontmatter
+    summary: "{{title}} — {{date | date('YYYY-MM-DD')}}"
+    sortable_fields: ['date', 'title']
+    fields:
+      - { name: title, label: "Title", widget: string }
+      - { name: slug, label: "URL Slug", widget: string, hint: "kebab-case" }
+      - { name: date, label: "Publish Date", widget: datetime }
+      - { name: author, label: "Author", widget: string, default: "StageLumen Team" }
+      - { name: category, label: "Category", widget: select, options: ["How-To", "Application", "Customer Story", "Product News", "Industry"] }
+      - { name: coverImage, label: "Cover Image", widget: image, allow_multiple: false }
+      - { name: excerpt, label: "Excerpt (160 chars)", widget: text }
+      - { name: tags, label: "Tags", widget: list, required: false, field: { name: tag, widget: string } }
+      - { name: body, label: "Body", widget: markdown }
+
+  # ---------------------------------------------------------
+  # TESTIMONIALS — content/testimonials.yml (single file)
+  # ---------------------------------------------------------
+  - name: testimonials
+    label: "Customer Testimonials"
+    file: content/testimonials.yml
+    format: yaml
+    fields:
+      - name: items
+        label: "Testimonials"
+        widget: list
+        summary: "{{fields.name}} — {{fields.company}}"
+        fields:
+          - { name: name, label: "Customer Name", widget: string }
+          - { name: company, label: "Company / Role", widget: string }
+          - { name: country, label: "Country", widget: string, required: false }
+          - { name: avatar, label: "Avatar (initials or image)", widget: string, default: "?" }
+          - { name: rating, label: "Stars (1–5)", widget: number, min: 1, max: 5, default: 5 }
+          - { name: quote, label: "Quote", widget: text }
+          - { name: product, label: "Related Product ID", widget: string, required: false, hint: "e.g. sl-b230" }
+
+  # ---------------------------------------------------------
+  # SITE SETTINGS — content/settings.yml (single file)
+  # ---------------------------------------------------------
+  - name: settings
+    label: "Site Settings"
+    file: content/settings.yml
+    format: yaml
+    fields:
+      - { name: brand, label: "Brand Name", widget: string }
+      - { name: tagline, label: "Site Tagline", widget: string }
+      - { name: email, label: "Sales Email", widget: string }
+      - { name: phone, label: "Sales Phone", widget: string }
+      - { name: whatsapp, label: "WhatsApp Number", widget: string, required: false }
+      - { name: address, label: "Factory Address", widget: string }
+      - { name: founded, label: "Founded Year", widget: number, value_type: int }
+      - { name: teamSize, label: "Team Size", widget: string }
+      - { name: factoryArea, label: "Factory Area (m²)", widget: string }
+      - { name: countriesServed, label: "Countries Served", widget: string }
+      - { name: skus, label: "Total SKUs", widget: string }
+      - { name: primaryColor, label: "Primary Color (HEX)", widget: color, default: "#ff6b00" }
+      - { name: accentColor, label: "Accent Color (HEX)", widget: color, default: "#00d4ff" }
+      - { name: social, label: "Social Links", widget: object, fields: [
+        - { name: youtube, label: "YouTube URL", widget: string, required: false }
+        - { name: instagram, label: "Instagram URL", widget: string, required: false }
+        - { name: facebook, label: "Facebook URL", widget: string, required: false }
+        - { name: linkedin, label: "LinkedIn URL", widget: string, required: false }
+        - { name: tiktok, label: "TikTok URL", widget: string, required: false }
+      ]}
