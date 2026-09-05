@@ -1,17 +1,18 @@
 # Cloudflare Pages Redirects
 # https://developers.cloudflare.com/pages/configuration/redirects/
+#
+# Cloudflare Pages enables "Pretty URLs" by default:
+#   /products.html  -> 308 -> /products
+#   /rfq.html       -> 308 -> /rfq
+# So alias targets must point to the pretty URL, not the .html file.
 
 # Common alias redirects (improves UX & SEO)
-/quote       /rfq.html       301
-/contact     /rfq.html       301
-/get-quote   /rfq.html       301
-/catalog     /products.html  301
-/products    /products.html  301
-/about-us    /about.html     301
-/company     /about.html     301
-/privacy     /privacy.html   301
-/terms       /terms.html     301
-/cookies     /cookies.html   301
-
-# Trailing-slash redirects (optional)
-/index.html   /              301
+/quote       /rfq       301
+/contact     /rfq       301
+/get-quote   /rfq       301
+/catalog     /products  301
+/about-us    /about     301
+/company     /about     301
+/privacy     /privacy   301
+/terms       /terms     301
+/cookies     /cookies   301
