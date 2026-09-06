@@ -59,7 +59,9 @@ export async function onRequest(context) {
   // Verify state against cookie.
   const cookies = parseCookies(request.headers.get('Cookie'));
   const raw = cookies.oauth_state || '';
-  const [storedState, origin] = raw.split(':');
+  const sepIndex = raw.indexOf('|');
+  const storedState = sepIndex > -1 ? raw.slice(0, sepIndex) : '';
+  const origin = sepIndex > -1 ? raw.slice(sepIndex + 1) : '';
 
   if (!storedState || storedState !== state) {
     return new Response('Invalid or expired OAuth state. Please try logging in again.', { status: 403 });
