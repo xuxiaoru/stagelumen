@@ -25,3 +25,6 @@ dist/
 # Temporary
 *.tmp
 *.bak
+
+# Wrangler local state
+.wrangler/

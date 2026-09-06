@@ -5,11 +5,13 @@ backend:
   name: github
   repo: xuxiaoru/stagelumen
   branch: main
-  base_url: https://stagelumen.pages.dev/admin/
-  auth_endpoint: api.auth-cms.github.com
+  # Cloudflare Pages OAuth proxy (see functions/admin/api/)
+  base_url: https://stagelumen.pages.dev
+  auth_endpoint: /admin/api/auth
 
 publish_mode: editorial_workflow
-local_backend: true
+# Enable local_backend only when running `npx decap-server` locally.
+# local_backend: true
 
 site_url: https://stagelumen.pages.dev
 display_url: https://stagelumen.pages.dev
@@ -37,16 +39,12 @@ collections:
   - name: products
     label: "Products"
     label_singular: "Product"
-    folder: data/products
-    create: false
-    extension: json
-    format: json
-    summary: "{{name}} — {{tagline}} · ${{price}}"
-    sortable_fields:
-      - name
-      - price
-      - sold
-      - reviews
+    # Single JSON file shared by the whole site (see assets/js/products.js)
+    files:
+      - name: catalog
+        label: "Product Catalog"
+        file: data/products.json
+        format: json
     fields:
       - name: meta
         label: "Catalog Metadata"
