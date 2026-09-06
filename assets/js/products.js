@@ -34,11 +34,14 @@ function renderBadge(badge) {
 // 单个产品卡片 HTML
 function renderProductCard(p, cats) {
   const catLabel = cats[p.category] ? cats[p.category].label : p.category;
+  const thumbInner = p.image
+    ? `<img src="${p.image}" alt="${p.name}" loading="lazy" class="product-thumb-img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" /><span class="product-thumb-icon" style="display:none;color:${p.iconColor || '#ff6b00'}">${p.icon || '◉'}</span>`
+    : `<span class="product-thumb-icon" style="color:${p.iconColor || '#ff6b00'}">${p.icon || '◉'}</span>`;
   return `
     <a href="product-detail.html?id=${p.id}" class="product-card" data-cat="${p.category}" data-id="${p.id}">
       <div class="product-thumb">
         ${renderBadge(p.badge)}
-        <span class="product-thumb-icon" style="color:${p.iconColor || '#ff6b00'}">${p.icon || '◉'}</span>
+        ${thumbInner}
       </div>
       <div class="product-info">
         <h4>${p.name}</h4>
