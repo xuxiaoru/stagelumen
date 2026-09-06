@@ -13,18 +13,65 @@
 <header class="header">
   <div class="container header-inner">
     <a href="index.html" class="logo"><span class="logo-mark">S</span> StageLumen</a>
-    <nav class="nav">
+    <nav class="nav" id="mainNav">
       <a href="index.html">Home</a>
-      <a href="products.html" class="active">Products</a>
-      <a href="index.html#solutions">Solutions</a>
-      <a href="about.html">About</a>
-      <a href="#support">Support</a>
-      <a href="#contact">Contact</a>
+      <div class="nav-dropdown">
+        <a href="products.html" class="active">Products ▾</a>
+        <div class="dropdown-menu">
+          <a href="products.html?cat=moving">Moving Heads</a>
+          <a href="products.html?cat=par">LED PAR</a>
+          <a href="products.html?cat=outdoor">Outdoor IP65</a>
+          <a href="products.html?cat=laser">Laser</a>
+          <a href="products.html?cat=controller">Controllers</a>
+          <a href="products.html?cat=package">Packages</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="solutions.html">Solutions ▾</a>
+        <div class="dropdown-menu">
+          <a href="solutions.html#concert">Concert & Festival</a>
+          <a href="solutions.html#rental">Rental & Touring</a>
+          <a href="solutions.html#theatre">Theatre & Performance</a>
+          <a href="solutions.html#club">Club & DJ</a>
+          <a href="solutions.html#church">Church & Worship</a>
+          <a href="solutions.html#event">Event & Wedding</a>
+          <a href="solutions.html#outdoor">Outdoor</a>
+        </div>
+      </div>
+      <a href="oem-odm.html">OEM / ODM</a>
+      <a href="projects.html">Projects</a>
+      <div class="nav-dropdown">
+        <a href="resources.html">Resources ▾</a>
+        <div class="dropdown-menu">
+          <a href="support.html">Downloads</a>
+          <a href="support.html#dmx">DMX Charts</a>
+          <a href="news.html">Blog</a>
+          <a href="support.html#faq">FAQ</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="about.html">About ▾</a>
+        <div class="dropdown-menu">
+          <a href="about.html">Company</a>
+          <a href="about.html#factory">Factory</a>
+          <a href="about.html#quality">Quality</a>
+          <a href="about.html#certifications">Certifications</a>
+        </div>
+      </div>
+      <div class="nav-dropdown">
+        <a href="support.html">Support ▾</a>
+        <div class="dropdown-menu">
+          <a href="support.html">Support Center</a>
+          <a href="support.html#downloads">Downloads</a>
+          <a href="support.html#warranty">Warranty</a>
+          <a href="contact.html">Contact Support</a>
+        </div>
+      </div>
     </nav>
     <div class="header-right">
-      <button class="lang-switch">EN ▾</button>
+      <button class="lang-switch" aria-label="Language">EN ▾</button>
       <a href="rfq.html" class="btn btn-primary">Get a Quote</a>
-      <button class="menu-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+      <button class="menu-toggle" aria-label="Menu" id="menuToggle"><span></span><span></span><span></span></button>
     </div>
   </div>
 </header>
@@ -33,7 +80,7 @@
   <div class="container">
     <div class="breadcrumb" id="breadcrumb">
       <a href="index.html">Home</a><span>›</span>
-      <a href="products.html">Products</a><span>›</span>
+      <a href="products.html" class="active">Products</a><span>›</span>
       <span id="breadcrumbName">Loading…</span>
     </div>
   </div>
@@ -150,47 +197,64 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="logo"><span class="logo-mark">S</span> StageLumen</a>
-        <p>Pro stage lighting manufacturer since 2010. OEM / ODM partners in 60+ countries.</p>
+        <p>Professional Stage Lighting for Rental, Events & Venues. Moving Heads · Pixel Effects · Theatre Lighting · Outdoor Fixtures · OEM/ODM.</p>
         <div class="newsletter">
           <input type="email" placeholder="Get product updates…" />
           <button type="button">Subscribe</button>
         </div>
-      </div>
-      <div class="footer-col" id="support">
-        <h4>Support</h4>
-        <ul>
-          <li><a href="#">Downloads</a></li>
-          <li><a href="#">Warranty</a></li>
-          <li><a href="#">DMX Files</a></li>
-          <li><a href="rfq.html">Contact</a></li>
-        </ul>
+        <div class="social-links">
+          <a href="#" aria-label="YouTube">▶</a>
+          <a href="#" aria-label="Instagram">◉</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
       </div>
       <div class="footer-col">
         <h4>Products</h4>
         <ul>
-          <li><a href="products.html">Moving Heads</a></li>
-          <li><a href="products.html">LED PAR</a></li>
-          <li><a href="products.html">Laser</a></li>
+          <li><a href="products.html?cat=moving">Moving Heads</a></li>
+          <li><a href="products.html?cat=par">LED PAR</a></li>
+          <li><a href="products.html?cat=outdoor">Outdoor IP65</a></li>
+          <li><a href="products.html?cat=laser">Laser</a></li>
+          <li><a href="products.html?cat=controller">Controllers</a></li>
+          <li><a href="products.html?cat=package">Packages</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Solutions</h4>
         <ul>
-          <li><a href="index.html#solutions">Bars</a></li>
-          <li><a href="index.html#solutions">Churches</a></li>
+          <li><a href="solutions.html#concert">Concert & Festival</a></li>
+          <li><a href="solutions.html#rental">Rental & Touring</a></li>
+          <li><a href="solutions.html#theatre">Theatre & Performance</a></li>
+          <li><a href="solutions.html#club">Club & DJ</a></li>
+          <li><a href="solutions.html#church">Church & Worship</a></li>
+          <li><a href="solutions.html#event">Event & Wedding</a></li>
         </ul>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
-          <li><a href="about.html">About</a></li>
-          <li><a href="about.html">Factory</a></li>
+          <li><a href="about.html">About StageLumen</a></li>
+          <li><a href="about.html#factory">Factory & Quality</a></li>
+          <li><a href="oem-odm.html">OEM / ODM</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col" id="support">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="support.html">Downloads</a></li>
+          <li><a href="support.html#dmx">DMX Files</a></li>
+          <li><a href="support.html#fixture-library">Fixture Library</a></li>
+          <li><a href="support.html#warranty">Warranty</a></li>
+          <li><a href="support.html#faq">Technical Support</a></li>
         </ul>
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© 2026 StageLumen Lighting Co., Ltd.</div>
-      <div><a href="#">Privacy</a> · <a href="#">Terms</a></div>
+      <div>© 2026 StageLumen Lighting Co., Ltd. All rights reserved.</div>
+      <div><a href="privacy.html">Privacy</a> · <a href="terms.html">Terms</a> · <a href="cookies.html">Cookie Policy</a></div>
     </div>
   </div>
 </footer>
@@ -208,7 +272,7 @@
     const p = await StageLumenProducts.get(productId);
     if (!p) {
       document.getElementById('productName').textContent = 'Product not found';
-      document.getElementById('descPanel').innerHTML = '<p>Sorry, this product is no longer in catalog. <a href="products.html">Browse all products →</a></p>';
+      document.getElementById('descPanel').innerHTML = '<p>Sorry, this product is no longer in catalog. <a href="products.html" class="active">Browse all products →</a></p>';
       return;
     }
 
