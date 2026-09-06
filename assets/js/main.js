@@ -199,7 +199,15 @@
   const path = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav a').forEach((a) => {
     const href = (a.getAttribute('href') || '').split('#')[0].split('?')[0];
-    if (href === path) a.classList.add('active');
+    if (href === path) {
+      a.classList.add('active');
+      // If the active link is inside a dropdown, also mark the trigger
+      const dropdown = a.closest('.nav-dropdown');
+      if (dropdown) {
+        const trigger = dropdown.querySelector(':scope > a');
+        if (trigger) trigger.classList.add('active');
+      }
+    }
   });
 
   // Case study filter (projects page)
