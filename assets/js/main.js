@@ -7,7 +7,39 @@
   const nav = document.querySelector('.nav');
   if (toggle && nav) {
     toggle.addEventListener('click', () => nav.classList.toggle('open'));
+    // Close mobile nav when a plain link is clicked
+    nav.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', (e) => {
+        const parent = link.closest('.nav-dropdown');
+        if (!parent) {
+          nav.classList.remove('open');
+          return;
+        }
+        // If the link is a dropdown trigger, let the toggle handler manage it
+        if (link.parentElement === parent && window.innerWidth <= 960) {
+          e.preventDefault();
+          document.querySelectorAll('.nav-dropdown').forEach((other) => {
+            if (other !== parent) other.classList.remove('open');
+          });
+          parent.classList.toggle('open');
+        }
+      });
+    });
   }
+  // Close mobile nav on resize to desktop
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 960 && nav) {
+      nav.classList.remove('open');
+      document.querySelectorAll('.nav-dropdown').forEach((d) => d.classList.remove('open'));
+    }
+  });
+  // Close mobile nav on Escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav) {
+      nav.classList.remove('open');
+      document.querySelectorAll('.nav-dropdown').forEach((d) => d.classList.remove('open'));
+    }
+  });
 
   // Tabs
   document.querySelectorAll('[data-tabset]').forEach((set) => {
@@ -168,20 +200,6 @@
   document.querySelectorAll('.nav a').forEach((a) => {
     const href = (a.getAttribute('href') || '').split('#')[0].split('?')[0];
     if (href === path) a.classList.add('active');
-  });
-
-  // Mobile dropdown toggles
-  document.querySelectorAll('.nav-dropdown > a').forEach((trigger) => {
-    trigger.addEventListener('click', (e) => {
-      if (window.innerWidth > 960) return;
-      const parent = trigger.closest('.nav-dropdown');
-      if (!parent) return;
-      e.preventDefault();
-      parent.classList.toggle('open');
-      document.querySelectorAll('.nav-dropdown').forEach((other) => {
-        if (other !== parent) other.classList.remove('open');
-      });
-    });
   });
 
   // Case study filter (projects page)
