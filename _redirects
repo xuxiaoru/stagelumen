@@ -7,12 +7,18 @@
 # So alias targets must point to the pretty URL, not the .html file.
 
 # Common alias redirects (improves UX & SEO)
-/quote       /rfq       301
-/contact     /rfq       301
-/get-quote   /rfq       301
-/catalog     /products  301
-/about-us    /about     301
-/company     /about     301
-/privacy     /privacy   301
-/terms       /terms     301
-/cookies     /cookies   301
+/quote       /rfq        301
+/contact     /contact    301
+/get-quote   /rfq        301
+/catalog     /products   301
+/about-us    /about      301
+/company     /about      301
+/oem         /oem-odm    301
+/odm         /oem-odm    301
+/solutions   /solutions  301
+/projects    /projects   301
+/resources   /support    301
+/blog        /news       301
+/privacy     /privacy    301
+/terms       /terms      301
+/cookies     /cookies    301
