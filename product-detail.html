@@ -44,14 +44,11 @@
     <div class="detail-grid" id="detailGrid">
       <!-- Gallery -->
       <div data-gallery>
-        <div class="gallery-main" data-main data-icon="◉" data-color="#ff6b00">
-          <span class="icon" id="galleryMainIcon" style="color:#ff6b00; font-size:9rem;">◉</span>
+        <div class="gallery-main" data-main data-icon="◉" data-color="#ff6b00" id="galleryMain">
+          <img src="" alt="" id="galleryMainImg" class="gallery-main-img" />
         </div>
         <div class="gallery-thumbs" id="galleryThumbs">
-          <div class="gallery-thumb active" data-thumb="1">◉</div>
-          <div class="gallery-thumb" data-thumb="2">◐</div>
-          <div class="gallery-thumb" data-thumb="3">✧</div>
-          <div class="gallery-thumb" data-thumb="4">▶</div>
+          <!-- thumbs injected by JS -->
         </div>
       </div>
 
@@ -223,11 +220,30 @@
     document.getElementById('breadcrumbName').textContent = p.name;
     document.getElementById('productName').textContent = p.name;
 
-    // 3. 图标
-    document.getElementById('galleryMainIcon').textContent = p.icon;
-    document.getElementById('galleryMainIcon').style.color = p.iconColor;
-    document.querySelector('.gallery-main').dataset.icon = p.icon;
-    document.querySelector('.gallery-main').dataset.color = p.iconColor;
+    // 3. 图片画廊
+    const images = (p.images && p.images.length) ? p.images : [p.image || ''];
+    const mainImg = document.getElementById('galleryMainImg');
+    if (images[0]) {
+      mainImg.src = images[0];
+      mainImg.alt = p.name;
+    } else {
+      mainImg.style.display = 'none';
+      document.getElementById('galleryMain').innerHTML = `<span class="icon" style="color:${p.iconColor || '#ff6b00'};font-size:9rem;">${p.icon || '◉'}</span>`;
+    }
+
+    const thumbsEl = document.getElementById('galleryThumbs');
+    thumbsEl.innerHTML = images.map((img, i) => `
+      <div class="gallery-thumb ${i === 0 ? 'active' : ''}" data-thumb="${i}" data-src="${img}">
+        <img src="${img}" alt="${p.name} ${i + 1}" />
+      </div>
+    `).join('');
+    thumbsEl.querySelectorAll('.gallery-thumb').forEach(t => {
+      t.addEventListener('click', () => {
+        thumbsEl.querySelectorAll('.gallery-thumb').forEach(x => x.classList.remove('active'));
+        t.classList.add('active');
+        mainImg.src = t.dataset.src;
+      });
+    });
 
     // 4. 评分
     const stars = StageLumenProducts.renderStars(p.rating);
