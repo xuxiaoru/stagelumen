@@ -45,203 +45,203 @@ collections:
         label: "Product Catalog"
         file: data/products.json
         format: json
-    fields:
-      - name: meta
-        label: "Catalog Metadata"
-        widget: object
-        collapsed: true
         fields:
-          - name: version
-            label: "Schema Version"
-            widget: string
-            default: "1.0"
-          - name: lastUpdated
-            label: "Last Updated"
-            widget: datetime
-          - name: currency
-            label: "Currency Code"
-            widget: string
-            default: "USD"
-          - name: currencySymbol
-            label: "Currency Symbol"
-            widget: string
-            default: "$"
-          - name: defaultMOQ
-            label: "Default MOQ"
-            widget: number
-            default: 4
-          - name: defaultLeadTime
-            label: "Default Lead Time"
-            widget: string
-            default: "7-15 days"
+          - name: meta
+            label: "Catalog Metadata"
+            widget: object
+            collapsed: true
+            fields:
+              - name: version
+                label: "Schema Version"
+                widget: string
+                default: "1.0"
+              - name: lastUpdated
+                label: "Last Updated"
+                widget: datetime
+              - name: currency
+                label: "Currency Code"
+                widget: string
+                default: "USD"
+              - name: currencySymbol
+                label: "Currency Symbol"
+                widget: string
+                default: "$"
+              - name: defaultMOQ
+                label: "Default MOQ"
+                widget: number
+                default: 4
+              - name: defaultLeadTime
+                label: "Default Lead Time"
+                widget: string
+                default: "7-15 days"
 
-      - name: categories
-        label: "Category Definitions"
-        widget: object
-        collapsed: true
-        fields:
-          - name: moving
-            label: "Moving Heads"
+          - name: categories
+            label: "Category Definitions"
             widget: object
+            collapsed: true
             fields:
-              - { name: label, widget: string }
-              - { name: color, widget: string }
-              - { name: icon, widget: string }
-          - name: par
-            label: "LED PAR"
-            widget: object
-            fields:
-              - { name: label, widget: string }
-              - { name: color, widget: string }
-              - { name: icon, widget: string }
-          - name: laser
-            label: "Laser"
-            widget: object
-            fields:
-              - { name: label, widget: string }
-              - { name: color, widget: string }
-              - { name: icon, widget: string }
-          - name: outdoor
-            label: "Outdoor IP65"
-            widget: object
-            fields:
-              - { name: label, widget: string }
-              - { name: color, widget: string }
-              - { name: icon, widget: string }
-          - name: controller
-            label: "DMX Controllers"
-            widget: object
-            fields:
-              - { name: label, widget: string }
-              - { name: color, widget: string }
-              - { name: icon, widget: string }
-          - name: package
-            label: "Packages & Kits"
-            widget: object
-            fields:
-              - { name: label, widget: string }
-              - { name: color, widget: string }
-              - { name: icon, widget: string }
+              - name: moving
+                label: "Moving Heads"
+                widget: object
+                fields:
+                  - { name: label, widget: string }
+                  - { name: color, widget: string }
+                  - { name: icon, widget: string }
+              - name: par
+                label: "LED PAR"
+                widget: object
+                fields:
+                  - { name: label, widget: string }
+                  - { name: color, widget: string }
+                  - { name: icon, widget: string }
+              - name: laser
+                label: "Laser"
+                widget: object
+                fields:
+                  - { name: label, widget: string }
+                  - { name: color, widget: string }
+                  - { name: icon, widget: string }
+              - name: outdoor
+                label: "Outdoor IP65"
+                widget: object
+                fields:
+                  - { name: label, widget: string }
+                  - { name: color, widget: string }
+                  - { name: icon, widget: string }
+              - name: controller
+                label: "DMX Controllers"
+                widget: object
+                fields:
+                  - { name: label, widget: string }
+                  - { name: color, widget: string }
+                  - { name: icon, widget: string }
+              - name: package
+                label: "Packages & Kits"
+                widget: object
+                fields:
+                  - { name: label, widget: string }
+                  - { name: color, widget: string }
+                  - { name: icon, widget: string }
 
-      - name: products
-        label: "Product List"
-        widget: list
-        summary: "{{fields.name}} — {{fields.tagline}} · ${{fields.price}}"
-        fields:
-          - name: id
-            label: "URL Slug"
-            widget: string
-            hint: "lowercase, hyphens, e.g. sl-b230"
-          - name: name
-            label: "Full Name"
-            widget: string
-          - name: model
-            label: "Model Number"
-            widget: string
-          - name: category
-            label: "Category"
-            widget: select
-            options:
-              - "moving"
-              - "par"
-              - "laser"
-              - "outdoor"
-              - "controller"
-              - "package"
-          - name: price
-            label: "Price (USD)"
-            widget: number
-            value_type: int
-            min: 0
-          - name: badge
-            label: "Badge"
-            widget: select
-            required: false
-            options:
-              - "hot"
-              - "new"
-              - "Kit"
-          - name: rating
-            label: "Rating (0–5)"
-            widget: number
-            value_type: float
-            min: 0
-            max: 5
-            step: 0.1
-            default: 5
-          - name: reviews
-            label: "Review Count"
-            widget: number
-            value_type: int
-            default: 0
-          - name: sold
-            label: "Units Sold (display)"
-            widget: string
-            hint: "e.g. 1,200+"
-          - name: icon
-            label: "Icon Glyph"
-            widget: string
-            hint: "Single emoji or unicode char"
-          - name: iconColor
-            label: "Icon Color (HEX)"
-            widget: color
-          - name: tagline
-            label: "Tagline (1 line)"
-            widget: string
-          - name: shortDesc
-            label: "Short Description"
-            widget: text
-          - name: longDesc
-            label: "Long Description"
-            widget: text
-          - name: moq
-            label: "MOQ"
-            widget: number
-            value_type: int
-            default: 4
-          - name: leadTime
-            label: "Lead Time"
-            widget: string
-          - name: oemFrom
-            label: "OEM From (units)"
-            widget: number
-            value_type: int
-          - name: warranty
-            label: "Warranty"
-            widget: string
-            default: "3 years"
-          - name: specs
-            label: "Quick Specs (12 rows)"
+          - name: products
+            label: "Product List"
             widget: list
-            summary: "{{fields.label}}: {{fields.value}}"
+            summary: "{{fields.name}} — {{fields.tagline}} · ${{fields.price}}"
             fields:
-              - { name: label, widget: string }
-              - { name: value, widget: string }
-          - name: features
-            label: "Key Features (bullets)"
-            widget: list
-            field: { name: feature, widget: string }
-          - name: applications
-            label: "Applications"
-            widget: list
-            summary: "{{fields.title}}"
-            fields:
-              - { name: title, widget: string }
-              - { name: desc, widget: string }
-          - name: fullSpecs
-            label: "Full Specifications (extended)"
-            widget: list
-            summary: "{{fields.label}}: {{fields.value}}"
-            fields:
-              - { name: label, widget: string }
-              - { name: value, widget: string }
-          - name: downloads
-            label: "Downloadable Resources"
-            widget: list
-            summary: "{{fields.label}}"
-            fields:
-              - { name: label, widget: string }
-              - { name: filename, widget: string }
+              - name: id
+                label: "URL Slug"
+                widget: string
+                hint: "lowercase, hyphens, e.g. sl-b230"
+              - name: name
+                label: "Full Name"
+                widget: string
+              - name: model
+                label: "Model Number"
+                widget: string
+              - name: category
+                label: "Category"
+                widget: select
+                options:
+                  - "moving"
+                  - "par"
+                  - "laser"
+                  - "outdoor"
+                  - "controller"
+                  - "package"
+              - name: price
+                label: "Price (USD)"
+                widget: number
+                value_type: int
+                min: 0
+              - name: badge
+                label: "Badge"
+                widget: select
+                required: false
+                options:
+                  - "hot"
+                  - "new"
+                  - "Kit"
+              - name: rating
+                label: "Rating (0–5)"
+                widget: number
+                value_type: float
+                min: 0
+                max: 5
+                step: 0.1
+                default: 5
+              - name: reviews
+                label: "Review Count"
+                widget: number
+                value_type: int
+                default: 0
+              - name: sold
+                label: "Units Sold (display)"
+                widget: string
+                hint: "e.g. 1,200+"
+              - name: icon
+                label: "Icon Glyph"
+                widget: string
+                hint: "Single emoji or unicode char"
+              - name: iconColor
+                label: "Icon Color (HEX)"
+                widget: color
+              - name: tagline
+                label: "Tagline (1 line)"
+                widget: string
+              - name: shortDesc
+                label: "Short Description"
+                widget: text
+              - name: longDesc
+                label: "Long Description"
+                widget: text
+              - name: moq
+                label: "MOQ"
+                widget: number
+                value_type: int
+                default: 4
+              - name: leadTime
+                label: "Lead Time"
+                widget: string
+              - name: oemFrom
+                label: "OEM From (units)"
+                widget: number
+                value_type: int
+              - name: warranty
+                label: "Warranty"
+                widget: string
+                default: "3 years"
+              - name: specs
+                label: "Quick Specs (12 rows)"
+                widget: list
+                summary: "{{fields.label}}: {{fields.value}}"
+                fields:
+                  - { name: label, widget: string }
+                  - { name: value, widget: string }
+              - name: features
+                label: "Key Features (bullets)"
+                widget: list
+                field: { name: feature, widget: string }
+              - name: applications
+                label: "Applications"
+                widget: list
+                summary: "{{fields.title}}"
+                fields:
+                  - { name: title, widget: string }
+                  - { name: desc, widget: string }
+              - name: fullSpecs
+                label: "Full Specifications (extended)"
+                widget: list
+                summary: "{{fields.label}}: {{fields.value}}"
+                fields:
+                  - { name: label, widget: string }
+                  - { name: value, widget: string }
+              - name: downloads
+                label: "Downloadable Resources"
+                widget: list
+                summary: "{{fields.label}}"
+                fields:
+                  - { name: label, widget: string }
+                  - { name: filename, widget: string }
 
   # ---------------------------------------------------------
   # BLOG POSTS
