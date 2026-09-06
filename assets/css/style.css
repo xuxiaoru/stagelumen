@@ -465,6 +465,17 @@ section { padding: 100px 0; position: relative; }
   z-index: 1;
   filter: drop-shadow(0 0 20px currentColor);
 }
+.product-thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.4s ease;
+}
+.product-card:hover .product-thumb-img {
+  transform: scale(1.05);
+}
 .product-badge {
   position: absolute;
   top: 12px;
@@ -836,6 +847,24 @@ footer {
   background: rgba(255, 107, 0, 0.08);
 }
 .gallery-thumb:hover { border-color: var(--primary); }
+
+.gallery-main-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 1;
+}
+.gallery-thumb {
+  overflow: hidden;
+  padding: 4px;
+}
+.gallery-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
 
 .detail-info h1 {
   font-size: 1.85rem;
