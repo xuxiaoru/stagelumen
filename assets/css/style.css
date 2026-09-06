@@ -97,7 +97,22 @@ ul { list-style: none; }
 .nav-dropdown:hover > a::after,
 .nav-dropdown > a.active::after { transform: scaleX(1); }
 .nav-dropdown > a { display: flex; align-items: center; gap: 4px; }
-.header-right { display: flex; align-items: center; gap: 12px; }
+.header-right { display: flex; align-items: center; gap: 10px; }
+.header-icon {
+  width: 36px;
+  height: 36px;
+  display: inline-grid;
+  place-items: center;
+  border-radius: var(--radius);
+  font-size: 1.1rem;
+  color: var(--text-2);
+  background: transparent;
+  transition: var(--transition);
+}
+.header-icon:hover {
+  background: rgba(255,255,255,0.08);
+  color: var(--text);
+}
 .lang-switch {
   display: inline-flex;
   align-items: center;
