@@ -66,6 +66,16 @@
     });
   });
 
+  // Product sort
+  const sortSelect = document.getElementById('productSort');
+  if (sortSelect && typeof StageLumenProducts !== 'undefined') {
+    sortSelect.addEventListener('change', () => {
+      const activeBtn = document.querySelector('#productToolbar [data-filter].active');
+      const filter = activeBtn ? activeBtn.dataset.filter : 'all';
+      StageLumenProducts.renderGrid('productGrid', filter, sortSelect.value);
+    });
+  }
+
   // Qty stepper
   document.querySelectorAll('.qty-stepper').forEach((stepper) => {
     const input = stepper.querySelector('input');
@@ -156,7 +166,52 @@
   // Active nav link by current page
   const path = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav a').forEach((a) => {
-    const href = (a.getAttribute('href') || '').split('#')[0];
+    const href = (a.getAttribute('href') || '').split('#')[0].split('?')[0];
     if (href === path) a.classList.add('active');
   });
+
+  // Mobile dropdown toggles
+  document.querySelectorAll('.nav-dropdown > a').forEach((trigger) => {
+    trigger.addEventListener('click', (e) => {
+      if (window.innerWidth > 960) return;
+      const parent = trigger.closest('.nav-dropdown');
+      if (!parent) return;
+      e.preventDefault();
+      parent.classList.toggle('open');
+      document.querySelectorAll('.nav-dropdown').forEach((other) => {
+        if (other !== parent) other.classList.remove('open');
+      });
+    });
+  });
+
+  // Case study filter (projects page)
+  const caseFilterGroup = document.querySelector('.filter-bar');
+  const caseGrid = document.getElementById('caseGrid');
+  if (caseFilterGroup && caseGrid) {
+    caseFilterGroup.querySelectorAll('[data-filter]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        caseFilterGroup.querySelectorAll('[data-filter]').forEach((b) => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        caseGrid.querySelectorAll('[data-type]').forEach((card) => {
+          card.style.display = (filter === 'all' || card.dataset.type === filter) ? '' : 'none';
+        });
+      });
+    });
+  }
+
+  // URL-based product filter
+  const urlParams = new URLSearchParams(window.location.search);
+  const catFilter = urlParams.get('cat');
+  if (catFilter && typeof StageLumenProducts !== 'undefined') {
+    const toolbar = document.getElementById('productToolbar');
+    if (toolbar) {
+      toolbar.querySelectorAll('[data-filter]').forEach((btn) => {
+        btn.classList.toggle('active', btn.dataset.filter === catFilter);
+      });
+      StageLumenProducts.renderGrid('productGrid', catFilter).then(() => {
+        document.querySelectorAll('.product-card').forEach((el) => el.classList.add('in-view'));
+      });
+    }
+  }
 })();
