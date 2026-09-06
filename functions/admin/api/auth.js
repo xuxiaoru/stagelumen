@@ -28,7 +28,8 @@ export async function onRequest(context) {
   const state = randomState();
 
   // Store state + origin in an HttpOnly cookie so callback can verify.
-  const cookieValue = `${state}:${origin}`;
+  // Use '|' as separator because origin contains ':' (https://...).
+  const cookieValue = `${state}|${origin}`;
   const cookie = `oauth_state=${encodeURIComponent(cookieValue)}; Path=/admin/api/callback; HttpOnly; Secure; SameSite=Lax; Max-Age=600`;
 
   const redirectUri = `${url.origin}/admin/api/callback`;
