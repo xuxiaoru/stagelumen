@@ -83,7 +83,9 @@ export async function onRequest(context) {
   const clearCookie = 'oauth_state=; Path=/admin/api/callback; HttpOnly; Secure; SameSite=Lax; Max-Age=0';
 
   // Send token back to Decap CMS opener window.
-  const targetOrigin = origin || url.origin;
+  // Decap CMS uses a handshake: the popup first says "authorizing:github",
+  // the parent replies with the same, then the popup sends the token as the
+  // string "authorization:github:success:{\"token\":\"...\",\"provider\":\"github\"}".
   const html = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -95,13 +97,32 @@ export async function onRequest(context) {
   <script>
     (function () {
       var token = ${JSON.stringify(tokenData.access_token)};
-      var origin = ${JSON.stringify(targetOrigin)};
-      if (window.opener) {
-        window.opener.postMessage({ token: token, provider: 'github' }, origin);
+      var payload = JSON.stringify({ token: token, provider: 'github' });
+      var successMsg = 'authorization:github:success:' + payload;
+
+      function sendToken(targetOrigin) {
+        if (!window.opener) {
+          document.body.innerHTML = '<h1>Login successful</h1><p>You can close this window and return to the CMS.</p>';
+          return;
+        }
+        window.opener.postMessage(successMsg, targetOrigin);
         try { window.close(); } catch (e) {}
-      } else {
-        document.body.innerHTML = '<h1>Login successful</h1><p>You can close this window and return to the CMS.</p>';
       }
+
+      if (!window.opener) {
+        document.body.innerHTML = '<h1>Login successful</h1><p>You can close this window and return to the CMS.</p>';
+        return;
+      }
+
+      // Decap CMS handshake: wait for parent to echo "authorizing:github".
+      window.addEventListener('message', function (e) {
+        if (e.data === 'authorizing:github') {
+          sendToken(e.origin);
+        }
+      }, false);
+
+      // Notify parent that we're ready to authorize.
+      window.opener.postMessage('authorizing:github', '*');
     })();
   </script>
 </body>
