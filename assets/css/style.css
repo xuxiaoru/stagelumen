@@ -72,20 +72,27 @@ ul { list-style: none; }
   font-size: 18px;
   color: #fff;
 }
-/* .nav 与子项撑满 header 的 72px 高度 —— 这是下拉不中断的根本保证：
-   .nav-dropdown 的 hover 区域从 header 顶部一直延伸到 header 底部，
-   鼠标无论从哪个方向往下移都不会离开 .nav-dropdown。 */
+/* .nav 与 .nav-dropdown 撑满 header 的 72px 高度 —— 这是下拉不中断的几何基础：
+   鼠标从主菜单往下移到下拉的整段路径都落在 .nav-dropdown 内部，hover 不会断。
+   .nav > a（Projects 这种纯链接）保持内容高度，align-items: center 让它在 72px 中居中。 */
 .nav {
   display: flex;
   gap: 28px;
   align-items: center;
   align-self: stretch;
 }
-.nav > a,
 .nav-dropdown {
+  align-self: stretch;
+  position: relative;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+.nav-dropdown > a {
   align-self: stretch;
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 .nav a,
 .nav-dropdown > a {
@@ -95,7 +102,16 @@ ul { list-style: none; }
   transition: var(--transition);
 }
 .nav a:hover, .nav a.active { color: var(--text); }
-.nav > a::after,
+.nav > a::after {
+  content: '';
+  position: absolute;
+  bottom: -6px;
+  left: 0; right: 0;
+  height: 2px;
+  background: var(--primary);
+  transform: scaleX(0);
+  transition: var(--transition);
+}
 .nav-dropdown > a::after {
   content: '';
   position: absolute;
@@ -1432,13 +1448,14 @@ footer {
 }
 .nav-dropdown:hover > a > .caret,
 .nav-dropdown.is-open > a > .caret { transform: rotate(180deg); }
-/* .dropdown-menu 紧贴 .nav-dropdown 底部（= header 底部），自身 padding-top 10px
-   作为「不可见但可 hover」的桥接区，保证鼠标下移过程全程在 .nav-dropdown 子树内 */
+/* .dropdown-menu 紧贴 .nav-dropdown 底部（= header 底部），自身 padding-top 4px
+   作为「不可见但可 hover」的桥接区：极小间隙让视觉上贴住 header，
+   同时保证鼠标下移过程全程在 .nav-dropdown 子树内 */
 .dropdown-menu {
   position: absolute;
   top: 100%;
   left: -14px;
-  padding-top: 10px;
+  padding-top: 4px;
   min-width: 240px;
   opacity: 0;
   visibility: hidden;
