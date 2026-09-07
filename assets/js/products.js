@@ -44,6 +44,7 @@ function renderProductCard(p, cats) {
         ${thumbInner}
       </div>
       <div class="product-info">
+        <div class="product-catline">${catLabel}${p.subLabel ? ' · ' + p.subLabel : ''}</div>
         <h4>${p.name}</h4>
         <div class="product-meta">
           <span>${p.tagline}</span>
@@ -60,13 +61,14 @@ function renderProductCard(p, cats) {
 }
 
 // 渲染完整产品列表（用于 products.html）
-async function renderProductGrid(targetId = 'productGrid', filter = 'all', sort = 'featured') {
+async function renderProductGrid(targetId = 'productGrid', filter = 'all', sort = 'featured', sub = 'all') {
   const grid = document.getElementById(targetId);
   if (!grid) return;
   const data = await loadProducts();
   let list = [...data.products];
 
   if (filter && filter !== 'all') list = list.filter(p => p.category === filter);
+  if (sub && sub !== 'all') list = list.filter(p => p.sub === sub);
 
   switch (sort) {
     case 'price-asc':  list.sort((a, b) => a.price - b.price); break;
@@ -85,7 +87,10 @@ async function renderBestSellers(targetId = 'bestSellers') {
   const grid = document.getElementById(targetId);
   if (!grid) return;
   const data = await loadProducts();
-  const list = data.products.slice(0, 8);
+  // 首页 Best Sellers：Hero 款优先，其余保持矩阵顺序
+  const list = [...data.products].sort(
+    (a, b) => (b.hero ? 1 : 0) - (a.hero ? 1 : 0)
+  ).slice(0, 8);
   grid.innerHTML = list.map(p => renderProductCard(p, data.categories)).join('');
 }
 
