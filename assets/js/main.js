@@ -2,6 +2,42 @@
 (function () {
   'use strict';
 
+  const dropdowns = Array.prototype.slice.call(document.querySelectorAll('.nav-dropdown'));
+  let dropdownTimer = null;
+
+  function closeDropdowns(except) {
+    dropdowns.forEach((d) => {
+      if (d !== except) d.classList.remove('is-open', 'open');
+    });
+  }
+
+  // Desktop: JS 控制 + 220ms 关闭延迟，鼠标从主菜单移到下拉时不会闪断
+  dropdowns.forEach((dd) => {
+    dd.addEventListener('mouseenter', () => {
+      clearTimeout(dropdownTimer);
+      if (window.innerWidth <= 960) return;
+      closeDropdowns(dd);
+      dd.classList.add('is-open');
+    });
+    dd.addEventListener('mouseleave', () => {
+      if (window.innerWidth <= 960) return;
+      clearTimeout(dropdownTimer);
+      dropdownTimer = setTimeout(() => dd.classList.remove('is-open'), 220);
+    });
+
+    // Mobile: 点击展开/收起（JS 绑定，避免依赖 href 结构）
+    const trigger = dd.querySelector(':scope > a');
+    if (trigger) {
+      trigger.addEventListener('click', (e) => {
+        if (window.innerWidth > 960) return;
+        e.preventDefault();
+        const wasOpen = dd.classList.contains('open') || dd.classList.contains('is-open');
+        closeDropdowns();
+        if (!wasOpen) dd.classList.add('open', 'is-open');
+      });
+    }
+  });
+
   // Mobile nav
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.nav');
@@ -9,19 +45,11 @@
     toggle.addEventListener('click', () => nav.classList.toggle('open'));
     // Close mobile nav when a plain link is clicked
     nav.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', (e) => {
+      link.addEventListener('click', () => {
         const parent = link.closest('.nav-dropdown');
         if (!parent) {
           nav.classList.remove('open');
-          return;
-        }
-        // If the link is a dropdown trigger, let the toggle handler manage it
-        if (link.parentElement === parent && window.innerWidth <= 960) {
-          e.preventDefault();
-          document.querySelectorAll('.nav-dropdown').forEach((other) => {
-            if (other !== parent) other.classList.remove('open');
-          });
-          parent.classList.toggle('open');
+          closeDropdowns();
         }
       });
     });
@@ -30,14 +58,14 @@
   window.addEventListener('resize', () => {
     if (window.innerWidth > 960 && nav) {
       nav.classList.remove('open');
-      document.querySelectorAll('.nav-dropdown').forEach((d) => d.classList.remove('open'));
+      closeDropdowns();
     }
   });
   // Close mobile nav on Escape key
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && nav) {
       nav.classList.remove('open');
-      document.querySelectorAll('.nav-dropdown').forEach((d) => d.classList.remove('open'));
+      closeDropdowns();
     }
   });
 
@@ -226,10 +254,10 @@
     });
   }
 
-  // URL-based product filter
+  // URL-based product filter（products.html 有自己的初始化逻辑，避免重复渲染）
   const urlParams = new URLSearchParams(window.location.search);
   const catFilter = urlParams.get('cat');
-  if (catFilter && typeof StageLumenProducts !== 'undefined') {
+  if (catFilter && typeof StageLumenProducts !== 'undefined' && !document.getElementById('subToolbar')) {
     const toolbar = document.getElementById('productToolbar');
     if (toolbar) {
       toolbar.querySelectorAll('[data-filter]').forEach((btn) => {
