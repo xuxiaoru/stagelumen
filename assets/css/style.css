@@ -72,21 +72,34 @@ ul { list-style: none; }
   font-size: 18px;
   color: #fff;
 }
-.nav { display: flex; gap: 28px; align-items: center; }
+/* .nav 与子项撑满 header 的 72px 高度 —— 这是下拉不中断的根本保证：
+   .nav-dropdown 的 hover 区域从 header 顶部一直延伸到 header 底部，
+   鼠标无论从哪个方向往下移都不会离开 .nav-dropdown。 */
+.nav {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  align-self: stretch;
+}
+.nav > a,
+.nav-dropdown {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
 .nav a,
 .nav-dropdown > a {
   font-size: 0.92rem;
   color: var(--text-2);
   position: relative;
-  padding: 4px 0;
   transition: var(--transition);
 }
 .nav a:hover, .nav a.active { color: var(--text); }
-.nav a::after,
+.nav > a::after,
 .nav-dropdown > a::after {
   content: '';
   position: absolute;
-  bottom: -6px;
+  bottom: 14px;
   left: 0; right: 0;
   height: 2px;
   background: var(--primary);
@@ -1299,6 +1312,12 @@ footer {
     box-shadow: var(--shadow);
   }
   .nav.open { display: flex; }
+  /* 移动端纵向菜单：取消桌面端的整高拉伸 */
+  .nav > a,
+  .nav-dropdown {
+    align-self: auto;
+    align-items: center;
+  }
   .nav.open a,
   .nav.open .nav-dropdown > a {
     padding: 12px 0;
@@ -1405,9 +1424,6 @@ footer {
 .nav-dropdown {
   position: relative;
   flex-shrink: 0;
-  /* 把 hover 区域撑满整个 header 高度，消除「文字底部 → header 底部」的死区 */
-  padding: 24px 0;
-  margin: -24px 0;
 }
 .nav-dropdown > a > .caret {
   font-size: 0.7em;
@@ -1416,19 +1432,18 @@ footer {
 }
 .nav-dropdown:hover > a > .caret,
 .nav-dropdown.is-open > a > .caret { transform: rotate(180deg); }
-/* padding-top 构成「不可见但可 hover」的桥接区：它是 .dropdown-menu 自身的一部分，
-   所以鼠标从主菜单往下移时始终停留在 .nav-dropdown 内部，hover 不会中断 */
+/* .dropdown-menu 紧贴 .nav-dropdown 底部（= header 底部），自身 padding-top 10px
+   作为「不可见但可 hover」的桥接区，保证鼠标下移过程全程在 .nav-dropdown 子树内 */
 .dropdown-menu {
   position: absolute;
   top: 100%;
-  left: -12px;
-  padding-top: 14px;
-  min-width: 236px;
+  left: -14px;
+  padding-top: 10px;
+  min-width: 240px;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transform: translateY(-6px);
-  transition: opacity 0.18s ease, transform 0.18s ease, visibility 0.18s;
+  transition: opacity 0.12s ease, visibility 0.12s;
   z-index: 101;
 }
 .dropdown-inner {
@@ -1445,7 +1460,6 @@ footer {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-  transform: translateY(0);
   transition-delay: 0s;
 }
 .dropdown-inner a {
