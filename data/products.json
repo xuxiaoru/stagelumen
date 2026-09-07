@@ -1,1068 +1,661 @@
 {
   "meta": {
-    "version": "1.0",
-    "lastUpdated": "2026-09-06",
-    "currency": "USD",
-    "currencySymbol": "$",
-    "defaultMOQ": 4,
-    "defaultLeadTime": "7-15 days"
+    "updated": "2026-09-07",
+    "total": 36,
+    "note": "36 SKU launch matrix. Replace target specifications with verified production data before publishing."
   },
   "categories": {
     "moving": {
       "label": "Moving Heads",
       "color": "#ff6b00",
-      "icon": "◉"
+      "icon": "◉",
+      "desc": "Beam · Spot · Wash · Hybrid · Outdoor IP65"
+    },
+    "pixel": {
+      "label": "Pixel & Effects",
+      "color": "#00d4ff",
+      "icon": "✦",
+      "desc": "Pixel Bar · Pixel Wash · Strobe"
+    },
+    "theatre": {
+      "label": "Theatre Lighting",
+      "color": "#a78bfa",
+      "icon": "◈",
+      "desc": "Fresnel · Follow Spot"
     },
     "par": {
-      "label": "LED PAR",
-      "color": "#00d4ff",
-      "icon": "✦"
+      "label": "LED PAR & Uplights",
+      "color": "#34d399",
+      "icon": "✧",
+      "desc": "LED PAR · Battery / Wireless Uplight"
     },
     "laser": {
-      "label": "Laser",
+      "label": "Lasers",
       "color": "#ec4899",
-      "icon": "⚡"
-    },
-    "outdoor": {
-      "label": "Outdoor IP65",
-      "color": "#fbbf24",
-      "icon": "☀"
+      "icon": "⚡",
+      "desc": "RGB Laser Systems"
     },
     "controller": {
-      "label": "DMX Controllers",
-      "color": "#10b981",
-      "icon": "▦"
-    },
-    "package": {
-      "label": "Packages & Kits",
-      "color": "#7c3aed",
-      "icon": "▤"
+      "label": "Controllers",
+      "color": "#fbbf24",
+      "icon": "▦",
+      "desc": "DMX · Art-Net / sACN Consoles"
     }
+  },
+  "subcategories": {
+    "moving": [
+      {
+        "id": "beam",
+        "label": "Beam"
+      },
+      {
+        "id": "spot",
+        "label": "Spot"
+      },
+      {
+        "id": "wash",
+        "label": "Wash"
+      },
+      {
+        "id": "hybrid",
+        "label": "Hybrid"
+      },
+      {
+        "id": "outdoor",
+        "label": "Outdoor IP65"
+      }
+    ],
+    "pixel": [
+      {
+        "id": "pixel-bar",
+        "label": "Pixel Bar"
+      },
+      {
+        "id": "pixel-wash",
+        "label": "Pixel Wash"
+      },
+      {
+        "id": "strobe",
+        "label": "Strobe"
+      }
+    ],
+    "theatre": [
+      {
+        "id": "fresnel",
+        "label": "Fresnel"
+      },
+      {
+        "id": "follow-spot",
+        "label": "Follow Spot"
+      }
+    ],
+    "par": [
+      {
+        "id": "led-par",
+        "label": "LED PAR"
+      },
+      {
+        "id": "battery-par",
+        "label": "Battery PAR"
+      }
+    ],
+    "laser": [
+      {
+        "id": "laser",
+        "label": "Laser"
+      }
+    ],
+    "controller": [
+      {
+        "id": "controller",
+        "label": "Controller"
+      }
+    ]
   },
   "products": [
     {
-      "id": "sl-b230",
-      "name": "SL-B230 Beam Moving Head",
-      "model": "SL-B230",
+      "id": "sl-b150",
+      "name": "SL-B150 150W LED Beam Moving Head",
+      "model": "SL-B150",
       "category": "moving",
-      "price": 489,
-      "badge": "hot",
-      "rating": 4.9,
-      "reviews": 87,
-      "sold": "1,200+",
-      "icon": "◉",
-      "iconColor": "#ff6b00",
-      "tagline": "230W Discharge",
-      "shortDesc": "Flagship 230W beam with 1.5° narrow angle, 540°/270° pan/tilt, 16/20 DMX channels.",
-      "longDesc": "The SL-B230 is our flagship 230W Beam Moving Head, designed for concerts, clubs and rental companies who need punchy aerial effects without the weight penalty. The 1.5° beam cuts through haze crisply and pans 540° in under 2 seconds. Manufactured in our 8,000 m² facility in Guangzhou with 100% 48-hour aging tests, every unit ships with individual QC report and IES files for venue designers.",
-      "specs": [
-        {
-          "label": "Light Source",
-          "value": "230W Yodn / Philips MSD"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "1.5°"
-        },
-        {
-          "label": "Color Wheel",
-          "value": "14 colors + open, rainbow effect"
-        },
-        {
-          "label": "Gobo Wheel",
-          "value": "17 fixed + 9 rotating"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "16 / 20 CH (selectable)"
-        },
-        {
-          "label": "Pan / Tilt",
-          "value": "540° / 270°, 16-bit"
-        },
-        {
-          "label": "Dimming",
-          "value": "0–100% linear"
-        },
-        {
-          "label": "IP Rating",
-          "value": "IP20 (Indoor)"
-        },
-        {
-          "label": "Voltage",
-          "value": "AC 100–240V, 50/60Hz"
-        },
-        {
-          "label": "Power",
-          "value": "350W max"
-        },
-        {
-          "label": "Net Weight",
-          "value": "17.5 kg"
-        },
-        {
-          "label": "Warranty",
-          "value": "3 years (limited)"
-        }
-      ],
-      "features": [
-        "1.5° ultra-narrow beam, 100,000 lux @ 10m",
-        "14 color wheel + 0–100% dimming + 1–20Hz strobe",
-        "Auto-run, sound-active, master/slave, DMX modes",
-        "3-pin / 5-pin XLR in/out, power in/out (daisy chain 6 units)",
-        "Optional frost filter + motorised focus"
-      ],
-      "applications": [
-        {
-          "title": "Arena Tours",
-          "desc": "Long-throw beam sets in stadium truss"
-        },
-        {
-          "title": "Nightclubs",
-          "desc": "Bass-driven sound-active mode"
-        },
-        {
-          "title": "Theatre",
-          "desc": "Quiet operation, 16-bit dimming"
-        },
-        {
-          "title": "Houses of Worship",
-          "desc": "Warm whitewash + key focus"
-        }
-      ],
-      "fullSpecs": [
-        {
-          "label": "Lamp",
-          "value": "YODN 230W (6,000 hr life) · Philips MSD optional"
-        },
-        {
-          "label": "Color Temp",
-          "value": "8,000K"
-        },
-        {
-          "label": "CRI",
-          "value": "Ra ≥ 75"
-        },
-        {
-          "label": "Pan/Tilt",
-          "value": "540° / 270°, 16-bit, auto-correction"
-        },
-        {
-          "label": "Strobe",
-          "value": "1–20 Hz, pulse + random"
-        },
-        {
-          "label": "Dimmer",
-          "value": "0–100% linear, 16-bit"
-        },
-        {
-          "label": "Cooling",
-          "value": "Forced-air, temperature-controlled fan"
-        },
-        {
-          "label": "Operating Temp",
-          "value": "−10°C to 45°C"
-        },
-        {
-          "label": "Housing",
-          "value": "ABS + aluminium, matte black"
-        },
-        {
-          "label": "Mounting",
-          "value": "Yoke + omega bracket included"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC, ISO9001"
-        },
-        {
-          "label": "Package",
-          "value": "1 per carton, 580×420×500mm, 19 kg"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 4.2 MB)",
-          "filename": "sl-b230-manual.pdf"
-        },
-        {
-          "label": "IES Photometric File",
-          "filename": "sl-b230.ies"
-        },
-        {
-          "label": "DMX Channel Chart",
-          "filename": "sl-b230-dmx.pdf"
-        },
-        {
-          "label": "DWG Drawing (CAD)",
-          "filename": "sl-b230.dwg"
-        }
-      ],
-      "moq": 4,
-      "leadTime": "7–15 days stock",
-      "oemFrom": 100,
-      "warranty": "3 years",
-      "image": "assets/images/products/beam-moving-head.jpg",
-      "images": [
-        "assets/images/products/beam-moving-head.jpg"
-      ],
-      "imageCredit": "Rigelight"
-    },
-    {
-      "id": "sl-h380",
-      "name": "SL-H380 Hybrid Moving Head",
-      "model": "SL-H380",
-      "category": "moving",
-      "price": 1089,
-      "badge": "new",
-      "rating": 4.8,
-      "reviews": 64,
-      "sold": "850+",
-      "icon": "◐",
-      "iconColor": "#7c3aed",
-      "tagline": "380W Beam + Spot + Wash",
-      "shortDesc": "3-in-1 hybrid fixture, 380W lamp, motorized zoom 3°–35°, CMY + 7 color wheel.",
-      "longDesc": "The SL-H380 Hybrid combines beam, spot and wash in one unit. The 380W lamp delivers 12,000 lumens, while the motorized zoom ranges from 3° (narrow beam) to 35° (wide wash). Ideal for rental companies who need flexibility across venue types.",
-      "specs": [
-        {
-          "label": "Light Source",
-          "value": "380W Osram Sirius HRI"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "3°–35° motorized zoom"
-        },
-        {
-          "label": "Color System",
-          "value": "CMY + 7 color wheel"
-        },
-        {
-          "label": "Gobo Wheel",
-          "value": "8 rotating + 14 fixed"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "24 / 30 CH"
-        },
-        {
-          "label": "Pan / Tilt",
-          "value": "540° / 270°, 16-bit"
-        },
-        {
-          "label": "Dimming",
-          "value": "0–100% linear, 16-bit"
-        },
-        {
-          "label": "IP Rating",
-          "value": "IP20 (Indoor)"
-        },
-        {
-          "label": "Voltage",
-          "value": "AC 100–240V, 50/60Hz"
-        },
-        {
-          "label": "Power",
-          "value": "550W max"
-        },
-        {
-          "label": "Net Weight",
-          "value": "23 kg"
-        },
-        {
-          "label": "Warranty",
-          "value": "3 years (limited)"
-        }
-      ],
-      "features": [
-        "3-in-1: beam, spot, wash in a single unit",
-        "12,000 lumens output with CMY color mixing",
-        "Motorized 3°–35° zoom + linear CTO",
-        "Dual gobo wheels (rotating + static)",
-        "3-facet prism, frost filter, motorized focus"
-      ],
-      "applications": [
-        {
-          "title": "Mid-size Tours",
-          "desc": "Versatile across venues"
-        },
-        {
-          "title": "Festivals",
-          "desc": "Long-throw beam + wash combo"
-        },
-        {
-          "title": "TV Studios",
-          "desc": "Quiet fan, flicker-free"
-        },
-        {
-          "title": "Corporate Events",
-          "desc": "Fast setup, broad coverage"
-        }
-      ],
-      "fullSpecs": [
-        {
-          "label": "Lamp",
-          "value": "Osram Sirius HRI 380W"
-        },
-        {
-          "label": "Color Temp",
-          "value": "7,500K"
-        },
-        {
-          "label": "CRI",
-          "value": "Ra ≥ 80"
-        },
-        {
-          "label": "Pan/Tilt",
-          "value": "540° / 270°, 16-bit"
-        },
-        {
-          "label": "Strobe",
-          "value": "1–25 Hz"
-        },
-        {
-          "label": "Dimmer",
-          "value": "0–100% linear, 16-bit"
-        },
-        {
-          "label": "Cooling",
-          "value": "Forced-air, temperature-controlled"
-        },
-        {
-          "label": "Housing",
-          "value": "ABS + aluminium, matte black"
-        },
-        {
-          "label": "Mounting",
-          "value": "Yoke + omega bracket"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC, ISO9001"
-        },
-        {
-          "label": "Package",
-          "value": "1 per carton, 720×460×540mm, 26 kg"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 5.1 MB)",
-          "filename": "sl-h380-manual.pdf"
-        },
-        {
-          "label": "IES Photometric File",
-          "filename": "sl-h380.ies"
-        },
-        {
-          "label": "DMX Channel Chart",
-          "filename": "sl-h380-dmx.pdf"
-        }
-      ],
-      "moq": 2,
-      "leadTime": "10–20 days",
-      "oemFrom": 50,
-      "warranty": "3 years",
-      "image": "assets/images/products/led-curtain-beam.jpg",
-      "images": [
-        "assets/images/products/led-curtain-beam.jpg"
-      ],
-      "imageCredit": "Rigelight"
-    },
-    {
-      "id": "sl-b1500",
-      "name": "SL-B1500 Stadium Beam",
-      "model": "SL-B1500",
-      "category": "moving",
-      "price": 2499,
-      "badge": null,
-      "rating": 4.9,
-      "reviews": 42,
-      "sold": "320+",
-      "icon": "⬢",
-      "iconColor": "#fbbf24",
-      "tagline": "1500W Long-throw",
-      "shortDesc": "1500W discharge for stadium-scale events, 2° ultra-tight beam, 200m throw.",
-      "longDesc": "Built for stadium and arena events. The 1500W discharge lamp produces 50,000+ lumens with a 2° ultra-tight beam that reaches 200m. Heavy-duty construction with reinforced yoke for long-term touring.",
-      "specs": [
-        {
-          "label": "Light Source",
-          "value": "1500W HTI"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "2°"
-        },
-        {
-          "label": "Output",
-          "value": "50,000+ lumens"
-        },
-        {
-          "label": "Color Wheel",
-          "value": "12 colors + open"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "20 CH"
-        },
-        {
-          "label": "Pan / Tilt",
-          "value": "540° / 270°, 16-bit"
-        },
-        {
-          "label": "Dimming",
-          "value": "0–100% linear"
-        },
-        {
-          "label": "IP Rating",
-          "value": "IP54 (outdoor use with cover)"
-        },
-        {
-          "label": "Voltage",
-          "value": "AC 200–240V, 50/60Hz"
-        },
-        {
-          "label": "Power",
-          "value": "1800W max"
-        },
-        {
-          "label": "Net Weight",
-          "value": "48 kg"
-        },
-        {
-          "label": "Warranty",
-          "value": "3 years (limited)"
-        }
-      ],
-      "features": [
-        "50,000+ lumens with 200m throw distance",
-        "Heavy-duty yoke for touring rigging",
-        "12 colors + 17 gobos",
-        "Reinforced cooling system",
-        "Compatible with major lighting consoles"
-      ],
-      "applications": [
-        {
-          "title": "Stadium Tours",
-          "desc": "Long-throw aerial effects"
-        },
-        {
-          "title": "Festivals",
-          "desc": "Main stage key light"
-        },
-        {
-          "title": "Outdoor Events",
-          "desc": "IP54 weather-resistant"
-        }
-      ],
-      "fullSpecs": [
-        {
-          "label": "Lamp",
-          "value": "HTI 1500W (3,000 hr life)"
-        },
-        {
-          "label": "Color Temp",
-          "value": "6,000K"
-        },
-        {
-          "label": "CRI",
-          "value": "Ra ≥ 80"
-        },
-        {
-          "label": "Pan/Tilt",
-          "value": "540° / 270°, 16-bit"
-        },
-        {
-          "label": "Cooling",
-          "value": "Forced-air, dual fans"
-        },
-        {
-          "label": "Housing",
-          "value": "Aluminium, matte black"
-        },
-        {
-          "label": "Mounting",
-          "value": "Yoke + clamps"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC, ISO9001"
-        },
-        {
-          "label": "Package",
-          "value": "1 per flight case, 92 kg total"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 6.8 MB)",
-          "filename": "sl-b1500-manual.pdf"
-        },
-        {
-          "label": "IES Photometric File",
-          "filename": "sl-b1500.ies"
-        }
-      ],
-      "moq": 1,
-      "leadTime": "20–30 days",
-      "oemFrom": 20,
-      "warranty": "3 years",
-      "image": "assets/images/products/wireless-projection-360.png",
-      "images": [
-        "assets/images/products/wireless-projection-360.png"
-      ],
-      "imageCredit": "Rigelight"
-    },
-    {
-      "id": "sl-p18",
-      "name": "SL-P18 IP65 LED Par",
-      "model": "SL-P18",
-      "category": "par",
-      "price": 159,
-      "badge": "new",
-      "rating": 4.8,
-      "reviews": 56,
-      "sold": "2,300+",
-      "icon": "✦",
-      "iconColor": "#00d4ff",
-      "tagline": "18×18W RGBWA+UV",
-      "shortDesc": "IP65 outdoor-rated par with 6-in-1 LEDs, wireless DMX, battery option.",
-      "longDesc": "The SL-P18 is our most versatile outdoor par. 18 high-power 6-in-1 LEDs produce vibrant colors including UV. IP65 rating means it survives rain, dust and humidity. Optional wireless DMX and battery pack for fully cable-free operation.",
-      "specs": [
-        {
-          "label": "LED Source",
-          "value": "18×18W RGBWA+UV 6-in-1"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "25° (45° optional)"
-        },
-        {
-          "label": "Color Mixing",
-          "value": "16.7M colors, dimmer 0–100%"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "6 / 9 CH"
-        },
-        {
-          "label": "Wireless DMX",
-          "value": "2.4G W-DMX (optional)"
-        },
-        {
-          "label": "Battery",
-          "value": "Up to 8 hours (optional)"
-        },
-        {
-          "label": "IP Rating",
-          "value": "IP65 (outdoor)"
-        },
-        {
-          "label": "Voltage",
-          "value": "AC 100–240V, 50/60Hz"
-        },
-        {
-          "label": "Power",
-          "value": "320W max"
-        },
-        {
-          "label": "Net Weight",
-          "value": "6.8 kg"
-        },
-        {
-          "label": "Housing",
-          "value": "Die-cast aluminium"
-        },
-        {
-          "label": "Warranty",
-          "value": "3 years (limited)"
-        }
-      ],
-      "features": [
-        "6-in-1 LED (RGBWA+UV) for richer color palette",
-        "IP65 weather-resistant for permanent outdoor install",
-        "Optional wireless DMX + battery for cable-free use",
-        "Flicker-free for TV / film shooting",
-        "Floor-mounting bracket + hanging yoke included"
-      ],
-      "applications": [
-        {
-          "title": "Outdoor Stages",
-          "desc": "Permanent outdoor install"
-        },
-        {
-          "title": "Mobile DJs",
-          "desc": "Battery option for cableless setup"
-        },
-        {
-          "title": "Architectural",
-          "desc": "Building facade wash"
-        }
-      ],
-      "fullSpecs": [
-        {
-          "label": "LED",
-          "value": "18×18W 6-in-1 RGBWA+UV"
-        },
-        {
-          "label": "Lifespan",
-          "value": "50,000 hours"
-        },
-        {
-          "label": "Strobe",
-          "value": "1–25 Hz"
-        },
-        {
-          "label": "Dimmer",
-          "value": "0–100% linear, 16-bit"
-        },
-        {
-          "label": "Cooling",
-          "value": "Convection + fan"
-        },
-        {
-          "label": "Operating Temp",
-          "value": "−20°C to 50°C"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC, ISO9001"
-        },
-        {
-          "label": "Package",
-          "value": "4 per carton, 14 kg total"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 3.5 MB)",
-          "filename": "sl-p18-manual.pdf"
-        },
-        {
-          "label": "IES Photometric File",
-          "filename": "sl-p18.ies"
-        }
-      ],
-      "moq": 8,
-      "leadTime": "7–15 days stock",
-      "oemFrom": 100,
-      "warranty": "3 years",
-      "image": "assets/images/products/ip65-pixel-bar.jpg",
-      "images": [
-        "assets/images/products/ip65-pixel-bar.jpg"
-      ],
-      "imageCredit": "Rigelight"
-    },
-    {
-      "id": "sl-p7",
-      "name": "SL-P7 Compact Par",
-      "model": "SL-P7",
-      "category": "par",
-      "price": 79,
-      "badge": "hot",
-      "rating": 4.7,
-      "reviews": 124,
-      "sold": "5,800+",
-      "icon": "✧",
-      "iconColor": "#00d4ff",
-      "tagline": "7×15W RGBW",
-      "shortDesc": "Compact 7×15W RGBW par, 4-button LED control, 4-in-1 LED engine.",
-      "longDesc": "Our best-selling indoor par. Compact form factor fits any truss or floor position. The 4-in-1 LED engine provides smooth color mixing without multi-shadow artifacts. Perfect for small venues, mobile DJs and uplighting.",
-      "specs": [
-        {
-          "label": "LED Source",
-          "value": "7×15W RGBW 4-in-1"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "25° (45° optional)"
-        },
-        {
-          "label": "Color Mixing",
-          "value": "16.7M colors"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "4 / 8 CH"
-        },
-        {
-          "label": "IP Rating",
-          "value": "IP20 (Indoor)"
-        },
-        {
-          "label": "Voltage",
-          "value": "AC 100–240V, 50/60Hz"
-        },
-        {
-          "label": "Power",
-          "value": "120W max"
-        },
-        {
-          "label": "Net Weight",
-          "value": "2.4 kg"
-        },
-        {
-          "label": "Housing",
-          "value": "ABS plastic"
-        },
-        {
-          "label": "Warranty",
-          "value": "3 years (limited)"
-        }
-      ],
-      "features": [
-        "Ultra-compact, fits anywhere",
-        "4-in-1 LED for smooth color mixing",
-        "Built-in programs + sound-active mode",
-        "IR remote compatible (optional)",
-        "Double-yoke for floor or truss mounting"
-      ],
-      "applications": [
-        {
-          "title": "Small Venues",
-          "desc": "Bars, pubs, small clubs"
-        },
-        {
-          "title": "Mobile DJs",
-          "desc": "Compact, lightweight"
-        },
-        {
-          "title": "Uplighting",
-          "desc": "Wall wash for events"
-        }
-      ],
-      "fullSpecs": [
-        {
-          "label": "LED",
-          "value": "7×15W 4-in-1 RGBW"
-        },
-        {
-          "label": "Lifespan",
-          "value": "50,000 hours"
-        },
-        {
-          "label": "Strobe",
-          "value": "1–20 Hz"
-        },
-        {
-          "label": "Dimmer",
-          "value": "0–100% linear"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC"
-        },
-        {
-          "label": "Package",
-          "value": "8 per carton, 22 kg total"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 2.1 MB)",
-          "filename": "sl-p7-manual.pdf"
-        }
-      ],
-      "moq": 16,
-      "leadTime": "7–15 days stock",
-      "oemFrom": 200,
-      "warranty": "3 years",
-      "image": "assets/images/products/bamboo-pixel-column.jpg",
-      "images": [
-        "assets/images/products/bamboo-pixel-column.jpg"
-      ],
-      "imageCredit": "Rigelight"
-    },
-    {
-      "id": "sl-l5",
-      "name": "SL-L5 ILDA Laser Projector",
-      "model": "SL-L5",
-      "category": "laser",
+      "sub": "beam",
+      "subLabel": "Beam",
+      "family": "moving",
       "price": 329,
       "badge": null,
-      "rating": 4.6,
-      "reviews": 38,
-      "sold": "640+",
-      "icon": "⚡",
-      "iconColor": "#ec4899",
-      "tagline": "5W RGB ILDA",
-      "shortDesc": "5W full-color ILDA laser, 30K scanners, DMX + ILDA + sound-active.",
-      "longDesc": "Compact yet powerful 5W RGB ILDA laser projector. 30K Galvo scanners deliver smooth animations and beam shows. Perfect for DJs, mobile entertainers and small venues. Safety key + emission indicator included.",
+      "rating": 4.8,
+      "reviews": 76,
+      "sold": "300+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "150W LED",
+      "shortDesc": "150W LED Beam Moving Head with DMX512 / RDM control, 2.0°–4.0° beam angle and IP20 rating. Built for concert, club, event production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-B150 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Club, Event.",
       "specs": [
         {
-          "label": "Power",
-          "value": "5W RGB total (1.6W Red + 1.4W Green + 2W Blue)"
+          "label": "Light Source",
+          "value": "150W LED"
         },
         {
-          "label": "Wavelength",
-          "value": "638nm / 520nm / 450nm"
+          "label": "Beam Angle",
+          "value": "2.0°–4.0°"
         },
         {
-          "label": "Scanner",
-          "value": "30K Galvo, ±25°"
+          "label": "IP Rating",
+          "value": "IP20"
         },
         {
-          "label": "Control",
-          "value": "DMX, ILDA, Sound-active, Auto"
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
         },
         {
-          "label": "Patterns",
-          "value": "200+ built-in graphics + animations"
+          "label": "Colour System",
+          "value": "Color Wheel"
         },
         {
-          "label": "Safety",
-          "value": "Key switch, emission indicator, scan-fail shutoff"
+          "label": "Gobo",
+          "value": "Static/Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
         },
         {
           "label": "Voltage",
           "value": "AC 100–240V, 50/60Hz"
         },
         {
-          "label": "Power",
-          "value": "150W max"
-        },
-        {
           "label": "Net Weight",
-          "value": "5.2 kg"
-        },
-        {
-          "label": "Housing",
-          "value": "Aluminium"
+          "value": "15 – 24 kg (model dependent)"
         },
         {
           "label": "Warranty",
-          "value": "2 years"
+          "value": "3 years (limited)"
         }
       ],
       "features": [
-        "30K Galvo scanners for smooth animations",
-        "DMX + ILDA + sound-active modes",
-        "200+ built-in patterns",
-        "Safety key + emission indicator",
-        "Compact 5.2 kg body"
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
       ],
       "applications": [
-        {
-          "title": "Mobile DJs",
-          "desc": "Compact, lightweight, all-in-one"
-        },
-        {
-          "title": "Small Clubs",
-          "desc": "Full beam + animation shows"
-        },
-        {
-          "title": "Private Events",
-          "desc": "Weddings, parties"
-        }
+        "Concert",
+        "Club",
+        "Event"
       ],
-      "fullSpecs": [
-        {
-          "label": "Cooling",
-          "value": "TEC + forced-air"
-        },
-        {
-          "label": "Modulation",
-          "value": "Analog 0–100%"
-        },
-        {
-          "label": "Operating Temp",
-          "value": "10°C to 35°C"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC, FDA"
-        },
-        {
-          "label": "Package",
-          "value": "1 per carton, 7.5 kg"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 3.8 MB)",
-          "filename": "sl-l5-manual.pdf"
-        }
-      ],
-      "moq": 4,
-      "leadTime": "10–20 days",
-      "oemFrom": 100,
-      "warranty": "2 years",
-      "image": "assets/images/products/kinetic-lift-ball.png",
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-b150.jpg",
       "images": [
-        "assets/images/products/kinetic-lift-ball.png"
+        "assets/images/products/sl-b150.jpg"
       ],
       "imageCredit": "Rigelight"
     },
     {
-      "id": "sl-l12",
-      "name": "SL-L12 Pro Stage Laser",
-      "model": "SL-L12",
-      "category": "laser",
-      "price": 629,
+      "id": "sl-b200",
+      "name": "SL-B200 200W LED Beam Moving Head",
+      "model": "SL-B200",
+      "category": "moving",
+      "sub": "beam",
+      "subLabel": "Beam",
+      "family": "moving",
+      "price": 429,
       "badge": null,
       "rating": 4.8,
-      "reviews": 28,
-      "sold": "420+",
-      "icon": "★",
-      "iconColor": "#ec4899",
-      "tagline": "12W RGB Animation",
-      "shortDesc": "12W pro-grade laser with 40K scanners, Pangolin FB4-SE controller ready.",
-      "longDesc": "Professional 12W RGB laser with 40K Galvo scanners and full ILDA compatibility. Pre-wired for Pangolin FB4-SE network control. Built for venues, touring and large events.",
+      "reviews": 32,
+      "sold": "900+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED",
+      "shortDesc": "200W LED Beam Moving Head with DMX512 / RDM control, 2.0°–4.5° beam angle and IP20 rating. Built for concert, rental, club production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-B200 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Rental, Club, Event.",
       "specs": [
         {
-          "label": "Power",
-          "value": "12W RGB (3W Red + 3W Green + 6W Blue)"
+          "label": "Light Source",
+          "value": "200W LED"
         },
         {
-          "label": "Wavelength",
-          "value": "638nm / 520nm / 450nm"
+          "label": "Beam Angle",
+          "value": "2.0°–4.5°"
         },
         {
-          "label": "Scanner",
-          "value": "40K Galvo, ±30°"
+          "label": "IP Rating",
+          "value": "IP20"
         },
         {
-          "label": "Control",
-          "value": "DMX, ILDA, Ethernet (FB4-SE ready)"
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
         },
         {
-          "label": "Patterns",
-          "value": "300+ graphics + custom import"
+          "label": "Colour System",
+          "value": "Color Wheel"
         },
         {
-          "label": "Safety",
-          "value": "E-STOP, key switch, scan-fail"
+          "label": "Gobo",
+          "value": "Static/Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
         },
         {
           "label": "Voltage",
           "value": "AC 100–240V, 50/60Hz"
         },
         {
-          "label": "Power",
-          "value": "280W max"
-        },
-        {
           "label": "Net Weight",
-          "value": "11 kg"
-        },
-        {
-          "label": "Housing",
-          "value": "2U aluminium rack"
+          "value": "15 – 24 kg (model dependent)"
         },
         {
           "label": "Warranty",
-          "value": "2 years"
+          "value": "3 years (limited)"
         }
       ],
       "features": [
-        "Pangolin FB4-SE network controller ready",
-        "40K Galvo scanners for sharp graphics",
-        "12W total with analog modulation",
-        "E-STOP safety circuit + interlock",
-        "2U rack-mountable"
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
       ],
       "applications": [
-        {
-          "title": "Touring",
-          "desc": "FB4-SE network control"
-        },
-        {
-          "title": "Large Venues",
-          "desc": "Long-throw beam shows"
-        },
-        {
-          "title": "Festivals",
-          "desc": "Main stage laser"
-        }
+        "Concert",
+        "Rental",
+        "Club",
+        "Event"
       ],
-      "fullSpecs": [
-        {
-          "label": "Cooling",
-          "value": "TEC + dual fans"
-        },
-        {
-          "label": "Modulation",
-          "value": "Analog, TTL optional"
-        },
-        {
-          "label": "FB4 Interface",
-          "value": "Ethernet, DMX, ILDA"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC, FDA"
-        },
-        {
-          "label": "Package",
-          "value": "1 per flight case, 14 kg"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 5.2 MB)",
-          "filename": "sl-l12-manual.pdf"
-        }
-      ],
-      "moq": 2,
-      "leadTime": "15–25 days",
-      "oemFrom": 50,
-      "warranty": "2 years",
-      "image": "assets/images/products/matrix-pixel-corn.jpg",
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-b200.jpg",
       "images": [
-        "assets/images/products/matrix-pixel-corn.jpg"
+        "assets/images/products/sl-b200.jpg"
       ],
       "imageCredit": "Rigelight"
     },
     {
-      "id": "sl-wp36",
-      "name": "SL-WP36 Outdoor Wash",
-      "model": "SL-WP36",
-      "category": "outdoor",
+      "id": "sl-b280",
+      "name": "SL-B280 280W LED Beam Moving Head",
+      "model": "SL-B280",
+      "category": "moving",
+      "sub": "beam",
+      "subLabel": "Beam",
+      "family": "moving",
       "price": 549,
-      "badge": "new",
-      "rating": 4.7,
-      "reviews": 32,
-      "sold": "780+",
-      "icon": "☀",
-      "iconColor": "#fbbf24",
-      "tagline": "36×15W IP65",
-      "shortDesc": "IP65 outdoor wash with 36×15W RGBW, motorized 15°–60° zoom.",
-      "longDesc": "Heavy-duty outdoor wash light with IP65 rating and motorized zoom. The 36×15W RGBW LED engine produces smooth wall washes from narrow 15° to wide 60°. Built for permanent outdoor installation.",
+      "badge": "hot",
+      "rating": 4.9,
+      "reviews": 90,
+      "sold": "300+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "280W LED",
+      "shortDesc": "280W LED Beam Moving Head with DMX512 / RDM control, 2.5° beam angle and IP20 rating. Built for concert, festival, rental production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-B280 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Rental, Club.",
       "specs": [
         {
-          "label": "LED Source",
-          "value": "36×15W RGBW 4-in-1"
+          "label": "Light Source",
+          "value": "280W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "2.5°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel"
+        },
+        {
+          "label": "Gobo",
+          "value": "Static/Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Concert",
+        "Festival",
+        "Rental",
+        "Club"
+      ],
+      "priority": "Hero",
+      "phase": "Launch",
+      "hero": true,
+      "oem": true,
+      "image": "assets/images/products/sl-b280.jpg",
+      "images": [
+        "assets/images/products/sl-b280.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-b400",
+      "name": "SL-B400 400W LED Beam Moving Head",
+      "model": "SL-B400",
+      "category": "moving",
+      "sub": "beam",
+      "subLabel": "Beam",
+      "family": "moving",
+      "price": 749,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 49,
+      "sold": "900+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "400W LED",
+      "shortDesc": "400W LED Beam Moving Head with DMX512 / RDM control, 2.0°–4.0° beam angle and IP20 rating. Built for concert, festival, rental production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-B400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Rental, Touring.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "400W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "2.0°–4.0°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel"
+        },
+        {
+          "label": "Gobo",
+          "value": "Static/Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Concert",
+        "Festival",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-b400.png",
+      "images": [
+        "assets/images/products/sl-b400.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-b600",
+      "name": "SL-B600 600W LED Beam Moving Head",
+      "model": "SL-B600",
+      "category": "moving",
+      "sub": "beam",
+      "subLabel": "Beam",
+      "family": "moving",
+      "price": 1199,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 73,
+      "sold": "1000+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "600W LED",
+      "shortDesc": "600W LED Beam Moving Head with DMX512 / RDM / Art-Net control, 1.8°–3.5° beam angle and IP20 rating. Built for large concert, festival, touring production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-B600 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Large Concert, Festival, Touring.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "600W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "1.8°–3.5°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM / Art-Net"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel"
+        },
+        {
+          "label": "Gobo",
+          "value": "Static/Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Large Concert",
+        "Festival",
+        "Touring"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-b600.png",
+      "images": [
+        "assets/images/products/sl-b600.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-s200",
+      "name": "SL-S200 200W LED Spot Moving Head",
+      "model": "SL-S200",
+      "category": "moving",
+      "sub": "spot",
+      "subLabel": "Spot",
+      "family": "moving",
+      "price": 399,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 21,
+      "sold": "1100+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED",
+      "shortDesc": "200W LED Spot Moving Head with DMX512 / RDM control, 13°–36° beam angle and IP20 rating. Built for theatre, event, club production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-S200 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Theatre, Event, Club, Rental.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "200W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "13°–36°"
         },
         {
           "label": "Zoom Range",
-          "value": "15°–60° motorized"
-        },
-        {
-          "label": "Color Mixing",
-          "value": "16.7M colors"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "8 / 12 CH"
+          "value": "13°–36°"
         },
         {
           "label": "IP Rating",
-          "value": "IP65 (outdoor)"
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel"
+        },
+        {
+          "label": "Gobo",
+          "value": "Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
         },
         {
           "label": "Voltage",
           "value": "AC 100–240V, 50/60Hz"
         },
         {
-          "label": "Power",
-          "value": "550W max"
-        },
-        {
           "label": "Net Weight",
-          "value": "12 kg"
-        },
-        {
-          "label": "Housing",
-          "value": "Die-cast aluminium"
+          "value": "15 – 24 kg (model dependent)"
         },
         {
           "label": "Warranty",
@@ -1070,123 +663,1420 @@
         }
       ],
       "features": [
-        "IP65 weather-resistant for permanent outdoor use",
-        "Motorized 15°–60° zoom + focus",
-        "Flicker-free for TV / film shooting",
-        "Heavy-duty die-cast aluminium body",
-        "DMX + RDM control"
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
       ],
       "applications": [
-        {
-          "title": "Outdoor Stages",
-          "desc": "Permanent outdoor install"
-        },
-        {
-          "title": "Architectural",
-          "desc": "Building facade wash"
-        },
-        {
-          "title": "Festival Wash",
-          "desc": "Front wash for outdoor stages"
-        }
+        "Theatre",
+        "Event",
+        "Club",
+        "Rental"
       ],
-      "fullSpecs": [
-        {
-          "label": "LED Lifespan",
-          "value": "50,000 hours"
-        },
-        {
-          "label": "Strobe",
-          "value": "1–25 Hz"
-        },
-        {
-          "label": "Dimmer",
-          "value": "0–100% linear, 16-bit"
-        },
-        {
-          "label": "Operating Temp",
-          "value": "−20°C to 50°C"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC, ISO9001"
-        },
-        {
-          "label": "Package",
-          "value": "2 per carton, 28 kg"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 4.5 MB)",
-          "filename": "sl-wp36-manual.pdf"
-        },
-        {
-          "label": "IES Photometric File",
-          "filename": "sl-wp36.ies"
-        }
-      ],
-      "moq": 4,
-      "leadTime": "10–20 days",
-      "oemFrom": 100,
-      "warranty": "3 years",
-      "image": "assets/images/products/infinity-mirror-floor.png",
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-s200.jpg",
       "images": [
-        "assets/images/products/infinity-mirror-floor.png"
+        "assets/images/products/sl-s200.jpg"
       ],
       "imageCredit": "Rigelight"
     },
     {
-      "id": "sl-bar12",
-      "name": "SL-Bar12 Pixel Bar",
-      "model": "SL-Bar12",
-      "category": "outdoor",
-      "price": 289,
-      "badge": null,
-      "rating": 4.6,
-      "reviews": 45,
-      "sold": "1,100+",
-      "icon": "◑",
-      "iconColor": "#00d4ff",
-      "tagline": "12×40W RGBW IP65",
-      "shortDesc": "Pixel-mappable bar with 12×40W RGBW, IP65, individual pixel control.",
-      "longDesc": "Pixel-mappable outdoor bar with 12 individually addressable 40W RGBW LEDs. Create chase effects, color sweeps and matrix looks. IP65 rated for permanent outdoor install.",
+      "id": "sl-s300",
+      "name": "SL-S300 300W LED Spot Moving Head",
+      "model": "SL-S300",
+      "category": "moving",
+      "sub": "spot",
+      "subLabel": "Spot",
+      "family": "moving",
+      "price": 529,
+      "badge": "hot",
+      "rating": 4.9,
+      "reviews": 30,
+      "sold": "1000+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "300W LED",
+      "shortDesc": "300W LED Spot Moving Head with DMX512 / RDM control, 8°–40° beam angle and IP20 rating. Built for concert, theatre, rental production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-S300 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Theatre, Rental, Event.",
       "specs": [
         {
-          "label": "LED Source",
-          "value": "12×40W RGBW 4-in-1"
+          "label": "Light Source",
+          "value": "300W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "8°–40°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "8°–40°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel"
+        },
+        {
+          "label": "Gobo",
+          "value": "Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Concert",
+        "Theatre",
+        "Rental",
+        "Event"
+      ],
+      "priority": "Hero",
+      "phase": "Launch",
+      "hero": true,
+      "oem": true,
+      "image": "assets/images/products/sl-s300.jpg",
+      "images": [
+        "assets/images/products/sl-s300.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-s400",
+      "name": "SL-S400 400W LED Spot Moving Head",
+      "model": "SL-S400",
+      "category": "moving",
+      "sub": "spot",
+      "subLabel": "Spot",
+      "family": "moving",
+      "price": 719,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 25,
+      "sold": "300+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "400W LED",
+      "shortDesc": "400W LED Spot Moving Head with DMX512 / RDM control, 7°–45° beam angle and IP20 rating. Built for concert, theatre, rental production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-S400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Theatre, Rental, Touring.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "400W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "7°–45°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "7°–45°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel"
+        },
+        {
+          "label": "Gobo",
+          "value": "Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Concert",
+        "Theatre",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-s400.jpg",
+      "images": [
+        "assets/images/products/sl-s400.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-s600",
+      "name": "SL-S600 600W LED Profile/Spot Moving Head",
+      "model": "SL-S600",
+      "category": "moving",
+      "sub": "spot",
+      "subLabel": "Spot",
+      "family": "moving",
+      "price": 1099,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 85,
+      "sold": "1000+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "600W LED",
+      "shortDesc": "600W LED Profile/Spot Moving Head with DMX512 / RDM / Art-Net control, 6°–50° beam angle and IP20 rating. Built for large concert, theatre, touring production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-S600 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Large Concert, Theatre, Touring.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "600W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "6°–50°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "6°–50°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM / Art-Net"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel / CMY"
+        },
+        {
+          "label": "Gobo",
+          "value": "Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Large Concert",
+        "Theatre",
+        "Touring"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-s600.jpg",
+      "images": [
+        "assets/images/products/sl-s600.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-w200",
+      "name": "SL-W200 200W LED Wash Moving Head",
+      "model": "SL-W200",
+      "category": "moving",
+      "sub": "wash",
+      "subLabel": "Wash",
+      "family": "moving",
+      "price": 369,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 31,
+      "sold": "700+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED",
+      "shortDesc": "200W LED Wash Moving Head with DMX512 / RDM control, 7°–55° beam angle and IP20 rating. Built for event, club, small stage production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-W200 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Event, Club, Small Stage.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "200W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "7°–55°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "7°–55°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBW / Color Wheel"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Event",
+        "Club",
+        "Small Stage"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-w200.jpg",
+      "images": [
+        "assets/images/products/sl-w200.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-w300",
+      "name": "SL-W300 300W LED Wash Moving Head",
+      "model": "SL-W300",
+      "category": "moving",
+      "sub": "wash",
+      "subLabel": "Wash",
+      "family": "moving",
+      "price": 489,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 68,
+      "sold": "600+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "300W LED",
+      "shortDesc": "300W LED Wash Moving Head with DMX512 / RDM control, 6°–50° beam angle and IP20 rating. Built for concert, event, theatre production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-W300 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Event, Theatre, Rental.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "300W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "6°–50°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "6°–50°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBW / Color Wheel"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Concert",
+        "Event",
+        "Theatre",
+        "Rental"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-w300.jpg",
+      "images": [
+        "assets/images/products/sl-w300.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-w400",
+      "name": "SL-W400 400W LED Wash Moving Head",
+      "model": "SL-W400",
+      "category": "moving",
+      "sub": "wash",
+      "subLabel": "Wash",
+      "family": "moving",
+      "price": 669,
+      "badge": "hot",
+      "rating": 4.9,
+      "reviews": 32,
+      "sold": "500+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "400W LED",
+      "shortDesc": "400W LED Wash Moving Head with DMX512 / RDM control, 5°–55° beam angle and IP20 rating. Built for concert, festival, rental production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-W400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Rental, Touring.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "400W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "5°–55°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "5°–55°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBW / CTO"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Concert",
+        "Festival",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Hero",
+      "phase": "Launch",
+      "hero": true,
+      "oem": true,
+      "image": "assets/images/products/sl-w400.png",
+      "images": [
+        "assets/images/products/sl-w400.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-w600",
+      "name": "SL-W600 600W LED Wash Moving Head",
+      "model": "SL-W600",
+      "category": "moving",
+      "sub": "wash",
+      "subLabel": "Wash",
+      "family": "moving",
+      "price": 999,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 23,
+      "sold": "400+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "600W LED",
+      "shortDesc": "600W LED Wash Moving Head with DMX512 / RDM / Art-Net control, 4°–60° beam angle and IP20 rating. Built for large concert, festival, touring production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-W600 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Large Concert, Festival, Touring.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "600W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "4°–60°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "4°–60°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM / Art-Net"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBW / CTO"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Large Concert",
+        "Festival",
+        "Touring"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-w600.jpg",
+      "images": [
+        "assets/images/products/sl-w600.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-h280",
+      "name": "SL-H280 280W 3-in-1 Hybrid Moving Head",
+      "model": "SL-H280",
+      "category": "moving",
+      "sub": "hybrid",
+      "subLabel": "Hybrid",
+      "family": "moving",
+      "price": 579,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 72,
+      "sold": "600+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "280W LED",
+      "shortDesc": "280W 3-in-1 Hybrid Moving Head with DMX512 / RDM control, 2.5°–35° beam angle and IP20 rating. Built for club, concert, rental production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-H280 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Club, Concert, Rental, Event.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "280W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "2.5°–35°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "2.5°–35°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel"
+        },
+        {
+          "label": "Gobo",
+          "value": "Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Club",
+        "Concert",
+        "Rental",
+        "Event"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-h280.jpg",
+      "images": [
+        "assets/images/products/sl-h280.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-h400",
+      "name": "SL-H400 400W 3-in-1 Hybrid Moving Head",
+      "model": "SL-H400",
+      "category": "moving",
+      "sub": "hybrid",
+      "subLabel": "Hybrid",
+      "family": "moving",
+      "price": 789,
+      "badge": "hot",
+      "rating": 4.9,
+      "reviews": 45,
+      "sold": "600+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "400W LED",
+      "shortDesc": "400W 3-in-1 Hybrid Moving Head with DMX512 / RDM control, 2°–40° beam angle and IP20 rating. Built for concert, festival, rental production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-H400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Rental, Touring.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "400W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "2°–40°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "2°–40°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel"
+        },
+        {
+          "label": "Gobo",
+          "value": "Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Concert",
+        "Festival",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Hero",
+      "phase": "Launch",
+      "hero": true,
+      "oem": true,
+      "image": "assets/images/products/sl-h400.jpg",
+      "images": [
+        "assets/images/products/sl-h400.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-h600",
+      "name": "SL-H600 600W 3-in-1 Hybrid Moving Head",
+      "model": "SL-H600",
+      "category": "moving",
+      "sub": "hybrid",
+      "subLabel": "Hybrid",
+      "family": "moving",
+      "price": 1149,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 46,
+      "sold": "1100+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "600W LED",
+      "shortDesc": "600W 3-in-1 Hybrid Moving Head with DMX512 / RDM / Art-Net control, 1.8°–45° beam angle and IP20 rating. Built for large concert, festival, touring production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-H600 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Large Concert, Festival, Touring.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "600W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "1.8°–45°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "1.8°–45°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM / Art-Net"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel / CMY"
+        },
+        {
+          "label": "Gobo",
+          "value": "Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Large Concert",
+        "Festival",
+        "Touring"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-h600.jpg",
+      "images": [
+        "assets/images/products/sl-h600.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-h800",
+      "name": "SL-H800 800W 3-in-1 Hybrid Moving Head",
+      "model": "SL-H800",
+      "category": "moving",
+      "sub": "hybrid",
+      "subLabel": "Hybrid",
+      "family": "moving",
+      "price": 1499,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 81,
+      "sold": "400+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "800W LED",
+      "shortDesc": "800W 3-in-1 Hybrid Moving Head with DMX512 / RDM / Art-Net / sACN control, 1.5°–50° beam angle and IP20 rating. Built for large touring, festival, production production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-H800 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Large Touring, Festival, Production.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "800W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "1.5°–50°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "1.5°–50°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM / Art-Net / sACN"
+        },
+        {
+          "label": "Colour System",
+          "value": "CMY / CTO"
+        },
+        {
+          "label": "Gobo",
+          "value": "Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Large Touring",
+        "Festival",
+        "Production"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 3",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-h800.jpg",
+      "images": [
+        "assets/images/products/sl-h800.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-ip-b400",
+      "name": "SL-IP-B400 400W IP65 Beam Moving Head",
+      "model": "SL-IP-B400",
+      "category": "moving",
+      "sub": "outdoor",
+      "subLabel": "Outdoor IP65",
+      "family": "moving",
+      "price": 1099,
+      "badge": "hot",
+      "rating": 4.9,
+      "reviews": 69,
+      "sold": "300+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "400W LED · IP65",
+      "shortDesc": "400W IP65 Beam Moving Head with DMX512 / RDM control, 2°–5° beam angle and IP65 rating. Built for outdoor concert, festival, touring production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-IP-B400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Outdoor Concert, Festival, Touring.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "400W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "2°–5°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "Color Wheel"
+        },
+        {
+          "label": "Gobo",
+          "value": "Static/Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Outdoor Concert",
+        "Festival",
+        "Touring"
+      ],
+      "priority": "Hero",
+      "phase": "Launch",
+      "hero": true,
+      "oem": true,
+      "image": "assets/images/products/sl-ip-b400.png",
+      "images": [
+        "assets/images/products/sl-ip-b400.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-ip-w400",
+      "name": "SL-IP-W400 400W IP65 Wash Moving Head",
+      "model": "SL-IP-W400",
+      "category": "moving",
+      "sub": "outdoor",
+      "subLabel": "Outdoor IP65",
+      "family": "moving",
+      "price": 1049,
+      "badge": "hot",
+      "rating": 4.9,
+      "reviews": 31,
+      "sold": "900+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "400W LED · IP65",
+      "shortDesc": "400W IP65 Wash Moving Head with DMX512 / RDM control, 5°–55° beam angle and IP65 rating. Built for outdoor concert, festival, event production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-IP-W400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Outdoor Concert, Festival, Event.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "400W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "5°–55°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "5°–55°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBW / CTO"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Outdoor Concert",
+        "Festival",
+        "Event"
+      ],
+      "priority": "Hero",
+      "phase": "Launch",
+      "hero": true,
+      "oem": true,
+      "image": "assets/images/products/sl-ip-w400.png",
+      "images": [
+        "assets/images/products/sl-ip-w400.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-ip-h600",
+      "name": "SL-IP-H600 600W IP65 3-in-1 Hybrid Moving Head",
+      "model": "SL-IP-H600",
+      "category": "moving",
+      "sub": "outdoor",
+      "subLabel": "Outdoor IP65",
+      "family": "moving",
+      "price": 1599,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 71,
+      "sold": "600+",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "600W LED · IP65",
+      "shortDesc": "600W IP65 3-in-1 Hybrid Moving Head with DMX512 / RDM / Art-Net control, 2°–45° beam angle and IP65 rating. Built for outdoor festival, touring, large event production.",
+      "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-IP-H600 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Outdoor Festival, Touring, Large Event.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "600W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "2°–45°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "2°–45°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM / Art-Net"
+        },
+        {
+          "label": "Colour System",
+          "value": "CMY / CTO"
+        },
+        {
+          "label": "Gobo",
+          "value": "Rotating Gobo"
+        },
+        {
+          "label": "Prism",
+          "value": "Prism"
+        },
+        {
+          "label": "Pan / Tilt",
+          "value": "540° / 270°, 16-bit"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "16 / 20 / 24 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "15 – 24 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
+        "Motorised focus, frost and variable-speed prism on board",
+        "Auto-run, sound-active, master/slave and full DMX operation",
+        "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
+        "RDM enabled — address, monitor lamp hours and temperature remotely"
+      ],
+      "applications": [
+        "Outdoor Festival",
+        "Touring",
+        "Large Event"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-ip-h600.png",
+      "images": [
+        "assets/images/products/sl-ip-h600.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-p1000",
+      "name": "SL-P1000 1m RGBW Pixel Bar",
+      "model": "SL-P1000",
+      "category": "pixel",
+      "sub": "pixel-bar",
+      "subLabel": "Pixel Bar",
+      "family": "pixel",
+      "price": 219,
+      "badge": "hot",
+      "rating": 4.9,
+      "reviews": 89,
+      "sold": "900+",
+      "icon": "✦",
+      "iconColor": "#00d4ff",
+      "tagline": "100W LED",
+      "shortDesc": "1m RGBW Pixel Bar with DMX512 / Art-Net / sACN control, 120° beam angle and IP20 rating. Built for concert, club, event production.",
+      "longDesc": "The SL-P1000 is a pixel-mappable effect fixture designed to turn a stage into a low-resolution video surface. Every LED is individually addressable, so it can be driven as a blinder, a wash, a chaser or a full matrix from the same rig. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Club, Event, Stage Background.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "100W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "120°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / Art-Net / sACN"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBW"
         },
         {
           "label": "Pixel Control",
-          "value": "Individual pixel (12 zones)"
+          "value": "Per-LED addressable (Art-Net / sACN)"
         },
         {
-          "label": "Color Mixing",
-          "value": "16.7M colors"
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
         },
         {
           "label": "DMX Channels",
-          "value": "4 / 8 / 48 CH"
-        },
-        {
-          "label": "IP Rating",
-          "value": "IP65 (outdoor)"
+          "value": "4 / 12 / 60 / 240 CH (selectable)"
         },
         {
           "label": "Voltage",
           "value": "AC 100–240V, 50/60Hz"
         },
         {
-          "label": "Power",
-          "value": "480W max"
-        },
-        {
           "label": "Net Weight",
-          "value": "8.5 kg"
-        },
-        {
-          "label": "Housing",
-          "value": "Die-cast aluminium"
+          "value": "3.5 – 14 kg (model dependent)"
         },
         {
           "label": "Warranty",
@@ -1194,423 +2084,1344 @@
         }
       ],
       "features": [
-        "12 individual pixel zones for matrix looks",
-        "IP65 weather-resistant",
-        "Art-Net / sACN compatible",
-        "Tilt-adjustable mounting bracket",
-        "Flicker-free for TV / film"
+        "Individually addressable LEDs with pixel-mapping in Art-Net / sACN",
+        "Built-in chases, colour macros and strobe effects for standalone use",
+        "0–100% linear dimming plus 1–30 Hz electronic shutter",
+        "Rugged extruded housing with multiple rigging points",
+        "Quick-lock connectors and end-to-end alignment for seamless bars"
       ],
       "applications": [
-        {
-          "title": "Stage Wash",
-          "desc": "Backline wash + pixel effects"
-        },
-        {
-          "title": "Outdoor Matrix",
-          "desc": "Chase + animation effects"
-        },
-        {
-          "title": "Architectural",
-          "desc": "Facade pixel mapping"
-        }
+        "Concert",
+        "Club",
+        "Event",
+        "Stage Background"
       ],
-      "fullSpecs": [
+      "priority": "Hero",
+      "phase": "Launch",
+      "hero": true,
+      "oem": true,
+      "image": "assets/images/products/sl-p1000.png",
+      "images": [
+        "assets/images/products/sl-p1000.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-p1500",
+      "name": "SL-P1500 1.5m RGBW Pixel Bar",
+      "model": "SL-P1500",
+      "category": "pixel",
+      "sub": "pixel-bar",
+      "subLabel": "Pixel Bar",
+      "family": "pixel",
+      "price": 289,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 63,
+      "sold": "700+",
+      "icon": "✦",
+      "iconColor": "#00d4ff",
+      "tagline": "150W LED",
+      "shortDesc": "1.5m RGBW Pixel Bar with DMX512 / Art-Net / sACN control, 120° beam angle and IP20 rating. Built for concert, festival, touring production.",
+      "longDesc": "The SL-P1500 is a pixel-mappable effect fixture designed to turn a stage into a low-resolution video surface. Every LED is individually addressable, so it can be driven as a blinder, a wash, a chaser or a full matrix from the same rig. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Touring, Event.",
+      "specs": [
         {
-          "label": "LED Lifespan",
-          "value": "50,000 hours"
+          "label": "Light Source",
+          "value": "150W LED"
         },
         {
-          "label": "Strobe",
-          "value": "1–25 Hz"
+          "label": "Beam Angle",
+          "value": "120°"
         },
         {
-          "label": "Dimmer",
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / Art-Net / sACN"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBW"
+        },
+        {
+          "label": "Pixel Control",
+          "value": "Per-LED addressable (Art-Net / sACN)"
+        },
+        {
+          "label": "Dimming",
           "value": "0–100% linear, 16-bit"
         },
         {
-          "label": "Operating Temp",
-          "value": "−20°C to 50°C"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC"
-        },
-        {
-          "label": "Package",
-          "value": "4 per carton, 38 kg"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 3.9 MB)",
-          "filename": "sl-bar12-manual.pdf"
-        }
-      ],
-      "moq": 8,
-      "leadTime": "10–20 days",
-      "oemFrom": 100,
-      "warranty": "3 years",
-      "image": "assets/images/products/pixel-bamboo-matrix.jpg",
-      "images": [
-        "assets/images/products/pixel-bamboo-matrix.jpg"
-      ],
-      "imageCredit": "Rigelight"
-    },
-    {
-      "id": "sl-c1024",
-      "name": "SL-C1024 DMX Console",
-      "model": "SL-C1024",
-      "category": "controller",
-      "price": 1299,
-      "badge": null,
-      "rating": 4.9,
-      "reviews": 18,
-      "sold": "240+",
-      "icon": "▦",
-      "iconColor": "#10b981",
-      "tagline": "1024 Channel",
-      "shortDesc": "Pro 1024-channel console with 4 DMX universes, motorized faders, touch screen.",
-      "longDesc": "Professional lighting console for venues, churches and touring. 1024 channels across 4 DMX universes. 20 motorized faders + 15.6\" touch screen. Built-in fixture library with 30,000+ profiles.",
-      "specs": [
-        {
-          "label": "Channels",
-          "value": "1024 (4 universes)"
-        },
-        {
-          "label": "DMX Output",
-          "value": "4 × 5-pin XLR + Art-Net/sACN"
-        },
-        {
-          "label": "Faders",
-          "value": "20 motorized, 100mm"
-        },
-        {
-          "label": "Display",
-          "value": "15.6\" multi-touch"
-        },
-        {
-          "label": "Playback",
-          "value": "1000 cues, 500 chases"
-        },
-        {
-          "label": "Library",
-          "value": "30,000+ fixture profiles"
-        },
-        {
-          "label": "Connectivity",
-          "value": "USB, MIDI, OSC, CITP"
-        },
-        {
-          "label": "Power",
-          "value": "AC 100–240V"
-        },
-        {
-          "label": "Net Weight",
-          "value": "11 kg"
-        },
-        {
-          "label": "Warranty",
-          "value": "3 years"
-        }
-      ],
-      "features": [
-        "20 motorized 100mm faders",
-        "15.6\" multi-touch display",
-        "30,000+ fixture library built-in",
-        "4 universe Art-Net / sACN support",
-        "MIDI / OSC / CITP integration"
-      ],
-      "applications": [
-        {
-          "title": "Mid Venues",
-          "desc": "Theatres, churches, hotels"
-        },
-        {
-          "title": "Touring",
-          "desc": "Compact touring setup"
-        },
-        {
-          "title": "TV Studios",
-          "desc": "Multi-camera live shows"
-        }
-      ],
-      "fullSpecs": [
-        {
-          "label": "OS",
-          "value": "Linux-based"
-        },
-        {
-          "label": "Encoder Wheels",
-          "value": "4"
-        },
-        {
-          "label": "Master Playback",
-          "value": "10 motorized"
-        },
-        {
-          "label": "Effect Engine",
-          "value": "Yes, pixel + matrix"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC"
-        },
-        {
-          "label": "Package",
-          "value": "1 per flight case, 14 kg"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 8.5 MB)",
-          "filename": "sl-c1024-manual.pdf"
-        },
-        {
-          "label": "Offline Editor",
-          "filename": "sl-c1024-editor.zip"
-        }
-      ],
-      "moq": 1,
-      "leadTime": "15–25 days",
-      "oemFrom": 30,
-      "warranty": "3 years",
-      "image": "assets/images/products/piano-dance-floor.jpg",
-      "images": [
-        "assets/images/products/piano-dance-floor.jpg"
-      ],
-      "imageCredit": "Rigelight"
-    },
-    {
-      "id": "sl-mini192",
-      "name": "SL-Mini192 Entry Console",
-      "model": "SL-Mini192",
-      "category": "controller",
-      "price": 269,
-      "badge": null,
-      "rating": 4.5,
-      "reviews": 52,
-      "sold": "1,800+",
-      "icon": "▣",
-      "iconColor": "#10b981",
-      "tagline": "192 Channel",
-      "shortDesc": "Compact 192-channel controller, perfect for small venues and mobile DJs.",
-      "longDesc": "Entry-level 192-channel console perfect for small venues, mobile DJs and rental companies. Compact form factor fits in a single rack space. Built-in 10,000+ fixture library.",
-      "specs": [
-        {
-          "label": "Channels",
-          "value": "192 (single universe)"
-        },
-        {
-          "label": "DMX Output",
-          "value": "1 × 3-pin XLR"
-        },
-        {
-          "label": "Faders",
-          "value": "10 manual"
-        },
-        {
-          "label": "Display",
-          "value": "5\" LCD"
-        },
-        {
-          "label": "Playback",
-          "value": "200 cues, 100 chases"
-        },
-        {
-          "label": "Library",
-          "value": "10,000+ fixture profiles"
-        },
-        {
-          "label": "Connectivity",
-          "value": "USB"
-        },
-        {
-          "label": "Power",
-          "value": "AC 100–240V or 12V DC"
-        },
-        {
-          "label": "Net Weight",
-          "value": "2.2 kg"
-        },
-        {
-          "label": "Warranty",
-          "value": "2 years"
-        }
-      ],
-      "features": [
-        "Compact 1U rack design",
-        "10,000+ fixture library",
-        "Sound-active + auto programs",
-        "USB backup + offline editor",
-        "Affordable entry point"
-      ],
-      "applications": [
-        {
-          "title": "Small Venues",
-          "desc": "Bars, clubs, small churches"
-        },
-        {
-          "title": "Mobile DJs",
-          "desc": "Lightweight for transport"
-        },
-        {
-          "title": "Schools",
-          "desc": "Educational + drama use"
-        }
-      ],
-      "fullSpecs": [
-        {
-          "label": "Encoder Wheels",
-          "value": "1"
-        },
-        {
-          "label": "Memory",
-          "value": "USB backup"
-        },
-        {
-          "label": "OS",
-          "value": "Embedded Linux"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC"
-        },
-        {
-          "label": "Package",
-          "value": "10 per carton, 24 kg"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "User Manual (PDF, 2.8 MB)",
-          "filename": "sl-mini192-manual.pdf"
-        }
-      ],
-      "moq": 10,
-      "leadTime": "7–15 days stock",
-      "oemFrom": 200,
-      "warranty": "2 years",
-      "image": "assets/images/products/twinkle-star-floor.jpg",
-      "images": [
-        "assets/images/products/twinkle-star-floor.jpg"
-      ],
-      "imageCredit": "Rigelight"
-    },
-    {
-      "id": "sl-pack-4",
-      "name": "SL-Pack-4 Bar Bundle",
-      "model": "SL-Pack-4",
-      "category": "package",
-      "price": 549,
-      "badge": "Kit",
-      "rating": 4.8,
-      "reviews": 36,
-      "sold": "420+",
-      "icon": "▤",
-      "iconColor": "#ff6b00",
-      "tagline": "4× Par + Cable Kit",
-      "shortDesc": "Pre-configured 4-head par bundle with flight case, cables, DMX controller.",
-      "longDesc": "Everything you need to set up a 4-head par rig in one box. Includes 4× SL-P7 pars, 4× DMX cables, 4× power cables, 1× SL-Mini192 controller and a custom foam-lined flight case. Ready-to-go for mobile DJs and small venues.",
-      "specs": [
-        {
-          "label": "Pars Included",
-          "value": "4 × SL-P7 Compact Par"
-        },
-        {
-          "label": "Controller",
-          "value": "1 × SL-Mini192"
-        },
-        {
-          "label": "DMX Cables",
-          "value": "4 × 5m 3-pin"
-        },
-        {
-          "label": "Power Cables",
-          "value": "4 × 3m powerCON"
-        },
-        {
-          "label": "Flight Case",
-          "value": "Custom foam-lined, wheels"
-        },
-        {
-          "label": "Total Weight",
-          "value": "32 kg (in flight case)"
-        },
-        {
-          "label": "Total Power",
-          "value": "550W"
-        },
-        {
-          "label": "Setup Time",
-          "value": "< 10 minutes"
+          "label": "DMX Channels",
+          "value": "4 / 12 / 60 / 240 CH (selectable)"
         },
         {
           "label": "Voltage",
-          "value": "AC 100–240V"
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "3.5 – 14 kg (model dependent)"
         },
         {
           "label": "Warranty",
-          "value": "3 years"
+          "value": "3 years (limited)"
         }
       ],
       "features": [
-        "Everything pre-cabled and tested",
-        "Foam-lined flight case included",
-        "Plug-and-play: setup in 10 minutes",
-        "Full SL-P7 + SL-Mini192 warranty",
-        "Discounted vs buying separately"
+        "Individually addressable LEDs with pixel-mapping in Art-Net / sACN",
+        "Built-in chases, colour macros and strobe effects for standalone use",
+        "0–100% linear dimming plus 1–30 Hz electronic shutter",
+        "Rugged extruded housing with multiple rigging points",
+        "Quick-lock connectors and end-to-end alignment for seamless bars"
       ],
       "applications": [
-        {
-          "title": "Mobile DJs",
-          "desc": "All-in-one transport + setup"
-        },
-        {
-          "title": "Small Venues",
-          "desc": "Bars, pubs, restaurants"
-        },
-        {
-          "title": "Rental Stock",
-          "desc": "Ready-to-rent package"
-        }
+        "Concert",
+        "Festival",
+        "Touring",
+        "Event"
       ],
-      "fullSpecs": [
-        {
-          "label": "Case Material",
-          "value": "Plywood + aluminium edges"
-        },
-        {
-          "label": "Case Wheels",
-          "value": "4 × 100mm swivel"
-        },
-        {
-          "label": "Foam Type",
-          "value": "Custom-cut polyethylene"
-        },
-        {
-          "label": "Certifications",
-          "value": "CE, RoHS, FCC"
-        },
-        {
-          "label": "Package",
-          "value": "1 per flight case"
-        }
-      ],
-      "downloads": [
-        {
-          "label": "Bundle Spec Sheet (PDF, 1.2 MB)",
-          "filename": "sl-pack-4-spec.pdf"
-        }
-      ],
-      "moq": 1,
-      "leadTime": "10–15 days",
-      "oemFrom": 50,
-      "warranty": "3 years",
-      "image": "assets/images/products/starlit-dance-floor.jpg",
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-p1500.jpg",
       "images": [
-        "assets/images/products/starlit-dance-floor.jpg"
+        "assets/images/products/sl-p1500.jpg"
       ],
       "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-pw1940",
+      "name": "SL-PW1940 19x40W RGBW Pixel Wash",
+      "model": "SL-PW1940",
+      "category": "pixel",
+      "sub": "pixel-wash",
+      "subLabel": "Pixel Wash",
+      "family": "pixel",
+      "price": 899,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 47,
+      "sold": "400+",
+      "icon": "✦",
+      "iconColor": "#00d4ff",
+      "tagline": "760W LED",
+      "shortDesc": "19x40W RGBW Pixel Wash with DMX512 / Art-Net / sACN control, 4°–45° beam angle and IP20 rating. Built for concert, festival, club production.",
+      "longDesc": "The SL-PW1940 is a pixel-mappable effect fixture designed to turn a stage into a low-resolution video surface. Every LED is individually addressable, so it can be driven as a blinder, a wash, a chaser or a full matrix from the same rig. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Club, Event.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "760W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "4°–45°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "4°–45°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / Art-Net / sACN"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBW"
+        },
+        {
+          "label": "Pixel Control",
+          "value": "Per-LED addressable (Art-Net / sACN)"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "4 / 12 / 60 / 240 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "3.5 – 14 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "Individually addressable LEDs with pixel-mapping in Art-Net / sACN",
+        "Built-in chases, colour macros and strobe effects for standalone use",
+        "0–100% linear dimming plus 1–30 Hz electronic shutter",
+        "Rugged extruded housing with multiple rigging points",
+        "Quick-lock connectors and end-to-end alignment for seamless bars"
+      ],
+      "applications": [
+        "Concert",
+        "Festival",
+        "Club",
+        "Event"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-pw1940.png",
+      "images": [
+        "assets/images/products/sl-pw1940.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-st400",
+      "name": "SL-ST400 400W LED Strobe",
+      "model": "SL-ST400",
+      "category": "pixel",
+      "sub": "strobe",
+      "subLabel": "Strobe",
+      "family": "pixel",
+      "price": 329,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 84,
+      "sold": "300+",
+      "icon": "✦",
+      "iconColor": "#00d4ff",
+      "tagline": "400W LED",
+      "shortDesc": "400W LED Strobe with DMX512 / RDM control, 120° beam angle and IP20 rating. Built for concert, club, festival production.",
+      "longDesc": "The SL-ST400 is a pixel-mappable effect fixture designed to turn a stage into a low-resolution video surface. Every LED is individually addressable, so it can be driven as a blinder, a wash, a chaser or a full matrix from the same rig. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Club, Festival, Event.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "400W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "120°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGB"
+        },
+        {
+          "label": "Pixel Control",
+          "value": "Per-LED addressable (Art-Net / sACN)"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "4 / 12 / 60 / 240 CH (selectable)"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Net Weight",
+          "value": "3.5 – 14 kg (model dependent)"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "Individually addressable LEDs with pixel-mapping in Art-Net / sACN",
+        "Built-in chases, colour macros and strobe effects for standalone use",
+        "0–100% linear dimming plus 1–30 Hz electronic shutter",
+        "Rugged extruded housing with multiple rigging points",
+        "Quick-lock connectors and end-to-end alignment for seamless bars"
+      ],
+      "applications": [
+        "Concert",
+        "Club",
+        "Festival",
+        "Event"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-st400.jpg",
+      "images": [
+        "assets/images/products/sl-st400.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-f200",
+      "name": "SL-F200 200W LED Fresnel",
+      "model": "SL-F200",
+      "category": "theatre",
+      "sub": "fresnel",
+      "subLabel": "Fresnel",
+      "family": "theatre",
+      "price": 359,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 95,
+      "sold": "400+",
+      "icon": "◈",
+      "iconColor": "#a78bfa",
+      "tagline": "200W LED",
+      "shortDesc": "200W LED Fresnel with DMX512 / RDM control, 15°–50° beam angle and IP20 rating. Built for theatre, broadcast, corporate production.",
+      "longDesc": "The SL-F200 is a camera-friendly white-light fixture for theatre, broadcast and corporate stages where skin tones and CRI matter more than saturated colour. A manual or DMX zoom plus a flat, even field lets it cover a stage from FOH or from a side ladder. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Theatre, Broadcast, Corporate, Church.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "200W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "15°–50°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "15°–50°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "White / Tunable White"
+        },
+        {
+          "label": "CRI / TLCI",
+          "value": "Ra ≥ 95 / TLCI ≥ 93"
+        },
+        {
+          "label": "Colour Temperature",
+          "value": "3200K – 5600K (tunable on selected models)"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100%, flicker-free, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "2 / 4 / 8 CH (selectable)"
+        },
+        {
+          "label": "Noise Level",
+          "value": "< 25 dB(A) @ 1m"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "High CRI / TLCI white output with flicker-free dimming down to 0.1%",
+        "Manual or DMX zoom with a flat, even field and soft edge",
+        "Near-silent convection or low-noise fan cooling for studio use",
+        "16-bit dimming with four selectable dimmer curves",
+        "Barndoor / filter frame and gel frame included"
+      ],
+      "applications": [
+        "Theatre",
+        "Broadcast",
+        "Corporate",
+        "Church"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-f200.jpg",
+      "images": [
+        "assets/images/products/sl-f200.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-f300",
+      "name": "SL-F300 300W LED Fresnel",
+      "model": "SL-F300",
+      "category": "theatre",
+      "sub": "fresnel",
+      "subLabel": "Fresnel",
+      "family": "theatre",
+      "price": 469,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 42,
+      "sold": "700+",
+      "icon": "◈",
+      "iconColor": "#a78bfa",
+      "tagline": "300W LED",
+      "shortDesc": "300W LED Fresnel with DMX512 / RDM control, 15°–50° beam angle and IP20 rating. Built for theatre, broadcast, corporate production.",
+      "longDesc": "The SL-F300 is a camera-friendly white-light fixture for theatre, broadcast and corporate stages where skin tones and CRI matter more than saturated colour. A manual or DMX zoom plus a flat, even field lets it cover a stage from FOH or from a side ladder. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Theatre, Broadcast, Corporate, Church.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "300W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "15°–50°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "15°–50°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "White / Tunable White"
+        },
+        {
+          "label": "CRI / TLCI",
+          "value": "Ra ≥ 95 / TLCI ≥ 93"
+        },
+        {
+          "label": "Colour Temperature",
+          "value": "3200K – 5600K (tunable on selected models)"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100%, flicker-free, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "2 / 4 / 8 CH (selectable)"
+        },
+        {
+          "label": "Noise Level",
+          "value": "< 25 dB(A) @ 1m"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "High CRI / TLCI white output with flicker-free dimming down to 0.1%",
+        "Manual or DMX zoom with a flat, even field and soft edge",
+        "Near-silent convection or low-noise fan cooling for studio use",
+        "16-bit dimming with four selectable dimmer curves",
+        "Barndoor / filter frame and gel frame included"
+      ],
+      "applications": [
+        "Theatre",
+        "Broadcast",
+        "Corporate",
+        "Church"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-f300.png",
+      "images": [
+        "assets/images/products/sl-f300.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-f500",
+      "name": "SL-F500 500W LED Fresnel",
+      "model": "SL-F500",
+      "category": "theatre",
+      "sub": "fresnel",
+      "subLabel": "Fresnel",
+      "family": "theatre",
+      "price": 649,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 45,
+      "sold": "600+",
+      "icon": "◈",
+      "iconColor": "#a78bfa",
+      "tagline": "500W LED",
+      "shortDesc": "500W LED Fresnel with DMX512 / RDM control, 10°–60° beam angle and IP20 rating. Built for theatre, broadcast, corporate production.",
+      "longDesc": "The SL-F500 is a camera-friendly white-light fixture for theatre, broadcast and corporate stages where skin tones and CRI matter more than saturated colour. A manual or DMX zoom plus a flat, even field lets it cover a stage from FOH or from a side ladder. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Theatre, Broadcast, Corporate, Studio.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "500W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "10°–60°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "10°–60°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBL / Tunable White"
+        },
+        {
+          "label": "CRI / TLCI",
+          "value": "Ra ≥ 95 / TLCI ≥ 93"
+        },
+        {
+          "label": "Colour Temperature",
+          "value": "3200K – 5600K (tunable on selected models)"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100%, flicker-free, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "2 / 4 / 8 CH (selectable)"
+        },
+        {
+          "label": "Noise Level",
+          "value": "< 25 dB(A) @ 1m"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "High CRI / TLCI white output with flicker-free dimming down to 0.1%",
+        "Manual or DMX zoom with a flat, even field and soft edge",
+        "Near-silent convection or low-noise fan cooling for studio use",
+        "16-bit dimming with four selectable dimmer curves",
+        "Barndoor / filter frame and gel frame included"
+      ],
+      "applications": [
+        "Theatre",
+        "Broadcast",
+        "Corporate",
+        "Studio"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-f500.jpg",
+      "images": [
+        "assets/images/products/sl-f500.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-fs400",
+      "name": "SL-FS400 400W LED Follow Spot",
+      "model": "SL-FS400",
+      "category": "theatre",
+      "sub": "follow-spot",
+      "subLabel": "Follow Spot",
+      "family": "theatre",
+      "price": 899,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 58,
+      "sold": "1100+",
+      "icon": "◈",
+      "iconColor": "#a78bfa",
+      "tagline": "400W LED",
+      "shortDesc": "400W LED Follow Spot with DMX512 / RDM control, 5°–15° beam angle and IP20 rating. Built for theatre, concert, church production.",
+      "longDesc": "The SL-FS400 is a camera-friendly white-light fixture for theatre, broadcast and corporate stages where skin tones and CRI matter more than saturated colour. A manual or DMX zoom plus a flat, even field lets it cover a stage from FOH or from a side ladder. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Theatre, Concert, Church, Event.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "400W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "5°–15°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "5°–15°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "White"
+        },
+        {
+          "label": "CRI / TLCI",
+          "value": "Ra ≥ 95 / TLCI ≥ 93"
+        },
+        {
+          "label": "Colour Temperature",
+          "value": "3200K – 5600K (tunable on selected models)"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100%, flicker-free, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "2 / 4 / 8 CH (selectable)"
+        },
+        {
+          "label": "Noise Level",
+          "value": "< 25 dB(A) @ 1m"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "High CRI / TLCI white output with flicker-free dimming down to 0.1%",
+        "Manual or DMX zoom with a flat, even field and soft edge",
+        "Near-silent convection or low-noise fan cooling for studio use",
+        "16-bit dimming with four selectable dimmer curves",
+        "Barndoor / filter frame and gel frame included"
+      ],
+      "applications": [
+        "Theatre",
+        "Concert",
+        "Church",
+        "Event"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-fs400.jpg",
+      "images": [
+        "assets/images/products/sl-fs400.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-par1210",
+      "name": "SL-PAR1210 12x10W RGBW LED PAR",
+      "model": "SL-PAR1210",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 119,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 60,
+      "sold": "300+",
+      "icon": "✧",
+      "iconColor": "#34d399",
+      "tagline": "120W LED",
+      "shortDesc": "12x10W RGBW LED PAR with DMX512 / RDM control, 15°–60° beam angle and IP20 rating. Built for event, church, club production.",
+      "longDesc": "The SL-PAR1210 is the workhorse of the StageLumen catalogue: a silent, fanless static fixture used for stage wash, uplighting and architectural colour by rental houses, churches and event production companies. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Event, Church, Club, Theatre.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "120W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "15°–60°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "15°–60°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBW"
+        },
+        {
+          "label": "LED Quantity",
+          "value": "See configuration table"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "4 / 8 / 11 CH (selectable)"
+        },
+        {
+          "label": "Cooling",
+          "value": "Fanless convection"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "Fanless convection cooling — completely silent in operation",
+        "0–100% linear dimming with 1–25 Hz strobe and colour macros",
+        "DMX, auto-run, sound-active and master/slave modes",
+        "Double-bracket yoke for floor standing or truss mounting",
+        "Available with black, white or silver housing (OEM)"
+      ],
+      "applications": [
+        "Event",
+        "Church",
+        "Club",
+        "Theatre"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-par1210.png",
+      "images": [
+        "assets/images/products/sl-par1210.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-par1820",
+      "name": "SL-PAR1820 18x20W RGBW LED PAR",
+      "model": "SL-PAR1820",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 219,
+      "badge": null,
+      "rating": 4.8,
+      "reviews": 47,
+      "sold": "1100+",
+      "icon": "✧",
+      "iconColor": "#34d399",
+      "tagline": "360W LED",
+      "shortDesc": "18x20W RGBW LED PAR with DMX512 / RDM control, 15°–60° beam angle and IP20 rating. Built for concert, event, rental production.",
+      "longDesc": "The SL-PAR1820 is the workhorse of the StageLumen catalogue: a silent, fanless static fixture used for stage wash, uplighting and architectural colour by rental houses, churches and event production companies. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Event, Rental, Church.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "360W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "15°–60°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "15°–60°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBW"
+        },
+        {
+          "label": "LED Quantity",
+          "value": "See configuration table"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "4 / 8 / 11 CH (selectable)"
+        },
+        {
+          "label": "Cooling",
+          "value": "Fanless convection"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "Fanless convection cooling — completely silent in operation",
+        "0–100% linear dimming with 1–25 Hz strobe and colour macros",
+        "DMX, auto-run, sound-active and master/slave modes",
+        "Double-bracket yoke for floor standing or truss mounting",
+        "Available with black, white or silver housing (OEM)"
+      ],
+      "applications": [
+        "Concert",
+        "Event",
+        "Rental",
+        "Church"
+      ],
+      "priority": "Core",
+      "phase": "Launch",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-par1820.jpg",
+      "images": [
+        "assets/images/products/sl-par1820.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-parwauv",
+      "name": "SL-PARWAUV RGBAW+UV LED PAR",
+      "model": "SL-PARWAUV",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 169,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 73,
+      "sold": "1100+",
+      "icon": "✧",
+      "iconColor": "#34d399",
+      "tagline": "180W LED",
+      "shortDesc": "RGBAW+UV LED PAR with DMX512 / RDM control, 20°–60° beam angle and IP20 rating. Built for club, dj, event production.",
+      "longDesc": "The SL-PARWAUV is the workhorse of the StageLumen catalogue: a silent, fanless static fixture used for stage wash, uplighting and architectural colour by rental houses, churches and event production companies. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Club, DJ, Event, Church.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "180W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "20°–60°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "20°–60°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / RDM"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBAW+UV"
+        },
+        {
+          "label": "LED Quantity",
+          "value": "See configuration table"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "4 / 8 / 11 CH (selectable)"
+        },
+        {
+          "label": "Cooling",
+          "value": "Fanless convection"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "Fanless convection cooling — completely silent in operation",
+        "0–100% linear dimming with 1–25 Hz strobe and colour macros",
+        "DMX, auto-run, sound-active and master/slave modes",
+        "Double-bracket yoke for floor standing or truss mounting",
+        "Available with black, white or silver housing (OEM)"
+      ],
+      "applications": [
+        "Club",
+        "DJ",
+        "Event",
+        "Church"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-parwauv.png",
+      "images": [
+        "assets/images/products/sl-parwauv.png"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-bpar",
+      "name": "SL-BPAR Battery Powered Wireless PAR",
+      "model": "SL-BPAR",
+      "category": "par",
+      "sub": "battery-par",
+      "subLabel": "Battery PAR",
+      "family": "par",
+      "price": 189,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 82,
+      "sold": "500+",
+      "icon": "✧",
+      "iconColor": "#34d399",
+      "tagline": "100W LED",
+      "shortDesc": "Battery Powered Wireless PAR with DMX512 / Wireless DMX control, 15°–60° beam angle and IP65 rating. Built for wedding, event, outdoor production.",
+      "longDesc": "The SL-BPAR is the workhorse of the StageLumen catalogue: a silent, fanless static fixture used for stage wash, uplighting and architectural colour by rental houses, churches and event production companies. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Wedding, Event, Outdoor, Church.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "100W LED"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "15°–60°"
+        },
+        {
+          "label": "Zoom Range",
+          "value": "15°–60°"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP65"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / Wireless DMX"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGBAW+UV"
+        },
+        {
+          "label": "LED Quantity",
+          "value": "See configuration table"
+        },
+        {
+          "label": "Dimming",
+          "value": "0–100% linear, 16-bit"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "4 / 8 / 11 CH (selectable)"
+        },
+        {
+          "label": "Cooling",
+          "value": "Fanless convection"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "Fanless convection cooling — completely silent in operation",
+        "0–100% linear dimming with 1–25 Hz strobe and colour macros",
+        "DMX, auto-run, sound-active and master/slave modes",
+        "Double-bracket yoke for floor standing or truss mounting",
+        "Available with black, white or silver housing (OEM)"
+      ],
+      "applications": [
+        "Wedding",
+        "Event",
+        "Outdoor",
+        "Church"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-bpar.jpg",
+      "images": [
+        "assets/images/products/sl-bpar.jpg"
+      ],
+      "imageCredit": "Rigelight"
+    },
+    {
+      "id": "sl-l1",
+      "name": "SL-L1 Professional RGB Laser 1.5W",
+      "model": "SL-L1",
+      "category": "laser",
+      "sub": "laser",
+      "subLabel": "Laser",
+      "family": "laser",
+      "price": 299,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 57,
+      "sold": "300+",
+      "icon": "⚡",
+      "iconColor": "#ec4899",
+      "tagline": "1.5W Laser",
+      "shortDesc": "Professional RGB Laser 1.5W with DMX512 / Art-Net control and IP20 rating. Built for club, dj, event production.",
+      "longDesc": "The SL-L1 is a sealed RGB laser module for clubs, DJs and stage effects, supplied with the interlock, key-switch and labelling required for the target market. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Club, DJ, Event, Stage Effect.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "1.5W Laser"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / Art-Net"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGB"
+        },
+        {
+          "label": "Laser Class",
+          "value": "Class 3R / 4 (market dependent)"
+        },
+        {
+          "label": "Scanner",
+          "value": "30 kpps high-speed galvo"
+        },
+        {
+          "label": "Modulation",
+          "value": "TTL / analogue"
+        },
+        {
+          "label": "Safety",
+          "value": "Key switch, interlock, emission indicator"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "Sealed optical block with dust-proof housing",
+        "DMX, auto, sound-active and ILDA-style control modes",
+        "Key switch, remote interlock and emission indicator",
+        "Low-divergence beams for crisp aerial and audience-scan effects",
+        "Supplied with market-specific compliance documentation"
+      ],
+      "applications": [
+        "Club",
+        "DJ",
+        "Event",
+        "Stage Effect"
+      ],
+      "priority": "Core",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-l1.svg",
+      "images": [
+        "assets/images/products/sl-l1.svg"
+      ],
+      "imageCredit": null
+    },
+    {
+      "id": "sl-l2",
+      "name": "SL-L2 Professional RGB Laser 3W",
+      "model": "SL-L2",
+      "category": "laser",
+      "sub": "laser",
+      "subLabel": "Laser",
+      "family": "laser",
+      "price": 499,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 88,
+      "sold": "1000+",
+      "icon": "⚡",
+      "iconColor": "#ec4899",
+      "tagline": "3W Laser",
+      "shortDesc": "Professional RGB Laser 3W with DMX512 / Art-Net control and IP20 rating. Built for club, festival, event production.",
+      "longDesc": "The SL-L2 is a sealed RGB laser module for clubs, DJs and stage effects, supplied with the interlock, key-switch and labelling required for the target market. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Club, Festival, Event, Stage Effect.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "3W Laser"
+        },
+        {
+          "label": "IP Rating",
+          "value": "IP20"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512 / Art-Net"
+        },
+        {
+          "label": "Colour System",
+          "value": "RGB"
+        },
+        {
+          "label": "Laser Class",
+          "value": "Class 3R / 4 (market dependent)"
+        },
+        {
+          "label": "Scanner",
+          "value": "30 kpps high-speed galvo"
+        },
+        {
+          "label": "Modulation",
+          "value": "TTL / analogue"
+        },
+        {
+          "label": "Safety",
+          "value": "Key switch, interlock, emission indicator"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "Sealed optical block with dust-proof housing",
+        "DMX, auto, sound-active and ILDA-style control modes",
+        "Key switch, remote interlock and emission indicator",
+        "Low-divergence beams for crisp aerial and audience-scan effects",
+        "Supplied with market-specific compliance documentation"
+      ],
+      "applications": [
+        "Club",
+        "Festival",
+        "Event",
+        "Stage Effect"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-l2.svg",
+      "images": [
+        "assets/images/products/sl-l2.svg"
+      ],
+      "imageCredit": null
+    },
+    {
+      "id": "sl-c1",
+      "name": "SL-C1 DMX Lighting Controller",
+      "model": "SL-C1",
+      "category": "controller",
+      "sub": "controller",
+      "subLabel": "Controller",
+      "family": "controller",
+      "price": 259,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 90,
+      "sold": "1100+",
+      "icon": "▦",
+      "iconColor": "#fbbf24",
+      "tagline": "DMX512",
+      "shortDesc": "DMX Lighting Controller with DMX512 control and N/A rating. Built for small venue, event, church production.",
+      "longDesc": "The SL-C1 is the control surface that ties a StageLumen rig together, with a fixture library pre-loaded for every SKU in our catalogue and preset layouts for the most common venue sizes. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Small Venue, Event, Church, Rental.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "N/A"
+        },
+        {
+          "label": "IP Rating",
+          "value": "N/A"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "DMX512"
+        },
+        {
+          "label": "Universes",
+          "value": "4 – 16 (model dependent)"
+        },
+        {
+          "label": "Output",
+          "value": "DMX512 / Art-Net / sACN"
+        },
+        {
+          "label": "Playbacks",
+          "value": "30 faders + 60 executors"
+        },
+        {
+          "label": "Display",
+          "value": "Integrated multi-touch screen"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "Pre-loaded StageLumen fixture library — patch and go",
+        "Faders, executor buttons and touch-screen scene control",
+        "Art-Net / sACN output with multiple universes",
+        "Offline editor and show-file backup on USB",
+        "Rack-mountable with a road-ready flight-case option"
+      ],
+      "applications": [
+        "Small Venue",
+        "Event",
+        "Church",
+        "Rental"
+      ],
+      "priority": "Core",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": false,
+      "image": "assets/images/products/sl-c1.svg",
+      "images": [
+        "assets/images/products/sl-c1.svg"
+      ],
+      "imageCredit": null
+    },
+    {
+      "id": "sl-c2",
+      "name": "SL-C2 Art-Net / sACN Lighting Controller",
+      "model": "SL-C2",
+      "category": "controller",
+      "sub": "controller",
+      "subLabel": "Controller",
+      "family": "controller",
+      "price": 649,
+      "badge": "new",
+      "rating": 4.8,
+      "reviews": 24,
+      "sold": "300+",
+      "icon": "▦",
+      "iconColor": "#fbbf24",
+      "tagline": "Art-Net / sACN / DMX512",
+      "shortDesc": "Art-Net / sACN Lighting Controller with Art-Net / sACN / DMX512 control and N/A rating. Built for concert, festival, touring production.",
+      "longDesc": "The SL-C2 is the control surface that ties a StageLumen rig together, with a fixture library pre-loaded for every SKU in our catalogue and preset layouts for the most common venue sizes. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Touring, Installation.",
+      "specs": [
+        {
+          "label": "Light Source",
+          "value": "N/A"
+        },
+        {
+          "label": "IP Rating",
+          "value": "N/A"
+        },
+        {
+          "label": "Control Protocols",
+          "value": "Art-Net / sACN / DMX512"
+        },
+        {
+          "label": "Universes",
+          "value": "4 – 16 (model dependent)"
+        },
+        {
+          "label": "Output",
+          "value": "DMX512 / Art-Net / sACN"
+        },
+        {
+          "label": "Playbacks",
+          "value": "30 faders + 60 executors"
+        },
+        {
+          "label": "Display",
+          "value": "Integrated multi-touch screen"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC 100–240V, 50/60Hz"
+        },
+        {
+          "label": "Warranty",
+          "value": "3 years (limited)"
+        }
+      ],
+      "features": [
+        "Pre-loaded StageLumen fixture library — patch and go",
+        "Faders, executor buttons and touch-screen scene control",
+        "Art-Net / sACN output with multiple universes",
+        "Offline editor and show-file backup on USB",
+        "Rack-mountable with a road-ready flight-case option"
+      ],
+      "applications": [
+        "Concert",
+        "Festival",
+        "Touring",
+        "Installation"
+      ],
+      "priority": "Strategic",
+      "phase": "Phase 2",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/sl-c2.svg",
+      "images": [
+        "assets/images/products/sl-c2.svg"
+      ],
+      "imageCredit": null
     }
   ]
 }
