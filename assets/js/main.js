@@ -11,19 +11,29 @@
     });
   }
 
-  // Desktop: JS 控制 + 220ms 关闭延迟，鼠标从主菜单移到下拉时不会闪断
+  // Desktop: JS 兜底控制。CSS :hover 已保证鼠标不离开 .nav-dropdown 时菜单常驻，
+  // 这里再叠加一层「延迟关闭」，即使鼠标短暂划出（例如快速斜向移动）也不会立刻收起。
+  const CLOSE_DELAY = 450;
   dropdowns.forEach((dd) => {
-    dd.addEventListener('mouseenter', () => {
+    const open = () => {
       clearTimeout(dropdownTimer);
       if (window.innerWidth <= 960) return;
       closeDropdowns(dd);
       dd.classList.add('is-open');
-    });
-    dd.addEventListener('mouseleave', () => {
+    };
+    const scheduleClose = () => {
       if (window.innerWidth <= 960) return;
       clearTimeout(dropdownTimer);
-      dropdownTimer = setTimeout(() => dd.classList.remove('is-open'), 220);
-    });
+      dropdownTimer = setTimeout(() => dd.classList.remove('is-open'), CLOSE_DELAY);
+    };
+    dd.addEventListener('mouseenter', open);
+    dd.addEventListener('mouseleave', scheduleClose);
+    // 鼠标真正落到菜单面板上时立刻取消关闭计时
+    const menu = dd.querySelector('.dropdown-menu');
+    if (menu) {
+      menu.addEventListener('mouseenter', open);
+      menu.addEventListener('mouseleave', scheduleClose);
+    }
 
     // Mobile: 点击展开/收起（JS 绑定，避免依赖 href 结构）
     const trigger = dd.querySelector(':scope > a');
@@ -36,6 +46,18 @@
         if (!wasOpen) dd.classList.add('open', 'is-open');
       });
     }
+  });
+
+  // 鼠标移出整个 header / 点击页面空白处时收起所有下拉
+  const header = document.querySelector('.header');
+  if (header) {
+    header.addEventListener('mouseleave', () => {
+      clearTimeout(dropdownTimer);
+      dropdownTimer = setTimeout(() => closeDropdowns(), CLOSE_DELAY);
+    });
+  }
+  document.addEventListener('mouseover', (e) => {
+    if (header && !header.contains(e.target)) closeDropdowns();
   });
 
   // Mobile nav
