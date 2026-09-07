@@ -1781,6 +1781,48 @@ footer {
   color: var(--text-2);
 }
 
+/* ---------- PROJECTS PAGE — PROFESSIONAL EDITION ---------- */
+.case-meta { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+.case-meta span {
+  font-size: 0.76rem; padding: 5px 12px; border-radius: 20px;
+  border: 1px solid var(--border); background: rgba(255, 255, 255, 0.04);
+  color: var(--text-2);
+}
+.case-meta span b { color: var(--text); font-weight: 600; }
+
+.case-kpis {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1px;
+  background: var(--border);
+  border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+}
+.case-kpi { background: var(--surface); padding: 20px 14px; text-align: center; }
+.case-kpi .k { display: block; font-size: 1.4rem; font-weight: 800; color: var(--primary); line-height: 1.2; }
+.case-kpi .v { font-size: 0.73rem; color: var(--text-2); text-transform: uppercase; letter-spacing: 0.5px; }
+
+.case-quote {
+  padding: 24px 36px 28px; border-top: 1px solid var(--border);
+  background: rgba(255, 107, 0, 0.04);
+}
+.case-quote p { font-size: 0.98rem; line-height: 1.8; color: var(--text); }
+.case-quote .who {
+  display: block; margin-top: 12px; font-size: 0.82rem; color: var(--text-3);
+}
+
+.nda-note {
+  font-size: 0.86rem; color: var(--text-2); line-height: 1.75;
+  background: var(--surface); border: 1px solid var(--border);
+  border-left: 3px solid var(--primary);
+  border-radius: var(--radius); padding: 14px 18px; margin-bottom: 36px;
+}
+.nda-note strong { color: var(--text); }
+
+.region-lead {
+  display: block; margin-top: 12px; font-size: 0.82rem !important;
+  color: var(--primary) !important; font-weight: 600;
+}
+.case-thumb { position: relative; }
+.case-thumb img { width: 100%; height: 100%; object-fit: cover; }
+
 /* ========== CTA BUTTONS ========== */
 .cta-buttons {
   display: flex;
@@ -2357,6 +2399,7 @@ footer {
   .sol-trust { grid-template-columns: repeat(3, 1fr); }
   .sol-process { grid-template-columns: repeat(3, 1fr); gap: 28px; }
   .proc-step::after { display: none; }
+  .case-kpis { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 960px) {
@@ -2403,7 +2446,7 @@ footer {
   .sol-block-head { grid-template-columns: 1fr; }
   .sol-columns { grid-template-columns: 1fr; }
   .sol-col + .sol-col { border-left: none; border-top: 1px solid var(--border); }
-  .sol-intro, .sol-col, .sol-config, .sol-specs, .sol-cta-row { padding-left: 24px; padding-right: 24px; }
+  .sol-intro, .sol-col, .sol-config, .sol-specs, .sol-cta-row, .case-quote { padding-left: 24px; padding-right: 24px; }
   .sol-intro h2 { font-size: 1.5rem; }
   .sol-gallery { padding: 16px; }
   .deliver-grid { grid-template-columns: 1fr; }
@@ -2428,6 +2471,11 @@ footer {
 }
 
 @media (max-width: 600px) {
+  /* 窄屏隐藏装饰性图标，避免 header-right 溢出产生横向滚动 */
+  .header-right .header-icon { display: none; }
+  /* 4 列统计数字在窄屏会撑破栅格，改为 2 列并缩小字号 */
+  .project-stats { grid-template-columns: repeat(2, 1fr); gap: 18px 12px; padding: 22px 16px; }
+  .project-stats .stat-num { font-size: 1.55rem; }
   .solutions-grid, .projects-grid, .why-grid,
   .oem-process, .solution-pillars, .resources-grid,
   .about-intro-grid, .customize-grid, .news-grid {
