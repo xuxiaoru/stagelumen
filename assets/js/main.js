@@ -106,6 +106,19 @@
     });
   });
 
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach((item) => {
+    const q = item.querySelector('.faq-q');
+    if (!q) return;
+    q.addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      item.closest('.sol-faq')
+        ?.querySelectorAll('.faq-item.open')
+        .forEach((o) => o.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
   // Product gallery thumbs
   document.querySelectorAll('[data-gallery]').forEach((gallery) => {
     const main = gallery.querySelector('[data-main]');
