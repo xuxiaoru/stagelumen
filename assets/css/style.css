@@ -1405,6 +1405,18 @@ footer {
 .nav-dropdown {
   position: relative;
   flex-shrink: 0;
+  /* 撑满 header 高度，消除「链接底部 → header 底部」这段 hover 死区 */
+  padding: 22px 0;
+  margin: -22px 0;
+}
+/* 透明桥接区：覆盖主菜单与下拉之间的间隙，保证鼠标移动时 hover 不中断 */
+.nav-dropdown::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  height: 16px;
 }
 .dropdown-menu {
   position: absolute;
@@ -1420,7 +1432,8 @@ footer {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  /* 隐藏时延迟 0.35s，给用户时间把鼠标移入下拉 */
+  transition: opacity 0.2s ease 0.35s, transform 0.2s ease 0.35s, visibility 0.2s 0.35s;
   box-shadow: 0 16px 40px rgba(0,0,0,0.35);
   z-index: 101;
 }
@@ -1442,6 +1455,8 @@ footer {
   visibility: visible;
   pointer-events: auto;
   transform: translateY(0);
+  /* 显示时立即响应，不做延迟 */
+  transition-delay: 0s;
 }
 .dropdown-menu a {
   display: block;
@@ -1757,6 +1772,12 @@ footer {
 .meta-tags {
   font-size: 0.95rem;
   color: var(--text);
+}
+.solution-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 4px;
 }
 
 /* ========== CASE / PROJECTS PAGE ========== */
@@ -2082,6 +2103,12 @@ footer {
 }
 
 @media (max-width: 960px) {
+  /* 移动端是点击展开，不需要 hover 撑高与桥接区 */
+  .nav-dropdown {
+    padding: 0;
+    margin: 0;
+  }
+  .nav-dropdown::after { display: none; }
   .nav-dropdown .dropdown-menu {
     position: static;
     transform: none;
@@ -2098,6 +2125,7 @@ footer {
     display: none;
     min-width: auto;
     max-width: none;
+    transition: none;
   }
   .nav-dropdown.open .dropdown-menu { display: block; }
   .nav-dropdown.open > a { color: var(--text); }
