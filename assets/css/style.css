@@ -1357,9 +1357,12 @@ footer {
   .product-grid, .category-grid, .applications-grid,
   .features-grid, .testimonials-grid,
   .footer-grid, .factory-grid, .stats-grid,
+  .rfq-grid, .details-grid,
   .form-row {
     grid-template-columns: 1fr;
   }
+  /* Single column needs a tighter gap than the 60px desktop split. */
+  .rfq-grid { gap: 28px; }
   .header-right .btn { display: none; }
   .hero-stats { flex-wrap: wrap; gap: 16px; }
   .timeline-item { grid-template-columns: 1fr; }
