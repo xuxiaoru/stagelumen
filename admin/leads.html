@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Leads — StageLumen AI</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#121722; --panel2:#171d2b; --line:#232b3d;
+    --txt:#e6ebf5; --dim:#8b96ad; --brand:#ff6b00; --cyan:#00d4ff;
+    --green:#16a34a; --red:#e5484d; --amber:#f5a524;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+       font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif}
+  a{color:var(--cyan);text-decoration:none}
+  .wrap{max-width:1280px;margin:0 auto;padding:24px}
+  header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:20px}
+  h1{font-size:20px;margin:0;letter-spacing:.3px}
+  .badge{font-size:11px;padding:3px 8px;border-radius:99px;background:#1c2536;color:var(--dim);border:1px solid var(--line)}
+  .spacer{flex:1}
+  button,select,input,textarea{font:inherit;color:var(--txt);background:var(--panel2);
+       border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+  button{cursor:pointer;background:#1c2536}
+  button:hover{border-color:var(--brand)}
+  button.primary{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:18px}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
+  .card .n{font-size:24px;font-weight:700}
+  .card .l{font-size:12px;color:var(--dim);margin-top:2px}
+  .bar{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;align-items:center}
+  table{width:100%;border-collapse:collapse;background:var(--panel);
+        border:1px solid var(--line);border-radius:12px;overflow:hidden}
+  th,td{padding:10px 12px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:12px;color:var(--dim);font-weight:600;background:var(--panel2);text-transform:uppercase;letter-spacing:.5px}
+  tr:last-child td{border-bottom:none}
+  tr:hover td{background:#151b28}
+  .pill{display:inline-block;font-size:11px;padding:2px 8px;border-radius:99px;border:1px solid var(--line);background:#1c2536}
+  .pill.hot{color:#fff;background:var(--red);border-color:var(--red)}
+  .pill.warm{color:#fff;background:var(--amber);border-color:var(--amber)}
+  .pill.nurture{color:var(--dim)}
+  .pill.spam{color:#fff;background:#4b5563;border-color:#4b5563}
+  .score{font-weight:700}
+  .msg{max-width:340px;color:var(--dim);font-size:13px;
+       display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .drawer{position:fixed;top:0;right:0;height:100%;width:min(560px,100%);background:var(--panel);
+          border-left:1px solid var(--line);box-shadow:-20px 0 60px rgba(0,0,0,.5);
+          transform:translateX(100%);transition:transform .22s ease;overflow-y:auto;padding:22px;z-index:50}
+  .drawer.open{transform:none}
+  .kv{display:grid;grid-template-columns:110px 1fr;gap:6px 12px;margin:12px 0}
+  .kv dt{color:var(--dim);font-size:12px}
+  .kv dd{margin:0;word-break:break-word}
+  pre{white-space:pre-wrap;background:var(--panel2);border:1px solid var(--line);
+      border-radius:10px;padding:12px;font-size:13px;margin:8px 0 0}
+  .row-actions{display:flex;gap:6px;flex-wrap:wrap;margin-top:14px}
+  .muted{color:var(--dim)}
+  .overlay{position:fixed;inset:0;background:rgba(0,0,0,.5);display:none;z-index:40}
+  .overlay.open{display:block}
+  .empty{padding:40px;text-align:center;color:var(--dim)}
+  @media(max-width:720px){ .hide-sm{display:none} }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>StageLumen <span style="color:var(--brand)">AI</span> Leads</h1>
+    <span class="badge" id="envBadge">checking…</span>
+    <span class="spacer"></span>
+    <a class="badge" href="/admin/">← CMS</a>
+    <a class="badge" href="/products">Site ↗</a>
+    <button id="btnRefresh">Refresh</button>
+    <button id="btnToken">Token</button>
+  </header>
+
+  <div class="cards" id="cards"></div>
+
+  <div class="bar">
+    <select id="fStatus">
+      <option value="all">All status</option>
+      <option value="new">New</option>
+      <option value="contacted">Contacted</option>
+      <option value="qualified">Qualified</option>
+      <option value="quoted">Quoted</option>
+      <option value="won">Won</option>
+      <option value="lost">Lost</option>
+      <option value="spam">Spam</option>
+    </select>
+    <select id="fStage">
+      <option value="all">All stages</option>
+      <option value="hot">Hot</option>
+      <option value="warm">Warm</option>
+      <option value="nurture">Nurture</option>
+      <option value="spam">Spam</option>
+    </select>
+    <input id="fQ" placeholder="Search email / company / name…" style="min-width:220px" />
+    <button id="btnSearch" class="primary">Apply</button>
+    <span class="muted" id="count"></span>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Score</th><th>Contact</th><th>Company</th><th class="hide-sm">Country</th>
+        <th>Message</th><th class="hide-sm">Intent</th><th>Status</th><th class="hide-sm">When</th><th></th>
+      </tr>
+    </thead>
+    <tbody id="tbody"><tr><td colspan="9" class="empty">Loading…</td></tr></tbody>
+  </table>
+</div>
+
+<div class="overlay" id="overlay"></div>
+<div class="drawer" id="drawer">
+  <div style="display:flex;align-items:center;gap:10px">
+    <strong id="dTitle">Lead</strong><span class="spacer" style="flex:1"></span>
+    <button id="dClose">Close</button>
+  </div>
+  <div id="dBody"></div>
+</div>
+
+<script>
+(function(){
+  'use strict';
+  var TOKEN_KEY = 'sl_admin_token';
+  var token = localStorage.getItem(TOKEN_KEY) || '';
+  var current = null;
+
+  function $(id){ return document.getElementById(id); }
+  function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function ago(ts){
+    if(!ts) return '-';
+    var t = new Date(String(ts).replace(' ','T') + 'Z').getTime();
+    if (isNaN(t)) return String(ts).slice(0,16);
+    var d = Math.floor((Date.now()-t)/1000);
+    if (d<60) return d+'s ago';
+    if (d<3600) return Math.floor(d/60)+'m ago';
+    if (d<86400) return Math.floor(d/3600)+'h ago';
+    return Math.floor(d/86400)+'d ago';
+  }
+  function api(path, opts){
+    opts = opts || {};
+    var h = { 'content-type':'application/json' };
+    if (token) h['Authorization'] = 'Bearer ' + token;
+    return fetch(path, { method: opts.method||'GET', headers:h, body: opts.body })
+      .then(function(r){
+        if (r.status === 401) { askToken(true); throw new Error('Unauthorized'); }
+        return r.json().catch(function(){ return {}; });
+      });
+  }
+  function askToken(force){
+    if (!force && token) return;
+    var v = prompt('Enter ADMIN_TOKEN (stored in this browser only):', token || '');
+    if (v === null) return;
+    token = v.trim();
+    localStorage.setItem(TOKEN_KEY, token);
+    load();
+  }
+
+  function renderCards(s){
+    if (!s) { $('cards').innerHTML = ''; return; }
+    var items = [
+      ['Leads (' + s.days + 'd)', s.in_window, ''],
+      ['🔥 Hot', s.hot, 'color:var(--red)'],
+      ['Won', s.won, 'color:var(--green)'],
+      ['Conversion', s.conversion + '%', ''],
+      ['Avg score', s.avg_score, ''],
+      ['Spam blocked', s.spam, 'color:var(--dim)']
+    ];
+    $('cards').innerHTML = items.map(function(it){
+      return '<div class="card"><div class="n" style="' + it[2] + '">' + esc(it[1]) +
+             '</div><div class="l">' + esc(it[0]) + '</div></div>';
+    }).join('');
+  }
+
+  function render(rows){
+    var tb = $('tbody');
+    if (!rows || !rows.length){
+      tb.innerHTML = '<tr><td colspan="9" class="empty">No leads yet. Submit the RFQ form to test.</td></tr>';
+      return;
+    }
+    tb.innerHTML = rows.map(function(l){
+      var scoreColor = l.score>=70 ? 'var(--red)' : l.score>=45 ? 'var(--amber)' : 'var(--dim)';
+      return '<tr data-id="' + esc(l.id) + '">' +
+        '<td class="score" style="color:' + scoreColor + '">' + esc(l.score) + '</td>' +
+        '<td><div>' + esc(l.name || '—') + '</div><div class="muted" style="font-size:12px">' + esc(l.email) + '</div></td>' +
+        '<td>' + esc(l.company || '—') + '</td>' +
+        '<td class="hide-sm">' + esc(l.country || '—') + '</td>' +
+        '<td class="msg">' + esc(l.raw_text || '—') + '</td>' +
+        '<td class="hide-sm"><span class="pill">' + esc(l.intent || '-') + '</span></td>' +
+        '<td><span class="pill ' + esc(l.stage || '') + '">' + esc(l.status || 'new') + '</span></td>' +
+        '<td class="hide-sm muted">' + ago(l.created_at) + '</td>' +
+        '<td><button data-open="' + esc(l.id) + '">Open</button></td>' +
+      '</tr>';
+    }).join('');
+  }
+
+  function load(){
+    var qs = [];
+    var st = $('fStatus').value; if (st !== 'all') qs.push('status=' + encodeURIComponent(st));
+    var sg = $('fStage').value;  if (sg !== 'all') qs.push('stage=' + encodeURIComponent(sg));
+    var q  = $('fQ').value.trim(); if (q) qs.push('q=' + encodeURIComponent(q));
+    qs.push('limit=100');
+
+    $('tbody').innerHTML = '<tr><td colspan="9" class="empty">Loading…</td></tr>';
+
+    api('/api/leads?' + qs.join('&')).then(function(d){
+      if (!d.ok) { $('tbody').innerHTML = '<tr><td colspan="9" class="empty">' + esc(d.error||'error') + '</td></tr>'; return; }
+      render(d.leads);
+      $('count').textContent = (d.leads ? d.leads.length : 0) + ' shown / ' + (d.total||0) + ' total';
+    }).catch(function(e){
+      $('tbody').innerHTML = '<tr><td colspan="9" class="empty">' + esc(e.message) + '</td></tr>';
+    });
+
+    api('/api/stats?days=30').then(function(d){ if (d.ok) renderCards(d); }).catch(function(){});
+  }
+
+  function openLead(id){
+    api('/api/lead?id=' + encodeURIComponent(id)).then(function(d){
+      if (!d.ok) { alert(d.error || 'Failed'); return; }
+      current = d.lead;
+      var l = d.lead;
+      $('dTitle').textContent = (l.company || l.name || 'Lead') + '  ·  ' + l.score + '/100';
+      var notes = (d.notes||[]).map(function(n){
+        return '<div style="border-top:1px solid var(--line);padding:8px 0">' +
+               '<div class="muted" style="font-size:12px">' + esc(n.author) + ' · ' + ago(n.created_at) + '</div>' +
+               '<div>' + esc(n.note) + '</div></div>';
+      }).join('');
+
+      $('dBody').innerHTML =
+        '<dl class="kv">' +
+        '<dt>Name</dt><dd>' + esc(l.name||'-') + '</dd>' +
+        '<dt>Email</dt><dd><a href="mailto:' + esc(l.email) + '">' + esc(l.email) + '</a></dd>' +
+        '<dt>Phone</dt><dd>' + esc(l.phone||'-') + '</dd>' +
+        '<dt>Company</dt><dd>' + esc(l.company||'-') + '</dd>' +
+        '<dt>Country</dt><dd>' + esc(l.country||'-') + '</dd>' +
+        '<dt>Product</dt><dd>' + esc([l.product_name, l.category, l.sku].filter(Boolean).join(' / ')||'-') + '</dd>' +
+        '<dt>Qty / Budget</dt><dd>' + esc([l.qty, l.budget].filter(Boolean).join('  ·  ')||'-') + '</dd>' +
+        '<dt>Lead time</dt><dd>' + esc(l.lead_time||'-') + '</dd>' +
+        '<dt>Trade terms</dt><dd>' + esc(l.trade_terms||'-') + '</dd>' +
+        '<dt>Intent</dt><dd>' + esc(l.intent) + ' · ' + esc(l.urgency) + '</dd>' +
+        '<dt>Source</dt><dd class="muted">' + esc((l.page_url||'').slice(0,120)) + '</dd>' +
+        '<dt>Received</dt><dd>' + esc(l.created_at) + '</dd>' +
+        '</dl>' +
+        '<div><strong>Customer message</strong><pre>' + esc(l.raw_text||'-') + '</pre></div>' +
+        (l.ai_summary ? '<div><strong>AI summary</strong><pre>' + esc(l.ai_summary) + '</pre></div>' : '') +
+        (l.ai_reply ? '<div><strong>Drafted reply</strong><pre>' + esc(l.ai_reply) + '</pre>' +
+          '<button id="btnCopy" style="margin-top:8px">Copy reply</button></div>' : '') +
+        '<div><strong>Notes</strong>' + (notes || '<div class="muted">No notes yet.</div>') + '</div>' +
+        '<textarea id="noteBox" placeholder="Add a note…" style="width:100%;margin-top:10px" rows="3"></textarea>' +
+        '<div class="row-actions">' +
+          '<button data-status="contacted">Mark contacted</button>' +
+          '<button data-status="qualified">Qualified</button>' +
+          '<button data-status="quoted">Quoted</button>' +
+          '<button data-status="won" class="primary">Won</button>' +
+          '<button data-status="lost">Lost…</button>' +
+        '</div>';
+
+      $('drawer').classList.add('open');
+      $('overlay').classList.add('open');
+    }).catch(function(e){ alert(e.message); });
+  }
+
+  function patch(body){
+    if (!current) return;
+    api('/api/lead?id=' + encodeURIComponent(current.id), {
+      method:'PATCH', body: JSON.stringify(body)
+    }).then(function(d){
+      if (!d.ok) { alert(d.error || 'Update failed'); return; }
+      $('drawer').classList.remove('open');
+      $('overlay').classList.remove('open');
+      load();
+    }).catch(function(e){ alert(e.message); });
+  }
+
+  // ---- events ------------------------------------------------------------
+  $('btnRefresh').onclick = load;
+  $('btnToken').onclick = function(){ askToken(true); };
+  $('btnSearch').onclick = load;
+  $('fQ').addEventListener('keydown', function(e){ if (e.key === 'Enter') load(); });
+  $('dClose').onclick = function(){ $('drawer').classList.remove('open'); $('overlay').classList.remove('open'); };
+  $('overlay').onclick = function(){ $('drawer').classList.remove('open'); $('overlay').classList.remove('open'); };
+
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    if (!t || !t.getAttribute) return;
+
+    var openId = t.getAttribute('data-open');
+    if (openId) { openLead(openId); return; }
+
+    if (t.id === 'btnCopy' && current){
+      navigator.clipboard.writeText(current.ai_reply || '');
+      t.textContent = 'Copied ✓';
+      return;
+    }
+
+    var st = t.getAttribute('data-status');
+    if (st && current){
+      var body = { status: st, note: ($('noteBox') && $('noteBox').value.trim()) || '' };
+      if (st === 'lost'){
+        var why = prompt('Why did we lose this deal? (required — this feeds the data flywheel)');
+        if (!why) return;
+        body.lostReason = why;
+      }
+      patch(body);
+    }
+  });
+
+  api('/api/health').then(function(d){
+    var b = d.bindings || {};
+    var missing = [];
+    if (!b.DB) missing.push('DB');
+    if (!b.ADMIN_TOKEN) missing.push('ADMIN_TOKEN');
+    if (!b.AI) missing.push('AI');
+    $('envBadge').textContent = missing.length
+      ? 'missing bindings: ' + missing.join(', ')
+      : 'all systems go · ' + (d.leads||0) + ' leads';
+    $('envBadge').style.color = missing.length ? 'var(--amber)' : 'var(--green)';
+  }).catch(function(){ $('envBadge').textContent = 'api offline'; });
+
+  if (!token) askToken(false); else load();
+  load();
+})();
+</script>
+</body>
+</html>
