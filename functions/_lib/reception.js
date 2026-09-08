@@ -50,7 +50,31 @@ function qtyWeight(qtyLabel) {
   if (/50\s*[–-]\s*200/.test(q)) return 100;
   if (/10\s*[–-]\s*50/.test(q)) return 25;
   if (/1\s*[–-]\s*10/.test(q)) return 5;
-  return 0;
+  return numFromQty(q);
+}
+
+/**
+ * Fallback for free-typed quantities: "500 units", "1,200 pcs", "300".
+ * Returns 0 when nothing numeric is present.
+ */
+function numFromQty(s) {
+  const m = String(s || '').replace(/,/g, '').match(/\d+(?:\.\d+)?/);
+  if (!m) return 0;
+  const n = parseFloat(m[0]);
+  return isFinite(n) && n > 0 ? Math.round(n) : 0;
+}
+
+/**
+ * Pull an explicit quantity out of free text, e.g. "need 300pcs beam 230W".
+ * Requires a count unit right after the number so specs like "230W" are not
+ * mistaken for a quantity.
+ */
+function qtyFromText(text) {
+  const m = String(text || '').toLowerCase().replace(/,/g, '')
+    .match(/(\d+(?:\.\d+)?)\s*(?:pcs|pc|pieces|piece|units|unit|sets|set)\b/);
+  if (!m) return 0;
+  const n = parseFloat(m[1]);
+  return isFinite(n) && n > 0 ? Math.round(n) : 0;
 }
 
 function budgetWeight(budgetLabel) {
@@ -75,6 +99,10 @@ export function triage(lead) {
   const hits = {};
   for (const key of Object.keys(PATTERNS)) hits[key] = countHits(text, PATTERNS[key]);
 
+  // --- quantity -----------------------------------------------------------
+  // Dropdown bucket first; then free-typed qty; then "300pcs" inside the message.
+  const qw = qtyWeight(lead.qty) || qtyFromText(lead.raw_text);
+
   // --- intent -------------------------------------------------------------
   let intent = 'general';
   if (hits.spam > 0) intent = 'spam';
@@ -83,7 +111,7 @@ export function triage(lead) {
   else if (hits.sample > 0) intent = 'sample';
   else if (hits.catalog > 0 && hits.price === 0) intent = 'catalog';
   else if (hits.price > 0) intent = 'quote';
-  else if (qtyWeight(lead.qty) > 0) intent = 'quote';
+  else if (qw > 0) intent = 'quote';
 
   // --- urgency ------------------------------------------------------------
   let urgency = 'normal';
@@ -96,7 +124,6 @@ export function triage(lead) {
   if (!isFreeMailLocal(lead.email)) score += 22;      // business email
   if (lead.company) score += 8;
   if (lead.phone) score += 8;
-  const qw = qtyWeight(lead.qty);
   if (qw >= 1000) score += 20; else if (qw >= 400) score += 15;
   else if (qw >= 100) score += 10; else if (qw >= 25) score += 5;
   const bw = budgetWeight(lead.budget);
