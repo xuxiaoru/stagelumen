@@ -31,7 +31,7 @@ Open each HTML and replace globally:
 |------|-------------|
 | `StageLumen` | your real brand name |
 | `stagelumen.com` | your real domain |
-| `sales@stagelumen.com` | real sales email |
+| `sales@stagelumen.com` | ✅ 已全站替换为 `sales@rigelighting.com` |
 | `privacy@stagelumen.com` | real DPO email |
 | `legal@stagelumen.com` | real legal email |
 | `+86 138 0000 0000` | real phone / WhatsApp |
@@ -248,7 +248,7 @@ You can also preview changes before pushing:
 |------|-----|
 | Add a new product | Copy an existing `.html` block in `products.html` |
 | Change a brand color | Edit `--primary: #ff6b00` in `style.css` |
-| Update contact info | Find/replace `sales@stagelumen.com` across all files |
+| Update contact info | Find/replace `sales@rigelighting.com` across all files（`support@` / `privacy@` / `legal@` 仍为 `stagelumen.com`，需确认后再改） |
 | Disable cookie banner | Edit `cookie-consent.js` to auto-dismiss |
 | Add a new language | Duplicate folder, change `<html lang="en">` to target lang |
 | Enable HTTP/3 | Cloudflare → Network → Enable HTTP/3 (QUIC) |
