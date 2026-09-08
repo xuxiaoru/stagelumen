@@ -189,8 +189,12 @@
   });
 
   // Form submit (mock)
+  // NOTE: assets/js/inquiry.js sets window.SL_INQUIRY_ACTIVE and performs the
+  // real POST to /api/inquiry. This mock stays only as a fallback if that
+  // script fails to load, so the visitor never sees a dead form.
   document.querySelectorAll('form[data-ajax]').forEach((form) => {
     form.addEventListener('submit', (e) => {
+      if (window.SL_INQUIRY_ACTIVE) return;
       e.preventDefault();
       const status = form.querySelector('[data-status]');
       const submitBtn = form.querySelector('button[type="submit"]');
