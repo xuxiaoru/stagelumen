@@ -25,6 +25,8 @@
   button{cursor:pointer;background:#1c2536}
   button:hover{border-color:var(--brand)}
   button.primary{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+  button.danger{background:transparent;border-color:#7a2b2b;color:#ff8080}
+  button.danger:hover{border-color:#ff5a5a;color:#ff5a5a}
   .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin-bottom:18px}
   .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px}
   .card .n{font-size:24px;font-weight:700}
@@ -254,6 +256,7 @@
           '<button data-status="quoted">Quoted</button>' +
           '<button data-status="won" class="primary">Won</button>' +
           '<button data-status="lost">Lost…</button>' +
+          '<button id="btnDelete" class="danger" style="margin-left:auto">Delete</button>' +
         '</div>';
 
       $('drawer').classList.add('open');
@@ -291,6 +294,20 @@
     if (t.id === 'btnCopy' && current){
       navigator.clipboard.writeText(current.ai_reply || '');
       t.textContent = 'Copied ✓';
+      return;
+    }
+
+    if (t.id === 'btnDelete' && current){
+      var who = current.email || current.id;
+      if (!confirm('Permanently delete this lead?\n\n' + who + '\n\nThis cannot be undone.')) return;
+      api('/api/lead?id=' + encodeURIComponent(current.id), { method:'DELETE' })
+        .then(function(d){
+          if (!d.ok) { alert(d.error || 'Delete failed'); return; }
+          $('drawer').classList.remove('open');
+          $('overlay').classList.remove('open');
+          current = null;
+          load();
+        }).catch(function(e){ alert(e.message); });
       return;
     }
 
