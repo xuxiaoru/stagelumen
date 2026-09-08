@@ -1,6 +1,7 @@
 /**
- * GET   /api/lead?id=…   -> lead detail + notes (admin)
- * PATCH /api/lead?id=…   -> update status / stage / score / note (admin)
+ * GET    /api/lead?id=…   -> lead detail + notes (admin)
+ * PATCH  /api/lead?id=…   -> update status / stage / score / note (admin)
+ * DELETE /api/lead?id=…   -> hard-delete a lead + its notes (admin)
  *
  * A flat route (instead of /api/leads/[[id]]) keeps filenames free of square
  * brackets, which are awkward in the GitHub Contents API.
@@ -9,7 +10,7 @@
 import {
   ok, fail, handleOptions, adminAuthorized, readBody, str, uid, nowIso,
 } from '../_lib/util.js';
-import { one, updateLead, addNote, listNotes } from '../_lib/db.js';
+import { one, run, updateLead, addNote, listNotes } from '../_lib/db.js';
 import { ensureSchema } from '../_lib/schema.js';
 
 const SELECT = `SELECT l.*, c.source AS customer_source
@@ -80,6 +81,17 @@ export async function onRequest(context) {
     }
 
     return ok({ updated, id, patch });
+  }
+
+  // ---- delete ------------------------------------------------------------
+  // Hard delete, for spam and test records. Notes go with it (no FK cascade
+  // guarantee in D1 without PRAGMA, so clean up explicitly).
+  if (request.method === 'DELETE') {
+    const exists = await one(env, 'SELECT id FROM leads WHERE id = ?', [id]);
+    if (!exists) return fail('Lead not found', 404);
+    await run(env, 'DELETE FROM lead_notes WHERE lead_id = ?', [id]);
+    await run(env, 'DELETE FROM leads WHERE id = ?', [id]);
+    return ok({ deleted: true, id });
   }
 
   return fail('Method not allowed', 405);
