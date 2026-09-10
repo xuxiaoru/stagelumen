@@ -164,7 +164,7 @@ function isFreeMailLocal(email) {
 
 // ---------------------------------------------------------------- AI refine
 
-async function callAI(env, prompt, model, maxTokens) {
+export async function callAI(env, prompt, model, maxTokens) {
   if (!env || !env.AI || typeof env.AI.run !== 'function') return { text: null, model, ms: 0 };
   const t0 = Date.now();
   try {
