@@ -13,10 +13,10 @@
  *     rather than a polite error — that is still a useful reply
  */
 
-import { callAI } from './reception.js';
+import { callAI, MODELS } from './reception.js';
 import { search, renderFacts } from './kb.js';
 
-const MODEL = '@cf/meta/llama-3.1-8b-instruct';
+const MODEL = MODELS.chat;
 
 const SYSTEM = `You are a sales engineer for StageLumen, a stage lighting manufacturer in Guangzhou, China. You are chatting with a potential buyer on the company website.
 
