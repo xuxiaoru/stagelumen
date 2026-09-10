@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Content Agent — StageLumen AI</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#121722; --panel2:#171d2b; --line:#232b3d;
+    --txt:#e6ebf5; --dim:#8b96ad; --brand:#ff6b00; --cyan:#00d4ff;
+    --green:#16a34a; --red:#e5484d; --amber:#f5a524;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+       font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif}
+  a{color:var(--cyan);text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px}
+  header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+  h1{font-size:20px;margin:0;letter-spacing:.3px}
+  .spacer{flex:1}
+  button,select,input,textarea{font:inherit;color:var(--txt);background:var(--panel2);
+       border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+  button{cursor:pointer;background:#1c2536}
+  button:hover{border-color:var(--brand)}
+  button.primary{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+  button:disabled{opacity:.5;cursor:default}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:820px){.grid{grid-template-columns:1fr}}
+  .card{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px;margin-bottom:14px}
+  label{display:block;font-size:12px;color:var(--dim);margin:0 0 5px}
+  input[type=text],select,textarea{width:100%}
+  textarea{min-height:92px;resize:vertical}
+  .row{margin-bottom:12px}
+  .status{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+  .pill{font-size:11px;padding:3px 9px;border-radius:99px;border:1px solid var(--line);background:#1c2536;color:var(--dim)}
+  .pill.on{color:#fff;background:var(--green);border-color:var(--green)}
+  .pill.off{color:#fff;background:#4b5563;border-color:#4b5563}
+  pre{white-space:pre-wrap;background:var(--panel2);border:1px solid var(--line);
+      border-radius:10px;padding:12px;font-size:12.5px;margin:8px 0 0;max-height:440px;overflow:auto}
+  .muted{color:var(--dim);font-size:13px}
+  .ideas{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+  .chip{font-size:12px;padding:5px 10px;border-radius:99px;border:1px solid var(--line);
+        background:#1c2536;cursor:pointer}
+  .chip:hover{border-color:var(--brand)}
+  .warn{background:rgba(245,165,36,.1);border:1px solid rgba(245,165,36,.4);
+        border-radius:10px;padding:10px 12px;font-size:13px;margin-bottom:12px}
+  .ok{background:rgba(22,163,74,.1);border:1px solid rgba(22,163,74,.4);
+      border-radius:10px;padding:10px 12px;font-size:13px;margin-bottom:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>Content Agent</h1>
+    <span class="pill" id="stage">P1</span>
+    <div class="spacer"></div>
+    <a href="/admin/leads" class="pill">Leads</a>
+    <a href="/admin/" class="pill">CMS</a>
+  </header>
+
+  <div class="status">
+    <span class="pill" id="pillAi">AI: …</span>
+    <span class="pill" id="pillGh">GitHub: …</span>
+  </div>
+
+  <div id="notice"></div>
+
+  <div class="card">
+    <div class="grid">
+      <div class="row">
+        <label for="kind">Content type</label>
+        <select id="kind">
+          <option value="buyer-guide">Buyer's guide</option>
+          <option value="how-to">How-to / tutorial</option>
+          <option value="comparison">Comparison</option>
+          <option value="faq">FAQ page</option>
+        </select>
+      </div>
+      <div class="row">
+        <label for="words">Target words</label>
+        <select id="words">
+          <option value="600">~600</option>
+          <option value="700" selected>~700</option>
+          <option value="900">~900</option>
+          <option value="1200">~1200</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <label for="topic">Topic</label>
+      <input type="text" id="topic" placeholder="e.g. How to choose beam moving heads for a touring rig" />
+      <div class="ideas" id="ideas"></div>
+    </div>
+
+    <button class="primary" id="btnGen">Draft &amp; open pull request</button>
+    <span class="muted" id="hint" style="margin-left:10px"></span>
+  </div>
+
+  <div class="card" id="result" style="display:none">
+    <div id="resultHead"></div>
+    <pre id="md"></pre>
+    <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap">
+      <button id="btnCopy">Copy markdown</button>
+      <a id="prLink" target="_blank" rel="noopener" style="display:none">
+        <button class="primary">Open pull request</button>
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  'use strict';
+  var TOKEN_KEY = 'sl_admin_token';
+  var token = localStorage.getItem(TOKEN_KEY) || '';
+
+  function ensureToken() {
+    if (token) return true;
+    token = window.prompt('Admin token (ADMIN_TOKEN):') || '';
+    if (!token) return false;
+    localStorage.setItem(TOKEN_KEY, token);
+    return true;
+  }
+
+  function api(path, opts) {
+    opts = opts || {};
+    var headers = { 'authorization': 'Bearer ' + token };
+    if (opts.body) headers['content-type'] = 'application/json';
+    return fetch(path, {
+      method: opts.method || 'GET',
+      headers: headers,
+      body: opts.body || undefined
+    }).then(function (r) {
+      return r.json().catch(function () { return {}; }).then(function (d) {
+        if (!r.ok) throw new Error(d.error || d.message || ('HTTP ' + r.status));
+        return d;
+      });
+    });
+  }
+
+  var IDEAS = [
+    'How to choose beam moving heads for a touring rig',
+    'Beam vs spot vs wash: which fixture for which venue',
+    'IP65 outdoor fixtures: what the rating actually guarantees',
+    'DMX channel planning for a 200-fixture stage',
+    'LED par cans for churches: what to look for',
+    'Theatre profile fixtures: framing shutters explained',
+    'Rental house inventory: building a profitable fixture mix',
+    'OEM stage lighting: from brief to first container'
+  ];
+
+  var el = function (id) { return document.getElementById(id); };
+
+  IDEAS.forEach(function (t) {
+    var c = document.createElement('span');
+    c.className = 'chip';
+    c.textContent = t;
+    c.onclick = function () { el('topic').value = t; };
+    el('ideas').appendChild(c);
+  });
+
+  function setPill(node, on, label) {
+    node.className = 'pill ' + (on ? 'on' : 'off');
+    node.textContent = label;
+  }
+
+  function boot() {
+    if (!ensureToken()) {
+      el('notice').innerHTML = '<div class="warn">Admin token required.</div>';
+      return;
+    }
+    api('/api/content').then(function (d) {
+      setPill(el('pillAi'), d.ai, 'Workers AI: ' + (d.ai ? 'bound' : 'not bound'));
+      setPill(el('pillGh'), d.github, 'GitHub PR: ' + (d.github ? 'ready' : 'no token'));
+      if (!d.ai) {
+        el('notice').innerHTML =
+          '<div class="warn">' + (d.note || 'AI binding missing.') +
+          ' Drafting is disabled until it is bound — specs would be invented otherwise.</div>';
+        el('btnGen').disabled = true;
+      }
+      el('hint').textContent = d.github
+        ? 'Drafts open a pull request. Nothing goes live until you merge.'
+        : 'No GITHUB_PAT — drafts are returned for manual copy.';
+    }).catch(function (e) {
+      el('notice').innerHTML = '<div class="warn">' + (e.message || 'Status check failed') + '</div>';
+    });
+  }
+
+  el('btnGen').onclick = function () {
+    var topic = el('topic').value.trim();
+    if (!topic) { el('topic').focus(); return; }
+
+    var btn = el('btnGen');
+    btn.disabled = true;
+    btn.textContent = 'Drafting…';
+    el('notice').innerHTML = '';
+    el('result').style.display = 'none';
+
+    api('/api/content', {
+      method: 'POST',
+      body: JSON.stringify({
+        topic: topic,
+        kind: el('kind').value,
+        words: Number(el('words').value)
+      })
+    }).then(function (d) {
+      var data = d.data || d;
+      el('md').textContent = data.markdown || '';
+      var head = '<h2 style="margin:0 0 4px">' + (data.title || 'Draft') + '</h2>' +
+        '<div class="muted">' + (data.words || '?') + ' words · ' + (data.category || '') +
+        ' · ' + (data.model || '') + ' · <code>' + (data.path || '') + '</code></div>';
+      if (data.pr) {
+        head += '<div class="ok" style="margin-top:10px">Pull request #' + data.pr.number +
+                ' opened. Review the specs, then merge to publish.</div>';
+        el('prLink').href = data.pr.url;
+        el('prLink').style.display = '';
+      } else if (data.prError) {
+        head += '<div class="warn" style="margin-top:10px">Draft created, but the pull request failed: ' +
+                data.prError + '</div>';
+      } else {
+        head += '<div class="warn" style="margin-top:10px">No GITHUB_PAT set — copy the markdown below into ' +
+                (data.path || 'content/blog') + ' manually.</div>';
+      }
+      el('resultHead').innerHTML = head;
+      el('result').style.display = '';
+    }).catch(function (e) {
+      el('notice').innerHTML = '<div class="warn">' + (e.message || 'Draft failed') + '</div>';
+    }).then(function () {
+      btn.disabled = false;
+      btn.textContent = 'Draft & open pull request';
+    });
+  };
+
+  el('btnCopy').onclick = function () {
+    navigator.clipboard.writeText(el('md').textContent || '');
+    el('btnCopy').textContent = 'Copied ✓';
+    setTimeout(function () { el('btnCopy').textContent = 'Copy markdown'; }, 1600);
+  };
+
+  boot();
+})();
+</script>
+</body>
+</html>
