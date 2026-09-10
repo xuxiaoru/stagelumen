@@ -9,6 +9,46 @@ import { ok } from '../_lib/util.js';
 import { hasDb, scalar } from '../_lib/db.js';
 import { ensureSchema, schemaReady } from '../_lib/schema.js';
 
+/**
+ * Binding diagnostics.
+ *
+ * Only key NAMES are reported, never values — the repo is public and this
+ * endpoint is unauthenticated. We deliberately list (a) a fixed whitelist and
+ * (b) any env key whose name matches /ai/i, so that a mis-named binding
+ * (`ai`, `workersAI`, `AI_BINDING`, ...) still shows up without leaking
+ * unrelated secret names.
+ */
+const WHITELIST = [
+  'AI', 'DB', 'ADMIN_TOKEN', 'GITHUB_PAT', 'RESEND_API_KEY',
+  'NOTIFY_WEBHOOK', 'VECTORIZE', 'KV', 'R2', 'ASSETS',
+];
+
+function diagnose(env) {
+  const bag = env || {};
+  let names = [];
+  try { names = Object.keys(bag); } catch (_) { names = []; }
+
+  const present = WHITELIST.filter((k) => k in bag);
+  const aiLike = names.filter((k) => /ai/i.test(k) && !WHITELIST.includes(k));
+
+  const ai = bag.AI;
+  return {
+    keys_present: present,
+    ai_like_keys: aiLike,
+    ai: {
+      present: 'AI' in bag,
+      js_type: ai === null ? 'null' : Array.isArray(ai) ? 'array' : typeof ai,
+      has_run: !!(ai && typeof ai.run === 'function'),
+    },
+    env_key_count: names.length,
+    pages: {
+      branch: bag.CF_PAGES_BRANCH || null,
+      commit: bag.CF_PAGES_COMMIT_SHA ? String(bag.CF_PAGES_COMMIT_SHA).slice(0, 8) : null,
+      environment: bag.CF_PAGES_BRANCH === 'main' ? 'production' : 'preview-or-branch',
+    },
+  };
+}
+
 export async function onRequest(context) {
   const { env } = context;
   let leadCount = 0;
@@ -34,5 +74,6 @@ export async function onRequest(context) {
     schema_ready: schemaOk || schemaReady(),
     leads: leadCount,
     ready: hasDb(env) && !!env.ADMIN_TOKEN,
+    diag: diagnose(env),
   });
 }
