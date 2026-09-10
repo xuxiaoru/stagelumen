@@ -20,6 +20,24 @@ let cache = null;
 let cacheAt = 0;
 let inflight = null;
 
+/**
+ * Function words that carry no retrieval signal but match almost any answer.
+ * Without this filter "tell me about SL-B150" scores the company blurb highly
+ * because it contains "for", "our", "and" — and the actual product loses.
+ */
+const STOP = new Set([
+  'a', 'an', 'the', 'is', 'are', 'was', 'were', 'be', 'been', 'being',
+  'do', 'does', 'did', 'can', 'could', 'would', 'should', 'shall', 'will',
+  'may', 'might', 'must', 'i', 'me', 'my', 'we', 'our', 'us', 'you', 'your',
+  'it', 'its', 'of', 'to', 'in', 'on', 'at', 'for', 'with', 'about', 'tell',
+  'what', 'how', 'when', 'where', 'who', 'which', 'and', 'or', 'but', 'if',
+  'have', 'has', 'had', 'there', 'here', 'this', 'that', 'these', 'those',
+  'from', 'by', 'as', 'so', 'than', 'then', 'very', 'just', 'get', 'got',
+  'any', 'some', 'much', 'many', 'more', 'most', 'other', 'into', 'over',
+  'also', 'only', 'own', 'same', 'too', 'please', 'need', 'want', 'like',
+  'know', 'thanks', 'hi', 'hello', 'hey', 'your', 'yours',
+]);
+
 /** English words, CJK bigrams, and the raw query for phrase-level matching. */
 export function tokenize(q) {
   const s = String(q || '').toLowerCase().trim();
@@ -42,12 +60,15 @@ export function tokenize(q) {
   }
 
   // Model codes such as "sl-b150" or "slb150".
-  for (const m of s.match(/[a-z]{1,4}[- ]?\d{2,5}[a-z]?/g) || []) {
-    tokens.add(m.replace(/[- ]/g, ''));
+  // The middle [a-z]{0,2} matters: catalogue codes put a series letter before
+  // the number (SL-B150 = Beam 150W). Without it the regex only captures
+  // "b150" and the model never matches.
+  for (const m of s.match(/[a-z]{1,4}[- ]?[a-z]{0,2}\d{2,5}[a-z]?/g) || []) {
+    tokens.add(m.replace(/[^a-z0-9]/g, ''));
     tokens.add(m);
   }
 
-  return [...tokens].filter((t) => t.length >= 2).slice(0, 24);
+  return [...tokens].filter((t) => t.length >= 2 && !STOP.has(t)).slice(0, 24);
 }
 
 async function fetchJson(request, file) {
@@ -138,7 +159,23 @@ export async function search(request, query, opts = {}) {
   const tokens = tokenize(query);
 
   if (!kb.products.length && !kb.entries.length) {
-    return { products: [], entries: [], tokens, ok: false };
+    return { products: [], entries: [], tokens, ok: false, modelHit: false };
+  }
+
+  // Did the buyer name a specific model? If so the product answer must win,
+  // otherwise a generic FAQ entry can outrank it on incidental wording.
+  let modelHit = false;
+  for (const p of kb.products) {
+    const m = String(p.model || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+    if (m.length < 5) continue;
+    const hit = tokens.some((t) => {
+      const n = String(t).toLowerCase().replace(/[^a-z0-9]/g, '');
+      return n === m || n.includes(m);
+    });
+    if (hit) {
+      modelHit = true;
+      break;
+    }
   }
 
   const prods = kb.products
@@ -155,7 +192,7 @@ export async function search(request, query, opts = {}) {
     .slice(0, 3)
     .map((x) => x.e);
 
-  return { products: prods, entries, tokens, ok: true };
+  return { products: prods, entries, tokens, ok: true, modelHit };
 }
 
 /** Compact, model-ready rendering of retrieved facts. */
