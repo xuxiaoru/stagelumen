@@ -242,6 +242,36 @@ You can also preview changes before pushing:
 
 ---
 
+## Site Settings Come From The CMS (build-time injection)
+
+`content/settings.yml` is edited in Decap CMS (`/admin` → Site Settings). It is **not**
+read by the browser. A build step copies its values into the HTML:
+
+- Script: `build/inject-settings.js`
+- Cloudflare Pages → Settings → Builds & deployments → **Build configuration**
+  - **Build command:** `node build/inject-settings.js`
+  - **Build output directory:** leave empty (publishes the repo root)
+
+**To mark an element as CMS-driven**, add `data-set="<key>"` to its tag:
+
+```html
+<a data-set="email" href="mailto:sales@example.com">sales@example.com</a>
+<span data-set="phone">+86 000 0000 0000</span>
+```
+
+Supported keys: `email`, `phone`, `whatsapp` (URL scheme applied automatically),
+plus plain text keys such as `address`, `brand`, `tagline`.
+
+Rules that keep this safe:
+
+- The value already in the HTML is the **fallback**. If `settings.yml` is missing,
+  unreadable, or lacks the key, the script exits 0 and leaves the HTML untouched —
+  a broken CMS file can never take the site down.
+- Editing in the CMS creates a **pull request** (`publish_mode: editorial_workflow`).
+  The site only changes **after the PR is merged** and Pages rebuilds.
+
+---
+
 ## Common Operations Cheat Sheet
 
 | Need | How |
