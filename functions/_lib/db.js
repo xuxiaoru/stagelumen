@@ -159,6 +159,38 @@ export async function logAgentRun(env, run_) {
   );
 }
 
+/**
+ * Generic sliding counter for any keyed action (chat, content generation…).
+ *
+ * Exists because rateLimited() counts rows in `leads` by IP, which only works
+ * for the inquiry endpoint. Reusing it for other routes silently returns 0
+ * and throttles nothing.
+ *
+ * Fails open on purpose: a broken counter must never block a real customer.
+ */
+export async function hitRate(env, key, limit = 20, windowMinutes = 10) {
+  if (!hasDb(env)) return false;
+  const cutoff = new Date(Date.now() - windowMinutes * 60000)
+    .toISOString().replace('T', ' ').slice(0, 19);
+  try {
+    const row = await one(env, 'SELECT n, window_start FROM rate_limits WHERE k = ?', [key]);
+    if (!row || String(row.window_start || '') < cutoff) {
+      await run(
+        env,
+        `INSERT INTO rate_limits (k, n, window_start) VALUES (?, 1, ?)
+         ON CONFLICT(k) DO UPDATE SET n = 1, window_start = excluded.window_start`,
+        [key, now()]
+      );
+      return false;
+    }
+    const n = Number(row.n || 0) + 1;
+    await run(env, 'UPDATE rate_limits SET n = ? WHERE k = ?', [n, key]);
+    return n > limit;
+  } catch (e) {
+    return false;
+  }
+}
+
 // ------------------------------------------------------------------- notes
 
 export async function addNote(env, note) {
