@@ -317,3 +317,62 @@ Move up when:
 - Complex product configurators
 - Multi-language with auto-translation
 - Heavy dynamic content (user accounts, saved designs)
+
+---
+
+## P1 — AI Assistant & Content Agent
+
+Two capabilities were added on top of the P0 lead pipeline. Both are zero-dependency
+Pages Functions: no build step, no npm install, nothing to break the static deploy.
+
+### Files
+
+| File | Role |
+|------|------|
+| `data/kb.json` | Editorial knowledge base — 18 Q&A entries. Extracted verbatim from `about.html` / `support.html`. **Facts, not guesses.** |
+| `data/kb-products.json` | Slim search index over the catalogue (generated, 211 KB vs 487 KB full file). |
+| `build/build-kb.js` | Regenerates the product index. Run after catalogue changes. |
+| `functions/_lib/kb.js` | Keyword retrieval (English tokens + CJK bigrams + model codes). |
+| `functions/_lib/sales.js` | Sales assistant agent. |
+| `functions/api/chat.js` | `POST /api/chat` — public, rate limited 20 msg / 10 min per IP. |
+| `assets/js/assistant.js` | Floating chat widget, loaded on index / products / product-detail / rfq. |
+| `functions/_lib/content.js` | Content agent — drafts SEO posts as JSON, front matter assembled by code. |
+| `functions/_lib/github.js` | Branch → commit → pull request. Never pushes to `main`. |
+| `functions/api/content.js` | `POST /api/content` — admin only. |
+| `admin/content.html` | Drafting UI. |
+
+### Required bindings
+
+Pages → Settings → Functions:
+
+| Variable | Required for | Notes |
+|----------|--------------|-------|
+| `AI` | Both | Workers AI binding. Free tier: 10,000 requests/day. |
+| `GITHUB_PAT` | Content agent PRs | Fine-grained token, Contents + Pull requests read/write. |
+| `GITHUB_REPO` | Optional | Defaults to `xuxiaoru/stagelumen`. |
+
+After adding any binding: **Deployments → latest → Retry deployment**. Bindings only
+apply to new deployments.
+
+### Degradation ladder
+
+| Missing | Behaviour |
+|---------|-----------|
+| `AI` | Chat returns retrieved KB passages verbatim (still useful, zero hallucination). Content drafting is **disabled** — it refuses to generate rather than invent specs. |
+| `GITHUB_PAT` | Drafts are returned for manual copy instead of opening a PR. |
+| `DB` | Chat still answers; rate limiting is skipped. |
+| `kb.json` unreachable | Assistant says it does not know and routes to an RFQ. Never answers factually without context. |
+
+### Regenerating the product index
+
+```bash
+node build/build-kb.js
+```
+
+Or add it to the build command alongside the settings injection:
+
+```
+node build/inject-settings.js && node build/build-kb.js
+```
+
+Output directory stays empty — both scripts edit files in place.
