@@ -9,7 +9,7 @@
  */
 
 import { ok, fail, handleOptions, readBody, str, clientIp, uid, nowIso } from '../_lib/util.js';
-import { rateLimited, logAgentRun, hasDb } from '../_lib/db.js';
+import { hitRate, logAgentRun, hasDb } from '../_lib/db.js';
 import { answer } from '../_lib/sales.js';
 
 export async function onRequest(context) {
@@ -21,7 +21,10 @@ export async function onRequest(context) {
   const ip = clientIp(request);
 
   if (hasDb(env)) {
-    const limited = await rateLimited(env, 'chat:' + ip, 20, 10).catch(() => false);
+    // hitRate, NOT rateLimited — the latter counts rows in `leads`, so it
+    // always returned 0 here and throttled nothing. With Workers AI now bound,
+    // an unthrottled public endpoint is a free text generator for anyone.
+    const limited = await hitRate(env, 'chat:' + ip, 20, 10).catch(() => false);
     if (limited) return fail('Too many messages. Please slow down.', 429);
   }
 
