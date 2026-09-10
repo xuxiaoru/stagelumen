@@ -8,6 +8,7 @@
 import { ok } from '../_lib/util.js';
 import { hasDb, scalar } from '../_lib/db.js';
 import { ensureSchema, schemaReady } from '../_lib/schema.js';
+import { callAI } from '../_lib/reception.js';
 
 /**
  * Binding diagnostics.
@@ -50,13 +51,32 @@ function diagnose(env) {
 }
 
 export async function onRequest(context) {
-  const { env } = context;
+  const { env, request } = context;
   let leadCount = 0;
   let schemaOk = false;
 
   if (hasDb(env)) {
     schemaOk = await ensureSchema(env);
     leadCount = await scalar(env, 'SELECT COUNT(*) AS c FROM leads');
+  }
+
+  // Opt-in smoke test: `?ai=1` spends a handful of tokens to prove the AI
+  // binding actually answers, and surfaces the real error when it does not.
+  // Off by default so plain health checks stay free.
+  let smoke = null;
+  try {
+    if (new URL(request.url).searchParams.get('ai') === '1') {
+      const r = await callAI(env, 'Reply with the single word: OK', '@cf/meta/llama-3.1-8b-instruct', 8);
+      smoke = {
+        ok: !!r.text,
+        ms: r.ms,
+        sample: r.text ? String(r.text).slice(0, 40) : null,
+        error: r.error || null,
+        shape: r.shape || null,
+      };
+    }
+  } catch (e) {
+    smoke = { ok: false, error: String((e && e.message) || e).slice(0, 200) };
   }
 
   return ok({
@@ -75,5 +95,6 @@ export async function onRequest(context) {
     leads: leadCount,
     ready: hasDb(env) && !!env.ADMIN_TOKEN,
     diag: diagnose(env),
+    ai_smoke: smoke,
   });
 }
