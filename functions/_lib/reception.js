@@ -9,8 +9,38 @@
  * and gets smarter the moment `AI` is bound in the dashboard.
  */
 
-const MODEL_LIGHT = '@cf/meta/llama-3.1-8b-instruct';
-const MODEL_MID = '@cf/meta/llama-3.3-70b-instruct-fp8-fast';
+/**
+ * Model chains, tried in order. Never hard-code a single model id again.
+ *
+ * Cloudflare retires Workers AI models with no notice to our code —
+ * `@cf/meta/llama-3.1-8b-instruct` was deprecated on 2026-05-30, which
+ * silently downgraded every reply to the rules fallback for months because
+ * the failure was swallowed. A chain means the next retirement costs one
+ * extra hop instead of a total outage.
+ *
+ * Order: fastest adequate model first, stronger model as backup.
+ */
+export const MODELS = {
+  // Visitor-facing chat: latency matters more than nuance.
+  chat: [
+    '@cf/meta/llama-3.1-8b-instruct-fast',
+    '@cf/meta/llama-3.2-3b-instruct',
+    '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
+  ],
+  // Long-form generation (content factory, lead drafting).
+  heavy: [
+    '@cf/meta/llama-3.3-70b-instruct-fp8-fast',
+    '@cf/meta/llama-3.1-8b-instruct-fast',
+  ],
+  // Triage / classification only.
+  light: [
+    '@cf/meta/llama-3.2-1b-instruct',
+    '@cf/meta/llama-3.1-8b-instruct-fast',
+  ],
+};
+
+const MODEL_LIGHT = MODELS.light;
+const MODEL_MID = MODELS.heavy;
 
 const PATTERNS = {
   spam: ['casino', 'viagra', 'seo service', 'backlink', 'guest post', 'bitcoin',
@@ -180,30 +210,68 @@ export function pickText(res) {
   return null;
 }
 
+/**
+ * Models that have been retired, remembered for the lifetime of this isolate
+ * so we stop paying the round-trip on every single request.
+ */
+const DEAD_MODELS = new Set();
+
+function isRetired(msg) {
+  return /deprecat|retired|no longer|not found|unknown model|does not exist|unsupported model|unavailable/i
+    .test(String(msg || ''));
+}
+
+/**
+ * `model` may be a single id or a chain (array). Chains are tried in order and
+ * the first model that actually returns text wins.
+ */
 export async function callAI(env, prompt, model, maxTokens) {
+  const chain = (Array.isArray(model) ? model : [model]).filter(Boolean);
+
   if (!env || !env.AI || typeof env.AI.run !== 'function') {
-    return { text: null, model, ms: 0, error: 'no-binding' };
+    return { text: null, model: chain[0] || null, ms: 0, error: 'no-binding' };
   }
+
   const t0 = Date.now();
-  try {
-    const res = await env.AI.run(model, {
-      messages: [{ role: 'user', content: prompt }],
-      max_tokens: maxTokens || 500,
-      temperature: 0.3,
-    });
-    const text = pickText(res);
-    if (text == null) {
-      // Do not leak the raw payload to callers; the shape is enough to debug.
-      const shape = res && typeof res === 'object' ? Object.keys(res).slice(0, 8) : typeof res;
-      console.error('[ai] unexpected payload shape: ' + JSON.stringify(shape));
-      return { text: null, model, ms: Date.now() - t0, error: 'unexpected-shape', shape };
+  const attempts = [];
+  let lastShape = null;
+
+  for (const m of chain) {
+    if (DEAD_MODELS.has(m)) {
+      attempts.push({ model: m, error: 'skipped-known-dead' });
+      continue;
     }
-    return { text, model, ms: Date.now() - t0 };
-  } catch (e) {
-    const msg = String((e && e.message) || e || 'unknown');
-    console.error('[ai] ' + msg);
-    return { text: null, model, ms: Date.now() - t0, error: msg.slice(0, 200) };
+    try {
+      const res = await env.AI.run(m, {
+        messages: [{ role: 'user', content: prompt }],
+        max_tokens: maxTokens || 500,
+        temperature: 0.3,
+      });
+      const text = pickText(res);
+      if (text == null) {
+        lastShape = res && typeof res === 'object' ? Object.keys(res).slice(0, 8) : typeof res;
+        console.error('[ai] unexpected payload shape from ' + m + ': ' + JSON.stringify(lastShape));
+        attempts.push({ model: m, error: 'unexpected-shape' });
+        continue;
+      }
+      return { text, model: m, ms: Date.now() - t0, attempts };
+    } catch (e) {
+      const msg = String((e && e.message) || e || 'unknown');
+      console.error('[ai] ' + m + ': ' + msg);
+      if (isRetired(msg)) DEAD_MODELS.add(m);
+      attempts.push({ model: m, error: msg.slice(0, 160) });
+    }
   }
+
+  const real = attempts.find((a) => a.error && a.error !== 'skipped-known-dead');
+  return {
+    text: null,
+    model: chain[0] || null,
+    ms: Date.now() - t0,
+    error: (real && real.error) || 'all-models-failed',
+    shape: lastShape,
+    attempts,
+  };
 }
 
 function extractJson(text) {
