@@ -44,9 +44,13 @@ const NO_KB = {
  */
 function renderDirect(result, lang) {
   const parts = [];
-  for (const e of result.entries.slice(0, 2)) {
-    parts.push(String(e.a || '').trim());
-  }
+  // Only the top entry. Appending the runner-up looked helpful but produces
+  // answer salad: asking about MOQ also matched the certification entry on a
+  // stray keyword and glued two unrelated paragraphs together. One precise
+  // answer beats two noisy ones.
+  const top = result.entries[0];
+  if (top && top.a) parts.push(String(top.a).trim());
+
   if (!parts.length && result.products.length) {
     const p = result.products[0];
     parts.push(
