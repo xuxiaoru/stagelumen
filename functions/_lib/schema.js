@@ -37,6 +37,9 @@ const STATEMENTS = [
      id TEXT PRIMARY KEY, agent TEXT, model TEXT, lead_id TEXT,
      ms INTEGER, ok INTEGER DEFAULT 1, error TEXT, created_at TEXT
    )`,
+  `CREATE TABLE IF NOT EXISTS rate_limits (
+     k TEXT PRIMARY KEY, n INTEGER DEFAULT 0, window_start TEXT
+   )`,
   `CREATE INDEX IF NOT EXISTS idx_leads_created ON leads(created_at DESC)`,
   `CREATE INDEX IF NOT EXISTS idx_leads_stage   ON leads(stage)`,
   `CREATE INDEX IF NOT EXISTS idx_leads_email   ON leads(email)`,
