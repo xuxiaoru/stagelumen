@@ -139,9 +139,12 @@ function scoreEntry(e, tokens, raw) {
 
   for (const t of tokens) {
     if (tags.some((x) => x === t)) score += 30;
-    else if (tags.some((x) => x.includes(t))) score += 18;
+    // Partial tag hits are weak: "ship" matches the "shipping" tag, which made
+    // "how much to ship a container" answer with the lead-time entry. Worth
+    // something, but not enough to pass the threshold on its own.
+    else if (tags.some((x) => x.includes(t))) score += 8;
     else if (q.includes(t)) score += 12;
-    else if (a.includes(t)) score += 4;
+    else if (a.includes(t)) score += 3;
   }
   if (raw && q.includes(raw)) score += 20;
   return score;
@@ -159,7 +162,7 @@ export async function search(request, query, opts = {}) {
   const tokens = tokenize(query);
 
   if (!kb.products.length && !kb.entries.length) {
-    return { products: [], entries: [], tokens, ok: false, modelHit: false };
+    return { products: [], entries: [], tokens, ok: false, modelHit: false, topProductScore: 0 };
   }
 
   // Did the buyer name a specific model? If so the product answer must win,
@@ -178,21 +181,27 @@ export async function search(request, query, opts = {}) {
     }
   }
 
-  const prods = kb.products
+  // Minimum scores matter. An answer-body hit is only worth 4 points, so a
+  // single incidental word ("fixture") was enough to surface a totally
+  // unrelated entry. Requiring 12 means at least a question-text hit, a tag
+  // hit, or three body hits — otherwise we admit we don't know, which is
+  // always better than a confident wrong answer.
+  const prodScored = kb.products
     .map((p) => ({ p, s: scoreProduct(p, tokens, raw) }))
-    .filter((x) => x.s > 0)
-    .sort((a, b) => b.s - a.s)
-    .slice(0, topK)
-    .map((x) => x.p);
+    .filter((x) => x.s >= 10)
+    .sort((a, b) => b.s - a.s);
+
+  const prods = prodScored.slice(0, topK).map((x) => x.p);
+  const topProductScore = prodScored.length ? prodScored[0].s : 0;
 
   const entries = kb.entries
     .map((e) => ({ e, s: scoreEntry(e, tokens, raw) }))
-    .filter((x) => x.s > 0)
+    .filter((x) => x.s >= 12)
     .sort((a, b) => b.s - a.s)
     .slice(0, 3)
     .map((x) => x.e);
 
-  return { products: prods, entries, tokens, ok: true, modelHit };
+  return { products: prods, entries, tokens, ok: true, modelHit, topProductScore };
 }
 
 /** Compact, model-ready rendering of retrieved facts. */
