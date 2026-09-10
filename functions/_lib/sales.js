@@ -62,7 +62,10 @@ function renderDirect(result, lang) {
     // answer salad: asking about MOQ also matched the certification entry on a
     // stray keyword and glued two unrelated paragraphs together.
     parts.push(String(result.entries[0].a).trim());
-  } else if (result.products.length) {
+  } else if (result.products.length && (result.topProductScore || 0) >= 18) {
+    // Fall back to a product only when it is a strong match. Answering
+    // "how much to ship a container" with a moving head is worse than
+    // admitting we don't know and pointing at the RFQ form.
     parts.push(productLine(result.products[0]));
   }
 
