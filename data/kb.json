@@ -1,0 +1,133 @@
+{
+  "version": "1.0",
+  "updated": "2026-09-10",
+  "note": "Facts extracted verbatim from about.html / support.html / solutions pages. Never invent figures: if a value is not published, route the buyer to an RFQ instead of guessing.",
+  "entries": [
+    {
+      "id": "kb-lead-time",
+      "topic": "shipping",
+      "q": "What is the typical lead time?",
+      "a": "Standard products typically ship within 7-15 days from order confirmation. OEM and custom projects require additional prototyping and approval time.",
+      "tags": ["lead time", "delivery", "production", "shipping", "how long", "交期", "货期", "多久"]
+    },
+    {
+      "id": "kb-moq",
+      "topic": "order",
+      "q": "What is your MOQ (minimum order quantity)?",
+      "a": "MOQ depends on the model. Large OEM and private-label programmes are typically planned around a 1,000-unit container. For an exact MOQ per model, send an RFQ — we reply within 24 hours with pricing, MOQ and lead time.",
+      "tags": ["moq", "minimum", "order quantity", "起订量", "最小起订"]
+    },
+    {
+      "id": "kb-payment",
+      "topic": "payment",
+      "q": "What payment terms do you accept?",
+      "a": "Standard production starts with a 30% T/T deposit, with the balance settled before shipment. Exact terms for your order are confirmed on the quotation.",
+      "tags": ["payment", "t/t", "deposit", "terms", "付款", "定金", "账期"]
+    },
+    {
+      "id": "kb-certification",
+      "topic": "certification",
+      "q": "What certifications do your products carry?",
+      "a": "Standard products carry CE (European Conformity) and RoHS. FCC (US EMC), UL (US Safety), RCM (Australia), PSE (Japan) and others are available on request for qualified orders. We are audited every year by SGS, TÜV and Intertek, and our quality system is ISO 9001:2015.",
+      "tags": ["ce", "rohs", "fcc", "ul", "etl", "rcm", "pse", "certification", "compliance", "iso", "sgs", "tuv", "intertek", "认证", "证书"]
+    },
+    {
+      "id": "kb-sample",
+      "topic": "order",
+      "q": "Can I request a sample before a bulk order?",
+      "a": "Yes. Sample orders are available for evaluation. Sample pricing and lead time depend on the specific product and destination — tell us the model and your country and we will quote it.",
+      "tags": ["sample", "evaluation", "trial", "样品", "样机", "打样"]
+    },
+    {
+      "id": "kb-oem",
+      "topic": "oem",
+      "q": "Do you support OEM / ODM and private label?",
+      "a": "Yes. We build for rental inventories, touring productions, theatres, clubs, churches, event production companies and private-label brands across 60+ countries. OEM/ODM covers logo print, custom packaging, firmware branding and custom housing. Send your brief and we will confirm feasibility and tooling cost.",
+      "tags": ["oem", "odm", "private label", "custom", "logo", "packaging", "branding", "定制", "贴牌", "丝印"]
+    },
+    {
+      "id": "kb-warranty",
+      "topic": "warranty",
+      "q": "What is the warranty?",
+      "a": "Every fixture ships with a 3-year warranty after final QC.",
+      "tags": ["warranty", "guarantee", "after sales", "质保", "保修", "售后"]
+    },
+    {
+      "id": "kb-shipping-terms",
+      "topic": "shipping",
+      "q": "Which Incoterms do you support?",
+      "a": "We ship FOB, CIF and DDP. Tell us your port or door address and we will quote the most economical option.",
+      "tags": ["fob", "cif", "ddp", "incoterms", "freight", "logistics", "物流", "贸易条款", "运费"]
+    },
+    {
+      "id": "kb-dmx",
+      "topic": "support",
+      "q": "Do you provide DMX personality files and charts?",
+      "a": "Yes. We provide DMX charts and fixture personality files for major lighting consoles. Contact us with your console model and we will send the matching format.",
+      "tags": ["dmx", "personality", "fixture file", "console", "chart", "protocol", "rdm", "控台", "灯库"]
+    },
+    {
+      "id": "kb-tech-support",
+      "topic": "support",
+      "q": "How do I get technical support?",
+      "a": "Email us with your product model, purchase reference and a description of the issue. Include photos or a short video if the problem is visual — it speeds up diagnosis considerably.",
+      "tags": ["support", "technical", "help", "service", "troubleshoot", "技术支持", "维修"]
+    },
+    {
+      "id": "kb-factory",
+      "topic": "company",
+      "q": "Can I visit your factory?",
+      "a": "Yes. We host buyers at our Guangzhou facility every week — including test lab, assembly line and showroom. Book a factory visit and we will confirm the itinerary.",
+      "tags": ["factory", "visit", "audit", "guangzhou", "tour", "工厂", "验厂", "参观"]
+    },
+    {
+      "id": "kb-company",
+      "topic": "company",
+      "q": "Who are you and how long have you been manufacturing?",
+      "a": "StageLumen is a manufacturer-direct stage lighting factory in Guangzhou, China, founded in 2010. Fifteen years in, three factories and 8,000 m² of engineering space, shipping to 60+ countries. Our R&D team covers optical, mechanical, electronic and firmware design in-house.",
+      "tags": ["about", "company", "manufacturer", "founded", "guangzhou", "history", "公司", "厂家", "工厂"]
+    },
+    {
+      "id": "kb-process",
+      "topic": "order",
+      "q": "What does the ordering process look like?",
+      "a": "Four steps: 1) Inquiry & brief — submit an RFQ, we respond within 24h with pricing, MOQ and lead time. 2) Spec & sample — sign an NDA if needed, receive a PDF spec pack plus a refundable sample. 3) Production — 30% T/T deposit, weekly photo updates. 4) QC & ship — final QC report, FOB/CIF/DDP shipping and a 3-year warranty.",
+      "tags": ["process", "steps", "workflow", "how to order", "流程", "下单"]
+    },
+    {
+      "id": "kb-nda",
+      "topic": "oem",
+      "q": "Can you sign an NDA before I share my design?",
+      "a": "Yes. We sign an NDA before the spec and sample stage whenever the project requires it.",
+      "tags": ["nda", "confidential", "保密", "协议"]
+    },
+    {
+      "id": "kb-spare-parts",
+      "topic": "support",
+      "q": "Do you supply spare parts?",
+      "a": "Yes. Spare parts and replacement assemblies are available for current and recent models. Send the model number and the part you need and we will quote availability.",
+      "tags": ["spare", "parts", "replacement", "配件", "备件", "维修"]
+    },
+    {
+      "id": "kb-application",
+      "topic": "product",
+      "q": "Which fixture suits my venue?",
+      "a": "Tell us the application — concert tour, theatre, club, church, rental inventory, outdoor event or architectural installation — plus mounting height and room size, and we will recommend the right wattage, beam angle and IP rating.",
+      "tags": ["recommend", "which", "venue", "application", "choose", "选型", "推荐", "怎么选"]
+    },
+    {
+      "id": "kb-ip-rating",
+      "topic": "product",
+      "q": "Do you have IP65 outdoor fixtures?",
+      "a": "Yes. We build outdoor-rated fixtures alongside indoor IP20 models. Check the IP Rating line in each product's specification table, or tell us the installation environment and we will shortlist suitable models.",
+      "tags": ["ip65", "ip20", "outdoor", "waterproof", "weather", "防水", "户外"]
+    },
+    {
+      "id": "kb-contact",
+      "topic": "company",
+      "q": "How do I contact sales?",
+      "a": "Email sales@rigelighting.com or submit the RFQ form on this site. Inquiries are answered within 24 hours.",
+      "tags": ["contact", "email", "sales", "phone", "whatsapp", "联系", "邮箱"]
+    }
+  ]
+}
