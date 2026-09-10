@@ -42,23 +42,30 @@ const NO_KB = {
  * Degraded-but-useful reply: the raw retrieved passages. Better than an error
  * and still factually safe, because nothing is generated.
  */
+function productLine(p) {
+  return (
+    `${p.name}. ${p.shortDesc || ''}` +
+    (p.price != null ? ` List price: USD ${p.price}.` : '') +
+    ` Specs: ${p.specText || 'n/a'}.`
+  );
+}
+
 function renderDirect(result, lang) {
   const parts = [];
-  // Only the top entry. Appending the runner-up looked helpful but produces
-  // answer salad: asking about MOQ also matched the certification entry on a
-  // stray keyword and glued two unrelated paragraphs together. One precise
-  // answer beats two noisy ones.
-  const top = result.entries[0];
-  if (top && top.a) parts.push(String(top.a).trim());
 
-  if (!parts.length && result.products.length) {
-    const p = result.products[0];
-    parts.push(
-      `${p.name}. ${p.shortDesc || ''}` +
-        (p.price != null ? ` List price: USD ${p.price}.` : '') +
-        ` Specs: ${p.specText || 'n/a'}.`
-    );
+  if (result.modelHit && result.products.length) {
+    // A named model outranks generic prose — if they asked about SL-B150,
+    // answer about SL-B150, not about the company.
+    parts.push(productLine(result.products[0]));
+  } else if (result.entries[0] && result.entries[0].a) {
+    // Only the top entry. Appending the runner-up looked helpful but produces
+    // answer salad: asking about MOQ also matched the certification entry on a
+    // stray keyword and glued two unrelated paragraphs together.
+    parts.push(String(result.entries[0].a).trim());
+  } else if (result.products.length) {
+    parts.push(productLine(result.products[0]));
   }
+
   if (!parts.length) return NO_KB[lang] || NO_KB.en;
 
   const tail =
