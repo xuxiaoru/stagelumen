@@ -164,8 +164,26 @@ function isFreeMailLocal(email) {
 
 // ---------------------------------------------------------------- AI refine
 
+/**
+ * Workers AI text-generation responses are not shaped consistently across
+ * model families: some return {response}, some wrap it in {result:{response}},
+ * some use {result:{text}}. Returning a non-string here used to silently
+ * downgrade every reply to the rules fallback.
+ */
+export function pickText(res) {
+  if (!res) return null;
+  if (typeof res.response === 'string') return res.response;
+  const r = res.result;
+  if (typeof r === 'string') return r;
+  if (r && typeof r.response === 'string') return r.response;
+  if (r && typeof r.text === 'string') return r.text;
+  return null;
+}
+
 export async function callAI(env, prompt, model, maxTokens) {
-  if (!env || !env.AI || typeof env.AI.run !== 'function') return { text: null, model, ms: 0 };
+  if (!env || !env.AI || typeof env.AI.run !== 'function') {
+    return { text: null, model, ms: 0, error: 'no-binding' };
+  }
   const t0 = Date.now();
   try {
     const res = await env.AI.run(model, {
@@ -173,11 +191,18 @@ export async function callAI(env, prompt, model, maxTokens) {
       max_tokens: maxTokens || 500,
       temperature: 0.3,
     });
-    const text = (res && (res.response || res.result)) || null;
-    return { text: typeof text === 'string' ? text : null, model, ms: Date.now() - t0 };
+    const text = pickText(res);
+    if (text == null) {
+      // Do not leak the raw payload to callers; the shape is enough to debug.
+      const shape = res && typeof res === 'object' ? Object.keys(res).slice(0, 8) : typeof res;
+      console.error('[ai] unexpected payload shape: ' + JSON.stringify(shape));
+      return { text: null, model, ms: Date.now() - t0, error: 'unexpected-shape', shape };
+    }
+    return { text, model, ms: Date.now() - t0 };
   } catch (e) {
-    console.error('[ai] ' + (e && e.message ? e.message : String(e)));
-    return { text: null, model, ms: Date.now() - t0, error: String(e && e.message) };
+    const msg = String((e && e.message) || e || 'unknown');
+    console.error('[ai] ' + msg);
+    return { text: null, model, ms: Date.now() - t0, error: msg.slice(0, 200) };
   }
 }
 
