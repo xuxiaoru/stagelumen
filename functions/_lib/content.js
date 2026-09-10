@@ -13,11 +13,11 @@
  * breaking the Decap CMS collection.
  */
 
-import { callAI } from './reception.js';
+import { callAI, MODELS } from './reception.js';
 import { search, renderFacts } from './kb.js';
 import { slugify } from './github.js';
 
-const MODEL = '@cf/meta/llama-3.1-8b-instruct';
+const MODEL = MODELS.heavy;
 
 const CATEGORIES = ['How-To', 'Application', 'Customer Story', 'Product News', 'Industry'];
 
