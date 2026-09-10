@@ -190,8 +190,15 @@
     payload.lang = navigator.language && navigator.language.indexOf('zh') === 0 ? 'zh' : 'en';
     payload.utm = JSON.stringify(utm);
     payload.sku = payload.sku || currentSku();
-    var h1 = document.querySelector('h1');
-    if (h1) payload.productName = String(h1.textContent || '').trim().slice(0, 160);
+
+    // Only a product page has a product name in its <h1>. On /rfq the <h1> is
+    // the page title ("Get a tailored quote"), which used to be saved as if it
+    // were a product — polluting the lead record with nonsense.
+    var onProductPage = /product-detail/.test(location.pathname) || !!payload.sku;
+    if (onProductPage) {
+      var h1 = document.querySelector('h1');
+      if (h1) payload.productName = String(h1.textContent || '').trim().slice(0, 160);
+    }
     payload.hp = '';
 
     addHoneypot(form);
