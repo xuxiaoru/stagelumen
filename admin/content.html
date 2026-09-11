@@ -47,10 +47,25 @@
         border-radius:10px;padding:10px 12px;font-size:13px;margin-bottom:12px}
   .ok{background:rgba(22,163,74,.1);border:1px solid rgba(22,163,74,.4);
       border-radius:10px;padding:10px 12px;font-size:13px;margin-bottom:12px}
+
+  .anav{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:18px;
+        padding:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+  .anav a{padding:6px 11px;border-radius:7px;background:#1c2536;border:1px solid var(--line);
+          color:var(--dim);font-size:13px}
+  .anav a:hover{border-color:var(--brand);color:var(--txt)}
+  .anav a.on{background:rgba(255,107,0,.15);border-color:var(--brand);color:var(--brand);font-weight:600}
+  .anav .spacer{flex:1}
+  .anav .home{background:transparent;border-color:transparent}
 </style>
 </head>
 <body>
 <div class="wrap">
+  <nav class="anav">
+    <a href="index.html" class="">Admin</a><a href="cms.html" class="">CMS Editor</a><a href="leads.html" class="">Lead Inbox</a><a href="content.html" class="on">Content Factory</a><a href="products.html" class="">Product Importer</a>
+    <span class="spacer"></span>
+    <a class="home" href="/">&larr; Back to site</a>
+  </nav>
+
   <header>
     <h1>Content Agent</h1>
     <span class="pill" id="stage">P1</span>
