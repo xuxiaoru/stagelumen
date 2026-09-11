@@ -14,6 +14,18 @@ import { triage, refineWithAI, templateReply } from '../_lib/reception.js';
 import { notifyAll, sendAutoReplyVerbose } from '../_lib/notify.js';
 
 export async function onRequest(context) {
+  // Nothing below may escape as an unhandled exception: the lead is usually
+  // already persisted by then, so a throw would mean "saved but visitor sees
+  // an error page". Log the stack, answer with JSON, keep the pipeline up.
+  try {
+    return await handleInquiry(context);
+  } catch (e) {
+    console.error('[inquiry] unhandled: ' + ((e && e.stack) || e));
+    return fail('Inquiry processing failed: ' + String((e && e.message) || e).slice(0, 160), 500);
+  }
+}
+
+async function handleInquiry(context) {
   const { request, env } = context;
   if (request.method === 'OPTIONS') return handleOptions();
   if (request.method !== 'POST') return fail('Method not allowed', 405);
