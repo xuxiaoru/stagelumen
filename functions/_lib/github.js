@@ -100,9 +100,11 @@ export async function createBranch(env, name, fromSha) {
   return name;
 }
 
-/** Creates or updates a single file. `sha` is required only for updates. */
-export async function putFile(env, path, content, branch, message) {
+/** Creates or updates a single file. `sha` is REQUIRED when the file exists —
+ *  GitHub rejects an update without it ("sha wasn't supplied"). */
+export async function putFile(env, path, content, branch, message, sha) {
   const body = { message, content: b64(content), branch };
+  if (sha) body.sha = sha;
   const res = await fetch(API + `/repos/${repo(env)}/contents/${encodeURI(path)}`, {
     method: 'PUT',
     headers: headers(env),
@@ -114,8 +116,9 @@ export async function putFile(env, path, content, branch, message) {
 }
 
 /** Same as putFile but takes already-base64 content (images, binaries). */
-export async function putBinary(env, path, base64, branch, message) {
+export async function putBinary(env, path, base64, branch, message, sha) {
   const body = { message, content: String(base64).replace(/\s/g, ''), branch };
+  if (sha) body.sha = sha;
   const res = await fetch(API + `/repos/${repo(env)}/contents/${encodeURI(path)}`, {
     method: 'PUT',
     headers: headers(env),
