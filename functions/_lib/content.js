@@ -85,6 +85,40 @@ function yamlFrontMatter(f) {
   return lines.join('\n');
 }
 
+/**
+ * Long markdown bodies break naive JSON parsing two ways: models emit real
+ * newlines inside a string (illegal in JSON), and a token cap cuts the object
+ * off mid-string. Walk the text once, escaping what is inside quotes and
+ * closing whatever is left open.
+ */
+function repairJson(s) {
+  let out = '';
+  let inStr = false;
+  let esc = false;
+  let depth = 0;
+
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (esc) { out += c; esc = false; continue; }
+    if (c === '\\') { out += c; esc = true; continue; }
+    if (c === '"') { inStr = !inStr; out += c; continue; }
+    if (inStr) {
+      if (c === '\n') { out += '\\n'; continue; }
+      if (c === '\r') { out += '\\n'; if (s[i + 1] === '\n') i++; continue; }
+      out += c;
+      continue;
+    }
+    if (c === '{' || c === '[') depth++;
+    if (c === '}' || c === ']') depth--;
+    out += c;
+  }
+
+  if (inStr) out += '"';
+  out = out.replace(/,\s*$/, '');
+  for (let d = 0; d < depth; d++) out += '}';
+  return out;
+}
+
 function extractJson(text) {
   if (!text) return null;
   let t = String(text).trim();
@@ -94,14 +128,15 @@ function extractJson(text) {
 
   const s = t.indexOf('{');
   const e = t.lastIndexOf('}');
-  if (s === -1 || e <= s) return null;
+  if (s === -1) return null;
 
   const attempts = [];
-  attempts.push(t.slice(s, e + 1));
-  attempts.push(t.slice(s, e + 1).replace(/,\s*}/g, '}'));
-  // A truncated stream stops mid-string or mid-object; close it and retry.
-  attempts.push(t.slice(s).replace(/,\s*$/, '') + '}');
-  attempts.push(t.slice(s).replace(/,\s*$/, '') + '"}');
+  if (e > s) {
+    attempts.push(t.slice(s, e + 1));
+    attempts.push(t.slice(s, e + 1).replace(/,\s*}/g, '}'));
+  }
+  attempts.push(repairJson(t.slice(s, e > s ? e + 1 : undefined)));
+  attempts.push(repairJson(t.slice(s)));
 
   for (const cand of attempts) {
     try {
@@ -158,8 +193,14 @@ export async function draft(env, request, opts) {
   }
 
   if (!parsed) {
-    // Without this the next failure is as opaque as the last one.
-    const snippet = String(raw).replace(/\s+/g, ' ').slice(0, 200);
+    // Without this the next failure is as opaque as the last one. Truncation
+    // happens at the end, so the tail matters more than the head.
+    const flat = String(raw).replace(/\s+/g, ' ');
+    const snippet =
+      'model=' + (ai.model || '?') +
+      ' len=' + flat.length +
+      ' head[' + flat.slice(0, 120) + ']' +
+      ' tail[' + flat.slice(-160) + ']';
     return {
       ok: false,
       error:
