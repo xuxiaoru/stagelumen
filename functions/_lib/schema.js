@@ -6,7 +6,7 @@
  * This removes the "remember to run wrangler d1 migrations" step entirely.
  */
 
-import { run, one } from './db.js';
+import { run, one, all } from './db.js';
 
 const STATEMENTS = [
   `CREATE TABLE IF NOT EXISTS customers (
@@ -28,6 +28,7 @@ const STATEMENTS = [
      status TEXT DEFAULT 'new', lost_reason TEXT,
      page_url TEXT, referrer TEXT, utm TEXT, ip TEXT, ua TEXT,
      notified INTEGER DEFAULT 0,
+     autoreply_sent INTEGER DEFAULT 0,
      created_at TEXT, updated_at TEXT
    )`,
   `CREATE TABLE IF NOT EXISTS lead_notes (
@@ -48,6 +49,38 @@ const STATEMENTS = [
 ];
 
 let ready = false;
+let colsChecked = false;
+
+/**
+ * Additive column migration.
+ *
+ * CREATE TABLE IF NOT EXISTS cannot add a column to a table that already
+ * exists, so every deploy that introduces a field must ship an explicit
+ * ALTER here or the INSERT silently starts failing in production.
+ * SQLite ALTER is O(1) and idempotent-safe because we check against PRAGMA.
+ */
+const COLUMN_MIGRATIONS = [
+  { column: 'autoreply_sent', ddl: 'ALTER TABLE leads ADD COLUMN autoreply_sent INTEGER DEFAULT 0' },
+];
+
+async function ensureColumns(env) {
+  if (colsChecked) return true;
+  try {
+    const cols = await all(env, 'PRAGMA table_info(leads)');
+    const names = (cols || []).map((c) => c.name);
+    for (const m of COLUMN_MIGRATIONS) {
+      if (names.indexOf(m.column) === -1) {
+        await run(env, m.ddl);
+        console.log('[schema] added column leads.' + m.column);
+      }
+    }
+    colsChecked = true;
+    return true;
+  } catch (e) {
+    console.error('[schema.columns] ' + (e && e.message ? e.message : String(e)));
+    return false;
+  }
+}
 
 export async function ensureSchema(env) {
   if (ready) return true;
@@ -59,6 +92,7 @@ export async function ensureSchema(env) {
     );
     if (row) {
       ready = true;
+      await ensureColumns(env);
       return true;
     }
     for (const sql of STATEMENTS) await run(env, sql);
