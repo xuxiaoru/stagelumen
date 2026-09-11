@@ -4,6 +4,7 @@ slug: "ip65-outdoor-stage-lights-buyer-guide"
 date: "2026-09-11T09:00:00.000Z"
 author: "StageLumen Team"
 category: "Buyer's Guide"
+image: "assets/images/products/sl-ip-b400.png"
 excerpt: "A practical checklist for specifying weatherproof moving heads and washes — IP ratings, beam angle, control protocol, salt-spray resistance and power, with real fixture data."
 tags:
   - IP65
