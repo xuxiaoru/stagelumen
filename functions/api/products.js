@@ -240,7 +240,8 @@ export async function onRequestPost(context) {
       CATALOGUE,
       JSON.stringify(next, null, 2),
       branch,
-      `Update product catalogue (${created} new, ${updated} updated) — ${stamp}`
+      `Update product catalogue (${created} new, ${updated} updated) — ${stamp}`,
+      current.sha
     );
 
     const pr = await openPr(env, {
