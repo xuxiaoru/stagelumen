@@ -70,4 +70,18 @@
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+<!-- SITEMAP:BEGIN -->
+  <url>
+    <loc>https://stagelumen.pages.dev/content/blog/ip65-outdoor-stage-lights-buyer-guide</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://stagelumen.pages.dev/content/blog/how-to-set-up-dmx-lighting</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- SITEMAP:END -->
 </urlset>
