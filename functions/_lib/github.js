@@ -129,6 +129,28 @@ export async function putBinary(env, path, base64, branch, message, sha) {
   return data;
 }
 
+/** Delete a file. GitHub requires the blob sha, otherwise it 404s/409s. */
+export async function deleteFile(env, path, branch, message, sha) {
+  return gh(env, `/repos/${repo(env)}/contents/${encodeURI(path)}`, {
+    method: 'DELETE',
+    body: JSON.stringify({ message, sha, branch }),
+  });
+}
+
+/** List a directory. Returns [] when the path does not exist. */
+export async function listDir(env, path, branch = 'main') {
+  try {
+    const r = await gh(
+      env,
+      `/repos/${repo(env)}/contents/${path}?ref=${encodeURIComponent(branch)}`
+    );
+    return Array.isArray(r) ? r : [];
+  } catch (e) {
+    if (/404|Not Found/i.test(String(e && e.message))) return [];
+    throw e;
+  }
+}
+
 export async function openPr(env, { title, body, head, base = 'main' }) {
   const pr = await gh(env, `/repos/${repo(env)}/pulls`, {
     method: 'POST',
