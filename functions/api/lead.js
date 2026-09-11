@@ -12,7 +12,7 @@ import {
 } from '../_lib/util.js';
 import { one, run, updateLead, addNote, listNotes } from '../_lib/db.js';
 import { ensureSchema } from '../_lib/schema.js';
-import { notifyAll } from '../_lib/notify.js';
+import { notifyAll, sendAutoReplyVerbose } from '../_lib/notify.js';
 
 const SELECT = `SELECT l.*, c.source AS customer_source
                 FROM leads l LEFT JOIN customers c ON c.id = l.customer_id`;
@@ -62,6 +62,18 @@ export async function onRequest(context) {
         (notifyResult.github ? 4 : 0);
     }
 
+    // Send / re-send the acknowledgement to the customer, using whatever text
+    // is currently stored in ai_reply (so an edited draft can be reviewed here
+    // first). Refuses to double-send unless explicitly forced.
+    let autoReplyResult = null;
+    if (body.autoReply) {
+      if (lead.autoreply_sent === 1 && !body.force) {
+        return fail('Already acknowledged — pass force:true to send again', 409);
+      }
+      autoReplyResult = await sendAutoReplyVerbose(env, lead);
+      patch.autoreply_sent = autoReplyResult.ok ? 1 : 2;
+    }
+
     if (body.status) {
       const v = String(body.status);
       if (STATUSES.indexOf(v) === -1) return fail('Invalid status', 422);
@@ -96,7 +108,7 @@ export async function onRequest(context) {
       });
     }
 
-    return ok({ updated, id, patch, notify: notifyResult });
+    return ok({ updated, id, patch, notify: notifyResult, auto_reply: autoReplyResult });
   }
 
   // ---- delete ------------------------------------------------------------
