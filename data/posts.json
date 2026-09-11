@@ -1,7 +1,56 @@
 {
-  "generated": "2026-09-11T03:41:04.804Z",
-  "count": 1,
+  "generated": "2026-09-11T14:34:38.881Z",
+  "count": 4,
   "posts": [
+    {
+      "title": "Beam vs Wash vs Hybrid Moving Heads: How to Choose",
+      "slug": "beam-vs-wash-vs-hybrid-moving-heads",
+      "date": "2026-09-11T14:20:00.000Z",
+      "datePretty": "September 11, 2026",
+      "category": "Buyer's Guide",
+      "excerpt": "Beam, wash and hybrid moving heads compared on the only numbers that matter — beam angle, colour system and what each type costs you in practice.",
+      "tags": [
+        "Moving Head",
+        "Beam",
+        "Wash",
+        "Hybrid",
+        "Buyer's Guide"
+      ],
+      "url": "content/blog/beam-vs-wash-vs-hybrid-moving-heads.html",
+      "image": "assets/images/products/sl-h800.jpg"
+    },
+    {
+      "title": "OEM Stage Lighting: A Buyer's Guide",
+      "slug": "oem-stage-lighting-a-buyers-guide-ptfr",
+      "date": "2026-09-11T13:52:30.739Z",
+      "datePretty": "September 11, 2026",
+      "category": "How-To",
+      "excerpt": "Choose the right fixture type with our selection criteria",
+      "tags": [
+        "stage lighting",
+        "OEM",
+        "lighting control"
+      ],
+      "url": "content/blog/oem-stage-lighting-a-buyers-guide-ptfr.html",
+      "image": ""
+    },
+    {
+      "title": "How to Choose IP65 Outdoor Stage Lights for Festivals and Seaside Venues",
+      "slug": "ip65-outdoor-stage-lights-buyer-guide",
+      "date": "2026-09-11T09:00:00.000Z",
+      "datePretty": "September 11, 2026",
+      "category": "Buyer's Guide",
+      "excerpt": "A practical checklist for specifying weatherproof moving heads and washes — IP ratings, beam angle, control protocol, salt-spray resistance and power, with real fixture data.",
+      "tags": [
+        "IP65",
+        "Outdoor",
+        "Moving Head",
+        "Weatherproof",
+        "Buyer's Guide"
+      ],
+      "url": "content/blog/ip65-outdoor-stage-lights-buyer-guide.html",
+      "image": "assets/images/products/sl-ip-b400.png"
+    },
     {
       "title": "How to Set Up DMX Lighting for a Small Venue (Step-by-Step)",
       "slug": "how-to-set-up-dmx-lighting",
@@ -15,7 +64,8 @@
         "Small Venue",
         "Lighting Design"
       ],
-      "url": "content/blog/how-to-set-up-dmx-lighting.html"
+      "url": "content/blog/how-to-set-up-dmx-lighting.html",
+      "image": "assets/images/products/beam-moving-head.jpg"
     }
   ]
 }
