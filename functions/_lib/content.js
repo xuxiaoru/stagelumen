@@ -157,8 +157,69 @@ function extractJson(text) {
 }
 
 /**
+ * Cheap sanity pass over a draft before it reaches a human.
+ *
+ * This will not catch a subtle spec error, but it reliably catches the three
+ * failure modes observed in production: invented model numbers, domain
+ * howlers (IP20 outdoors, fixtures "outputting" DMX), and banned filler.
+ * The same traps live in build/verify-blog.js — keep the two in sync.
+ */
+function factCheck(body, facts, products) {
+  const problems = [];
+  const allowed = new Set();
+
+  for (const p of products) {
+    if (p && p.model) allowed.add(String(p.model).toUpperCase());
+  }
+  for (const m of String(facts || '').match(/\bSL-[A-Z0-9][A-Z0-9-]{1,14}/g) || []) {
+    allowed.add(m.toUpperCase());
+  }
+
+  const cited = new Set((body.match(/\bSL-[A-Z0-9][A-Z0-9-]{1,14}/g) || []).map((m) => m.toUpperCase()));
+  for (const m of cited) {
+    if (allowed.size && !allowed.has(m)) {
+      problems.push({ level: 'error', msg: 'Cites model "' + m + '" which is not in the supplied facts.' });
+    }
+  }
+
+  const TRAPS = [
+    [/IP\s?20[^0-9][^.]{0,80}\b(outdoor|outside|weather|rain|open[- ]air)\b/i,
+      'IP20 is an indoor rating — not for outdoor use.'],
+    [/\b16[- ]bit\b[^.]{0,120}\b(one|1)\s+DMX\s+channel/i,
+      '16-bit uses two DMX channels (coarse + fine), not one.'],
+    [/\bDMX\s*(512)?\s+(output|out)\b/i,
+      'Fixtures receive DMX; say "DMX input", not output.'],
+    [/\buniverses?\s+(a|per|each|the)\s+fixture/i,
+      'Universes belong to consoles, not fixtures.'],
+  ];
+  for (const [re, msg] of TRAPS) {
+    if (re.test(body)) problems.push({ level: 'error', msg });
+  }
+
+  const FILLER = [
+    /\bin\s+today'?s\s+(fast[- ]paced|competitive|ever[- ]evolving)\b/i,
+    /\bin\s+conclusion\b/i,
+    /\bwhen\s+it\s+comes\s+to\b/i,
+  ];
+  for (const re of FILLER) {
+    const hit = body.match(re);
+    if (hit) problems.push({ level: 'warn', msg: 'Banned filler phrase: "' + hit[0] + '"' });
+  }
+
+  if (/\$\s?\d{2,5}/.test(body)) {
+    problems.push({ level: 'warn', msg: 'Hardcoded price detected — prices go stale, link to the RFQ instead.' });
+  }
+  if (!cited.size) {
+    problems.push({ level: 'warn', msg: 'No model numbers cited — the post cannot sell anything.' });
+  }
+
+  return problems;
+}
+
+/**
  * @returns {Promise<{ok:boolean, error?:string, path?:string, markdown?:string,
- *                    title?:string, slug?:string, model?:string, sources?:Array}>}
+ *                    title?:string, slug?:string, model?:string, sources?:Array,
+ *                    checks?:Array}>}
  */
 export async function draft(env, request, opts) {
   const kind = KIND_BRIEF[opts.kind] ? opts.kind : 'buyer-guide';
@@ -216,6 +277,8 @@ export async function draft(env, request, opts) {
     };
   }
 
+  const checks = factCheck(String(parsed.body), facts, result.products || []);
+
   const category = CATEGORIES.indexOf(parsed.category) !== -1 ? parsed.category : 'Application';
   const slug = slugify(parsed.title);
   const date = new Date().toISOString();
@@ -244,5 +307,6 @@ export async function draft(env, request, opts) {
       ...result.products.slice(0, 5).map((p) => ({ type: 'product', model: p.model })),
     ],
     words: String(parsed.body).split(/\s+/).length,
+    checks,
   };
 }
