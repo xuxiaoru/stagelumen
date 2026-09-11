@@ -49,6 +49,27 @@ async function gh(env, path, opts = {}) {
   return data;
 }
 
+/**
+ * Read-only credential check. A PAT can be present and still be wrong — the
+ * only way to know is to ask GitHub. Safe to call from a diagnostic endpoint:
+ * the repo is public, so nothing here is a secret.
+ */
+export async function ghProbe(env) {
+  if (!ghConfigured(env)) return { ok: false, error: 'GITHUB_PAT is not set' };
+  try {
+    const r = await gh(env, `/repos/${repo(env)}`);
+    return {
+      ok: true,
+      repo: r.full_name || repo(env),
+      permissions: r.permissions
+        ? { admin: !!r.permissions.admin, push: !!r.permissions.push, pull: !!r.permissions.pull }
+        : null,
+    };
+  } catch (e) {
+    return { ok: false, error: String((e && e.message) || e).slice(0, 200) };
+  }
+}
+
 export async function mainSha(env, branch = 'main') {
   const ref = await gh(env, `/repos/${repo(env)}/git/ref/heads/${branch}`);
   return ref.object && ref.object.sha;
