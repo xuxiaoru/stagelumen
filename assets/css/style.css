@@ -2317,6 +2317,30 @@ footer {
 .news-thumb {
   aspect-ratio: 16/10;
   background: linear-gradient(135deg, var(--surface-2), var(--surface));
+  position: relative;
+  overflow: hidden;
+}
+.news-thumb > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+/* A post with no artwork used to render a full 16/10 gradient panel, which
+   reads as a large empty box. Collapse it to a slim band instead. */
+.news-thumb.no-image {
+  aspect-ratio: auto;
+  height: 104px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.news-thumb-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.4);
 }
 /* Only the side-by-side featured layout wants the thumb to fill its column.
    In a stacked card, min-height:100% resolves against the stretched card
@@ -2325,6 +2349,11 @@ footer {
 @media (min-width: 961px) {
   .news-card.featured .news-thumb {
     min-height: 100%;
+  }
+  /* Featured is a two-column layout, so the thumb is its own column and
+     should fill it even without artwork. */
+  .news-card.featured .news-thumb.no-image {
+    height: auto;
   }
 }
 .news-content {
