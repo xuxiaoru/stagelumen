@@ -5,11 +5,12 @@
  *   curl https://stagelumen.pages.dev/api/health
  */
 
-import { ok } from '../_lib/util.js';
+import { ok, fail, adminAuthorized } from '../_lib/util.js';
 import { hasDb, scalar } from '../_lib/db.js';
 import { ensureSchema, schemaReady } from '../_lib/schema.js';
 import { callAI, MODELS } from '../_lib/reception.js';
 import { ghProbe } from '../_lib/github.js';
+import { sendEmailVerbose, sendWebhook } from '../_lib/notify.js';
 
 /**
  * Binding diagnostics.
@@ -154,10 +155,18 @@ export async function onRequest(context) {
       };
       const base = { intent: 'quote', urgency: 'high', score: 99, stage: 'hot' };
       const [email, webhook] = await Promise.all([
-        sendEmail(env, '[TEST] StageLumen notification check', 'Delivery test — if you are reading this, email notification works.\n'),
+        sendEmailVerbose(env, '[TEST] StageLumen notification check',
+          'Delivery test — if you are reading this, email notification works.\n'),
         sendWebhook(env, probe, base),
       ]);
-      notifyTest = { email, webhook, channels_ok: !!(email || webhook) };
+      notifyTest = {
+        email,
+        webhook,
+        channels_ok: !!(email.ok || webhook),
+        hint: email.ok ? 'Check your inbox (and spam).'
+          : 'Email not delivered. reason above — most often the from-domain is not verified in Resend, ' +
+            'or the domain is unverified and the recipient is not your Resend account email.',
+      };
     }
   } catch (e) {
     notifyTest = { error: String((e && e.message) || e).slice(0, 200) };
