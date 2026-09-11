@@ -146,6 +146,11 @@ async function handleInquiry(context) {
     console.log('[inquiry] DB unavailable, payload=' + JSON.stringify(lead));
   }
 
+  // ---- notify our own team ------------------------------------------------
+  const notified = base.intent === 'spam' ? { email: false, webhook: false, github: false }
+    : await notifyAll(env, lead, base);
+  rescued = !!(notified && (notified.github || notified.email || notified.webhook));
+
   // ---- acknowledge to the customer ---------------------------------------
   // Spam never gets a reply: an auto-responder that answers bots is how a
   // domain ends up on a blocklist. Neither does anyone who trips the
