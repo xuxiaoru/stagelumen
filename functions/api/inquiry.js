@@ -8,7 +8,7 @@
  */
 
 import { ok, fail, handleOptions, readBody, str, isEmail, uid, nowIso, clientIp, edgeCountry } from '../_lib/util.js';
-import { upsertCustomer, insertLead, logAgentRun, rateLimited } from '../_lib/db.js';
+import { upsertCustomer, insertLead, logAgentRun, rateLimited, updateLead } from '../_lib/db.js';
 import { ensureSchema } from '../_lib/schema.js';
 import { triage, refineWithAI, templateReply } from '../_lib/reception.js';
 import { notifyAll } from '../_lib/notify.js';
