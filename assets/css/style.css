@@ -2317,7 +2317,15 @@ footer {
 .news-thumb {
   aspect-ratio: 16/10;
   background: linear-gradient(135deg, var(--surface-2), var(--surface));
-  min-height: 100%;
+}
+/* Only the side-by-side featured layout wants the thumb to fill its column.
+   In a stacked card, min-height:100% resolves against the stretched card
+   height, so the thumb grows over the text and overflow:hidden clips it —
+   leaving what looks like an empty box. */
+@media (min-width: 961px) {
+  .news-card.featured .news-thumb {
+    min-height: 100%;
+  }
 }
 .news-content {
   padding: 28px;
