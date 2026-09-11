@@ -51,6 +51,45 @@ function diagnose(env) {
   };
 }
 
+/**
+ * Which notification channels are actually wired up.
+ *
+ * Values are never returned: a webhook URL carries its own secret key, and
+ * publishing it here would let anyone push to the group. Host names only.
+ */
+function notifyDiag(env) {
+  const to = String(env.NOTIFY_EMAIL || '')
+    .split(',').map((s) => s.trim()).filter(Boolean);
+  const mask = (v) => {
+    const s = String(v || '').trim();
+    const m = s.match(/<([^>]+)>/);
+    const addr = m ? m[1] : s;
+    const parts = addr.split('@');
+    if (parts.length !== 2) return addr ? addr.slice(0, 2) + '***' : null;
+    return parts[0].slice(0, 2) + '***@' + parts[1];
+  };
+  let host = null;
+  if (env.NOTIFY_WEBHOOK) {
+    try { host = new URL(String(env.NOTIFY_WEBHOOK)).hostname; } catch (_) { host = 'invalid-url'; }
+  }
+  return {
+    email: {
+      configured: !!env.RESEND_API_KEY && to.length > 0,
+      missing: [
+        ...(env.RESEND_API_KEY ? [] : ['RESEND_API_KEY']),
+        ...(to.length ? [] : ['NOTIFY_EMAIL']),
+      ],
+      to: to.map(mask),
+      from: env.NOTIFY_FROM ? mask(env.NOTIFY_FROM) : 'onboarding@resend.dev (default)',
+    },
+    webhook: { configured: !!env.NOTIFY_WEBHOOK, host },
+    github_issue: { configured: !!env.GITHUB_PAT },
+    hot_only: !!env.NOTIFY_HOT_ONLY,
+    note: 'An inquiry with no working channel is stored in D1 but nobody is alerted. ' +
+          'Set at least one of: RESEND_API_KEY+NOTIFY_EMAIL, NOTIFY_WEBHOOK, GITHUB_PAT.',
+  };
+}
+
 export async function onRequest(context) {
   const { env, request } = context;
   let leadCount = 0;
@@ -93,6 +132,37 @@ export async function onRequest(context) {
     gh = { ok: false, error: String((e && e.message) || e).slice(0, 200) };
   }
 
+  // `?notify=1` sends a real test message through email + webhook. Admin only,
+  // because it costs money and wakes people up. GitHub issues are deliberately
+  // excluded — a test must not litter the CRM with fake inquiries.
+  let notifyTest = null;
+  try {
+    if (new URL(request.url).searchParams.get('notify') === '1') {
+      if (!adminAuthorized(request, env)) {
+        return fail(env.ADMIN_TOKEN ? 'Unauthorized (?notify=1 requires the admin token)' : 'ADMIN_TOKEN is not configured', 401);
+      }
+      const probe = {
+        id: 'test_' + Date.now(),
+        name: 'Health check',
+        email: 'healthcheck@stagelumen.pages.dev',
+        company: 'StageLumen self-test',
+        country: '-',
+        phone: '-',
+        qty: '-',
+        raw_text: 'This is a delivery test from /api/health?notify=1. No action needed.',
+        page_url: 'https://stagelumen.pages.dev/api/health?notify=1',
+      };
+      const base = { intent: 'quote', urgency: 'high', score: 99, stage: 'hot' };
+      const [email, webhook] = await Promise.all([
+        sendEmail(env, '[TEST] StageLumen notification check', 'Delivery test — if you are reading this, email notification works.\n'),
+        sendWebhook(env, probe, base),
+      ]);
+      notifyTest = { email, webhook, channels_ok: !!(email || webhook) };
+    }
+  } catch (e) {
+    notifyTest = { error: String((e && e.message) || e).slice(0, 200) };
+  }
+
   return ok({
     service: 'stagelumen-ai',
     stage: 'P0',
@@ -108,8 +178,10 @@ export async function onRequest(context) {
     schema_ready: schemaOk || schemaReady(),
     leads: leadCount,
     ready: hasDb(env) && !!env.ADMIN_TOKEN,
+    notify: notifyDiag(env),
     diag: diagnose(env),
     ai_smoke: smoke,
     gh_probe: gh,
+    notify_test: notifyTest,
   });
 }
