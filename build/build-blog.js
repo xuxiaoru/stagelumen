@@ -265,6 +265,7 @@ function articlePage(p) {
     .blog-article pre code { background: none; padding: 0; }
     .blog-article a { color: var(--accent); }
     .blog-meta { color: var(--text-3); font-size: 0.9rem; margin-bottom: 32px; }
+    .blog-hero-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 28px; display: block; }
     .blog-tags { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
     .blog-tags span { display: inline-block; background: var(--surface); color: var(--text-2); font-size: 0.8rem; padding: 4px 10px; border-radius: 999px; margin: 0 6px 6px 0; }
   </style>
@@ -305,7 +306,7 @@ function articlePage(p) {
 <section>
   <div class="container">
     <article class="blog-article">
-      <p class="blog-meta">${escHtml(p.datePretty)} · ${escHtml(p.author)} · ${escHtml(p.category)}</p>
+${p.image ? '      <img class="blog-hero-img" src="' + escAttr(imgSrc(p.image)) + '" alt="' + escAttr(p.title) + '" />\n' : ''}      <p class="blog-meta">${escHtml(p.datePretty)} · ${escHtml(p.author)} · ${escHtml(p.category)}</p>
 
       ${p.html}
 
@@ -359,6 +360,15 @@ ${p.tags.length ? '      <div class="blog-tags">' + p.tags.map((t) => '<span>' +
 `;
 }
 
+// Post images are written relative to the site root in front matter, but the
+// generated article lives two levels down in content/blog/.
+function imgSrc(src) {
+  const s = String(src || '').trim();
+  if (!s) return '';
+  if (/^(https?:)?\/\//.test(s) || s.startsWith('/') || s.startsWith('../')) return s;
+  return '../../' + s.replace(/^\.?\//, '');
+}
+
 function cardHtml(p, idx, featured) {
   const grad = GRADIENTS[idx % GRADIENTS.length];
   const url = 'content/blog/' + p.slug + '.html';
@@ -368,8 +378,15 @@ function cardHtml(p, idx, featured) {
     : '<h3><a href="' + url + '">' + escHtml(p.title) + '</a></h3>';
   const more = featured ? '\n          <a href="' + url + '" class="link-arrow">Read More →</a>' : '';
 
+  // A post without artwork used to render a full 16/10 gradient block, which
+  // reads as a large empty box in the grid. Collapse it to a slim band and put
+  // the category inside so it looks like a design element instead of a gap.
+  const thumb = p.image
+    ? `        <div class="news-thumb"><img src="${escAttr(p.image)}" alt="${escAttr(p.title)}" loading="lazy" /></div>`
+    : `        <div class="news-thumb no-image" style="background: ${grad};"><span class="news-thumb-label">${tag}</span></div>`;
+
   return `      <article class="news-card${featured ? ' featured' : ''}">
-        <div class="news-thumb" style="background: ${grad};"></div>
+${thumb}
         <div class="news-content">
           <span class="news-tag">${tag}</span>
           ${heading}
@@ -414,6 +431,7 @@ function main() {
       category: String(data.category || 'Article'),
       excerpt: String(data.excerpt || '').trim(),
       tags: Array.isArray(data.tags) ? data.tags : [],
+      image: String(data.image || '').trim(),
       html: mdToHtml(body),
       url: 'content/blog/' + String(data.slug || fallbackSlug).trim() + '.html',
     };
@@ -435,6 +453,7 @@ function main() {
       posts: posts.map((p) => ({
         title: p.title, slug: p.slug, date: p.date, datePretty: p.datePretty,
         category: p.category, excerpt: p.excerpt, tags: p.tags, url: p.url,
+        image: p.image,
       })),
     }, null, 2)
   );
