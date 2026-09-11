@@ -35,3 +35,7 @@
   SEO & AI bot rules
 */
   X-Robots-Tag: index, follow
+
+/admin/*
+  Cache-Control: no-store, must-revalidate
+  X-Robots-Tag: noindex, nofollow
