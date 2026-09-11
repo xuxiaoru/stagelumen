@@ -3,22 +3,83 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="noindex" />
-  <title>StageLumen CMS</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <title>StageLumen — Admin</title>
+  <style>
+    :root{
+      --bg:#0b0e14; --panel:#121722; --panel2:#171d2b; --line:#232b3d;
+      --txt:#e6ebf5; --dim:#8b96ad; --brand:#ff6b00; --cyan:#00d4ff;
+      --green:#16a34a; --red:#e5484d; --amber:#f5a524;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--txt);
+         font:14px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif}
+    a{color:var(--cyan);text-decoration:none}
+    .wrap{max-width:900px;margin:0 auto;padding:40px 24px}
+    .brand{display:flex;align-items:center;gap:10px;margin-bottom:6px}
+    .brand-mark{width:32px;height:32px;border-radius:8px;background:var(--brand);color:#fff;
+                display:flex;align-items:center;justify-content:center;font-weight:800}
+    h1{font-size:19px;margin:0}
+    .sub{color:var(--dim);margin:0 0 32px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px}
+    .card{display:block;background:var(--panel);border:1px solid var(--line);border-radius:12px;
+          padding:20px;transition:.15s}
+    .card:hover{border-color:var(--brand);transform:translateY(-2px)}
+    .card h3{margin:0 0 6px;font-size:15px;color:var(--txt)}
+    .card p{margin:0;font-size:13px;color:var(--dim);line-height:1.5}
+    .card .go{margin-top:12px;font-size:12px;color:var(--brand);font-weight:700;letter-spacing:.04em}
+    .note{margin-top:32px;padding:14px 16px;background:var(--panel);border:1px solid var(--line);
+          border-left:3px solid var(--amber);border-radius:8px;font-size:13px;color:var(--dim)}
+    .note code{background:var(--panel2);padding:1px 6px;border-radius:4px;color:var(--txt);font-size:12px}
+    .foot{margin-top:28px;font-size:12px;color:var(--dim)}
+    .foot a{margin-right:16px}
+  </style>
 </head>
 <body>
-<div class="topbar">
-  <div class="container topbar-inner">
-    <div class="topbar-item"><strong>Wechat:</strong> <span>13533784510</span></div>
-    <div class="topbar-item"><strong>E-mail:</strong> <a data-set="email" href="mailto:348920664@qq.com">348920664@qq.com</a></div>
-    <div class="topbar-item"><strong>WhatsApp:</strong> <span>18027176247</span></div>
+<div class="wrap">
+  <div class="brand">
+    <span class="brand-mark">S</span>
+    <h1>StageLumen Admin</h1>
+  </div>
+  <p class="sub">Pick a tool. Everything here writes through GitHub — nothing changes on the live site until a pull request is merged.</p>
+
+  <div class="grid">
+    <a class="card" href="cms.html">
+      <h3>CMS Editor</h3>
+      <p>Edit product copy, site settings and blog markdown in a visual form. Saves open a pull request for review.</p>
+      <div class="go">Open Decap CMS →</div>
+    </a>
+
+    <a class="card" href="leads.html">
+      <h3>Lead Inbox</h3>
+      <p>Every RFQ and chat enquiry with its score, source page and captured requirements. Needs the admin token.</p>
+      <div class="go">Open lead board →</div>
+    </a>
+
+    <a class="card" href="content.html">
+      <h3>AI Content Factory</h3>
+      <p>Draft a blog post from the live product catalogue. Opens a pull request — never publishes directly.</p>
+      <div class="go">Draft an article →</div>
+    </a>
+
+    <a class="card" href="products.html">
+      <h3>Product Importer</h3>
+      <p>Bulk-import or update SKUs from CSV / spreadsheet rows, including image URLs. Writes a pull request.</p>
+      <div class="go">Import products →</div>
+    </a>
+  </div>
+
+  <div class="note">
+    <strong>Review happens on GitHub:</strong>
+    <code>github.com/xuxiaoru/stagelumen/pulls</code> — merging a pull request triggers the Cloudflare build,
+    which regenerates blog pages, the news feed and the sitemap.
+  </div>
+
+  <div class="foot">
+    <a href="/">← Back to site</a>
+    <a href="/news.html">News</a>
+    <a href="/products.html">Products</a>
   </div>
 </div>
-  <!--
-    Decap CMS (formerly Netlify CMS) — visual editor for marketing & product teams.
-    Login via GitHub OAuth. Edit products, blog posts, testimonials without touching code.
-    Config: admin/config.yml
-  -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
 </body>
 </html>
