@@ -12,6 +12,27 @@ import { hitRate, logAgentRun, hasDb } from '../_lib/db.js';
 import { draft } from '../_lib/content.js';
 import { ghConfigured, proposeFiles, slugify } from '../_lib/github.js';
 
+// Surfaced in the PR body so a reviewer sees the known problems without
+// reading the draft. An empty check list is a signal, not a guarantee.
+function automatedChecks(checks) {
+  if (!Array.isArray(checks) || !checks.length) {
+    return '## Automated checks\n\nNothing flagged. Still verify the numbers by eye.\n';
+  }
+  const errs = checks.filter((c) => c.level === 'error');
+  const warns = checks.filter((c) => c.level !== 'error');
+  const lines = ['## Automated checks'];
+  if (errs.length) {
+    lines.push('', '**' + errs.length + ' problem(s) — do not merge as-is:**', '');
+    errs.forEach((c) => lines.push('- [x] ERROR: ' + c.msg));
+  }
+  if (warns.length) {
+    lines.push('', 'Warnings:', '');
+    warns.forEach((c) => lines.push('- [ ] WARN: ' + c.msg));
+  }
+  lines.push('');
+  return lines.join('\n');
+}
+
 export async function onRequest(context) {
   const { request, env } = context;
 
@@ -95,6 +116,7 @@ export async function onRequest(context) {
           '- Model: ' + res.model,
           '- Sources: ' + (res.sources || []).map((s) => s.model || s.id).join(', '),
           '',
+          automatedChecks(res.checks),
           '**Review before merging.** Verify every specification against the',
           'catalogue — the model is instructed not to invent figures, but it is',
           'still a model. Merging deploys to production.',
