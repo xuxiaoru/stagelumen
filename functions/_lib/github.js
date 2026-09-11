@@ -70,6 +70,23 @@ export async function ghProbe(env) {
   }
 }
 
+/**
+ * Read a text file from the repo. Returns null for 404 so callers can decide
+ * whether a missing file is fatal.
+ */
+export async function getFile(env, path, branch = 'main') {
+  try {
+    const r = await gh(env, `/repos/${repo(env)}/contents/${path}?ref=${encodeURIComponent(branch)}`);
+    if (!r || r.type !== 'file' || !r.content) return null;
+    const bin = atob(String(r.content).replace(/\s/g, ''));
+    const bytes = Uint8Array.from(bin, (c) => c.charCodeAt(0));
+    return { text: new TextDecoder().decode(bytes), sha: r.sha };
+  } catch (e) {
+    if (/404|Not Found/i.test(String(e && e.message))) return null;
+    throw e;
+  }
+}
+
 export async function mainSha(env, branch = 'main') {
   const ref = await gh(env, `/repos/${repo(env)}/git/ref/heads/${branch}`);
   return ref.object && ref.object.sha;
@@ -86,6 +103,19 @@ export async function createBranch(env, name, fromSha) {
 /** Creates or updates a single file. `sha` is required only for updates. */
 export async function putFile(env, path, content, branch, message) {
   const body = { message, content: b64(content), branch };
+  const res = await fetch(API + `/repos/${repo(env)}/contents/${encodeURI(path)}`, {
+    method: 'PUT',
+    headers: headers(env),
+    body: JSON.stringify(body),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error('put ' + path + ' -> ' + ((data && data.message) || res.status));
+  return data;
+}
+
+/** Same as putFile but takes already-base64 content (images, binaries). */
+export async function putBinary(env, path, base64, branch, message) {
+  const body = { message, content: String(base64).replace(/\s/g, ''), branch };
   const res = await fetch(API + `/repos/${repo(env)}/contents/${encodeURI(path)}`, {
     method: 'PUT',
     headers: headers(env),
