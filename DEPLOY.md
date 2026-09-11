@@ -376,3 +376,74 @@ node build/inject-settings.js && node build/build-kb.js
 ```
 
 Output directory stays empty — both scripts edit files in place.
+
+## Blog Build Pipeline (build/build-blog.js)
+
+The content agent's output used to be a dead end: it wrote `content/blog/*.md`
+and nothing on the site ever read those files. This script closes that gap.
+
+What it does, every build:
+
+1. Reads every `content/blog/*.md` (the Decap CMS **blog** collection).
+2. Renders each one to a static article page `content/blog/<slug>.html` using
+   the existing article template.
+3. Writes `data/posts.json` — an index for future search / related posts / sitemap.
+4. Replaces the card grid in `news.html` between the `POSTS:BEGIN` / `POSTS:END`
+   markers with real cards.
+
+Zero dependencies: Pages has no install step, so the Markdown renderer is
+hand-rolled in the script. It supports what our own content agent emits —
+`##`–`######` headings, tables, ordered/unordered lists, fenced code,
+blockquotes, horizontal rules, and inline bold / italic / code / links.
+
+**The `.md` file is the single source of truth** and the generated `.html` is
+always overwritten, because the CMS only ever edits the Markdown.
+
+### Build command
+
+Pages → Settings → Builds & deployments → Build command:
+
+```
+node build/inject-settings.js && node build/build-blog.js
+```
+
+Output directory stays empty — both scripts edit files in place.
+
+Nothing breaks if this is not configured: the generated files are committed to
+the repo, so the site is correct either way. The build command only makes *new*
+posts appear automatically after a PR merge.
+
+### Publishing a post end to end
+
+| Step | Where |
+|------|-------|
+| 1. Generate | `/admin/content.html` — enter `ADMIN_TOKEN`, topic, type |
+| 2. Review | GitHub PR (opened automatically if `GITHUB_PAT` is set) |
+| 3. Merge | You approve |
+| 4. Build | Pages runs `build-blog.js`, article page + card appear |
+
+Without `GITHUB_PAT`, step 2 returns the Markdown for manual copy instead of
+opening a PR.
+
+### Configuring GITHUB_PAT
+
+Pages → Settings → Environment variables:
+
+| Field | Value |
+|-------|-------|
+| Variable name | `GITHUB_PAT` (exact — the code reads `env.GITHUB_PAT`) |
+| Value | A token with `repo` scope, or a fine-grained token limited to `xuxiaoru/stagelumen` with Contents + Pull requests read/write |
+| Environment | **Production** (add Preview too if you branch-test) |
+
+Click **Encrypt** before saving. Verify with:
+
+```
+https://stagelumen.pages.dev/api/health   →   "GITHUB_FALLBACK": true
+```
+
+### Gotcha: a new deployment is required, and Retry may not be enough
+
+Bindings and environment variables are snapshotted at deploy time. After
+changing them, **Retry deployment sometimes leaves the old runtime in place** —
+pushing a new commit is the reliable way to force a rebuild. If `/api/health`
+still reports `false` after a Retry, push any commit and check again.
