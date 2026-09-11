@@ -80,6 +80,31 @@ function normModel(m) {
   return String(m || '').trim().toUpperCase().replace(/\s+/g, '');
 }
 
+/**
+ * Parse an uploaded filename into candidate SKUs plus a sort order.
+ *
+ *   SL-B150.jpg    -> exact 'SL-B150',  root null,      order 0
+ *   SL-B150-2.jpg  -> exact 'SL-B150-2', root 'SL-B150', order 2
+ *   SL-B150_3.jpg  -> exact 'SL-B150-3', root 'SL-B150', order 3
+ *   SL-B150-b.jpg  -> exact 'SL-B150-B', root 'SL-B150', order 2
+ *
+ * Both candidates are returned rather than one answer, because a SKU that
+ * genuinely ends in a short number (SL-B15) would otherwise be truncated to
+ * SL-B. The caller checks the catalogue: exact wins if it exists, otherwise
+ * fall back to root.
+ */
+function splitImageName(filename) {
+  const base = String(filename || '').replace(/\.[a-z0-9]+$/i, '');
+  const m = /^(.*?)[-_ ](\d{1,2}|[a-z])$/i.exec(base);
+  if (!m) return { exact: normModel(base), root: null, order: 0 };
+
+  const tail = m[2];
+  const order = /^\d+$/.test(tail)
+    ? parseInt(tail, 10)
+    : tail.toLowerCase().charCodeAt(0) - 96;
+  return { exact: normModel(base), root: normModel(m[1]), order };
+}
+
 function blankProduct(row) {
   const model = pick(row, 'model');
   return {
@@ -131,11 +156,13 @@ export async function onRequestPost(context) {
   }
 
   const rows = csvToObjects(payload.csv);
-  if (!rows.length) {
-    return fail('No usable rows found. The CSV needs a header row and at least one data row.', 400);
-  }
-
   const images = Array.isArray(payload.images) ? payload.images : [];
+
+  // Either input alone is valid: a catalogue edit with no new photos, or a
+  // photo drop that only updates images on SKUs that already exist.
+  if (!rows.length && !images.length) {
+    return fail('Nothing to import — supply CSV rows and/or images.', 400);
+  }
 
   // --- merge against the live catalogue -------------------------------------
   const current = await getFile(env, CATALOGUE);
@@ -153,9 +180,10 @@ export async function onRequestPost(context) {
 
   const byModel = new Map(list.map((p) => [normModel(p.model), p]));
 
-  // --- uploaded images: commit files, then wire them onto matching SKUs -----
+  // --- uploaded images ------------------------------------------------------
+  // Files are collected here but bound to SKUs only after the CSV rows are
+  // applied, so a brand-new SKU in the same import can receive its photos.
   const imageFiles = [];
-  const imageByModel = new Map();
   const imageErrors = [];
 
   for (const img of images) {
@@ -163,17 +191,18 @@ export async function onRequestPost(context) {
     const dataUrl = String(img.dataUrl || '');
     const m = /^data:([^;,]+);base64,(.*)$/s.exec(dataUrl);
     if (!name || !m) {
-      imageErrors.push(name || '(unnamed)' + ': not a base64 data URL');
+      imageErrors.push((name || '(unnamed)') + ': not a base64 data URL');
       continue;
     }
-    const ext = (name.match(/\.([a-z0-9]+)$/i) || [, 'jpg'])[1].toLowerCase();
     const safe = name
       .toLowerCase()
       .replace(/[^a-z0-9._-]/g, '-')
       .replace(/-+/g, '-');
-    const path = IMG_DIR + safe;
-    imageFiles.push({ path, base64: m[2] });
-    imageByModel.set(normModel(name.replace(/\.[a-z0-9]+$/i, '')), path);
+    imageFiles.push({
+      path: IMG_DIR + safe,
+      base64: m[2],
+      ...splitImageName(name),
+    });
   }
 
   // --- apply rows -----------------------------------------------------------
@@ -205,14 +234,42 @@ export async function onRequestPost(context) {
       list.push(p);
       created++;
     }
+  }
 
-    const imgPath = imageByModel.get(key);
-    if (imgPath) {
-      const target = byModel.get(key);
-      target.image = imgPath;
-      if (!Array.isArray(target.images)) target.images = [];
-      if (!target.images.includes(imgPath)) target.images.unshift(imgPath);
+  // --- bind images, now that newly created SKUs exist ------------------------
+  const grouped = new Map();
+
+  for (const f of imageFiles) {
+    // Prefer the literal filename; only fall back to the stripped root when
+    // the literal form is not a known SKU.
+    const sku = byModel.has(f.exact)
+      ? f.exact
+      : (f.root && byModel.has(f.root) ? f.root : f.exact);
+    if (!grouped.has(sku)) grouped.set(sku, []);
+    grouped.get(sku).push(f);
+  }
+
+  let linked = 0;
+
+  for (const [sku, files] of grouped) {
+    const target = byModel.get(sku);
+    if (!target) {
+      imageErrors.push(
+        files.map((f) => f.path.split('/').pop()).join(', ') +
+          ': no SKU named "' + sku + '" — file committed but not linked'
+      );
+      continue;
     }
+
+    files.sort((a, b) => a.order - b.order);
+    const paths = files.map((f) => f.path);
+
+    // First image becomes the cover; the full set goes into the gallery,
+    // newest first, without duplicating anything already listed.
+    target.image = paths[0];
+    const rest = Array.isArray(target.images) ? target.images : [];
+    target.images = [...new Set([...paths, ...rest])];
+    linked++;
   }
 
   if (!created && !updated && !imageFiles.length) {
@@ -251,7 +308,7 @@ export async function onRequestPost(context) {
         '',
         `- New SKUs: **${created}**`,
         `- Updated SKUs: **${updated}**`,
-        `- Images committed: **${imageFiles.length}**`,
+        `- Images committed: **${imageFiles.length}** across **${linked}** SKU(s)`,
         '',
         '**Review before merging** — check prices, specs and that every image path resolves.',
         imageErrors.length ? '\nSkipped images:\n' + imageErrors.map((e) => '- ' + e).join('\n') : '',
@@ -265,6 +322,7 @@ export async function onRequestPost(context) {
       created,
       updated,
       images: imageFiles.length,
+      linked,
       total: list.length,
       skipped,
       imageErrors,
