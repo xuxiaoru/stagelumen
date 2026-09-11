@@ -84,6 +84,106 @@ export async function sendEmailVerbose(env, subject, text) {
   }
 }
 
+// ------------------------------------------------------- customer auto-reply
+
+/**
+ * Split the drafted reply into a subject line and a body.
+ * `reception.js` writes drafts in "Subject: …\n\n<body>" form, and Resend
+ * needs the subject in its own field.
+ */
+function splitReply(text) {
+  const s = String(text || '');
+  const m = /^subject:[ \t]*(.+?)\r?\n/i.exec(s);
+  if (m) {
+    return { subject: m[1].trim(), body: s.slice(m[0].length).replace(/^\s*\r?\n/, '').trim() };
+  }
+  return { subject: null, body: s.trim() };
+}
+
+// Only facts that already appear on the public site — no invented address.
+const REPLY_FOOTER = [
+  '',
+  '---',
+  'StageLumen / RIGE Lighting — stage lighting manufacturer',
+  'sales@rigelighting.com  |  WhatsApp +86 180 2717 6247  |  stagelumen.pages.dev',
+  '',
+  'This is an automatic acknowledgement — replying to it reaches our export team directly.',
+  'If you did not submit this enquiry, please ignore this message.',
+].join('\n');
+
+const FALLBACK_BODY = [
+  'Thanks for getting in touch with StageLumen (RIGE Lighting).',
+  '',
+  'We have received your enquiry and our export team is reviewing it now. '
+  +   'You will receive a detailed reply with product recommendations, MOQ and lead time '
+  + 'within one business day.',
+  '',
+  'If anything is urgent, reply to this email or message us on WhatsApp — both reach us directly.',
+].join('\n');
+
+/**
+ * Acknowledge the enquiry to the person who sent it.
+ *
+ * This is the one email here that goes to a stranger, so it is held to a
+ * different standard: no marketing content, reply-to points at a real inbox,
+ * and Resend's "unverified domain can only reach the account owner" rule means
+ * this silently 403s until the sending domain is verified.
+ */
+export async function sendAutoReplyVerbose(env, lead) {
+  const to = String((lead && lead.email) || '').trim().toLowerCase();
+  if (!to || to.indexOf('@') < 1) return { ok: false, reason: 'lead has no usable email' };
+  if (String(env.AUTOREPLY || '1') === '0') return { ok: false, reason: 'disabled (AUTOREPLY=0)' };
+  if (!env.RESEND_API_KEY) return { ok: false, reason: 'RESEND_API_KEY is not set' };
+
+  const parsed = splitReply(lead && lead.ai_reply);
+  const subject = parsed.subject ||
+    'Your stage lighting enquiry — StageLumen (RIGE Lighting)';
+  const body = (parsed.body || FALLBACK_BODY) + '\n' + REPLY_FOOTER;
+
+  const from = env.AUTOREPLY_FROM || env.NOTIFY_FROM || 'StageLumen <onboarding@resend.dev>';
+  const replyTo = env.REPLY_TO || 'sales@rigelighting.com';
+
+  try {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer ' + env.RESEND_API_KEY,
+      },
+      body: JSON.stringify({
+        from, to: [to], reply_to: replyTo,
+        subject: String(subject).slice(0, 200),
+        text: body,
+      }),
+    });
+    const raw = await res.text().catch(() => '');
+    let parsedBody = null;
+    try { parsedBody = raw ? JSON.parse(raw) : null; } catch (_) { /* ignore */ }
+
+    if (res.ok) {
+      return { ok: true, status: res.status, id: parsedBody && parsedBody.id, to: maskAddr(to), from, reply_to: replyTo };
+    }
+    return {
+      ok: false,
+      status: res.status,
+      reason: (parsedBody && (parsedBody.message || parsedBody.name)) || raw.slice(0, 200) || ('HTTP ' + res.status),
+      to: maskAddr(to),
+      from, reply_to: replyTo,
+      hint: res.status === 403
+        ? 'Almost always the Resend sending domain is not verified. Until it is, mail can only reach the Resend account email.'
+        : null,
+    };
+  } catch (e) {
+    return { ok: false, reason: String((e && e.message) || e).slice(0, 200) };
+  }
+}
+
+export async function sendAutoReply(env, lead) {
+  const r = await sendAutoReplyVerbose(env, lead);
+  if (!r.ok) console.error('[notify.autoreply] ' + JSON.stringify(r));
+  return r.ok;
+}
+
 export async function sendEmail(env, subject, text) {
   const r = await sendEmailVerbose(env, subject, text);
   if (!r.ok) console.error('[notify.email] ' + JSON.stringify(r));
