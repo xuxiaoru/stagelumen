@@ -48,9 +48,9 @@
   .msg.warn{display:block;background:rgba(245,165,36,.1);border:1px solid rgba(245,165,36,.4);color:#ffd28a}
   code{background:var(--panel2);padding:1px 6px;border-radius:4px;font-size:12px}
   .thumbs{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
-  .thumb{width:82px;text-align:center;font-size:11px;color:var(--dim)}
-  .thumb img{width:82px;height:62px;object-fit:cover;border-radius:6px;border:1px solid var(--line);display:block}
-  .thumb span{display:block;margin-top:4px;word-break:break-all;line-height:1.3}
+  .thumb{width:104px;text-align:center;font-size:11px;color:var(--dim)}
+  .thumb img{width:104px;height:78px;object-fit:cover;border-radius:6px;border:1px solid var(--line);display:block}
+  .thumb span{display:block;margin-top:4px;word-break:break-all;line-height:1.35}
   .drop{border:1.5px dashed var(--line);border-radius:10px;padding:22px;text-align:center;color:var(--dim);cursor:pointer}
   .drop:hover,.drop.over{border-color:var(--brand);color:var(--txt)}
 </style>
@@ -93,10 +93,22 @@
   <div class="panel">
     <h2>2. Product images (optional)</h2>
     <p class="hint">
-      Name each file after its SKU — <code>SL-B150.jpg</code> — and it is wired to that product
-      automatically. Files are committed to <code>assets/images/products/</code>.
-      Keep batches small (about 12 files, under 2&nbsp;MB each) — the whole batch travels in one request.
-      For a large catalogue, put image URLs in the CSV <code>image</code> column instead.
+      Name files after the SKU and they are wired up automatically. Files go to
+      <code>assets/images/products/</code>. You may upload images without any CSV at all.
+    </p>
+    <table style="margin-top:0;margin-bottom:14px">
+      <tr><th>File name</th><th>Result</th></tr>
+      <tr><td><code>SL-B150.jpg</code></td><td>Cover image for SL-B150</td></tr>
+      <tr><td><code>SL-B150-2.jpg</code></td><td>2nd image — added to the gallery</td></tr>
+      <tr><td><code>SL-B150-3.jpg</code></td><td>3rd image — order follows the number</td></tr>
+      <tr><td><code>SL-B150_2.jpg</code></td><td>Same as <code>-2</code>; <code>_</code> or a space works too</td></tr>
+    </table>
+    <p class="hint">
+      The <strong>lowest number becomes the cover</strong>; if you only upload <code>-2</code> and
+      <code>-3</code>, then <code>-2</code> is the cover. A SKU that already ends in a short number
+      is safe — <code>SL-B15.jpg</code> stays SL-B15 rather than being trimmed.
+      Keep batches to roughly 12 files under 2&nbsp;MB each — the whole batch travels in one request.
+      For a large catalogue use the CSV <code>image</code> column with URLs instead.
     </p>
     <div class="drop" id="drop">Click to choose images, or drop them here</div>
     <input type="file" id="files" accept="image/*" multiple style="display:none" />
@@ -142,13 +154,40 @@ function show(cls, html) {
 $('btnSample').onclick = () => { $('csv').value = SAMPLE; $('preview').innerHTML = ''; $('csvInfo').textContent = ''; };
 
 // ---------------------------------------------------------------- images
+// Mirrors splitImageName() in the importer so the operator sees the same
+// SKU the pull request will actually write.
+function splitImageName(filename) {
+  const base = String(filename || '').replace(/\.[a-z0-9]+$/i, '');
+  const norm = (m) => String(m || '').trim().toUpperCase().replace(/\s+/g, '');
+  const m = /^(.*?)[-_ ](\d{1,2}|[a-z])$/i.exec(base);
+  if (!m) return { exact: norm(base), root: null, order: 0 };
+  const tail = m[2];
+  return {
+    exact: norm(base),
+    root: norm(m[1]),
+    order: /^\d+$/.test(tail) ? parseInt(tail, 10) : tail.toLowerCase().charCodeAt(0) - 96,
+  };
+}
+
 function renderThumbs() {
-  $('thumbs').innerHTML = pendingImages.map((f, i) =>
-    '<div class="thumb"><img src="' + f.dataUrl + '" alt="" /><span>' + esc(f.name) + '</span></div>'
-  ).join('');
+  const known = CATALOGUE;
+  $('thumbs').innerHTML = pendingImages.map((f) => {
+    const p = splitImageName(f.name);
+    const sku = known && known.has(p.exact) ? p.exact
+      : (p.root && known && known.has(p.root) ? p.root : p.exact);
+    const unknown = known && !known.has(sku);
+    const pos = p.order === 0 ? 'cover' : '#' + (p.order + 1);
+    return '<div class="thumb"><img src="' + f.dataUrl + '" alt="" />' +
+      '<span>' + esc(f.name) + '</span>' +
+      '<span style="color:' + (unknown ? 'var(--red)' : 'var(--brand)') + '">' +
+      esc(sku) + ' · ' + pos + (unknown ? ' · no such SKU' : '') + '</span></div>';
+  }).join('');
 }
 
 function addFiles(list) {
+  // Kick off the catalogue read so the SKU labels appear as soon as it lands,
+  // and re-render once it does (the first render may beat the fetch).
+  loadCatalogue().then(renderThumbs);
   for (const f of list) {
     if (!/^image\//.test(f.type)) continue;
     const reader = new FileReader();
@@ -282,7 +321,8 @@ $('btnSubmit').onclick = async () => {
     const r = d.result || d;
     show('ok',
       'Pull request <a href="' + r.pr.url + '" target="_blank">#' + r.pr.number + '</a> opened.<br>' +
-      r.created + ' new · ' + r.updated + ' updated · ' + r.images + ' image(s) · catalogue now ' + r.total + ' SKUs.' +
+      r.created + ' new · ' + r.updated + ' updated · ' + r.images + ' image(s) across ' +
+      (r.linked || 0) + ' SKU(s) · catalogue now ' + r.total + ' SKUs.' +
       (r.imageErrors && r.imageErrors.length ? '<br>Skipped images: ' + esc(r.imageErrors.join('; ')) : '')
     );
     pendingImages = [];
