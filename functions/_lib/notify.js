@@ -30,20 +30,64 @@ async function postJson(url, body, headers) {
 
 // ------------------------------------------------------------------- email
 
+function recipients(env) {
+  return String(env.NOTIFY_EMAIL || '').split(',').map((s) => s.trim()).filter(Boolean);
+}
+
+/** Address is masked: this surfaces in admin diagnostics, never in a secret. */
+function maskAddr(v) {
+  const s = String(v || '').trim();
+  const parts = s.split('@');
+  if (parts.length !== 2) return s ? s.slice(0, 2) + '***' : '-';
+  return parts[0].slice(0, 2) + '***@' + parts[1];
+}
+
+/**
+ * Same send, but explains itself.
+ *
+ * Resend returns 403 with a human-readable message in two very common cases:
+ * the from-domain is not verified, or the domain is unverified and the
+ * recipient is not the Resend account email. A bare boolean hides both, which
+ * is how a broken alert channel stays broken for weeks.
+ */
+export async function sendEmailVerbose(env, subject, text) {
+  const to = recipients(env);
+  if (!env.RESEND_API_KEY) return { ok: false, reason: 'RESEND_API_KEY is not set' };
+  if (!to.length) return { ok: false, reason: 'NOTIFY_EMAIL is not set' };
+
+  const from = env.NOTIFY_FROM || 'StageLumen AI <onboarding@resend.dev>';
+  try {
+    const res = await fetch('https://api.resend.com/emails', {
+      method: 'POST',
+      headers: {
+        'content-type': 'application/json',
+        authorization: 'Bearer ' + env.RESEND_API_KEY,
+      },
+      body: JSON.stringify({ from, to, subject: String(subject).slice(0, 200), text }),
+    });
+    const body = await res.text().catch(() => '');
+    let parsed = null;
+    try { parsed = body ? JSON.parse(body) : null; } catch (_) { /* plain text body */ }
+
+    if (res.ok) {
+      return { ok: true, status: res.status, id: parsed && parsed.id, to: to.map(maskAddr), from };
+    }
+    return {
+      ok: false,
+      status: res.status,
+      reason: (parsed && (parsed.message || parsed.name)) || body.slice(0, 200) || ('HTTP ' + res.status),
+      to: to.map(maskAddr),
+      from,
+    };
+  } catch (e) {
+    return { ok: false, reason: String((e && e.message) || e).slice(0, 200) };
+  }
+}
+
 export async function sendEmail(env, subject, text) {
-  if (!env.RESEND_API_KEY || !env.NOTIFY_EMAIL) return false;
-  const to = String(env.NOTIFY_EMAIL).split(',').map((s) => s.trim()).filter(Boolean);
-  if (!to.length) return false;
-  return postJson(
-    'https://api.resend.com/emails',
-    {
-      from: env.NOTIFY_FROM || 'StageLumen AI <onboarding@resend.dev>',
-      to,
-      subject: String(subject).slice(0, 200),
-      text,
-    },
-    { authorization: 'Bearer ' + env.RESEND_API_KEY }
-  );
+  const r = await sendEmailVerbose(env, subject, text);
+  if (!r.ok) console.error('[notify.email] ' + JSON.stringify(r));
+  return r.ok;
 }
 
 // ----------------------------------------------------------------- webhook
