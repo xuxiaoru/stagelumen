@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Product Importer — StageLumen</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#121722; --panel2:#171d2b; --line:#232b3d;
+    --txt:#e6ebf5; --dim:#8b96ad; --brand:#ff6b00; --cyan:#00d4ff;
+    --green:#16a34a; --red:#e5484d; --amber:#f5a524;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+       font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif}
+  a{color:var(--cyan);text-decoration:none}
+  .wrap{max-width:1080px;margin:0 auto;padding:24px}
+  .anav{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:18px;
+        padding:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+  .anav a{padding:6px 11px;border-radius:7px;background:#1c2536;border:1px solid var(--line);
+          color:var(--dim);font-size:13px}
+  .anav a:hover{border-color:var(--brand);color:var(--txt)}
+  .anav a.on{background:rgba(255,107,0,.15);border-color:var(--brand);color:var(--brand);font-weight:600}
+  .anav .spacer{flex:1}
+  .anav .home{background:transparent;border-color:transparent}
+  h1{font-size:20px;margin:0}
+  header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+  button,select,input,textarea{font:inherit;color:var(--txt);background:var(--panel2);
+       border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+  button{cursor:pointer;background:#1c2536}
+  button:hover{border-color:var(--brand)}
+  button.primary{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+  button.primary:disabled{opacity:.5;cursor:not-allowed}
+  textarea{width:100%;min-height:180px;font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12.5px;line-height:1.6}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:18px}
+  .panel h2{font-size:14px;margin:0 0 4px;letter-spacing:.02em}
+  .panel .hint{color:var(--dim);font-size:12.5px;margin:0 0 14px;line-height:1.55}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:12px}
+  table{width:100%;border-collapse:collapse;font-size:12.5px;margin-top:14px}
+  th,td{padding:7px 9px;border:1px solid var(--line);text-align:left;vertical-align:top}
+  th{background:var(--panel2);color:var(--dim);font-weight:600}
+  td.op{color:var(--green)}
+  td.new{color:var(--cyan)}
+  .msg{margin-top:14px;padding:12px 14px;border-radius:8px;font-size:13px;display:none;line-height:1.6}
+  .msg.err{display:block;background:rgba(229,72,77,.1);border:1px solid rgba(229,72,77,.4);color:#ff9b9b}
+  .msg.ok{display:block;background:rgba(22,163,74,.1);border:1px solid rgba(22,163,74,.4);color:#7ee2a8}
+  .msg.warn{display:block;background:rgba(245,165,36,.1);border:1px solid rgba(245,165,36,.4);color:#ffd28a}
+  code{background:var(--panel2);padding:1px 6px;border-radius:4px;font-size:12px}
+  .thumbs{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}
+  .thumb{width:82px;text-align:center;font-size:11px;color:var(--dim)}
+  .thumb img{width:82px;height:62px;object-fit:cover;border-radius:6px;border:1px solid var(--line);display:block}
+  .thumb span{display:block;margin-top:4px;word-break:break-all;line-height:1.3}
+  .drop{border:1.5px dashed var(--line);border-radius:10px;padding:22px;text-align:center;color:var(--dim);cursor:pointer}
+  .drop:hover,.drop.over{border-color:var(--brand);color:var(--txt)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="anav">
+    <a href="index.html">Admin</a>
+    <a href="cms.html">CMS Editor</a>
+    <a href="leads.html">Lead Inbox</a>
+    <a href="content.html">Content Factory</a>
+    <a href="products.html" class="on">Product Importer</a>
+    <span class="spacer"></span>
+    <a class="home" href="/">&larr; Back to site</a>
+  </nav>
+
+  <header>
+    <h1>Product Importer</h1>
+    <span class="spacer" style="flex:1"></span>
+    <button id="btnSample">Load sample CSV</button>
+  </header>
+
+  <div class="panel">
+    <h2>1. Paste CSV</h2>
+    <p class="hint">
+      First row is the header. Only <code>model</code> is required — it is the match key, so an existing
+      SKU gets updated and a new one gets created. Column names are flexible
+      (<code>Model</code>, <code>SKU</code>, <code>Item No.</code> all work; spaces and case are ignored).
+      Use <code>;</code> to separate multiple values in <code>images</code>, <code>features</code>,
+      <code>applications</code>, and to separate <code>specs</code> as <code>Label: Value</code>.
+    </p>
+    <textarea id="csv" placeholder="model,name,category,sub,price,tagline,shortDesc,image,specs"></textarea>
+    <div class="row">
+      <button id="btnPreview">Preview changes</button>
+      <span style="color:var(--dim);font-size:12.5px" id="csvInfo"></span>
+    </div>
+    <div id="preview"></div>
+  </div>
+
+  <div class="panel">
+    <h2>2. Product images (optional)</h2>
+    <p class="hint">
+      Name each file after its SKU — <code>SL-B150.jpg</code> — and it is wired to that product
+      automatically. Files are committed to <code>assets/images/products/</code>.
+      Keep batches small (about 12 files, under 2&nbsp;MB each) — the whole batch travels in one request.
+      For a large catalogue, put image URLs in the CSV <code>image</code> column instead.
+    </p>
+    <div class="drop" id="drop">Click to choose images, or drop them here</div>
+    <input type="file" id="files" accept="image/*" multiple style="display:none" />
+    <div class="thumbs" id="thumbs"></div>
+  </div>
+
+  <div class="panel">
+    <h2>3. Submit</h2>
+    <p class="hint">Writes a branch and opens a pull request. Nothing reaches the live site until you merge on GitHub.</p>
+    <div class="row">
+      <button class="primary" id="btnSubmit">Create pull request</button>
+      <span style="color:var(--dim);font-size:12.5px">Needs the admin token (stored in this browser after first use).</span>
+    </div>
+    <div class="msg" id="msg"></div>
+  </div>
+</div>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const SAMPLE = [
+  'model,name,category,sub,price,tagline,shortDesc,image,specs,features',
+  'SL-B150,SL-B150 150W LED Beam Moving Head,moving,beam,329,150W LED,150W LED beam moving head with DMX512 / RDM.,assets/images/products/sl-b150.jpg,"Light Source: 150W LED; Beam Angle: 2.0-4.0; IP Rating: IP20",RDM;Flicker-free',
+  'SL-X900,SL-X900 900W Profile Spot,moving,profile,0,900W profile,NEW — 900W LED profile spot with framing shutters.,,"Light Source: 900W LED; CRI: 95",Framing shutters'
+].join('\n');
+
+let pendingImages = [];
+
+function token() {
+  let t = localStorage.getItem('sl_admin_token') || '';
+  if (!t) {
+    t = (prompt('Admin token (stored in this browser):') || '').trim();
+    if (t) localStorage.setItem('sl_admin_token', t);
+  }
+  return t;
+}
+
+function show(cls, html) {
+  const m = $('msg');
+  m.className = 'msg ' + cls;
+  m.innerHTML = html;
+}
+
+$('btnSample').onclick = () => { $('csv').value = SAMPLE; $('preview').innerHTML = ''; $('csvInfo').textContent = ''; };
+
+// ---------------------------------------------------------------- images
+function renderThumbs() {
+  $('thumbs').innerHTML = pendingImages.map((f, i) =>
+    '<div class="thumb"><img src="' + f.dataUrl + '" alt="" /><span>' + esc(f.name) + '</span></div>'
+  ).join('');
+}
+
+function addFiles(list) {
+  for (const f of list) {
+    if (!/^image\//.test(f.type)) continue;
+    const reader = new FileReader();
+    reader.onload = () => {
+      pendingImages.push({ name: f.name, dataUrl: reader.result });
+      renderThumbs();
+    };
+    reader.readAsDataURL(f);
+  }
+}
+
+$('drop').onclick = () => $('files').click();
+$('files').onchange = (e) => addFiles(e.target.files);
+['dragover', 'dragenter'].forEach((ev) =>
+  $('drop').addEventListener(ev, (e) => { e.preventDefault(); $('drop').classList.add('over'); })
+);
+['dragleave', 'drop'].forEach((ev) =>
+  $('drop').addEventListener(ev, (e) => { e.preventDefault(); $('drop').classList.remove('over'); })
+);
+$('drop').addEventListener('drop', (e) => addFiles(e.dataTransfer.files));
+
+function esc(s) {
+  return String(s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+}
+
+// ---------------------------------------------------------------- preview
+// Same normalisation the importer uses, so the preview cannot disagree
+// with what the pull request will actually do.
+function normModel(m) {
+  return String(m || '').trim().toUpperCase().replace(/\s+/g, '');
+}
+
+function parseCsv(text) {
+  const src = String(text || '').replace(/^\uFEFF/, '');
+  const rows = [];
+  let row = [], field = '', q = false;
+  for (let i = 0; i < src.length; i++) {
+    const c = src[i];
+    if (q) {
+      if (c === '"') { if (src[i + 1] === '"') { field += '"'; i++; } else q = false; }
+      else field += c;
+      continue;
+    }
+    if (c === '"') { q = true; continue; }
+    if (c === ',') { row.push(field); field = ''; continue; }
+    if (c === '\r') continue;
+    if (c === '\n') { row.push(field); rows.push(row); row = []; field = ''; continue; }
+    field += c;
+  }
+  row.push(field);
+  rows.push(row);
+  return rows.filter((r) => r.some((x) => String(x).trim() !== ''));
+}
+
+function csvObjects(text) {
+  const rows = parseCsv(text);
+  if (rows.length < 2) return [];
+  const head = rows[0].map((h) => String(h).trim().toLowerCase().replace(/[\s_-]/g, ''));
+  const out = [];
+  for (let r = 1; r < rows.length; r++) {
+    const o = {};
+    for (let c = 0; c < head.length; c++) o[head[c]] = String(rows[r][c] == null ? '' : rows[r][c]).trim();
+    out.push(o);
+  }
+  return out;
+}
+
+let CATALOGUE = null;
+
+async function loadCatalogue() {
+  if (CATALOGUE) return CATALOGUE;
+  const res = await fetch('/data/products.json?t=' + Date.now()).catch(() => null);
+  if (!res || !res.ok) return null;
+  const j = await res.json();
+  CATALOGUE = new Set((Array.isArray(j) ? j : j.products || []).map((p) => normModel(p.model)));
+  return CATALOGUE;
+}
+
+$('btnPreview').onclick = async () => {
+  const csv = $('csv').value.trim();
+  if (!csv) return show('err', 'Paste some CSV first.');
+  show('', '');
+
+  const items = csvObjects(csv);
+  if (!items.length) return show('err', 'Could not parse any rows — check the header line.');
+
+  const known = await loadCatalogue();
+  const pick = (o, keys) => {
+    for (const k of keys) if (o[k]) return o[k];
+    return '';
+  };
+
+  $('csvInfo').textContent = items.length + ' row(s) parsed.';
+  $('preview').innerHTML =
+    '<table><tr><th>Model</th><th>Name</th><th>Price</th><th>Image</th><th>Action</th></tr>' +
+    items.map((o) => {
+      const model = pick(o, ['model', 'sku', 'modelno', 'itemno']);
+      const exists = known ? known.has(normModel(model)) : null;
+      return '<tr><td>' + esc(model || '—') + '</td><td>' + esc(pick(o, ['name', 'productname', 'title'])) +
+        '</td><td>' + esc(pick(o, ['price', 'usd'])) + '</td><td>' + esc(pick(o, ['image', 'imageurl']) || '—') +
+        '</td><td class="' + (exists ? 'op' : 'new') + '">' +
+        (exists === null ? '?' : exists ? 'update' : 'create') + '</td></tr>';
+    }).join('') +
+    (known ? '' : '<tr><td colspan="5" style="color:var(--amber)">Could not read the live catalogue — action column is unknown, but submitting still works.</td></tr>') +
+    '</table>';
+};
+
+// ---------------------------------------------------------------- submit
+$('btnSubmit').onclick = async () => {
+  const csv = $('csv').value.trim();
+  if (!csv && !pendingImages.length) return show('err', 'Nothing to submit — add CSV rows or images.');
+
+  const btn = $('btnSubmit');
+  btn.disabled = true;
+  btn.textContent = 'Working…';
+  show('', '');
+
+  try {
+    const res = await fetch('/api/products', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', authorization: 'Bearer ' + token() },
+      body: JSON.stringify({ csv, images: pendingImages }),
+    });
+    const d = await res.json();
+
+    if (!res.ok || !d.ok) {
+      if (res.status === 401) localStorage.removeItem('sl_admin_token');
+      return show('err', esc(d.error || ('HTTP ' + res.status)));
+    }
+
+    const r = d.result || d;
+    show('ok',
+      'Pull request <a href="' + r.pr.url + '" target="_blank">#' + r.pr.number + '</a> opened.<br>' +
+      r.created + ' new · ' + r.updated + ' updated · ' + r.images + ' image(s) · catalogue now ' + r.total + ' SKUs.' +
+      (r.imageErrors && r.imageErrors.length ? '<br>Skipped images: ' + esc(r.imageErrors.join('; ')) : '')
+    );
+    pendingImages = [];
+    renderThumbs();
+  } catch (e) {
+    show('err', 'Request failed: ' + esc(String(e.message || e)));
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Create pull request';
+  }
+};
+</script>
+</body>
+</html>
