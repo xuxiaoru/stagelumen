@@ -87,19 +87,31 @@ function yamlFrontMatter(f) {
 
 function extractJson(text) {
   if (!text) return null;
-  const s = text.indexOf('{');
-  const e = text.lastIndexOf('}');
+  let t = String(text).trim();
+  // Models often wrap the object in a ```json fence despite being told not to.
+  const fence = t.match(/```(?:json)?\s*([\s\S]*?)```/);
+  if (fence) t = fence[1].trim();
+
+  const s = t.indexOf('{');
+  const e = t.lastIndexOf('}');
   if (s === -1 || e <= s) return null;
-  try {
-    return JSON.parse(text.slice(s, e + 1));
-  } catch (err) {
-    // Models occasionally wrap trailing prose after the object.
+
+  const attempts = [];
+  attempts.push(t.slice(s, e + 1));
+  attempts.push(t.slice(s, e + 1).replace(/,\s*}/g, '}'));
+  // A truncated stream stops mid-string or mid-object; close it and retry.
+  attempts.push(t.slice(s).replace(/,\s*$/, '') + '}');
+  attempts.push(t.slice(s).replace(/,\s*$/, '') + '"}');
+
+  for (const cand of attempts) {
     try {
-      return JSON.parse(text.slice(s, e + 1).replace(/,\s*}/g, '}'));
-    } catch (err2) {
-      return null;
+      const v = JSON.parse(cand);
+      if (v && typeof v === 'object') return v;
+    } catch (err) {
+      /* try the next candidate */
     }
   }
+  return null;
 }
 
 /**
@@ -117,8 +129,26 @@ export async function draft(env, request, opts) {
   const result = await search(request, topic, { topK: 6 });
   const facts = renderFacts(result);
 
-  const ai = await callAI(env, buildPrompt(kind, topic, facts, words, lang), MODEL, 2200);
-  if (!ai.text) {
+  const prompt = buildPrompt(kind, topic, facts, words, lang);
+
+  // Long-form output is exactly where models fail: the 70B option is slower and
+  // can be truncated mid-JSON. Walk the chain rather than betting on one model.
+  const chain = [...MODELS.heavy, ...MODELS.chat.filter((m) => MODELS.heavy.indexOf(m) === -1)];
+  let ai = null;
+  let parsed = null;
+  let raw = '';
+
+  for (const m of chain) {
+    const r = await callAI(env, prompt, m, 3000);
+    if (!r.text) continue;
+    raw = r.text;
+    ai = r;
+    parsed = extractJson(r.text);
+    if (parsed && parsed.title && parsed.body) break;
+    parsed = null;
+  }
+
+  if (!ai) {
     return {
       ok: false,
       error:
@@ -127,9 +157,15 @@ export async function draft(env, request, opts) {
     };
   }
 
-  const parsed = extractJson(ai.text);
-  if (!parsed || !parsed.title || !parsed.body) {
-    return { ok: false, error: 'Model returned unusable output. Retry, or narrow the topic.' };
+  if (!parsed) {
+    // Without this the next failure is as opaque as the last one.
+    const snippet = String(raw).replace(/\s+/g, ' ').slice(0, 200);
+    return {
+      ok: false,
+      error:
+        'Model returned unusable output. Retry, or narrow the topic. ' +
+        'Raw start: [' + snippet + ']',
+    };
   }
 
   const category = CATEGORIES.indexOf(parsed.category) !== -1 ? parsed.category : 'Application';
