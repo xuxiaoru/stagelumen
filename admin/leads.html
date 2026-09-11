@@ -155,6 +155,15 @@
     if (m & 4) p.push('github');
     return '<span class="pill" style="color:var(--green)">' + esc(p.join('+')) + '</span>';
   }
+  // autoreply_sent: 0 none / 1 sent / 2 failed / 3 skipped by rate limit
+  function autoLabel(v){
+    v = v|0;
+    var t = '↩ ';
+    if (v === 1) return '<span class="pill" style="color:var(--green)">' + t + 'replied</span>';
+    if (v === 2) return '<span class="pill" style="color:var(--red)">' + t + 'failed</span>';
+    if (v === 3) return '<span class="pill" style="color:var(--amber)">' + t + 'skipped</span>';
+    return '<span class="pill" style="color:var(--dim)">' + t + 'none</span>';
+  }
   function notifyTitle(m){
     m = m|0;
     if (!m) return 'No notification was delivered for this lead';
@@ -225,7 +234,7 @@
         '<td class="msg">' + esc(l.raw_text || '—') + '</td>' +
         '<td class="hide-sm"><span class="pill">' + esc(l.intent || '-') + '</span></td>' +
         '<td><span class="pill ' + esc(l.stage || '') + '">' + esc(l.status || 'new') + '</span></td>' +
-        '<td class="hide-sm" title="' + esc(notifyTitle(l.notified)) + '">' + notifyLabel(l.notified) + '</td>' +
+        '<td class="hide-sm" title="' + esc(notifyTitle(l.notified)) + '">' + notifyLabel(l.notified) + ' ' + autoLabel(l.autoreply_sent) + '</td>' +
         '<td class="hide-sm muted">' + ago(l.created_at) + '</td>' +
         '<td><button data-open="' + esc(l.id) + '">Open</button></td>' +
       '</tr>';
@@ -277,6 +286,7 @@
         '<dt>Trade terms</dt><dd>' + esc(l.trade_terms||'-') + '</dd>' +
         '<dt>Intent</dt><dd>' + esc(l.intent) + ' · ' + esc(l.urgency) + '</dd>' +
         '<dt>Alert</dt><dd>' + notifyLabel(l.notified) + ' <span class="muted">' + esc(notifyTitle(l.notified)) + '</span></dd>' +
+        '<dt>Ack to customer</dt><dd>' + autoLabel(l.autoreply_sent) + '</dd>' +
         '<dt>Source</dt><dd class="muted">' + esc((l.page_url||'').slice(0,120)) + '</dd>' +
         '<dt>Received</dt><dd>' + esc(l.created_at) + '</dd>' +
         '</dl>' +
@@ -287,6 +297,8 @@
         '<div><strong>Notes</strong>' + (notes || '<div class="muted">No notes yet.</div>') + '</div>' +
         '<textarea id="noteBox" placeholder="Add a note…" style="width:100%;margin-top:10px" rows="3"></textarea>' +
         '<div class="row-actions">' +
+          '<button id="btnAutoReply">Reply to customer</button>' +
+          '<button id="btnNotify">Resend alert</button>' +
           '<button data-status="contacted">Mark contacted</button>' +
           '<button data-status="qualified">Qualified</button>' +
           '<button data-status="quoted">Quoted</button>' +
@@ -344,6 +356,30 @@
           current = null;
           load();
         }).catch(function(e){ alert(e.message); });
+      return;
+    }
+
+    if (t.id === 'btnAutoReply' && current){
+      var again = (current.autoreply_sent|0) === 1;
+      if (!confirm('Send the acknowledgement email to ' + (current.email || 'this address') +
+          '?\n\nIt uses the draft reply shown above.' +
+          (again ? '\n\nAlready acknowledged once — sending again.' : ''))) return;
+      t.disabled = true; t.textContent = 'Sending…';
+      api('/api/lead?id=' + encodeURIComponent(current.id), {
+        method:'PATCH', body: JSON.stringify({ autoReply:true, force: again })
+      }).then(function(d){
+        if (!d.ok){ alert('Not sent: ' + (d.error || 'unknown error')); }
+        else {
+          var a = d.auto_reply || {};
+          alert(a.ok
+            ? 'Acknowledgement sent to ' + (current.email) + '\nResend id: ' + (a.id || '-')
+            : 'Not sent: ' + (a.reason || 'unknown') + (a.hint ? '\n\n' + a.hint : ''));
+        }
+        t.disabled = false; t.textContent = 'Reply to customer';
+        var id = current.id;
+        load();
+        openLead(id);
+      }).catch(function(e){ alert(e.message); t.disabled = false; t.textContent = 'Reply to customer'; });
       return;
     }
 
