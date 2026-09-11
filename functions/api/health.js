@@ -85,6 +85,14 @@ function notifyDiag(env) {
     },
     webhook: { configured: !!env.NOTIFY_WEBHOOK, host },
     github_issue: { configured: !!env.GITHUB_PAT },
+    autoreply: {
+      enabled: String(env.AUTOREPLY || '1') !== '0',
+      configured: !!env.RESEND_API_KEY,
+      from: mask(env.AUTOREPLY_FROM || env.NOTIFY_FROM || 'StageLumen <onboarding@resend.dev>'),
+      reply_to: env.REPLY_TO || 'sales@rigelighting.com (default)',
+      note: 'Sends an acknowledgement to every non-spam enquiry. Needs a verified ' +
+            'sending domain, otherwise Resend can only reach your account email.',
+    },
     hot_only: !!env.NOTIFY_HOT_ONLY,
     note: 'An inquiry with no working channel is stored in D1 but nobody is alerted. ' +
           'Set at least one of: RESEND_API_KEY+NOTIFY_EMAIL, NOTIFY_WEBHOOK, GITHUB_PAT.',
