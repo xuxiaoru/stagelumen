@@ -8,10 +8,10 @@
  */
 
 import { ok, fail, handleOptions, readBody, str, isEmail, uid, nowIso, clientIp, edgeCountry } from '../_lib/util.js';
-import { upsertCustomer, insertLead, logAgentRun, rateLimited, updateLead } from '../_lib/db.js';
+import { upsertCustomer, insertLead, logAgentRun, rateLimited, updateLead, scalar } from '../_lib/db.js';
 import { ensureSchema } from '../_lib/schema.js';
 import { triage, refineWithAI, templateReply } from '../_lib/reception.js';
-import { notifyAll } from '../_lib/notify.js';
+import { notifyAll, sendAutoReplyVerbose } from '../_lib/notify.js';
 
 export async function onRequest(context) {
   const { request, env } = context;
@@ -134,15 +134,50 @@ export async function onRequest(context) {
     console.log('[inquiry] DB unavailable, payload=' + JSON.stringify(lead));
   }
 
-  // ---- notify ------------------------------------------------------------
-  const notified = base.intent === 'spam' ? { email: false, webhook: false, github: false }
-    : await notifyAll(env, lead, base);
-  rescued = !!(notified && (notified.github || notified.email || notified.webhook));
+  // ---- acknowledge to the customer ---------------------------------------
+  // Spam never gets a reply: an auto-responder that answers bots is how a
+  // domain ends up on a blocklist. Neither does anyone who trips the
+  // per-address guard, which exists because this form can mail any address a
+  // visitor decides to type in.
+  let autoreply = { ok: false, reason: 'skipped' };
+  let autoreplyFlag = 0;
+
+  if (base.intent !== 'spam' && persisted) {
+    const recent = await scalar(
+      env,
+      "SELECT COUNT(*) AS c FROM leads WHERE email = ? AND created_at > datetime('now', '-60 minutes')",
+      [email],
+      0
+    ).catch(() => 0);
+
+    if (recent > 1) {
+      autoreply = { ok: false, reason: 'rate limited for this address' };
+      autoreplyFlag = 3;
+    } else {
+      autoreply = await sendAutoReplyVerbose(env, lead);
+      autoreplyFlag = autoreply.ok ? 1 : 2;
+    }
+  }
+
+  // Persist what actually got delivered. Without this the admin board shows
+  // zeroes for every lead and a silently broken channel stays invisible.
+  const mask = (notified.email ? 1 : 0) | (notified.webhook ? 2 : 0) | (notified.github ? 4 : 0);
+  if (persisted) {
+    try {
+      await updateLead(env, lead.id, { notified: mask, autoreply_sent: autoreplyFlag });
+    } catch (e) {
+      console.error('[inquiry] status update failed: ' + ((e && e.message) || e));
+    }
+  }
 
   return ok({
     id: lead.id,
     persisted,
     rescued,
+    notified,
+    // Deliberately coarse: this endpoint is public, so internal reasons
+    // (missing key, a Resend 403) stay in the server log, not the response.
+    autoreply: { sent: !!autoreply.ok },
     triage: { intent: base.intent, urgency: base.urgency, score: base.score, stage: base.stage },
     model: modelUsed,
     ms: Date.now() - t0,
