@@ -214,10 +214,14 @@
       .then(function (r) { return r.json().catch(function () { return {}; }); })
       .then(function (data) {
         if (data && data.ok) {
+          var acked = data.autoreply && data.autoreply.sent;
           setStatus(
             form,
             '✓ Thanks! Our sales engineer will reply within 24 hours' +
-              (data.triage && data.triage.urgency === 'high' ? ' (flagged urgent).' : '.'),
+              (data.triage && data.triage.urgency === 'high' ? ' (flagged urgent).' : '.') +
+              (acked
+                ? ' A confirmation has been sent to your inbox — please check your spam folder if it does not arrive.'
+                : ''),
             'success'
           );
           if (status) status.style.color = '#16a34a';
