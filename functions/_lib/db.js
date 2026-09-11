@@ -130,7 +130,8 @@ export async function insertLead(env, lead) {
 
 export async function updateLead(env, id, patch) {
   if (!hasDb(env)) return false;
-  const allowed = ['status', 'stage', 'intent', 'urgency', 'score', 'lost_reason', 'ai_reply', 'ai_summary', 'notified'];
+  const allowed = ['status', 'stage', 'intent', 'urgency', 'score', 'lost_reason',
+    'ai_reply', 'ai_summary', 'notified', 'autoreply_sent'];
   const keys = Object.keys(patch).filter((k) => allowed.indexOf(k) !== -1);
   if (!keys.length) return false;
   const sets = keys.map((k) => k + ' = ?').join(', ');
