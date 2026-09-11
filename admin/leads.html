@@ -75,7 +75,7 @@
 <body>
 <div class="wrap">
   <nav class="anav">
-    <a href="index.html" class="">Admin</a><a href="cms.html" class="">CMS Editor</a><a href="leads.html" class="on">Lead Inbox</a><a href="content.html" class="">Content Factory</a><a href="products.html" class="">Product Importer</a>
+    <a href="index.html" class="">Admin</a><a href="cms.html" class="">CMS Editor</a><a href="leads.html" class="on">Lead Inbox</a><a href="content.html" class="">Content Factory</a><a href="products.html" class="">Product Importer</a><a href="media.html" class="">Image Library</a>
     <span class="spacer"></span>
     <a class="home" href="/">&larr; Back to site</a>
   </nav>
@@ -122,7 +122,7 @@
         <th>Message</th><th class="hide-sm">Intent</th><th>Status</th><th class="hide-sm">When</th><th></th>
       </tr>
     </thead>
-    <tbody id="tbody"><tr><td colspan="9" class="empty">Loading…</td></tr></tbody>
+    <tbody id="tbody"><tr><td colspan="10" class="empty">Loading…</td></tr></tbody>
   </table>
 </div>
 
@@ -145,6 +145,25 @@
   function $(id){ return document.getElementById(id); }
   function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  // notified is a bitmask: 1 = email, 2 = webhook, 4 = github issue
+  function notifyLabel(m){
+    m = m|0;
+    if (!m) return '<span class="pill" style="color:var(--red);border-color:rgba(229,72,77,.5)">none</span>';
+    var p = [];
+    if (m & 1) p.push('email');
+    if (m & 2) p.push('webhook');
+    if (m & 4) p.push('github');
+    return '<span class="pill" style="color:var(--green)">' + esc(p.join('+')) + '</span>';
+  }
+  function notifyTitle(m){
+    m = m|0;
+    if (!m) return 'No notification was delivered for this lead';
+    var p = [];
+    if (m & 1) p.push('email');
+    if (m & 2) p.push('webhook');
+    if (m & 4) p.push('GitHub issue');
+    return 'Delivered via ' + p.join(', ');
+  }
   function ago(ts){
     if(!ts) return '-';
     var t = new Date(String(ts).replace(' ','T') + 'Z').getTime();
@@ -193,7 +212,7 @@
   function render(rows){
     var tb = $('tbody');
     if (!rows || !rows.length){
-      tb.innerHTML = '<tr><td colspan="9" class="empty">No leads yet. Submit the RFQ form to test.</td></tr>';
+      tb.innerHTML = '<tr><td colspan="10" class="empty">No leads yet. Submit the RFQ form to test.</td></tr>';
       return;
     }
     tb.innerHTML = rows.map(function(l){
@@ -206,6 +225,7 @@
         '<td class="msg">' + esc(l.raw_text || '—') + '</td>' +
         '<td class="hide-sm"><span class="pill">' + esc(l.intent || '-') + '</span></td>' +
         '<td><span class="pill ' + esc(l.stage || '') + '">' + esc(l.status || 'new') + '</span></td>' +
+        '<td class="hide-sm" title="' + esc(notifyTitle(l.notified)) + '">' + notifyLabel(l.notified) + '</td>' +
         '<td class="hide-sm muted">' + ago(l.created_at) + '</td>' +
         '<td><button data-open="' + esc(l.id) + '">Open</button></td>' +
       '</tr>';
@@ -219,14 +239,14 @@
     var q  = $('fQ').value.trim(); if (q) qs.push('q=' + encodeURIComponent(q));
     qs.push('limit=100');
 
-    $('tbody').innerHTML = '<tr><td colspan="9" class="empty">Loading…</td></tr>';
+    $('tbody').innerHTML = '<tr><td colspan="10" class="empty">Loading…</td></tr>';
 
     api('/api/leads?' + qs.join('&')).then(function(d){
-      if (!d.ok) { $('tbody').innerHTML = '<tr><td colspan="9" class="empty">' + esc(d.error||'error') + '</td></tr>'; return; }
+      if (!d.ok) { $('tbody').innerHTML = '<tr><td colspan="10" class="empty">' + esc(d.error||'error') + '</td></tr>'; return; }
       render(d.leads);
       $('count').textContent = (d.leads ? d.leads.length : 0) + ' shown / ' + (d.total||0) + ' total';
     }).catch(function(e){
-      $('tbody').innerHTML = '<tr><td colspan="9" class="empty">' + esc(e.message) + '</td></tr>';
+      $('tbody').innerHTML = '<tr><td colspan="10" class="empty">' + esc(e.message) + '</td></tr>';
     });
 
     api('/api/stats?days=30').then(function(d){ if (d.ok) renderCards(d); }).catch(function(){});
@@ -256,6 +276,7 @@
         '<dt>Lead time</dt><dd>' + esc(l.lead_time||'-') + '</dd>' +
         '<dt>Trade terms</dt><dd>' + esc(l.trade_terms||'-') + '</dd>' +
         '<dt>Intent</dt><dd>' + esc(l.intent) + ' · ' + esc(l.urgency) + '</dd>' +
+        '<dt>Alert</dt><dd>' + notifyLabel(l.notified) + ' <span class="muted">' + esc(notifyTitle(l.notified)) + '</span></dd>' +
         '<dt>Source</dt><dd class="muted">' + esc((l.page_url||'').slice(0,120)) + '</dd>' +
         '<dt>Received</dt><dd>' + esc(l.created_at) + '</dd>' +
         '</dl>' +
@@ -326,6 +347,26 @@
       return;
     }
 
+    if (t.id === 'btnNotify' && current){
+      t.disabled = true; t.textContent = 'Sending…';
+      api('/api/lead?id=' + encodeURIComponent(current.id), { method:'PATCH', body: JSON.stringify({ notify:true }) })
+        .then(function(d){
+          if (!d.ok){ alert('Resend failed: ' + (d.error || 'unknown error')); }
+          else {
+            var n = d.notify || {};
+            alert('Resend result\n\n  email:  ' + (n.email ? 'sent' : 'not sent') +
+                  '\n  webhook: ' + (n.webhook ? 'sent' : 'not sent') +
+                  '\n  github:  ' + (n.github ? 'issue created' : 'not created') +
+                  '\n\nIf all three are negative, no channel is configured on Cloudflare.');
+          }
+          t.disabled = false; t.textContent = 'Resend alert';
+          var id = current.id;
+          load();
+          openLead(id);
+        }).catch(function(e){ alert(e.message); t.disabled = false; t.textContent = 'Resend alert'; });
+      return;
+    }
+
     var st = t.getAttribute('data-status');
     if (st && current){
       var body = { status: st, note: ($('noteBox') && $('noteBox').value.trim()) || '' };
@@ -344,6 +385,10 @@
     if (!b.DB) missing.push('DB');
     if (!b.ADMIN_TOKEN) missing.push('ADMIN_TOKEN');
     if (!b.AI) missing.push('AI');
+    var nt = d.notify || {};
+    if (!(nt.email && nt.email.configured) && !(nt.webhook && nt.webhook.configured) && !(nt.github_issue && nt.github_issue.configured)) {
+      missing.push('notify channel');
+    }
     $('envBadge').textContent = missing.length
       ? 'missing bindings: ' + missing.join(', ')
       : 'all systems go · ' + (d.leads||0) + ' leads';
