@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Image Library — StageLumen</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#121722; --panel2:#171d2b; --line:#232b3d;
+    --txt:#e6ebf5; --dim:#8b96ad; --brand:#ff6b00; --cyan:#00d4ff;
+    --green:#16a34a; --red:#e5484d; --amber:#f5a524;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+       font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif}
+  a{color:var(--cyan);text-decoration:none}
+  .wrap{max-width:1180px;margin:0 auto;padding:24px}
+  .anav{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:18px;
+        padding:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+  .anav a{padding:6px 11px;border-radius:7px;background:#1c2536;border:1px solid var(--line);
+          color:var(--dim);font-size:13px}
+  .anav a:hover{border-color:var(--brand);color:var(--txt)}
+  .anav a.on{background:rgba(255,107,0,.15);border-color:var(--brand);color:var(--brand);font-weight:600}
+  .anav .spacer{flex:1}
+  .anav .home{background:transparent;border-color:transparent}
+  h1{font-size:20px;margin:0}
+  header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+  button,select,input{font:inherit;color:var(--txt);background:var(--panel2);
+       border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+  button{cursor:pointer;background:#1c2536}
+  button:hover{border-color:var(--brand)}
+  button.primary{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+  button.danger{background:rgba(229,72,77,.15);border-color:rgba(229,72,77,.5);color:#ff9b9b}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:18px}
+  .panel h2{font-size:14px;margin:0 0 4px;letter-spacing:.02em}
+  .panel .hint{color:var(--dim);font-size:12.5px;margin:0 0 14px;line-height:1.55}
+  .stats{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+  .stat{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:120px}
+  .stat b{display:block;font-size:19px;line-height:1.2}
+  .stat span{color:var(--dim);font-size:11.5px}
+  .stat.warn b{color:var(--amber)}
+  .toolbar{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:14px;margin-top:16px}
+  .card{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:10px;position:relative}
+  .card.sel{border-color:var(--brand);box-shadow:0 0 0 1px rgba(255,107,0,.35)}
+  .card.locked{opacity:.62}
+  .card img{width:100%;height:118px;object-fit:cover;border-radius:6px;background:#0b0e14;display:block}
+  .card .nm{font-size:12px;margin-top:8px;word-break:break-all;line-height:1.35}
+  .card .meta{color:var(--dim);font-size:11px;margin-top:4px}
+  .tag{display:inline-block;font-size:10.5px;padding:1px 6px;border-radius:999px;margin:6px 4px 0 0;
+       border:1px solid var(--line);color:var(--dim)}
+  .tag.sku{color:var(--cyan);border-color:rgba(0,212,255,.4)}
+  .tag.page{color:var(--green);border-color:rgba(22,163,74,.45)}
+  .tag.orphan{color:var(--amber);border-color:rgba(245,165,36,.45)}
+  .card input{position:absolute;top:8px;left:8px;width:16px;height:16px;accent-color:var(--brand)}
+  .msg{margin-top:14px;padding:12px 14px;border-radius:8px;font-size:13px;display:none;line-height:1.6}
+  .msg.err{display:block;background:rgba(229,72,77,.1);border:1px solid rgba(229,72,77,.4);color:#ff9b9b}
+  .msg.ok{display:block;background:rgba(22,163,74,.1);border:1px solid rgba(22,163,74,.4);color:#7ee2a8}
+  .msg.warn{display:block;background:rgba(245,165,36,.1);border:1px solid rgba(245,165,36,.4);color:#ffd28a}
+  code{background:var(--panel2);padding:1px 6px;border-radius:4px;font-size:12px}
+  .empty{color:var(--dim);padding:26px;text-align:center}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="anav">
+    <a href="index.html">Admin</a>
+    <a href="cms.html">CMS Editor</a>
+    <a href="leads.html">Lead Inbox</a>
+    <a href="content.html">Content Factory</a>
+    <a href="products.html">Product Importer</a>
+    <a href="media.html" class="on">Image Library</a>
+    <span class="spacer"></span>
+    <a class="home" href="/">&larr; Back to site</a>
+  </nav>
+
+  <header>
+    <h1>Image Library</h1>
+    <span style="flex:1"></span>
+    <button id="btnRefresh">Refresh</button>
+  </header>
+
+  <div class="panel">
+    <h2>assets/images/products</h2>
+    <p class="hint">
+      Read live from GitHub. <span class="tag sku">SKU</span> means a product in
+      <code>data/products.json</code> points at the file; <span class="tag page">page</span> means a
+      page (news, projects, blog post) embeds it. Only files with neither — marked
+      <span class="tag orphan">unused</span> — can be deleted, and even then the deletion lands on a
+      branch as a pull request for you to review and merge.
+    </p>
+    <div class="stats" id="stats"></div>
+    <div class="toolbar">
+      <select id="filter">
+        <option value="orphan">Unused only (deletable)</option>
+        <option value="all">All files</option>
+        <option value="used">Referenced only</option>
+      </select>
+      <input id="q" placeholder="Filter by name or SKU…" style="min-width:220px" />
+      <button id="btnSelectOrphans">Select all unused</button>
+      <button id="btnClear">Clear selection</button>
+      <span style="flex:1"></span>
+      <button id="btnDelete" class="danger" disabled>Delete selected (0)</button>
+    </div>
+    <div id="grid" class="grid"></div>
+  </div>
+
+  <div class="msg" id="msg"></div>
+</div>
+
+<script>
+(function () {
+  var state = { data: null, selected: {} };
+
+  function token() {
+    var t = localStorage.getItem('sl_admin_token') || '';
+    if (!t) {
+      t = prompt('Admin token (ADMIN_TOKEN):') || '';
+      if (t) localStorage.setItem('sl_admin_token', t);
+    }
+    return t;
+  }
+
+  function msg(text, kind) {
+    var el = document.getElementById('msg');
+    el.className = 'msg ' + (kind || '');
+    el.style.display = text ? 'block' : 'none';
+    el.innerHTML = text || '';
+  }
+
+  function kb(n) {
+    if (n >= 1048576) return (n / 1048576).toFixed(2) + ' MB';
+    return Math.max(1, Math.round(n / 1024)) + ' KB';
+  }
+
+  async function api(path, opts) {
+    var res = await fetch(path, Object.assign({
+      headers: { 'content-type': 'application/json', authorization: 'Bearer ' + token() },
+    }, opts || {}));
+    var j = await res.json().catch(function () { return { ok: false, error: 'Bad response' }; });
+    if (res.status === 401) { localStorage.removeItem('sl_admin_token'); throw new Error('Unauthorized — reload and re-enter the token'); }
+    if (!res.ok || j.ok === false) throw new Error(j.error || ('HTTP ' + res.status));
+    return j;
+  }
+
+  function visible() {
+    var f = document.getElementById('filter').value;
+    var q = (document.getElementById('q').value || '').trim().toLowerCase();
+    return state.data.files.filter(function (file) {
+      if (f === 'orphan' && !file.orphan) return false;
+      if (f === 'used' && file.orphan) return false;
+      if (!q) return true;
+      return file.name.toLowerCase().indexOf(q) !== -1 ||
+        file.used_by.join(' ').toLowerCase().indexOf(q) !== -1;
+    });
+  }
+
+  function render() {
+    var d = state.data;
+    document.getElementById('stats').innerHTML =
+      '<div class="stat"><b>' + d.count + '</b><span>files</span></div>' +
+      '<div class="stat"><b>' + kb(d.total_bytes) + '</b><span>total size</span></div>' +
+      '<div class="stat warn"><b>' + d.orphan_count + '</b><span>unused</span></div>' +
+      '<div class="stat warn"><b>' + kb(d.orphan_bytes) + '</b><span>reclaimable</span></div>' +
+      '<div class="stat"><b>' + d.sku_count + '</b><span>SKUs</span></div>';
+
+    var list = visible();
+    var grid = document.getElementById('grid');
+    if (!list.length) {
+      grid.innerHTML = '<div class="empty" style="grid-column:1/-1">Nothing matches this filter.</div>';
+      return;
+    }
+
+    grid.innerHTML = list.map(function (f) {
+      var tags = f.used_by.map(function (m) { return '<span class="tag sku">' + m + '</span>'; }).join('');
+      if (f.page_ref) tags += '<span class="tag page">page</span>';
+      if (f.orphan) tags += '<span class="tag orphan">unused</span>';
+      var locked = !f.orphan;
+      return '<div class="card' + (locked ? ' locked' : '') + (state.selected[f.name] ? ' sel' : '') + '" data-n="' + f.name + '">' +
+        '<input type="checkbox" ' + (locked ? 'disabled ' : '') +
+          (state.selected[f.name] ? 'checked ' : '') + 'data-n="' + f.name + '" />' +
+        '<img loading="lazy" src="' + f.url + '" alt="" onerror="this.style.opacity=.25" />' +
+        '<div class="nm">' + f.name + '</div>' +
+        '<div class="meta">' + kb(f.size) + '</div>' +
+        '<div>' + tags + '</div>' +
+        '</div>';
+    }).join('');
+
+    Array.prototype.forEach.call(grid.querySelectorAll('input[type=checkbox]'), function (cb) {
+      cb.addEventListener('change', function () {
+        var n = cb.getAttribute('data-n');
+        if (cb.checked) state.selected[n] = true; else delete state.selected[n];
+        var card = grid.querySelector('.card[data-n="' + n + '"]');
+        if (card) card.className = card.className.replace(/\s*sel\b/, '') + (cb.checked ? ' sel' : '');
+        syncDeleteButton();
+      });
+    });
+
+    syncDeleteButton();
+  }
+
+  function syncDeleteButton() {
+    var n = Object.keys(state.selected).length;
+    var b = document.getElementById('btnDelete');
+    b.disabled = n === 0;
+    b.textContent = 'Delete selected (' + n + ')';
+  }
+
+  async function load(force) {
+    msg('');
+    try {
+      var j = await api('/api/media' + (force ? '?refresh=1' : ''));
+      state.data = j;
+      state.selected = {};
+      render();
+    } catch (e) {
+      msg(String(e.message || e), 'err');
+    }
+  }
+
+  document.getElementById('btnRefresh').addEventListener('click', function () { load(true); });
+  document.getElementById('filter').addEventListener('change', render);
+  document.getElementById('q').addEventListener('input', render);
+  document.getElementById('btnClear').addEventListener('click', function () {
+    state.selected = {}; render();
+  });
+  document.getElementById('btnSelectOrphans').addEventListener('click', function () {
+    state.selected = {};
+    visible().forEach(function (f) { if (f.orphan) state.selected[f.name] = true; });
+    render();
+  });
+
+  document.getElementById('btnDelete').addEventListener('click', async function () {
+    var names = Object.keys(state.selected);
+    if (!names.length) return;
+    var d = state.data;
+    var bytes = names.reduce(function (s, n) {
+      var f = d.files.filter(function (x) { return x.name === n; })[0];
+      return s + (f ? f.size : 0);
+    }, 0);
+    if (!confirm('Open a pull request to delete ' + names.length + ' file(s), ' + kb(bytes) + '?\n\n' +
+      names.join('\n') + '\n\nNothing is deleted from the live site until you merge the PR.')) return;
+
+    var btn = document.getElementById('btnDelete');
+    btn.disabled = true;
+    try {
+      var j = await api('/api/media', { method: 'POST', body: JSON.stringify({ files: names }) });
+      msg('Pull request <a href="' + j.pr.url + '" target="_blank">#' + j.pr.number + '</a> opened — ' +
+        j.removed.length + ' file(s), ' + kb(j.freed_bytes) +
+        '. The images disappear from the site only after you merge it. ' +
+        'If you change your mind, close the PR and delete the branch <code>' + j.branch + '</code>.', 'ok');
+      state.selected = {};
+      load(true);
+    } catch (e) {
+      msg(String(e.message || e), 'err');
+      btn.disabled = false;
+    }
+  });
+
+  load(false);
+})();
+</script>
+</body>
+</html>
