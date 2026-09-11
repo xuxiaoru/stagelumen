@@ -1,0 +1,21 @@
+{
+  "generated": "2026-09-11T03:41:04.804Z",
+  "count": 1,
+  "posts": [
+    {
+      "title": "How to Set Up DMX Lighting for a Small Venue (Step-by-Step)",
+      "slug": "how-to-set-up-dmx-lighting",
+      "date": "2026-09-01T10:00:00.000Z",
+      "datePretty": "September 1, 2026",
+      "category": "How-To",
+      "excerpt": "A practical guide to designing a DMX lighting rig for a small bar or club — covering channel math, fixture addressing, and controller setup.",
+      "tags": [
+        "DMX",
+        "How-To",
+        "Small Venue",
+        "Lighting Design"
+      ],
+      "url": "content/blog/how-to-set-up-dmx-lighting.html"
+    }
+  ]
+}
