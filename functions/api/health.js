@@ -9,6 +9,7 @@ import { ok } from '../_lib/util.js';
 import { hasDb, scalar } from '../_lib/db.js';
 import { ensureSchema, schemaReady } from '../_lib/schema.js';
 import { callAI, MODELS } from '../_lib/reception.js';
+import { ghProbe } from '../_lib/github.js';
 
 /**
  * Binding diagnostics.
@@ -81,6 +82,17 @@ export async function onRequest(context) {
     smoke = { ok: false, error: String((e && e.message) || e).slice(0, 200) };
   }
 
+  // `?gh=1` proves the stored PAT actually authenticates. A token can be
+  // present and still be a bad copy, which is exactly what went wrong once.
+  let gh = null;
+  try {
+    if (new URL(request.url).searchParams.get('gh') === '1') {
+      gh = await ghProbe(env);
+    }
+  } catch (e) {
+    gh = { ok: false, error: String((e && e.message) || e).slice(0, 200) };
+  }
+
   return ok({
     service: 'stagelumen-ai',
     stage: 'P0',
@@ -98,5 +110,6 @@ export async function onRequest(context) {
     ready: hasDb(env) && !!env.ADMIN_TOKEN,
     diag: diagnose(env),
     ai_smoke: smoke,
+    gh_probe: gh,
   });
 }
