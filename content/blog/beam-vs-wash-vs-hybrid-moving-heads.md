@@ -4,6 +4,7 @@ slug: "beam-vs-wash-vs-hybrid-moving-heads"
 date: "2026-09-11T14:20:00.000Z"
 author: "StageLumen Team"
 category: "Buyer's Guide"
+image: "assets/images/products/sl-h800.jpg"
 excerpt: "Beam, wash and hybrid moving heads compared on the only numbers that matter — beam angle, colour system and what each type costs you in practice."
 tags:
   - Moving Head
