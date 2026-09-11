@@ -12,6 +12,7 @@ import {
 } from '../_lib/util.js';
 import { one, run, updateLead, addNote, listNotes } from '../_lib/db.js';
 import { ensureSchema } from '../_lib/schema.js';
+import { notifyAll } from '../_lib/notify.js';
 
 const SELECT = `SELECT l.*, c.source AS customer_source
                 FROM leads l LEFT JOIN customers c ON c.id = l.customer_id`;
@@ -40,11 +41,26 @@ export async function onRequest(context) {
 
   // ---- update ------------------------------------------------------------
   if (request.method === 'PATCH') {
-    const exists = await one(env, 'SELECT id FROM leads WHERE id = ?', [id]);
-    if (!exists) return fail('Lead not found', 404);
+    const lead = await one(env, SELECT + ' WHERE l.id = ?', [id]);
+    if (!lead) return fail('Lead not found', 404);
 
     const body = await readBody(request);
     const patch = {};
+
+    // Re-send notifications. Needed when a lead arrived before any channel was
+    // configured (or while the PAT was broken) and would otherwise be lost.
+    let notifyResult = null;
+    if (body.notify) {
+      notifyResult = await notifyAll(env, lead, {
+        intent: lead.intent || 'quote',
+        urgency: lead.urgency || 'normal',
+        score: lead.score || 0,
+        stage: lead.stage || 'new',
+      });
+      patch.notified = (notifyResult.email ? 1 : 0) |
+        (notifyResult.webhook ? 2 : 0) |
+        (notifyResult.github ? 4 : 0);
+    }
 
     if (body.status) {
       const v = String(body.status);
@@ -80,7 +96,7 @@ export async function onRequest(context) {
       });
     }
 
-    return ok({ updated, id, patch });
+    return ok({ updated, id, patch, notify: notifyResult });
   }
 
   // ---- delete ------------------------------------------------------------
