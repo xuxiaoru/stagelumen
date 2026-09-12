@@ -272,7 +272,7 @@
 </footer>
 
 <script src="assets/js/cookie-consent.js"></script>
-<script src="assets/js/products.js?v=8"></script>
+<script src="assets/js/products.js?v=9"></script>
 <script src="assets/js/main.js?v=8"></script>
 <script src="assets/js/inquiry.js?v=9"></script>
 <script src="assets/js/assistant.js?v=9"></script>
@@ -326,16 +326,19 @@
     // 4. 评分
     const stars = StageLumenProducts.renderStars(p.rating);
     document.getElementById('productStars').textContent = stars.replace(/<\/?span[^>]*>/g, '');
-    document.getElementById('productRatingText').textContent = `${p.rating} / 5 · ${p.reviews} reviews · ${p.sold} sold`;
+    document.getElementById('productRatingText').textContent =
+      `${p.rating} / 5 · ${p.reviews} reviews` + (p.sold ? ` · ${p.sold} sold` : '');
 
     // 5. 价格 + 起订量
-    document.getElementById('productPrice').textContent = `$${p.price}`;
-    document.getElementById('productPriceNote').textContent = `/ unit (FOB Shenzhen, MOQ ${p.moq})`;
-    document.getElementById('qtyInput').value = p.moq;
+    document.getElementById('productPrice').textContent =
+      p.price ? `$${p.price}` : 'Price on request';
+    document.getElementById('productPriceNote').textContent =
+      `/ unit (${p.incoterm || 'FOB Shenzhen'}, MOQ ${p.moq || 1})`;
+    document.getElementById('qtyInput').value = p.moq || 1;
     document.getElementById('rfqLink').href = `rfq.html?product=${p.id}&qty=${p.moq}`;
 
     document.getElementById('productLeadInfo').textContent =
-      `Lead time: ${p.leadTime} · OEM logo from ${p.oemFrom} units · ${p.warranty} warranty`;
+      `Lead time: ${p.leadTime || 'on request'} · OEM logo from ${p.oemFrom || 'TBD'} units · ${p.warranty || 'on request'} warranty`;
 
     // 6. 主要规格（specs）
     const specHtml = p.specs.map(s => `
