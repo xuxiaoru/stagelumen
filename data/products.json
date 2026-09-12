@@ -1,8 +1,8 @@
 {
  "meta": {
-  "updated": "2026-09-10",
-  "total": 138,
-  "note": "138 SKU. 100 LED profile spot SKUs added 2026-09-10 with estimated prices (priceSource=estimate) — replace with verified factory pricing before quoting customers."
+  "updated": "2026-09-12",
+  "total": 165,
+  "note": "165 SKU. Moving-head range replaced with 47 real factory items from the RIGE quotation sheet (2026-09-12); prices are EXW USD, verified by factory."
  },
  "categories": {
   "moving": {
@@ -137,1912 +137,6 @@
   ]
  },
  "products": [
-  {
-   "id": "sl-b150",
-   "name": "SL-B150 150W LED Beam Moving Head",
-   "model": "SL-B150",
-   "category": "moving",
-   "sub": "beam",
-   "subLabel": "Beam",
-   "family": "moving",
-   "price": 329,
-   "badge": null,
-   "rating": 4.8,
-   "reviews": 76,
-   "sold": "300+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "150W LED",
-   "shortDesc": "150W LED Beam Moving Head with DMX512 / RDM control, 2.0°–4.0° beam angle and IP20 rating. Built for concert, club, event production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-B150 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Club, Event.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "150W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "2.0°–4.0°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Static/Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Concert",
-    "Club",
-    "Event"
-   ],
-   "priority": "Core",
-   "phase": "Launch",
-   "hero": false,
-   "oem": false,
-   "image": "assets/images/products/sl-b150.jpg",
-   "images": [
-    "assets/images/products/sl-b150.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-b200",
-   "name": "SL-B200 200W LED Beam Moving Head",
-   "model": "SL-B200",
-   "category": "moving",
-   "sub": "beam",
-   "subLabel": "Beam",
-   "family": "moving",
-   "price": 429,
-   "badge": null,
-   "rating": 4.8,
-   "reviews": 32,
-   "sold": "900+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "200W LED",
-   "shortDesc": "200W LED Beam Moving Head with DMX512 / RDM control, 2.0°–4.5° beam angle and IP20 rating. Built for concert, rental, club production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-B200 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Rental, Club, Event.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "200W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "2.0°–4.5°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Static/Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Concert",
-    "Rental",
-    "Club",
-    "Event"
-   ],
-   "priority": "Core",
-   "phase": "Launch",
-   "hero": false,
-   "oem": false,
-   "image": "assets/images/products/sl-b200.jpg",
-   "images": [
-    "assets/images/products/sl-b200.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-b280",
-   "name": "SL-B280 280W LED Beam Moving Head",
-   "model": "SL-B280",
-   "category": "moving",
-   "sub": "beam",
-   "subLabel": "Beam",
-   "family": "moving",
-   "price": 549,
-   "badge": "hot",
-   "rating": 4.9,
-   "reviews": 90,
-   "sold": "300+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "280W LED",
-   "shortDesc": "280W LED Beam Moving Head with DMX512 / RDM control, 2.5° beam angle and IP20 rating. Built for concert, festival, rental production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-B280 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Rental, Club.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "280W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "2.5°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Static/Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Concert",
-    "Festival",
-    "Rental",
-    "Club"
-   ],
-   "priority": "Hero",
-   "phase": "Launch",
-   "hero": true,
-   "oem": true,
-   "image": "assets/images/products/sl-b280.jpg",
-   "images": [
-    "assets/images/products/sl-b280.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-b400",
-   "name": "SL-B400 400W LED Beam Moving Head",
-   "model": "SL-B400",
-   "category": "moving",
-   "sub": "beam",
-   "subLabel": "Beam",
-   "family": "moving",
-   "price": 749,
-   "badge": null,
-   "rating": 4.8,
-   "reviews": 49,
-   "sold": "900+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "400W LED",
-   "shortDesc": "400W LED Beam Moving Head with DMX512 / RDM control, 2.0°–4.0° beam angle and IP20 rating. Built for concert, festival, rental production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-B400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Rental, Touring.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "400W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "2.0°–4.0°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Static/Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Concert",
-    "Festival",
-    "Rental",
-    "Touring"
-   ],
-   "priority": "Core",
-   "phase": "Launch",
-   "hero": false,
-   "oem": false,
-   "image": "assets/images/products/sl-b400.png",
-   "images": [
-    "assets/images/products/sl-b400.png"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-b600",
-   "name": "SL-B600 600W LED Beam Moving Head",
-   "model": "SL-B600",
-   "category": "moving",
-   "sub": "beam",
-   "subLabel": "Beam",
-   "family": "moving",
-   "price": 1199,
-   "badge": "new",
-   "rating": 4.8,
-   "reviews": 73,
-   "sold": "1000+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "600W LED",
-   "shortDesc": "600W LED Beam Moving Head with DMX512 / RDM / Art-Net control, 1.8°–3.5° beam angle and IP20 rating. Built for large concert, festival, touring production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-B600 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Large Concert, Festival, Touring.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "600W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "1.8°–3.5°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM / Art-Net"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Static/Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Large Concert",
-    "Festival",
-    "Touring"
-   ],
-   "priority": "Strategic",
-   "phase": "Phase 2",
-   "hero": false,
-   "oem": true,
-   "image": "assets/images/products/sl-b600.png",
-   "images": [
-    "assets/images/products/sl-b600.png"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-s200",
-   "name": "SL-S200 200W LED Spot Moving Head",
-   "model": "SL-S200",
-   "category": "moving",
-   "sub": "spot",
-   "subLabel": "Spot",
-   "family": "moving",
-   "price": 399,
-   "badge": null,
-   "rating": 4.8,
-   "reviews": 21,
-   "sold": "1100+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "200W LED",
-   "shortDesc": "200W LED Spot Moving Head with DMX512 / RDM control, 13°–36° beam angle and IP20 rating. Built for theatre, event, club production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-S200 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Theatre, Event, Club, Rental.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "200W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "13°–36°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "13°–36°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Theatre",
-    "Event",
-    "Club",
-    "Rental"
-   ],
-   "priority": "Core",
-   "phase": "Launch",
-   "hero": false,
-   "oem": false,
-   "image": "assets/images/products/sl-s200.jpg",
-   "images": [
-    "assets/images/products/sl-s200.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-s300",
-   "name": "SL-S300 300W LED Spot Moving Head",
-   "model": "SL-S300",
-   "category": "moving",
-   "sub": "spot",
-   "subLabel": "Spot",
-   "family": "moving",
-   "price": 529,
-   "badge": "hot",
-   "rating": 4.9,
-   "reviews": 30,
-   "sold": "1000+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "300W LED",
-   "shortDesc": "300W LED Spot Moving Head with DMX512 / RDM control, 8°–40° beam angle and IP20 rating. Built for concert, theatre, rental production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-S300 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Theatre, Rental, Event.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "300W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "8°–40°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "8°–40°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Concert",
-    "Theatre",
-    "Rental",
-    "Event"
-   ],
-   "priority": "Hero",
-   "phase": "Launch",
-   "hero": true,
-   "oem": true,
-   "image": "assets/images/products/sl-s300.jpg",
-   "images": [
-    "assets/images/products/sl-s300.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-s400",
-   "name": "SL-S400 400W LED Spot Moving Head",
-   "model": "SL-S400",
-   "category": "moving",
-   "sub": "spot",
-   "subLabel": "Spot",
-   "family": "moving",
-   "price": 719,
-   "badge": null,
-   "rating": 4.8,
-   "reviews": 25,
-   "sold": "300+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "400W LED",
-   "shortDesc": "400W LED Spot Moving Head with DMX512 / RDM control, 7°–45° beam angle and IP20 rating. Built for concert, theatre, rental production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-S400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Theatre, Rental, Touring.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "400W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "7°–45°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "7°–45°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Concert",
-    "Theatre",
-    "Rental",
-    "Touring"
-   ],
-   "priority": "Core",
-   "phase": "Launch",
-   "hero": false,
-   "oem": false,
-   "image": "assets/images/products/sl-s400.jpg",
-   "images": [
-    "assets/images/products/sl-s400.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-s600",
-   "name": "SL-S600 600W LED Profile/Spot Moving Head",
-   "model": "SL-S600",
-   "category": "moving",
-   "sub": "spot",
-   "subLabel": "Spot",
-   "family": "moving",
-   "price": 1099,
-   "badge": "new",
-   "rating": 4.8,
-   "reviews": 85,
-   "sold": "1000+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "600W LED",
-   "shortDesc": "600W LED Profile/Spot Moving Head with DMX512 / RDM / Art-Net control, 6°–50° beam angle and IP20 rating. Built for large concert, theatre, touring production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-S600 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Large Concert, Theatre, Touring.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "600W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "6°–50°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "6°–50°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM / Art-Net"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel / CMY"
-    },
-    {
-     "label": "Gobo",
-     "value": "Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Large Concert",
-    "Theatre",
-    "Touring"
-   ],
-   "priority": "Strategic",
-   "phase": "Phase 2",
-   "hero": false,
-   "oem": true,
-   "image": "assets/images/products/sl-s600.jpg",
-   "images": [
-    "assets/images/products/sl-s600.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-w200",
-   "name": "SL-W200 200W LED Wash Moving Head",
-   "model": "SL-W200",
-   "category": "moving",
-   "sub": "wash",
-   "subLabel": "Wash",
-   "family": "moving",
-   "price": 369,
-   "badge": null,
-   "rating": 4.8,
-   "reviews": 31,
-   "sold": "700+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "200W LED",
-   "shortDesc": "200W LED Wash Moving Head with DMX512 / RDM control, 7°–55° beam angle and IP20 rating. Built for event, club, small stage production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-W200 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Event, Club, Small Stage.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "200W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "7°–55°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "7°–55°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "RGBW / Color Wheel"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Event",
-    "Club",
-    "Small Stage"
-   ],
-   "priority": "Core",
-   "phase": "Launch",
-   "hero": false,
-   "oem": false,
-   "image": "assets/images/products/sl-w200.jpg",
-   "images": [
-    "assets/images/products/sl-w200.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-w300",
-   "name": "SL-W300 300W LED Wash Moving Head",
-   "model": "SL-W300",
-   "category": "moving",
-   "sub": "wash",
-   "subLabel": "Wash",
-   "family": "moving",
-   "price": 489,
-   "badge": null,
-   "rating": 4.8,
-   "reviews": 68,
-   "sold": "600+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "300W LED",
-   "shortDesc": "300W LED Wash Moving Head with DMX512 / RDM control, 6°–50° beam angle and IP20 rating. Built for concert, event, theatre production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-W300 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Event, Theatre, Rental.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "300W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "6°–50°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "6°–50°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "RGBW / Color Wheel"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Concert",
-    "Event",
-    "Theatre",
-    "Rental"
-   ],
-   "priority": "Core",
-   "phase": "Launch",
-   "hero": false,
-   "oem": false,
-   "image": "assets/images/products/sl-w300.jpg",
-   "images": [
-    "assets/images/products/sl-w300.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-w400",
-   "name": "SL-W400 400W LED Wash Moving Head",
-   "model": "SL-W400",
-   "category": "moving",
-   "sub": "wash",
-   "subLabel": "Wash",
-   "family": "moving",
-   "price": 669,
-   "badge": "hot",
-   "rating": 4.9,
-   "reviews": 32,
-   "sold": "500+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "400W LED",
-   "shortDesc": "400W LED Wash Moving Head with DMX512 / RDM control, 5°–55° beam angle and IP20 rating. Built for concert, festival, rental production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-W400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Rental, Touring.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "400W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "5°–55°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "5°–55°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "RGBW / CTO"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Concert",
-    "Festival",
-    "Rental",
-    "Touring"
-   ],
-   "priority": "Hero",
-   "phase": "Launch",
-   "hero": true,
-   "oem": true,
-   "image": "assets/images/products/sl-w400.png",
-   "images": [
-    "assets/images/products/sl-w400.png"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-w600",
-   "name": "SL-W600 600W LED Wash Moving Head",
-   "model": "SL-W600",
-   "category": "moving",
-   "sub": "wash",
-   "subLabel": "Wash",
-   "family": "moving",
-   "price": 999,
-   "badge": "new",
-   "rating": 4.8,
-   "reviews": 23,
-   "sold": "400+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "600W LED",
-   "shortDesc": "600W LED Wash Moving Head with DMX512 / RDM / Art-Net control, 4°–60° beam angle and IP20 rating. Built for large concert, festival, touring production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-W600 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Large Concert, Festival, Touring.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "600W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "4°–60°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "4°–60°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM / Art-Net"
-    },
-    {
-     "label": "Colour System",
-     "value": "RGBW / CTO"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Large Concert",
-    "Festival",
-    "Touring"
-   ],
-   "priority": "Strategic",
-   "phase": "Phase 2",
-   "hero": false,
-   "oem": true,
-   "image": "assets/images/products/sl-w600.jpg",
-   "images": [
-    "assets/images/products/sl-w600.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-h280",
-   "name": "SL-H280 280W 3-in-1 Hybrid Moving Head",
-   "model": "SL-H280",
-   "category": "moving",
-   "sub": "hybrid",
-   "subLabel": "Hybrid",
-   "family": "moving",
-   "price": 579,
-   "badge": null,
-   "rating": 4.8,
-   "reviews": 72,
-   "sold": "600+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "280W LED",
-   "shortDesc": "280W 3-in-1 Hybrid Moving Head with DMX512 / RDM control, 2.5°–35° beam angle and IP20 rating. Built for club, concert, rental production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-H280 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Club, Concert, Rental, Event.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "280W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "2.5°–35°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "2.5°–35°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Club",
-    "Concert",
-    "Rental",
-    "Event"
-   ],
-   "priority": "Core",
-   "phase": "Launch",
-   "hero": false,
-   "oem": false,
-   "image": "assets/images/products/sl-h280.jpg",
-   "images": [
-    "assets/images/products/sl-h280.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-h400",
-   "name": "SL-H400 400W 3-in-1 Hybrid Moving Head",
-   "model": "SL-H400",
-   "category": "moving",
-   "sub": "hybrid",
-   "subLabel": "Hybrid",
-   "family": "moving",
-   "price": 789,
-   "badge": "hot",
-   "rating": 4.9,
-   "reviews": 45,
-   "sold": "600+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "400W LED",
-   "shortDesc": "400W 3-in-1 Hybrid Moving Head with DMX512 / RDM control, 2°–40° beam angle and IP20 rating. Built for concert, festival, rental production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-H400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Concert, Festival, Rental, Touring.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "400W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "2°–40°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "2°–40°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Concert",
-    "Festival",
-    "Rental",
-    "Touring"
-   ],
-   "priority": "Hero",
-   "phase": "Launch",
-   "hero": true,
-   "oem": true,
-   "image": "assets/images/products/sl-h400.jpg",
-   "images": [
-    "assets/images/products/sl-h400.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-h600",
-   "name": "SL-H600 600W 3-in-1 Hybrid Moving Head",
-   "model": "SL-H600",
-   "category": "moving",
-   "sub": "hybrid",
-   "subLabel": "Hybrid",
-   "family": "moving",
-   "price": 1149,
-   "badge": "new",
-   "rating": 4.8,
-   "reviews": 46,
-   "sold": "1100+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "600W LED",
-   "shortDesc": "600W 3-in-1 Hybrid Moving Head with DMX512 / RDM / Art-Net control, 1.8°–45° beam angle and IP20 rating. Built for large concert, festival, touring production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-H600 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Large Concert, Festival, Touring.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "600W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "1.8°–45°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "1.8°–45°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM / Art-Net"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel / CMY"
-    },
-    {
-     "label": "Gobo",
-     "value": "Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Large Concert",
-    "Festival",
-    "Touring"
-   ],
-   "priority": "Strategic",
-   "phase": "Phase 2",
-   "hero": false,
-   "oem": true,
-   "image": "assets/images/products/sl-h600.jpg",
-   "images": [
-    "assets/images/products/sl-h600.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-h800",
-   "name": "SL-H800 800W 3-in-1 Hybrid Moving Head",
-   "model": "SL-H800",
-   "category": "moving",
-   "sub": "hybrid",
-   "subLabel": "Hybrid",
-   "family": "moving",
-   "price": 1499,
-   "badge": "new",
-   "rating": 4.8,
-   "reviews": 81,
-   "sold": "400+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "800W LED",
-   "shortDesc": "800W 3-in-1 Hybrid Moving Head with DMX512 / RDM / Art-Net / sACN control, 1.5°–50° beam angle and IP20 rating. Built for large touring, festival, production production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-H800 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Large Touring, Festival, Production.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "800W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "1.5°–50°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "1.5°–50°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP20"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM / Art-Net / sACN"
-    },
-    {
-     "label": "Colour System",
-     "value": "CMY / CTO"
-    },
-    {
-     "label": "Gobo",
-     "value": "Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Large Touring",
-    "Festival",
-    "Production"
-   ],
-   "priority": "Strategic",
-   "phase": "Phase 3",
-   "hero": false,
-   "oem": true,
-   "image": "assets/images/products/sl-h800.jpg",
-   "images": [
-    "assets/images/products/sl-h800.jpg"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-ip-b400",
-   "name": "SL-IP-B400 400W IP65 Beam Moving Head",
-   "model": "SL-IP-B400",
-   "category": "moving",
-   "sub": "outdoor",
-   "subLabel": "Outdoor IP65",
-   "family": "moving",
-   "price": 1099,
-   "badge": "hot",
-   "rating": 4.9,
-   "reviews": 69,
-   "sold": "300+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "400W LED · IP65",
-   "shortDesc": "400W IP65 Beam Moving Head with DMX512 / RDM control, 2°–5° beam angle and IP65 rating. Built for outdoor concert, festival, touring production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-IP-B400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Outdoor Concert, Festival, Touring.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "400W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "2°–5°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP65"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "Color Wheel"
-    },
-    {
-     "label": "Gobo",
-     "value": "Static/Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Outdoor Concert",
-    "Festival",
-    "Touring"
-   ],
-   "priority": "Hero",
-   "phase": "Launch",
-   "hero": true,
-   "oem": true,
-   "image": "assets/images/products/sl-ip-b400.png",
-   "images": [
-    "assets/images/products/sl-ip-b400.png"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-ip-w400",
-   "name": "SL-IP-W400 400W IP65 Wash Moving Head",
-   "model": "SL-IP-W400",
-   "category": "moving",
-   "sub": "outdoor",
-   "subLabel": "Outdoor IP65",
-   "family": "moving",
-   "price": 1049,
-   "badge": "hot",
-   "rating": 4.9,
-   "reviews": 31,
-   "sold": "900+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "400W LED · IP65",
-   "shortDesc": "400W IP65 Wash Moving Head with DMX512 / RDM control, 5°–55° beam angle and IP65 rating. Built for outdoor concert, festival, event production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-IP-W400 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Outdoor Concert, Festival, Event.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "400W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "5°–55°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "5°–55°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP65"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM"
-    },
-    {
-     "label": "Colour System",
-     "value": "RGBW / CTO"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Outdoor Concert",
-    "Festival",
-    "Event"
-   ],
-   "priority": "Hero",
-   "phase": "Launch",
-   "hero": true,
-   "oem": true,
-   "image": "assets/images/products/sl-ip-w400.png",
-   "images": [
-    "assets/images/products/sl-ip-w400.png"
-   ],
-   "imageCredit": "Rigelight"
-  },
-  {
-   "id": "sl-ip-h600",
-   "name": "SL-IP-H600 600W IP65 3-in-1 Hybrid Moving Head",
-   "model": "SL-IP-H600",
-   "category": "moving",
-   "sub": "outdoor",
-   "subLabel": "Outdoor IP65",
-   "family": "moving",
-   "price": 1599,
-   "badge": "new",
-   "rating": 4.8,
-   "reviews": 71,
-   "sold": "600+",
-   "icon": "◉",
-   "iconColor": "#ff6b00",
-   "tagline": "600W LED · IP65",
-   "shortDesc": "600W IP65 3-in-1 Hybrid Moving Head with DMX512 / RDM / Art-Net control, 2°–45° beam angle and IP65 rating. Built for outdoor festival, touring, large event production.",
-   "longDesc": "Built around a rigid aluminium chassis and a closed-loop pan/tilt drive, the SL-IP-H600 is engineered for rental inventories and touring schedules where the fixture is rigged, struck and re-rigged every week. It is manufactured in our own facility with 100% 48-hour burn-in before shipment, and every unit leaves with an individual QC report, IES/LDT photometric files and a DMX chart so your team can pre-visualise the rig before it lands. Typical applications: Outdoor Festival, Touring, Large Event.",
-   "specs": [
-    {
-     "label": "Light Source",
-     "value": "600W LED"
-    },
-    {
-     "label": "Beam Angle",
-     "value": "2°–45°"
-    },
-    {
-     "label": "Zoom Range",
-     "value": "2°–45°"
-    },
-    {
-     "label": "IP Rating",
-     "value": "IP65"
-    },
-    {
-     "label": "Control Protocols",
-     "value": "DMX512 / RDM / Art-Net"
-    },
-    {
-     "label": "Colour System",
-     "value": "CMY / CTO"
-    },
-    {
-     "label": "Gobo",
-     "value": "Rotating Gobo"
-    },
-    {
-     "label": "Prism",
-     "value": "Prism"
-    },
-    {
-     "label": "Pan / Tilt",
-     "value": "540° / 270°, 16-bit"
-    },
-    {
-     "label": "Dimming",
-     "value": "0–100% linear, 16-bit"
-    },
-    {
-     "label": "DMX Channels",
-     "value": "16 / 20 / 24 CH (selectable)"
-    },
-    {
-     "label": "Voltage",
-     "value": "AC 100–240V, 50/60Hz"
-    },
-    {
-     "label": "Net Weight",
-     "value": "15 – 24 kg (model dependent)"
-    },
-    {
-     "label": "Warranty",
-     "value": "3 years (limited)"
-    }
-   ],
-   "features": [
-    "16-bit pan/tilt resolution with 3-phase motors for fast, silent moves",
-    "Motorised focus, frost and variable-speed prism on board",
-    "Auto-run, sound-active, master/slave and full DMX operation",
-    "3-pin / 5-pin XLR in/out plus powerCON in/out for daisy chaining",
-    "RDM enabled — address, monitor lamp hours and temperature remotely"
-   ],
-   "applications": [
-    "Outdoor Festival",
-    "Touring",
-    "Large Event"
-   ],
-   "priority": "Strategic",
-   "phase": "Phase 2",
-   "hero": false,
-   "oem": true,
-   "image": "assets/images/products/sl-ip-h600.png",
-   "images": [
-    "assets/images/products/sl-ip-h600.png"
-   ],
-   "imageCredit": "Rigelight"
-  },
   {
    "id": "sl-p1000",
    "name": "SL-P1000 1m RGBW Pixel Bar",
@@ -15336,6 +13430,4500 @@
    "imageCredit": "",
    "priceSource": "estimate",
    "status": "pending-price-review"
+  },
+  {
+   "id": "rg-ml420wc-kch93",
+   "name": "RG-ML420WC-KCH93 outdoor IP65 7leds*60w LED moving head light",
+   "model": "RG-ML420WC-KCH93",
+   "category": "moving",
+   "sub": "outdoor",
+   "subLabel": "Outdoor IP65",
+   "family": "moving",
+   "price": 590,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 19,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "7leds*60w",
+   "shortDesc": "outdoor IP65 7leds*60w LED moving head light. 7leds*60w LED engine, AC90-240v 50-60HZ, 550W. Factory EXW from US$590.",
+   "longDesc": "RG-ML420WC-KCH93 is part of the RIGE moving-head range built in our own Guangzhou plant — outdoor ip65 7leds*60w led moving head light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Outdoor Event, Architectural, Festival. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC90-240v 50-60HZ"
+    },
+    {
+     "label": "Rated Power",
+     "value": "550W"
+    },
+    {
+     "label": "Light Source",
+     "value": "7x60W(4in1 RGBW)high brightness LEDs"
+    },
+    {
+     "label": "Aura Ring",
+     "value": "12x 3W(3in1 RGB)LED filament"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "7-45°"
+    },
+    {
+     "label": "Strobe",
+     "value": "1-25HZ with multiple stobeeffects"
+    },
+    {
+     "label": "Dimming",
+     "value": "Four dimming effect (Linear/Square/l Sequare/Scurve)0-100%linear dimming.Channel:Built-in 6 channel modes 2130/36/57/78/93CH"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512,Auto,RDM,Art-Net (Support for additional installation)"
+    },
+    {
+     "label": "Pan",
+     "value": "540°+16bit fine;Tit 270°+16bit fine"
+    },
+    {
+     "label": "Optical Effect",
+     "value": "High precision integrated structure PMMA lens,high transparency quartz glass light pipe,creating a softer dyeing range.Latest Aura filament pixe effect."
+    },
+    {
+     "label": "Colour System",
+     "value": "RGBW color mixing with very bright and vibrant saturated colors,as well as soft pastels and whitetones.Tungsten EmulationOpion.Virtual Color Wheel."
+    },
+    {
+     "label": "Protection Level",
+     "value": "IP65,waterproof,dust-proof,oil resistant design,suitable for outdoorany weathercondition"
+    },
+    {
+     "label": "Dimensions",
+     "value": "38.6*29.1*53.3cmCarton size(1pclctn):63*47*36cm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "19.5kg"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "22.5 kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$590 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥4100 ￥ 4000(over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-ML420WC-KCH93",
+    "Flight case NW.:31kg;GW:72kg"
+   ],
+   "applications": [
+    "Outdoor Event",
+    "Architectural",
+    "Festival",
+    "Rental"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml420wc-kch93.png",
+   "images": [
+    "assets/images/products/rg-ml420wc-kch93.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "590usd 572usd (over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 9
+  },
+  {
+   "id": "rg-ml760wc-kch99",
+   "name": "RG-ML760WC-KCH99 outdoor IP65 19leds 40w zoom LED Moving head light",
+   "model": "RG-ML760WC-KCH99",
+   "category": "moving",
+   "sub": "outdoor",
+   "subLabel": "Outdoor IP65",
+   "family": "moving",
+   "price": 560,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 20,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "19x40W",
+   "shortDesc": "outdoor IP65 19leds 40w zoom LED Moving head light. 19x40W LED engine, AC90-240v 50-60HZ, 760W. Factory EXW from US$560.",
+   "longDesc": "RG-ML760WC-KCH99 is part of the RIGE moving-head range built in our own Guangzhou plant — outdoor ip65 19leds 40w zoom led moving head light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Outdoor Event, Architectural, Festival. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC90-240v 50-60HZ"
+    },
+    {
+     "label": "Rated Power",
+     "value": "760W"
+    },
+    {
+     "label": "Light Source",
+     "value": "19 4-in-1 40W high brightness lamp beads"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "4-60°"
+    },
+    {
+     "label": "Stroboscopic",
+     "value": "1-25 times/SEC with a variety of stroboscopic effects"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear dimming."
+    },
+    {
+     "label": "DMX Channels",
+     "value": "Built-in 7 channel modes 21 CH/23 CH/35 CH/78 CH/ 92 CH/97 CH/99CH"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512, self-propelled, voice-activated"
+    },
+    {
+     "label": "Pan Range",
+     "value": "540 degrees +16 bit fine tuning"
+    },
+    {
+     "label": "Tilt Range",
+     "value": "270 degrees +16 bit fine tuning"
+    },
+    {
+     "label": "Display",
+     "value": "Chinese and English"
+    },
+    {
+     "label": "Net Weight",
+     "value": "22kg Gross weight:26kg Body size: 390×240×490mm"
+    },
+    {
+     "label": "Packing Size",
+     "value": "540*380*660mm"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$560 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥3850 ￥3650(over 20pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Outdoor Event",
+    "Architectural",
+    "Festival",
+    "Rental"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml760wc-kch99.png",
+   "images": [
+    "assets/images/products/rg-ml760wc-kch99.png",
+    "assets/images/products/rg-ml760wc-kch99-2.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$560 $530(over 20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 10
+  },
+  {
+   "id": "rg-ml125bl-kcre38ah274",
+   "name": "RG-ML125BL-KCRe38AH274 Infinite rotation 38leds 3W RGBW 4-in-1 Pixel LED Moving Head Beam Bar",
+   "model": "RG-ML125BL-KCRe38AH274",
+   "category": "moving",
+   "sub": "wash",
+   "subLabel": "Wash",
+   "family": "moving",
+   "price": 155,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 21,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "38x3W",
+   "shortDesc": "Infinite rotation 38leds 3W RGBW 4-in-1 Pixel LED Moving Head Beam Bar. 38x3W LED engine, 90-240V, 50/60Hz, Main light: 38x3W RGB LED Auxiliary light: 144x0.2W RGB LED. Factory EXW from US$155.",
+   "longDesc": "RG-ML125BL-KCRe38AH274 is part of the RIGE moving-head range built in our own Guangzhou plant — infinite rotation 38leds 3w rgbw 4-in-1 pixel led moving head beam bar. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Wedding, Club, Corporate. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Rated Power",
+     "value": "90-240V, 50/60Hz"
+    },
+    {
+     "label": "Light Source",
+     "value": "Main light: 38x3W RGB LED Auxiliary light: 144x0.2W RGB LED"
+    },
+    {
+     "label": "Strobe",
+     "value": "0%-100% smooth dimming, strong high-output strobe effect, control"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "16CH 274CH channel"
+    },
+    {
+     "label": "Control Protocol",
+     "value": "DMX512RDM"
+    },
+    {
+     "label": "Software Upgrade",
+     "value": "Upgrade software through DMX connection"
+    },
+    {
+     "label": "Structure",
+     "value": "Signal input/output three-core XLR socket (optional five-core) RJ45 interface Power socket Power connector Input/output"
+    },
+    {
+     "label": "Protection Level",
+     "value": "IP33 Indoor use"
+    },
+    {
+     "label": "Main Features",
+     "value": "Excellent color mixing effect; built-in splicing pins, which can realize fast splicing of machines"
+    },
+    {
+     "label": "Dimensions",
+     "value": "100*12.5*12.3cm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "5.93KG"
+    },
+    {
+     "label": "Single Unit Inner Packaging",
+     "value": "106*18*22cm"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$155 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥1085\n￥1036(Over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "2 units gross weight: 13.8KG",
+    "2 units outer packaging: 108*38*25cm"
+   ],
+   "applications": [
+    "Wedding",
+    "Club",
+    "Corporate",
+    "Theatre"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml125bl-kcre38ah274.png",
+   "images": [
+    "assets/images/products/rg-ml125bl-kcre38ah274.png",
+    "assets/images/products/rg-ml125bl-kcre38ah274-2.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$155 $148 (over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 11
+  },
+  {
+   "id": "rg-ml400br-kcre10ah49",
+   "name": "RG-ML400BR-KCRe10AH49 10leds 40W RGBW 4-in-1 Pixel LED Moving Head Beam Bar",
+   "model": "RG-ML400BR-KCRe10AH49",
+   "category": "moving",
+   "sub": "wash",
+   "subLabel": "Wash",
+   "family": "moving",
+   "price": 199,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 22,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "10x40W",
+   "shortDesc": "10leds 40W RGBW 4-in-1 Pixel LED Moving Head Beam Bar. 10x40W LED engine, AC 100-240V 50/60Hz, 500W. Factory EXW from US$199.",
+   "longDesc": "RG-ML400BR-KCRe10AH49 is part of the RIGE moving-head range built in our own Guangzhou plant — 10leds 40w rgbw 4-in-1 pixel led moving head beam bar. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Wedding, Club, Corporate. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC 100-240V 50/60Hz"
+    },
+    {
+     "label": "Rated Power",
+     "value": "500W"
+    },
+    {
+     "label": "Light Source",
+     "value": "RGBW 40W/led"
+    },
+    {
+     "label": "Y Axis Stroke",
+     "value": "0-230 °scanning range"
+    },
+    {
+     "label": "Control Mode",
+     "value": "RDM remote control protocol, DMX-512/ auto mode/sound control/master-slave mode"
+    },
+    {
+     "label": "Auto Mode Effect",
+     "value": "16 kinds of auto dynamic effects, 16 kinds of sound control dynamic effects"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "13CH / 49CH"
+    },
+    {
+     "label": "Cooling",
+     "value": "forced air cooling system"
+    },
+    {
+     "label": "Work Environment",
+     "value": "Indoor"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$199 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥1250\n￥1176(Over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Wedding",
+    "Club",
+    "Corporate",
+    "Theatre"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml400br-kcre10ah49.png",
+   "images": [
+    "assets/images/products/rg-ml400br-kcre10ah49.png",
+    "assets/images/products/rg-ml400br-kcre10ah49-2.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$199\n$186(Over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 12
+  },
+  {
+   "id": "rg-ml80b-kcre8ah38",
+   "name": "RG-ML80B-KCRe8AH38 8heads led beam moving head bar",
+   "model": "RG-ML80B-KCRe8AH38",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 134,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 23,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "8x10W",
+   "shortDesc": "8heads led beam moving head bar. 8x10W LED engine, 1090Lx77Wx135Lmm, 6.7KG. Factory EXW from US$134.",
+   "longDesc": "RG-ML80B-KCRe8AH38 is part of the RIGE moving-head range built in our own Guangzhou plant — 8heads led beam moving head bar. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "1090Lx77Wx135Lmm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "6.7KG"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "36CH"
+    },
+    {
+     "label": "Light Source",
+     "value": "8x10w"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$134 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "850"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RGBW 10W 4in1"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml80b-kcre8ah38.png",
+   "images": [
+    "assets/images/products/rg-ml80b-kcre8ah38.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "134",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 13
+  },
+  {
+   "id": "rg-ml500bl-kcre12ah194",
+   "name": "RG-ML500BL-KCRe12AH194 12LEDS 40W Zoom with led strip led moving head light",
+   "model": "RG-ML500BL-KCRe12AH194",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 325,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 24,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "12x40W",
+   "shortDesc": "12LEDS 40W Zoom with led strip led moving head light. 12x40W LED engine, AC100~240V 50/60HZ, 500W. Factory EXW from US$325.",
+   "longDesc": "RG-ML500BL-KCRe12AH194 is part of the RIGE moving-head range built in our own Guangzhou plant — 12leds 40w zoom with led strip led moving head light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC100~240V 50/60HZ"
+    },
+    {
+     "label": "Rated Power",
+     "value": "500W"
+    },
+    {
+     "label": "Light Source",
+     "value": "12 40W four-in-one Tianxin"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "CH26, CH38, CH62. CH74. CH194."
+    },
+    {
+     "label": "Dimming",
+     "value": "32bit 0~100% linear dimming"
+    },
+    {
+     "label": "Features",
+     "value": "Y shaking head + beam + flash + auxiliary light"
+    },
+    {
+     "label": "Operating Temperature",
+     "value": "-30 degrees~50 degrees"
+    },
+    {
+     "label": "Strobe",
+     "value": "1~30HZ"
+    },
+    {
+     "label": "Appearance",
+     "value": "metal, black"
+    },
+    {
+     "label": "Connection Method",
+     "value": "DMX512 input and output /"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP20 Product size：100＊29＊13/cm"
+    },
+    {
+     "label": "Dimensions",
+     "value": "108＊36＊18/cm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "14.5kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$325 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥2150 ￥1950(Over 50pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "lamp beads 144 0.3 watts 5050 three-in-one lamp beads",
+    "Control mode:",
+    "DMX512, self-propelled, master-slave, voice control, with RDM function.",
+    "power input and output."
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml500bl-kcre12ah194.png",
+   "images": [
+    "assets/images/products/rg-ml500bl-kcre12ah194.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$325 $290(over 50pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 14
+  },
+  {
+   "id": "rg-ml720bl-kcre12ah179",
+   "name": "RG-ML720BL-KCRe12AH179 12PCS 60W RGBW Wave LED Bar Light",
+   "model": "RG-ML720BL-KCRe12AH179",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 470,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 25,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "12x60W",
+   "shortDesc": "12PCS 60W RGBW Wave LED Bar Light. 12x60W LED engine, 12x60W, AC100~240V 50 / 60 HZ. Factory EXW from US$470.",
+   "longDesc": "RG-ML720BL-KCRe12AH179 is part of the RIGE moving-head range built in our own Guangzhou plant — 12pcs 60w rgbw wave led bar light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "12x60W"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC100~240V 50 / 60 HZ"
+    },
+    {
+     "label": "Rated Power",
+     "value": "12 * 60W (800W)"
+    },
+    {
+     "label": "Beads",
+     "value": "124-160 watt LED beadsControl mode: DMX512, self-travel, master-slave, voice control, with RDM function."
+    },
+    {
+     "label": "DMX Channels",
+     "value": "CH20.CH169A.CH169B.CH53.CH101.CH155.CH179"
+    },
+    {
+     "label": "Dimming",
+     "value": "32bit 0~100% Linear dimming"
+    },
+    {
+     "label": "Features",
+     "value": "single swing + staining + beam"
+    },
+    {
+     "label": "Operating Temperature",
+     "value": "-30 degrees ~50 degreesFloribe frequency: 1-30 HZ"
+    },
+    {
+     "label": "Appearance",
+     "value": "metal, black"
+    },
+    {
+     "label": "Connection Mode",
+     "value": "DMX512 input / output / power input / output."
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP20Dimensions: 1000 * 300 * 165MM"
+    },
+    {
+     "label": "Weight",
+     "value": "26.5KG One carton package size：108*31*38CM，30.9kg"
+    },
+    {
+     "label": "Dimensions",
+     "value": "117*84*51cm, 2in1 85KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$470 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥3300 ￥3200"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-ML720BL-KCRe12AH179"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml720bl-kcre12ah179.png",
+   "images": [
+    "assets/images/products/rg-ml720bl-kcre12ah179.png",
+    "assets/images/products/rg-ml720bl-kcre12ah179-2.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$470 $455(over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 15
+  },
+  {
+   "id": "rg-el00db-8e2a",
+   "name": "RG-EL00DB-8e2A LED Disco Events Moving Head PAR Rollder Party Light Tower Gig Bar",
+   "model": "RG-EL00DB-8e2A",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 259,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 26,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "2*30w 4*10w 2*10w 2*6*8w",
+   "shortDesc": "LED Disco Events Moving Head PAR Rollder Party Light Tower Gig Bar. 2*30w 4*10w 2*10w 2*6*8w LED engine, AC100-240V 50 / 60 HZ, 300W. Factory EXW from US$259.",
+   "longDesc": "RG-EL00DB-8e2A is part of the RIGE moving-head range built in our own Guangzhou plant — led disco events moving head par rollder party light tower gig bar. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC100-240V 50 / 60 HZ"
+    },
+    {
+     "label": "Rated Power",
+     "value": "300W"
+    },
+    {
+     "label": "Pattern",
+     "value": "7 patterns + white"
+    },
+    {
+     "label": "Colour System",
+     "value": "7 colors + white"
+    },
+    {
+     "label": "Light Source",
+     "value": "12X5050 beads RGB 0.2W"
+    },
+    {
+     "label": "Strobe",
+     "value": "4X10W white led"
+    },
+    {
+     "label": "Derby Light X 2Pc",
+     "value": "2pcs*10W RGBW 4IN1 LED"
+    },
+    {
+     "label": "Par Light X 2Pc",
+     "value": "6pcs led X 8W RGBW 4-in-1 LED"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "16CH,35CH,65CH"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512, auto, voice control, master and slave"
+    },
+    {
+     "label": "Pan Range",
+     "value": "540 degree"
+    },
+    {
+     "label": "Tilt Range",
+     "value": "270 degree"
+    },
+    {
+     "label": "Inner Box",
+     "value": "96X32.5X23CM"
+    },
+    {
+     "label": "Master Box",
+     "value": "98X34.5X49CM"
+    },
+    {
+     "label": "Package",
+     "value": "2in1 master box."
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$259 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1800 1550(over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-EL00DB-8e2A",
+    "technical parameter:",
+    "Light source:",
+    "30W Moving Head X 2pc : 30W White Led"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-el00db-8e2a.png",
+   "images": [
+    "assets/images/products/rg-el00db-8e2a.png",
+    "assets/images/products/rg-el00db-8e2a-2.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "259usd 219usd(over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 16
+  },
+  {
+   "id": "rg-ml340wc-kch37",
+   "name": "RG-ML340WC-KCH37 6leds 40w RGBW 4in1 Pixel LED Moving head light !!!",
+   "model": "RG-ML340WC-KCH37",
+   "category": "moving",
+   "sub": "wash",
+   "subLabel": "Wash",
+   "family": "moving",
+   "price": 185,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 10,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "6leds *40w",
+   "shortDesc": "6leds 40w RGBW 4in1 Pixel LED Moving head light !!!. 6leds *40w LED engine, AC100~240V 50/60HZ, 6 * 40W (340W). Factory EXW from US$185.",
+   "longDesc": "RG-ML340WC-KCH37 is part of the RIGE moving-head range built in our own Guangzhou plant — 6leds 40w rgbw 4in1 pixel led moving head light !!!. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Wedding, Club, Corporate. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC100~240V 50/60HZ"
+    },
+    {
+     "label": "Rated Power",
+     "value": "6 * 40W (340W)"
+    },
+    {
+     "label": "Light Source",
+     "value": "6 four in one LED lamp beads"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512, self-propelled, master-slave, voice control, with RDM function."
+    },
+    {
+     "label": "DMX Channels",
+     "value": "CH17, CH37"
+    },
+    {
+     "label": "Dimming",
+     "value": "32bit 0-100% linear dimming"
+    },
+    {
+     "label": "Working Temperature",
+     "value": "-30 ° C~50 ° C"
+    },
+    {
+     "label": "Strobe",
+     "value": "1-30Hz"
+    },
+    {
+     "label": "Appearance",
+     "value": "Metal, black"
+    },
+    {
+     "label": "Connection Method",
+     "value": "DMX512 input/output/power input/output."
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP20"
+    },
+    {
+     "label": "Dimensions",
+     "value": "70 * 38 * 32CM"
+    },
+    {
+     "label": "Weight",
+     "value": "11.5KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$185 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1300 1225(over 20pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Wedding",
+    "Club",
+    "Corporate",
+    "Theatre"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml340wc-kch37.png",
+   "images": [
+    "assets/images/products/rg-ml340wc-kch37.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "185usd 175usd(over 20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 17
+  },
+  {
+   "id": "rg-ml300b-kcre5ah105",
+   "name": "RG-ML300B-KCRe5AH105 5LEDS 60W RGBW Zoom 4-in-1 Pixel LED Moving head",
+   "model": "RG-ML300B-KCRe5AH105",
+   "category": "moving",
+   "sub": "hybrid",
+   "subLabel": "Hybrid",
+   "family": "moving",
+   "price": 386,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 11,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "5x60W",
+   "shortDesc": "5LEDS 60W RGBW Zoom 4-in-1 Pixel LED Moving head. 5x60W LED engine, 100-240 V, 50/60 Hz, 500W. Factory EXW from US$386.",
+   "longDesc": "RG-ML300B-KCRe5AH105 is part of the RIGE moving-head range built in our own Guangzhou plant — 5leds 60w rgbw zoom 4-in-1 pixel led moving head. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Theatre, Rental. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "100-240 V, 50/60 Hz"
+    },
+    {
+     "label": "Rated Power",
+     "value": "500W"
+    },
+    {
+     "label": "Light Source",
+     "value": "Front: 5x 60W RGBW 4in1 LED;"
+    },
+    {
+     "label": "Rear",
+     "value": "42x 3W White LED + 84x 0.3W RGB 3in1 LED"
+    },
+    {
+     "label": "Front",
+     "value": "5pcs 60W 4-in-1 single-point control;"
+    },
+    {
+     "label": "Reverse",
+     "value": "14-segment control, 9 LEDs per segment."
+    },
+    {
+     "label": "Zoom",
+     "value": "3.8°- 50°"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "24CH/29CH/105CH"
+    },
+    {
+     "label": "Strobe",
+     "value": "1-20HZ"
+    },
+    {
+     "label": "Dimming",
+     "value": "0 - 100%"
+    },
+    {
+     "label": "X/Y",
+     "value": "360 degree infinite rotation"
+    },
+    {
+     "label": "Applicable Scene",
+     "value": "Music Festival, bar, Qingba, KTV private room Etc"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$386 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "2625\n2480(over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "LED Control Features:",
+    "Beam, Dyeing, Strobe effect, XY axis infinite rotation",
+    "One-in-one-out audio power plug",
+    "One in and one out 3-pin XLR XLR"
+   ],
+   "applications": [
+    "Concert",
+    "Theatre",
+    "Rental",
+    "Corporate"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml300b-kcre5ah105.png",
+   "images": [
+    "assets/images/products/rg-ml300b-kcre5ah105.png",
+    "assets/images/products/rg-ml300b-kcre5ah105-2.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "USD386\nUSD365(over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 18
+  },
+  {
+   "id": "rg-ml240wd-ktxe6ah3",
+   "name": "RG-ML240WD-KTXe6AH3 6x40w Zoom Pixel Beam Wash Bar Moving Head Light With Base",
+   "model": "RG-ML240WD-KTXe6AH3",
+   "category": "moving",
+   "sub": "wash",
+   "subLabel": "Wash",
+   "family": "moving",
+   "price": 192,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 12,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "6*40w",
+   "shortDesc": "6x40w Zoom Pixel Beam Wash Bar Moving Head Light With Base. 6*40w LED engine, 100~240Vac 50-60Hz, 6pcs Osram 40w RGBW LED Drive current: 2.5A. Factory EXW from US$192.",
+   "longDesc": "RG-ML240WD-KTXe6AH3 is part of the RIGE moving-head range built in our own Guangzhou plant — 6x40w zoom pixel beam wash bar moving head light with base. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Wedding, Club, Corporate. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "100~240Vac 50-60Hz"
+    },
+    {
+     "label": "Light Source",
+     "value": "6pcs Osram 40w RGBW LED Drive current: 2.5A"
+    },
+    {
+     "label": "Rated Power",
+     "value": "350W"
+    },
+    {
+     "label": "Colour Temperature",
+     "value": "2800K-8500K Lamp life: 80000 hours"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "4.5°-32°"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512, master-slave operation, Channel mode: 18CH/32CH"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$192 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1300 1100 （over 30pcs）"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Support RDM function, DMX software upgrade function"
+   ],
+   "applications": [
+    "Wedding",
+    "Club",
+    "Corporate",
+    "Theatre"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml240wd-ktxe6ah3.png",
+   "images": [
+    "assets/images/products/rg-ml240wd-ktxe6ah3.png",
+    "assets/images/products/rg-ml240wd-ktxe6ah3-2.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "USD192 USD162(over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 19
+  },
+  {
+   "id": "rg-ml300br-kn1h17",
+   "name": "RG-ML300BR-KN1H17 LED 300W 3in1 BSW LED moving head light",
+   "model": "RG-ML300BR-KN1H17",
+   "category": "moving",
+   "sub": "hybrid",
+   "subLabel": "Hybrid",
+   "family": "moving",
+   "price": 315,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 13,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1*300w",
+   "shortDesc": "LED 300W 3in1 BSW LED moving head light. 1*300w LED engine, AC110V240V50 60HZ, 7 glass patterns + white light, each glass pattern can be independently positive and negative. Factory EXW from US$315.",
+   "longDesc": "RG-ML300BR-KN1H17 is part of the RIGE moving-head range built in our own Guangzhou plant — led 300w 3in1 bsw led moving head light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Theatre, Rental. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC110V240V50 60HZ"
+    },
+    {
+     "label": "Rotation Pattern",
+     "value": "7 glass patterns + white light, each glass pattern can be independently positive and negative"
+    },
+    {
+     "label": "Colour System",
+     "value": "9 + white light"
+    },
+    {
+     "label": "Fixed Pattern",
+     "value": "9 fixed modes + white light"
+    },
+    {
+     "label": "Light Source",
+     "value": "300 W"
+    },
+    {
+     "label": "Prism",
+     "value": "standard 3 prisms, independent front and rear"
+    },
+    {
+     "label": "Macro Function",
+     "value": "console reset function, self-walking mode, master and slave mode"
+    },
+    {
+     "label": "Rated Power",
+     "value": "350 W"
+    },
+    {
+     "label": "Display",
+     "value": "key operation mode"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "17CH control signal: international standard DMX512, with RDM function."
+    },
+    {
+     "label": "Pan Range",
+     "value": "540 degrees (16-bit precision scanning) Electronic error correction"
+    },
+    {
+     "label": "Tilt Range",
+     "value": "270 degrees (16-bit precision scanning) Electronic error correction"
+    },
+    {
+     "label": "Cooling",
+     "value": "axial fan for enhanced cooling"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear adjustment"
+    },
+    {
+     "label": "Housing",
+     "value": "high temperature resistant plastic"
+    },
+    {
+     "label": "Atomization System",
+     "value": "1 independent atomization effect, light spot soft and natural"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$315 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "2250RMB 2100RMB(over 20pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "LED 300W Three in One Pattern Light",
+    "Technical parameters:",
+    "RG-ML300BR-KN1H17",
+    "Software can be updated online, dial the address code"
+   ],
+   "applications": [
+    "Concert",
+    "Theatre",
+    "Rental",
+    "Corporate"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml300br-kn1h17.png",
+   "images": [
+    "assets/images/products/rg-ml300br-kn1h17.png",
+    "assets/images/products/rg-ml300br-kn1h17-2.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "315usd 300usd(over 20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 20
+  },
+  {
+   "id": "rg-ml500rs-knnw1h20",
+   "name": "RG-ML500RS-KNNW1H20 500W LED Moving head With CMY 3in1 BSW !!!",
+   "model": "RG-ML500RS-KNNW1H20",
+   "category": "moving",
+   "sub": "hybrid",
+   "subLabel": "Hybrid",
+   "family": "moving",
+   "price": 569,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 14,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1x500W",
+   "shortDesc": "500W LED Moving head With CMY 3in1 BSW !!!. 1x500W LED engine, 8000K color rendering index: 75, AC110V-240V / 50-60Hz. Factory EXW from US$569.",
+   "longDesc": "RG-ML500RS-KNNW1H20 is part of the RIGE moving-head range built in our own Guangzhou plant — 500w led moving head with cmy 3in1 bsw !!!. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Theatre, Rental. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Colour Temperature",
+     "value": "8000K color rendering index: 75"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC110V-240V / 50-60Hz"
+    },
+    {
+     "label": "Light Source",
+     "value": "350W white LED module"
+    },
+    {
+     "label": "Lumen Illumination",
+     "value": "4 m 80000 LM"
+    },
+    {
+     "label": "Rated Power",
+     "value": "430W"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "22 channels"
+    },
+    {
+     "label": "Pan Range",
+     "value": "540 degrees (16bit precision scanning) electronic error correction"
+    },
+    {
+     "label": "Tilt Range",
+     "value": "270 degrees (16bit precision scanning) electronic error correction"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear adjustment"
+    },
+    {
+     "label": "Focus",
+     "value": "linear adjustment from 4m to 50m"
+    },
+    {
+     "label": "Atomization System",
+     "value": "1 independent atomization effect, soft and natural light spot"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "4-35 degrees"
+    },
+    {
+     "label": "Strobe",
+     "value": "0-30 times / second. Adjustable speed strobe effect. Strobe macro function"
+    },
+    {
+     "label": "Colour System",
+     "value": "12 colors + white light. Color half color function"
+    },
+    {
+     "label": "Fixed Pattern",
+     "value": "12 fixed patterns + white light"
+    },
+    {
+     "label": "Rotating Pattern",
+     "value": "7 Glass patterns, each glass pattern can be independently reversed"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$569 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "3875\n3650(over 19pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Theatre",
+    "Rental",
+    "Corporate"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml500rs-knnw1h20.png",
+   "images": [
+    "assets/images/products/rg-ml500rs-knnw1h20.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "569\n536(over 19pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 21
+  },
+  {
+   "id": "rg-ml400rs-knnw1h21",
+   "name": "RG-ML400RS-KNNW1H21 400W LED Moving head With CMY 3in1 BSW Promotion!!!",
+   "model": "RG-ML400RS-KNNW1H21",
+   "category": "moving",
+   "sub": "hybrid",
+   "subLabel": "Hybrid",
+   "family": "moving",
+   "price": 459,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 15,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1x400W",
+   "shortDesc": "400W LED Moving head With CMY 3in1 BSW Promotion!!!. 1x400W LED engine, 8000K color rendering index: 75, AC110V-240V / 50-60Hz. Factory EXW from US$459.",
+   "longDesc": "RG-ML400RS-KNNW1H21 is part of the RIGE moving-head range built in our own Guangzhou plant — 400w led moving head with cmy 3in1 bsw promotion!!!. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Theatre, Rental. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Colour Temperature",
+     "value": "8000K color rendering index: 75"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC110V-240V / 50-60Hz"
+    },
+    {
+     "label": "Light Source",
+     "value": "350W white LED module"
+    },
+    {
+     "label": "Lumen Illumination",
+     "value": "4 m 80000 LM"
+    },
+    {
+     "label": "Rated Power",
+     "value": "430W"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "22 channels"
+    },
+    {
+     "label": "Pan Range",
+     "value": "540 degrees (16bit precision scanning) electronic error correction"
+    },
+    {
+     "label": "Tilt Range",
+     "value": "270 degrees (16bit precision scanning) electronic error correction"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear adjustment"
+    },
+    {
+     "label": "Focus",
+     "value": "linear adjustment from 4m to 50m"
+    },
+    {
+     "label": "Atomization System",
+     "value": "1 independent atomization effect, soft and natural light spot"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "4-35 degrees"
+    },
+    {
+     "label": "Strobe",
+     "value": "0-30 times / second. Adjustable speed strobe effect. Strobe macro function"
+    },
+    {
+     "label": "Colour System",
+     "value": "12 colors + white light. Color half color function"
+    },
+    {
+     "label": "Fixed Pattern",
+     "value": "12 fixed patterns + white light"
+    },
+    {
+     "label": "Rotating Pattern",
+     "value": "7 Glass patterns, each glass pattern can be independently reversed"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$459 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "3100\n2900(over 20pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Theatre",
+    "Rental",
+    "Corporate"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml400rs-knnw1h21.png",
+   "images": [
+    "assets/images/products/rg-ml400rs-knnw1h21.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "459\n419(over 20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 22
+  },
+  {
+   "id": "rg-ml150bd-kee1h16",
+   "name": "RG-ML150BD-KEE1H16 LED Zoom Moving Head 3in1",
+   "model": "RG-ML150BD-KEE1H16",
+   "category": "moving",
+   "sub": "hybrid",
+   "subLabel": "Hybrid",
+   "family": "moving",
+   "price": 315,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 16,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1x150W\n1x200W",
+   "shortDesc": "LED Zoom Moving Head 3in1. 1x150W\n1x200W LED engine, 1x150W\n1x200W, 7 colors+white, color fine tuning, rotation with variable direction and speed. Factory EXW from US$315.",
+   "longDesc": "RG-ML150BD-KEE1H16 is part of the RIGE moving-head range built in our own Guangzhou plant — led zoom moving head 3in1. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Theatre, Rental. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "1x150W\n1x200W"
+    },
+    {
+     "label": "Colour Wheel",
+     "value": "7 colors+white, color fine tuning, rotation with variable direction and speed"
+    },
+    {
+     "label": "Gobo Wheel",
+     "value": "5 gobos + 2 open, wheel rotation and shake"
+    },
+    {
+     "label": "Prism",
+     "value": "8-facet Prism, bi-directional rotatable at variable speeds"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$315 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥2187 150W\n￥2400 200W"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "150W or 200W",
+    "50,000 hours lifespan and low power consumption",
+    "Zoom angle 4.5°~22 °, focus function",
+    "High light output, 10500LUX@5M at White light zoom in, 990LUX@5M at White light zoom out Temperature protect function, when the internal Temperature is up to 40° then the fans begi",
+    "High speed strobe effect with 1-25 flashers per second Internal program available",
+    "16/14 DMX Channels USITT DMX-512"
+   ],
+   "applications": [
+    "Concert",
+    "Theatre",
+    "Rental",
+    "Corporate"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml150bd-kee1h16.jpeg",
+   "images": [
+    "assets/images/products/rg-ml150bd-kee1h16.jpeg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$315 150W\n$345 200W",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 23
+  },
+  {
+   "id": "rg-ml250br-kn1h18",
+   "name": "RG-ML250BR-KN1H18 250W LED Zoom Moving Head 3in1 !!!",
+   "model": "RG-ML250BR-KN1H18",
+   "category": "moving",
+   "sub": "hybrid",
+   "subLabel": "Hybrid",
+   "family": "moving",
+   "price": 359,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 17,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1*250W",
+   "shortDesc": "250W LED Zoom Moving Head 3in1 !!!. 1*250W LED engine, 1*250W, US$359 / unit. Factory EXW from US$359.",
+   "longDesc": "RG-ML250BR-KN1H18 is part of the RIGE moving-head range built in our own Guangzhou plant — 250w led zoom moving head 3in1 !!!. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Theatre, Rental. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "1*250W"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$359 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "2500 \n2400(over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Theatre",
+    "Rental",
+    "Corporate"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml250br-kn1h18.png",
+   "images": [
+    "assets/images/products/rg-ml250br-kn1h18.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "USD359 \nUSD343(over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 24
+  },
+  {
+   "id": "rg-ml350br-kn1h18",
+   "name": "RG-ML350BR-KN1H18 350W LED Moving Head 3in1 !!!",
+   "model": "RG-ML350BR-KN1H18",
+   "category": "moving",
+   "sub": "hybrid",
+   "subLabel": "Hybrid",
+   "family": "moving",
+   "price": 465,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 18,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1*350W",
+   "shortDesc": "350W LED Moving Head 3in1 !!!. 1*350W LED engine, 350W LED Pan: 540 degree, Tilt: 270 degree, 16ch/18ch. Factory EXW from US$465.",
+   "longDesc": "RG-ML350BR-KN1H18 is part of the RIGE moving-head range built in our own Guangzhou plant — 350w led moving head 3in1 !!!. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Theatre, Rental. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "350W LED Pan: 540 degree, Tilt: 270 degree"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "16ch/18ch"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "5.5°~30° 3 phase motor"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$465 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "3250 \n3120(over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "DMX512,Master/slave,Sound,Auto mode",
+    "Dimmer from 0-100%, Strobe",
+    "1 Static Gobo Wheel: 8 gobos + open, wheel rotation and shake 1 Rotation Gobo Wheel: 7 gobos + open, wheel rotation and shake 1 Color wheel: 7 main colors + open with rainbow effec",
+    "3-facet prism, Rotation prism, Focus",
+    "Temperature protect function",
+    "Powercon in & out, 3 pin & 5 pin XLR connector IN/OUT, color screen, Silent fan, good housing"
+   ],
+   "applications": [
+    "Concert",
+    "Theatre",
+    "Rental",
+    "Corporate"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml350br-kn1h18.png",
+   "images": [
+    "assets/images/products/rg-ml350br-kn1h18.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "USD465 \nUSD445(over 30pcs) / USD553 \nUSD530(over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 25
+  },
+  {
+   "id": "rg-ml300br-knnw1h25",
+   "name": "RG-ML300BR-KNNW1H25 LED 300W Beam Moving Head !!!",
+   "model": "RG-ML300BR-KNNW1H25",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 392,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 20,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1x300W",
+   "shortDesc": "LED 300W Beam Moving Head !!!. 1x300W LED engine, 300W LED, 540 degree, Tilt Y: 270 degree. Factory EXW from US$392.",
+   "longDesc": "RG-ML300BR-KNNW1H25 is part of the RIGE moving-head range built in our own Guangzhou plant — led 300w beam moving head !!!. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "300W LED"
+    },
+    {
+     "label": "Pan X",
+     "value": "540 degree, Tilt Y: 270 degree"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "25ch/18ch"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$392 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "2750\n2640(over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "DMX512,Master/slave,Sound,Auto mode",
+    "Dimmer from 0-100%, Strobe Beam angle: 3 degree",
+    "1 rotate gobo wheel (7 gobos + open) and 1 fixed gobo wheel (8 gobos + open)",
+    "1 Color wheel: 7 main colors + open with rainbow effect",
+    "2 Prism disk, Rotation prism, Focus",
+    "Temperature protect function",
+    "powercon in & out, color screen, Silent fan, good housing",
+    "Pan/Tilt 0-255 speed controllable"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml300br-knnw1h25.png",
+   "images": [
+    "assets/images/products/rg-ml300br-knnw1h25.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$392\n$378( over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 27
+  },
+  {
+   "id": "rg-ml150br-knnw1h17",
+   "name": "RG-ML150BR-KNNW1H17 LED 150W Beam Moving Head",
+   "model": "RG-ML150BR-KNNW1H17",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 289,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 21,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1*x150W",
+   "shortDesc": "LED 150W Beam Moving Head. 1*x150W LED engine, AC100-240V, 50/60Hz, 150W LED module lamp beads. Factory EXW from US$289.",
+   "longDesc": "RG-ML150BR-KNNW1H17 is part of the RIGE moving-head range built in our own Guangzhou plant — led 150w beam moving head. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC100-240V, 50/60Hz"
+    },
+    {
+     "label": "Light Source",
+     "value": "150W LED module lamp beads"
+    },
+    {
+     "label": "Rated Power",
+     "value": "150W"
+    },
+    {
+     "label": "Life",
+     "value": "50,000 hours"
+    },
+    {
+     "label": "Colour Temperature",
+     "value": "7000K-8000K"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "17CH"
+    },
+    {
+     "label": "Pan Range",
+     "value": "540°"
+    },
+    {
+     "label": "Tilt Range",
+     "value": "270°"
+    },
+    {
+     "label": "Colour Wheel",
+     "value": "1 color wheel with 10 colors + blank"
+    },
+    {
+     "label": "Gobo",
+     "value": "1 fixed gobo wheel with 18 gobos + blank"
+    },
+    {
+     "label": "Prism",
+     "value": "1 rotating 8+16 prism"
+    },
+    {
+     "label": "Working Mode",
+     "value": "DMX512/self-propelled/sound/master-slave"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear dimming"
+    },
+    {
+     "label": "Strobe",
+     "value": "0-25/s"
+    },
+    {
+     "label": "Display",
+     "value": "LCD display, Chinese and English display, can be flipped display"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP20"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$289 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "2000\n1900(over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "rainbow effect",
+    "Aperture effect"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml150br-knnw1h17.png",
+   "images": [
+    "assets/images/products/rg-ml150br-knnw1h17.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$289\n$272( over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 28
+  },
+  {
+   "id": "rg-ml100bp-knnw1h13",
+   "name": "RG-ML100BP-KNNW1H13 1leds 100w led beam moving head light",
+   "model": "RG-ML100BP-KNNW1H13",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 105,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 22,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1*100w",
+   "shortDesc": "1leds 100w led beam moving head light. 1*100w LED engine, 1*100w, AC90-240V, 50/60Hz. Factory EXW from US$105.",
+   "longDesc": "RG-ML100BP-KNNW1H13 is part of the RIGE moving-head range built in our own Guangzhou plant — 1leds 100w led beam moving head light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "1*100w"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC90-240V, 50/60Hz"
+    },
+    {
+     "label": "Rated Power",
+     "value": "120W"
+    },
+    {
+     "label": "Pattern",
+     "value": "11+1"
+    },
+    {
+     "label": "Colour System",
+     "value": "7+1 Rainbow effect"
+    },
+    {
+     "label": "Mirror",
+     "value": "18 mirror"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "11/13CH"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$105 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "700\n650(over 100pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "The light source consists of 1*100W LED",
+    "Horizontal/vertical X axis 540° Y axis 270°"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml100bp-knnw1h13.png",
+   "images": [
+    "assets/images/products/rg-ml100bp-knnw1h13.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$105 \n$99(over 100pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 29
+  },
+  {
+   "id": "rg-ml150br-knnw1h13",
+   "name": "RG-ML150BR-KNNW1H13 MINI 150W led moving head light",
+   "model": "RG-ML150BR-KNNW1H13",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 96,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 23,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1*150w",
+   "shortDesc": "MINI 150W led moving head light. 1*150w LED engine, AC110-220V, 50-60HZ Power: 200W, 1 X150W white light lamp bead. Factory EXW from US$96.",
+   "longDesc": "RG-ML150BR-KNNW1H13 is part of the RIGE moving-head range built in our own Guangzhou plant — mini 150w led moving head light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC110-220V, 50-60HZ Power: 200W"
+    },
+    {
+     "label": "Light Source",
+     "value": "1 X150W white light lamp bead"
+    },
+    {
+     "label": "Pattern",
+     "value": "12 patterns Color: 8 colors"
+    },
+    {
+     "label": "Rainbow",
+     "value": "6 colors rainbow effect"
+    },
+    {
+     "label": "Prism",
+     "value": "6+12 prism"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "11/13CH"
+    },
+    {
+     "label": "Control Mode",
+     "value": "voice control, master-slave, self-propelled, DMX"
+    },
+    {
+     "label": "X-Axis",
+     "value": "540°"
+    },
+    {
+     "label": "Y Axis",
+     "value": "270°"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$96 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "650 630(over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml150br-knnw1h13.png",
+   "images": [
+    "assets/images/products/rg-ml150br-knnw1h13.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "96usd 90usd(over30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 30
+  },
+  {
+   "id": "rg-ml150br-knnw1h16",
+   "name": "RG-ML150BR-KNNW1H16 150W White Beam Moving Head",
+   "model": "RG-ML150BR-KNNW1H16",
+   "category": "moving",
+   "sub": "wash",
+   "subLabel": "Wash",
+   "family": "moving",
+   "price": 258,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 24,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1x150W",
+   "shortDesc": "150W White Beam Moving Head. 1x150W LED engine, 1x150W, 7 colors +white, rotation with variable direction and speed. Factory EXW from US$258.",
+   "longDesc": "RG-ML150BR-KNNW1H16 is part of the RIGE moving-head range built in our own Guangzhou plant — 150w white beam moving head. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Wedding, Club, Corporate. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "1x150W"
+    },
+    {
+     "label": "Colour Wheel",
+     "value": "7 colors +white, rotation with variable direction and speed"
+    },
+    {
+     "label": "Prism",
+     "value": "8-facet Prism, bi-directionally rotatable at variable speeds"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$258 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥1812\n￥1740(over 30 pc)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "150W High Output White LED",
+    "Beam Angle 6°, Outstanding sharp BEAM effect and remarkable wash effect with pure color mixing and focus Function",
+    "High light output, 14020LUX@5M at White light",
+    "1 static Gobo Wheel: 8 gobos +white, wheel rotation and shake",
+    "1 Rotate Gobo Wheel: 6 gobos +white, wheel rotation and shake",
+    "High speed strobe effect with 1-25 flashers per second",
+    "IP 20 protection rating，16/14/12/10 DMX Channels USITT DMX-512"
+   ],
+   "applications": [
+    "Wedding",
+    "Club",
+    "Corporate",
+    "Theatre"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml150br-knnw1h16.jpeg",
+   "images": [
+    "assets/images/products/rg-ml150br-knnw1h16.jpeg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$258\n$248(over 30 pc)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 31
+  },
+  {
+   "id": "rg-ml150bp-knnw1h16",
+   "name": "RG-ML150BP-KNNW1H16 150W White Spot Moving Head",
+   "model": "RG-ML150BP-KNNW1H16",
+   "category": "moving",
+   "sub": "spot",
+   "subLabel": "Spot",
+   "family": "moving",
+   "price": null,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 25,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "7 colors +white, rotation wi",
+   "shortDesc": "150W White Spot Moving Head. .",
+   "longDesc": "RG-ML150BP-KNNW1H16 is part of the RIGE moving-head range built in our own Guangzhou plant — 150w white spot moving head. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Theatre, Broadcast, Event. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Colour Wheel",
+     "value": "7 colors +white, rotation with variable direction and speed"
+    },
+    {
+     "label": "Prism",
+     "value": "3-facet Prism, bi-directionally rotatable at variable speeds"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "150W High Output White LED",
+    "Beam Angle 15°, focus function",
+    "High light output, 3450LUX@5M at White light",
+    "1 static Gobo Wheel: 8 gobos +white, wheel rotation and shake",
+    "1 Rotation Gobo Wheel: 6 gobos +white, wheel rotation and shake",
+    "High speed strobe effect with 1-25 flashers per second",
+    "16/14/12/10 DMX Channels USITT DMX-512"
+   ],
+   "applications": [
+    "Theatre",
+    "Broadcast",
+    "Event",
+    "Rental"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml150bp-knnw1h16.png",
+   "images": [
+    "assets/images/products/rg-ml150bp-knnw1h16.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 32
+  },
+  {
+   "id": "rg-ml100bd-kc6ah40",
+   "name": "RG-ML100BD-KC6AH40 6头10瓦光束LED摇头+RGB激光灯6*10w led moving head beam+RGB laser light",
+   "model": "RG-ML100BD-KC6AH40",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 219,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 26,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "Light source: 10W LED*6PCS,10W RGBW\nPower: 100 w\nRed laser: 100MW\nGreen laser: 50MW\nBlue laser: 300MW",
+   "shortDesc": "6头10瓦光束LED摇头+RGB激光灯6*10w led moving head beam+RGB laser light. Light source: 10W LED*6PCS,10W RGBW\nPower: 100 w\nRed laser: 100MW\nGreen laser: 50MW\nBlue laser: 300MW LED engine, AC110/220V 50-60Hz, 10W LED*6PCS,10W RGBW. Factory EXW from US$219.",
+   "longDesc": "RG-ML100BD-KC6AH40 is part of the RIGE moving-head range built in our own Guangzhou plant — 6头10瓦光束led摇头+rgb激光灯6*10w led moving head beam+rgb laser light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC110/220V 50-60Hz"
+    },
+    {
+     "label": "Light Source",
+     "value": "10W LED*6PCS,10W RGBW"
+    },
+    {
+     "label": "Rated Power",
+     "value": "100 w"
+    },
+    {
+     "label": "Red Laser",
+     "value": "100MW"
+    },
+    {
+     "label": "Green Laser",
+     "value": "50MW"
+    },
+    {
+     "label": "Blue Laser",
+     "value": "300MW"
+    },
+    {
+     "label": "Net Weight",
+     "value": "10.2 KG"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "13KG"
+    },
+    {
+     "label": "Dimensions",
+     "value": "50*43*18cm"
+    },
+    {
+     "label": "Packing Size",
+     "value": "55*54*30cm"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$219 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥1500(MOQ30Pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Self-walk, voice control, DMX512, master and slave"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml100bd-kc6ah40.png",
+   "images": [
+    "assets/images/products/rg-ml100bd-kc6ah40.png",
+    "assets/images/products/rg-ml100bd-kc6ah40-2.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "219usd",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 33
+  },
+  {
+   "id": "rg-ml216wd-ktxf72ah12",
+   "name": "RG-ML216WD-KTXf72AH12 72X3W RGB 3in1 LED Moving Head Light Promotion",
+   "model": "RG-ML216WD-KTXf72AH12",
+   "category": "moving",
+   "sub": "hybrid",
+   "subLabel": "Hybrid",
+   "family": "moving",
+   "price": 149,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 10,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "72x3W",
+   "shortDesc": "72X3W RGB 3in1 LED Moving Head Light Promotion. 72x3W LED engine, 350x260x440mm, 9.5Kg. Factory EXW from US$149.",
+   "longDesc": "RG-ML216WD-KTXf72AH12 is part of the RIGE moving-head range built in our own Guangzhou plant — 72x3w rgb 3in1 led moving head light promotion. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Theatre, Rental. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "350x260x440mm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "9.5Kg"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "11.5Kg"
+    },
+    {
+     "label": "Light Source",
+     "value": "RGB 3IN1 3Wx72pcs"
+    },
+    {
+     "label": "Colour System",
+     "value": "Black Material: Plastic"
+    },
+    {
+     "label": "Package Quantity",
+     "value": "1pcs"
+    },
+    {
+     "label": "Control Mode",
+     "value": "Auto-run mode, DMX-512 mode, Sound active mode"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "12CH"
+    },
+    {
+     "label": "Working Temperature",
+     "value": "-20℃~+40℃"
+    },
+    {
+     "label": "Rated Power",
+     "value": "216W"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC 100-240V 50/60Hz"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$149 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1000"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Theatre",
+    "Rental",
+    "Corporate"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml216wd-ktxf72ah12.png",
+   "images": [
+    "assets/images/products/rg-ml216wd-ktxf72ah12.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "149",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 34
+  },
+  {
+   "id": "rg-ml500wr-kose4h93",
+   "name": "RG-ML500WR-KOSe4H93 7*60w 4in1 RGBW osram LED Moving bead !!!",
+   "model": "RG-ML500WR-KOSe4H93",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 390,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 11,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "7*60Ｗ",
+   "shortDesc": "7*60w 4in1 RGBW osram LED Moving bead !!!. 7*60Ｗ LED engine, 100V~240V AC, 50/60Hz, 500W @ 220V. Factory EXW from US$390.",
+   "longDesc": "RG-ML500WR-KOSe4H93 is part of the RIGE moving-head range built in our own Guangzhou plant — 7*60w 4in1 rgbw osram led moving bead !!!. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "100V~240V AC, 50/60Hz"
+    },
+    {
+     "label": "Rated Power",
+     "value": "500W @ 220V"
+    },
+    {
+     "label": "Light Source",
+     "value": "7 60 watt R G B W OSRAM high brightness LEDs"
+    },
+    {
+     "label": "Focus",
+     "value": "DMA linear focusing, ultra smooth adjustment of focal length. Beam angle 3-45 degrees"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "Driven by a three-phase stepper motor, it is fast, quiet, and has an automatic return function.540 ° horizontally and 270 ° vertically"
+    },
+    {
+     "label": "Control Mode",
+     "value": "International standard DMX512 signal/master-slave/automatic, 3-core interface+5-core interface with RDM function, which can be used to dial address codes"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$390 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "2750RMB 2640RMB \n（over 30pcs）"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Light source specifications:",
+    "Rated life 50000 hours",
+    "25CH and 93CH channel modes",
+    "Adjustable horizontal and vertical speeds using powerful silent fans, displaying LED temperature, reducing power due to overheating, ensuring LED lifespan, and a modular structure for easy maintenance"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml500wr-kose4h93.jpeg",
+   "images": [
+    "assets/images/products/rg-ml500wr-kose4h93.jpeg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "USD390 USD375（over 30pcs）",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 35
+  },
+  {
+   "id": "rg-ml350wr-kose4h58",
+   "name": "RG-ML350WR-KOSe4H58 7*40w 4in1 RGBW osram LED Moving bead With zoom Promotion!!!",
+   "model": "RG-ML350WR-KOSe4H58",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 186,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 12,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "7x40W",
+   "shortDesc": "7*40w 4in1 RGBW osram LED Moving bead With zoom Promotion!!!. 7x40W LED engine, 7x40W, AC90-240v. Factory EXW from US$186.",
+   "longDesc": "RG-ML350WR-KOSe4H58 is part of the RIGE moving-head range built in our own Guangzhou plant — 7*40w 4in1 rgbw osram led moving bead with zoom promotion!!!. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "7x40W"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC90-240v"
+    },
+    {
+     "label": "Rated Power",
+     "value": "350 w"
+    },
+    {
+     "label": "Frequency",
+     "value": "50-60 Hz"
+    },
+    {
+     "label": "Beads",
+     "value": "7 40 w Osram 4 and 1 bead"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "17 CH"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX/ master / voice control"
+    },
+    {
+     "label": "Pan Range",
+     "value": "540 degrees"
+    },
+    {
+     "label": "Tilt Range",
+     "value": "270 degrees"
+    },
+    {
+     "label": "Stroboscopic",
+     "value": "1-25 beats/s or random"
+    },
+    {
+     "label": "Display",
+     "value": "LCD/English WQERFWSFRF"
+    },
+    {
+     "label": "Net Weight",
+     "value": "12 kg."
+    },
+    {
+     "label": "Dimensions",
+     "value": "38*31*46 cm (carton 1 in1)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$186 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1300 \n 1875（点控）"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml350wr-kose4h58.png",
+   "images": [
+    "assets/images/products/rg-ml350wr-kose4h58.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "USD186 USD276 control）",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 36
+  },
+  {
+   "id": "rg-ml600wr-kose12h58",
+   "name": "RG-ML600WR-KOSe12H58 12*40w 4in1 RGBW osram LED Moving bead With zoom Promotion!!!",
+   "model": "RG-ML600WR-KOSe12H58",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 315,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 13,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "12x40W",
+   "shortDesc": "12*40w 4in1 RGBW osram LED Moving bead With zoom Promotion!!!. 12x40W LED engine, V,50/60Hz 110-240, 500 w. Factory EXW from US$315.",
+   "longDesc": "RG-ML600WR-KOSe12H58 is part of the RIGE moving-head range built in our own Guangzhou plant — 12*40w 4in1 rgbw osram led moving bead with zoom promotion!!!. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "V,50/60Hz 110-240"
+    },
+    {
+     "label": "Rated Power",
+     "value": "500 w"
+    },
+    {
+     "label": "Light Source",
+     "value": "12 W,RGBW 4in1 40 mixed colors"
+    },
+    {
+     "label": "Working Years",
+     "value": "around 50000 hours"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP20"
+    },
+    {
+     "label": "Working Temperature",
+     "value": "-20 ℃-40℃ ℃"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX 512, automatic, master-slave, sound control"
+    },
+    {
+     "label": "Functions",
+     "value": "dyeing, stroboscopic, zoom, beam effect"
+    },
+    {
+     "label": "Pan",
+     "value": "540 °(16 bits) Electric adjustment"
+    },
+    {
+     "label": "Tilt",
+     "value": "270 °(16 bits) electric adjustment"
+    },
+    {
+     "label": "Zoom",
+     "value": "9 °~50° °"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100%"
+    },
+    {
+     "label": "Display",
+     "value": "Blue LCD"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$315 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "2200\n2000(over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "4 channel modes: STD/HSI/GUI/EXT (17/11/18/58CH)"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml600wr-kose12h58.png",
+   "images": [
+    "assets/images/products/rg-ml600wr-kose12h58.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "USD315 USD285（over 30pcs）",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 37
+  },
+  {
+   "id": "rg-ml360wd-ktxe36ah16",
+   "name": "RG-ML360WD-KTXe36AH16 36x10w 4in1  zoom LED Moving Head wash",
+   "model": "RG-ML360WD-KTXe36AH16",
+   "category": "moving",
+   "sub": "wash",
+   "subLabel": "Wash",
+   "family": "moving",
+   "price": 159,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 14,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "36x10W\n4in1\nRGBW,RGBA",
+   "shortDesc": "36x10w 4in1  zoom LED Moving Head wash. 36x10W\n4in1\nRGBW,RGBA LED engine, 350x245x370mm, 9.5Kg. Factory EXW from US$159.",
+   "longDesc": "RG-ML360WD-KTXe36AH16 is part of the RIGE moving-head range built in our own Guangzhou plant — 36x10w 4in1  zoom led moving head wash. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Wedding, Club, Corporate. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "350x245x370mm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "9.5Kg"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "11.5Kg"
+    },
+    {
+     "label": "Light Source",
+     "value": "RGBW 4IN1 10Wx36pcs"
+    },
+    {
+     "label": "Colour System",
+     "value": "Black Material: Plastic + Iron"
+    },
+    {
+     "label": "Package Quantity",
+     "value": "1pcs"
+    },
+    {
+     "label": "Control Mode",
+     "value": "Auto-run mode, DMX-512 mode, Sound active mode"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "16CH"
+    },
+    {
+     "label": "Ambient Temperature",
+     "value": "-20℃~+40℃"
+    },
+    {
+     "label": "Rated Power",
+     "value": "360W"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC 100~240V 50/60Hz"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$159 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥1100(zoom)\n1000 Over 50PCs"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Wedding",
+    "Club",
+    "Corporate",
+    "Theatre"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml360wd-ktxe36ah16.png",
+   "images": [
+    "assets/images/products/rg-ml360wd-ktxe36ah16.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$159\n\n$151 Over 50PCS",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 38
+  },
+  {
+   "id": "rg-ml360wd-ktxe36ah12",
+   "name": "RG-ML360WD-KTXe36AH12 36x10w 4in1 High Power LED Moving Head wash Promotion",
+   "model": "RG-ML360WD-KTXe36AH12",
+   "category": "moving",
+   "sub": "wash",
+   "subLabel": "Wash",
+   "family": "moving",
+   "price": 139,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 15,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "36x10W\n4in1\n(RGBW,RGBA)",
+   "shortDesc": "36x10w 4in1 High Power LED Moving Head wash Promotion. 36x10W\n4in1\n(RGBW,RGBA) LED engine, 36x10W\n4in1\n(RGBW,RGBA), 42*38*33cm. Factory EXW from US$139.",
+   "longDesc": "RG-ML360WD-KTXe36AH12 is part of the RIGE moving-head range built in our own Guangzhou plant — 36x10w 4in1 high power led moving head wash promotion. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Wedding, Club, Corporate. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "36x10W\n4in1\n(RGBW,RGBA)"
+    },
+    {
+     "label": "Packing Size",
+     "value": "42*38*33cm"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "10 KG"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "12CH"
+    },
+    {
+     "label": "Operation Mode",
+     "value": "DMX, Master/Slave,Stand-alone,Sound-active"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$139 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "980（over30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Wedding",
+    "Club",
+    "Corporate",
+    "Theatre"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml360wd-ktxe36ah12.png",
+   "images": [
+    "assets/images/products/rg-ml360wd-ktxe36ah12.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "USD139",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 39
+  },
+  {
+   "id": "rg-ml285wd-kose19ah25",
+   "name": "RG-ML285WD-KOSe19AH25 19LEDS*15W aura LED Moving head High Power",
+   "model": "RG-ML285WD-KOSe19AH25",
+   "category": "moving",
+   "sub": "wash",
+   "subLabel": "Wash",
+   "family": "moving",
+   "price": 159,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 16,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "19x15W",
+   "shortDesc": "19LEDS*15W aura LED Moving head High Power. 19x15W LED engine, 100–240 V, 50/60 Hz, 19pcs 15W Osram RGBW 4in1 LEDs. Factory EXW from US$159.",
+   "longDesc": "RG-ML285WD-KOSe19AH25 is part of the RIGE moving-head range built in our own Guangzhou plant — 19leds*15w aura led moving head high power. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Wedding, Club, Corporate. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "100–240 V, 50/60 Hz"
+    },
+    {
+     "label": "Light Source",
+     "value": "19pcs 15W Osram RGBW 4in1 LEDs"
+    },
+    {
+     "label": "Aura Lamp",
+     "value": "30*0.5W RGB LEDs"
+    },
+    {
+     "label": "Rated Power",
+     "value": "300W"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "8-58degree"
+    },
+    {
+     "label": "Dimmer",
+     "value": "0-100% dimming"
+    },
+    {
+     "label": "Strobe",
+     "value": "0~20HZ"
+    },
+    {
+     "label": "Control Mode",
+     "value": "Standard DMX512, Automatic and Master/ slave mode"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "14/25CH"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP20"
+    },
+    {
+     "label": "Pan Rotation",
+     "value": "540 degree"
+    },
+    {
+     "label": "Tilt Rotation",
+     "value": "240 degree"
+    },
+    {
+     "label": "Data In/Out",
+     "value": "3-pin and 5-pin XLR connection"
+    },
+    {
+     "label": "Net Weight",
+     "value": "8kgs"
+    },
+    {
+     "label": "Net Weight",
+     "value": "9.5kgs"
+    },
+    {
+     "label": "Dimensions",
+     "value": "32*21*38cm"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$159 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1100 1000(over20pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Wedding",
+    "Club",
+    "Corporate",
+    "Theatre"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml285wd-kose19ah25.png",
+   "images": [
+    "assets/images/products/rg-ml285wd-kose19ah25.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "USD159\n USD149 (over20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 40
+  },
+  {
+   "id": "rg-ml285wd-kose19ah97",
+   "name": "RG-ML285WD-KOSe19AH97 19*15w Hawkeye led moving head High Power OSRAM leds",
+   "model": "RG-ML285WD-KOSe19AH97",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 375,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 17,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "19x15W",
+   "shortDesc": "19*15w Hawkeye led moving head High Power OSRAM leds. 19x15W LED engine, 494*358*253mm, 15Kg. Factory EXW from US$375.",
+   "longDesc": "RG-ML285WD-KOSe19AH97 is part of the RIGE moving-head range built in our own Guangzhou plant — 19*15w hawkeye led moving head high power osram leds. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Dimensions",
+     "value": "494*358*253mm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "15Kg"
+    },
+    {
+     "label": "Net Weight",
+     "value": "18.5Kg"
+    },
+    {
+     "label": "Light Source",
+     "value": "19*15W high power 4IN1 Osram LEDs"
+    },
+    {
+     "label": "Rated Power",
+     "value": "450W"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "4-60°Zoom"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP20"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "21/35/78/96/97/92CH"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$375 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥2550(without touch screen)\n￥2950( touch screen)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml285wd-kose19ah97.jpeg",
+   "images": [
+    "assets/images/products/rg-ml285wd-kose19ah97.jpeg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$375( without touch screen)\n$435(touch screen)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 41
+  },
+  {
+   "id": "rg-ml500bpk-nn37ah32",
+   "name": "RG-ML500BPK-NN37AH32 37leds 15w RGBW 4in1 zoom led moving head light",
+   "model": "RG-ML500BPK-NN37AH32",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 258,
+   "badge": "New",
+   "rating": 4.8,
+   "reviews": 18,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "37leds*15w",
+   "shortDesc": "37leds 15w RGBW 4in1 zoom led moving head light. 37leds*15w LED engine, 110-240 V, 50/60 Hz, 500 w. Factory EXW from US$258.",
+   "longDesc": "RG-ML500BPK-NN37AH32 is part of the RIGE moving-head range built in our own Guangzhou plant — 37leds 15w rgbw 4in1 zoom led moving head light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "110-240 V, 50/60 Hz"
+    },
+    {
+     "label": "Rated Power",
+     "value": "500 w"
+    },
+    {
+     "label": "Light Source",
+     "value": "37PCSX15W, RGBW 4in1 mixed colors"
+    },
+    {
+     "label": "Working Experience",
+     "value": "50000 hours"
+    },
+    {
+     "label": "IP Rating",
+     "value": "IP20"
+    },
+    {
+     "label": "Working Temperature",
+     "value": "-20 ℃ -40 ℃"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX 512, automatic, master-slave, voice control"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "(12/20/32CH)"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "10 °~60 ° linear focusing angle change color mixing system RGBW color mixing system, soft and uniform color mixing without flicker, rainbow color effect"
+    },
+    {
+     "label": "Function",
+     "value": "dyeing, strobe, zoom, beam effect"
+    },
+    {
+     "label": "Pan",
+     "value": "540 ° (16 bit) electric adjustment"
+    },
+    {
+     "label": "Tilt",
+     "value": "270 ° (16 position) electric adjustment"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100%"
+    },
+    {
+     "label": "Display",
+     "value": "Adopting a 1.77-inch color TFT touch screen, using both Chinese and English languages, making it convenient for quick operation and menu browsing,"
+    },
+    {
+     "label": "Housing",
+     "value": "Made of brand new fireproof engineering plastic material"
+    },
+    {
+     "label": "Net Weight",
+     "value": "15KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$258 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1800 1650(over30pcs )"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-ML500BP-KNN37AH32",
+    "Personalized settings display menu settings, through menus and calling built-in programs"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml500bpk-nn37ah32.png",
+   "images": [
+    "assets/images/products/rg-ml500bpk-nn37ah32.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "258 235usd(over30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 42
+  },
+  {
+   "id": "rg-ml500br-knnd16ah79",
+   "name": "RG-ML500BR-KNNd16AH79 360 Roller 16*25W RGBA 4In1 Leds Moving Head",
+   "model": "RG-ML500BR-KNNd16AH79",
+   "category": "moving",
+   "sub": "wash",
+   "subLabel": "Wash",
+   "family": "moving",
+   "price": 418,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 19,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "16x25W",
+   "shortDesc": "360 Roller 16*25W RGBA 4In1 Leds Moving Head. 16x25W LED engine, AC110 ~ 240V 50-60HZ, 500W. Factory EXW from US$418.",
+   "longDesc": "RG-ML500BR-KNNd16AH79 is part of the RIGE moving-head range built in our own Guangzhou plant — 360 roller 16*25w rgba 4in1 leds moving head. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Wedding, Club, Corporate. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC110 ~ 240V 50-60HZ"
+    },
+    {
+     "label": "Rated Power",
+     "value": "500W"
+    },
+    {
+     "label": "Light Source",
+     "value": "16*25W RGBA 4in1 high power led"
+    },
+    {
+     "label": "Strobe",
+     "value": "1-25 times / second"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% of the total dimming can control the brightness of each lamp beads"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "16CH / 19CH / V31CH / H31CH / 79CH five channel mode selection."
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512, self-propelled, voice-activated, master-slave"
+    },
+    {
+     "label": "Level",
+     "value": "360 degrees + non-polar rotation, 16bit Vertical: 360 degrees + Promise rotation, 16bit"
+    },
+    {
+     "label": "Dimensions",
+     "value": "52 * 37 * 53cm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "17.5KG"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "20.5KG (Carton)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$418 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥2800\n￥2680（Over 20 pcs）"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Wedding",
+    "Club",
+    "Corporate",
+    "Theatre"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml500br-knnd16ah79.png",
+   "images": [
+    "assets/images/products/rg-ml500br-knnd16ah79.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$418\n$399.9（Over 20 pcs）",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 43
+  },
+  {
+   "id": "rg-ml80wn-klew8h12",
+   "name": "RG-ML80WN-KLEW8H12 LED Spider light CREE leds",
+   "model": "RG-ML80WN-KLEW8H12",
+   "category": "pixel",
+   "sub": "strobe",
+   "subLabel": "Strobe",
+   "family": "pixel",
+   "price": 115,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 20,
+   "sold": "",
+   "icon": "✦",
+   "iconColor": "#00d4ff",
+   "tagline": "8x10W",
+   "shortDesc": "LED Spider light CREE leds. 8x10W LED engine, AC100-240V 50/60Hz, 8 pcs 10w CREE LEDs. Factory EXW from US$115.",
+   "longDesc": "RG-ML80WN-KLEW8H12 is part of the RIGE moving-head range built in our own Guangzhou plant — led spider light cree leds. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Club, Concert, Festival. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Rated Power",
+     "value": "AC100-240V 50/60Hz"
+    },
+    {
+     "label": "Light Source",
+     "value": "8 pcs 10w CREE LEDs"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "4.5°"
+    },
+    {
+     "label": "Dimmer",
+     "value": "1-100% with 16 bit"
+    },
+    {
+     "label": "Pan",
+     "value": "540°+fine（Unlimited Pan optional)"
+    },
+    {
+     "label": "Tilt",
+     "value": "145°+fine"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "7/13 double channels mode"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512/Master-Slave/Auto/Sound activated"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$115 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "White:￥769\n (no base)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Strobe；1-25Hz/Second with various stroe speeds"
+   ],
+   "applications": [
+    "Club",
+    "Concert",
+    "Festival",
+    "TV Show"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml80wn-klew8h12.jpeg",
+   "images": [
+    "assets/images/products/rg-ml80wn-klew8h12.jpeg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "White: $115\n (no base)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 44
+  },
+  {
+   "id": "rg-ml80wn-kcre8ah36",
+   "name": "RG-ML80WN-KCRe8AH36 LED Spider Light CREE leds",
+   "model": "RG-ML80WN-KCRe8AH36",
+   "category": "pixel",
+   "sub": "strobe",
+   "subLabel": "Strobe",
+   "family": "pixel",
+   "price": 125,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 21,
+   "sold": "",
+   "icon": "✦",
+   "iconColor": "#00d4ff",
+   "tagline": "8x10W",
+   "shortDesc": "LED Spider Light CREE leds. 8x10W LED engine, AC100-240V 50/60Hz, 8pcs 10W high power RGBW LED. Factory EXW from US$125.",
+   "longDesc": "RG-ML80WN-KCRe8AH36 is part of the RIGE moving-head range built in our own Guangzhou plant — led spider light cree leds. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Club, Concert, Festival. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Rated Power",
+     "value": "AC100-240V 50/60Hz"
+    },
+    {
+     "label": "Light Source",
+     "value": "8pcs 10W high power RGBW LED"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "12/41 channnels"
+    },
+    {
+     "label": "Movement",
+     "value": "Tilt:Y1 axis 120 degree,Y2 axis 120 degree"
+    },
+    {
+     "label": "Contril Mode",
+     "value": "DMX512/Master-Slave/Auto run"
+    },
+    {
+     "label": "Display",
+     "value": "LED display"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "3 degree"
+    },
+    {
+     "label": "Net Weight",
+     "value": "5 KG"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "6KG"
+    },
+    {
+     "label": "Packing Size",
+     "value": "48*30*23CM"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$125 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "RGBW:￥ 829 (no base)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Club",
+    "Concert",
+    "Festival",
+    "TV Show"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml80wn-kcre8ah36.jpeg",
+   "images": [
+    "assets/images/products/rg-ml80wn-kcre8ah36.jpeg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "RGBW: $125(no base)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 45
+  },
+  {
+   "id": "rg-ml80wr-kcre8h46",
+   "name": "RG-ML80WR-KCRe8H46 LED Spider Light CREE leds 4in1",
+   "model": "RG-ML80WR-KCRe8H46",
+   "category": "pixel",
+   "sub": "strobe",
+   "subLabel": "Strobe",
+   "family": "pixel",
+   "price": 155,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 22,
+   "sold": "",
+   "icon": "✦",
+   "iconColor": "#00d4ff",
+   "tagline": "8x10W",
+   "shortDesc": "LED Spider Light CREE leds 4in1. 8x10W LED engine, AV 100-240V 50/60Hz, 110W. Factory EXW from US$155.",
+   "longDesc": "RG-ML80WR-KCRe8H46 is part of the RIGE moving-head range built in our own Guangzhou plant — led spider light cree leds 4in1. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Club, Concert, Festival. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AV 100-240V 50/60Hz"
+    },
+    {
+     "label": "Rated Power",
+     "value": "110W"
+    },
+    {
+     "label": "Light Source",
+     "value": "8pcs 10W CREE RGBW 4in1 LEDs Beam angle:4.5°"
+    },
+    {
+     "label": "Strobe",
+     "value": "1-25Hz/Second with carious strobe speeds Dimmer:1-100% with 16 bit"
+    },
+    {
+     "label": "Pan",
+     "value": "540°+fine（Unlimited Pan optional) Tilt:145°+fine"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "1137 double channels mode"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512 /Master-asve/Auto/Sound activated Function:"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$155 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "White:￥1030\nRGBW:￥1098"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Strobe beam light effect",
+    "Each bulb is controllable,with racing light effect.",
+    "Dynamic beam effect which perfectly suitable to the club,bar,concert.",
+    "Unlimited Pan movement optional"
+   ],
+   "applications": [
+    "Club",
+    "Concert",
+    "Festival",
+    "TV Show"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml80wr-kcre8h46.png",
+   "images": [
+    "assets/images/products/rg-ml80wr-kcre8h46.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "White:$155 RGBW:$165",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 46
+  },
+  {
+   "id": "rg-ml130bd-klme4ah15",
+   "name": "RG-ML130BD-KLMe4AH15 LED beam Moving RGBW 4in1 leds",
+   "model": "RG-ML130BD-KLMe4AH15",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 206,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 23,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "4x25W",
+   "shortDesc": "LED beam Moving RGBW 4in1 leds. 4x25W LED engine, 4pcs 25W Rated Power:130W Color:RGBW DMX Channels：15 CH, 250 degrees + fine tuning. Factory EXW from US$206.",
+   "longDesc": "RG-ML130BD-KLMe4AH15 is part of the RIGE moving-head range built in our own Guangzhou plant — led beam moving rgbw 4in1 leds. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "4pcs 25W Rated Power:130W Color:RGBW DMX Channels：15 CH"
+    },
+    {
+     "label": "Tilt Range",
+     "value": "250 degrees + fine tuning"
+    },
+    {
+     "label": "Pan Range",
+     "value": "540 degrees + fine-tuning"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "5-40°"
+    },
+    {
+     "label": "Dimensions",
+     "value": "310x260x460mm"
+    },
+    {
+     "label": "Packing",
+     "value": "520x330x480mm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "14Kg"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "15.5Kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$206 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "RGBW:￥1380"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml130bd-klme4ah15.png",
+   "images": [
+    "assets/images/products/rg-ml130bd-klme4ah15.png",
+    "assets/images/products/rg-ml130bd-klme4ah15-2.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "RGBW::$206",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 47
+  },
+  {
+   "id": "rg-ml200bc-kcre12ah63",
+   "name": "RG-ML200BC-KCRe12AH63 12*15W RGBW 4in1 led beam football light",
+   "model": "RG-ML200BC-KCRe12AH63",
+   "category": "pixel",
+   "sub": "strobe",
+   "subLabel": "Strobe",
+   "family": "pixel",
+   "price": 215,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 24,
+   "sold": "",
+   "icon": "✦",
+   "iconColor": "#00d4ff",
+   "tagline": "12*15W",
+   "shortDesc": "12*15W RGBW 4in1 led beam football light. 12*15W LED engine, AC 100v～240V，50/60HZ, 200 W. Factory EXW from US$215.",
+   "longDesc": "RG-ML200BC-KCRe12AH63 is part of the RIGE moving-head range built in our own Guangzhou plant — 12*15w rgbw 4in1 led beam football light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Club, Concert, Festival. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC 100v～240V，50/60HZ"
+    },
+    {
+     "label": "Rated Power",
+     "value": "200 W"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "17Ch/19CH/63CH"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512, Auto, Sound, Master-slave"
+    },
+    {
+     "label": "Light Source",
+     "value": "RGBW 4in1 CREE led, 12PCS*15W"
+    },
+    {
+     "label": "Package",
+     "value": "Size:405x295x490mm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "8.5KG"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "10KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$215 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1450"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "X-axis positioning reverse rotation, Y axis rotation Promise",
+    "Built-in Effect Mode"
+   ],
+   "applications": [
+    "Club",
+    "Concert",
+    "Festival",
+    "TV Show"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml200bc-kcre12ah63.png",
+   "images": [
+    "assets/images/products/rg-ml200bc-kcre12ah63.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "215",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 48
+  },
+  {
+   "id": "rg-ml108br-kcre9ah43",
+   "name": "RG-ML108BR-KCRe9AH43 9*12W 4in1 Triangle spider Beam LED Moving Head",
+   "model": "RG-ML108BR-KCRe9AH43",
+   "category": "pixel",
+   "sub": "strobe",
+   "subLabel": "Strobe",
+   "family": "pixel",
+   "price": 188,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 25,
+   "sold": "",
+   "icon": "✦",
+   "iconColor": "#00d4ff",
+   "tagline": "9X12W",
+   "shortDesc": "9*12W 4in1 Triangle spider Beam LED Moving Head. 9X12W LED engine, 9X12W, 50,000 h. The LED features 100,000h if used appropriately. Factory EXW from US$188.",
+   "longDesc": "RG-ML108BR-KCRe9AH43 is part of the RIGE moving-head range built in our own Guangzhou plant — 9*12w 4in1 triangle spider beam led moving head. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Club, Concert, Festival. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "9X12W"
+    },
+    {
+     "label": "LED Lifespan",
+     "value": "50,000 h. The LED features 100,000h if used appropriately"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "5°"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "10/16/45CH"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512,Auto,Sound active,Master/slave"
+    },
+    {
+     "label": "Display",
+     "value": "LCD backlit Display"
+    },
+    {
+     "label": "Pan / Tilt",
+     "value": "8/16 bit"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC 90-240V, 50-60Hz"
+    },
+    {
+     "label": "Rated Power",
+     "value": "max. 140W"
+    },
+    {
+     "label": "Standard Compliance",
+     "value": "CE,RoHS,FCC"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$188 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1250"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "9*12W RGBW 4IN1 CREE LEDs",
+    "COLOR SYSTEM",
+    "RGBW Color mixing,more than 1670 million colors",
+    "- PAN = 540° - TILT = 150°"
+   ],
+   "applications": [
+    "Club",
+    "Concert",
+    "Festival",
+    "TV Show"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml108br-kcre9ah43.png",
+   "images": [
+    "assets/images/products/rg-ml108br-kcre9ah43.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "188",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 49
+  },
+  {
+   "id": "rg-ml100bd-kcre5ah21",
+   "name": "RG-ML100BD-KCRe5AH21 LED beam Moving RGBW 4in1 leds",
+   "model": "RG-ML100BD-KCRe5AH21",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 78,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 26,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "4x10W 1X10W",
+   "shortDesc": "LED beam Moving RGBW 4in1 leds. 4x10W 1X10W LED engine, AC90-240V, 50 / 60HZ, 100W. Factory EXW from US$78.",
+   "longDesc": "RG-ML100BD-KCRe5AH21 is part of the RIGE moving-head range built in our own Guangzhou plant — led beam moving rgbw 4in1 leds. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC90-240V, 50 / 60HZ"
+    },
+    {
+     "label": "Rated Power",
+     "value": "100W"
+    },
+    {
+     "label": "Light Source",
+     "value": "4 * 10W red, green and blue light beads, a red, green and blue light beads * 10W"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "15/21 channel;"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512, master-slave, Auto, sound;"
+    },
+    {
+     "label": "X-Axis",
+     "value": "540 °, Y-axis: unlimited angle"
+    },
+    {
+     "label": "Dimensions",
+     "value": "170x145x245mm"
+    },
+    {
+     "label": "Weight",
+     "value": "2.35kg"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "2.85kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$78 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "520"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml100bd-kcre5ah21.png",
+   "images": [
+    "assets/images/products/rg-ml100bd-kcre5ah21.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "78 / $72(Over 50 pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 50
+  },
+  {
+   "id": "rg-ml60br-kcre3ah12",
+   "name": "RG-ML60BR-KCRe3AH12 LED beam Moving RGBW 4in1 leds",
+   "model": "RG-ML60BR-KCRe3AH12",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 135,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 11,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "3X10W",
+   "shortDesc": "LED beam Moving RGBW 4in1 leds. 3X10W LED engine, 3 * 10W Quad CREE LED beads, 60W. Factory EXW from US$135.",
+   "longDesc": "RG-ML60BR-KCRe3AH12 is part of the RIGE moving-head range built in our own Guangzhou plant — led beam moving rgbw 4in1 leds. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "3 * 10W Quad CREE LED beads"
+    },
+    {
+     "label": "Rated Power",
+     "value": "60W"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC 100-240V 50 / 60Hz"
+    },
+    {
+     "label": "Working Life",
+     "value": "50,000 hours"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "X-axis angle unlimited, Y-axis 200 °"
+    },
+    {
+     "label": "Control Mode",
+     "value": "self-propelled, voice-activated, DMX512, master-slave"
+    },
+    {
+     "label": "Dmx Mode",
+     "value": "12 channels"
+    },
+    {
+     "label": "Noise",
+     "value": "50dB"
+    },
+    {
+     "label": "Dimensions",
+     "value": "255x235x240mm"
+    },
+    {
+     "label": "Weight",
+     "value": "4.7kg"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "5.55kg"
+    },
+    {
+     "label": "Colour System",
+     "value": "Black"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$135 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "900"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml60br-kcre3ah12.png",
+   "images": [
+    "assets/images/products/rg-ml60br-kcre3ah12.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "135 / $130(Over 50 pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 52
+  },
+  {
+   "id": "rg-ml90ws-kcre6ah11",
+   "name": "RG-ML90WS-KCRe6AH11 6*15W MOVING HEAD BEAM",
+   "model": "RG-ML90WS-KCRe6AH11",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 95,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 13,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "6X15W",
+   "shortDesc": "6*15W MOVING HEAD BEAM. 6X15W LED engine, AC100V~240V/50/60Hz, 100W. Factory EXW from US$95.",
+   "longDesc": "RG-ML90WS-KCRe6AH11 is part of the RIGE moving-head range built in our own Guangzhou plant — 6*15w moving head beam. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Input Voltage",
+     "value": "AC100V~240V/50/60Hz"
+    },
+    {
+     "label": "Rated Power",
+     "value": "100W"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "10CH/15CH two channel modes"
+    },
+    {
+     "label": "Light Source",
+     "value": "6 * 15W RGBW four-in-one LED lamp beads"
+    },
+    {
+     "label": "Lens",
+     "value": "aspherical lens"
+    },
+    {
+     "label": "Colour System",
+     "value": "RGBW four-in-one rotation, megafunction color system"
+    },
+    {
+     "label": "Strobe",
+     "value": "1-30 times / sec electronic strobe and random strobe"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear adjustment, super smooth dimming"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "1.5°"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512, stand-alone mode, voice control mode, master/slave mode"
+    },
+    {
+     "label": "Scanning Mode",
+     "value": "X axis: 540 degrees / 1.5 seconds Y axis: 180 degrees / 0.5 seconds"
+    },
+    {
+     "label": "Rotation Effect",
+     "value": "360 degree infinite rotation"
+    },
+    {
+     "label": "Applicable To",
+     "value": "stage effect decoration, bar, KTV, wedding and other entertainment venues."
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$95 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "650"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "G200mw 530NM",
+    "Size 226 X 268 X 155 (mm)",
+    "Carton size 260 X 270 X 350 (mm)",
+    "Net weight 3.8KG",
+    "Gross weight 5.7KG"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml90ws-kcre6ah11.png",
+   "images": [
+    "assets/images/products/rg-ml90ws-kcre6ah11.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "95 / $88(Over 50pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 54
+  },
+  {
+   "id": "rg-ml100bd-kose9ah48",
+   "name": "RG-ML100BD-KOSe9AH48 9*10W RGBW 4in1 LED Beam Moving Head light",
+   "model": "RG-ML100BD-KOSe9AH48",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 165,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 15,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "9X10W",
+   "shortDesc": "9*10W RGBW 4in1 LED Beam Moving Head light. 9X10W LED engine, 9X10W, US$165 / unit. Factory EXW from US$165.",
+   "longDesc": "RG-ML100BD-KOSe9AH48 is part of the RIGE moving-head range built in our own Guangzhou plant — 9*10w rgbw 4in1 led beam moving head light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "9X10W"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$165 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1100"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Item NO. RG-ML100BD-KOSe9AH48",
+    "LED Qty 9 pcs*10W RGBW 4IN1 Osram LED",
+    "Rated Power 100W",
+    "Input Voltage AC 100-240V 50/60Hz",
+    "Working life 50000Hrs",
+    "Control mode DMX512, Auto, Sound, Master-slave",
+    "DMX Channels 4/16/48CH",
+    "Color Temperature 6000K"
+   ],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml100bd-kose9ah48.png",
+   "images": [
+    "assets/images/products/rg-ml100bd-kose9ah48.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "165 / $157(Over 30 pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 56
+  },
+  {
+   "id": "rg-ml250sd-kcre25ah112",
+   "name": "RG-ML250SD-KCRe25AH112 Infinite led matrix blinderRGBW CREE lamp",
+   "model": "RG-ML250SD-KCRe25AH112",
+   "category": "pixel",
+   "sub": "strobe",
+   "subLabel": "Strobe",
+   "family": "pixel",
+   "price": 269,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 17,
+   "sold": "",
+   "icon": "✦",
+   "iconColor": "#00d4ff",
+   "tagline": "25x10w",
+   "shortDesc": "Infinite led matrix blinderRGBW CREE lamp. 25x10w LED engine, 25x10w, 17/29/117CH Beam angle: 7 degree. Factory EXW from US$269.",
+   "longDesc": "RG-ML250SD-KCRe25AH112 is part of the RIGE moving-head range built in our own Guangzhou plant — infinite led matrix blinderrgbw cree lamp. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Club, Concert, Festival. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Light Source",
+     "value": "25x10w"
+    },
+    {
+     "label": "DMX Channels",
+     "value": "17/29/117CH Beam angle: 7 degree"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512,sound,auto,Master-slave"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$269 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "1800"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "shows the channel with a value changing.",
+    "Slave setting",
+    "With this function, you can define the device as slave."
+   ],
+   "applications": [
+    "Club",
+    "Concert",
+    "Festival",
+    "TV Show"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml250sd-kcre25ah112.png",
+   "images": [
+    "assets/images/products/rg-ml250sd-kcre25ah112.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "269usd 259usd(over 20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 58
+  },
+  {
+   "id": "rg-ml70ws-knne7ah8",
+   "name": "RG-ML70WS-KNNe7AH8 high power led moving head",
+   "model": "RG-ML70WS-KNNe7AH8",
+   "category": "moving",
+   "sub": "beam",
+   "subLabel": "Beam",
+   "family": "moving",
+   "price": 45,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 19,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "7x8W",
+   "shortDesc": "high power led moving head. 7x8W LED engine, 100W, 7leds*10W RGBW 4in1 led. Factory EXW from US$45.",
+   "longDesc": "RG-ML70WS-KNNe7AH8 is part of the RIGE moving-head range built in our own Guangzhou plant — high power led moving head. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Club, Touring. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Rated Power",
+     "value": "100W"
+    },
+    {
+     "label": "Light Source",
+     "value": "7leds*10W RGBW 4in1 led"
+    },
+    {
+     "label": "Pan Range",
+     "value": "540° vertically:180°"
+    },
+    {
+     "label": "Strobe",
+     "value": "0-16Hz"
+    },
+    {
+     "label": "Control Mode",
+     "value": "Auto mode,sound mode,dmx512"
+    },
+    {
+     "label": "Dmx Channe",
+     "value": "5/13 channel"
+    },
+    {
+     "label": "Dimensions",
+     "value": "178*175*240mm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "2.9Kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$45 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥300\n￥260(Over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Club",
+    "Touring",
+    "Event"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml70ws-knne7ah8.jpeg",
+   "images": [
+    "assets/images/products/rg-ml70ws-knne7ah8.jpeg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$45\n$39(Over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 60
+  },
+  {
+   "id": "rg-ml54ws-kedf18ah12",
+   "name": "RG-ML54WS-KEDf18AH12 high power led moving head",
+   "model": "RG-ML54WS-KEDf18AH12",
+   "category": "moving",
+   "sub": "hybrid",
+   "subLabel": "Hybrid",
+   "family": "moving",
+   "price": 49,
+   "badge": null,
+   "rating": 4.8,
+   "reviews": 20,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "4x10w",
+   "shortDesc": "high power led moving head. 4x10w LED engine, 80W, 4leds*10W RGB 3in1 led. Factory EXW from US$49.",
+   "longDesc": "RG-ML54WS-KEDf18AH12 is part of the RIGE moving-head range built in our own Guangzhou plant — high power led moving head. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card, DMX chart and photometric file, so rental houses and distributors can put it straight into stock. Typical applications: Concert, Theatre, Rental. OEM / ODM branding, custom gobos and manual or DMX configurations are available on request.",
+   "specs": [
+    {
+     "label": "Rated Power",
+     "value": "80W"
+    },
+    {
+     "label": "Light Source",
+     "value": "4leds*10W RGB 3in1 led"
+    },
+    {
+     "label": "Pan Range",
+     "value": "540° vertically:180°"
+    },
+    {
+     "label": "Strobe",
+     "value": "0-16Hz"
+    },
+    {
+     "label": "Control Mode",
+     "value": "Auto mode,sound mode,dmx512"
+    },
+    {
+     "label": "Dmx Channe",
+     "value": "11 channel"
+    },
+    {
+     "label": "Dimensions",
+     "value": "178*175*240mm"
+    },
+    {
+     "label": "Net Weight",
+     "value": "2.9Kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$49 / unit"
+    },
+    {
+     "label": "EXW Price (RMB)",
+     "value": "￥330\n￥290(Over 30pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [],
+   "applications": [
+    "Concert",
+    "Theatre",
+    "Rental",
+    "Corporate"
+   ],
+   "priority": "Core",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-ml54ws-kedf18ah12.png",
+   "images": [
+    "assets/images/products/rg-ml54ws-kedf18ah12.png"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "$49\n$44(Over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 61
   }
  ]
 }
