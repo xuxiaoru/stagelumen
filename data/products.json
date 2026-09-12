@@ -216,7 +216,7 @@
    ],
    "priority": "Hero",
    "phase": "Launch",
-   "hero": true,
+   "hero": false,
    "oem": true,
    "image": "assets/images/products/sl-p1000.png",
    "images": [
@@ -13535,7 +13535,7 @@
    ],
    "priority": "Core",
    "phase": "Launch",
-   "hero": false,
+   "hero": true,
    "oem": true,
    "image": "assets/images/products/rg-ml420wc-kch93.png",
    "images": [
@@ -13642,7 +13642,7 @@
    ],
    "priority": "Core",
    "phase": "Launch",
-   "hero": false,
+   "hero": true,
    "oem": true,
    "image": "assets/images/products/rg-ml760wc-kch99.png",
    "images": [
@@ -14136,7 +14136,7 @@
    ],
    "priority": "Core",
    "phase": "Launch",
-   "hero": false,
+   "hero": true,
    "oem": true,
    "image": "assets/images/products/rg-ml720bl-kcre12ah179.png",
    "images": [
@@ -14800,7 +14800,7 @@
    ],
    "priority": "Core",
    "phase": "Launch",
-   "hero": false,
+   "hero": true,
    "oem": true,
    "image": "assets/images/products/rg-ml500rs-knnw1h20.png",
    "images": [
@@ -14919,7 +14919,7 @@
    ],
    "priority": "Core",
    "phase": "Launch",
-   "hero": false,
+   "hero": true,
    "oem": true,
    "image": "assets/images/products/rg-ml400rs-knnw1h21.png",
    "images": [
@@ -15130,7 +15130,7 @@
    ],
    "priority": "Core",
    "phase": "Launch",
-   "hero": false,
+   "hero": true,
    "oem": true,
    "image": "assets/images/products/rg-ml350br-kn1h18.png",
    "images": [
