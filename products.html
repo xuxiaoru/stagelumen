@@ -107,28 +107,28 @@
         <h3>Categories</h3>
         <ul class="cat-list" id="catList">
           <li data-cat="all">
-            <button class="cat-a" data-cat="all"><span>All Products</span><span class="ct">165</span></button>
+            <button class="cat-a" data-cat="all"><span>All Products</span><span class="ct">41</span></button>
           </li>
           <li data-cat="moving">
         <button class="cat-a" data-cat="moving"><span>Moving Heads</span><span class="ct">41</span></button>
         <ul class="sub-list"><li><button class="sub-a" data-cat="moving" data-sub="beam">Beam</button></li><li><button class="sub-a" data-cat="moving" data-sub="spot">Spot</button></li><li><button class="sub-a" data-cat="moving" data-sub="wash">Wash</button></li><li><button class="sub-a" data-cat="moving" data-sub="hybrid">Hybrid</button></li><li><button class="sub-a" data-cat="moving" data-sub="outdoor">Outdoor IP65</button></li></ul>
       </li><li data-cat="pixel">
-        <button class="cat-a" data-cat="pixel"><span>Pixel & Effects</span><span class="ct">11</span></button>
+        <button class="cat-a" data-cat="pixel"><span>Pixel & Effects</span><span class="ct">0</span></button>
         <ul class="sub-list"><li><button class="sub-a" data-cat="pixel" data-sub="pixel-bar">Pixel Bar</button></li><li><button class="sub-a" data-cat="pixel" data-sub="pixel-wash">Pixel Wash</button></li><li><button class="sub-a" data-cat="pixel" data-sub="strobe">Strobe</button></li></ul>
       </li><li data-cat="theatre">
-        <button class="cat-a" data-cat="theatre"><span>Theatre Lighting</span><span class="ct">4</span></button>
+        <button class="cat-a" data-cat="theatre"><span>Theatre Lighting</span><span class="ct">0</span></button>
         <ul class="sub-list"><li><button class="sub-a" data-cat="theatre" data-sub="fresnel">Fresnel</button></li><li><button class="sub-a" data-cat="theatre" data-sub="follow-spot">Follow Spot</button></li></ul>
       </li><li data-cat="profile">
-        <button class="cat-a" data-cat="profile"><span>LED Profile Spot</span><span class="ct">100</span></button>
+        <button class="cat-a" data-cat="profile"><span>LED Profile Spot</span><span class="ct">0</span></button>
         <ul class="sub-list"><li><button class="sub-a" data-cat="profile" data-sub="fixed">Fixed Optics</button></li><li><button class="sub-a" data-cat="profile" data-sub="zoom">Zoom Optics</button></li><li><button class="sub-a" data-cat="profile" data-sub="tunable">Tunable White</button></li><li><button class="sub-a" data-cat="profile" data-sub="colour">RGBW / RGBAL</button></li></ul>
       </li><li data-cat="par">
-        <button class="cat-a" data-cat="par"><span>LED PAR & Uplights</span><span class="ct">5</span></button>
+        <button class="cat-a" data-cat="par"><span>LED PAR & Uplights</span><span class="ct">0</span></button>
         <ul class="sub-list"><li><button class="sub-a" data-cat="par" data-sub="led-par">LED PAR</button></li><li><button class="sub-a" data-cat="par" data-sub="battery-par">Battery PAR</button></li></ul>
       </li><li data-cat="laser">
-        <button class="cat-a" data-cat="laser"><span>Lasers</span><span class="ct">2</span></button>
+        <button class="cat-a" data-cat="laser"><span>Lasers</span><span class="ct">0</span></button>
         <ul class="sub-list"><li><button class="sub-a" data-cat="laser" data-sub="laser">Laser</button></li></ul>
       </li><li data-cat="controller">
-        <button class="cat-a" data-cat="controller"><span>Controllers</span><span class="ct">2</span></button>
+        <button class="cat-a" data-cat="controller"><span>Controllers</span><span class="ct">0</span></button>
         <ul class="sub-list"><li><button class="sub-a" data-cat="controller" data-sub="controller">Controller</button></li></ul>
       </li>
         </ul>
@@ -136,7 +136,7 @@
 
       <div class="products-main">
         <div class="main-toolbar">
-          <div class="count">Showing <b id="visibleCount">38</b> of <b>38</b> products</div>
+          <div class="count">Showing <b id="visibleCount">41</b> of <b id="totalCount">41</b> products</div>
           <div class="sort">
             <span>Sort:</span>
             <select id="productSort">
@@ -283,11 +283,15 @@
     }
 
     function apply() {
-      const visible = data.products.filter(function(p){
-        return (currentFilter === 'all' || p.category === currentFilter) &&
-               (currentSub === 'all' || p.sub === currentSub);
+      const inCat = data.products.filter(function(p){
+        return (currentFilter === 'all' || p.category === currentFilter);
+      });
+      const visible = inCat.filter(function(p){
+        return (currentSub === 'all' || p.sub === currentSub);
       });
       document.getElementById('visibleCount').textContent = visible.length;
+      const tc = document.getElementById('totalCount');
+      if (tc) tc.textContent = inCat.length;
       StageLumenProducts.renderGrid('productGrid', currentFilter, currentSort, currentSub);
     }
 
