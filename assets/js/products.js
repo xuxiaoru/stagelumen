@@ -50,7 +50,7 @@ function renderProductCard(p, cats) {
           <span>${p.tagline}</span>
           ${renderStars(p.rating || 5)}
         </div>
-        <div class="product-price">From <strong>$${p.price}</strong></div>
+        <div class="product-price">${p.price ? 'From <strong>$' + p.price + '</strong>' : '<strong>Price on request</strong>'}</div>
         <div class="product-actions">
           <span class="btn btn-ghost">Details</span>
           <span class="btn btn-primary">Quote</span>
