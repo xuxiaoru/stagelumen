@@ -160,6 +160,36 @@ export async function openPr(env, { title, body, head, base = 'main' }) {
 }
 
 /**
+ * Merge a pull request. Used by the content agent's auto-publish mode so a
+ * generated post reaches production without a human clicking "merge".
+ * Returns the GitHub merge result ({ merged, sha, message }).
+ */
+export async function mergePr(env, number, squash = true) {
+  const r = await gh(env, `/repos/${repo(env)}/pulls/${number}/merge`, {
+    method: 'PUT',
+    body: JSON.stringify({
+      merge_method: squash ? 'squash' : 'merge',
+      commit_title: 'auto: merge AI content draft #' + number,
+      commit_message: 'Merged by the nightly content scheduler.',
+    }),
+  });
+  return r;
+}
+
+/** Best-effort cleanup of the source branch after an auto-merge. */
+export async function deleteBranch(env, name) {
+  try {
+    await gh(env, `/repos/${repo(env)}/git/refs/heads/${encodeURIComponent(name)}`, {
+      method: 'DELETE',
+    });
+  } catch (e) {
+    // Branch may already be auto-deleted by GitHub, or the merge used a
+    // different strategy. Logging only — publishing already succeeded.
+    console.warn('[github] branch delete skipped: ' + ((e && e.message) || e));
+  }
+}
+
+/**
  * One-shot: branch off main, commit every file, open a PR.
  * @returns {{branch:string, pr:{number:number,url:string}}}
  */
