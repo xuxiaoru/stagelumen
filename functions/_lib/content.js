@@ -32,6 +32,45 @@ const KIND_BRIEF = {
     'an FAQ page answering the questions a buyer actually asks before ordering, each answer short and concrete',
 };
 
+/**
+ * Editorial calendar the nightly agent draws from. The agent picks one entry
+ * per run (rotating by day index) so no human ever has to choose a topic — but
+ * the pool is curated, not free-form, so the model cannot drift onto a subject
+ * with no catalogue backing. Every angle is grounded in the Moving-Head range
+ * that is the only real inventory on the site.
+ *
+ * Entries that already exist as hand-written posts (beam-vs-wash, IP65 buyer
+ * guide, OEM guide, DMX setup) are deliberately excluded to avoid near-dupes.
+ */
+const EDITORIAL_POOL = [
+  { kind: 'buyer-guide', topic: 'How to choose a moving head for a small club: beam angle, output and noise floor' },
+  { kind: 'how-to', topic: 'Step-by-step: rigging and aiming moving heads safely for a one-night event' },
+  { kind: 'comparison', topic: 'DMX vs Art-Net vs sACN: which control protocol to specify for a touring rig' },
+  { kind: 'how-to', topic: 'Reading a moving head spec sheet: pan/tilt, zoom, CRI and what the numbers actually mean' },
+  { kind: 'application', topic: 'Designing moving-head looks for a church sanctuary without blinding the congregation' },
+  { kind: 'how-to', topic: 'Colour mixing in moving heads: CMY vs RGB, and why a clean white still matters' },
+  { kind: 'application', topic: 'Building a rental-house moving head inventory that covers 90% of gig requests' },
+  { kind: 'how-to', topic: 'Gobo and prism effects in moving heads: practical creative uses, not gimmicks' },
+  { kind: 'how-to', topic: 'RDM and remote fixture management: less ladder time, fewer surprises on show day' },
+  { kind: 'application', topic: 'Moving heads for theatre: smooth cues, low noise and warm whites' },
+  { kind: 'buyer-guide', topic: 'Power, cabling and daisy-chaining moving heads: avoiding the field-day disasters' },
+  { kind: 'how-to', topic: 'Preparing moving heads for shipping: flight cases, clamps and the pre-tour checklist' },
+  { kind: 'faq', topic: 'Moving head FAQ: lifespan, service, spare parts and what to ask your supplier' },
+  { kind: 'how-to', topic: 'Zoom range in moving heads: tight spots vs wide washes, and how to use both' },
+  { kind: 'application', topic: 'Pan/tilt speed and accuracy in moving heads: why it matters for broadcast and capture' },
+  { kind: 'buyer-guide', topic: 'What to verify before buying IP-rated moving heads for permanent outdoor installs' },
+];
+
+/**
+ * @param {number} dayIndex  e.g. Math.floor(Date.now()/86400000)
+ * @returns {{kind:string, topic:string}}
+ */
+export function pickTopic(dayIndex) {
+  const n = EDITORIAL_POOL.length;
+  const i = ((dayIndex % n) + n) % n;
+  return EDITORIAL_POOL[i];
+}
+
 const SYSTEM =
   'You are a senior content writer for StageLumen, a stage lighting manufacturer in Guangzhou, China. ' +
   'You write for professional buyers: rental houses, touring productions, theatres, clubs, churches and event companies.';
