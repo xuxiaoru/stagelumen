@@ -1,0 +1,45 @@
+name: Daily AI Blog Post
+
+# Publishes one AI-written article every night at 23:30 Beijing time (15:30 UTC).
+# The content agent picks the topic, drafts it, fact-checks it, and
+# auto-merges the pull request — no human in the loop. If the fact-check flags
+# a hard error the run opens a "NEEDS REVIEW" PR instead of publishing.
+on:
+  schedule:
+    - cron: '30 15 * * *'
+  workflow_dispatch: {}   # manual "Run workflow" button for testing
+
+permissions:
+  contents: read
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Trigger content agent (auto-publish)
+        env:
+          ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+        run: |
+          if [ -z "$ADMIN_TOKEN" ]; then
+            echo "::error::ADMIN_TOKEN secret is not set. Add it in repo Settings > Secrets > Actions."
+            exit 1
+          fi
+          echo "Calling content agent at $(date -u)…"
+          curl -sS -X POST \
+            "https://stagelumen.pages.dev/api/content" \
+            -H "authorization: Bearer ${ADMIN_TOKEN}" \
+            -H "content-type: application/json" \
+            -d '{"auto":true}' \
+            -o /tmp/content-resp.json
+          echo "---- response ----"
+          cat /tmp/content-resp.json
+          echo
+          # Surface the outcome in the run log.
+          node -e '
+            const r = JSON.parse(require("fs").readFileSync("/tmp/content-resp.json","utf8"));
+            if (r.merged) console.log("PUBLISHED:", r.published);
+            else if (r.needsReview) console.log("NEEDS REVIEW (fact-check failed):", r.pr && r.pr.url);
+            else if (r.pr) console.log("PR opened:", r.pr.url);
+            else console.log("No publish. autoSkipped:", r.autoSkipped || "unknown");
+          '
