@@ -25,6 +25,15 @@ export async function onRequest(context) {
   }
 }
 
+/** Mirror of the RFQ form's quantity bands, used when only a basket is given. */
+function qtyBand(n) {
+  if (n <= 10) return '1 - 10 units';
+  if (n <= 50) return '10 - 50 units';
+  if (n <= 200) return '50 - 200 units';
+  if (n <= 1000) return '200 - 1000 units';
+  return '1000+ units';
+}
+
 async function handleInquiry(context) {
   const { request, env } = context;
   if (request.method === 'OPTIONS') return handleOptions();
@@ -57,6 +66,31 @@ async function handleInquiry(context) {
 
   await ensureSchema(env);
 
+  // ---- quote basket -----------------------------------------------------
+  // items arrives as a JSON string produced by the RFQ quote list. It is the
+  // authoritative version of "what did they ask for"; the flat sku / product
+  // columns are still filled from the first line so older reports, the modal
+  // notification emails and any external consumer keep working unchanged.
+  let items = [];
+  try {
+    const parsed = JSON.parse(str(body.items, 8000) || '[]');
+    if (Array.isArray(parsed)) {
+      items = parsed.slice(0, 30).map((it) => ({
+        model: str(it.model, 60),
+        name: str(it.name, 160),
+        qty: Math.min(Math.max(parseInt(it.qty, 10) || 1, 1), 99999),
+        image: str(it.image, 400),
+        category: str(it.category, 60),
+        price: Number.isFinite(Number(it.price)) ? Number(it.price) : null,
+      })).filter((it) => it.model);
+    }
+  } catch (e) {
+    items = []; // a malformed basket must never lose the enquiry itself
+  }
+
+  const primary = items[0] || null;
+  const totalQty = items.reduce((a, b) => a + (b.qty || 0), 0);
+
   // ---- assemble ----------------------------------------------------------
   const ts = nowIso();
   const lead = {
@@ -68,13 +102,14 @@ async function handleInquiry(context) {
     company: str(body.company, 160),
     country: str(body.country, 80) || edgeCountry(request),
     phone: str(body.phone, 60),
-    sku: str(body.sku, 60),
-    product_name: str(body.productName, 160),
-    product_category: str(body.productCategory, 80),
-    product_image: str(body.productImage, 500),
+    sku: str(body.sku, 60) || (primary ? primary.model : ''),
+    product_name: str(body.productName, 160) || (primary ? primary.name : ''),
+    product_category: str(body.productCategory, 80) || (primary ? primary.category : ''),
+    product_image: str(body.productImage, 500) || (primary ? primary.image : ''),
+    items: JSON.stringify(items),
     category: str(body.category, 80),
     application: str(body.application, 80),
-    qty: str(body.qty, 40),
+    qty: str(body.qty, 40) || (totalQty ? qtyBand(totalQty) : ''),
     budget: str(body.budget, 40),
     lead_time: str(body.leadTime, 40),
     trade_terms: str(body.tradeTerms, 40),
