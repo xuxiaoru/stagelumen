@@ -113,13 +113,13 @@ export async function insertLead(env, lead) {
     env,
     `INSERT INTO leads (
        id, customer_id, name, email, company, country, phone,
-       sku, product_name, category, application, qty, budget, lead_time, trade_terms,
+       sku, product_name, product_category, product_image, category, application, qty, budget, lead_time, trade_terms,
        raw_text, lang, intent, urgency, score, stage,
        ai_summary, ai_reply, status, page_url, referrer, utm, ip, ua, created_at, updated_at
      ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
     [
       lead.id, lead.customer_id, lead.name, lead.email, lead.company,
-      lead.country, lead.phone, lead.sku, lead.product_name, lead.category,
+      lead.country, lead.phone, lead.sku, lead.product_name, lead.product_category, lead.product_image, lead.category,
       lead.application, lead.qty, lead.budget, lead.lead_time, lead.trade_terms,
       lead.raw_text, lead.lang, lead.intent, lead.urgency, lead.score, lead.stage,
       lead.ai_summary, lead.ai_reply, lead.status, lead.page_url, lead.referrer,
@@ -158,6 +158,39 @@ export async function logAgentRun(env, run_) {
       run_.ms, run_.ok ? 1 : 0, run_.error || '', now(),
     ]
   );
+}
+
+// -------------------------------------------------------------- analytics
+
+export async function insertEvent(env, ev) {
+  if (!hasDb(env)) return false;
+  const id = ev.id || (Date.now().toString(36) + Math.random().toString(36).slice(2, 10));
+  return run(
+    env,
+    `INSERT INTO analytics (id, ts, type, name, path, model, visitor, ref, country, meta)
+     VALUES (?,?,?,?,?,?,?,?,?,?)`,
+    [
+      id,
+      ev.ts || now(),
+      ev.type || 'event',
+      ev.name || '',
+      ev.path || '',
+      ev.model || '',
+      ev.visitor || '',
+      ev.ref || '',
+      ev.country || '',
+      ev.meta ? JSON.stringify(ev.meta) : '',
+    ]
+  );
+}
+
+export async function recentEvents(env, type, since, limit) {
+  if (!hasDb(env)) return [];
+  const args = [since];
+  let sql = "SELECT name, model, path, COUNT(*) AS v FROM analytics WHERE ts > ?";
+  if (type) { sql += ' AND type = ?'; args.push(type); }
+  sql += ' GROUP BY name, model, path ORDER BY v DESC LIMIT ' + (limit || 10);
+  return all(env, sql, args);
 }
 
 /**
