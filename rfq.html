@@ -108,6 +108,31 @@
         <p data-page-node-id="BFQfYHBf6Yu7uqaSMd9tBo">Fields marked with * are required. We treat your brief as confidential.</p>
 
         <form data-ajax data-page-node-id="J7wAtPQUJpN06EFyRvHyJD">
+
+          <!-- Product of Interest: prefilled from the product page, fully editable -->
+          <div class="form-group poi-panel" id="poiPanel" style="grid-column:1/-1;margin-bottom:18px;display:none;">
+            <label id="poiLabel">Product of Interest <span style="font-weight:400;color:var(--dim)">(from product page)</span></label>
+            <div class="poi-card" style="display:flex;gap:14px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px;">
+              <img id="poiImg" alt="" style="width:88px;height:88px;object-fit:cover;border-radius:8px;background:#0c1322;display:none;" />
+              <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+                <div class="form-group" style="margin:0;">
+                  <label>Model *</label>
+                  <input type="text" name="sku" id="poiSku" placeholder="e.g. RG-M230BN-KPH16" />
+                </div>
+                <div class="form-group" style="margin:0;">
+                  <label>Product Name</label>
+                  <input type="text" name="productName" id="poiName" placeholder="Product title" />
+                </div>
+                <div class="form-group" style="margin:0;grid-column:1/-1;">
+                  <label>Category</label>
+                  <input type="text" name="productCategory" id="poiCat" placeholder="e.g. Moving Head / Laser / Pixel" />
+                </div>
+                <input type="hidden" name="productImage" id="poiImgUrl" />
+              </div>
+            </div>
+            <p id="poiHint" style="font-size:12px;color:var(--dim);margin:6px 0 0;">Prefilled from the product page — edit any field if it looks off. Leave blank for a general inquiry.</p>
+          </div>
+
           <div class="form-row" data-page-node-id="jdiwZUlpOetEf6O3mTRlbm">
             <div class="form-group" data-page-node-id="I2CPhyHghh0UwFdWMgxAg0">
               <label data-page-node-id="DO8dr5yon876rce5g9W1EJ">First Name *</label>
@@ -350,5 +375,7 @@
 <script src="assets/js/main.js?v=8"></script>
 <script src="assets/js/inquiry.js?v=9"></script>
 <script src="assets/js/assistant.js?v=9"></script>
+<script src="assets/js/rfq-product.js?v=1"></script>
+<script src="assets/js/track.js?v=1"></script>
 </body>
 </html>
