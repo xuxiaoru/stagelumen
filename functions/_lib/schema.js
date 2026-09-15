@@ -46,6 +46,25 @@ const STATEMENTS = [
   `CREATE INDEX IF NOT EXISTS idx_leads_email   ON leads(email)`,
   `CREATE INDEX IF NOT EXISTS idx_leads_status  ON leads(status)`,
   `CREATE INDEX IF NOT EXISTS idx_notes_lead    ON lead_notes(lead_id)`,
+
+  // ---- analytics: first-party, cookieless traffic + event tracking --------
+  `CREATE TABLE IF NOT EXISTS analytics (
+     id TEXT PRIMARY KEY,
+     ts TEXT,
+     type TEXT,            -- 'pageview' | 'event'
+     name TEXT,            -- event name: product_view, rfq_click, cta_click, search…
+     path TEXT,            -- page path
+     model TEXT,           -- product model if relevant
+     visitor TEXT,         -- first-party visitor id (no PII)
+     ref TEXT,             -- referrer
+     country TEXT,         -- edge country
+     meta TEXT             -- JSON extras (utm, element, …)
+   )`,
+  `CREATE INDEX IF NOT EXISTS idx_an_ts     ON analytics(ts)`,
+  `CREATE INDEX IF NOT EXISTS idx_an_type   ON analytics(type)`,
+  `CREATE INDEX IF NOT EXISTS idx_an_path   ON analytics(path)`,
+  `CREATE INDEX IF NOT EXISTS idx_an_model  ON analytics(model)`,
+  `CREATE INDEX IF NOT EXISTS idx_an_vis    ON analytics(visitor)`,
 ];
 
 let ready = false;
@@ -61,6 +80,8 @@ let colsChecked = false;
  */
 const COLUMN_MIGRATIONS = [
   { column: 'autoreply_sent', ddl: 'ALTER TABLE leads ADD COLUMN autoreply_sent INTEGER DEFAULT 0' },
+  { column: 'product_category', ddl: 'ALTER TABLE leads ADD COLUMN product_category TEXT' },
+  { column: 'product_image', ddl: 'ALTER TABLE leads ADD COLUMN product_image TEXT' },
 ];
 
 async function ensureColumns(env) {
