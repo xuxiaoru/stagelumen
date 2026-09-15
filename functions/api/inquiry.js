@@ -70,6 +70,8 @@ async function handleInquiry(context) {
     phone: str(body.phone, 60),
     sku: str(body.sku, 60),
     product_name: str(body.productName, 160),
+    product_category: str(body.productCategory, 80),
+    product_image: str(body.productImage, 500),
     category: str(body.category, 80),
     application: str(body.application, 80),
     qty: str(body.qty, 40),
