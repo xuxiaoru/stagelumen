@@ -214,6 +214,15 @@
       .then(function (r) { return r.json().catch(function () { return {}; }); })
       .then(function (data) {
         if (data && data.ok) {
+          // Milestone for the traffic funnel (no-op when the visitor declined
+          // analytics; loaded from track.js, hence the guard).
+          try {
+            if (window.slTrack) {
+              window.slTrack('inquiry_submitted', payload.sku || '', {
+                category: payload.category || '',
+              });
+            }
+          } catch (e) { /* never break the form */ }
           var acked = data.autoreply && data.autoreply.sent;
           setStatus(
             form,
