@@ -108,6 +108,19 @@
     if (!out.name && (out.firstName || out.lastName)) {
       out.name = [out.firstName, out.lastName].join(' ').trim();
     }
+    // Summarise the quote list into the free-text brief as well. Sales people
+    // read this first, and it makes the basket visible even in channels that
+    // only forward the message body.
+    if (out.items) {
+      try {
+        var lines = JSON.parse(out.items).map(function (it) {
+          return '- ' + it.model + ' x' + it.qty + (it.name ? ' — ' + it.name : '');
+        });
+        if (lines.length) {
+          out.message = (out.message ? out.message + '\n\n' : '') + 'Quote list:\n' + lines.join('\n');
+        }
+      } catch (e) { /* malformed basket is not a reason to drop the enquiry */ }
+    }
     return out;
   }
 
