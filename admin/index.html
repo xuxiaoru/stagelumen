@@ -33,10 +33,23 @@
     .note code{background:var(--panel2);padding:1px 6px;border-radius:4px;color:var(--txt);font-size:12px}
     .foot{margin-top:28px;font-size:12px;color:var(--dim)}
     .foot a{margin-right:16px}
+    .anav{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:22px;
+          padding:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+    .anav a{padding:6px 11px;border-radius:7px;background:var(--panel2);border:1px solid var(--line);
+            color:var(--dim);font-size:13px}
+    .anav a:hover{border-color:var(--brand);color:var(--txt)}
+    .anav a.on{background:rgba(255,107,0,.15);border-color:var(--brand);color:var(--brand);font-weight:600}
+    .anav .spacer{flex:1}
+    .anav .home{background:transparent;border-color:transparent}
   </style>
 </head>
 <body>
 <div class="wrap">
+  <nav class="anav">
+  <a href="index.html" class="on">Admin</a><a href="cms.html">CMS Editor</a><a href="leads.html">Lead Inbox</a><a href="content.html">Content Factory</a><a href="products.html">Product Importer</a><a href="media.html">Image Library</a><a href="analytics.html">Analytics</a>
+  <span class="spacer"></span>
+  <a class="home" href="/">&larr; Back to site</a>
+</nav>
   <div class="brand">
     <span class="brand-mark">S</span>
     <h1>StageLumen Admin</h1>
