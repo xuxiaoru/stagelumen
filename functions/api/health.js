@@ -6,7 +6,7 @@
  */
 
 import { ok, fail, adminAuthorized } from '../_lib/util.js';
-import { hasDb, scalar } from '../_lib/db.js';
+import { hasDb, scalar, all } from '../_lib/db.js';
 import { ensureSchema, schemaReady } from '../_lib/schema.js';
 import { callAI, MODELS } from '../_lib/reception.js';
 import { ghProbe } from '../_lib/github.js';
@@ -103,10 +103,14 @@ export async function onRequest(context) {
   const { env, request } = context;
   let leadCount = 0;
   let schemaOk = false;
+  let tables = [];
+  let analyticsCount = null;
 
   if (hasDb(env)) {
     schemaOk = await ensureSchema(env);
     leadCount = await scalar(env, 'SELECT COUNT(*) AS c FROM leads');
+    tables = (await all(env, "SELECT name FROM sqlite_master WHERE type='table' ORDER BY name")).map((r) => r.name);
+    analyticsCount = await scalar(env, 'SELECT COUNT(*) AS c FROM analytics');
   }
 
   // Opt-in smoke test: `?ai=1` spends a handful of tokens to prove the AI
@@ -193,7 +197,9 @@ export async function onRequest(context) {
       GITHUB_FALLBACK: !!env.GITHUB_PAT,
     },
     schema_ready: schemaOk || schemaReady(),
+    tables,
     leads: leadCount,
+    analytics_events: analyticsCount,
     ready: hasDb(env) && !!env.ADMIN_TOKEN,
     notify: notifyDiag(env),
     diag: diagnose(env),
