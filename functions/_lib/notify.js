@@ -307,6 +307,20 @@ export async function notifyAll(env, lead, base) {
     'New ' + base.intent + ' inquiry — ' + (lead.company || lead.name || 'Unknown') +
     ' (' + base.score + ')';
 
+  // The alert is usually read on a phone, so when the visitor built a quote
+  // list we print every line instead of just the first product.
+  let productBlock = 'Product: ' + (lead.product_name || lead.category || '-') +
+    (lead.sku ? ' (' + lead.sku + ')' : '') + '\n';
+  try {
+    const items = JSON.parse(lead.items || '[]');
+    if (Array.isArray(items) && items.length) {
+      productBlock = 'Quote list (' + items.length + ' item' + (items.length > 1 ? 's' : '') + ', ' +
+        items.reduce((a, b) => a + (Number(b.qty) || 0), 0) + ' units):\n' +
+        items.map((it) => '  - ' + (it.model || '?') + ' x' + (it.qty || 1) +
+          (it.name ? ' — ' + it.name : '') + '\n').join('');
+    }
+  } catch (e) { /* fall back to the single-product line above */ }
+
   const text =
     'Lead ' + lead.id + '\n' +
     'Score ' + base.score + '/100 | intent=' + base.intent + ' | urgency=' + base.urgency + '\n\n' +
@@ -315,7 +329,7 @@ export async function notifyAll(env, lead, base) {
     'Country: ' + (lead.country || '-') + '\n' +
     'Email:   ' + (lead.email || '-') + '\n' +
     'Phone:   ' + (lead.phone || '-') + '\n' +
-    'Product: ' + (lead.product_name || lead.category || '-') + '\n' +
+    productBlock +
     'Qty:     ' + (lead.qty || '-') + '\n\n' +
     'Message:\n' + (lead.raw_text || '-') + '\n\n' +
     'AI summary:\n' + (lead.ai_summary || '-') + '\n\n' +
