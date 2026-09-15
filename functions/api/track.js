@@ -57,18 +57,49 @@ async function handleTrack(context) {
 
   await ensureSchema(env);
 
+  // A visitor who has not acted on the cookie banner sends no id, so counting
+  // unique visitors from the client id alone always read 0. Fall back to a
+  // daily-rotating pseudonym derived from IP + user-agent: nothing is written
+  // to the device, the raw values are never stored, and the digest changes
+  // every day so a person cannot be followed over time.
+  const visitor = String(body.visitor || '').slice(0, 64) || anonId(request, env);
+
   await insertEvent(env, {
     type,
     name,
     path,
     model: String(body.model || '').slice(0, 80),
-    visitor: String(body.visitor || '').slice(0, 64),
+    visitor,
     ref: String(body.ref || '').slice(0, 400),
     country: edgeCountry(request),
     meta: body.meta && typeof body.meta === 'object' ? body.meta : {},
   });
 
   return ok({ ok: true });
+}
+
+/**
+ * Daily-rotating, non-reversible visitor pseudonym (prefix "a").
+ * hash(salt + calendar day + IP + user-agent), same design as Plausible: the
+ * raw IP and user-agent are never stored and the digest rotates daily, so it
+ * cannot be used to recognise a person across days.
+ */
+function anonId(request, env) {
+  try {
+    const day = new Date().toISOString().slice(0, 10);
+    const salt = (env && env.ANALYTICS_SALT) || 'sl-anon-v1';
+    const src = salt + '|' + day + '|' + clientIp(request) + '|' + (request.headers.get('user-agent') || '');
+    let h1 = 0x811c9dc5;
+    let h2 = 0x1000193;
+    for (let i = 0; i < src.length; i++) {
+      const c = src.charCodeAt(i);
+      h1 = Math.imul(h1 ^ c, 16777619) >>> 0;
+      h2 = (Math.imul(h2, 31) + c) >>> 0;
+    }
+    return 'a' + h1.toString(36) + h2.toString(36);
+  } catch (e) {
+    return '';
+  }
 }
 
 async function adminAggregates(context) {
@@ -81,6 +112,13 @@ async function adminAggregates(context) {
   const days = Math.min(Math.max(parseInt(new URL(request.url).searchParams.get('days') || '30', 10) || 30, 1), 365);
   const since = new Date(Date.now() - days * 86400000).toISOString().replace('T', ' ').slice(0, 19);
 
+  // Cloudflare Pages 308-redirects every "/x.html" to "/x", so the pathname the
+  // beacon sees is "/rfq" and never "/rfq.html". Matching the raw path found
+  // nothing and the whole funnel sat at 0. Normalise first: drop the extension
+  // and any trailing slash, and keep the site root as "/".
+  const NP = "(CASE WHEN RTRIM(REPLACE(LOWER(path), '.html', ''), '/') = '' "
+    + "THEN '/' ELSE RTRIM(REPLACE(LOWER(path), '.html', ''), '/') END)";
+
   const [
     totalEv, pageviews, uniques, productViews, rfqViews,
     topPages, topProducts, referrers, daily,
@@ -88,10 +126,12 @@ async function adminAggregates(context) {
     scalar(env, 'SELECT COUNT(*) AS c FROM analytics WHERE ts > ?', [since]),
     scalar(env, "SELECT COUNT(*) AS c FROM analytics WHERE type='pageview' AND ts > ?", [since]),
     scalar(env, "SELECT COUNT(DISTINCT CASE WHEN visitor<>'' THEN visitor END) AS c FROM analytics WHERE ts > ?", [since]),
-    scalar(env, "SELECT COUNT(*) AS c FROM analytics WHERE type='product_view' AND ts > ?", [since]),
-    scalar(env, "SELECT COUNT(*) AS c FROM analytics WHERE type='pageview' AND path LIKE '%rfq.html%' AND ts > ?", [since]),
-    all(env, "SELECT path AS k, COUNT(*) AS v FROM analytics WHERE type='pageview' AND ts > ? GROUP BY path ORDER BY v DESC LIMIT 12", [since]),
-    all(env, "SELECT model AS k, COUNT(*) AS v FROM analytics WHERE type='product_view' AND model<>'' AND ts > ? GROUP BY model ORDER BY v DESC LIMIT 12", [since]),
+    // track.js emits { type:'event', name:'product_view' } — it is never stored
+    // with type='product_view', so filtering on the type always returned 0.
+    scalar(env, "SELECT COUNT(*) AS c FROM analytics WHERE type='event' AND name='product_view' AND ts > ?", [since]),
+    scalar(env, "SELECT COUNT(*) AS c FROM analytics WHERE type='pageview' AND (" + NP + " LIKE '%/rfq' OR " + NP + " LIKE '%/quote') AND ts > ?", [since]),
+    all(env, "SELECT " + NP + " AS k, COUNT(*) AS v FROM analytics WHERE type='pageview' AND ts > ? GROUP BY k ORDER BY v DESC LIMIT 12", [since]),
+    all(env, "SELECT model AS k, COUNT(*) AS v FROM analytics WHERE type='event' AND name='product_view' AND model<>'' AND ts > ? GROUP BY model ORDER BY v DESC LIMIT 12", [since]),
     all(env, "SELECT ref AS k, COUNT(*) AS v FROM analytics WHERE ref<>'' AND ts > ? GROUP BY ref ORDER BY v DESC LIMIT 10", [since]),
     all(env, "SELECT substr(ts,1,10) AS d, COUNT(*) AS v FROM analytics WHERE ts > ? GROUP BY d ORDER BY d", [since]),
   ]);
