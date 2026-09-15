@@ -94,6 +94,10 @@ const COLUMN_MIGRATIONS = [
   { column: 'autoreply_sent', ddl: 'ALTER TABLE leads ADD COLUMN autoreply_sent INTEGER DEFAULT 0' },
   { column: 'product_category', ddl: 'ALTER TABLE leads ADD COLUMN product_category TEXT' },
   { column: 'product_image', ddl: 'ALTER TABLE leads ADD COLUMN product_image TEXT' },
+  // Quote basket: JSON array of {model, name, qty, image, category, price}.
+  // Added well after launch, so existing rows keep NULL and every reader must
+  // fall back to the single sku/product_name columns.
+  { column: 'items', ddl: 'ALTER TABLE leads ADD COLUMN items TEXT' },
 ];
 
 async function ensureColumns(env) {
