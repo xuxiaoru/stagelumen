@@ -6,7 +6,7 @@
  * This removes the "remember to run wrangler d1 migrations" step entirely.
  */
 
-import { run, one, all } from './db.js';
+import { run, all } from './db.js';
 
 const STATEMENTS = [
   `CREATE TABLE IF NOT EXISTS customers (
@@ -67,6 +67,18 @@ const STATEMENTS = [
   `CREATE INDEX IF NOT EXISTS idx_an_vis    ON analytics(visitor)`,
 ];
 
+/**
+ * Every table the DDL above is expected to create, derived from STATEMENTS so
+ * that adding a table in a future deploy keeps the readiness check in sync
+ * automatically. Used to detect a partially-created schema.
+ */
+const REQUIRED_TABLES = STATEMENTS
+  .map((s) => {
+    const m = s.match(/CREATE\s+TABLE\s+IF\s+NOT\s+EXISTS\s+"?([A-Za-z_]\w*)"?/i);
+    return m ? m[1] : null;
+  })
+  .filter(Boolean);
+
 let ready = false;
 let colsChecked = false;
 
@@ -107,18 +119,20 @@ export async function ensureSchema(env) {
   if (ready) return true;
   if (!env || !env.DB) return false;
   try {
-    const row = await one(
-      env,
-      "SELECT name FROM sqlite_master WHERE type='table' AND name='leads'"
-    );
-    if (row) {
-      ready = true;
-      await ensureColumns(env);
-      return true;
+    // Never short-circuit on a single table: an earlier version returned early
+    // as soon as `leads` existed, which silently skipped every table added in a
+    // later deploy (rate_limits, analytics). Ask which of our tables are
+    // actually missing, and only run the DDL when something is absent.
+    const existing = await all(env, "SELECT name FROM sqlite_master WHERE type='table'");
+    const have = {};
+    for (const r of (existing || [])) have[r.name] = true;
+    const missing = REQUIRED_TABLES.filter((t) => !have[t]);
+    if (missing.length) {
+      for (const sql of STATEMENTS) await run(env, sql);
+      console.log('[schema] created missing tables: ' + missing.join(', '));
     }
-    for (const sql of STATEMENTS) await run(env, sql);
     ready = true;
-    console.log('[schema] tables created');
+    await ensureColumns(env);
     return true;
   } catch (e) {
     console.error('[schema] ' + (e && e.message ? e.message : String(e)));
