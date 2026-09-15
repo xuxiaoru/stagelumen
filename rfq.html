@@ -105,32 +105,30 @@
       <!-- Form -->
       <div class="form-card" data-page-node-id="1hTdYTSTxDX7KnyuFGeWA3">
         <h2 data-page-node-id="9n4Wz7yxNFtXQI8A8RTuRB">Project Brief</h2>
-        <p data-page-node-id="BFQfYHBf6Yu7uqaSMd9tBo">Fields marked with * are required. We treat your brief as confidential.</p>
+        <p data-page-node-id="BFQfYHBf6Yu7uqaSMd9tBo">Fields marked with * are required. No products selected? Leave the quote list empty — we will quote from your description instead. All briefs are treated as confidential.</p>
 
         <form data-ajax data-page-node-id="J7wAtPQUJpN06EFyRvHyJD">
 
-          <!-- Product of Interest: prefilled from the product page, fully editable -->
-          <div class="form-group poi-panel" id="poiPanel" style="grid-column:1/-1;margin-bottom:18px;display:none;">
-            <label id="poiLabel">Product of Interest <span style="font-weight:400;color:var(--dim)">(from product page)</span></label>
-            <div class="poi-card" style="display:flex;gap:14px;align-items:flex-start;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px;">
-              <img id="poiImg" alt="" style="width:88px;height:88px;object-fit:cover;border-radius:8px;background:#0c1322;display:none;" />
-              <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:10px;">
-                <div class="form-group" style="margin:0;">
-                  <label>Model *</label>
-                  <input type="text" name="sku" id="poiSku" placeholder="e.g. RG-M230BN-KPH16" />
-                </div>
-                <div class="form-group" style="margin:0;">
-                  <label>Product Name</label>
-                  <input type="text" name="productName" id="poiName" placeholder="Product title" />
-                </div>
-                <div class="form-group" style="margin:0;grid-column:1/-1;">
-                  <label>Category</label>
-                  <input type="text" name="productCategory" id="poiCat" placeholder="e.g. Moving Head / Laser / Pixel" />
-                </div>
-                <input type="hidden" name="productImage" id="poiImgUrl" />
-              </div>
+          <!-- Quote list: whatever the visitor added while browsing the catalogue -->
+          <div class="qc-panel" id="poiPanel" style="grid-column:1/-1;margin-bottom:18px;display:none;">
+            <div class="qc-title">
+              Products to quote
+              <span class="qc-n2" id="poiCount">0</span>
             </div>
-            <p id="poiHint" style="font-size:12px;color:var(--dim);margin:6px 0 0;">Prefilled from the product page — edit any field if it looks off. Leave blank for a general inquiry.</p>
+
+            <div id="cartBox"></div>
+
+            <div class="qc-picker">
+              <input type="text" id="prodSearch" placeholder="Add another product — search by model or name…" autocomplete="off" />
+              <div id="prodResults" class="qc-results"></div>
+            </div>
+
+            <input type="hidden" name="items" id="poiItems" />
+            <input type="hidden" name="sku" id="poiSku" />
+            <input type="hidden" name="productName" id="poiName" />
+            <input type="hidden" name="productCategory" id="poiCat" />
+            <input type="hidden" name="productImage" id="poiImgUrl" />
+            <p id="poiHint" style="font-size:12px;color:var(--dim);margin:8px 0 0;"></p>
           </div>
 
           <div class="form-row" data-page-node-id="jdiwZUlpOetEf6O3mTRlbm">
@@ -372,10 +370,11 @@
 </footer>
 
 <script src="assets/js/cookie-consent.js"></script>
+<script src="assets/js/quote-cart.js?v=1"></script>
 <script src="assets/js/main.js?v=8"></script>
-<script src="assets/js/inquiry.js?v=10"></script>
+<script src="assets/js/inquiry.js?v=11"></script>
 <script src="assets/js/assistant.js?v=9"></script>
-<script src="assets/js/rfq-product.js?v=1"></script>
+<script src="assets/js/rfq-product.js?v=2"></script>
 <script src="assets/js/track.js?v=2"></script>
 </body>
 </html>
