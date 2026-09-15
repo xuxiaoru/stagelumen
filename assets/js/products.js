@@ -53,7 +53,7 @@ function renderProductCard(p, cats) {
         <div class="product-price">${p.price ? 'From <strong>$' + p.price + '</strong>' : '<strong>Price on request</strong>'}</div>
         <div class="product-actions">
           <span class="btn btn-ghost">Details</span>
-          <span class="btn btn-primary">Quote</span>
+          <span class="btn btn-primary" data-quote-add="${p.model}" title="Add to your quote list">＋ Quote</span>
         </div>
       </div>
     </a>
