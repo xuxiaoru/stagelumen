@@ -236,6 +236,9 @@
               });
             }
           } catch (e) { /* never break the form */ }
+          // The enquiry left with its own copy of the basket, so it can be
+          // emptied now — otherwise the next enquiry re-sends this one's list.
+          try { if (window.SLQuoteCart) window.SLQuoteCart.clear(); } catch (e) { /* noop */ }
           var acked = data.autoreply && data.autoreply.sent;
           setStatus(
             form,
