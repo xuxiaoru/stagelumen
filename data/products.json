@@ -22989,7 +22989,7 @@
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
-      "id": "rg-ctcdm10a3-c",
+      "id": "rg-ctcdm10a3-c-ww",
       "name": "RG-CTCDM10A3-C decode",
       "model": "RG-CTCDM10A3-C",
       "category": "par",
@@ -23046,7 +23046,7 @@
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
-      "id": "fg-pssv400f-f",
+      "id": "fg-pssv400f-f-ww",
       "name": "FG-PSSV400F-F",
       "model": "FG-PSSV400F-F",
       "category": "par",
@@ -24084,6 +24084,2063 @@
       "moq": 1,
       "sourceRow": 32,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
+    },
+    {
+      "id": "rg-p64tc25-kc7a",
+      "name": "RG-P64TC25-Kc7A",
+      "model": "RG-P64TC25-Kc7A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 120.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "LED PAR",
+      "shortDesc": "RG-P64TC25-Kc7A. Factory EXW from US$120",
+      "longDesc": "RG-P64TC25-Kc7A is part of the RIGE LED PAR range built in our own Guangzhou plant. Our own desiged & mode development water proof IP65 ! black die-casting aluminum body Lens Beam:standard 60°,20°and 30°a Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "7LEDsX25W RGBWA 5in1"
+        },
+        {
+          "label": "Beam",
+          "value": "standard 60°,20°and 30°are optional Stand-alone mode,DMX mode,Sound active mode"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$120 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥760"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P64TC25-Kc7A"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p64tc25-kc7a.jpg",
+      "images": [
+        "assets/images/products/rg-p64tc25-kc7a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "120 MOQ:30pcs · RMB 760 MOQ:30pcs",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 2,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "fg-w3pe3l100h13-kdp",
+      "name": "power cable FG-W3PE3L100H13-KDp",
+      "model": "FG-W3PE3L100H13-KDp",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 3.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "power cable",
+      "shortDesc": "power cable FG-W3PE3L100H13-KDp. Factory EXW from US$3",
+      "longDesc": "FG-W3PE3L100H13-KDp is part of the RIGE LED PAR range built in our own Guangzhou plant. FG-W3PE3L100H13-KDp（British) FG-W3PV37PL100H13-KDp(European) FG-W3PU37PL100H13-KDp(American） FG-W3PA97PL100H13-KDp（Austr Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "3*2.5㎡ 100CM"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$3 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥18"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "FG-W3PE3L100H13-KDp（British) FG-W3PV37PL100H13-KDp(European) FG-W3PU37PL100H13-KDp(American） FG-W3PA97PL100H13-KDp（Australia）"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/fg-w3pe3l100h13-kdp.jpg",
+      "images": [
+        "assets/images/products/fg-w3pe3l100h13-kdp.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "3",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 3,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "fg-w3p7px1l80h22-kdp",
+      "name": "Signal cable FG-W3P7PX1L80H22-KDp",
+      "model": "FG-W3P7PX1L80H22-KDp",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 2.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Signal cable",
+      "shortDesc": "Signal cable FG-W3P7PX1L80H22-KDp. Factory EXW from US$2",
+      "longDesc": "FG-W3P7PX1L80H22-KDp is part of the RIGE LED PAR range built in our own Guangzhou plant. FG-W3P7PX1L80H22-KDp Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "3*0.3㎡ 80CM"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$2 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥12"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "FG-W3P7PX1L80H22-KDp"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/fg-w3p7px1l80h22-kdp.jpg",
+      "images": [
+        "assets/images/products/fg-w3p7px1l80h22-kdp.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "2",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 4,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p47ob10-kf18",
+      "name": "RG-P47OB10-Kf18 Outdoor 18pcs 10W RGBWA+UV 6 IN 1 with light-transmitting board led par light",
+      "model": "RG-P47OB10-Kf18",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 92.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Outdoor 18pcs 10W RGBWA+UV",
+      "shortDesc": "RG-P47OB10-Kf18 Outdoor 18pcs 10W RGBWA+UV 6 IN 1 with light-transmitting board led par light. Factory EXW from US$92",
+      "longDesc": "RG-P47OB10-Kf18 is part of the RIGE LED PAR range built in our own Guangzhou plant. Voltage: AC110-220V / 50-60Hz Power: 200W Lamp: LED 18pcs 6 in 1 waterproof （Six in one LED beads） Control Channels: 10C Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "RGBWA+UV 6in1"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC110-220V / 50-60Hz"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$92 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥645"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P47OB10-Kf18"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p47ob10-kf18.jpg",
+      "images": [
+        "assets/images/products/rg-p47ob10-kf18.jpg",
+        "assets/images/products/rg-p47ob10-kf18-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "92usd · RMB 645RMB 625RMB(over 30pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 5,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p58ob10-kf18",
+      "name": "RG-P58OB10-Kf18 18LEDS 18w high brightness outdoor waterproof led par light",
+      "model": "RG-P58OB10-Kf18",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 75.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "18LEDS 18w high brightness",
+      "shortDesc": "RG-P58OB10-Kf18 18LEDS 18w high brightness outdoor waterproof led par light. Factory EXW from US$75",
+      "longDesc": "RG-P58OB10-Kf18 is part of the RIGE LED PAR range built in our own Guangzhou plant. Waterproof LED Par 18x18W RGBWA + UV power supply. AC90--275V, 50-60Hz Power consumption. 324W/216W LED light source: 18 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "RGBWA+UV 6in1"
+        },
+        {
+          "label": "light source",
+          "value": "18×18W RGBWA+UV 6in1 DMX channel. 6/10 DMX channels/4/8 DMX channels"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$75 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥525"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P58OB10-Kf18"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p58ob10-kf18.jpg",
+      "images": [
+        "assets/images/products/rg-p58ob10-kf18.jpg",
+        "assets/images/products/rg-p58ob10-kf18-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "75",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 6,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p57tc50-kf4a",
+      "name": "4LEDS 50W COB waterproof surface lights RG-P57TC50-Kf4A",
+      "model": "RG-P57TC50-Kf4A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 73.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "4LEDS 50W COB waterproof s",
+      "shortDesc": "4LEDS 50W COB waterproof surface lights RG-P57TC50-Kf4A. Factory EXW from US$73",
+      "longDesc": "RG-P57TC50-Kf4A is part of the RIGE LED PAR range built in our own Guangzhou plant. Voltage: AC90-240V 50-60Hz Power: 200W Luminous color: 2 cold white + 2 warm white Control mode: self-propelled, master- Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "CW+WW 2in1"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC90-240V 50-60Hz"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$73 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥550"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P57TC50-Kf4A"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p57tc50-kf4a.jpg",
+      "images": [
+        "assets/images/products/rg-p57tc50-kf4a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "73usd · RMB ￥550 ￥480",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 7,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p58tc10-ke18a",
+      "name": "RG-P58TC10-Ke18A NEW Outdoor 4leds 50W 200w Cold-warm 2in1 white zoom led par light",
+      "model": "RG-P58TC10-Ke18A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 149.0,
+      "badge": "New",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "NEW Outdoor 4leds 50W 200w",
+      "shortDesc": "RG-P58TC10-Ke18A NEW Outdoor 4leds 50W 200w Cold-warm 2in1 white zoom led par light. Factory EXW from US$149",
+      "longDesc": "RG-P58TC10-Ke18A is part of the RIGE LED PAR range built in our own Guangzhou plant. Input voltage: AC 100-240V, 50-60HZ Rated power: 250W LED light source: 4 *50W light sources Cold-warm 2in1 white LED be Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "Cold-warm 2in1 white or RGB 3in1"
+        },
+        {
+          "label": "Input voltage",
+          "value": "AC 100-240V, 50-60HZ"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$149 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1030"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P58TC10-Ke18A"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p58tc10-ke18a.jpg",
+      "images": [
+        "assets/images/products/rg-p58tc10-ke18a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "149",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 8,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p56ic100-kf",
+      "name": "RG-P56IC100-Kf 100W COB par light",
+      "model": "RG-P56IC100-Kf",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 46.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "100W COB par light",
+      "shortDesc": "RG-P56IC100-Kf 100W COB par light. Factory EXW from US$46",
+      "longDesc": "RG-P56IC100-Kf is part of the RIGE LED PAR range built in our own Guangzhou plant. Voltage：AC90-240V 50/60HZ Power supply: 120W Light source: 1PCS*100W led Channel: 3CH/4CH Operation: DMX512, Auto, Sound Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "1*100w RGB 3IN1"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC90-240V 50/60HZ"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$46 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥300"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P56IC100-Kf"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p56ic100-kf.jpg",
+      "images": [
+        "assets/images/products/rg-p56ic100-kf.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "46",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 9,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p56ic150-ke",
+      "name": "RG-P56IC150-Ke 150W COB par light",
+      "model": "RG-P56IC150-Ke",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 59.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "150W COB par light",
+      "shortDesc": "RG-P56IC150-Ke 150W COB par light. Factory EXW from US$59",
+      "longDesc": "RG-P56IC150-Ke is part of the RIGE LED PAR range built in our own Guangzhou plant. Voltage：AC90-240V 50/60HZ Power supply: 180W Light source: 1PCS*150W led Channel: 4CH/5CH Operation: DMX512, Auto, Sound Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "1*150w RGBW 4IN1"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC90-240V 50/60HZ"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$59 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥413"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P56IC150-Ke"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p56ic150-ke.jpg",
+      "images": [
+        "assets/images/products/rg-p56ic150-ke.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "59",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 10,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p56ic200-ke1",
+      "name": "RG-P56IC200-Ke1 200W COB par light",
+      "model": "RG-P56IC200-Ke1",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 69.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W COB par light",
+      "shortDesc": "RG-P56IC200-Ke1 200W COB par light. Factory EXW from US$69",
+      "longDesc": "RG-P56IC200-Ke1 is part of the RIGE LED PAR range built in our own Guangzhou plant. Voltage：AC90-240V 50/60HZ Power supply: 200W Light source: 1PCS*150W led Channel:8CH Operation: DMX512, Auto, Sound, Mas Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "1*200w RGBW 4IN1"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC90-240V 50/60HZ"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$69 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥480"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P56IC200-Ke1"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p56ic200-ke1.jpg",
+      "images": [
+        "assets/images/products/rg-p56ic200-ke1.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "69",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 11,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p64tc200-kg1a",
+      "name": "RG-P64TC200-Kg1A Outdoor COB PAR light",
+      "model": "RG-P64TC200-Kg1A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 97.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Outdoor COB PAR light",
+      "shortDesc": "RG-P64TC200-Kg1A Outdoor COB PAR light. Factory EXW from US$97",
+      "longDesc": "RG-P64TC200-Kg1A is part of the RIGE LED PAR range built in our own Guangzhou plant. Voltage：AC90-240V 50/60HZ Power supply: 200W Light source: 1PCS*200W led warm white or cool white warm white + cool whit Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "warm white or cool white warm white + cool white RGB RGBW RGBWA RGBWAUV"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC90-240V 50/60HZ"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$97 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥645"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P64TC200-Kg1A"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p64tc200-kg1a.jpg",
+      "images": [
+        "assets/images/products/rg-p64tc200-kg1a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "97 · RMB White 645 RGB 715 RGBW 728 RGBWA 754 RGBWAUV793",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 12,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p56ib3-kf27",
+      "name": "RG-P56IB3-Kf27 27pcs 8leds RGBW 4in1 LED Par Light",
+      "model": "RG-P56IB3-Kf27",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 29.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "27pcs 8leds RGBW 4in1 LED",
+      "shortDesc": "RG-P56IB3-Kf27 27pcs 8leds RGBW 4in1 LED Par Light. Factory EXW from US$29",
+      "longDesc": "RG-P56IB3-Kf27 is part of the RIGE LED PAR range built in our own Guangzhou plant. Input voltage: ac90-220v 50-60hz Power:120w Light source: 27PCS*8W four in one lamp bead Channel: 4/8 ch Control mode: D Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "RGBW 4in1"
+        },
+        {
+          "label": "Input voltage",
+          "value": "ac90-220v 50-60hz"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$29 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥180"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P56IB3-Kf27"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p56ib3-kf27.jpg",
+      "images": [
+        "assets/images/products/rg-p56ib3-kf27.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "29usd · RMB 180 160 (over 100pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 13,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p50tc15-kg9a",
+      "name": "RG-P50TC15-Kg9A",
+      "model": "RG-P50TC15-Kg9A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 76.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "LED PAR",
+      "shortDesc": "RG-P50TC15-Kg9A. Factory EXW from US$76",
+      "longDesc": "RG-P50TC15-Kg9A is part of the RIGE LED PAR range built in our own Guangzhou plant. 9pcsx15W UV+RGBWA LED Input voltage: AC90~240V 50Hz/60Hz Rated Power: 130W Light source: 9pcs 15W RGBWA UV 6in1 LEDs Con Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "9LEDsX15W RGBWA+UV 6in1"
+        },
+        {
+          "label": "Input voltage",
+          "value": "AC90~240V 50Hz/60Hz"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$76 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥500"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P50TC15-Kg9A"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p50tc15-kg9a.jpg",
+      "images": [
+        "assets/images/products/rg-p50tc15-kg9a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "76",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 14,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p61tc10-ke18a",
+      "name": "RG-P61TC10-Ke18A",
+      "model": "RG-P61TC10-Ke18A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 115.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "LED PAR",
+      "shortDesc": "RG-P61TC10-Ke18A. Factory EXW from US$115",
+      "longDesc": "RG-P61TC10-Ke18A is part of the RIGE LED PAR range built in our own Guangzhou plant. LED Quantities:10PCS 10W RGBW 4in1 LED Rated Power:180W IP65 protection rating Input Voltage:AC 100-240V 50/60Hz Control Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "18leds*10W RGBW 4 in1 Or RGBWYU 6 in1"
+        },
+        {
+          "label": "LED Quantities",
+          "value": "10PCS 10W RGBW 4in1 LED"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$115 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥750"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P61TC10-Ke18A"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p61tc10-ke18a.jpg",
+      "images": [
+        "assets/images/products/rg-p61tc10-ke18a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "115",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 15,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p20ic3-kn5s4",
+      "name": "RG-P20IC3-KN5S4",
+      "model": "RG-P20IC3-KN5S4",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 37.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "LED PAR",
+      "shortDesc": "RG-P20IC3-KN5S4. Factory EXW from US$37",
+      "longDesc": "RG-P20IC3-KN5S4 is part of the RIGE LED PAR range built in our own Guangzhou plant. LEDs:(Warm Whitex5 Cold Whitex4）3W/pcs ,total 9 pcs Rated Power:25W Input Voltage:AC 100-240V 50/60Hz Control mode:DMX 5 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "9 LEDS*3W"
+        },
+        {
+          "label": "LEDs",
+          "value": "(Warm Whitex5 Cold Whitex4）3W/pcs ,total 9 pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$37 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥238"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P20IC3-KN5S4"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p20ic3-kn5s4.jpg",
+      "images": [
+        "assets/images/products/rg-p20ic3-kn5s4.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "37(CREE) MOQ:30pcs · RMB 238 MOQ:30pcs",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 16,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p20ic3-kf9a9",
+      "name": "RG-P20IC3-Kf9A9",
+      "model": "RG-P20IC3-Kf9A9",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 47.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "LED PAR",
+      "shortDesc": "RG-P20IC3-Kf9A9. Factory EXW from US$47",
+      "longDesc": "RG-P20IC3-Kf9A9 is part of the RIGE LED PAR range built in our own Guangzhou plant. LED Qty 12pcs RGBW,R(3pcs), G(3pcs), B(3pcs), W(3pcs) Rated Power 32W Input Voltage AC 100-240V 50/60Hz Working life 500 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "9 LEDS*3W"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$47 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥306"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "LED Qty 12pcs RGBW,R(3pcs), G(3pcs), B(3pcs), W(3pcs) Rated Power 32W Input Voltage AC 100-240V 50/60Hz Working life 50000Hrs Gray Level 256 Control mode Auto-run-mode、DMX 512、sound active mode DMX Channels 4/6CH Beam Angle 45° Dimensions 183x130x76mm Packing size 210x210x140mm（one pcs carton packing）435x225x450（six pcs carton packing）435x435x300mm(eight pcs carton packing) Net weight 1.25Kg Gross Weight 1.5Kg（one pcs carton packing）11Kg（six pcs carton packing）15Kg(eight pcs carton packing) main material Aluminum Body color Black Ambient temperature -20℃～+40℃ Environment Use indoor"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p20ic3-kf9a9.jpg",
+      "images": [
+        "assets/images/products/rg-p20ic3-kf9a9.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "47(CREE) MOQ:30pcs · RMB 306 MOQ:30pcs",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 17,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p16ic10-ke1a",
+      "name": "RG-P16IC10-Ke1A",
+      "model": "RG-P16IC10-Ke1A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 41.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "LED PAR",
+      "shortDesc": "RG-P16IC10-Ke1A. Factory EXW from US$41",
+      "longDesc": "RG-P16IC10-Ke1A is part of the RIGE LED PAR range built in our own Guangzhou plant. LED Qty:RGBW 4in1 OSRAM High Power LED,total 1 pcs,10W/pcs Rated Power:10W Input Voltage:AC 100-240V 50/60Hz Control mod Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "1LED*10W"
+        },
+        {
+          "label": "LED Qty",
+          "value": "RGBW 4in1 OSRAM High Power LED,total 1 pcs,10W/pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$41 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥270"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P16IC10-Ke1A"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p16ic10-ke1a.jpg",
+      "images": [
+        "assets/images/products/rg-p16ic10-ke1a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "41 OSRAM LED MOQ:30pcs · RMB 270 OSRAM LED MOQ:30pcs",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 18,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "mini-led-par-36-new",
+      "name": "Mini LED Par 36 New",
+      "model": "Mini LED Par 36 New",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 32.0,
+      "badge": "New",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Mini LED Par 36 New",
+      "shortDesc": "Mini LED Par 36 New. Factory EXW from US$32",
+      "longDesc": "Mini LED Par 36 New is part of the RIGE LED PAR range built in our own Guangzhou plant. LED Qty: RGBW 4IN1 LED，8W/pcs total4pcs Rated Power: 26W Input Voltage:AC 100-240V 50/60Hz Beam Angle:45° DMX Channels:4 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "4LEDS*8W"
+        },
+        {
+          "label": "LED Qty",
+          "value": "RGBW 4IN1 LED，8W/pcs total4pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$32 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥208"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "Mini LED Par 36 New"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/mini-led-par-36-new.jpg",
+      "images": [
+        "assets/images/products/mini-led-par-36-new.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "32(MQQ:30pcs) · RMB 208(MQQ:30pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 19,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p36ib8-ke7a",
+      "name": "RG-P36IB8-Ke7A",
+      "model": "RG-P36IB8-Ke7A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 53.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "LED PAR",
+      "shortDesc": "RG-P36IB8-Ke7A. Factory EXW from US$53",
+      "longDesc": "RG-P36IB8-Ke7A is part of the RIGE LED PAR range built in our own Guangzhou plant. LED Qty:RGBW 4in1 High Power LED,total 7 pcs,8W/pcs Rated Power:56W Input Voltage:AC 100-240V 50/60Hz Control mode:Auto- Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "7LEDS*8w"
+        },
+        {
+          "label": "LED Qty",
+          "value": "RGBW 4in1 High Power LED,total 7 pcs,8W/pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$53 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥330"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P36IB8-Ke7A"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Wall Wash"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p36ib8-ke7a.jpg",
+      "images": [
+        "assets/images/products/rg-p36ib8-ke7a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "53USD MOQ:30pcs · RMB 330 MOQ:30pcs",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 20,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p47ic10-kcw7a",
+      "name": "RG-P47IC10-KCW7A indoor",
+      "model": "RG-P47IC10-KCW7A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 73.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "indoor",
+      "shortDesc": "RG-P47IC10-KCW7A indoor. Factory EXW from US$73",
+      "longDesc": "RG-P47IC10-KCW7A is part of the RIGE LED PAR range built in our own Guangzhou plant. LED Qty:Cool-Warm white color adjusted Variable LED temperature(2700k-6500k) Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "7LEDsX10W White"
+        },
+        {
+          "label": "LED Qty",
+          "value": "Cool-Warm white color adjusted Variable LED temperature(2700k-6500k)"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$73 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥480"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P47IC10-KCW7A"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p47ic10-kcw7a.jpg",
+      "images": [
+        "assets/images/products/rg-p47ic10-kcw7a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "73",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 21,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p47ic8-ke12a",
+      "name": "RG-P47IC8-Ke12A Indoor",
+      "model": "RG-P47IC8-Ke12A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 67.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Indoor",
+      "shortDesc": "RG-P47IC8-Ke12A Indoor. Factory EXW from US$67",
+      "longDesc": "RG-P47IC8-Ke12A is part of the RIGE LED PAR range built in our own Guangzhou plant. LEDs:Cool white 8W/PCS total 12pcs Rated Power: 96W Input Voltage: AC 100-240V 50/60Hz Control mode:Auto-run mode, DMX-5 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "12LEDsX8W RGBW 4in1"
+        },
+        {
+          "label": "LEDs",
+          "value": "Cool white 8W/PCS total 12pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$67 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥440"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P47IC8-Ke12A"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Wall Wash"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p47ic8-ke12a.jpg",
+      "images": [
+        "assets/images/products/rg-p47ic8-ke12a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "67",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 22,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p47ic10l-ku7",
+      "name": "RG-P47IC10L-KU7 NEW 7leds*10w UV led par light",
+      "model": "RG-P47IC10L-KU7",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 86.0,
+      "badge": "New",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "NEW 7leds*10w UV led par l",
+      "shortDesc": "RG-P47IC10L-KU7 NEW 7leds*10w UV led par light. Factory EXW from US$86",
+      "longDesc": "RG-P47IC10L-KU7 is part of the RIGE LED PAR range built in our own Guangzhou plant. Rated Power: 96W Input Voltage: AC 100-240V 50/60Hz Service Life: 50000hour Gray Level: 256 LEDs: UV 10W/PCS total 7pcs  Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "7LEDS*10W UV par can"
+        },
+        {
+          "label": "Rated Power",
+          "value": "96W"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$86 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥580"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P47IC10L-KU7"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p47ic10l-ku7.jpg",
+      "images": [
+        "assets/images/products/rg-p47ic10l-ku7.jpg",
+        "assets/images/products/rg-p47ic10l-ku7-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "86",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 23,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p47id12-k14",
+      "name": "RG-P47ID12-K14 NEW 14leds 12w RGBW4in1 LED par light",
+      "model": "RG-P47ID12-K14",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 46.0,
+      "badge": "New",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "NEW 14leds 12w RGBW4in1 LE",
+      "shortDesc": "RG-P47ID12-K14 NEW 14leds 12w RGBW4in1 LED par light. Factory EXW from US$46",
+      "longDesc": "RG-P47ID12-K14 is part of the RIGE LED PAR range built in our own Guangzhou plant. Rated voltage: AC200V-240V,50/60Hz LED Light Source: 12W 5050 (RGBW) Count: 14 *12W (RGBW) Life span: 50,000 hours Color Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "14LEDS 12W"
+        },
+        {
+          "label": "Rated voltage",
+          "value": "AC200V-240V,50/60Hz LED"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$46 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥290"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P47ID12-K14"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p47id12-k14.jpg",
+      "images": [
+        "assets/images/products/rg-p47id12-k14.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "46usd · RMB 290 250(over1000pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 24,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p46tc3-kr6g18b12",
+      "name": "RG-P46TC3-KR6G18B12 New",
+      "model": "RG-P46TC3-KR6G18B12",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 69.0,
+      "badge": "New",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "New",
+      "shortDesc": "RG-P46TC3-KR6G18B12 New. Factory EXW from US$69",
+      "longDesc": "RG-P46TC3-KR6G18B12 is part of the RIGE LED PAR range built in our own Guangzhou plant. LEDs:(R: 6pcs G: 18pcs B: 12pcs ) total 36pcs, 3W/pcs Rated Power: 108W Input Voltage: AC 100-240V 50/60Hz Control mode: Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "36X3W RGB"
+        },
+        {
+          "label": "R",
+          "value": "6pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$69 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥450"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P46TC3-KR6G18B12"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p46tc3-kr6g18b12.jpg",
+      "images": [
+        "assets/images/products/rg-p46tc3-kr6g18b12.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "69 · RMB ￥450 ￥400（Over40pcs）",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 25,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p56ib10-kf18",
+      "name": "NEW 18leds 10w RGBWAUV 6in1 led par RG-P56IB10-Kf18",
+      "model": "RG-P56IB10-Kf18",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 63.0,
+      "badge": "New",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "NEW 18leds 10w RGBWAUV 6in",
+      "shortDesc": "NEW 18leds 10w RGBWAUV 6in1 led par RG-P56IB10-Kf18. Factory EXW from US$63",
+      "longDesc": "RG-P56IB10-Kf18 is part of the RIGE LED PAR range built in our own Guangzhou plant. 1. Power supply: AC 100-240V, 50/60Hz 2.Maximum power consumption: 180W 3.Lamp Beads: 18 10W 6-in-1 4.Luminous angle: 25 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "18*10w RGBWAUV 6in1"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC 100-240V, 50/60Hz 2.Maximum"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$63 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥400"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P56IB10-Kf18"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p56ib10-kf18.jpg",
+      "images": [
+        "assets/images/products/rg-p56ib10-kf18.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "63 · RMB ￥400 ￥360(over 50pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 26,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p57ic10-ke18ae",
+      "name": "RG-P57IC10-Ke18AE RGBW 4in1",
+      "model": "RG-P57IC10-Ke18AE",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 69.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "RGBW 4in1",
+      "shortDesc": "RG-P57IC10-Ke18AE RGBW 4in1. Factory EXW from US$69",
+      "longDesc": "RG-P57IC10-Ke18AE is part of the RIGE LED PAR range built in our own Guangzhou plant. LEDs:RGBW 4in1 12W/pcs total 18pcs Rated Power: 180W Input Voltage: AC 100-240V 50/60Hz Control mode:Auto-run-mode、DMX 5 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "18*12w RGBW 4in1"
+        },
+        {
+          "label": "LEDs",
+          "value": "RGBW 4in1 12W/pcs total 18pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$69 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥450"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P57IC10-Ke18AE"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Wall Wash"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p57ic10-ke18ae.jpg",
+      "images": [
+        "assets/images/products/rg-p57ic10-ke18ae.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "69",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 27,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p57ic10-kg18a",
+      "name": "RG-P57IC10-Kg18A RGBWYU 6in1",
+      "model": "RG-P57IC10-Kg18A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 78.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "RGBWYU 6in1",
+      "shortDesc": "RG-P57IC10-Kg18A RGBWYU 6in1. Factory EXW from US$78",
+      "longDesc": "RG-P57IC10-Kg18A is part of the RIGE LED PAR range built in our own Guangzhou plant. LEDs:RGBWYU 6in1 15W/pcs total 18pcs Rated Power: 180W Input Voltage: AC 100-240V 50/60Hz Control mode:Auto-run-mode、DMX Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "18*15w RGBWYU 6in1"
+        },
+        {
+          "label": "LEDs",
+          "value": "RGBWYU 6in1 15W/pcs total 18pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$78 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥520"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P57IC10-Kg18A"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Wall Wash"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p57ic10-kg18a.jpg",
+      "images": [
+        "assets/images/products/rg-p57ic10-kg18a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "78",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 28,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p47tc10-we7a",
+      "name": "RG-P47TC10-We7A Outdoor IP65 High Power led par light 7x10w RGBW 4in1",
+      "model": "RG-P47TC10-We7A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 59.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Outdoor IP65 High Power le",
+      "shortDesc": "RG-P47TC10-We7A Outdoor IP65 High Power led par light 7x10w RGBW 4in1. Factory EXW from US$59",
+      "longDesc": "RG-P47TC10-We7A is part of the RIGE LED PAR range built in our own Guangzhou plant. LEDs : 7*10W 6in1 LED(R:7 G:7 B:7 W:7) Colors : RGBW mixing Voltage : 100-250V/50-60Hz Dimensions : Weight : 2.0Kg Power Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "7*10w RGBW 4in1"
+        },
+        {
+          "label": "LEDs",
+          "value": "7*10W 6in1"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$59 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥380"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P47TC10-We7A"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p47tc10-we7a.jpg",
+      "images": [
+        "assets/images/products/rg-p47tc10-we7a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "59",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 29,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p57tc10-ke18ae",
+      "name": "RG-P57TC10-Ke18AE Outdoor IP65 High Power led par light RGBW 4in1",
+      "model": "RG-P57TC10-Ke18AE",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 75.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Outdoor IP65 High Power le",
+      "shortDesc": "RG-P57TC10-Ke18AE Outdoor IP65 High Power led par light RGBW 4in1. Factory EXW from US$75",
+      "longDesc": "RG-P57TC10-Ke18AE is part of the RIGE LED PAR range built in our own Guangzhou plant. LEDs: 4In1 RGBW 10W total 18pcs Rated Power: 200W/300W Input Voltage: AC 100-240V 50/60Hz Control mode:Auto-run-mode、DMX Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "18*10w RGBW 4in1"
+        },
+        {
+          "label": "LEDs",
+          "value": "4In1 RGBW 10W total 18pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$75 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥500"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P57TC10-Ke18AE"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p57tc10-ke18ae.jpg",
+      "images": [
+        "assets/images/products/rg-p57tc10-ke18ae.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "75 · RMB 500 450 (over100pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 30,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p57tc10-kg18a",
+      "name": "RG-P57TC10-Kg18A Outdoor IP65 High Power led par light RGBWYU 6in1",
+      "model": "RG-P57TC10-Kg18A",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 83.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Outdoor IP65 High Power le",
+      "shortDesc": "RG-P57TC10-Kg18A Outdoor IP65 High Power led par light RGBWYU 6in1. Factory EXW from US$83",
+      "longDesc": "RG-P57TC10-Kg18A is part of the RIGE LED PAR range built in our own Guangzhou plant. LEDs: 6in1 RGBWAUV 15W total 18pcs Rated Power: 200W/300W Input Voltage: AC 100-240V 50/60Hz Control mode:Auto-run-mode、 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "18*15w RGBWYU 6in1"
+        },
+        {
+          "label": "LEDs",
+          "value": "6in1 RGBWAUV 15W total 18pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$83 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥550"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P57TC10-Kg18A"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p57tc10-kg18a.jpg",
+      "images": [
+        "assets/images/products/rg-p57tc10-kg18a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "83 · RMB 550 500(over100pcs )",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 31,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p57ic3-kr12j36w6",
+      "name": "RG-P57IC3-KR12j36W6 led par light 54x3w RGBW (indoor )",
+      "model": "RG-P57IC3-KR12j36W6",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 48.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "led par light 54x3w RGBW (",
+      "shortDesc": "RG-P57IC3-KR12j36W6 led par light 54x3w RGBW (indoor ). Factory EXW from US$48",
+      "longDesc": "RG-P57IC3-KR12j36W6 is part of the RIGE LED PAR range built in our own Guangzhou plant. LEDs:(R:12pcs G:18pcs B:18pcs W:6pcs) total 54pcs 3W/pcs Rated Power: 162W Input Voltage: AC 100-240V 50/60Hz Control mo Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "54*3W RGBW"
+        },
+        {
+          "label": "R",
+          "value": "12pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$48 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥300"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P57IC3-KR12j36W6"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Wall Wash"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p57ic3-kr12j36w6.jpg",
+      "images": [
+        "assets/images/products/rg-p57ic3-kr12j36w6.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "48 · RMB 300 260(over 100pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 32,
+      "sourceFile": "Led Par Light帕灯.xlsx"
+    },
+    {
+      "id": "rg-p57tc3-kr12j36w6",
+      "name": "RG-P57TC3-KR12j36W6 (outdoor)",
+      "model": "RG-P57TC3-KR12j36W6",
+      "category": "par",
+      "sub": "led-par",
+      "subLabel": "LED PAR",
+      "family": "par",
+      "price": 75.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "(outdoor)",
+      "shortDesc": "RG-P57TC3-KR12j36W6 (outdoor). Factory EXW from US$75",
+      "longDesc": "RG-P57TC3-KR12j36W6 is part of the RIGE LED PAR range built in our own Guangzhou plant. LEDs:(R:12pcs G:18pcs B:18pcs W:6pcs) total 54pcs 3W/pcs Rated Power: 162W Input Voltage: AC 100-240V 50/60Hz Control mo Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "LED Configuration",
+          "value": "54x3W RGBW RGBA"
+        },
+        {
+          "label": "R",
+          "value": "12pcs"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$75 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥500"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-P57TC3-KR12j36W6"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-p57tc3-kr12j36w6.jpg",
+      "images": [
+        "assets/images/products/rg-p57tc3-kr12j36w6.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "75",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 33,
+      "sourceFile": "Led Par Light帕灯.xlsx"
     }
   ]
 }
