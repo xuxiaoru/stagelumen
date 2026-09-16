@@ -22119,51 +22119,11 @@
       "iconColor": "#ff6b00",
       "tagline": "Outdoor 5leds 30w RGB 3in1",
       "shortDesc": "RG-W52TB30-K4 Outdoor 5leds 30w RGB 3in1 LED Matrix light. Factory EXW from US$100",
-      "longDesc": "RG-W52TB30-K4 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Rated power: 200W. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W52TB30-K4 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Rated power: 200W Input voltage: AC 100-240V 50Hz Lamp beads: 3 in 1 lamp beads, 5 pieces, 30 pieces W/piece Color: Blac Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Rated power",
           "value": "200W"
-        },
-        {
-          "label": "Input voltage",
-          "value": "AC 100-240V 50Hz"
-        },
-        {
-          "label": "Color",
-          "value": "Black"
-        },
-        {
-          "label": "Material",
-          "value": "Aluminum"
-        },
-        {
-          "label": "Control mode",
-          "value": "DMX512, RDM, master-slave, self-propelled, voice controlled"
-        },
-        {
-          "label": "channels",
-          "value": "7, 15, 22 channels"
-        },
-        {
-          "label": "Waterproof grade",
-          "value": "IP65"
-        },
-        {
-          "label": "Working life",
-          "value": "50000 hours"
-        },
-        {
-          "label": "level",
-          "value": "256"
-        },
-        {
-          "label": "Net weight",
-          "value": "4.5Kg"
-        },
-        {
-          "label": "Gross weight",
-          "value": "6.0Kg"
         },
         {
           "label": "EXW Price",
@@ -22172,6 +22132,10 @@
         {
           "label": "EXW Price (RMB)",
           "value": "￥660"
+        },
+        {
+          "label": "With Connectors",
+          "value": "US$106"
         },
         {
           "label": "Price Terms",
@@ -22194,16 +22158,15 @@
       "image": "assets/images/products/rg-w52tb30-k4.jpg",
       "images": [
         "assets/images/products/rg-w52tb30-k4.jpg",
-        "assets/images/products/rg-w52tb30-k4-2.jpg",
-        "assets/images/products/rg-w52tb30-k4-3.jpg"
+        "assets/images/products/rg-w52tb30-k4-2.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "100usd with connectors",
+      "priceTiers": "$100 $106 with connectors make as wall",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 1,
-      "sourceRow": 9,
+      "sourceRow": 2,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -22223,79 +22186,11 @@
       "iconColor": "#ff6b00",
       "tagline": "Outdoor 5leds 30w RGBW 4in",
       "shortDesc": "RG-W52TB30-K5 Outdoor 5leds 30w RGBW 4in1 led matrix light. Factory EXW from US$114",
-      "longDesc": "RG-W52TB30-K5 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Input voltage: AC100-240V, 50/60Hz. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W52TB30-K5 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Input voltage: AC100-240V, 50/60Hz Maximum power consumption: 160W Light source type: 5 pieces of 30W COB RGBW four in o Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Input voltage",
-          "value": "AC100-240V, 50/60Hz"
-        },
-        {
-          "label": "power consumption",
-          "value": "160W"
-        },
-        {
-          "label": "type",
-          "value": "5 pieces of 30W COB RGBW four in one, single point control"
-        },
-        {
-          "label": "lifespan",
-          "value": "50000 hours"
-        },
-        {
-          "label": "Beam angle",
-          "value": "12 °/24 °/36 °"
-        },
-        {
-          "label": "screen",
-          "value": "Nixie tube"
-        },
-        {
-          "label": "Control mode",
-          "value": "DMX512, master/slave, self-propelled"
-        },
-        {
-          "label": "channels",
-          "value": "9/25 channel mode"
-        },
-        {
-          "label": "Dimming",
-          "value": "0-100% linear smooth dimming"
-        },
-        {
-          "label": "Strobe",
-          "value": "1-25 times/second"
-        },
-        {
-          "label": "mode",
-          "value": "Free cooling"
-        },
-        {
-          "label": "protection",
-          "value": "Automatically adjust the output power when the lamp temperature is too high"
-        },
-        {
-          "label": "material",
-          "value": "stretched aluminum"
-        },
-        {
-          "label": "strength",
-          "value": "1.5KV"
-        },
-        {
-          "label": "resistance",
-          "value": "＞ 2 MΩ"
-        },
-        {
-          "label": "Protection level",
-          "value": "IP65"
-        },
-        {
-          "label": "Net weight",
-          "value": "5.05Kg"
-        },
-        {
-          "label": "Packaging size",
-          "value": "530 * 105 * 195mm"
+          "value": "AC100-240V, 50/60Hz Maximum"
         },
         {
           "label": "EXW Price",
@@ -22304,6 +22199,10 @@
         {
           "label": "EXW Price (RMB)",
           "value": "￥750"
+        },
+        {
+          "label": "With Connectors",
+          "value": "US$118"
         },
         {
           "label": "Price Terms",
@@ -22326,15 +22225,16 @@
       "image": "assets/images/products/rg-w52tb30-k5.jpg",
       "images": [
         "assets/images/products/rg-w52tb30-k5.jpg",
-        "assets/images/products/rg-w52tb30-k5-2.jpg"
+        "assets/images/products/rg-w52tb30-k5-2.jpg",
+        "assets/images/products/rg-w52tb30-k5-3.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "114usd with connectors",
+      "priceTiers": "$114 $118 with connectors make as wall",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 1,
-      "sourceRow": 10,
+      "sourceRow": 3,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -22354,31 +22254,11 @@
       "iconColor": "#ff6b00",
       "tagline": "LED matrix pixel beam ligh",
       "shortDesc": "LED matrix pixel beam light RGWS100A-36P3W. Factory EXW from US$65",
-      "longDesc": "RGWS100A-36P3W is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Light source 3535 3W lamp beads 36 RGB 3in1. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RGWS100A-36P3W is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Light source 3535 3W lamp beads 36 RGB 3in1 Total power 100 W Channel mode 9CH/108CH Control mode: standard DMX512 signa Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
-          "label": "Control mode",
-          "value": "standard DMX512 signal protocol,"
-        },
-        {
           "label": "technology",
-          "value": "FLICKER FREE 10KHz"
-        },
-        {
-          "label": "Net Weight",
-          "value": "2.4kg"
-        },
-        {
-          "label": "Gross Weight",
-          "value": "3kg"
-        },
-        {
-          "label": "Quantity",
-          "value": "8pcs"
-        },
-        {
-          "label": "Package Size",
-          "value": "105 * 38 * 32cm / 8pcs in 1,23.6KG/ctn"
+          "value": "FLICKER FREE 10KHz dimming refresh PWM strobe, shooting, no flicker.Net"
         },
         {
           "label": "EXW Price",
@@ -22389,17 +22269,16 @@
           "value": "￥400"
         },
         {
+          "label": "Volume Price",
+          "value": "US$60 (over 30 pcs)"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "Light source 3535 3W lamp beads 36 RGB 3in1",
-        "Total power 100 W",
-        "Channel mode 9CH/108CH",
-        "built-in a variety of effect programs, voice control,",
-        "self-walking, voice control effect is excellent",
-        "Built-in RDM512 protocol and so on!"
+        "RGWS100A-36P3W"
       ],
       "applications": [
         "Stage",
@@ -22414,10 +22293,7 @@
       "image": "assets/images/products/rgws100a-36p3w.jpg",
       "images": [
         "assets/images/products/rgws100a-36p3w.jpg",
-        "assets/images/products/rgws100a-36p3w-2.jpg",
-        "assets/images/products/rgws100a-36p3w-3.jpg",
-        "assets/images/products/rgws100a-36p3w-4.jpg",
-        "assets/images/products/rgws100a-36p3w-5.jpg"
+        "assets/images/products/rgws100a-36p3w-2.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
@@ -22425,7 +22301,7 @@
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 30,
-      "sourceRow": 11,
+      "sourceRow": 4,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -22445,31 +22321,11 @@
       "iconColor": "#ff6b00",
       "tagline": "12x3w 2in1 LED matrix ligh",
       "shortDesc": "RG-W37IB72-Kf12V3 12x3w 2in1 LED matrix light. Factory EXW from US$69",
-      "longDesc": "RG-W37IB72-Kf12V3 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. LED matrix light 2in1. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W37IB72-Kf12V3 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. LED matrix light 2in1 Power supply: AC100-240V/50-60Hz Power: 72W Light source: 12*3W + 72*0.5W LED Main light source: 1 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Power supply",
           "value": "AC100-240V/50-60Hz"
-        },
-        {
-          "label": "Power",
-          "value": "72W"
-        },
-        {
-          "label": "Light source",
-          "value": "12*3W + 72*0.5W LED"
-        },
-        {
-          "label": "light source",
-          "value": "12*3W warm white light can be controlled separately"
-        },
-        {
-          "label": "light source",
-          "value": "72*0.5W RGB background auxiliary light source"
-        },
-        {
-          "label": "Beam angle",
-          "value": "4°"
         },
         {
           "label": "EXW Price",
@@ -22480,16 +22336,16 @@
           "value": "￥450"
         },
         {
+          "label": "Volume Price",
+          "value": "US$66 (over 100 pcs)"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "LED matrix light 2in1",
-        "Camera without flicker technology, high frequency of 1200Hz",
-        "Advanced 16-bit linear dimming technology for excellent dimming",
-        "4 DMX channel mode options,",
-        "LED digital tube setting interface"
+        "RG-W37IB72-Kf12V3"
       ],
       "applications": [
         "Stage",
@@ -22504,15 +22360,18 @@
       "image": "assets/images/products/rg-w37ib72-kf12v3.jpg",
       "images": [
         "assets/images/products/rg-w37ib72-kf12v3.jpg",
-        "assets/images/products/rg-w37ib72-kf12v3-2.jpg"
+        "assets/images/products/rg-w37ib72-kf12v3-2.jpg",
+        "assets/images/products/rg-w37ib72-kf12v3-3.jpg",
+        "assets/images/products/rg-w37ib72-kf12v3-4.jpg",
+        "assets/images/products/rg-w37ib72-kf12v3-5.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "69usd 66usd(over 100pcs)",
+      "priceTiers": "$69 $66( over 100pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 100,
-      "sourceRow": 12,
+      "sourceRow": 5,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -22532,51 +22391,11 @@
       "iconColor": "#ff6b00",
       "tagline": "led color change matrix ba",
       "shortDesc": "RG-W39IB72-Kf12V3 led color change matrix bar. Factory EXW from US$79",
-      "longDesc": "RG-W39IB72-Kf12V3 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Input Voltage: AC90V-240V, 50/60Hz. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W39IB72-Kf12V3 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Input Voltage: AC90V-240V, 50/60Hz Power: 120W LED main light beam angle: 4° LED main light quantity: 12 Single LED powe Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Input Voltage",
           "value": "AC90V-240V, 50/60Hz"
-        },
-        {
-          "label": "Power",
-          "value": "120W"
-        },
-        {
-          "label": "beam angle",
-          "value": "4°"
-        },
-        {
-          "label": "quantity",
-          "value": "12"
-        },
-        {
-          "label": "LED power",
-          "value": "3W"
-        },
-        {
-          "label": "sources",
-          "value": "144*0.2w"
-        },
-        {
-          "label": "sources",
-          "value": "156*0.5w"
-        },
-        {
-          "label": "mode",
-          "value": "DMX/auto/sound control"
-        },
-        {
-          "label": "size",
-          "value": "108*26*44CM"
-        },
-        {
-          "label": "Net weight",
-          "value": "24KG"
-        },
-        {
-          "label": "Gross weight",
-          "value": "27KG"
         },
         {
           "label": "EXW Price",
@@ -22587,12 +22406,16 @@
           "value": "￥500"
         },
         {
+          "label": "Volume Price",
+          "value": "US$72 (over 50 pcs)"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "Advanced 16-bit linear dimming technology to achieve an excellent dimming effect."
+        "RG-W39IB72-Kf12V3"
       ],
       "applications": [
         "Stage",
@@ -22611,11 +22434,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "79usd 72usd(over 50pcs)",
+      "priceTiers": "79USD 72USD(More than 50pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 50,
-      "sourceRow": 13,
+      "sourceRow": 6,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -22635,39 +22458,11 @@
       "iconColor": "#ff6b00",
       "tagline": "14x30w 4in1 outdoor led wa",
       "shortDesc": "RG-W38TB30-Ke14 14x30w 4in1 outdoor led wall washer light. Factory EXW from US$166",
-      "longDesc": "RG-W38TB30-Ke14 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:1055x165x110mm. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W38TB30-Ke14 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:1055x165x110mm Net Weight:7.4KG Gross Weight:7.9KG Led Quantity:14x4in1 (red,green,blue,white） Rated Power:350W Inp Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Size",
           "value": "1055x165x110mm"
-        },
-        {
-          "label": "Net Weight",
-          "value": "7.4KG"
-        },
-        {
-          "label": "Led Quantity",
-          "value": "14x4in1 (red,green,blue,white）"
-        },
-        {
-          "label": "Rated Power",
-          "value": "350W"
-        },
-        {
-          "label": "Control Mode",
-          "value": "Auto-Run-Mode、DMX 512、Sound Active Mode"
-        },
-        {
-          "label": "DMX Channel",
-          "value": "6、9、33、61channels"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "50°"
-        },
-        {
-          "label": "Protect Level",
-          "value": "IP65"
         },
         {
           "label": "EXW Price",
@@ -22676,6 +22471,10 @@
         {
           "label": "EXW Price (RMB)",
           "value": "￥1100"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$159 (over 100 pcs)"
         },
         {
           "label": "Price Terms",
@@ -22702,11 +22501,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "166usd 159usd(over 100pcs)",
+      "priceTiers": "$166 $159(over 100 pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 100,
-      "sourceRow": 14,
+      "sourceRow": 7,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -22726,55 +22525,11 @@
       "iconColor": "#ff6b00",
       "tagline": "18leds 6in1 full color out",
       "shortDesc": "RG-W39TB12-Kg18 18leds 6in1 full color outdoor waterproof wall washer light. Factory EXW from US$78",
-      "longDesc": "RG-W39TB12-Kg18 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. RG-W39TB12-Kg18. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W39TB12-Kg18 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. RG-W39TB12-Kg18 18leds 6in1 full color waterproof wall washer light Input voltage: AC90-240V 50-60HZ Power: 200W Lamp co Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Input voltage",
           "value": "AC90-240V 50-60HZ"
-        },
-        {
-          "label": "Power",
-          "value": "200W"
-        },
-        {
-          "label": "color",
-          "value": "red, green, blue, white, yellow, purple"
-        },
-        {
-          "label": "angle",
-          "value": "40 degrees"
-        },
-        {
-          "label": "Light source",
-          "value": "18 10-watt full-color 6-in-1 lamp beads"
-        },
-        {
-          "label": "Channel",
-          "value": "6/10CH"
-        },
-        {
-          "label": "Chassis material",
-          "value": "aluminum alloy"
-        },
-        {
-          "label": "Control mode",
-          "value": "voice control/self-propelled/DMX512/master-slave"
-        },
-        {
-          "label": "Display",
-          "value": "LED digital display"
-        },
-        {
-          "label": "Waterproof grade",
-          "value": "IP65"
-        },
-        {
-          "label": "Product weight",
-          "value": "5KG"
-        },
-        {
-          "label": "Packing size",
-          "value": "1 in 1 105*12*20cm"
         },
         {
           "label": "EXW Price",
@@ -22785,17 +22540,20 @@
           "value": "￥530"
         },
         {
-          "label": "Price Terms",
-          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+          "label": "Volume Price",
+          "value": "US$74 (over 100 pcs)"
         },
         {
           "label": "Piont Control",
           "value": "US$93"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "RG-W39TB12-Kg18",
-        "18leds 6in1 full color waterproof wall washer light"
+        "RG-W39TB12-Kg18"
       ],
       "applications": [
         "Architectural",
@@ -22807,15 +22565,18 @@
       "phase": "Launch",
       "hero": false,
       "oem": true,
-      "image": "",
-      "images": [],
+      "image": "assets/images/products/rg-w39tb12-kg18.jpg",
+      "images": [
+        "assets/images/products/rg-w39tb12-kg18.jpg",
+        "assets/images/products/rg-w39tb12-kg18-2.jpg"
+      ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "78usd 74usd(over 100pcs)",
+      "priceTiers": "$78 $74(over 100pcs )",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 100,
-      "sourceRow": 15,
+      "sourceRow": 8,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -22835,39 +22596,11 @@
       "iconColor": "#ff6b00",
       "tagline": "14x30w 3in1 outdoor led wa",
       "shortDesc": "RG-W38TB30-Kf14 14x30w 3in1 outdoor led wall washer light. Factory EXW from US$137",
-      "longDesc": "RG-W38TB30-Kf14 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:1055x165x110mm. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W38TB30-Kf14 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:1055x165x110mm Net Weight:7.4KG Gross Weight:7.9KG Led Quantity:14x3in1 (red,green,blue） Rated Power:350W Input Vol Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Size",
           "value": "1055x165x110mm"
-        },
-        {
-          "label": "Net Weight",
-          "value": "7.4KG"
-        },
-        {
-          "label": "Led Quantity",
-          "value": "14x3in1 (red,green,blue）"
-        },
-        {
-          "label": "Rated Power",
-          "value": "350W"
-        },
-        {
-          "label": "Control Mode",
-          "value": "Auto-Run-Mode、DMX 512、Sound Active Mode"
-        },
-        {
-          "label": "DMX Channel",
-          "value": "6、9、33、62channels"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "50°"
-        },
-        {
-          "label": "Protect Level",
-          "value": "IP65"
         },
         {
           "label": "EXW Price",
@@ -22876,6 +22609,10 @@
         {
           "label": "EXW Price (RMB)",
           "value": "￥900"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$129 (over 100 pcs)"
         },
         {
           "label": "Price Terms",
@@ -22898,16 +22635,15 @@
       "image": "assets/images/products/rg-w38tb30-kf14.jpg",
       "images": [
         "assets/images/products/rg-w38tb30-kf14.jpg",
-        "assets/images/products/rg-w38tb30-kf14-2.jpg",
-        "assets/images/products/rg-w38tb30-kf14-3.jpg"
+        "assets/images/products/rg-w38tb30-kf14-2.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "137usd 129usd(over 100pcs)",
+      "priceTiers": "$137 $129(over 100 pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 100,
-      "sourceRow": 17,
+      "sourceRow": 10,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -22927,59 +22663,11 @@
       "iconColor": "#ff6b00",
       "tagline": "NEW 18x10w 4in1 outdoor le",
       "shortDesc": "RG-W35TB10-Ke18 NEW 18x10w 4in1 outdoor led wall washer light. Factory EXW from US$58",
-      "longDesc": "RG-W35TB10-Ke18 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Light source: 18leds 4-in-1 RGBW 10W . Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W35TB10-Ke18 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Light source: 18leds 4-in-1 RGBW 10W Lens angle: 25° 45° 60° optional Input voltage: AC90-240V 50-60HZ Total power: 180W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Light source",
           "value": "18leds 4-in-1 RGBW 10W"
-        },
-        {
-          "label": "Lens angle",
-          "value": "25° 45° 60° optional"
-        },
-        {
-          "label": "Input voltage",
-          "value": "AC90-240V 50-60HZ"
-        },
-        {
-          "label": "Total power",
-          "value": "180W"
-        },
-        {
-          "label": "Channel",
-          "value": "8CH"
-        },
-        {
-          "label": "Control",
-          "value": "stand-alone self-propelled, master-slave, voice control, DMX control"
-        },
-        {
-          "label": "Level",
-          "value": "IP65"
-        },
-        {
-          "label": "Chassis color",
-          "value": "black/white optional"
-        },
-        {
-          "label": "material",
-          "value": "aluminum alloy"
-        },
-        {
-          "label": "Body size",
-          "value": "100*9*14CM"
-        },
-        {
-          "label": "Packing size",
-          "value": "108*11*17CM"
-        },
-        {
-          "label": "Net weight",
-          "value": "4KG"
-        },
-        {
-          "label": "Gross weight",
-          "value": "5KG"
         },
         {
           "label": "EXW Price",
@@ -22988,6 +22676,14 @@
         {
           "label": "EXW Price (RMB)",
           "value": "￥406"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$56 (over 50 pcs)"
+        },
+        {
+          "label": "Point Control",
+          "value": "US$69"
         },
         {
           "label": "Price Terms",
@@ -23010,15 +22706,16 @@
       "image": "assets/images/products/rg-w35tb10-ke18.jpg",
       "images": [
         "assets/images/products/rg-w35tb10-ke18.jpg",
-        "assets/images/products/rg-w35tb10-ke18-2.jpg"
+        "assets/images/products/rg-w35tb10-ke18-2.jpg",
+        "assets/images/products/rg-w35tb10-ke18-3.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "58usd 56usd(over 50pcs) 5usd(over 0pcs)",
+      "priceTiers": "58usd 56usd (over50pcs) 69usd（piont control）65usd(point control over 50pcs)",
       "currency": "USD",
       "incoterm": "EXW",
-      "moq": 0,
-      "sourceRow": 18,
+      "moq": 50,
+      "sourceRow": 11,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -23038,39 +22735,11 @@
       "iconColor": "#ff6b00",
       "tagline": "18x12w 6in1 outdoor led wa",
       "shortDesc": "RG-W38TB12-Kg18 18x12w 6in1 outdoor led wall washer light. Factory EXW from US$119",
-      "longDesc": "RG-W38TB12-Kg18 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:1055x165x110mm. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W38TB12-Kg18 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:1055x165x110mm Net Weight:7.4KG Gross Weight:7.9KG Led Quantity:18x6in1 (red, green, blue, white, yellow, purple） R Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Size",
           "value": "1055x165x110mm"
-        },
-        {
-          "label": "Net Weight",
-          "value": "7.4KG"
-        },
-        {
-          "label": "Led Quantity",
-          "value": "18x6in1 (red, green, blue, white, yellow, purple）"
-        },
-        {
-          "label": "Rated Power",
-          "value": "200W"
-        },
-        {
-          "label": "Control Mode",
-          "value": "Auto-Run-Mode、DMX 512、Sound Active Mode"
-        },
-        {
-          "label": "DMX Channel",
-          "value": "6、9、33、62channels"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "51°"
-        },
-        {
-          "label": "Protect Level",
-          "value": "IP65"
         },
         {
           "label": "EXW Price",
@@ -23079,6 +22748,10 @@
         {
           "label": "EXW Price (RMB)",
           "value": "￥780"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$113 (over 100 pcs)"
         },
         {
           "label": "Price Terms",
@@ -23105,11 +22778,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "119usd 113usd(over 100pcs)",
+      "priceTiers": "$119 $113(over 100 pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 100,
-      "sourceRow": 19,
+      "sourceRow": 12,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -23129,23 +22802,11 @@
       "iconColor": "#ff6b00",
       "tagline": "9pcs*3W RGB",
       "shortDesc": "RG-W12TB3-SRf9 9pcs*3W RGB. Factory EXW from US$48",
-      "longDesc": "RG-W12TB3-SRf9 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. 9LEds*3W led wall washer. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W12TB3-SRf9 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. 9LEds*3W led wall washer Size: 389x130.5x172mm (including barndoor) Net Weight: 2.4kg Beam Angle:45° DMX Channels:3 / 6C Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Size",
           "value": "389x130.5x172mm (including barndoor)"
-        },
-        {
-          "label": "Net Weight",
-          "value": "2.4kg"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "45°"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "3 / 6CH"
         },
         {
           "label": "EXW Price",
@@ -23156,12 +22817,16 @@
           "value": "￥312"
         },
         {
+          "label": "Volume Price",
+          "value": "US$45 (over 100 pcs)"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "9LEds*3W led wall washer"
+        "RG-W12TB3-SRf9"
       ],
       "applications": [
         "Architectural",
@@ -23176,16 +22841,15 @@
       "image": "assets/images/products/rg-w12tb3-srf9.jpg",
       "images": [
         "assets/images/products/rg-w12tb3-srf9.jpg",
-        "assets/images/products/rg-w12tb3-srf9-2.jpg",
-        "assets/images/products/rg-w12tb3-srf9-3.jpg"
+        "assets/images/products/rg-w12tb3-srf9-2.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "48usd 45usd(over 100pcs)",
+      "priceTiers": "$48 $45(over 100pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 100,
-      "sourceRow": 20,
+      "sourceRow": 13,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -23196,7 +22860,7 @@
       "sub": "wall-washer",
       "subLabel": "Wall Washer & City Color",
       "family": "par",
-      "price": 80.0,
+      "price": 85.0,
       "badge": "",
       "rating": 0.0,
       "reviews": 0,
@@ -23204,32 +22868,24 @@
       "icon": "◉",
       "iconColor": "#ff6b00",
       "tagline": "Indoor 27LEDsx3W RGB",
-      "shortDesc": "RG-W35IB3-SRf27 Indoor 27LEDsx3W RGB. Factory EXW from US$80",
-      "longDesc": "RG-W35IB3-SRf27 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Indoor 27*3W RGB. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "shortDesc": "RG-W35IB3-SRf27 Indoor 27LEDsx3W RGB. Factory EXW from US$85",
+      "longDesc": "RG-W35IB3-SRf27 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Indoor 27*3W RGB Size: 968x152x129mm (including hanging bar ) Net Weight: 4.5kg Beam Angle:25° DMX Channels:3 / 12CH Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Size",
           "value": "968x152x129mm (including hanging bar )"
         },
         {
-          "label": "Net Weight",
-          "value": "4.5kg"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "25°"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "3 / 12CH"
-        },
-        {
           "label": "EXW Price",
-          "value": "US$80 / unit"
+          "value": "US$85 / unit"
         },
         {
           "label": "EXW Price (RMB)",
           "value": "￥525"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$80 (over 100 pcs)"
         },
         {
           "label": "Price Terms",
@@ -23237,7 +22893,7 @@
         }
       ],
       "features": [
-        "Indoor 27*3W RGB"
+        "RG-W35IB3-SRf27"
       ],
       "applications": [
         "Architectural",
@@ -23252,23 +22908,21 @@
       "images": [
         "assets/images/products/rg-w35ib3-srf27.jpg",
         "assets/images/products/rg-w35ib3-srf27-2.jpg",
-        "assets/images/products/rg-w35ib3-srf27-3.jpg",
-        "assets/images/products/rg-w35ib3-srf27-4.jpg",
-        "assets/images/products/rg-w35ib3-srf27-5.jpg"
+        "assets/images/products/rg-w35ib3-srf27-3.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "80usd 80usd(over 100pcs)",
+      "priceTiers": "85 $80(over 100pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 100,
-      "sourceRow": 21,
+      "sourceRow": 14,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
-      "id": "24pcs-1-5w-rgb-outdoor-led-bar-wall-washer",
+      "id": "24pcs-1-5w-rgb-outdoor-led",
       "name": "24pcs 1.5W RGB Outdoor LED bar Wall Washer",
-      "model": "24pcs-1-5w-rgb-outdoor-led-bar-wall-washer",
+      "model": "24pcs 1.5W RGB Outdoor LED bar",
       "category": "par",
       "sub": "wall-washer",
       "subLabel": "Wall Washer & City Color",
@@ -23282,55 +22936,11 @@
       "iconColor": "#ff6b00",
       "tagline": "24pcs 1.5W RGB Outdoor LED",
       "shortDesc": "24pcs 1.5W RGB Outdoor LED bar Wall Washer. Factory EXW from US$49",
-      "longDesc": "24pcs 1.5W RGB Outdoor LED bar Wall Washer is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. led:24*1.5w RGB 3 IN 1. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "24pcs 1.5W RGB Outdoor LED bar is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. led:24*1.5w RGB 3 IN 1 Rated power: 36W Input voltage: DC 12V Working life: 50000 hours Gray level: 256 Lens angle: 45°  Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "led",
           "value": "24*1.5w RGB 3 IN 1"
-        },
-        {
-          "label": "Rated power",
-          "value": "36W"
-        },
-        {
-          "label": "Input voltage",
-          "value": "DC 12V"
-        },
-        {
-          "label": "Working life",
-          "value": "50000 hours"
-        },
-        {
-          "label": "Gray level",
-          "value": "256"
-        },
-        {
-          "label": "Lens angle",
-          "value": "45°"
-        },
-        {
-          "label": "method",
-          "value": "natural convection"
-        },
-        {
-          "label": "size",
-          "value": "1000×50×65mm"
-        },
-        {
-          "label": "Net weight",
-          "value": "1.5KG"
-        },
-        {
-          "label": "Main material",
-          "value": "aluminum profile"
-        },
-        {
-          "label": "Ambient temperature",
-          "value": "-20℃～+40℃"
-        },
-        {
-          "label": "environment",
-          "value": "outdoor use"
         },
         {
           "label": "EXW Price",
@@ -23341,12 +22951,16 @@
           "value": "￥310"
         },
         {
+          "label": "Volume Price",
+          "value": "US$43 (over 100 pcs)"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "Gross weight:"
+        "24pcs 1.5W RGB Outdoor LED bar"
       ],
       "applications": [
         "Architectural",
@@ -23358,17 +22972,20 @@
       "phase": "Launch",
       "hero": false,
       "oem": true,
-      "image": "assets/images/products/24pcs-1-5w-rgb-outdoor-led-bar-wall-washer.jpg",
+      "image": "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg",
       "images": [
-        "assets/images/products/24pcs-1-5w-rgb-outdoor-led-bar-wall-washer.jpg"
+        "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg",
+        "assets/images/products/24pcs-1-5w-rgb-outdoor-led-2.jpg",
+        "assets/images/products/24pcs-1-5w-rgb-outdoor-led-3.jpg",
+        "assets/images/products/24pcs-1-5w-rgb-outdoor-led-4.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "49usd 43usd(over 100pcs)",
+      "priceTiers": "$49 $43( more than 100pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 100,
-      "sourceRow": 22,
+      "sourceRow": 15,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -23388,7 +23005,7 @@
       "iconColor": "#ff6b00",
       "tagline": "decode",
       "shortDesc": "RG-CTCDM10A3-C decode. Factory EXW from US$24",
-      "longDesc": "RG-CTCDM10A3-C is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. decode for 24*1.5w led bar,one decode for 10 led bar. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-CTCDM10A3-C is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. decode for 24*1.5w led bar,one decode for 10 led bar Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "EXW Price",
@@ -23421,11 +23038,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "24usd",
+      "priceTiers": "24",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 1,
-      "sourceRow": 23,
+      "sourceRow": 16,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -23443,9 +23060,9 @@
       "sold": "",
       "icon": "◉",
       "iconColor": "#ff6b00",
-      "tagline": "Wall Washer",
+      "tagline": "Wall Washer & City Color",
       "shortDesc": "FG-PSSV400F-F. Factory EXW from US$16",
-      "longDesc": "FG-PSSV400F-F is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. 400w power supply for 24*1.5w led bar,1 power for 10 led bar. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "FG-PSSV400F-F is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. 400w power supply for 24*1.5w led bar,1 power for 10 led bar Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "EXW Price",
@@ -23474,16 +23091,15 @@
       "oem": true,
       "image": "assets/images/products/fg-pssv400f-f.jpg",
       "images": [
-        "assets/images/products/fg-pssv400f-f.jpg",
-        "assets/images/products/fg-pssv400f-f-2.jpg"
+        "assets/images/products/fg-pssv400f-f.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "16usd",
+      "priceTiers": "16",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 1,
-      "sourceRow": 24,
+      "sourceRow": 17,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -23503,23 +23119,11 @@
       "iconColor": "#ff6b00",
       "tagline": "18Leds 8W Indoor Wall Wash",
       "shortDesc": "RG-W39IB8-Ke18A 18Leds 8W Indoor Wall Washer New. Factory EXW from US$77",
-      "longDesc": "RG-W39IB8-Ke18A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:1000x146x65mm               . Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W39IB8-Ke18A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:1000x146x65mm Net weight:5KG DMX Channels:15CH Control mode:Auto-run-mode,DMX 512,sound active mode Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Size",
           "value": "1000x146x65mm"
-        },
-        {
-          "label": "Net weight",
-          "value": "5KG"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "15CH"
-        },
-        {
-          "label": "Control mode",
-          "value": "Auto-run-mode,DMX 512,sound active mode"
         },
         {
           "label": "EXW Price",
@@ -23528,6 +23132,10 @@
         {
           "label": "EXW Price (RMB)",
           "value": "￥495"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$75 (over 50 pcs)"
         },
         {
           "label": "Price Terms",
@@ -23554,11 +23162,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "77usd 5usd(over 0pcs)",
+      "priceTiers": "$77 $75（Over50pcs）",
       "currency": "USD",
       "incoterm": "EXW",
-      "moq": 0,
-      "sourceRow": 25,
+      "moq": 50,
+      "sourceRow": 18,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -23578,27 +23186,11 @@
       "iconColor": "#ff6b00",
       "tagline": "led wireless batter led wa",
       "shortDesc": "RG-W18IB8-Ke8AM led wireless batter led wall washer light. Factory EXW from US$99",
-      "longDesc": "RG-W18IB8-Ke8AM is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Wireless DMX (WDMX) System . Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W18IB8-Ke8AM is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Wireless DMX (WDMX) System Built-in lithium-ion battery: 16Ah 12.6V 8LEDs*10W , RGBW 4IN1 Four section effect control Si Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "battery",
-          "value": "16Ah 12.6V  8LEDs*10W , RGBW 4IN1"
-        },
-        {
-          "label": "Size",
-          "value": "452x74x119mm"
-        },
-        {
-          "label": "W",
-          "value": "4.3KG"
-        },
-        {
-          "label": "color",
-          "value": "RGBW 4in1 10WX6pcs"
-        },
-        {
-          "label": "Channel",
-          "value": "7/7/19CH"
+          "value": "16Ah 12.6V 8LEDs*10W , RGBW 4IN1 Four section effect control"
         },
         {
           "label": "EXW Price",
@@ -23609,15 +23201,16 @@
           "value": "￥650"
         },
         {
+          "label": "5IN1",
+          "value": "US$106"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "Wireless DMX (WDMX) System",
-        "Four section effect control",
-        "Control Mode:",
-        "Stand-alone mode, DMX-512 mode, Sound active mode"
+        "RG-W18IB8-Ke8AM"
       ],
       "applications": [
         "Architectural",
@@ -23632,22 +23225,21 @@
       "image": "assets/images/products/rg-w18ib8-ke8am.jpg",
       "images": [
         "assets/images/products/rg-w18ib8-ke8am.jpg",
-        "assets/images/products/rg-w18ib8-ke8am-2.jpg",
-        "assets/images/products/rg-w18ib8-ke8am-3.jpg"
+        "assets/images/products/rg-w18ib8-ke8am-2.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "99usd",
+      "priceTiers": "$99 4in1 $106 5in1",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 1,
-      "sourceRow": 26,
+      "sourceRow": 19,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
       "id": "flycase",
       "name": "Flycase",
-      "model": "flycase",
+      "model": "Flycase",
       "category": "par",
       "sub": "wall-washer",
       "subLabel": "Wall Washer & City Color",
@@ -23660,16 +23252,24 @@
       "icon": "◉",
       "iconColor": "#ff6b00",
       "tagline": "Flycase",
-      "shortDesc": "Flycase. Factory EXW from US$173",
-      "longDesc": "Flycase is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. 6pcs/12pcs in one case,inlcuding the power charge. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "shortDesc": "Flycase. Factory EXW from US$173/case",
+      "longDesc": "Flycase is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. 6pcs/12pcs in one case,inlcuding the power charge Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "EXW Price",
-          "value": "US$173 / unit"
+          "value": "US$173 / unit (per case)"
         },
         {
           "label": "EXW Price (RMB)",
           "value": "￥1140"
+        },
+        {
+          "label": "Case Option",
+          "value": "6 pcs / case — US$173 per case"
+        },
+        {
+          "label": "Case Option",
+          "value": "12 pcs / case — US$228 per case"
         },
         {
           "label": "Price Terms",
@@ -23677,7 +23277,8 @@
         }
       ],
       "features": [
-        "6pcs/12pcs in one case,inlcuding the power charge"
+        "6pcs/12pcs in one case,inlcuding the power charge",
+        "Sold by the case: 6 pcs / case = US$173, 12 pcs / case = US$228"
       ],
       "applications": [
         "Accessory",
@@ -23695,11 +23296,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "173usd 173usd(over 6pcs) 228usd(over 12pcs)",
+      "priceTiers": "$173(6pcs /case) $228( 12pcs/case",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 6,
-      "sourceRow": 27,
+      "sourceRow": 20,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -23719,63 +23320,11 @@
       "iconColor": "#ff6b00",
       "tagline": "Outdoor waterproof 100W pu",
       "shortDesc": "RG-W12IB100-Ke1A Outdoor waterproof 100W purple uv light. Factory EXW from US$68",
-      "longDesc": "RG-W12IB100-Ke1A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. COB light source, UV light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W12IB100-Ke1A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. COB light source, UV light Lamp body size: 29 * 8.8 * 29cm led chip: 45 * 45MIN large chip Power: 100W Voltage: AC85V~26 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "body size",
           "value": "29 * 8.8 * 29cm"
-        },
-        {
-          "label": "led chip",
-          "value": "45 * 45MIN large chip"
-        },
-        {
-          "label": "Power",
-          "value": "100W"
-        },
-        {
-          "label": "Voltage",
-          "value": "AC85V~265V 50/60HZ"
-        },
-        {
-          "label": "Led type",
-          "value": "COB light source, UV LED"
-        },
-        {
-          "label": "led wavelength",
-          "value": "395nm, 405nm"
-        },
-        {
-          "label": "Luminous angle",
-          "value": "120 °"
-        },
-        {
-          "label": "Material",
-          "value": "Aluminum+Glass"
-        },
-        {
-          "label": "Waterproof grade",
-          "value": "IP65"
-        },
-        {
-          "label": "Warranty period",
-          "value": "2 years"
-        },
-        {
-          "label": "packaging size",
-          "value": "34 * 32 * 12 CM"
-        },
-        {
-          "label": "weight",
-          "value": "3 KG"
-        },
-        {
-          "label": "units",
-          "value": "16 KG"
-        },
-        {
-          "label": "units",
-          "value": "48* 44 * 35CM"
         },
         {
           "label": "EXW Price",
@@ -23786,16 +23335,21 @@
           "value": "￥480"
         },
         {
+          "label": "Volume Price",
+          "value": "US$59 (over 100 pcs)"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "COB light source, UV light"
+        "RG-W12IB100-Ke1A"
       ],
       "applications": [
-        "Accessory",
-        "Compatibility"
+        "Architectural",
+        "Event",
+        "Rental"
       ],
       "priority": "Standard",
       "phase": "Launch",
@@ -23804,15 +23358,16 @@
       "image": "assets/images/products/rg-w12ib100-ke1a.jpg",
       "images": [
         "assets/images/products/rg-w12ib100-ke1a.jpg",
-        "assets/images/products/rg-w12ib100-ke1a-2.jpg"
+        "assets/images/products/rg-w12ib100-ke1a-2.jpg",
+        "assets/images/products/rg-w12ib100-ke1a-3.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "68usd 59usd(over 100pcs)",
+      "priceTiers": "68 59(over 100pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 100,
-      "sourceRow": 28,
+      "sourceRow": 21,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -23832,59 +23387,11 @@
       "iconColor": "#ff6b00",
       "tagline": "24leds 10w RGBW 4in1 led c",
       "shortDesc": "RG-W12IB10-Ke6A 24leds 10w RGBW 4in1 led city color light outdoor. Factory EXW from US$125",
-      "longDesc": "RG-W12IB10-Ke6A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. 24 4-in-1 LED waterproof wall washing lamps. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W12IB10-Ke6A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. 24 4-in-1 LED waterproof wall washing lamps Voltage: AC100V-240V, 50/60Hz Total power: 200W Light source: 24 4-in-1 high Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Voltage",
           "value": "AC100V-240V, 50/60Hz"
-        },
-        {
-          "label": "Total power",
-          "value": "200W"
-        },
-        {
-          "label": "Light source",
-          "value": "24 4-in-1 high-power lamp beads, RGBW, red, green, blue, white, 12W each"
-        },
-        {
-          "label": "source life",
-          "value": "500000-100000 hours"
-        },
-        {
-          "label": "Beam angle",
-          "value": "25 °"
-        },
-        {
-          "label": "Control mode",
-          "value": "standard DMX512 signal, master slave synchronization, self-propelled, voice control mode"
-        },
-        {
-          "label": "DMX channels",
-          "value": "4/8 channels"
-        },
-        {
-          "label": "Dimming",
-          "value": "0-100% linear dimming"
-        },
-        {
-          "label": "Stroboscopic",
-          "value": "1-20 times/second"
-        },
-        {
-          "label": "Display",
-          "value": "LED digital display"
-        },
-        {
-          "label": "Waterproof grade",
-          "value": "IP 65"
-        },
-        {
-          "label": "Carton size",
-          "value": "48X38X34CM"
-        },
-        {
-          "label": "Weight",
-          "value": "18KG"
         },
         {
           "label": "EXW Price",
@@ -23895,12 +23402,16 @@
           "value": "￥700"
         },
         {
+          "label": "Volume Price",
+          "value": "US$119 (over 50 pcs)"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "24 4-in-1 LED waterproof wall washing lamps"
+        "RG-W12IB10-Ke6A"
       ],
       "applications": [
         "Architectural",
@@ -23919,11 +23430,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "125usd 119usd(over 50pcs)",
+      "priceTiers": "125 119 (over 50pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 50,
-      "sourceRow": 29,
+      "sourceRow": 22,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -23943,71 +23454,11 @@
       "iconColor": "#ff6b00",
       "tagline": "24leds 10w UV led city col",
       "shortDesc": "RG-W12IUV10-Ke6A 24leds 10w UV led city color light outdoor. Factory EXW from US$135",
-      "longDesc": "RG-W12IUV10-Ke6A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. wave length:400-405(nm). Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W12IUV10-Ke6A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. wave length:400-405(nm) Luminous:15-25(Lm) direct voltage:3.2-3.6(VF) electricity:600（MA) Rated Power: 240W Input Voltag Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "length",
           "value": "400-405(nm)"
-        },
-        {
-          "label": "Luminous",
-          "value": "15-25(Lm)"
-        },
-        {
-          "label": "voltage",
-          "value": "3.2-3.6(VF)"
-        },
-        {
-          "label": "electricity",
-          "value": "600（MA)"
-        },
-        {
-          "label": "Rated Power",
-          "value": "240W"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AC 100-240V 50/60Hz"
-        },
-        {
-          "label": "Service Life",
-          "value": "50000hours"
-        },
-        {
-          "label": "Gray Level",
-          "value": "256"
-        },
-        {
-          "label": "Net Weight",
-          "value": "7.3Kg"
-        },
-        {
-          "label": "Gross Weight",
-          "value": "8.5Kg"
-        },
-        {
-          "label": "LEDs",
-          "value": "UV 10W/pcs   total 24pcs"
-        },
-        {
-          "label": "Color",
-          "value": "Black"
-        },
-        {
-          "label": "Material",
-          "value": "Die cast aluminum"
-        },
-        {
-          "label": "Package Size",
-          "value": "25.5x25.5x37cm/pcs"
-        },
-        {
-          "label": "Control mode",
-          "value": "Auto-run mode,DMX-512 mode, Sound active mode"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "4CH/8 CH"
         },
         {
           "label": "EXW Price",
@@ -24016,6 +23467,10 @@
         {
           "label": "EXW Price (RMB)",
           "value": "￥800"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$129 (over 50 pcs)"
         },
         {
           "label": "Price Terms",
@@ -24038,16 +23493,15 @@
       "image": "assets/images/products/rg-w12iuv10-ke6a.jpg",
       "images": [
         "assets/images/products/rg-w12iuv10-ke6a.jpg",
-        "assets/images/products/rg-w12iuv10-ke6a-2.jpg",
-        "assets/images/products/rg-w12iuv10-ke6a-3.jpg"
+        "assets/images/products/rg-w12iuv10-ke6a-2.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "135usd 129usd(over 50pcs)",
+      "priceTiers": "135 129(over 50pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 50,
-      "sourceRow": 30,
+      "sourceRow": 23,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -24067,59 +23521,11 @@
       "iconColor": "#ff6b00",
       "tagline": "Outdoor event wall washer",
       "shortDesc": "RG-W28TB8-Ke60A Outdoor event wall washer 60ledsx10w RGBW 4in1 led city color light. Factory EXW from US$275",
-      "longDesc": "RG-W28TB8-Ke60A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Outdoor waterproof  wall washer 60x10w rgbw 4in1 led city color light. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W28TB8-Ke60A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Outdoor waterproof wall washer 60x10w rgbw 4in1 led city color light Input Voltage: AC100-240V, 50/60Hz Power consumptio Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Input Voltage",
           "value": "AC100-240V, 50/60Hz"
-        },
-        {
-          "label": "Power consumption",
-          "value": "600w"
-        },
-        {
-          "label": "Light source",
-          "value": "60x10W RGBW 4in1 Color LED"
-        },
-        {
-          "label": "Beam angle",
-          "value": "25°45° 60°(optional)"
-        },
-        {
-          "label": "Strobe",
-          "value": "Electronic Strobe 0-50HZ"
-        },
-        {
-          "label": "Dimmer",
-          "value": "Electronic dimmer from 0 to 100%"
-        },
-        {
-          "label": "Protection class",
-          "value": "IP65"
-        },
-        {
-          "label": "material",
-          "value": "die-cast aluminum"
-        },
-        {
-          "label": "Control mode",
-          "value": "Auto, DMX, Master-slave"
-        },
-        {
-          "label": "DMX channels",
-          "value": "4/6/9CH"
-        },
-        {
-          "label": "Package",
-          "value": "Inside Foam+Carton"
-        },
-        {
-          "label": "case",
-          "value": "need customlize"
-        },
-        {
-          "label": "W",
-          "value": "18Kgs(Carton)"
         },
         {
           "label": "EXW Price",
@@ -24130,13 +23536,16 @@
           "value": "￥1870"
         },
         {
+          "label": "Volume Price",
+          "value": "US$255 (over 50 pcs)"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "Outdoor waterproof  wall washer 60x10w rgbw 4in1 led city color light",
-        "Barn door optional"
+        "RG-W28TB8-Ke60A"
       ],
       "applications": [
         "Architectural",
@@ -24151,15 +23560,16 @@
       "image": "assets/images/products/rg-w28tb8-ke60a.jpg",
       "images": [
         "assets/images/products/rg-w28tb8-ke60a.jpg",
-        "assets/images/products/rg-w28tb8-ke60a-2.jpg"
+        "assets/images/products/rg-w28tb8-ke60a-2.jpg",
+        "assets/images/products/rg-w28tb8-ke60a-3.jpg"
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "275usd 255usd(over 50pcs)",
+      "priceTiers": "275 255(over 50pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 50,
-      "sourceRow": 31,
+      "sourceRow": 24,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -24179,11 +23589,11 @@
       "iconColor": "#ff6b00",
       "tagline": "120*10W RGBW 4in1 LED City",
       "shortDesc": "RG-W25TB10-Ke120A 120*10W RGBW 4in1 LED City Color. Factory EXW from US$376",
-      "longDesc": "RG-W25TB10-Ke120A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Main Material Main body:Iron+alluminum alloy . Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W25TB10-Ke120A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Main Material Main body:Iron+alluminum alloy ControlMode Stand-alone mode, DMX-512 mode, Sound active mode DMX Channels  Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
-          "label": "Main body",
-          "value": "Iron+alluminum alloy"
+          "label": "Main Material Main body",
+          "value": "Iron+alluminum alloy ControlMode Stand-alone mode, DMX-512 mode, Sound active mode DMX Channels 4/8/12DMXChannels GrayLevel 256 level LEDs HighpowerLed10W/pcs,RGBW4IN1 ServiceLife 50000 Hrs Beam angle 35° ProtectLevel IP65 Input Voltage AC100-240V 50/60HZ Rated Power 1200Watts AmbientTemperature -20℃~+40℃ Dimensions 355×655×230mm NetWeight 26kg"
         },
         {
           "label": "EXW Price",
@@ -24194,17 +23604,16 @@
           "value": "￥2562"
         },
         {
+          "label": "Volume Price",
+          "value": "US$355 (over 20 pcs)"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "ControlMode Stand-alone mode, DMX-512 mode, Sound active mode",
-        "DMX Channels 4/8/12DMXChannels",
-        "GrayLevel 256 level",
-        "LEDs HighpowerLed10W/pcs,RGBW4IN1",
-        "ServiceLife 50000 Hrs",
-        "Beam angle 35°"
+        "RG-W25TB10-Ke120A"
       ],
       "applications": [
         "Architectural",
@@ -24223,11 +23632,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "376usd 355usd(over 20pcs)",
+      "priceTiers": "$376 $355 over 20PCs",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 20,
-      "sourceRow": 32,
+      "sourceRow": 25,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -24247,11 +23656,11 @@
       "iconColor": "#ff6b00",
       "tagline": "96*10W RGBW 4in1 outdoor L",
       "shortDesc": "RG-W25TB10-Ke96A 96*10W RGBW 4in1 outdoor LED City Color. Factory EXW from US$330",
-      "longDesc": "RG-W25TB10-Ke96A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Main Material Main body:Iron+alluminum alloy . Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W25TB10-Ke96A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Main Material Main body:Iron+alluminum alloy ControlMode Stand-alone mode, DMX-512 mode, Sound active mode DMX Channels  Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
-          "label": "Main body",
-          "value": "Iron+alluminum alloy"
+          "label": "Main Material Main body",
+          "value": "Iron+alluminum alloy ControlMode Stand-alone mode, DMX-512 mode, Sound active mode DMX Channels 4/8/12DMXChannels GrayLevel 256 level LEDs HighpowerLed10W/pcs,RGBW4IN1 ServiceLife 50000 Hrs Beam angle 35° ProtectLevel IP65 Input Voltage AC100-240V 50/60HZ Rated Power 1000Watts AmbientTemperature -20℃~+40℃ Dimensions 355×655×230mm NetWeight 26kg"
         },
         {
           "label": "EXW Price",
@@ -24267,12 +23676,7 @@
         }
       ],
       "features": [
-        "ControlMode Stand-alone mode, DMX-512 mode, Sound active mode",
-        "DMX Channels 4/8/12DMXChannels",
-        "GrayLevel 256 level",
-        "LEDs HighpowerLed10W/pcs,RGBW4IN1",
-        "ServiceLife 50000 Hrs",
-        "Beam angle 35°"
+        "RG-W25TB10-Ke96A"
       ],
       "applications": [
         "Architectural",
@@ -24291,11 +23695,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "330usd",
+      "priceTiers": "330",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 1,
-      "sourceRow": 33,
+      "sourceRow": 26,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -24315,43 +23719,11 @@
       "iconColor": "#ff6b00",
       "tagline": "180*3W RGB 3in1 outdoor le",
       "shortDesc": "RG-W35TB3-Kf180A 180*3W RGB 3in1 outdoor led city light. Factory EXW from US$281",
-      "longDesc": "RG-W35TB3-Kf180A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Rated Power 540W. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W35TB3-Kf180A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Rated Power 540W Input Voltage：AC 100-240V 50/60Hz Working life：50000Hrs Control mode：Auto-run-mode、DMX 512、sound active Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Input Voltage",
           "value": "AC 100-240V 50/60Hz"
-        },
-        {
-          "label": "Working life",
-          "value": "50000Hrs"
-        },
-        {
-          "label": "Control mode",
-          "value": "Auto-run-mode、DMX 512、sound active mode"
-        },
-        {
-          "label": "Dimensions",
-          "value": "680x440x485mm"
-        },
-        {
-          "label": "Net weight",
-          "value": "22Kg"
-        },
-        {
-          "label": "main material",
-          "value": "Aluminum"
-        },
-        {
-          "label": "Body color",
-          "value": "Black"
-        },
-        {
-          "label": "Ambient temperature",
-          "value": "-20℃～+40℃"
-        },
-        {
-          "label": "Environment",
-          "value": "Use outdoor"
         },
         {
           "label": "EXW Price",
@@ -24362,16 +23734,21 @@
           "value": "￥1900"
         },
         {
+          "label": "Volume Price",
+          "value": "US$267 (over 20 pcs)"
+        },
+        {
           "label": "Price Terms",
           "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
         }
       ],
       "features": [
-        "Rated Power 540W"
+        "RG-W35TB3-Kf180A"
       ],
       "applications": [
-        "Accessory",
-        "Compatibility"
+        "Architectural",
+        "Event",
+        "Rental"
       ],
       "priority": "Standard",
       "phase": "Launch",
@@ -24384,11 +23761,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "281usd 267usd(over 20pcs)",
+      "priceTiers": "$281 $267( over 20pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 20,
-      "sourceRow": 34,
+      "sourceRow": 27,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -24408,43 +23785,11 @@
       "iconColor": "#ff6b00",
       "tagline": "New Version 72leds 8W outd",
       "shortDesc": "RG-W25TB8-Ke72 New Version 72leds 8W outdoor RGBW 4in1 led city color/wall washer. Factory EXW from US$319",
-      "longDesc": "RG-W25TB8-Ke72 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. LEDs:High power 8W/pcs,RGBW 4in1,total 72pcs. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W25TB8-Ke72 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. LEDs:High power 8W/pcs,RGBW 4in1,total 72pcs Beam angle:20° Protect level:IP65 Input Voltage:AV 100-240V 50/60Hz Rated P Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "LEDs",
           "value": "High power 8W/pcs,RGBW 4in1,total 72pcs"
-        },
-        {
-          "label": "Beam angle",
-          "value": "20°"
-        },
-        {
-          "label": "Protect level",
-          "value": "IP65"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AV 100-240V 50/60Hz"
-        },
-        {
-          "label": "Rated Power",
-          "value": "572W"
-        },
-        {
-          "label": "Control Mode",
-          "value": "Stand-alone mode,DMX-512mode,Sound active mode"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "3/4/11 DMX Channels"
-        },
-        {
-          "label": "Dimensions",
-          "value": "600*400*700mm"
-        },
-        {
-          "label": "Net Weight",
-          "value": "26.5Kg"
         },
         {
           "label": "EXW Price",
@@ -24479,11 +23824,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "319usd",
+      "priceTiers": "319",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 1,
-      "sourceRow": 35,
+      "sourceRow": 28,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -24503,43 +23848,11 @@
       "iconColor": "#ff6b00",
       "tagline": "36leds8W outdoor RGBW 4in1",
       "shortDesc": "RG-W19TB8-Ke36A 36leds8W outdoor RGBW 4in1 led city color/wall washer. Factory EXW from US$212",
-      "longDesc": "RG-W19TB8-Ke36A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. LEDs:High power 8W/pcs,RGBW 4in1,total 36pcs. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W19TB8-Ke36A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. LEDs:High power 8W/pcs,RGBW 4in1,total 36pcs Beam angle:20° Protect level:IP65 Input Voltage:AV 100-240V 50/60Hz Rated P Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "LEDs",
           "value": "High power 8W/pcs,RGBW 4in1,total 36pcs"
-        },
-        {
-          "label": "Beam angle",
-          "value": "20°"
-        },
-        {
-          "label": "Protect level",
-          "value": "IP65"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AV 100-240V 50/60Hz"
-        },
-        {
-          "label": "Rated Power",
-          "value": "288W"
-        },
-        {
-          "label": "Control Mode",
-          "value": "Stand-alone mode,DMX-512mode,Sound active mode"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "4/7 DMX Channels"
-        },
-        {
-          "label": "Dimensions",
-          "value": "575*260*400mm"
-        },
-        {
-          "label": "Net Weight",
-          "value": "26.5Kg"
         },
         {
           "label": "EXW Price",
@@ -24574,11 +23887,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "212usd",
+      "priceTiers": "212",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 1,
-      "sourceRow": 36,
+      "sourceRow": 29,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -24598,23 +23911,11 @@
       "iconColor": "#ff6b00",
       "tagline": "LED Bar 12X10W RGBW 4in1",
       "shortDesc": "RG-W27IB10-Ke12A LED Bar 12X10W RGBW 4in1. Factory EXW from US$72",
-      "longDesc": "RG-W27IB10-Ke12A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:670x68x150mm. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W27IB10-Ke12A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:670x68x150mm G.W: 4KG color:RGBW 4in1 10WX10pcs Channel:9 CH Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
-        {
-          "label": "Size",
-          "value": "670x68x150mm"
-        },
         {
           "label": "W",
           "value": "4KG"
-        },
-        {
-          "label": "color",
-          "value": "RGBW 4in1 10WX10pcs"
-        },
-        {
-          "label": "Channel",
-          "value": "9 CH"
         },
         {
           "label": "EXW Price",
@@ -24622,7 +23923,11 @@
         },
         {
           "label": "EXW Price (RMB)",
-          "value": "￥450"
+          "value": "￥470"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$69 (over 30 pcs)"
         },
         {
           "label": "Price Terms",
@@ -24648,11 +23953,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "72usd 69usd(over 30pcs)",
+      "priceTiers": "$72 $69(more than 30pcs)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 30,
-      "sourceRow": 37,
+      "sourceRow": 30,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -24672,23 +23977,11 @@
       "iconColor": "#ff6b00",
       "tagline": "LED Bar 6X8W RGBW 4in1",
       "shortDesc": "RG-W13IB8-Ke6A LED Bar 6X8W RGBW 4in1. Factory EXW from US$57",
-      "longDesc": "RG-W13IB8-Ke6A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:380x68x155mm. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W13IB8-Ke6A is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:380x68x155mm G.W: 3KG color:RGBW 4in1 8WX6pcs Channel:7 CH Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
-        {
-          "label": "Size",
-          "value": "380x68x155mm"
-        },
         {
           "label": "W",
           "value": "3KG"
-        },
-        {
-          "label": "color",
-          "value": "RGBW 4in1 8WX6pcs"
-        },
-        {
-          "label": "Channel",
-          "value": "7 CH"
         },
         {
           "label": "EXW Price",
@@ -24697,6 +23990,10 @@
         {
           "label": "EXW Price (RMB)",
           "value": "￥370"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$54 (over 50 pcs)"
         },
         {
           "label": "Price Terms",
@@ -24722,11 +24019,11 @@
       ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "57usd 54usd(over 50pcs)",
+      "priceTiers": "$57 $54( 50 pcs above)",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 50,
-      "sourceRow": 38,
+      "sourceRow": 31,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     },
     {
@@ -24746,47 +24043,11 @@
       "iconColor": "#ff6b00",
       "tagline": "84Leds 3W RGBW Indoor LED",
       "shortDesc": "RG-W39IB3-We84 84Leds 3W RGBW Indoor LED Wall Washer. Factory EXW from US$89",
-      "longDesc": "RG-W39IB3-We84 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:1003x68x142mm. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "longDesc": "RG-W39IB3-We84 is part of the RIGE Wall Washer & City Color range built in our own Guangzhou plant. Size:1003x68x142mm Net Weight:3.0Kg Gross Weight:4.0Kg LEDs:(R: 21pcs G: 21pcs B: 21pcs W:21pcs) total 84pc Material:Alu Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
       "specs": [
         {
           "label": "Size",
           "value": "1003x68x142mm"
-        },
-        {
-          "label": "Net Weight",
-          "value": "3.0Kg"
-        },
-        {
-          "label": "Gross Weight",
-          "value": "4.0Kg"
-        },
-        {
-          "label": "R",
-          "value": "21pcs"
-        },
-        {
-          "label": "Material",
-          "value": "Aluminum"
-        },
-        {
-          "label": "Package Size",
-          "value": "1050x120x200 mm"
-        },
-        {
-          "label": "Control mode",
-          "value": "Auto-run mode，DMX-512 mode，Sound active mode"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "15CH"
-        },
-        {
-          "label": "Rated Power",
-          "value": "252W"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AC 100-240V 50/60Hz"
         },
         {
           "label": "EXW Price",
@@ -24798,7 +24059,7 @@
         }
       ],
       "features": [
-        "RG-W39IB3-We84"
+        "Special promotion to clear inventory"
       ],
       "applications": [
         "Architectural",
@@ -24810,15 +24071,18 @@
       "phase": "Launch",
       "hero": false,
       "oem": true,
-      "image": "",
-      "images": [],
+      "image": "assets/images/products/rg-w39ib3-we84.jpg",
+      "images": [
+        "assets/images/products/rg-w39ib3-we84.jpg",
+        "assets/images/products/rg-w39ib3-we84-2.jpg"
+      ],
       "imageCredit": "RIGE Lighting",
       "priceSource": "factory-exw",
-      "priceTiers": "89usd",
+      "priceTiers": "89USD",
       "currency": "USD",
       "incoterm": "EXW",
       "moq": 1,
-      "sourceRow": 39,
+      "sourceRow": 32,
       "sourceFile": "Led  Wall Washer and city color Light.xlsx"
     }
   ]
