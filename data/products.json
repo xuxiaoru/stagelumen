@@ -15376,6 +15376,446 @@
       "sourceFile": "Dmx Controller And Dimmer控台和调光器_RIGEBA.xlsx"
     },
     {
+      "id": "rg-ctc807sa807",
+      "name": "RG-CTC807SA807 led controller",
+      "model": "RG-CTC807SA807",
+      "category": "controller",
+      "sub": "controller",
+      "subLabel": "Controller",
+      "family": "controller",
+      "price": 98.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "led controller",
+      "shortDesc": "RG-CTC807SA807 led controller. Factory EXW from US$98",
+      "longDesc": "RG-CTC807SA807 is part of the RIGE Controller range built in our own Guangzhou plant. Voltage: AC100V-240V, 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Voltage",
+          "value": "AC100V-240V, 50/60Hz"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$98 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥600"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "H807SA has 8 outputs, supports maximum 8196 pixels, it Support Art-Net protocol and can work with DMX console or set address for DMX chips .H807SA also can add or delete DAT files through the LAN. Eight output ports to control up to 8192 pixels. The maximum control point per port is 1024."
+      ],
+      "applications": [
+        "Stage",
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ctc807sa807.jpg",
+      "images": [
+        "assets/images/products/rg-ctc807sa807.jpg",
+        "assets/images/products/rg-ctc807sa807-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "98",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 10,
+      "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
+    },
+    {
+      "id": "rg-ctcledpein-1",
+      "name": "40 LEDs pixel led light controller RG-CTCLEDPEIN-1",
+      "model": "RG-CTCLEDPEIN-1",
+      "category": "controller",
+      "sub": "controller",
+      "subLabel": "Controller",
+      "family": "controller",
+      "price": 135.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "40 LEDs pixel led light co",
+      "shortDesc": "40 LEDs pixel led light controller RG-CTCLEDPEIN-1. Factory EXW from US$135",
+      "longDesc": "RG-CTCLEDPEIN-1 is part of the RIGE Controller range built in our own Guangzhou plant. Voltage: AC100V-240V, 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Voltage",
+          "value": "AC100V-240V, 50/60Hz"
+        },
+        {
+          "label": "Power",
+          "value": "300W"
+        },
+        {
+          "label": "Connection",
+          "value": "Support DMX512/Art-Net/Kling-Net control mode"
+        },
+        {
+          "label": "Interface",
+          "value": "4, each interface can connect 4 pixel strips in series"
+        },
+        {
+          "label": "Size",
+          "value": "204x260x88mm"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$135 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥850"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$123 (over 100 pcs)"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-CTCLEDPEIN-1"
+      ],
+      "applications": [
+        "Stage",
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ctcledpein-1.jpg",
+      "images": [
+        "assets/images/products/rg-ctcledpein-1.jpg",
+        "assets/images/products/rg-ctcledpein-1-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "$135 $123( over 100pcs) · RMB ￥850 ￥760(over 100pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 100,
+      "sourceRow": 15,
+      "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
+    },
+    {
+      "id": "rg-ctc8192",
+      "name": "RG-CTC8192 控制器controller",
+      "model": "RG-CTC8192",
+      "category": "controller",
+      "sub": "controller",
+      "subLabel": "Controller",
+      "family": "controller",
+      "price": 130.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "控制器controller",
+      "shortDesc": "RG-CTC8192 控制器controller. Factory EXW from US$130",
+      "longDesc": "RG-CTC8192 is part of the RIGE Controller range built in our own Guangzhou plant. Each unit can control 8192 points, Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "EXW Price",
+          "value": "US$130 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥800"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "Each unit can control 8192 points",
+        "8 ports output, each port can control 1024 points",
+        "Multiple controllers are powered",
+        "on at the same time",
+        "Multiple units can be synchronized",
+        "Can be connected to the DMX console"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Wall Wash"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ctc8192.jpg",
+      "images": [
+        "assets/images/products/rg-ctc8192.jpg",
+        "assets/images/products/rg-ctc8192-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "130USD",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 30,
+      "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
+    },
+    {
+      "id": "rg-ctc6600",
+      "name": "Master integrated controller RG-CTC6600",
+      "model": "RG-CTC6600",
+      "category": "controller",
+      "sub": "controller",
+      "subLabel": "Controller",
+      "family": "controller",
+      "price": 295.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Master integrated controll",
+      "shortDesc": "Master integrated controller RG-CTC6600. Factory EXW from US$295",
+      "longDesc": "RG-CTC6600 is part of the RIGE Controller range built in our own Guangzhou plant. can connect with 15pcs sub control integrated controllers Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "EXW Price",
+          "value": "US$295 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1800"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "can connect with 15pcs sub control integrated controllers"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ctc6600.jpg",
+      "images": [
+        "assets/images/products/rg-ctc6600.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "295USD",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 31,
+      "sourceFile": "LED Curtain wall and ceiling decor   led Magic cube Pixel Display 魔方板-矩阵灯.xlsx"
+    },
+    {
+      "id": "rg-ctc6808",
+      "name": "sub control integrated controller RG-CTC6808",
+      "model": "RG-CTC6808",
+      "category": "controller",
+      "sub": "controller",
+      "subLabel": "Controller",
+      "family": "controller",
+      "price": 125.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "sub control integrated con",
+      "shortDesc": "sub control integrated controller RG-CTC6808. Factory EXW from US$125",
+      "longDesc": "RG-CTC6808 is part of the RIGE Controller range built in our own Guangzhou plant. Eight output ports, controlling up to 8192 pixels. The maximum number of control points is 8192 divided by the actual nu Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "EXW Price",
+          "value": "US$125 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥680"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "Eight output ports, controlling up to 8192 pixels. The maximum number of control points is 8192 divided by the actual number of ports used. The number of ports can be set to one, two, four, or eight.",
+        "It can be connected or disconnected, and can be directly connected to the computer network card, as well as to offline and online main controllers (H802TB, H80xTC). It can also be directly connected to switches and optoelectronic converters"
+      ],
+      "applications": [
+        "Stage",
+        "Architectural",
+        "Event",
+        "Rental"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ctc6808.jpg",
+      "images": [
+        "assets/images/products/rg-ctc6808.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "125USD",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 32,
+      "sourceFile": "LED Curtain wall and ceiling decor   led Magic cube Pixel Display 魔方板-矩阵灯.xlsx"
+    },
+    {
+      "id": "fg-pssv400f-f",
+      "name": "FG-PSSV400F-F 电源power supply",
+      "model": "FG-PSSV400F-F",
+      "category": "controller",
+      "sub": "controller",
+      "subLabel": "Controller",
+      "family": "controller",
+      "price": 18.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "电源power supply",
+      "shortDesc": "FG-PSSV400F-F 电源power supply. Factory EXW from US$18",
+      "longDesc": "FG-PSSV400F-F is part of the RIGE Controller range built in our own Guangzhou plant. 12V/400W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "EXW Price",
+          "value": "US$18 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥120"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "12V/400W",
+        "Can bring 12M light bar, 12V/400W"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Wall Wash"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/fg-pssv400f-f.jpg",
+      "images": [
+        "assets/images/products/fg-pssv400f-f.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "18USD",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 31,
+      "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
+    },
+    {
+      "id": "fg-pssx350f-f",
+      "name": "FG-PSSX350F-F power supply",
+      "model": "FG-PSSX350F-F",
+      "category": "controller",
+      "sub": "controller",
+      "subLabel": "Controller",
+      "family": "controller",
+      "price": 18.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Power Supply",
+      "shortDesc": "FG-PSSX350F-F 400W power supply. Factory EXW from US$18",
+      "longDesc": "FG-PSSX350F-F is part of the RIGE Controller range built in our own Guangzhou plant. 400W power supply Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "EXW Price",
+          "value": "US$18 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥120"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "400W power supply"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/fg-pssx350f-f.jpg",
+      "images": [
+        "assets/images/products/fg-pssx350f-f.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "18",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 5,
+      "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
+    },
+    {
       "id": "rg-ps200a20t50-w",
       "name": "RG-PS200A20T50-W 200W Led Fresnel Zoom Spot light 3200K-5600K CW WW 2IN1 COB Led Profile Spot Light",
       "model": "RG-PS200A20T50-W",
@@ -23379,123 +23819,6 @@
       "sourceFile": "LED Curtain wall and ceiling decor   led Magic cube Pixel Display 魔方板-矩阵灯.xlsx"
     },
     {
-      "id": "rg-ctc6600",
-      "name": "Master integrated controller RG-CTC6600",
-      "model": "RG-CTC6600",
-      "category": "pixel",
-      "sub": "pixel-matrix",
-      "subLabel": "Pixel Matrix",
-      "family": "pixel",
-      "price": 295.0,
-      "badge": "",
-      "rating": 0.0,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◉",
-      "iconColor": "#ff6b00",
-      "tagline": "Master integrated controll",
-      "shortDesc": "Master integrated controller RG-CTC6600. Factory EXW from US$295",
-      "longDesc": "RG-CTC6600 is part of the RIGE Pixel Matrix range built in our own Guangzhou plant. can connect with 15pcs sub control integrated controllers Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
-      "specs": [
-        {
-          "label": "EXW Price",
-          "value": "US$295 / unit"
-        },
-        {
-          "label": "EXW Price (RMB)",
-          "value": "￥1800"
-        },
-        {
-          "label": "Price Terms",
-          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
-        }
-      ],
-      "features": [
-        "can connect with 15pcs sub control integrated controllers"
-      ],
-      "applications": [
-        "Stage",
-        "Event",
-        "Rental",
-        "Touring"
-      ],
-      "priority": "Standard",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ctc6600.jpg",
-      "images": [
-        "assets/images/products/rg-ctc6600.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "295USD",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 1,
-      "sourceRow": 31,
-      "sourceFile": "LED Curtain wall and ceiling decor   led Magic cube Pixel Display 魔方板-矩阵灯.xlsx"
-    },
-    {
-      "id": "rg-ctc6808",
-      "name": "sub control integrated controller RG-CTC6808",
-      "model": "RG-CTC6808",
-      "category": "pixel",
-      "sub": "pixel-matrix",
-      "subLabel": "Pixel Matrix",
-      "family": "pixel",
-      "price": 125.0,
-      "badge": "",
-      "rating": 0.0,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◉",
-      "iconColor": "#ff6b00",
-      "tagline": "sub control integrated con",
-      "shortDesc": "sub control integrated controller RG-CTC6808. Factory EXW from US$125",
-      "longDesc": "RG-CTC6808 is part of the RIGE Pixel Matrix range built in our own Guangzhou plant. Eight output ports, controlling up to 8192 pixels. The maximum number of control points is 8192 divided by the actual nu Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
-      "specs": [
-        {
-          "label": "EXW Price",
-          "value": "US$125 / unit"
-        },
-        {
-          "label": "EXW Price (RMB)",
-          "value": "￥680"
-        },
-        {
-          "label": "Price Terms",
-          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
-        }
-      ],
-      "features": [
-        "Eight output ports, controlling up to 8192 pixels. The maximum number of control points is 8192 divided by the actual number of ports used. The number of ports can be set to one, two, four, or eight.",
-        "It can be connected or disconnected, and can be directly connected to the computer network card, as well as to offline and online main controllers (H802TB, H80xTC). It can also be directly connected to switches and optoelectronic converters"
-      ],
-      "applications": [
-        "Stage",
-        "Architectural",
-        "Event",
-        "Rental"
-      ],
-      "priority": "Standard",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ctc6808.jpg",
-      "images": [
-        "assets/images/products/rg-ctc6808.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "125USD",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 1,
-      "sourceRow": 32,
-      "sourceFile": "LED Curtain wall and ceiling decor   led Magic cube Pixel Display 魔方板-矩阵灯.xlsx"
-    },
-    {
       "id": "rg-ddf56s250-v32",
       "name": "Triangular LED Retro Effect Light RG-DDF56S250-V32",
       "model": "RG-DDF56S250-V32",
@@ -25337,62 +25660,6 @@
       "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
     },
     {
-      "id": "fg-pssx350f-f",
-      "name": "FG-PSSX350F-F",
-      "model": "FG-PSSX350F-F",
-      "category": "pixel",
-      "sub": "pixel-bar",
-      "subLabel": "Pixel Bar",
-      "family": "pixel",
-      "price": 18.0,
-      "badge": "",
-      "rating": 0.0,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◉",
-      "iconColor": "#ff6b00",
-      "tagline": "Pixel Bar",
-      "shortDesc": "FG-PSSX350F-F. Factory EXW from US$18",
-      "longDesc": "FG-PSSX350F-F is part of the RIGE Pixel Bar range built in our own Guangzhou plant. 400W power supply Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
-      "specs": [
-        {
-          "label": "EXW Price",
-          "value": "US$18 / unit"
-        },
-        {
-          "label": "EXW Price (RMB)",
-          "value": "￥120"
-        },
-        {
-          "label": "Price Terms",
-          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
-        }
-      ],
-      "features": [
-        "400W power supply"
-      ],
-      "applications": [
-        "Accessory",
-        "Compatibility"
-      ],
-      "priority": "Standard",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/fg-pssx350f-f.jpg",
-      "images": [
-        "assets/images/products/fg-pssx350f-f.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "18",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 1,
-      "sourceRow": 5,
-      "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
-    },
-    {
       "id": "rg-brb4l05o1-f60",
       "name": "RG-BRB4L05O1-f60 LED Meteor tube",
       "model": "RG-BRB4L05O1-f60",
@@ -25849,69 +26116,6 @@
       "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
     },
     {
-      "id": "rg-ctc807sa807",
-      "name": "RG-CTC807SA807 led controller",
-      "model": "RG-CTC807SA807",
-      "category": "pixel",
-      "sub": "pixel-bar",
-      "subLabel": "Pixel Bar",
-      "family": "pixel",
-      "price": 98.0,
-      "badge": "",
-      "rating": 0.0,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◉",
-      "iconColor": "#ff6b00",
-      "tagline": "led controller",
-      "shortDesc": "RG-CTC807SA807 led controller. Factory EXW from US$98",
-      "longDesc": "RG-CTC807SA807 is part of the RIGE Pixel Bar range built in our own Guangzhou plant. Voltage: AC100V-240V, 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
-      "specs": [
-        {
-          "label": "Voltage",
-          "value": "AC100V-240V, 50/60Hz"
-        },
-        {
-          "label": "EXW Price",
-          "value": "US$98 / unit"
-        },
-        {
-          "label": "EXW Price (RMB)",
-          "value": "￥600"
-        },
-        {
-          "label": "Price Terms",
-          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
-        }
-      ],
-      "features": [
-        "H807SA has 8 outputs, supports maximum 8196 pixels, it Support Art-Net protocol and can work with DMX console or set address for DMX chips .H807SA also can add or delete DAT files through the LAN. Eight output ports to control up to 8192 pixels. The maximum control point per port is 1024."
-      ],
-      "applications": [
-        "Stage",
-        "Architectural",
-        "Event",
-        "Rental"
-      ],
-      "priority": "Standard",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ctc807sa807.jpg",
-      "images": [
-        "assets/images/products/rg-ctc807sa807.jpg",
-        "assets/images/products/rg-ctc807sa807-2.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "98",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 1,
-      "sourceRow": 10,
-      "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
-    },
-    {
       "id": "rg-tb100s16w-f48",
       "name": "RG-TB100S16W-f48 48led LED MI BAR",
       "model": "RG-TB100S16W-f48",
@@ -26192,89 +26396,6 @@
       "incoterm": "EXW",
       "moq": 16,
       "sourceRow": 14,
-      "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
-    },
-    {
-      "id": "rg-ctcledpein-1",
-      "name": "40 LEDs pixel led light controller RG-CTCLEDPEIN-1",
-      "model": "RG-CTCLEDPEIN-1",
-      "category": "pixel",
-      "sub": "pixel-bar",
-      "subLabel": "Pixel Bar",
-      "family": "pixel",
-      "price": 135.0,
-      "badge": "",
-      "rating": 0.0,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◉",
-      "iconColor": "#ff6b00",
-      "tagline": "40 LEDs pixel led light co",
-      "shortDesc": "40 LEDs pixel led light controller RG-CTCLEDPEIN-1. Factory EXW from US$135",
-      "longDesc": "RG-CTCLEDPEIN-1 is part of the RIGE Pixel Bar range built in our own Guangzhou plant. Voltage: AC100V-240V, 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
-      "specs": [
-        {
-          "label": "Voltage",
-          "value": "AC100V-240V, 50/60Hz"
-        },
-        {
-          "label": "Power",
-          "value": "300W"
-        },
-        {
-          "label": "Connection",
-          "value": "Support DMX512/Art-Net/Kling-Net control mode"
-        },
-        {
-          "label": "Interface",
-          "value": "4, each interface can connect 4 pixel strips in series"
-        },
-        {
-          "label": "Size",
-          "value": "204x260x88mm"
-        },
-        {
-          "label": "EXW Price",
-          "value": "US$135 / unit"
-        },
-        {
-          "label": "EXW Price (RMB)",
-          "value": "￥850"
-        },
-        {
-          "label": "Volume Price",
-          "value": "US$123 (over 100 pcs)"
-        },
-        {
-          "label": "Price Terms",
-          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
-        }
-      ],
-      "features": [
-        "RG-CTCLEDPEIN-1"
-      ],
-      "applications": [
-        "Stage",
-        "Architectural",
-        "Event",
-        "Rental"
-      ],
-      "priority": "Standard",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ctcledpein-1.jpg",
-      "images": [
-        "assets/images/products/rg-ctcledpein-1.jpg",
-        "assets/images/products/rg-ctcledpein-1-2.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "$135 $123( over 100pcs) · RMB ￥850 ￥760(over 100pcs)",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 100,
-      "sourceRow": 15,
       "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
     },
     {
@@ -26666,127 +26787,6 @@
       "incoterm": "EXW",
       "moq": 30,
       "sourceRow": 20,
-      "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
-    },
-    {
-      "id": "rg-ctc8192",
-      "name": "RG-CTC8192 控制器controller",
-      "model": "RG-CTC8192",
-      "category": "pixel",
-      "sub": "pixel-bar",
-      "subLabel": "Pixel Bar",
-      "family": "pixel",
-      "price": 130.0,
-      "badge": "",
-      "rating": 0.0,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◉",
-      "iconColor": "#ff6b00",
-      "tagline": "控制器controller",
-      "shortDesc": "RG-CTC8192 控制器controller. Factory EXW from US$130",
-      "longDesc": "RG-CTC8192 is part of the RIGE Pixel Bar range built in our own Guangzhou plant. Each unit can control 8192 points, Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
-      "specs": [
-        {
-          "label": "EXW Price",
-          "value": "US$130 / unit"
-        },
-        {
-          "label": "EXW Price (RMB)",
-          "value": "￥800"
-        },
-        {
-          "label": "Price Terms",
-          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
-        }
-      ],
-      "features": [
-        "Each unit can control 8192 points",
-        "8 ports output, each port can control 1024 points",
-        "Multiple controllers are powered",
-        "on at the same time",
-        "Multiple units can be synchronized",
-        "Can be connected to the DMX console"
-      ],
-      "applications": [
-        "Architectural",
-        "Event",
-        "Wall Wash"
-      ],
-      "priority": "Standard",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ctc8192.jpg",
-      "images": [
-        "assets/images/products/rg-ctc8192.jpg",
-        "assets/images/products/rg-ctc8192-2.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "130USD",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 1,
-      "sourceRow": 30,
-      "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
-    },
-    {
-      "id": "fg-pssv400f-f",
-      "name": "FG-PSSV400F-F 电源power supply",
-      "model": "FG-PSSV400F-F",
-      "category": "pixel",
-      "sub": "pixel-bar",
-      "subLabel": "Pixel Bar",
-      "family": "pixel",
-      "price": 18.0,
-      "badge": "",
-      "rating": 0.0,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◉",
-      "iconColor": "#ff6b00",
-      "tagline": "电源power supply",
-      "shortDesc": "FG-PSSV400F-F 电源power supply. Factory EXW from US$18",
-      "longDesc": "FG-PSSV400F-F is part of the RIGE Pixel Bar range built in our own Guangzhou plant. 12V/400W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
-      "specs": [
-        {
-          "label": "EXW Price",
-          "value": "US$18 / unit"
-        },
-        {
-          "label": "EXW Price (RMB)",
-          "value": "￥120"
-        },
-        {
-          "label": "Price Terms",
-          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
-        }
-      ],
-      "features": [
-        "12V/400W",
-        "Can bring 12M light bar, 12V/400W"
-      ],
-      "applications": [
-        "Architectural",
-        "Event",
-        "Wall Wash"
-      ],
-      "priority": "Standard",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/fg-pssv400f-f.jpg",
-      "images": [
-        "assets/images/products/fg-pssv400f-f.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "18USD",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 1,
-      "sourceRow": 31,
       "sourceFile": "Led pixel liner tube 360degree 3D round tube(1).xlsx"
     },
     {
