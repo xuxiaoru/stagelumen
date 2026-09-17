@@ -1,8 +1,8 @@
 {
   "meta": {
     "updated": "2026-09-17",
-    "total": 355,
-    "note": "355 SKU. Moving Heads (LED / beam / spot / wash / hybrid / outdoor), Audience Blinder, LED Profile Spot, Pixel & Effects, Lasers, Controllers and the LED PAR / Wall Washer & City Color ranges all carry real factory data extracted from RIGE quotation sheets. Prices EXW USD as quoted.",
+    "total": 357,
+    "note": "357 SKU. Moving Heads (LED / beam / spot / wash / hybrid / outdoor), Audience Blinder, LED Strobe, LED Profile Spot, Pixel & Effects, Lasers, Controllers and the LED PAR / Wall Washer & City Color ranges all carry real factory data extracted from RIGE quotation sheets. Prices EXW USD as quoted.",
     "lastUpdated": "2026-09-17"
   },
   "categories": {
@@ -16,13 +16,13 @@
       "label": "Pixel & Effects",
       "color": "#00d4ff",
       "icon": "✦",
-      "desc": "Pixel Bar · Pixel Wash · Strobe"
+      "desc": "Pixel Bar · Pixel Wash · Matrix · Effect Light"
     },
     "theatre": {
       "label": "Theatre Lighting",
       "color": "#a78bfa",
       "icon": "◈",
-      "desc": "Fresnel · Follow Spot"
+      "desc": "Audience Blinder · LED Strobe · Fresnel · Follow Spot"
     },
     "par": {
       "label": "LED PAR & Uplights",
@@ -82,10 +82,6 @@
         "label": "Pixel Wash"
       },
       {
-        "id": "strobe",
-        "label": "Strobe"
-      },
-      {
         "id": "pixel-matrix",
         "label": "Pixel Matrix"
       },
@@ -106,6 +102,10 @@
       {
         "id": "blinder",
         "label": "Audience Blinder"
+      },
+      {
+        "id": "strobe",
+        "label": "LED Strobe"
       }
     ],
     "par": [
@@ -154,1446 +154,6 @@
     ]
   },
   "products": [
-    {
-      "id": "rg-th2b250-w2",
-      "name": "RG-TH2B250-W2 RG-TH2B250-W2",
-      "model": "RG-TH2B250-W2",
-      "category": "theatre",
-      "sub": "blinder",
-      "subLabel": "Audience Blinder",
-      "family": "theatre",
-      "price": 65.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◈",
-      "iconColor": "#a78bfa",
-      "tagline": "Audience Blinder",
-      "shortDesc": "RG-TH2B250-W2 RG-TH2B250-W2. 200W,  Factory EXW from US$65.",
-      "longDesc": "RG-TH2B250-W2 carries RIGE factory data taken from the blinder quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Stage. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Light Source",
-          "value": "2PCS 100W lamp beads"
-        },
-        {
-          "label": "Color",
-          "value": "warm white 3000±200K"
-        },
-        {
-          "label": "Brightness output luminous flux",
-          "value": "4624lm"
-        },
-        {
-          "label": "Illumination",
-          "value": "450lux (5m)"
-        },
-        {
-          "label": "Optimal projection distance",
-          "value": "5-15m"
-        },
-        {
-          "label": "Dimming",
-          "value": "linear dimming 0-100%"
-        },
-        {
-          "label": "Flash",
-          "value": "0-25 times"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AC 100-240V, 50"
-        },
-        {
-          "label": "Power",
-          "value": "200W"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX mode, master-slave mode, manual mode"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "2"
-        },
-        {
-          "label": "Size",
-          "value": "Size: L420* W200* H200 mm\nWeight: 5.5kg"
-        }
-      ],
-      "features": [
-        "RG-TH2B250-W2",
-        "RG-TH2B250-W2",
-        "Light Source: 2PCS 100W lamp beads",
-        "Color: warm white 3000±200K",
-        "optional"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Stage"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-th2b250-w2.png",
-      "images": [
-        "assets/images/products/rg-th2b250-w2.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "65",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "blinder",
-      "sourceRow": 8
-    },
-    {
-      "id": "rg-th4b450-w4",
-      "name": "RG-TH4B450-W4 RG-TH4B450-W4",
-      "model": "RG-TH4B450-W4",
-      "category": "theatre",
-      "sub": "blinder",
-      "subLabel": "Audience Blinder",
-      "family": "theatre",
-      "price": 109.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◈",
-      "iconColor": "#a78bfa",
-      "tagline": "Audience Blinder",
-      "shortDesc": "RG-TH4B450-W4 RG-TH4B450-W4. 400W,  Factory EXW from US$109.",
-      "longDesc": "RG-TH4B450-W4 carries RIGE factory data taken from the blinder quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Stage. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Light Source",
-          "value": "4pcs 100W"
-        },
-        {
-          "label": "Color",
-          "value": "warm white 3000±200K"
-        },
-        {
-          "label": "Luminance output luminous flux",
-          "value": "8624lm"
-        },
-        {
-          "label": "Illumination",
-          "value": "900lux (5m)"
-        },
-        {
-          "label": "Best projection distance",
-          "value": "15-30m"
-        },
-        {
-          "label": "Dimming",
-          "value": "linear dimming0-100%"
-        },
-        {
-          "label": "Stroboscopic",
-          "value": "0-25 times"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AC 100-240V, 50"
-        },
-        {
-          "label": "Power",
-          "value": "400W"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX mode, master-slave mode, manual mode"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "2"
-        },
-        {
-          "label": "Size",
-          "value": "Size: l420 * W400 * H200 mm\nWeight: 10.5kg"
-        }
-      ],
-      "features": [
-        "RG-TH4B450-W4",
-        "RG-TH4B450-W4",
-        "Light Source: 4pcs 100W",
-        "Color: warm white 3000±200K",
-        "optional"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Stage"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-th4b450-w4.png",
-      "images": [
-        "assets/images/products/rg-th4b450-w4.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "109                                       99 (over 30pcs )",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "blinder",
-      "sourceRow": 9
-    },
-    {
-      "id": "rg-th4b400-w4",
-      "name": "RG-TH4B400-W4 \nOutdoor led Blinder\nWhite OR WW CW 2 in 1",
-      "model": "RG-TH4B400-W4",
-      "category": "theatre",
-      "sub": "blinder",
-      "subLabel": "Audience Blinder",
-      "family": "theatre",
-      "price": 196.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◈",
-      "iconColor": "#a78bfa",
-      "tagline": "Audience Blinder",
-      "shortDesc": "RG-TH4B400-W4 \nOutdoor led Blinder\nWhite OR WW CW 2 in 1. 250W,  Factory EXW from US$196.",
-      "longDesc": "RG-TH4B400-W4 carries RIGE factory data taken from the blinder quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Stage. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power",
-          "value": "250W"
-        },
-        {
-          "label": "Light Source",
-          "value": "4*100W Cool white+Warm white high power led"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "reflective glass - Illumination: 24500lux (5m)"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX512, master-slave mode or manual mode"
-        },
-        {
-          "label": "Color",
-          "value": "3200K-5600K adjustable."
-        },
-        {
-          "label": "Dimming",
-          "value": "linear dimming 0-100%"
-        },
-        {
-          "label": "Strobe",
-          "value": "0-25 times"
-        },
-        {
-          "label": "Cooling",
-          "value": "air-cooled"
-        },
-        {
-          "label": "Protection",
-          "value": "IP65"
-        },
-        {
-          "label": "Size",
-          "value": "43*41*25cm"
-        }
-      ],
-      "features": [
-        "RG-TH4B400-W4",
-        "\nOutdoor led Blinder\nWhite OR WW CW 2 in 1",
-        "Power: 250W",
-        "Light Source: 4*100W Cool white+Warm white high power led",
-        "sec"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Stage"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-th4b400-w4.png",
-      "images": [
-        "assets/images/products/rg-th4b400-w4.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "196",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "blinder",
-      "sourceRow": 10
-    },
-    {
-      "id": "rg-th2b250",
-      "name": "RG-TH2B250 \nTwo eyes audience light",
-      "model": "RG-TH2B250",
-      "category": "theatre",
-      "sub": "blinder",
-      "subLabel": "Audience Blinder",
-      "family": "theatre",
-      "price": 64.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◈",
-      "iconColor": "#a78bfa",
-      "tagline": "Audience Blinder",
-      "shortDesc": "RG-TH2B250 \nTwo eyes audience light. 250W,  Factory EXW from US$64.",
-      "longDesc": "RG-TH2B250 carries RIGE factory data taken from the blinder quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Stage. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power",
-          "value": "250W"
-        },
-        {
-          "label": "Light Source",
-          "value": "2*100W Cool white+Warm white high power led"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "reflective glass - Illumination: 960lux (5m)"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX512, master-slave mode or manual mode"
-        },
-        {
-          "label": "Color",
-          "value": "3200K-5600K adjustable."
-        },
-        {
-          "label": "Best projection distance",
-          "value": "15-30m"
-        },
-        {
-          "label": "Dimming",
-          "value": "linear dimming 0-100%"
-        },
-        {
-          "label": "Strobe",
-          "value": "0-25 times"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "6CH"
-        },
-        {
-          "label": "Cooling",
-          "value": "air-cooled"
-        },
-        {
-          "label": "Protection",
-          "value": "IP20"
-        },
-        {
-          "label": "Size",
-          "value": "Size: 37cm × 29cm × 60cm\nWeight: 4.5KG"
-        }
-      ],
-      "features": [
-        "RG-TH2B250",
-        "\nTwo eyes audience light",
-        "Power: 250W",
-        "Light Source: 2*100W Cool white+Warm white high power led",
-        "sec"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Stage"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-th2b250.jpg",
-      "images": [
-        "assets/images/products/rg-th2b250.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "64",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "blinder",
-      "sourceRow": 12
-    },
-    {
-      "id": "rg-th4b450",
-      "name": "RG-TH4B450 \nFour eyes audience light",
-      "model": "RG-TH4B450",
-      "category": "theatre",
-      "sub": "blinder",
-      "subLabel": "Audience Blinder",
-      "family": "theatre",
-      "price": 95.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◈",
-      "iconColor": "#a78bfa",
-      "tagline": "Audience Blinder",
-      "shortDesc": "RG-TH4B450 \nFour eyes audience light. 450W,  Factory EXW from US$95.",
-      "longDesc": "RG-TH4B450 carries RIGE factory data taken from the blinder quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Stage. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "100-240V 50"
-        },
-        {
-          "label": "Power",
-          "value": "450W"
-        },
-        {
-          "label": "Light Source",
-          "value": "4*100W Cool white+Warm white high power led"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "reflective glass - Illumination: 960lux (5m)"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX512, master-slave mode or manual mode"
-        },
-        {
-          "label": "Luminous flux",
-          "value": "8624lm"
-        },
-        {
-          "label": "Color",
-          "value": "3200K-5600K adjustable."
-        },
-        {
-          "label": "Best projection distance",
-          "value": "15-30m"
-        },
-        {
-          "label": "Dimming",
-          "value": "linear dimming 0-100%"
-        },
-        {
-          "label": "Strobe",
-          "value": "0-25 times"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "6CH"
-        },
-        {
-          "label": "Cooling",
-          "value": "air-cooled"
-        },
-        {
-          "label": "Protection",
-          "value": "IP20"
-        },
-        {
-          "label": "Size",
-          "value": "Size: 925x900x500mm\nWeight: 8.5KG"
-        }
-      ],
-      "features": [
-        "RG-TH4B450",
-        "\nFour eyes audience light",
-        "Input Voltage: 100-240V 50",
-        "Power: 450W",
-        "60Hz"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Stage"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-th4b450.jpg",
-      "images": [
-        "assets/images/products/rg-th4b450.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "$95 \n\n$89 over 100 PCs",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 100,
-      "sourceFile": "blinder",
-      "sourceRow": 13
-    },
-    {
-      "id": "rg-th4b450s",
-      "name": "RG-TH4B450S \nSplice Four eyes audience light",
-      "model": "RG-TH4B450S",
-      "category": "theatre",
-      "sub": "blinder",
-      "subLabel": "Audience Blinder",
-      "family": "theatre",
-      "price": 98.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◈",
-      "iconColor": "#a78bfa",
-      "tagline": "Audience Blinder",
-      "shortDesc": "RG-TH4B450S \nSplice Four eyes audience light. 450W,  Factory EXW from US$98.",
-      "longDesc": "RG-TH4B450S carries RIGE factory data taken from the blinder quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Stage. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "110"
-        },
-        {
-          "label": "Power",
-          "value": "450W"
-        },
-        {
-          "label": "Light Source",
-          "value": "4*100W Cool white+Warm white high power led"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "reflective glass - Illumination: 960lux (5m)"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX512, master-slave mode or manual mode"
-        },
-        {
-          "label": "Luminous flux",
-          "value": "8624lm"
-        },
-        {
-          "label": "Color",
-          "value": "3200K-5600K adjustable."
-        },
-        {
-          "label": "Best projection distance",
-          "value": "15-30m"
-        },
-        {
-          "label": "Dimming",
-          "value": "linear dimming 0-100%"
-        },
-        {
-          "label": "Strobe",
-          "value": "0-25 times"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "6CH"
-        },
-        {
-          "label": "Cooling",
-          "value": "air-cooled"
-        },
-        {
-          "label": "Protection",
-          "value": "IP20"
-        },
-        {
-          "label": "Size",
-          "value": "Size: 900x900x600mm\nWeight: 8.5KG"
-        }
-      ],
-      "features": [
-        "RG-TH4B450S",
-        "\nSplice Four eyes audience light",
-        "Input Voltage: 110",
-        "Power: 450W",
-        "220V 50"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Stage"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-th4b450s.jpg",
-      "images": [
-        "assets/images/products/rg-th4b450s.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "98USD  \n91USD over 100 PCs  Warm-Cold White",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 100,
-      "sourceFile": "blinder",
-      "sourceRow": 14
-    },
-    {
-      "id": "rg-th8b600s",
-      "name": "RG-TH8B600S \nEight eyes audience light",
-      "model": "RG-TH8B600S",
-      "category": "theatre",
-      "sub": "blinder",
-      "subLabel": "Audience Blinder",
-      "family": "theatre",
-      "price": 194.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◈",
-      "iconColor": "#a78bfa",
-      "tagline": "Audience Blinder",
-      "shortDesc": "RG-TH8B600S \nEight eyes audience light. 600W,  Factory EXW from US$194.",
-      "longDesc": "RG-TH8B600S carries RIGE factory data taken from the blinder quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Stage. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "AC110V"
-        },
-        {
-          "label": "Power",
-          "value": "600W"
-        },
-        {
-          "label": "Light Source",
-          "value": "COB high power 8 LEDs"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX512, master-slave mode,Auto working"
-        },
-        {
-          "label": "Color",
-          "value": "6500K"
-        },
-        {
-          "label": "Dimming",
-          "value": "Linear dimming 0-100%"
-        },
-        {
-          "label": "Strobe",
-          "value": "0-25 times"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "11CH"
-        },
-        {
-          "label": "Working environment",
-          "value": "25 ℃ ~ 40 ℃"
-        },
-        {
-          "label": "Cooling",
-          "value": "air-cooled"
-        },
-        {
-          "label": "Protection level",
-          "value": "IP20"
-        },
-        {
-          "label": "Features",
-          "value": "lighting, warm light adjustable, running light program, flashing, dimmable."
-        },
-        {
-          "label": "Suitable use of",
-          "value": "large stage, theater, outdoor open-air parties, bars, weddings and other entertainment."
-        },
-        {
-          "label": "Advantages",
-          "value": "The use of the latest technology LED COB l"
-        }
-      ],
-      "features": [
-        "RG-TH8B600S",
-        "\nEight eyes audience light",
-        "Input Voltage: AC110V",
-        "Power: 600W",
-        "220V 50HZ"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Stage"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-th8b600s.jpg",
-      "images": [
-        "assets/images/products/rg-th8b600s.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "194",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "blinder",
-      "sourceRow": 18
-    },
-    {
-      "id": "rg-th8b800s",
-      "name": "RG-TH8B800S 8eyes audience light",
-      "model": "RG-TH8B800S",
-      "category": "theatre",
-      "sub": "blinder",
-      "subLabel": "Audience Blinder",
-      "family": "theatre",
-      "price": 190.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◈",
-      "iconColor": "#a78bfa",
-      "tagline": "Audience Blinder",
-      "shortDesc": "RG-TH8B800S 8eyes audience light. 800W,  Factory EXW from US$190.",
-      "longDesc": "RG-TH8B800S carries RIGE factory data taken from the blinder quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Stage. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power",
-          "value": "800W"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AC100-240V 50-60HZ"
-        },
-        {
-          "label": "Light Source",
-          "value": "8pcs 100W COB lamp beads"
-        },
-        {
-          "label": "Projection distance",
-          "value": "20-40 meters"
-        },
-        {
-          "label": "Color",
-          "value": "warm white"
-        },
-        {
-          "label": "Control Mode",
-          "value": "single point"
-        },
-        {
-          "label": "Material",
-          "value": "iron"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "60°"
-        },
-        {
-          "label": "Weight",
-          "value": "14.5KG"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "4"
-        },
-        {
-          "label": "Size",
-          "value": "Product Size: \nWeight: 14.5KG"
-        }
-      ],
-      "features": [
-        "RG-TH8B800S",
-        "8eyes audience light",
-        "Power: 800W",
-        "Input Voltage: AC100-240V 50-60HZ",
-        "800W COB LED"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Stage"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-th8b800s.jpg",
-      "images": [
-        "assets/images/products/rg-th8b800s.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "190",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "blinder",
-      "sourceRow": 19
-    },
-    {
-      "id": "rg-st112a-s20f336a",
-      "name": "RG-ST112A-S20F336A RGB LED 1008 Colouring Strobe Liight RG-ST112A-S20f336A",
-      "model": "RG-ST112A-S20F336A",
-      "category": "pixel",
-      "sub": "strobe",
-      "subLabel": "Strobe",
-      "family": "pixel",
-      "price": 58.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "✦",
-      "iconColor": "#00d4ff",
-      "tagline": "Strobe",
-      "shortDesc": "RG-ST112A-S20F336A RGB LED 1008 Colouring Strobe Liight RG-ST112A-S20f336A. 260W,  Factory EXW from US$58.",
-      "longDesc": "RG-ST112A-S20F336A carries RIGE factory data taken from the strobe quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Stage, Club, Wedding, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Model",
-          "value": "RG-ST112A-S20f336A"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AC110V~240V 50-60Hz"
-        },
-        {
-          "label": "Power",
-          "value": "260W"
-        },
-        {
-          "label": "Light Source",
-          "value": "3 in1 high brightness LED5050SMD"
-        },
-        {
-          "label": "Lamp quantity",
-          "value": "1008 PCS"
-        },
-        {
-          "label": "Lamp power",
-          "value": "0.5W"
-        },
-        {
-          "label": "effect",
-          "value": "Colorful Strobe effect and Uniform RGB color mixing system"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "003CH"
-        },
-        {
-          "label": "Zones",
-          "value": "112"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX"
-        },
-        {
-          "label": "Strobe",
-          "value": "0~20"
-        },
-        {
-          "label": "Dimming",
-          "value": "0-100% linear electroeic dimming"
-        },
-        {
-          "label": "IP rated",
-          "value": "IP20"
-        },
-        {
-          "label": "NW",
-          "value": "4KG"
-        }
-      ],
-      "features": [
-        "RG-ST112A-S20F336A",
-        "RGB LED 1008 Colouring Strobe Liight RG-ST112A-S20f336A",
-        "Model: RG-ST112A-S20f336A",
-        "Input Voltage: AC110V~240V 50-60Hz",
-        "PCS"
-      ],
-      "applications": [
-        "Stage",
-        "Club",
-        "Wedding",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-st112a-s20f336a.jpg",
-      "images": [
-        "assets/images/products/rg-st112a-s20f336a.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "58              51(over 30pcs)",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "strobe",
-      "sourceRow": 9
-    },
-    {
-      "id": "rg-st1000b-s30f1000a",
-      "name": "RG-ST1000B-S30F1000A LED RGB 3In1 1000W Colouring Strobe RG-ST1000B-S30f1000A",
-      "model": "RG-ST1000B-S30F1000A",
-      "category": "pixel",
-      "sub": "strobe",
-      "subLabel": "Strobe",
-      "family": "pixel",
-      "price": 88.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "✦",
-      "iconColor": "#00d4ff",
-      "tagline": "Strobe",
-      "shortDesc": "RG-ST1000B-S30F1000A LED RGB 3In1 1000W Colouring Strobe RG-ST1000B-S30f1000A. 1000W,  Factory EXW from US$88.",
-      "longDesc": "RG-ST1000B-S30F1000A carries RIGE factory data taken from the strobe quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Stage, Club, Wedding, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "AC110V~240V 50-60Hz"
-        },
-        {
-          "label": "Power",
-          "value": "1000W"
-        },
-        {
-          "label": "Light Source",
-          "value": "3 in1 high brightness LED5054 SMD"
-        },
-        {
-          "label": "Lamp quantity",
-          "value": "1000 PCS"
-        },
-        {
-          "label": "Lamp power",
-          "value": "1.0W"
-        },
-        {
-          "label": "effect",
-          "value": "Colorful Strobe effect and Uniform RGB color mixing system"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "16CH"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX"
-        },
-        {
-          "label": "Strobe",
-          "value": "0~20"
-        },
-        {
-          "label": "Dimming",
-          "value": "0-100% linear electroeic dimming"
-        },
-        {
-          "label": "IP rated",
-          "value": "IP20"
-        },
-        {
-          "label": "Dimensions",
-          "value": "54*32*20.5CM"
-        },
-        {
-          "label": "Weight",
-          "value": "8.5KG"
-        },
-        {
-          "label": "Size",
-          "value": "1000Pcs"
-        }
-      ],
-      "features": [
-        "RG-ST1000B-S30F1000A",
-        "LED RGB 3In1 1000W Colouring Strobe RG-ST1000B-S30f1000A",
-        "Input Voltage: AC110V~240V 50-60Hz",
-        "Power: 1000W",
-        "PCS"
-      ],
-      "applications": [
-        "Stage",
-        "Club",
-        "Wedding",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-st1000b-s30f1000a.png",
-      "images": [],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "88",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "strobe",
-      "sourceRow": 10
-    },
-    {
-      "id": "rg-st1344a-so",
-      "name": "RG-ST1344A-SO Outdoor 1344 LEDs RGB 600W Colouring Strobe",
-      "model": "RG-ST1344A-SO",
-      "category": "pixel",
-      "sub": "strobe",
-      "subLabel": "Strobe",
-      "family": "pixel",
-      "price": 178.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "✦",
-      "iconColor": "#00d4ff",
-      "tagline": "Strobe",
-      "shortDesc": "RG-ST1344A-SO Outdoor 1344 LEDs RGB 600W Colouring Strobe. 400W,  Factory EXW from US$178.",
-      "longDesc": "RG-ST1344A-SO carries RIGE factory data taken from the strobe quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Stage, Club, Wedding, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "AC100~240V 50"
-        },
-        {
-          "label": "Power",
-          "value": "400W"
-        },
-        {
-          "label": "Lamp beads",
-          "value": "1344 5050 three color LED lamp beads"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX512, self-propelled, master-slave, voice control, with RDM function."
-        },
-        {
-          "label": "DMX Channels",
-          "value": "3CH"
-        },
-        {
-          "label": "Dimming",
-          "value": "32bit 0-100% linear dimming"
-        },
-        {
-          "label": "Features",
-          "value": "24 segment horse racing+dyeing+explosive flashing"
-        },
-        {
-          "label": "Strobe",
-          "value": "1-30Hz"
-        },
-        {
-          "label": "Connection method",
-          "value": "DMX512 input"
-        },
-        {
-          "label": "IP level",
-          "value": "IP65"
-        },
-        {
-          "label": "Dimensions",
-          "value": "646 * 350 * 280 (L * W * H)"
-        },
-        {
-          "label": "Weight",
-          "value": "13.8KG"
-        },
-        {
-          "label": "Size",
-          "value": "1344pcs"
-        }
-      ],
-      "features": [
-        "RG-ST1344A-SO",
-        "Outdoor 1344 LEDs RGB 600W Colouring Strobe",
-        "Input Voltage: AC100~240V 50",
-        "Power: 400W",
-        "60HZ"
-      ],
-      "applications": [
-        "Stage",
-        "Club",
-        "Wedding",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-st1344a-so.png",
-      "images": [
-        "assets/images/products/rg-st1344a-so.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "178",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "strobe",
-      "sourceRow": 13
-    },
-    {
-      "id": "rg-st864a-sol",
-      "name": "RG-ST864A-SOL Waterproof long strip strobe light ( 672 5050-RGB 0.3W, 112 3030-white 3W)",
-      "model": "RG-ST864A-SOL",
-      "category": "pixel",
-      "sub": "strobe",
-      "subLabel": "Strobe",
-      "family": "pixel",
-      "price": 115.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "✦",
-      "iconColor": "#00d4ff",
-      "tagline": "Strobe",
-      "shortDesc": "RG-ST864A-SOL Waterproof long strip strobe light ( 672 5050-RGB 0.3W, 112 3030-white 3W). 500W,  Factory EXW from US$115.",
-      "longDesc": "RG-ST864A-SOL carries RIGE factory data taken from the strobe quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Stage, Club, Wedding, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "AC100~240V 50"
-        },
-        {
-          "label": "Power",
-          "value": "500W"
-        },
-        {
-          "label": "Beads",
-          "value": "672 5050-RGB 0.3W, 112 3030-white 3W"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX512, self-propelled, master-slave, voice control, with RDM function"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "CH16, CH06, CH14, CH20, CH38, CH112, CH16, CH32, CH64, CH67, CH116, CH69"
-        },
-        {
-          "label": "Dimming",
-          "value": "16bit 0-100% linear dimming"
-        },
-        {
-          "label": "Features",
-          "value": "Running horses+explosive flashes"
-        },
-        {
-          "label": "Working temperature",
-          "value": "-30 ° C~50 ° C"
-        },
-        {
-          "label": "Strobe",
-          "value": "1-30Hz"
-        },
-        {
-          "label": "Appearance",
-          "value": "Metal, black"
-        },
-        {
-          "label": "Connection method",
-          "value": "DMX512 input"
-        },
-        {
-          "label": "IP level",
-          "value": "IP67"
-        },
-        {
-          "label": "Dimensions",
-          "value": "108*35*43cm (4pcs in one carton)"
-        },
-        {
-          "label": "Weight",
-          "value": "19.8KG"
-        }
-      ],
-      "features": [
-        "RG-ST864A-SOL",
-        "Waterproof long strip strobe light ( 672 5050-RGB 0.3W, 112 ",
-        "Input Voltage: AC100~240V 50",
-        "Power: 500W",
-        "60HZ"
-      ],
-      "applications": [
-        "Stage",
-        "Club",
-        "Wedding",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-st864a-sol.png",
-      "images": [
-        "assets/images/products/rg-st864a-sol.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "115",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "strobe",
-      "sourceRow": 14
-    },
-    {
-      "id": "rg-st864a-s20f96a",
-      "name": "RG-ST864A-S20F96A RGB 12+12 moving head led strobe light RG-ST864A-S20f96A",
-      "model": "RG-ST864A-S20F96A",
-      "category": "pixel",
-      "sub": "strobe",
-      "subLabel": "Strobe",
-      "family": "pixel",
-      "price": 106.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "✦",
-      "iconColor": "#00d4ff",
-      "tagline": "Strobe",
-      "shortDesc": "RG-ST864A-S20F96A RGB 12+12 moving head led strobe light RG-ST864A-S20f96A. 400W,  Factory EXW from US$106.",
-      "longDesc": "RG-ST864A-S20F96A carries RIGE factory data taken from the strobe quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Stage, Club, Wedding, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "AC100~240V 50"
-        },
-        {
-          "label": "Power",
-          "value": "400W"
-        },
-        {
-          "label": "Lamp beads",
-          "value": "864 RGB lamp beads, 96 W lamp beads"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "220 °"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX512, self-propelled, master-slave, voice control, with RDM function."
-        },
-        {
-          "label": "DMX Channels",
-          "value": "CH8, CH20, CH5"
-        },
-        {
-          "label": "Dimming",
-          "value": "32bit 0-100% linear dimming"
-        },
-        {
-          "label": "Features",
-          "value": "Flash+Dye+Effect+Shake Head"
-        },
-        {
-          "label": "Working temperature",
-          "value": "-30 ° C~50 ° C"
-        },
-        {
-          "label": "Strobe",
-          "value": "1-30Hz"
-        },
-        {
-          "label": "Appearance",
-          "value": "Metal, black"
-        },
-        {
-          "label": "Connection method",
-          "value": "DMX512 input"
-        },
-        {
-          "label": "Dimensions",
-          "value": "50 * 11 * 30cm"
-        },
-        {
-          "label": "Weight",
-          "value": "4.8kg"
-        }
-      ],
-      "features": [
-        "RG-ST864A-S20F96A",
-        "RGB 12+12 moving head led strobe light RG-ST864A-S20f96A",
-        "Input Voltage: AC100~240V 50",
-        "Power: 400W",
-        "60HZ"
-      ],
-      "applications": [
-        "Stage",
-        "Club",
-        "Wedding",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-st864a-s20f96a.png",
-      "images": [
-        "assets/images/products/rg-st864a-s20f96a.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "106",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "strobe",
-      "sourceRow": 15
-    },
-    {
-      "id": "rg-st3000a",
-      "name": "RG-ST3000A RG-ST3000A",
-      "model": "RG-ST3000A",
-      "category": "pixel",
-      "sub": "strobe",
-      "subLabel": "Strobe",
-      "family": "pixel",
-      "price": 120.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "✦",
-      "iconColor": "#00d4ff",
-      "tagline": "Strobe",
-      "shortDesc": "RG-ST3000A RG-ST3000A. 3000W,  Factory EXW from US$120.",
-      "longDesc": "RG-ST3000A carries RIGE factory data taken from the strobe quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Stage, Club, Wedding, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power",
-          "value": "3000W"
-        },
-        {
-          "label": "Sixze",
-          "value": "510*250*150mm"
-        },
-        {
-          "label": "Size",
-          "value": "3000W"
-        }
-      ],
-      "features": [
-        "RG-ST3000A",
-        "RG-ST3000A",
-        "Power: 3000W",
-        "Sixze: 510*250*150mm"
-      ],
-      "applications": [
-        "Stage",
-        "Club",
-        "Wedding",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-st3000a.jpg",
-      "images": [
-        "assets/images/products/rg-st3000a.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "120",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "strobe",
-      "sourceRow": 16
-    },
-    {
-      "id": "rg-st1500ab",
-      "name": "RG-ST1500AB RG-ST1500AB",
-      "model": "RG-ST1500AB",
-      "category": "pixel",
-      "sub": "strobe",
-      "subLabel": "Strobe",
-      "family": "pixel",
-      "price": 41.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "✦",
-      "iconColor": "#00d4ff",
-      "tagline": "Strobe",
-      "shortDesc": "RG-ST1500AB RG-ST1500AB. 1500W,  Factory EXW from US$41.",
-      "longDesc": "RG-ST1500AB carries RIGE factory data taken from the strobe quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Stage, Club, Wedding, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power",
-          "value": "1500W"
-        },
-        {
-          "label": "Sixze",
-          "value": "480*220*160MM"
-        },
-        {
-          "label": "Size",
-          "value": "1500W"
-        }
-      ],
-      "features": [
-        "RG-ST1500AB",
-        "RG-ST1500AB",
-        "Power: 1500W",
-        "Sixze: 480*220*160MM"
-      ],
-      "applications": [
-        "Stage",
-        "Club",
-        "Wedding",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-st1500ab.png",
-      "images": [],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "41",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "strobe",
-      "sourceRow": 19
-    },
     {
       "id": "rg-pds56s125ia-v0",
       "name": "RG-PDS56S125IA-V0 8 x 8 pixels LED digital curtain wall screen light",
@@ -26652,6 +25212,1895 @@
       "moq": 1,
       "sourceRow": 38,
       "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-th2b250-w2",
+      "name": "RG-TH2B250-W2",
+      "model": "RG-TH2B250-W2",
+      "category": "theatre",
+      "sub": "blinder",
+      "subLabel": "Audience Blinder",
+      "family": "theatre",
+      "price": 65.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Audience Blinder",
+      "shortDesc": "RG-TH2B250-W2. Factory EXW from US$65",
+      "longDesc": "RG-TH2B250-W2 is part of the RIGE Audience Blinder range built in our own Guangzhou plant. Light source: 2PCS 100W lamp beads Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "L420* W200* H200 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "5.5kg"
+        },
+        {
+          "label": "Light source",
+          "value": "2PCS 100W lamp beads"
+        },
+        {
+          "label": "LED life",
+          "value": "about 50,000 hours"
+        },
+        {
+          "label": "Color",
+          "value": "warm white 3000±200K/optional"
+        },
+        {
+          "label": "Output Luminous Flux",
+          "value": "4624lm"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K"
+        },
+        {
+          "label": "Illumination",
+          "value": "450lux (5m)"
+        },
+        {
+          "label": "Optimal projection distance",
+          "value": "5-15m"
+        },
+        {
+          "label": "Dimming",
+          "value": "linear dimming 0-100%"
+        },
+        {
+          "label": "Flash",
+          "value": "0-25 times/second"
+        },
+        {
+          "label": "Rated voltage",
+          "value": "AC 100-240V, 50/60HZ"
+        },
+        {
+          "label": "Rated power",
+          "value": "200W"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX mode, master-slave mode, manual mode"
+        },
+        {
+          "label": "DMX channel",
+          "value": "2/4 can be DMX512 single-point control"
+        },
+        {
+          "label": "Cooling",
+          "value": "natural convection"
+        },
+        {
+          "label": "Protection level",
+          "value": "IP20"
+        },
+        {
+          "label": "Exterior material",
+          "value": "aluminum alloy"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$65 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥450"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "Up to 4624lm luminous flux; 3200K color temperature; 450lux illumination; completely comparable to traditional light source audience lights"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-th2b250-w2.jpg",
+      "images": [
+        "assets/images/products/rg-th2b250-w2.jpg",
+        "assets/images/products/rg-th2b250-w2-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "65",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 2,
+      "sourceFile": "Led Blinder light_RiGeBa(1).xlsx"
+    },
+    {
+      "id": "rg-th4b450-w4",
+      "name": "RG-TH4B450-W4",
+      "model": "RG-TH4B450-W4",
+      "category": "theatre",
+      "sub": "blinder",
+      "subLabel": "Audience Blinder",
+      "family": "theatre",
+      "price": 109.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Audience Blinder",
+      "shortDesc": "RG-TH4B450-W4. Factory EXW from US$109",
+      "longDesc": "RG-TH4B450-W4 is part of the RIGE Audience Blinder range built in our own Guangzhou plant. Light source beads: 4pcs 100W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "l420 * W400 * H200 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "10.5kg"
+        },
+        {
+          "label": "Beads",
+          "value": "4pcs 100W"
+        },
+        {
+          "label": "LED life",
+          "value": "about 50000 hours"
+        },
+        {
+          "label": "Color",
+          "value": "warm white 3000±200K/optional"
+        },
+        {
+          "label": "Output Luminous Flux",
+          "value": "8624lm"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K"
+        },
+        {
+          "label": "Illumination",
+          "value": "900lux (5m)"
+        },
+        {
+          "label": "Best projection distance",
+          "value": "15-30m"
+        },
+        {
+          "label": "Dimming",
+          "value": "linear dimming0-100%"
+        },
+        {
+          "label": "Stroboscopic",
+          "value": "0-25 times/second"
+        },
+        {
+          "label": "Rated voltage",
+          "value": "AC 100-240V, 50/60Hz"
+        },
+        {
+          "label": "Rated power",
+          "value": "400W"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX mode, master-slave mode, manual mode"
+        },
+        {
+          "label": "DMX channel",
+          "value": "2/8 DMX512 single point control"
+        },
+        {
+          "label": "Working environment temperature",
+          "value": "-25℃/40℃"
+        },
+        {
+          "label": "Cooling",
+          "value": "natural convection"
+        },
+        {
+          "label": "Protection class",
+          "value": "IP20"
+        },
+        {
+          "label": "Appearance material",
+          "value": "aluminum alloy"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$109 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥760"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$99 (over 30 pcs)"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "Up to 8624lm luminous flux; 3200K color temperature; 900lux illumination; completely comparable to traditional light source audience lamp"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-th4b450-w4.jpg",
+      "images": [
+        "assets/images/products/rg-th4b450-w4.jpg",
+        "assets/images/products/rg-th4b450-w4-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "109 99 (over 30pcs ) · RMB 760RMB 695 RMB(over 30pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 3,
+      "sourceFile": "Led Blinder light_RiGeBa(1).xlsx"
+    },
+    {
+      "id": "rg-th4b400-w4",
+      "name": "RG-TH4B400-W4 Outdoor led Blinder White OR WW CW 2 in 1",
+      "model": "RG-TH4B400-W4",
+      "category": "theatre",
+      "sub": "blinder",
+      "subLabel": "Audience Blinder",
+      "family": "theatre",
+      "price": 196.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Outdoor led Blinder White",
+      "shortDesc": "RG-TH4B400-W4 Outdoor led Blinder White OR WW CW 2 in 1. Factory EXW from US$196",
+      "longDesc": "RG-TH4B400-W4 is part of the RIGE Audience Blinder range built in our own Guangzhou plant. Total Power:250W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "43*41*25cm"
+        },
+        {
+          "label": "Total Power",
+          "value": "250W"
+        },
+        {
+          "label": "LED Configuration",
+          "value": "4*100W Cool white+Warm white high power led"
+        },
+        {
+          "label": "Viewing angle",
+          "value": "reflective glass"
+        },
+        {
+          "label": "Illumination",
+          "value": "24500lux (5m)"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX512, master-slave mode or manual mode"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K-5600K adjustable."
+        },
+        {
+          "label": "Dimmer",
+          "value": "linear dimming 0-100%"
+        },
+        {
+          "label": "Strobe",
+          "value": "0-25 times / sec"
+        },
+        {
+          "label": "Cooling",
+          "value": "air-cooled"
+        },
+        {
+          "label": "Protection",
+          "value": "IP65"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$196 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1330"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-TH4B400-W4"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-th4b400-w4.jpg",
+      "images": [
+        "assets/images/products/rg-th4b400-w4.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "196",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 4,
+      "sourceFile": "Led Blinder light_RiGeBa(1).xlsx"
+    },
+    {
+      "id": "rg-th4b400-w4-2",
+      "name": "RG-TH4B400-W4 Outdoor led Blinder RGB",
+      "model": "RG-TH4B400-W4",
+      "category": "theatre",
+      "sub": "blinder",
+      "subLabel": "Audience Blinder",
+      "family": "theatre",
+      "price": 199.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Outdoor led Blinder RGB",
+      "shortDesc": "RG-TH4B400-W4 Outdoor led Blinder RGB. Factory EXW from US$199",
+      "longDesc": "RG-TH4B400-W4 is part of the RIGE Audience Blinder range built in our own Guangzhou plant. Total Power:250W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "43*41*25cm"
+        },
+        {
+          "label": "Total Power",
+          "value": "250W"
+        },
+        {
+          "label": "LED Configuration",
+          "value": "4*100W Cool white+Warm white high power led"
+        },
+        {
+          "label": "Viewing angle",
+          "value": "reflective glass"
+        },
+        {
+          "label": "Illumination",
+          "value": "24500lux (5m)"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX512, master-slave mode or manual mode"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K-5600K adjustable."
+        },
+        {
+          "label": "Dimmer",
+          "value": "linear dimming 0-100%"
+        },
+        {
+          "label": "Strobe",
+          "value": "0-25 times / sec"
+        },
+        {
+          "label": "Cooling",
+          "value": "air-cooled"
+        },
+        {
+          "label": "Protection",
+          "value": "IP65"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$199 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1350"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-TH4B400-W4"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-th4b400-w4-2.jpg",
+      "images": [
+        "assets/images/products/rg-th4b400-w4-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "199",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 5,
+      "sourceFile": "Led Blinder light_RiGeBa(1).xlsx"
+    },
+    {
+      "id": "rg-th2b250",
+      "name": "RG-TH2B250 Two eyes audience light",
+      "model": "RG-TH2B250",
+      "category": "theatre",
+      "sub": "blinder",
+      "subLabel": "Audience Blinder",
+      "family": "theatre",
+      "price": 64.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Two eyes audience light",
+      "shortDesc": "RG-TH2B250 Two eyes audience light. Factory EXW from US$64",
+      "longDesc": "RG-TH2B250 is part of the RIGE Audience Blinder range built in our own Guangzhou plant. Total Power:250W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "37cm × 29cm × 60cm"
+        },
+        {
+          "label": "Weight",
+          "value": "4.5KG"
+        },
+        {
+          "label": "Total Power",
+          "value": "250W"
+        },
+        {
+          "label": "LED Configuration",
+          "value": "2*100W Cool white+Warm white high power led"
+        },
+        {
+          "label": "Viewing angle",
+          "value": "reflective glass"
+        },
+        {
+          "label": "Illumination",
+          "value": "960lux (5m)"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX512, master-slave mode or manual mode"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K-5600K adjustable."
+        },
+        {
+          "label": "Best projection distance",
+          "value": "15-30m"
+        },
+        {
+          "label": "Dimmer",
+          "value": "linear dimming 0-100%"
+        },
+        {
+          "label": "Strobe",
+          "value": "0-25 times / sec"
+        },
+        {
+          "label": "Channel",
+          "value": "6CH"
+        },
+        {
+          "label": "Cooling",
+          "value": "air-cooled"
+        },
+        {
+          "label": "Protection",
+          "value": "IP20"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$64 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥435"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-TH2B250"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-th2b250.jpg",
+      "images": [
+        "assets/images/products/rg-th2b250.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "64",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 6,
+      "sourceFile": "Led Blinder light_RiGeBa(1).xlsx"
+    },
+    {
+      "id": "rg-th4b450",
+      "name": "RG-TH4B450 Four eyes audience light",
+      "model": "RG-TH4B450",
+      "category": "theatre",
+      "sub": "blinder",
+      "subLabel": "Audience Blinder",
+      "family": "theatre",
+      "price": 95.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Four eyes audience light",
+      "shortDesc": "RG-TH4B450 Four eyes audience light. Factory EXW from US$95",
+      "longDesc": "RG-TH4B450 is part of the RIGE Audience Blinder range built in our own Guangzhou plant. Input voltage:100-240V 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "925x900x500mm"
+        },
+        {
+          "label": "Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "100-240V 50/60Hz"
+        },
+        {
+          "label": "Total Power",
+          "value": "450W"
+        },
+        {
+          "label": "LED Configuration",
+          "value": "4*100W Cool white+Warm white high power led"
+        },
+        {
+          "label": "Viewing angle",
+          "value": "reflective glass"
+        },
+        {
+          "label": "Illumination",
+          "value": "960lux (5m)"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX512, master-slave mode or manual mode"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "8624lm"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K-5600K adjustable."
+        },
+        {
+          "label": "Best projection distance",
+          "value": "15-30m"
+        },
+        {
+          "label": "Dimmer",
+          "value": "linear dimming 0-100%"
+        },
+        {
+          "label": "Strobe",
+          "value": "0-25 times / sec"
+        },
+        {
+          "label": "Channel",
+          "value": "6CH"
+        },
+        {
+          "label": "Cooling",
+          "value": "air-cooled"
+        },
+        {
+          "label": "Protection",
+          "value": "IP20"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$95 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥627"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$89 (over 100 pcs)"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-TH4B450"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-th4b450.jpg",
+      "images": [
+        "assets/images/products/rg-th4b450.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "$95 $89 over 100 PCs · RMB 627RMB 588RMB Over 100pcs",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 100,
+      "sourceRow": 7,
+      "sourceFile": "Led Blinder light_RiGeBa(1).xlsx"
+    },
+    {
+      "id": "rg-th4b450s",
+      "name": "RG-TH4B450S Splice Four eyes audience light",
+      "model": "RG-TH4B450S",
+      "category": "theatre",
+      "sub": "blinder",
+      "subLabel": "Audience Blinder",
+      "family": "theatre",
+      "price": 98.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Splice Four eyes audience",
+      "shortDesc": "RG-TH4B450S Splice Four eyes audience light. Factory EXW from US$98",
+      "longDesc": "RG-TH4B450S is part of the RIGE Audience Blinder range built in our own Guangzhou plant. Input voltage:110/220V 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "900x900x600mm"
+        },
+        {
+          "label": "Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "110/220V 50/60Hz"
+        },
+        {
+          "label": "Total Power",
+          "value": "450W"
+        },
+        {
+          "label": "LED Configuration",
+          "value": "4*100W Cool white+Warm white high power led"
+        },
+        {
+          "label": "Viewing angle",
+          "value": "reflective glass"
+        },
+        {
+          "label": "Illumination",
+          "value": "960lux (5m)"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX512, master-slave mode or manual mode"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "8624lm"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K-5600K adjustable."
+        },
+        {
+          "label": "Best projection distance",
+          "value": "15-30m"
+        },
+        {
+          "label": "Dimmer",
+          "value": "linear dimming 0-100%"
+        },
+        {
+          "label": "Strobe",
+          "value": "0-25 times / sec"
+        },
+        {
+          "label": "Channel",
+          "value": "6CH"
+        },
+        {
+          "label": "Cooling",
+          "value": "air-cooled"
+        },
+        {
+          "label": "Protection",
+          "value": "IP20"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$98 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥650"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$91 (over 100 pcs)"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-TH4B450S"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-th4b450s.jpg",
+      "images": [
+        "assets/images/products/rg-th4b450s.jpg",
+        "assets/images/products/rg-th4b450s-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "98USD 91USD over 100 PCs Warm-Cold White · RMB 650 600 Over 100pcs Warm-Cold White",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 100,
+      "sourceRow": 8,
+      "sourceFile": "Led Blinder light_RiGeBa(1).xlsx"
+    },
+    {
+      "id": "rg-th8b600s",
+      "name": "RG-TH8B600S Eight eyes audience light",
+      "model": "RG-TH8B600S",
+      "category": "theatre",
+      "sub": "blinder",
+      "subLabel": "Audience Blinder",
+      "family": "theatre",
+      "price": 194.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Eight eyes audience light",
+      "shortDesc": "RG-TH8B600S Eight eyes audience light. Factory EXW from US$194",
+      "longDesc": "RG-TH8B600S is part of the RIGE Audience Blinder range built in our own Guangzhou plant. Input voltage: AC110V / 220V 50HZ / 60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Product Size",
+          "value": "74cm * 37cm * 20cm"
+        },
+        {
+          "label": "Weight",
+          "value": "15.5KG"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "AC110V / 220V 50HZ / 60HZ"
+        },
+        {
+          "label": "Total power",
+          "value": "600W"
+        },
+        {
+          "label": "Light source",
+          "value": "COB high power 8 LEDs"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX512, master-slave mode,Auto working"
+        },
+        {
+          "label": "Color temperature",
+          "value": "6500K"
+        },
+        {
+          "label": "Dimming",
+          "value": "Linear dimming 0-100%"
+        },
+        {
+          "label": "Strobe",
+          "value": "0-25 times / second"
+        },
+        {
+          "label": "Channel",
+          "value": "11CH"
+        },
+        {
+          "label": "Working environment",
+          "value": "25 ℃ ~ 40 ℃"
+        },
+        {
+          "label": "Cooling",
+          "value": "air-cooled"
+        },
+        {
+          "label": "Protection level",
+          "value": "IP20"
+        },
+        {
+          "label": "Features",
+          "value": "lighting, warm light adjustable, running light program, flashing, dimmable."
+        },
+        {
+          "label": "Suitable use of",
+          "value": "large stage, theater, outdoor open-air parties, bars, weddings and other entertainment."
+        },
+        {
+          "label": "Advantages",
+          "value": "The use of the latest technology LED COB light source, energy saving, environmental protection and durability."
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$194 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1280"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "Bar can do burst light function"
+      ],
+      "applications": [
+        "Architectural",
+        "Event",
+        "Wall Wash"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-th8b600s.jpg",
+      "images": [
+        "assets/images/products/rg-th8b600s.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "194",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 9,
+      "sourceFile": "Led Blinder light_RiGeBa(1).xlsx"
+    },
+    {
+      "id": "rg-th8b800s",
+      "name": "RG-TH8B800S 8eyes audience light",
+      "model": "RG-TH8B800S",
+      "category": "theatre",
+      "sub": "blinder",
+      "subLabel": "Audience Blinder",
+      "family": "theatre",
+      "price": 190.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "8eyes audience light",
+      "shortDesc": "RG-TH8B800S 8eyes audience light. Factory EXW from US$190",
+      "longDesc": "RG-TH8B800S is part of the RIGE Audience Blinder range built in our own Guangzhou plant. 800W COB LED Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Power",
+          "value": "800W"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC100-240V 50-60HZ"
+        },
+        {
+          "label": "Light source",
+          "value": "8pcs 100W COB lamp beads"
+        },
+        {
+          "label": "Projection distance",
+          "value": "20-40 meters"
+        },
+        {
+          "label": "Luminous color",
+          "value": "warm white/cold white"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K/6000K"
+        },
+        {
+          "label": "Control mode",
+          "value": "single point · voice control, self-propelled, master-slave, DMX512"
+        },
+        {
+          "label": "Chassis material",
+          "value": "iron"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "60°"
+        },
+        {
+          "label": "Net weight",
+          "value": "14.5KG"
+        },
+        {
+          "label": "DMX channel",
+          "value": "4/8/12CH"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$190 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1280"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "800W COB LED",
+        "Eight-eye audience light"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-th8b800s.jpg",
+      "images": [
+        "assets/images/products/rg-th8b800s.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "190",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 10,
+      "sourceFile": "Led Blinder light_RiGeBa(1).xlsx"
+    },
+    {
+      "id": "rg-th4b450s-2",
+      "name": "RG-TH4B450S Four eyes audience light",
+      "model": "RG-TH4B450S",
+      "category": "theatre",
+      "sub": "blinder",
+      "subLabel": "Audience Blinder",
+      "family": "theatre",
+      "price": 112.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Four eyes audience light",
+      "shortDesc": "RG-TH4B450S Four eyes audience light. Factory EXW from US$112",
+      "longDesc": "RG-TH4B450S is part of the RIGE Audience Blinder range built in our own Guangzhou plant. Input voltage:110/220V 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "1575x400x650mm"
+        },
+        {
+          "label": "Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "110/220V 50/60Hz"
+        },
+        {
+          "label": "Total Power",
+          "value": "450W"
+        },
+        {
+          "label": "LED Configuration",
+          "value": "4*100W Cool white+Warm white high power led"
+        },
+        {
+          "label": "Viewing angle",
+          "value": "reflective glass"
+        },
+        {
+          "label": "Illumination",
+          "value": "960lux (5m)"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX512, master-slave mode or manual mode"
+        },
+        {
+          "label": "Luminous flux",
+          "value": "8624lm"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K-5600K adjustable."
+        },
+        {
+          "label": "Best projection distance",
+          "value": "15-30m"
+        },
+        {
+          "label": "Strobe",
+          "value": "0-25 times / sec"
+        },
+        {
+          "label": "Channel",
+          "value": "6CH"
+        },
+        {
+          "label": "Cooling",
+          "value": "air-cooled"
+        },
+        {
+          "label": "Protection",
+          "value": "IP20"
+        },
+        {
+          "label": "Function",
+          "value": "lighting, warm light adjustable program running lights, strobe, dimmable."
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$112 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥748"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-TH4B450S"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-th4b450s-2.jpg",
+      "images": [
+        "assets/images/products/rg-th4b450s-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "112",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 11,
+      "sourceFile": "Led Blinder light_RiGeBa(1).xlsx"
+    },
+    {
+      "id": "rg-st112a-s20f336a",
+      "name": "RGB LED 1008 Colouring Strobe Light RG-ST112A-S20f336A",
+      "model": "RG-ST112A-S20f336A",
+      "category": "theatre",
+      "sub": "strobe",
+      "subLabel": "LED Strobe",
+      "family": "theatre",
+      "price": 58.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "RGB LED 1008 Colouring Str",
+      "shortDesc": "RGB LED 1008 Colouring Strobe Light RG-ST112A-S20f336A. Factory EXW from US$58",
+      "longDesc": "RG-ST112A-S20f336A is part of the RIGE LED Strobe range built in our own Guangzhou plant. Model：RG-ST112A-S20f336A Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Model",
+          "value": "RG-ST112A-S20f336A"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC110V~240V 50-60Hz"
+        },
+        {
+          "label": "Power",
+          "value": "260W"
+        },
+        {
+          "label": "Light Source",
+          "value": "3 in1 high brightness LED5050SMD"
+        },
+        {
+          "label": "Lamp quantity",
+          "value": "1008 PCS"
+        },
+        {
+          "label": "Lamp power",
+          "value": "0.5W/PCS"
+        },
+        {
+          "label": "Effect",
+          "value": "Colorful Strobe effect and Uniform RGB color mixing system"
+        },
+        {
+          "label": "Channels",
+          "value": "003CH /011CH /336CH Mode"
+        },
+        {
+          "label": "Zones",
+          "value": "112"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX / Sound /Auto/RDM"
+        },
+        {
+          "label": "Strobe Speed",
+          "value": "0~20/S"
+        },
+        {
+          "label": "Dimmer",
+          "value": "0-100% linear electronic dimming"
+        },
+        {
+          "label": "IP rated",
+          "value": "IP20"
+        },
+        {
+          "label": "Net Weight",
+          "value": "4KG · 4.5KG"
+        },
+        {
+          "label": "Packing Size",
+          "value": "54*32*20.5CM"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$58 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥380"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$51 (over 30 pcs)"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "rainbow effect"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-st112a-s20f336a.jpg",
+      "images": [
+        "assets/images/products/rg-st112a-s20f336a.jpg",
+        "assets/images/products/rg-st112a-s20f336a-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "58 51(over 30pcs) · RMB 380 340(over 30pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 2,
+      "sourceFile": "Led Strobe Light _RiGeBa.xlsx"
+    },
+    {
+      "id": "rg-st1000b-s30f1000a",
+      "name": "LED RGB 3In1 1000W Colouring Strobe RG-ST1000B-S30f1000A",
+      "model": "RG-ST1000B-S30f1000A",
+      "category": "theatre",
+      "sub": "strobe",
+      "subLabel": "LED Strobe",
+      "family": "theatre",
+      "price": 88.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "LED RGB 3In1 1000W Colouri",
+      "shortDesc": "LED RGB 3In1 1000W Colouring Strobe RG-ST1000B-S30f1000A. Factory EXW from US$88",
+      "longDesc": "RG-ST1000B-S30f1000A is part of the RIGE LED Strobe range built in our own Guangzhou plant. Voltage：AC110V~240V 50-60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Voltage",
+          "value": "AC110V~240V 50-60Hz"
+        },
+        {
+          "label": "Power",
+          "value": "1000W"
+        },
+        {
+          "label": "Light Source",
+          "value": "3 in1 high brightness LED5054 SMD"
+        },
+        {
+          "label": "Lamp quantity",
+          "value": "1000 PCS"
+        },
+        {
+          "label": "Lamp power",
+          "value": "1.0W/PCS"
+        },
+        {
+          "label": "Effect",
+          "value": "Colorful Strobe effect and Uniform RGB color mixing system"
+        },
+        {
+          "label": "Channels",
+          "value": "16CH /7CH / 1CH/ Mode"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX / Sound /Auto"
+        },
+        {
+          "label": "Strobe Speed",
+          "value": "0~20/S"
+        },
+        {
+          "label": "Dimmer",
+          "value": "0-100% linear electronic dimming"
+        },
+        {
+          "label": "IP rated",
+          "value": "IP20"
+        },
+        {
+          "label": "Size",
+          "value": "54*32*20.5CM"
+        },
+        {
+          "label": "Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$88 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥600"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "rainbow effect"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-st1000b-s30f1000a.jpg",
+      "images": [
+        "assets/images/products/rg-st1000b-s30f1000a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "88",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 3,
+      "sourceFile": "Led Strobe Light _RiGeBa.xlsx"
+    },
+    {
+      "id": "rg-st1344a-so",
+      "name": "Outdoor 1344 LEDs RGB 600W Colouring Strobe RG-ST1344A-SO",
+      "model": "RG-ST1344A-SO",
+      "category": "theatre",
+      "sub": "strobe",
+      "subLabel": "LED Strobe",
+      "family": "theatre",
+      "price": 178.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Outdoor 1344 LEDs RGB 600W",
+      "shortDesc": "Outdoor 1344 LEDs RGB 600W Colouring Strobe RG-ST1344A-SO. Factory EXW from US$178",
+      "longDesc": "RG-ST1344A-SO is part of the RIGE LED Strobe range built in our own Guangzhou plant. Voltage: AC100~240V 50/60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Voltage",
+          "value": "AC100~240V 50/60HZ"
+        },
+        {
+          "label": "Power",
+          "value": "400W"
+        },
+        {
+          "label": "Lamp beads",
+          "value": "1344 5050 three color LED lamp beads"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX512, self-propelled, master-slave, voice control, with RDM function."
+        },
+        {
+          "label": "Channel",
+          "value": "3CH/7CH/72CH"
+        },
+        {
+          "label": "Dimming",
+          "value": "32bit 0-100% linear dimming"
+        },
+        {
+          "label": "Features",
+          "value": "24 segment horse racing+dyeing+explosive flashing"
+        },
+        {
+          "label": "Strobe frequency",
+          "value": "1-30Hz"
+        },
+        {
+          "label": "Connection method",
+          "value": "DMX512 input/output/power input/output."
+        },
+        {
+          "label": "IP level",
+          "value": "IP65"
+        },
+        {
+          "label": "Size",
+          "value": "646 * 350 * 280 (L * W * H)"
+        },
+        {
+          "label": "Weight",
+          "value": "13.8KG"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$178 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1188"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-ST1344A-SO"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-st1344a-so.jpg",
+      "images": [
+        "assets/images/products/rg-st1344a-so.jpg",
+        "assets/images/products/rg-st1344a-so-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "178",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 4,
+      "sourceFile": "Led Strobe Light _RiGeBa.xlsx"
+    },
+    {
+      "id": "rg-st864a-sol",
+      "name": "Waterproof long strip strobe light ( 672 5050-RGB 0.3W, 112 3030-white 3W) RG-ST864A-SOL",
+      "model": "RG-ST864A-SOL",
+      "category": "theatre",
+      "sub": "strobe",
+      "subLabel": "LED Strobe",
+      "family": "theatre",
+      "price": 115.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "Waterproof long strip stro",
+      "shortDesc": "Waterproof long strip strobe light ( 672 5050-RGB 0.3W, 112 3030-white 3W) RG-ST864A-SOL. Factory EXW from US$115",
+      "longDesc": "RG-ST864A-SOL is part of the RIGE LED Strobe range built in our own Guangzhou plant. Voltage: AC100~240V 50/60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Voltage",
+          "value": "AC100~240V 50/60HZ"
+        },
+        {
+          "label": "Power",
+          "value": "500W"
+        },
+        {
+          "label": "Beads",
+          "value": "672 5050-RGB 0.3W, 112 3030-white 3W"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX512, self-propelled, master-slave, voice control, with RDM function"
+        },
+        {
+          "label": "Channels",
+          "value": "CH16, CH06, CH14, CH20, CH38, CH112, CH16, CH32, CH64, CH67, CH116, CH69"
+        },
+        {
+          "label": "Dimming",
+          "value": "16bit 0-100% linear dimming"
+        },
+        {
+          "label": "Features",
+          "value": "Running horses+explosive flashes"
+        },
+        {
+          "label": "Working temperature",
+          "value": "-30 ° C~50 ° C"
+        },
+        {
+          "label": "Strobe frequency",
+          "value": "1-30Hz"
+        },
+        {
+          "label": "Appearance",
+          "value": "Metal, black"
+        },
+        {
+          "label": "Connection method",
+          "value": "DMX512 input/output /Power input and output."
+        },
+        {
+          "label": "IP level",
+          "value": "IP67"
+        },
+        {
+          "label": "Size",
+          "value": "108*35*43cm (4pcs in one carton)"
+        },
+        {
+          "label": "Gross weight",
+          "value": "19.8KG"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$115 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥750"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-ST864A-SOL"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-st864a-sol.jpg",
+      "images": [
+        "assets/images/products/rg-st864a-sol.jpg",
+        "assets/images/products/rg-st864a-sol-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "115",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 5,
+      "sourceFile": "Led Strobe Light _RiGeBa.xlsx"
+    },
+    {
+      "id": "rg-st864a-s20f96a",
+      "name": "RGB 12+12 moving head led strobe light RG-ST864A-S20f96A",
+      "model": "RG-ST864A-S20f96A",
+      "category": "theatre",
+      "sub": "strobe",
+      "subLabel": "LED Strobe",
+      "family": "theatre",
+      "price": 106.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "RGB 12+12 moving head led",
+      "shortDesc": "RGB 12+12 moving head led strobe light RG-ST864A-S20f96A. Factory EXW from US$106",
+      "longDesc": "RG-ST864A-S20f96A is part of the RIGE LED Strobe range built in our own Guangzhou plant. Voltage: AC100~240V 50/60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Voltage",
+          "value": "AC100~240V 50/60HZ"
+        },
+        {
+          "label": "Power",
+          "value": "400W"
+        },
+        {
+          "label": "Lamp beads",
+          "value": "864 RGB lamp beads, 96 W lamp beads"
+        },
+        {
+          "label": "Vertical rotation angle",
+          "value": "220 °"
+        },
+        {
+          "label": "Control mode",
+          "value": "DMX512, self-propelled, master-slave, voice control, with RDM function."
+        },
+        {
+          "label": "Channel",
+          "value": "CH8, CH20, CH5"
+        },
+        {
+          "label": "Dimming",
+          "value": "32bit 0-100% linear dimming"
+        },
+        {
+          "label": "Features",
+          "value": "Flash+Dye+Effect+Shake Head"
+        },
+        {
+          "label": "Working temperature",
+          "value": "-30 ° C~50 ° C"
+        },
+        {
+          "label": "Strobe frequency",
+          "value": "1-30Hz"
+        },
+        {
+          "label": "Appearance",
+          "value": "Metal, black"
+        },
+        {
+          "label": "Connection method",
+          "value": "DMX512 input/output/power input/output."
+        },
+        {
+          "label": "Size",
+          "value": "50 * 11 * 30cm"
+        },
+        {
+          "label": "Weight",
+          "value": "4.8kg"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$106 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥715"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-ST864A-S20f96A"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-st864a-s20f96a.jpg",
+      "images": [
+        "assets/images/products/rg-st864a-s20f96a.jpg",
+        "assets/images/products/rg-st864a-s20f96a-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "106",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 6,
+      "sourceFile": "Led Strobe Light _RiGeBa.xlsx"
+    },
+    {
+      "id": "rg-st3000a",
+      "name": "RG-ST3000A",
+      "model": "RG-ST3000A",
+      "category": "theatre",
+      "sub": "strobe",
+      "subLabel": "LED Strobe",
+      "family": "theatre",
+      "price": 120.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "LED Strobe",
+      "shortDesc": "RG-ST3000A. Factory EXW from US$120",
+      "longDesc": "RG-ST3000A is part of the RIGE LED Strobe range built in our own Guangzhou plant. Power:3000W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Power",
+          "value": "3000W"
+        },
+        {
+          "label": "Size",
+          "value": "510*250*150mm"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$120 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥800"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-ST3000A"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-st3000a.jpg",
+      "images": [
+        "assets/images/products/rg-st3000a.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "120",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 7,
+      "sourceFile": "Led Strobe Light _RiGeBa.xlsx"
+    },
+    {
+      "id": "rg-st1500ab",
+      "name": "RG-ST1500AB",
+      "model": "RG-ST1500AB",
+      "category": "theatre",
+      "sub": "strobe",
+      "subLabel": "LED Strobe",
+      "family": "theatre",
+      "price": 41.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "LED Strobe",
+      "shortDesc": "RG-ST1500AB. Factory EXW from US$41",
+      "longDesc": "RG-ST1500AB is part of the RIGE LED Strobe range built in our own Guangzhou plant. Power:1500W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Power",
+          "value": "1500W"
+        },
+        {
+          "label": "Size",
+          "value": "480*220*160MM"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$41 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥270"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-ST1500AB"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-st1500ab.jpg",
+      "images": [
+        "assets/images/products/rg-st1500ab.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "41",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 8,
+      "sourceFile": "Led Strobe Light _RiGeBa.xlsx"
     }
   ]
 }
