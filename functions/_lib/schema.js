@@ -65,6 +65,41 @@ const STATEMENTS = [
   `CREATE INDEX IF NOT EXISTS idx_an_path   ON analytics(path)`,
   `CREATE INDEX IF NOT EXISTS idx_an_model  ON analytics(model)`,
   `CREATE INDEX IF NOT EXISTS idx_an_vis    ON analytics(visitor)`,
+
+  // ---- AI chat transcripts ---------------------------------------------
+  // Every visitor conversation is stored, for two reasons: a human can pick
+  // up a thread the assistant could not close, and unanswered questions are
+  // the best possible source of new KB entries. Retention is enforced by the
+  // purge button in /admin/ai-chat.html (policy: 180 days).
+  `CREATE TABLE IF NOT EXISTS chat_sessions (
+     id TEXT PRIMARY KEY,
+     visitor TEXT,
+     lang TEXT,
+     email TEXT,
+     intent TEXT, urgency TEXT, score INTEGER DEFAULT 0, stage TEXT,
+     lead_id TEXT,
+     status TEXT DEFAULT 'open',      -- open | claimed | closed | archived
+     note TEXT, handled_by TEXT,
+     msg_count INTEGER DEFAULT 0,
+     model_hit TEXT,
+     page_url TEXT, referrer TEXT, country TEXT, ip TEXT, ua TEXT,
+     created_at TEXT, updated_at
+   )`,
+  `CREATE TABLE IF NOT EXISTS chat_messages (
+     id TEXT PRIMARY KEY,
+     session_id TEXT,
+     role TEXT,                       -- 'visitor' | 'assistant'
+     content TEXT,
+     model TEXT,
+     degraded INTEGER DEFAULT 0,
+     sources TEXT,                    -- JSON array, may be empty
+     created_at TEXT
+   )`,
+  `CREATE INDEX IF NOT EXISTS idx_chat_updated ON chat_sessions(updated_at DESC)`,
+  `CREATE INDEX IF NOT EXISTS idx_chat_status  ON chat_sessions(status)`,
+  `CREATE INDEX IF NOT EXISTS idx_chat_stage   ON chat_sessions(stage)`,
+  `CREATE INDEX IF NOT EXISTS idx_chat_msg_sid ON chat_messages(session_id)`,
+  `CREATE INDEX IF NOT EXISTS idx_chat_msg_ts  ON chat_messages(created_at)`,
 ];
 
 /**

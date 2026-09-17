@@ -62,6 +62,11 @@ function main() {
       shortDesc: (p.shortDesc || '').slice(0, 160),
       specText: specText.slice(0, 320),
       oem: !!p.oem,
+      // Cover image: the content factory needs a real photograph to open a
+      // post with, and inventing artwork is off-limits (an AI-drawn fixture
+      // would be a product we do not sell). `image` is what the product page
+      // itself renders as the cover; the gallery is only a fallback.
+      image: String(p.image || (Array.isArray(p.images) ? p.images[0] : '') || '').trim(),
     };
 
     // Pre-computed haystack: the runtime just does indexOf on this string.

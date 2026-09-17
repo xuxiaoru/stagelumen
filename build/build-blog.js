@@ -248,6 +248,9 @@ function mdToHtml(md) {
 function articlePage(p) {
   const title = escHtml(p.title);
   const desc = escAttr(p.excerpt || p.title);
+  // Social cards need an absolute URL; a relative path is silently ignored by
+  // WhatsApp, LinkedIn and X, which then post a text-only link.
+  const shareImage = p.image ? SITE + '/' + String(p.image).replace(/^\.?\//, '') : '';
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -255,6 +258,13 @@ function articlePage(p) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${title} | StageLumen</title>
   <meta name="description" content="${desc}" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="${title}" />
+  <meta property="og:description" content="${desc}" />
+${shareImage ? '  <meta property="og:image" content="' + escAttr(shareImage) + '" />\n' : ''}${shareImage ? '  <meta property="og:image:alt" content="' + escAttr(p.imageAlt || p.title) + '" />\n' : ''}  <meta name="twitter:card" content="${shareImage ? 'summary_large_image' : 'summary'}" />
+  <meta name="twitter:title" content="${title}" />
+  <meta name="twitter:description" content="${desc}" />
+${shareImage ? '  <meta name="twitter:image" content="' + escAttr(shareImage) + '" />\n' : ''}  <link rel="canonical" href="${SITE}/content/blog/${encodeURIComponent(p.slug)}" />
   <link rel="stylesheet" href="../../assets/css/style.css${cssVersion()}" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b00'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-size='48' font-weight='800' fill='white' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E" />
   <!-- ${GENERATED} -->
@@ -444,6 +454,7 @@ function main() {
       excerpt: String(data.excerpt || '').trim(),
       tags: Array.isArray(data.tags) ? data.tags : [],
       image: String(data.image || '').trim(),
+      imageAlt: String(data.imageAlt || '').trim(),
       html: mdToHtml(body),
       url: 'content/blog/' + String(data.slug || fallbackSlug).trim() + '.html',
     };

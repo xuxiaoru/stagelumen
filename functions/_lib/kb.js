@@ -204,8 +204,32 @@ export async function search(request, query, opts = {}) {
   return { products: prods, entries, tokens, ok: true, modelHit, topProductScore };
 }
 
-/** Compact, model-ready rendering of retrieved facts. */
-export function renderFacts(result) {
+/**
+ * Image paths the response is allowed to reference.
+ *
+ * The allowlist is built from retrieved products only, never from the whole
+ * catalogue: a post may illustrate itself with a fixture it actually cites.
+ * Anything outside this list is dropped downstream, which is the only thing
+ * standing between us and a 404 hero image on a published page.
+ */
+export function factImages(result) {
+  const out = [];
+  for (const p of (result && result.products) || []) {
+    const im = String((p && p.image) || '').trim();
+    if (im && out.indexOf(im) === -1) out.push(im);
+  }
+  return out;
+}
+
+/**
+ * Compact, model-ready rendering of retrieved facts.
+ *
+ * `opts.images` adds an `Image:` line per product. It is opt-in because the
+ * visitor-facing chat would otherwise see filesystem paths in its context and
+ * occasionally quote one back to a buyer; only the content factory needs them.
+ */
+export function renderFacts(result, opts) {
+  const withImages = !!(opts && opts.images);
   const lines = [];
   for (const e of result.entries) {
     lines.push(`Q: ${e.q}\nA: ${e.a}`);
@@ -214,6 +238,7 @@ export function renderFacts(result) {
     lines.push(
       `PRODUCT ${p.model} — ${p.name}\n` +
         `Price: ${p.price != null ? 'USD ' + p.price : 'on request'}\n` +
+        (withImages && p.image ? `Image: ${p.image}\n` : '') +
         `${p.shortDesc || ''}\n` +
         `Specs: ${p.specText || 'n/a'}`
     );

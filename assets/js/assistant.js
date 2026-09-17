@@ -7,12 +7,19 @@
  *
  * Public endpoint, so the client side is defensive too: network failure shows
  * a graceful fallback with the sales email rather than a dead spinner.
+ *
+ * Conversation state: one session id per browser (rotated after 24h) plus the
+ * last few turns are sent on every request. That gives the server what it
+ * needs to answer follow-ups like "and the MOQ?" and to archive the thread for
+ * a human to pick up, without ever storing anything on its own initiative.
  */
 (function () {
   'use strict';
 
   var ENDPOINT = '/api/chat';
   var SALES_EMAIL = 'sales@rigelighting.com';
+  var SESSION_KEY = 'sl_chat_session';
+  var SESSION_MAX_MS = 24 * 60 * 60 * 1000;
 
   var QUICK = [
     'What is your MOQ?',
@@ -24,6 +31,7 @@
   var open = false;
   var busy = false;
   var history = [];
+  var sessionId = '';
   var els = {};
 
   function el(tag, cls, text) {
@@ -31,6 +39,33 @@
     if (cls) n.className = cls;
     if (text != null) n.textContent = text;
     return n;
+  }
+
+  /** Stable per-visitor id, rotated daily so it is not a long-term cookie. */
+  function getSessionId() {
+    try {
+      var raw = localStorage.getItem(SESSION_KEY);
+      if (raw) {
+        var parts = raw.split('|');
+        var age = Date.now() - parseInt(parts[1], 10);
+        if (parts[0] && isFinite(age) && age > 0 && age < SESSION_MAX_MS) {
+          sessionId = parts[0];
+          return sessionId;
+        }
+      }
+    } catch (e) { /* private mode — fall through to a fresh id */ }
+
+    sessionId = genId();
+    try {
+      localStorage.setItem(SESSION_KEY, sessionId + '|' + Date.now());
+    } catch (e) { /* nothing else to do; the server assigns one if absent */ }
+    return sessionId;
+  }
+
+  function genId() {
+    var s = 'cs' + Date.now().toString(36);
+    for (var i = 0; i < 4; i++) s += Math.random().toString(36).charAt(2);
+    return s;
   }
 
   function css() {
@@ -103,7 +138,11 @@
       body: JSON.stringify({
         message: text,
         sku: currentSku(),
-        pageUrl: location.href
+        pageUrl: location.href,
+        sessionId: getSessionId(),
+        // Cap the transcript we send: six turns is enough for context and keeps
+        // the request small. The server is the system of record for the rest.
+        history: history.slice(-6)
       })
     })
       .then(function (r) {
@@ -111,7 +150,10 @@
         return r.json();
       })
       .then(function (d) {
-        wait.textContent = (d && d.reply) || "Sorry, I couldn't answer that.";
+        var reply = (d && d.reply) || "Sorry, I couldn't answer that.";
+        wait.textContent = reply;
+        history.push({ role: 'assistant', content: reply });
+        if (d && d.sessionId) sessionId = d.sessionId;
         if (d && d.degraded) {
           var s = el('div', 'sl-src', 'Answered from knowledge base');
           wait.appendChild(s);
@@ -132,6 +174,7 @@
 
   function build() {
     css();
+    getSessionId();
 
     var root = el('div', 'sl-asst');
     var panel = el('div', 'sl-asst-panel');

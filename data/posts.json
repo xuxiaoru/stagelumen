@@ -1,7 +1,53 @@
 {
-  "generated": "2026-09-11T14:34:38.881Z",
-  "count": 4,
+  "generated": "2026-09-17T17:21:58.438Z",
+  "count": 7,
   "posts": [
+    {
+      "title": "Choosing the Right IP65 Outdoor Fixture",
+      "slug": "choosing-the-right-ip65-outdoor-fixture-tl62",
+      "date": "2026-09-12T14:01:53.575Z",
+      "datePretty": "September 12, 2026",
+      "category": "How-To",
+      "excerpt": "Select from 400W to 600W, 2°–60° beam angles, and DMX512/RDM control.",
+      "tags": [
+        "outdoor lighting",
+        "IP65 rating",
+        "fixture selection"
+      ],
+      "url": "content/blog/choosing-the-right-ip65-outdoor-fixture-tl62.html",
+      "image": ""
+    },
+    {
+      "title": "Choosing the Right Fixture Type for Your Venue",
+      "slug": "choosing-the-right-fixture-type-for-your-venue-08je",
+      "date": "2026-09-12T13:59:03.947Z",
+      "datePretty": "September 12, 2026",
+      "category": "How-To",
+      "excerpt": "Selecting the right fixture type for your venue depends on wattage, beam angle, IP rating, and control protocol.",
+      "tags": [
+        "fixture selection",
+        "lighting design",
+        "venue planning"
+      ],
+      "url": "content/blog/choosing-the-right-fixture-type-for-your-venue-08je.html",
+      "image": ""
+    },
+    {
+      "title": "DMX Channel Planning for a 200-Fixture Stage",
+      "slug": "dmx-channel-planning-for-a-200-fixture-stage-k8b2",
+      "date": "2026-09-12T12:11:24.517Z",
+      "datePretty": "September 12, 2026",
+      "category": "How-To",
+      "excerpt": "Plan DMX channels for a 200-fixture stage with StageLumen's LED moving heads and profile spots.",
+      "tags": [
+        "DMX Channel Planning",
+        "Stage Lighting",
+        "LED Moving Heads",
+        "Profile Spots"
+      ],
+      "url": "content/blog/dmx-channel-planning-for-a-200-fixture-stage-k8b2.html",
+      "image": ""
+    },
     {
       "title": "Beam vs Wash vs Hybrid Moving Heads: How to Choose",
       "slug": "beam-vs-wash-vs-hybrid-moving-heads",
