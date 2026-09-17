@@ -1,8 +1,8 @@
 {
   "meta": {
     "updated": "2026-09-17",
-    "total": 354,
-    "note": "354 SKU. Moving Heads (LED / beam / spot / wash / hybrid / outdoor), Audience Blinder, LED Profile Spot, Pixel & Effects, Lasers, Controllers and the LED PAR / Wall Washer & City Color ranges all carry real factory data extracted from RIGE quotation sheets. Prices EXW USD as quoted.",
+    "total": 355,
+    "note": "355 SKU. Moving Heads (LED / beam / spot / wash / hybrid / outdoor), Audience Blinder, LED Profile Spot, Pixel & Effects, Lasers, Controllers and the LED PAR / Wall Washer & City Color ranges all carry real factory data extracted from RIGE quotation sheets. Prices EXW USD as quoted.",
     "lastUpdated": "2026-09-17"
   },
   "categories": {
@@ -949,2384 +949,6 @@
       "moq": 30,
       "sourceFile": "blinder",
       "sourceRow": 19
-    },
-    {
-      "id": "rg-ps200a20t50-w",
-      "name": "RG-PS200A20T50-W 200W Led Fresnel Zoom Spot light 3200K-5600K CW WW 2IN1 COB Led Profile Spot Light",
-      "model": "RG-PS200A20T50-W",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 95.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS200A20T50-W 200W Led Fresnel Zoom Spot light 3200K-5600K CW WW 2IN1 COB Led Profile Spot Light. 200W,  Factory EXW from US$95.",
-      "longDesc": "RG-PS200A20T50-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "AC100-240V, 50"
-        },
-        {
-          "label": "Power",
-          "value": "200W"
-        },
-        {
-          "label": "Light Source",
-          "value": "1*150W imported high-brightness LED"
-        },
-        {
-          "label": "Color",
-          "value": "3200K"
-        },
-        {
-          "label": "Display index",
-          "value": "≥95"
-        },
-        {
-          "label": "Heat dissipation",
-          "value": "fan heat dissipation"
-        },
-        {
-          "label": "Lamp life",
-          "value": "50000H"
-        },
-        {
-          "label": "Adjustment Light",
-          "value": "0%-100% linear dimming"
-        },
-        {
-          "label": "Material",
-          "value": "large angle light collecting mirror + threaded condenser"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "15°-50° (manual focus)"
-        },
-        {
-          "label": "Protection level",
-          "value": "IP20"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "2CH"
-        },
-        {
-          "label": "Control Mode",
-          "value": "voice control"
-        },
-        {
-          "label": "Dimensions",
-          "value": "41×32×20cm (L×W×H)"
-        }
-      ],
-      "features": [
-        "RG-PS200A20T50-W",
-        "200W Led Fresnel Zoom Spot light 3200K-5600K CW WW 2IN1 COB ",
-        "Input Voltage: AC100-240V, 50",
-        "Power: 200W",
-        "60Hz"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a20t50-w.png",
-      "images": [
-        "assets/images/products/rg-ps200a20t50-w.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "95usd            85 usd (over 100pcs)",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 100,
-      "sourceFile": "profile",
-      "sourceRow": 7
-    },
-    {
-      "id": "rg-ps200a20t50-k",
-      "name": "RG-PS200A20T50-K NEW 200w LED TV Studio Theater Fresnel Light (2in1)",
-      "model": "RG-PS200A20T50-K",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 168.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS200A20T50-K NEW 200w LED TV Studio Theater Fresnel Light (2in1). 200W,  Factory EXW from US$168.",
-      "longDesc": "RG-PS200A20T50-K carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Model",
-          "value": "RG-PS200A20T50-K"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AC100-240V, 50"
-        },
-        {
-          "label": "Power",
-          "value": "200W"
-        },
-        {
-          "label": "Light Source",
-          "value": "200W imported LED"
-        },
-        {
-          "label": "Color",
-          "value": "3200K"
-        },
-        {
-          "label": "Display index",
-          "value": "≥90"
-        },
-        {
-          "label": "Heat dissipation",
-          "value": "fan heat dissipation"
-        },
-        {
-          "label": "Lamp life",
-          "value": "50000h"
-        },
-        {
-          "label": "Dimming",
-          "value": "0%-100% linear dimming"
-        },
-        {
-          "label": "Material",
-          "value": "glass threaded condenser"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "15°-40°"
-        },
-        {
-          "label": "Protection level",
-          "value": "IP20"
-        },
-        {
-          "label": "Control Mode",
-          "value": "standard DMX512 signal, self-propelled, master-slave"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "2 DMX channels"
-        }
-      ],
-      "features": [
-        "RG-PS200A20T50-K",
-        "NEW 200w LED TV Studio Theater Fresnel Light (2in1)",
-        "Model: RG-PS200A20T50-K",
-        "Input Voltage: AC100-240V, 50",
-        "New 200W high-quality film and television spotlight (2 in 1)"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a20t50-k.png",
-      "images": [
-        "assets/images/products/rg-ps200a20t50-k.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "168usd   158usd    (over 50pcs )",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 50,
-      "sourceFile": "profile",
-      "sourceRow": 8
-    },
-    {
-      "id": "rg-ps20a19-w",
-      "name": "RG-PS20A19-W 20W Mini LED Profile Light",
-      "model": "RG-PS20A19-W",
-      "category": "profile",
-      "sub": "tunable",
-      "subLabel": "Tunable White",
-      "family": "profile",
-      "price": 119.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Tunable White",
-      "shortDesc": "RG-PS20A19-W 20W Mini LED Profile Light\n.  Factory EXW from US$119.",
-      "longDesc": "RG-PS20A19-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Color",
-          "value": "single WW"
-        },
-        {
-          "label": "IC Chip",
-          "value": "Nichia"
-        },
-        {
-          "label": "Light Source",
-          "value": "Japan Citizen"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AC100V-240V  50-60Hz"
-        },
-        {
-          "label": "Max.power consumption",
-          "value": "26W"
-        },
-        {
-          "label": "Fixed Lens",
-          "value": "19°"
-        },
-        {
-          "label": "Dimming",
-          "value": "0~100% linearly adjustable"
-        },
-        {
-          "label": "Strobe",
-          "value": "1-25times"
-        },
-        {
-          "label": "Focus",
-          "value": "Can be adjusted by hand"
-        },
-        {
-          "label": "Light body",
-          "value": "Die-casting Aluminum"
-        },
-        {
-          "label": "Control Mode",
-          "value": "DMX"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "1"
-        },
-        {
-          "label": "Size",
-          "value": "Net Weight: 2.5kg \n•  Packing size: 24.5x10x20cm"
-        }
-      ],
-      "features": [
-        "RG-PS20A19-W",
-        "20W Mini LED Profile Light\n",
-        "Color: single WW",
-        "IC Chip: Nichia",
-        "26°"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps20a19-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps20a19-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "$119\n\n\n$107  Over30pcs",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 10
-    },
-    {
-      "id": "rg-ps200a19-w",
-      "name": "RG-PS200A19-W 200W LED Profile Light-White",
-      "model": "RG-PS200A19-W",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 223.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS200A19-W 200W LED Profile Light-White.  Factory EXW from US$223.",
-      "longDesc": "RG-PS200A19-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz145W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 160W 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "19"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:645x280x220mm\nPacing Size:800x660x360(2pcst)\nN.W:7.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A19-W",
-        "200W LED Profile Light-White",
-        "Power supply: AC100-240V 50-60Hz145W",
-        "Light Source: LED 160W 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a19-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps200a19-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "223",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 11
-    },
-    {
-      "id": "rg-ps180a19-rgbw",
-      "name": "RG-PS180A19-RGBW 180W LED Profile Light-RGBW",
-      "model": "RG-PS180A19-RGBW",
-      "category": "profile",
-      "sub": "colour",
-      "subLabel": "RGBW / RGBAL",
-      "family": "profile",
-      "price": 231.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "RGBW / RGBAL",
-      "shortDesc": "RG-PS180A19-RGBW 180W LED Profile Light-RGBW\n.  Factory EXW from US$231.",
-      "longDesc": "RG-PS180A19-RGBW carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz135W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 150W RGBW"
-        },
-        {
-          "label": "Control Mode",
-          "value": "9 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "19"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:645x280x220mm\nPacing Size:800x660x360(2pcst)\nN.W:7.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS180A19-RGBW",
-        "180W LED Profile Light-RGBW\n",
-        "Power supply: AC100-240V 50-60Hz135W",
-        "Light Source: LED 150W RGBW",
-        "Slave"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps180a19-rgbw.jpg",
-      "images": [
-        "assets/images/products/rg-ps180a19-rgbw.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "231",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 12
-    },
-    {
-      "id": "rg-ps300a17t50-w",
-      "name": "RG-PS300A17T50-W 300W LED Zoom Profile Light-White",
-      "model": "RG-PS300A17T50-W",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 328.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS300A17T50-W 300W LED Zoom Profile Light-White.  Factory EXW from US$328.",
-      "longDesc": "RG-PS300A17T50-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz270W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 300W 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "Manual Zoom 17-50 degree"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:615x280x215mm\nPacing Size:800x660x360(2pcst)\nN.W:14KG\nG.W:19KG"
-        }
-      ],
-      "features": [
-        "RG-PS300A17T50-W",
-        "300W LED Zoom Profile Light-White",
-        "Power supply: AC100-240V 50-60Hz270W",
-        "Light Source: LED 300W 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps300a17t50-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps300a17t50-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "328",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 14
-    },
-    {
-      "id": "rg-ps200a17t50-w",
-      "name": "RG-PS200A17T50-W 200W LED Zoom Profile Light-White",
-      "model": "RG-PS200A17T50-W",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 266.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS200A17T50-W 200W LED Zoom Profile Light-White.  Factory EXW from US$266.",
-      "longDesc": "RG-PS200A17T50-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz 170W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 200W 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "Manual Zoom 17-50 degree"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:615x280x215mm\nPacing Size:800x660x360(2pcst)\nN.W:14KG\nG.W:19KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A17T50-W",
-        "200W LED Zoom Profile Light-White",
-        "Power supply: AC100-240V 50-60Hz 170W",
-        "Light Source: LED 200W 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a17t50-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps200a17t50-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "266",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 15
-    },
-    {
-      "id": "rg-ps200a17t50-wa",
-      "name": "RG-PS200A17T50-WA 200W LED Zoom Profile Light-White+Cool White",
-      "model": "RG-PS200A17T50-WA",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 270.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS200A17T50-WA 200W LED Zoom Profile Light-White+Cool White.  Factory EXW from US$270.",
-      "longDesc": "RG-PS200A17T50-WA carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz170W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 160W WW+CW; CRI>90"
-        },
-        {
-          "label": "Control Mode",
-          "value": "5 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "Manual Zoom 17-50 degree"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:615x280x215mm\nPacing Size:800x660x360(2pcst)\nN.W:14KG\nG.W:19KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A17T50-WA",
-        "200W LED Zoom Profile Light-White+Cool White",
-        "Power supply: AC100-240V 50-60Hz170W",
-        "Light Source: LED 160W WW+CW; CRI>90",
-        "Slave"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a17t50-wa.jpg",
-      "images": [
-        "assets/images/products/rg-ps200a17t50-wa.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "270",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 16
-    },
-    {
-      "id": "rg-ps180a17t50-rgbw",
-      "name": "RG-PS180A17T50-RGBW 180W LED Zoom Profile Light-RGBW",
-      "model": "RG-PS180A17T50-RGBW",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 248.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS180A17T50-RGBW 180W LED Zoom Profile Light-RGBW\n.  Factory EXW from US$248.",
-      "longDesc": "RG-PS180A17T50-RGBW carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz135W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 150W RGBW"
-        },
-        {
-          "label": "Control Mode",
-          "value": "9 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "Manual Zoom 17-50 degree"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:615x280x215mm\nPacing Size:800x660x360(2pcst)\nN.W:14KG\nG.W:19KG"
-        }
-      ],
-      "features": [
-        "RG-PS180A17T50-RGBW",
-        "180W LED Zoom Profile Light-RGBW\n",
-        "Power supply: AC100-240V 50-60Hz135W",
-        "Light Source: LED 150W RGBW",
-        "Slave"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps180a17t50-rgbw.jpg",
-      "images": [
-        "assets/images/products/rg-ps180a17t50-rgbw.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "248",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 17
-    },
-    {
-      "id": "rg-ps200a17t50-rgbw",
-      "name": "RG-PS200A17T50-RGBW 200W LED Zoom Profile Light-RGBW",
-      "model": "RG-PS200A17T50-RGBW",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 258.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS200A17T50-RGBW 200W LED Zoom Profile Light-RGBW\n.  Factory EXW from US$258.",
-      "longDesc": "RG-PS200A17T50-RGBW carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz180W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 200W RGBW"
-        },
-        {
-          "label": "Control Mode",
-          "value": "9 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "Manual Zoom 17-50 degree"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:615x280x215mm\nPacing Size:800x660x360(2pcst)\nN.W:14KG\nG.W:19KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A17T50-RGBW",
-        "200W LED Zoom Profile Light-RGBW\n",
-        "Power supply: AC100-240V 50-60Hz180W",
-        "Light Source: LED 200W RGBW",
-        "Slave"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a17t50-rgbw.png",
-      "images": [
-        "assets/images/products/rg-ps200a17t50-rgbw.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "258",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 18
-    },
-    {
-      "id": "rg-ps300a19f-w",
-      "name": "RG-PS300A19F-W 300W LED Profile Light-White",
-      "model": "RG-PS300A19F-W",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 316.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS300A19F-W 300W LED Profile Light-White\n.  Factory EXW from US$316.",
-      "longDesc": "RG-PS300A19F-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz270W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 300W 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "19"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:645x280x220mm\nPacing Size:800x730x360(2pcst)\nN.W:8.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS300A19F-W",
-        "300W LED Profile Light-White\n",
-        "Power supply: AC100-240V 50-60Hz270W",
-        "Light Source: LED 300W 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps300a19f-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps300a19f-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "316",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 20
-    },
-    {
-      "id": "rg-ps200a19f-w",
-      "name": "RG-PS200A19F-W 200W LED Profile Light-White",
-      "model": "RG-PS200A19F-W",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 248.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS200A19F-W 200W LED Profile Light-White.  Factory EXW from US$248.",
-      "longDesc": "RG-PS200A19F-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz170W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 200W 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "19"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:645x280x220mm\nPacing Size:800x730x360(2pcst)\nN.W:8.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A19F-W",
-        "200W LED Profile Light-White",
-        "Power supply: AC100-240V 50-60Hz170W",
-        "Light Source: LED 200W 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a19f-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps200a19f-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "248",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 21
-    },
-    {
-      "id": "rg-ps160a19f-w",
-      "name": "RG-PS160A19F-W 160W LED Profile Light-White",
-      "model": "RG-PS160A19F-W",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 223.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS160A19F-W 160W LED Profile Light-White.  Factory EXW from US$223.",
-      "longDesc": "RG-PS160A19F-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz145W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 160W 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "19"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:645x280x220mm\nPacing Size:800x730x360(2pcst)\nN.W:8.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS160A19F-W",
-        "160W LED Profile Light-White",
-        "Power supply: AC100-240V 50-60Hz145W",
-        "Light Source: LED 160W 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps160a19f-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps160a19f-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "223",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 22
-    },
-    {
-      "id": "rg-ps200a19f-wa",
-      "name": "RG-PS200A19F-WA 200W LED Prefocus Profile Light-WW+CW",
-      "model": "RG-PS200A19F-WA",
-      "category": "profile",
-      "sub": "tunable",
-      "subLabel": "Tunable White",
-      "family": "profile",
-      "price": 254.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Tunable White",
-      "shortDesc": "RG-PS200A19F-WA 200W LED Prefocus Profile Light-WW+CW.  Factory EXW from US$254.",
-      "longDesc": "RG-PS200A19F-WA carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz170W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 160W WW+CW; CRI>90"
-        },
-        {
-          "label": "Control Mode",
-          "value": "5 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "19"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:645x280x220mm\nPacing Size:800x730x360(2pcst)\nN.W:8.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A19F-WA",
-        "200W LED Prefocus Profile Light-WW+CW",
-        "Power supply: AC100-240V 50-60Hz170W",
-        "Light Source: LED 160W WW+CW; CRI>90",
-        "Slave"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a19f-wa.jpg",
-      "images": [
-        "assets/images/products/rg-ps200a19f-wa.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "254",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 23
-    },
-    {
-      "id": "rg-ps180a19f-rgbw",
-      "name": "RG-PS180A19F-RGBW 180W LED Profile Light-RGBW",
-      "model": "RG-PS180A19F-RGBW",
-      "category": "profile",
-      "sub": "colour",
-      "subLabel": "RGBW / RGBAL",
-      "family": "profile",
-      "price": 227.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "RGBW / RGBAL",
-      "shortDesc": "RG-PS180A19F-RGBW 180W LED Profile Light-RGBW.  Factory EXW from US$227.",
-      "longDesc": "RG-PS180A19F-RGBW carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz135W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 150W RGBW"
-        },
-        {
-          "label": "Control Mode",
-          "value": "9 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "19"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:645x280x220mm\nPacing Size:800x730x360(2pcst)\nN.W:8.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS180A19F-RGBW",
-        "180W LED Profile Light-RGBW",
-        "Power supply: AC100-240V 50-60Hz135W",
-        "Light Source: LED 150W RGBW",
-        "Slave"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps180a19f-rgbw.jpg",
-      "images": [
-        "assets/images/products/rg-ps180a19f-rgbw.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "227",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 24
-    },
-    {
-      "id": "rg-ps200a19f-rgbw",
-      "name": "RG-PS200A19F-RGBW 200W LED Profile Light-RGBW",
-      "model": "RG-PS200A19F-RGBW",
-      "category": "profile",
-      "sub": "colour",
-      "subLabel": "RGBW / RGBAL",
-      "family": "profile",
-      "price": 266.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "RGBW / RGBAL",
-      "shortDesc": "RG-PS200A19F-RGBW 200W LED Profile Light-RGBW.  Factory EXW from US$266.",
-      "longDesc": "RG-PS200A19F-RGBW carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz180W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 200W RGBW"
-        },
-        {
-          "label": "Control Mode",
-          "value": "9 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "19"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:645x280x220mm\nPacing Size:800x730x360(2pcst)\nN.W:8.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A19F-RGBW",
-        "200W LED Profile Light-RGBW",
-        "Power supply: AC100-240V 50-60Hz180W",
-        "Light Source: LED 200W RGBW",
-        "Slave"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a19f-rgbw.jpg",
-      "images": [
-        "assets/images/products/rg-ps200a19f-rgbw.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "266",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 25
-    },
-    {
-      "id": "rg-ps200a19y-w",
-      "name": "RG-PS200A19Y-W 200W LED Profile Light-White",
-      "model": "RG-PS200A19Y-W",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 210.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS200A19Y-W 200W LED Profile Light-White.  Factory EXW from US$210.",
-      "longDesc": "RG-PS200A19Y-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz145W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 160W 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "19"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:600x280x220mm\nPacing Size:750x720x360(2pcst)\nN.W:7.8KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A19Y-W",
-        "200W LED Profile Light-White",
-        "Power supply: AC100-240V 50-60Hz145W",
-        "Light Source: LED 160W 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a19y-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps200a19y-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "210",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 26
-    },
-    {
-      "id": "rg-ps180a19y-rgbw",
-      "name": "RG-PS180A19Y-RGBW 180W LED Profile Light-RGBW",
-      "model": "RG-PS180A19Y-RGBW",
-      "category": "profile",
-      "sub": "colour",
-      "subLabel": "RGBW / RGBAL",
-      "family": "profile",
-      "price": 227.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "RGBW / RGBAL",
-      "shortDesc": "RG-PS180A19Y-RGBW 180W LED Profile Light-RGBW.  Factory EXW from US$227.",
-      "longDesc": "RG-PS180A19Y-RGBW carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz135W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 150W RGBW"
-        },
-        {
-          "label": "Control Mode",
-          "value": "9 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "19"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:600x280x220mm\nPacing Size:750x720x360(2pcst)\nN.W:7.8KG"
-        }
-      ],
-      "features": [
-        "RG-PS180A19Y-RGBW",
-        "180W LED Profile Light-RGBW",
-        "Power supply: AC100-240V 50-60Hz135W",
-        "Light Source: LED 150W RGBW",
-        "Slave"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps180a19y-rgbw.jpg",
-      "images": [
-        "assets/images/products/rg-ps180a19y-rgbw.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "227",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 27
-    },
-    {
-      "id": "rg-ps200a14s-w",
-      "name": "RG-PS200A14S-W 200W LED Prefocus Spot Light-White",
-      "model": "RG-PS200A14S-W",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 202.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS200A14S-W 200W LED Prefocus Spot Light-White.  Factory EXW from US$202.",
-      "longDesc": "RG-PS200A14S-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz145W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 160W 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:530x280x250mm\nPacing Size:670x660x330(2pcst)\nN.W:8KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A14S-W",
-        "200W LED Prefocus Spot Light-White",
-        "Power supply: AC100-240V 50-60Hz145W",
-        "Light Source: LED 160W 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a14s-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps200a14s-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "202",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 29
-    },
-    {
-      "id": "rg-ps180a14s-rgbw",
-      "name": "RG-PS180A14S-RGBW 180W LED Prefocus Spot Light-RGBW",
-      "model": "RG-PS180A14S-RGBW",
-      "category": "profile",
-      "sub": "colour",
-      "subLabel": "RGBW / RGBAL",
-      "family": "profile",
-      "price": 206.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "RGBW / RGBAL",
-      "shortDesc": "RG-PS180A14S-RGBW 180W LED Prefocus Spot Light-RGBW.  Factory EXW from US$206.",
-      "longDesc": "RG-PS180A14S-RGBW carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz135W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 150W RGBW"
-        },
-        {
-          "label": "Control Mode",
-          "value": "9 DMX channels; Master"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:530x280x250mm\nPacing Size:670x660x330(2pcst)\nN.W:8KG"
-        }
-      ],
-      "features": [
-        "RG-PS180A14S-RGBW",
-        "180W LED Prefocus Spot Light-RGBW",
-        "Power supply: AC100-240V 50-60Hz135W",
-        "Light Source: LED 150W RGBW",
-        "Slave"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps180a14s-rgbw.jpg",
-      "images": [
-        "assets/images/products/rg-ps180a14s-rgbw.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "206",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 30
-    },
-    {
-      "id": "rg-ps100a20t38d-w",
-      "name": "RG-PS100A20T38D-W 100W LED Zoom Spot Light -White 100W",
-      "model": "RG-PS100A20T38D-W",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 223.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS100A20T38D-W 100W LED Zoom Spot Light -White 100W.  Factory EXW from US$223.",
-      "longDesc": "RG-PS100A20T38D-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power Supply",
-          "value": "AC100-240V50-60HZ"
-        },
-        {
-          "label": "Power consumption",
-          "value": "100W                                       *Original imported Citizen 150W, COB integrated light source LED3200K (5600K)"
-        },
-        {
-          "label": "Color",
-          "value": "CRI>95"
-        },
-        {
-          "label": "Control Mode",
-          "value": "RDM, DMX512 control or master-slave synchronization"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "1"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "manual 20-38 degrees"
-        },
-        {
-          "label": "Size",
-          "value": "*Size: 44.7*22.4*17CM  *Weight: 6.25kg"
-        }
-      ],
-      "features": [
-        "RG-PS100A20T38D-W",
-        "100W LED Zoom Spot Light -White 100W",
-        "Power Supply: AC100-240V50-60HZ",
-        "Power consumption: 100W                                       *Origina",
-        "4DMX channel optional,"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps100a20t38d-w.png",
-      "images": [
-        "assets/images/products/rg-ps100a20t38d-w.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "223",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 32
-    },
-    {
-      "id": "rg-ps200a25t50m-w",
-      "name": "RG-PS200A25T50M-W 200W LED Zoom Studio Light-White",
-      "model": "RG-PS200A25T50M-W",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 223.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS200A25T50M-W 200W LED Zoom Studio Light-White.  Factory EXW from US$223.",
-      "longDesc": "RG-PS200A25T50M-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz145W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 160W 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "Manual Zoom 25-50 degree"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:450x265x195mm\nPacing Size:600x590x270(2pcst)\nN.W:7.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A25T50M-W",
-        "200W LED Zoom Studio Light-White",
-        "Power supply: AC100-240V 50-60Hz145W",
-        "Light Source: LED 160W 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a25t50m-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps200a25t50m-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "223",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 33
-    },
-    {
-      "id": "rg-ps180a25t50m-rgbw",
-      "name": "RG-PS180A25T50M-RGBW 200W LED Zoom Studio Light-RGBW",
-      "model": "RG-PS180A25T50M-RGBW",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 234.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS180A25T50M-RGBW 200W LED Zoom Studio Light-RGBW.  Factory EXW from US$234.",
-      "longDesc": "RG-PS180A25T50M-RGBW carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz135W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 150W RGBW"
-        },
-        {
-          "label": "Control Mode",
-          "value": "9 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "Manual Zoom 25-50 degree"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:450x265x195mm\nPacing Size:600x590x270(2pcst)\nN.W:7.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS180A25T50M-RGBW",
-        "200W LED Zoom Studio Light-RGBW",
-        "Power supply: AC100-240V 50-60Hz135W",
-        "Light Source: LED 150W RGBW",
-        "Slave"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps180a25t50m-rgbw.png",
-      "images": [
-        "assets/images/products/rg-ps180a25t50m-rgbw.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "234",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 34
-    },
-    {
-      "id": "rg-ps175a28t70d-w",
-      "name": "RG-PS175A28T70D-W 175W LED Zoom Studio Light-White",
-      "model": "RG-PS175A28T70D-W",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 220.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS175A28T70D-W 175W LED Zoom Studio Light-White.  Factory EXW from US$220.",
-      "longDesc": "RG-PS175A28T70D-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz160W"
-        },
-        {
-          "label": "Light Source",
-          "value": "7x25W LED 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "Auto Zoom 28-70 degree"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:340x310x256mm\nPacing Size:730x420x320(2pcst)\nN.W:8KG"
-        }
-      ],
-      "features": [
-        "RG-PS175A28T70D-W",
-        "175W LED Zoom Studio Light-White",
-        "Power supply: AC100-240V 50-60Hz160W",
-        "Light Source: 7x25W LED 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps175a28t70d-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps175a28t70d-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "220",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 35
-    },
-    {
-      "id": "rg-ps200a15t65m-w",
-      "name": "RG-PS200A15T65M-W 200W LED Zoom Fresnel Light-White",
-      "model": "RG-PS200A15T65M-W",
-      "category": "profile",
-      "sub": "zoom",
-      "subLabel": "Zoom Optics",
-      "family": "profile",
-      "price": 277.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Zoom Optics",
-      "shortDesc": "RG-PS200A15T65M-W 200W LED Zoom Fresnel Light-White.  Factory EXW from US$277.",
-      "longDesc": "RG-PS200A15T65M-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz 200W"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED 200W 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "1.DMX512 2.RDM 3.Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "Manual Zoom 15-65 degree with high- efficiency optical system"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:53.1X28.5X21.6cm\nPacing Size:730x420x320(2pcst)\nN.W:8.5KG"
-        }
-      ],
-      "features": [
-        "RG-PS200A15T65M-W",
-        "200W LED Zoom Fresnel Light-White",
-        "Power supply: AC100-240V 50-60Hz 200W",
-        "Light Source: LED 200W 3200K",
-        "5600K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a15t65m-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps200a15t65m-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "$277      $262(over 30pcs)",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 36
-    },
-    {
-      "id": "rg-ps120a170-w",
-      "name": "RG-PS120A170-W 256leds 120W LED Panel Light-White",
-      "model": "RG-PS120A170-W",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 62.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS120A170-W 256leds 120W LED Panel Light-White. 120W,  Factory EXW from US$62.",
-      "longDesc": "RG-PS120A170-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "AC90V-240v, 50"
-        },
-        {
-          "label": "Power",
-          "value": "120W"
-        },
-        {
-          "label": "Light Source",
-          "value": "256 5730 lamp beads"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "4-6 CH"
-        },
-        {
-          "label": "Color",
-          "value": "normal white, warm white, two-color, control mode: voice control, automatic, DMX512, online."
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:470x260x80mm\nPacing Size:620x360x140(2pcst)\nN.W7KG"
-        }
-      ],
-      "features": [
-        "RG-PS120A170-W",
-        "256leds 120W LED Panel Light-White",
-        "Input Voltage: AC90V-240v, 50",
-        "Power: 120W",
-        "60HZ"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps120a170-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps120a170-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "62",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 37
-    },
-    {
-      "id": "rg-ps150a170-w",
-      "name": "RG-PS150A170-W 150W Embedded LED Panel light",
-      "model": "RG-PS150A170-W",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 72.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS150A170-W 150W Embedded LED Panel light. 150W,  Factory EXW from US$72.",
-      "longDesc": "RG-PS150A170-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "AC90V-240v, 50"
-        },
-        {
-          "label": "Power",
-          "value": "150W"
-        },
-        {
-          "label": "Light Source",
-          "value": "256 5730 lamp beads"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "4-6 CH"
-        },
-        {
-          "label": "Color",
-          "value": "normal white, warm white, two-color, control mode: voice control, automatic, DMX512, online. Plug: hand handle, opening: 515X330mm"
-        }
-      ],
-      "features": [
-        "RG-PS150A170-W",
-        "150W Embedded LED Panel light",
-        "Input Voltage: AC90V-240v, 50",
-        "Power: 150W",
-        "60HZ"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps150a170-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps150a170-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "72",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 38
-    },
-    {
-      "id": "rg-ps300a170-rgb",
-      "name": "RG-PS300A170-RGB 200W LED Panel Light-RGB",
-      "model": "RG-PS300A170-RGB",
-      "category": "profile",
-      "sub": "colour",
-      "subLabel": "RGBW / RGBAL",
-      "family": "profile",
-      "price": 122.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "RGBW / RGBAL",
-      "shortDesc": "RG-PS300A170-RGB 200W LED Panel Light-RGB. 300W,  Factory EXW from US$122.",
-      "longDesc": "RG-PS300A170-RGB carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "AC90V-240v, 50"
-        },
-        {
-          "label": "Power",
-          "value": "300W"
-        },
-        {
-          "label": "Light Source",
-          "value": "600 5050 lamp beads"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "4-6 CH"
-        },
-        {
-          "label": "Color",
-          "value": "RGBW"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:470x260x80mm\nPacing Size:620x360x140(2pcst)\nN.W7KG"
-        }
-      ],
-      "features": [
-        "RG-PS300A170-RGB",
-        "200W LED Panel Light-RGB",
-        "Input Voltage: AC90V-240v, 50",
-        "Power: 300W",
-        "60HZ"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps300a170-rgb.png",
-      "images": [
-        "assets/images/products/rg-ps300a170-rgb.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "122",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 39
-    },
-    {
-      "id": "rg-ps180a170-w",
-      "name": "RG-PS180A170-W 180W LED Panel Light-White",
-      "model": "RG-PS180A170-W",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 155.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS180A170-W 180W LED Panel Light-White.  Factory EXW from US$155.",
-      "longDesc": "RG-PS180A170-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Power supply",
-          "value": "AC100-240V 50-60Hz150W"
-        },
-        {
-          "label": "Light Source",
-          "value": "0.5W LEDs*360pcs, 3200K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "3 DMX channels; Master"
-        },
-        {
-          "label": "Beam Angle",
-          "value": "170 degree"
-        },
-        {
-          "label": "Size",
-          "value": "Body Size:470x260x80mm\nPacing Size:620x360x140(2pcst)\nN.W7KG"
-        }
-      ],
-      "features": [
-        "RG-PS180A170-W",
-        "180W LED Panel Light-White",
-        "Power supply: AC100-240V 50-60Hz150W",
-        "Light Source: 0.5W LEDs*360pcs, 3200K",
-        "6500K; CRI>90"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps180a170-w.jpg",
-      "images": [
-        "assets/images/products/rg-ps180a170-w.jpg"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "155",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 40
-    },
-    {
-      "id": "rg-ps150a110-wg",
-      "name": "RG-PS150A110-WG NEW 200W RGBWW (5in1) LED flat surface panel light\nRG-PS150A110-Wg",
-      "model": "RG-PS150A110-WG",
-      "category": "profile",
-      "sub": "colour",
-      "subLabel": "RGBW / RGBAL",
-      "family": "profile",
-      "price": 105.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "RGBW / RGBAL",
-      "shortDesc": "RG-PS150A110-WG NEW 200W RGBWW (5in1) LED flat surface panel light\nRG-PS150A110-Wg. 200W,  Factory EXW from US$105.",
-      "longDesc": "RG-PS150A110-WG carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Model",
-          "value": "RG-PS150A110-Wg"
-        },
-        {
-          "label": "Light Source",
-          "value": "LED2835+3030 SMD lamp beads"
-        },
-        {
-          "label": "Input Voltage",
-          "value": "AC90-240V, 50-60HZ"
-        },
-        {
-          "label": "Power",
-          "value": "200W"
-        },
-        {
-          "label": "CRI",
-          "value": "≥95"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "2"
-        },
-        {
-          "label": "Control Mode",
-          "value": "self-propelled, DMX, master-slave"
-        },
-        {
-          "label": "Color",
-          "value": "RGBWWW"
-        },
-        {
-          "label": "Weight",
-          "value": "5.5KG"
-        },
-        {
-          "label": "Features",
-          "value": "high light transmittance, quiet, soft light"
-        },
-        {
-          "label": "Size",
-          "value": "size: 556*316*122mm\nnet weight: 5.5KG           Gross weight: 6.5KG \nPackaging size: 64*20*38CM"
-        }
-      ],
-      "features": [
-        "RG-PS150A110-WG",
-        "NEW 200W RGBWW (5in1) LED flat surface panel light\nRG-PS150A",
-        "Model: RG-PS150A110-Wg",
-        "Light Source: LED2835+3030 SMD lamp beads",
-        "LED flat panel light"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps150a110-wg.png",
-      "images": [
-        "assets/images/products/rg-ps150a110-wg.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "$105usd    $96usd (over30pcs)",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 41
-    },
-    {
-      "id": "rg-ps200a110-w",
-      "name": "RG-PS200A110-W 200W LED tricolor soft light / surface light / fill light / flat light",
-      "model": "RG-PS200A110-W",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": 115.0,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS200A110-W 200W LED tricolor soft light / surface light / fill light / flat light. 200W,  Factory EXW from US$115.",
-      "longDesc": "RG-PS200A110-W carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [
-        {
-          "label": "Input Voltage",
-          "value": "AC90-240V 50-60HZ"
-        },
-        {
-          "label": "Power",
-          "value": "200W"
-        },
-        {
-          "label": "Light Source",
-          "value": "612 high-brightness LED2835 lamp beads"
-        },
-        {
-          "label": "DMX Channels",
-          "value": "2CH"
-        },
-        {
-          "label": "Plug",
-          "value": "three-core blue and white power plug + three-core XLR signal plug"
-        },
-        {
-          "label": "Color",
-          "value": "pure white 5600K"
-        },
-        {
-          "label": "Control Mode",
-          "value": "voice control, self-propelled, DMX512, master-slave"
-        },
-        {
-          "label": "Material",
-          "value": "aluminum alloy + sheet metal structure"
-        },
-        {
-          "label": "Installation method",
-          "value": "surface installation"
-        },
-        {
-          "label": "Recommended use distance",
-          "value": "2-8M"
-        },
-        {
-          "label": "Adjustment Light",
-          "value": "0-100% linear dimming, no jitter"
-        },
-        {
-          "label": "Size",
-          "value": "size: 556*316*122mm\nnet weight: 5KG           Gross weight: 6KG \nPackaging size: 64*20*38CM"
-        }
-      ],
-      "features": [
-        "RG-PS200A110-W",
-        "200W LED tricolor soft light / surface light / fill light / ",
-        "Input Voltage: AC90-240V 50-60HZ",
-        "Power: 200W",
-        "warm white 3200"
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a110-w.png",
-      "images": [
-        "assets/images/products/rg-ps200a110-w.png"
-      ],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "115",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 42
-    },
-    {
-      "id": "rg-ps200a110-www",
-      "name": "RG-PS200A110-WWW 200W LED tricolor soft light / surface light / fill light / flat light (CW+WW 2in1)",
-      "model": "RG-PS200A110-WWW",
-      "category": "profile",
-      "sub": "fixed",
-      "subLabel": "Fixed Optics",
-      "family": "profile",
-      "price": null,
-      "badge": "",
-      "rating": 4.7,
-      "reviews": 0,
-      "sold": "",
-      "icon": "◎",
-      "iconColor": "#14b8a6",
-      "tagline": "Fixed Optics",
-      "shortDesc": "RG-PS200A110-WWW 200W LED tricolor soft light / surface light / fill light / flat light (CW+WW 2in1).  Factory EXW.",
-      "longDesc": "RG-PS200A110-WWW carries RIGE factory data taken from the profile quotation sheet. Assembled in our Guangzhou plant, 48h burn-in before packing, shipped with QC card and DMX chart. Typical use: Theatre, Studio, Broadcast, Architectural. OEM/ODM branding and custom configurations on request.",
-      "specs": [],
-      "features": [
-        "RG-PS200A110-WWW",
-        "200W LED tricolor soft light / surface light / fill light / "
-      ],
-      "applications": [
-        "Theatre",
-        "Studio",
-        "Broadcast",
-        "Architectural"
-      ],
-      "priority": "Core",
-      "phase": "Launch",
-      "hero": false,
-      "oem": true,
-      "image": "assets/images/products/rg-ps200a110-www.png",
-      "images": [],
-      "imageCredit": "RIGE Lighting",
-      "priceSource": "factory-exw",
-      "priceTiers": "",
-      "currency": "USD",
-      "incoterm": "EXW",
-      "moq": 30,
-      "sourceFile": "profile",
-      "sourceRow": 43
     },
     {
       "id": "rg-st112a-s20f336a",
@@ -25863,6 +23485,3173 @@
       "moq": 1,
       "sourceRow": 65,
       "sourceFile": "Dmx Controller And Dimmer控台和调光器_RIGEBA.xlsx"
+    },
+    {
+      "id": "rg-ps200a20t50-w",
+      "name": "RG-PS200A20T50-W 200W Led Fresnel Zoom Spot light 3200K-5600K CW WW 2IN1 COB Led Profile Spot Light",
+      "model": "RG-PS200A20T50-W",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 95.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W Led Fresnel Zoom Spot",
+      "shortDesc": "RG-PS200A20T50-W 200W Led Fresnel Zoom Spot light 3200K-5600K CW WW 2IN1 COB Led Profile Spot Light. Factory EXW from US$95",
+      "longDesc": "RG-PS200A20T50-W is part of the RIGE Zoom Optics range built in our own Guangzhou plant. Input voltage: AC100-240V, 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Product Size",
+          "value": "41×32×20cm (L×W×H)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "5.3kg"
+        },
+        {
+          "label": "Package Size",
+          "value": "35*28*48CM"
+        },
+        {
+          "label": "Gross Weight",
+          "value": "6.5KG"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "AC100-240V, 50/60Hz"
+        },
+        {
+          "label": "Rated power",
+          "value": "200W"
+        },
+        {
+          "label": "Light source",
+          "value": "1*150W imported high-brightness LED"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K/5600K/2 in 1 optional"
+        },
+        {
+          "label": "Display Index",
+          "value": "≥95"
+        },
+        {
+          "label": "Heat dissipation",
+          "value": "fan heat dissipation"
+        },
+        {
+          "label": "Lamp life",
+          "value": "50000H"
+        },
+        {
+          "label": "Adjustment Light",
+          "value": "0%-100% linear dimming"
+        },
+        {
+          "label": "Optical material",
+          "value": "large angle light collecting mirror + threaded condenser"
+        },
+        {
+          "label": "Optical angle",
+          "value": "15°-50° (manual focus)"
+        },
+        {
+          "label": "Protection level",
+          "value": "IP20"
+        },
+        {
+          "label": "Casing material",
+          "value": "aluminum alloy"
+        },
+        {
+          "label": "Number of channels",
+          "value": "2CH/1CH"
+        },
+        {
+          "label": "Control mode",
+          "value": "voice control/master-slave/autonomous/DMX512"
+        },
+        {
+          "label": "Scope of application",
+          "value": "film and television stage, wedding, studio, conference room, etc."
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$95 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥665"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$85 (over 100 pcs)"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-PS200A20T50-W"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a20t50-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a20t50-w.jpg",
+        "assets/images/products/rg-ps200a20t50-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "95usd 85 usd (over 100pcs) · RMB ￥665 ￥600",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 100,
+      "sourceRow": 2,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a20t50-k",
+      "name": "NEW 200w LED TV Studio Theater Fresnel Light (2in1) RG-PS200A20T50-K",
+      "model": "RG-PS200A20T50-K",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 168.0,
+      "badge": "New",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "NEW 200w LED TV Studio The",
+      "shortDesc": "NEW 200w LED TV Studio Theater Fresnel Light (2in1) RG-PS200A20T50-K. Factory EXW from US$168",
+      "longDesc": "RG-PS200A20T50-K is part of the RIGE Zoom Optics range built in our own Guangzhou plant. New 200W high-quality film and television spotlight (2 in 1) Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Product Size",
+          "value": "21×26.5×45cm (L×W×H)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "6.5kg"
+        },
+        {
+          "label": "Model",
+          "value": "RG-PS200A20T50-K"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "AC100-240V, 50/60Hz"
+        },
+        {
+          "label": "Rated power",
+          "value": "200W"
+        },
+        {
+          "label": "Light source",
+          "value": "200W imported LED"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K/5600K optional, 2 in 1"
+        },
+        {
+          "label": "Display Index",
+          "value": "≥90"
+        },
+        {
+          "label": "Heat dissipation",
+          "value": "fan heat dissipation"
+        },
+        {
+          "label": "Lamp life",
+          "value": "50000h"
+        },
+        {
+          "label": "Dimming",
+          "value": "0%-100% linear dimming"
+        },
+        {
+          "label": "Optical material",
+          "value": "glass threaded condenser"
+        },
+        {
+          "label": "Optical angle",
+          "value": "15°-40°"
+        },
+        {
+          "label": "Protection level",
+          "value": "IP20"
+        },
+        {
+          "label": "Control mode",
+          "value": "standard DMX512 signal, self-propelled, master-slave"
+        },
+        {
+          "label": "Number of channels",
+          "value": "2 DMX channels"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$168 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1180"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$158 (over 50 pcs)"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "New 200W high-quality film and television spotlight (2 in 1)"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a20t50-k.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a20t50-k.jpg",
+        "assets/images/products/rg-ps200a20t50-k-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "168usd 158usd (over 50pcs ) · RMB ￥1180 ￥1100 (over 50pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 50,
+      "sourceRow": 3,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "300az-rgbal",
+      "name": "IP65 PROFILE 300AZ-RGBAL outdoor RGBAL profile 300w",
+      "model": "300AZ-RGBAL",
+      "category": "profile",
+      "sub": "colour",
+      "subLabel": "RGBW / RGBAL",
+      "family": "profile",
+      "price": 930.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "IP65 PROFILE outdoor RGBAL",
+      "shortDesc": "IP65 PROFILE 300AZ-RGBAL outdoor RGBAL profile 300w. Factory EXW from US$930",
+      "longDesc": "300AZ-RGBAL is part of the RIGE RGBW / RGBAL range built in our own Guangzhou plant. nput Voltage:AC100-240V 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Net Weight",
+          "value": "16.5kg"
+        },
+        {
+          "label": "Gross Weight",
+          "value": "20kg"
+        },
+        {
+          "label": "Size",
+          "value": "76.76*29.73*27.37CM"
+        },
+        {
+          "label": "Packing Size",
+          "value": "86*37*35cm(1pc/carton)"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "AC100-240V 50/60Hz"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "15°to 30°"
+        },
+        {
+          "label": "Function",
+          "value": "Auto zoom by DMX"
+        },
+        {
+          "label": "Frequency",
+          "value": "500HZ - 25000HZ optional"
+        },
+        {
+          "label": "Strobe",
+          "value": "1-25times/sec"
+        },
+        {
+          "label": "Control Protocol",
+          "value": "RDM / DMX , Auto run and Master/Slave control system"
+        },
+        {
+          "label": "Temperature",
+          "value": "10℃~40℃"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$930 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥6500"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "1 * 300W COB LED (RGBAL 5IN1)",
+        "50,000 hours life time and low power consumption",
+        "High quality optical system and field uniformity",
+        "Fully Tuneable from 2,700 to 12,000K",
+        "Shutter controlled by DMX (auto cutting to any shapes)",
+        "Die casting aluminum housing design"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/300az-rgbal.jpg",
+      "images": [
+        "assets/images/products/300az-rgbal.jpg",
+        "assets/images/products/300az-rgbal-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "$930 $910 · RMB ￥6500 ￥6300",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 4,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps20a19-w",
+      "name": "20W Mini LED Profile Light RG-PS20A19-W",
+      "model": "RG-PS20A19-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 119.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "20W Mini LED Profile Light",
+      "shortDesc": "20W Mini LED Profile Light RG-PS20A19-W. Factory EXW from US$119",
+      "longDesc": "RG-PS20A19-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. • Light Color: single WW / CW Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Net Weight",
+          "value": "2.5kg"
+        },
+        {
+          "label": "Packing Size",
+          "value": "24.5x10x20cm"
+        },
+        {
+          "label": "Color",
+          "value": "single WW / CW"
+        },
+        {
+          "label": "IC Chip",
+          "value": "Nichia"
+        },
+        {
+          "label": "LED Lamp",
+          "value": "Japan Citizen"
+        },
+        {
+          "label": "Index(CRI)",
+          "value": "Ra≥90"
+        },
+        {
+          "label": "LED Life Time",
+          "value": "over 50,000 hours"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC100V-240V 50-60Hz"
+        },
+        {
+          "label": "Max Power Consumption",
+          "value": "26W"
+        },
+        {
+          "label": "Fixed Lens",
+          "value": "19°/26°/36°/50°(optional)"
+        },
+        {
+          "label": "Dimmer",
+          "value": "0~100% linearly adjustable"
+        },
+        {
+          "label": "Strobe",
+          "value": "1-25times/sec"
+        },
+        {
+          "label": "Focus",
+          "value": "Can be adjusted by hand"
+        },
+        {
+          "label": "Light body",
+          "value": "Die-casting Aluminum"
+        },
+        {
+          "label": "Body color",
+          "value": "Black / White"
+        },
+        {
+          "label": "Control Protocol",
+          "value": "DMX"
+        },
+        {
+          "label": "Control System",
+          "value": "DMX512, Sound mode"
+        },
+        {
+          "label": "DMX Channels",
+          "value": "1/3CH(single color)"
+        },
+        {
+          "label": "Housing",
+          "value": "Small volume, lightweight"
+        },
+        {
+          "label": "Temperature",
+          "value": "0°C~40°C"
+        },
+        {
+          "label": "IP Grade",
+          "value": "IP20"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$119 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥800"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$107 (over 30 pcs)"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-PS20A19-W"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps20a19-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps20a19-w.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "$119 $107 Over30pcs · RMB ￥800 ￥720 Over30pcs",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 5,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a19-w",
+      "name": "200W LED Profile Light-White RG-PS200A19-W",
+      "model": "RG-PS200A19-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 223.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Profile Light-Whi",
+      "shortDesc": "200W LED Profile Light-White RG-PS200A19-W. Factory EXW from US$223",
+      "longDesc": "RG-PS200A19-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz145W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "645x280x220mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x660x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "7.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz145W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 160W 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "19 /26/36 /50degree for option"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$223 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1495"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a19-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a19-w.jpg",
+        "assets/images/products/rg-ps200a19-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "223",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 6,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps180a19-rgbw",
+      "name": "180W LED Profile Light-RGBW RG-PS180A19-RGBW",
+      "model": "RG-PS180A19-RGBW",
+      "category": "profile",
+      "sub": "colour",
+      "subLabel": "RGBW / RGBAL",
+      "family": "profile",
+      "price": 231.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "180W LED Profile Light-RGB",
+      "shortDesc": "180W LED Profile Light-RGBW RG-PS180A19-RGBW. Factory EXW from US$231",
+      "longDesc": "RG-PS180A19-RGBW is part of the RIGE RGBW / RGBAL range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz135W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "645x280x220mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x660x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "7.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz135W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 150W RGBW"
+        },
+        {
+          "label": "Control",
+          "value": "9 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "19 /26/36 /50degree for option"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$231 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1550"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps180a19-rgbw.jpg",
+      "images": [
+        "assets/images/products/rg-ps180a19-rgbw.jpg",
+        "assets/images/products/rg-ps180a19-rgbw-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "231",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 7,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps300a17t50-w",
+      "name": "300W LED Zoom Profile Light-White RG-PS300A17T50-W",
+      "model": "RG-PS300A17T50-W",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 328.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "300W LED Zoom Profile Ligh",
+      "shortDesc": "300W LED Zoom Profile Light-White RG-PS300A17T50-W. Factory EXW from US$328",
+      "longDesc": "RG-PS300A17T50-W is part of the RIGE Zoom Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz270W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "615x280x215mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x660x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "14KG"
+        },
+        {
+          "label": "Gross Weight",
+          "value": "19KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz270W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 300W 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "Manual Zoom 17-50 degree"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$328 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥2200"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps300a17t50-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps300a17t50-w.jpg",
+        "assets/images/products/rg-ps300a17t50-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "328",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 9,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a17t50-w",
+      "name": "200W LED Zoom Profile Light-White RG-PS200A17T50-W",
+      "model": "RG-PS200A17T50-W",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 266.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Zoom Profile Ligh",
+      "shortDesc": "200W LED Zoom Profile Light-White RG-PS200A17T50-W. Factory EXW from US$266",
+      "longDesc": "RG-PS200A17T50-W is part of the RIGE Zoom Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz 170W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "615x280x215mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x660x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "14KG"
+        },
+        {
+          "label": "Gross Weight",
+          "value": "19KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz 170W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 200W 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "Manual Zoom 17-50 degree"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$266 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1780"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a17t50-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a17t50-w.jpg",
+        "assets/images/products/rg-ps200a17t50-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "266",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 10,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a17t50-wa",
+      "name": "200W LED Zoom Profile Light-White+Cool White RG-PS200A17T50-WA",
+      "model": "RG-PS200A17T50-WA",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 270.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Zoom Profile Ligh",
+      "shortDesc": "200W LED Zoom Profile Light-White+Cool White RG-PS200A17T50-WA. Factory EXW from US$270",
+      "longDesc": "RG-PS200A17T50-WA is part of the RIGE Zoom Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz170W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "615x280x215mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x660x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "14KG"
+        },
+        {
+          "label": "Gross Weight",
+          "value": "19KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz170W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 160W WW+CW; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "5 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "Manual Zoom 17-50 degree"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$270 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1810"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a17t50-wa.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a17t50-wa.jpg",
+        "assets/images/products/rg-ps200a17t50-wa-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "270",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 11,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps180a17t50-rgbw",
+      "name": "180W LED Zoom Profile Light-RGBW RG-PS180A17T50-RGBW",
+      "model": "RG-PS180A17T50-RGBW",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 248.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "180W LED Zoom Profile Ligh",
+      "shortDesc": "180W LED Zoom Profile Light-RGBW RG-PS180A17T50-RGBW. Factory EXW from US$248",
+      "longDesc": "RG-PS180A17T50-RGBW is part of the RIGE Zoom Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz135W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "615x280x215mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x660x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "14KG"
+        },
+        {
+          "label": "Gross Weight",
+          "value": "19KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz135W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 150W RGBW"
+        },
+        {
+          "label": "Control",
+          "value": "9 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "Manual Zoom 17-50 degree"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$248 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1660"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps180a17t50-rgbw.jpg",
+      "images": [
+        "assets/images/products/rg-ps180a17t50-rgbw.jpg",
+        "assets/images/products/rg-ps180a17t50-rgbw-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "248",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 12,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a17t50-rgbw",
+      "name": "200W LED Zoom Profile Light-RGBW RG-PS200A17T50-RGBW",
+      "model": "RG-PS200A17T50-RGBW",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 258.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Zoom Profile Ligh",
+      "shortDesc": "200W LED Zoom Profile Light-RGBW RG-PS200A17T50-RGBW. Factory EXW from US$258",
+      "longDesc": "RG-PS200A17T50-RGBW is part of the RIGE Zoom Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz180W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "615x280x215mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x660x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "14KG"
+        },
+        {
+          "label": "Gross Weight",
+          "value": "19KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz180W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 200W RGBW"
+        },
+        {
+          "label": "Control",
+          "value": "9 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "Manual Zoom 17-50 degree"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$258 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1750"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a17t50-rgbw.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a17t50-rgbw.jpg",
+        "assets/images/products/rg-ps200a17t50-rgbw-2.jpg",
+        "assets/images/products/rg-ps200a17t50-rgbw-3.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "258",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 13,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps300a19f-w",
+      "name": "300W LED Profile Light-White RG-PS300A19F-W",
+      "model": "RG-PS300A19F-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 316.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "300W LED Profile Light-Whi",
+      "shortDesc": "300W LED Profile Light-White RG-PS300A19F-W. Factory EXW from US$316",
+      "longDesc": "RG-PS300A19F-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz270W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "645x280x220mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x730x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz270W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 300W 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "19 /26/36 /50degree for option"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$316 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥2120"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps300a19f-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps300a19f-w.jpg",
+        "assets/images/products/rg-ps300a19f-w-2.jpg",
+        "assets/images/products/rg-ps300a19f-w-3.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "316",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 15,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a19f-w",
+      "name": "200W LED Profile Light-White RG-PS200A19F-W",
+      "model": "RG-PS200A19F-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 248.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Profile Light-Whi",
+      "shortDesc": "200W LED Profile Light-White RG-PS200A19F-W. Factory EXW from US$248",
+      "longDesc": "RG-PS200A19F-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz170W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "645x280x220mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x730x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz170W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 200W 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "19 /26/36 /50degree for option"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$248 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1660"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a19f-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a19f-w.jpg",
+        "assets/images/products/rg-ps200a19f-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "248",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 16,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps160a19f-w",
+      "name": "160W LED Profile Light-White RG-PS160A19F-W",
+      "model": "RG-PS160A19F-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 223.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "160W LED Profile Light-Whi",
+      "shortDesc": "160W LED Profile Light-White RG-PS160A19F-W. Factory EXW from US$223",
+      "longDesc": "RG-PS160A19F-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz145W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "645x280x220mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x730x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz145W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 160W 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "19 /26/36 /50degree for option"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$223 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1495"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps160a19f-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps160a19f-w.jpg",
+        "assets/images/products/rg-ps160a19f-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "223",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 17,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a19f-wa",
+      "name": "200W LED Prefocus Profile Light-WW+CW RG-PS200A19F-WA",
+      "model": "RG-PS200A19F-WA",
+      "category": "profile",
+      "sub": "tunable",
+      "subLabel": "Tunable White",
+      "family": "profile",
+      "price": 254.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Prefocus Profile",
+      "shortDesc": "200W LED Prefocus Profile Light-WW+CW RG-PS200A19F-WA. Factory EXW from US$254",
+      "longDesc": "RG-PS200A19F-WA is part of the RIGE Tunable White range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz170W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "645x280x220mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x730x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz170W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 160W WW+CW; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "5 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "19 /26/36 /50degree for option"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$254 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1700"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a19f-wa.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a19f-wa.jpg",
+        "assets/images/products/rg-ps200a19f-wa-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "254",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 18,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps180a19f-rgbw",
+      "name": "180W LED Profile Light-RGBW RG-PS180A19F-RGBW",
+      "model": "RG-PS180A19F-RGBW",
+      "category": "profile",
+      "sub": "colour",
+      "subLabel": "RGBW / RGBAL",
+      "family": "profile",
+      "price": 227.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "180W LED Profile Light-RGB",
+      "shortDesc": "180W LED Profile Light-RGBW RG-PS180A19F-RGBW. Factory EXW from US$227",
+      "longDesc": "RG-PS180A19F-RGBW is part of the RIGE RGBW / RGBAL range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz135W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "645x280x220mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x730x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz135W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 150W RGBW"
+        },
+        {
+          "label": "Control",
+          "value": "9 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "19 /26/36 /50degree for option"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$227 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1520"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps180a19f-rgbw.jpg",
+      "images": [
+        "assets/images/products/rg-ps180a19f-rgbw.jpg",
+        "assets/images/products/rg-ps180a19f-rgbw-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "227",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 19,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a19f-rgbw",
+      "name": "200W LED Profile Light-RGBW RG-PS200A19F-RGBW",
+      "model": "RG-PS200A19F-RGBW",
+      "category": "profile",
+      "sub": "colour",
+      "subLabel": "RGBW / RGBAL",
+      "family": "profile",
+      "price": 266.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Profile Light-RGB",
+      "shortDesc": "200W LED Profile Light-RGBW RG-PS200A19F-RGBW. Factory EXW from US$266",
+      "longDesc": "RG-PS200A19F-RGBW is part of the RIGE RGBW / RGBAL range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz180W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "645x280x220mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "800x730x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz180W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 200W RGBW"
+        },
+        {
+          "label": "Control",
+          "value": "9 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "19 /26/36 /50degree for option"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$266 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1780"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a19f-rgbw.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a19f-rgbw.jpg",
+        "assets/images/products/rg-ps200a19f-rgbw-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "266",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 20,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a19y-w",
+      "name": "200W LED Profile Light-White RG-PS200A19Y-W",
+      "model": "RG-PS200A19Y-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 210.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Profile Light-Whi",
+      "shortDesc": "200W LED Profile Light-White RG-PS200A19Y-W. Factory EXW from US$210",
+      "longDesc": "RG-PS200A19Y-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz145W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "600x280x220mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "750x720x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "7.8KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz145W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 160W 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "19 /26/36 /50degree for option"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$210 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1410"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a19y-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a19y-w.jpg",
+        "assets/images/products/rg-ps200a19y-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "210",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 21,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps180a19y-rgbw",
+      "name": "180W LED Profile Light-RGBW RG-PS180A19Y-RGBW",
+      "model": "RG-PS180A19Y-RGBW",
+      "category": "profile",
+      "sub": "colour",
+      "subLabel": "RGBW / RGBAL",
+      "family": "profile",
+      "price": 227.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "180W LED Profile Light-RGB",
+      "shortDesc": "180W LED Profile Light-RGBW RG-PS180A19Y-RGBW. Factory EXW from US$227",
+      "longDesc": "RG-PS180A19Y-RGBW is part of the RIGE RGBW / RGBAL range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz135W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "600x280x220mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "750x720x360(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "7.8KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz135W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 150W RGBW"
+        },
+        {
+          "label": "Control",
+          "value": "9 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "19 /26/36 /50degree for option"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$227 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1520"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps180a19y-rgbw.jpg",
+      "images": [
+        "assets/images/products/rg-ps180a19y-rgbw.jpg",
+        "assets/images/products/rg-ps180a19y-rgbw-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "227",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 22,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a14s-w",
+      "name": "200W LED Prefocus Spot Light-White RG-PS200A14S-W",
+      "model": "RG-PS200A14S-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 202.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Prefocus Spot Lig",
+      "shortDesc": "200W LED Prefocus Spot Light-White RG-PS200A14S-W. Factory EXW from US$202",
+      "longDesc": "RG-PS200A14S-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz145W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "530x280x250mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "670x660x330(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "8KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz145W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 160W 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$202 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1350"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Beam angle 14/23/30 degree for option",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a14s-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a14s-w.jpg",
+        "assets/images/products/rg-ps200a14s-w-2.jpg",
+        "assets/images/products/rg-ps200a14s-w-3.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "202",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 24,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps180a14s-rgbw",
+      "name": "180W LED Prefocus Spot Light-RGBW RG-PS180A14S-RGBW",
+      "model": "RG-PS180A14S-RGBW",
+      "category": "profile",
+      "sub": "colour",
+      "subLabel": "RGBW / RGBAL",
+      "family": "profile",
+      "price": 206.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "180W LED Prefocus Spot Lig",
+      "shortDesc": "180W LED Prefocus Spot Light-RGBW RG-PS180A14S-RGBW. Factory EXW from US$206",
+      "longDesc": "RG-PS180A14S-RGBW is part of the RIGE RGBW / RGBAL range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz135W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "530x280x250mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "670x660x330(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "8KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz135W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 150W RGBW"
+        },
+        {
+          "label": "Control",
+          "value": "9 DMX channels; Master/Slave"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$206 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1380"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Beam angle 14/23/30 degree for option",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps180a14s-rgbw.jpg",
+      "images": [
+        "assets/images/products/rg-ps180a14s-rgbw.jpg",
+        "assets/images/products/rg-ps180a14s-rgbw-2.jpg",
+        "assets/images/products/rg-ps180a14s-rgbw-3.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "206",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 25,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps100a20t38d-w",
+      "name": "100W LED Zoom Spot Light -White RG-PS100A20T38D-W 100W",
+      "model": "RG-PS100A20T38D-W",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 223.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "100W LED Zoom Spot Light -",
+      "shortDesc": "100W LED Zoom Spot Light -White RG-PS100A20T38D-W 100W. Factory EXW from US$223",
+      "longDesc": "RG-PS100A20T38D-W is part of the RIGE Zoom Optics range built in our own Guangzhou plant. Power Supply:AC100-240V50-60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Weight",
+          "value": "6.25kg"
+        },
+        {
+          "label": "Power Supply",
+          "value": "AC100-240V50-60HZ"
+        },
+        {
+          "label": "Power Consumption",
+          "value": "100W"
+        },
+        {
+          "label": "Color rendering index",
+          "value": "CRI>95"
+        },
+        {
+          "label": "Control",
+          "value": "RDM, DMX512 control or master-slave synchronization"
+        },
+        {
+          "label": "Channel",
+          "value": "1/4DMX channel optional"
+        },
+        {
+          "label": "Beam angle",
+          "value": "manual 20-38 degrees"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$223 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1515"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "Original imported Citizen 150W, COB integrated light source LED3200K (5600K)",
+        "Copper tube heat conduction + silent fan (automatically senses temperature to start the fan)"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps100a20t38d-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps100a20t38d-w.jpg",
+        "assets/images/products/rg-ps100a20t38d-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "223",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 27,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a25t50m-w",
+      "name": "200W LED Zoom Studio Light-White RG-PS200A25T50M-W",
+      "model": "RG-PS200A25T50M-W",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 223.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Zoom Studio Light",
+      "shortDesc": "200W LED Zoom Studio Light-White RG-PS200A25T50M-W. Factory EXW from US$223",
+      "longDesc": "RG-PS200A25T50M-W is part of the RIGE Zoom Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz145W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "450x265x195mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "600x590x270(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "7.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz145W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 160W 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "Manual Zoom 25-50 degree"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$223 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1515"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a25t50m-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a25t50m-w.jpg",
+        "assets/images/products/rg-ps200a25t50m-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "223",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 28,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps180a25t50m-rgbw",
+      "name": "200W LED Zoom Studio Light-RGBW RG-PS180A25T50M-RGBW",
+      "model": "RG-PS180A25T50M-RGBW",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 234.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Zoom Studio Light",
+      "shortDesc": "200W LED Zoom Studio Light-RGBW RG-PS180A25T50M-RGBW. Factory EXW from US$234",
+      "longDesc": "RG-PS180A25T50M-RGBW is part of the RIGE Zoom Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz135W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "450x265x195mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "600x590x270(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "7.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz135W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 150W RGBW"
+        },
+        {
+          "label": "Control",
+          "value": "9 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "Manual Zoom 25-50 degree"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$234 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1588"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps180a25t50m-rgbw.jpg",
+      "images": [
+        "assets/images/products/rg-ps180a25t50m-rgbw.jpg",
+        "assets/images/products/rg-ps180a25t50m-rgbw-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "234",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 29,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps175a28t70d-w",
+      "name": "175W LED Zoom Studio Light-White RG-PS175A28T70D-W",
+      "model": "RG-PS175A28T70D-W",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 220.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "175W LED Zoom Studio Light",
+      "shortDesc": "175W LED Zoom Studio Light-White RG-PS175A28T70D-W. Factory EXW from US$220",
+      "longDesc": "RG-PS175A28T70D-W is part of the RIGE Zoom Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz160W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "340x310x256mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "730x420x320(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "8KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz160W"
+        },
+        {
+          "label": "Source",
+          "value": "7x25W LED 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "Auto Zoom 28-70 degree"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$220 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1500"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps175a28t70d-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps175a28t70d-w.jpg",
+        "assets/images/products/rg-ps175a28t70d-w-2.jpg",
+        "assets/images/products/rg-ps175a28t70d-w-3.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "220",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 30,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a15t65m-w",
+      "name": "200W LED Zoom Fresnel Light-White RG-PS200A15T65M-W",
+      "model": "RG-PS200A15T65M-W",
+      "category": "profile",
+      "sub": "zoom",
+      "subLabel": "Zoom Optics",
+      "family": "profile",
+      "price": 277.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Zoom Fresnel Ligh",
+      "shortDesc": "200W LED Zoom Fresnel Light-White RG-PS200A15T65M-W. Factory EXW from US$277",
+      "longDesc": "RG-PS200A15T65M-W is part of the RIGE Zoom Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz 200W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "53.1X28.5X21.6cm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "730x420x320(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "8.5KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz 200W"
+        },
+        {
+          "label": "Source",
+          "value": "LED 200W 3200K/5600K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "1.DMX512 2.RDM 3.Master/Slave Operation"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "Manual Zoom 15-65 degree with high- efficiency optical system"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$277 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1750"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$262 (over 30 pcs)"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone",
+        "Heat pipe cooling system"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a15t65m-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a15t65m-w.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "$277 $262(over 30pcs) · RMB ￥1750 ￥1650 (over 30pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 31,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps120a170-w",
+      "name": "256leds 120W LED Panel Light-White RG-PS120A170-W",
+      "model": "RG-PS120A170-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 62.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "256leds 120W LED Panel Lig",
+      "shortDesc": "256leds 120W LED Panel Light-White RG-PS120A170-W. Factory EXW from US$62",
+      "longDesc": "RG-PS120A170-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. Voltage: AC90V-240v, 50/60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "470x260x80mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "620x360x140(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "7KG"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC90V-240v, 50/60HZ"
+        },
+        {
+          "label": "Power",
+          "value": "120W"
+        },
+        {
+          "label": "Light source",
+          "value": "256 5730 lamp beads"
+        },
+        {
+          "label": "Channel",
+          "value": "4-6 CH"
+        },
+        {
+          "label": "Color",
+          "value": "normal white, warm white, two-color"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$62 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥380"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-PS120A170-W"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps120a170-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps120a170-w.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "62",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 32,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps150a170-w",
+      "name": "150W Embedded LED Panel light RG-PS150A170-W",
+      "model": "RG-PS150A170-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 72.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "150W Embedded LED Panel li",
+      "shortDesc": "150W Embedded LED Panel light RG-PS150A170-W. Factory EXW from US$72",
+      "longDesc": "RG-PS150A170-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. Voltage: AC90V-240v, 50/60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Voltage",
+          "value": "AC90V-240v, 50/60HZ"
+        },
+        {
+          "label": "Power",
+          "value": "150W"
+        },
+        {
+          "label": "Light source",
+          "value": "256 5730 lamp beads"
+        },
+        {
+          "label": "Channel",
+          "value": "4-6 CH"
+        },
+        {
+          "label": "Color",
+          "value": "normal white, warm white, two-color"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$72 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥450"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-PS150A170-W"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps150a170-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps150a170-w.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "72",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 33,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps300a170-rgb",
+      "name": "200W LED Panel Light-RGB RG-PS300A170-RGB",
+      "model": "RG-PS300A170-RGB",
+      "category": "profile",
+      "sub": "colour",
+      "subLabel": "RGBW / RGBAL",
+      "family": "profile",
+      "price": 122.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED Panel Light-RGB",
+      "shortDesc": "200W LED Panel Light-RGB RG-PS300A170-RGB. Factory EXW from US$122",
+      "longDesc": "RG-PS300A170-RGB is part of the RIGE RGBW / RGBAL range built in our own Guangzhou plant. Voltage: AC90V-240v, 50/60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "470x260x80mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "620x360x140(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "7KG"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC90V-240v, 50/60HZ"
+        },
+        {
+          "label": "Power",
+          "value": "300W"
+        },
+        {
+          "label": "Light source",
+          "value": "600 5050 lamp beads"
+        },
+        {
+          "label": "Channel",
+          "value": "4-6 CH"
+        },
+        {
+          "label": "Color",
+          "value": "RGBW"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$122 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥750"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-PS300A170-RGB"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps300a170-rgb.jpg",
+      "images": [
+        "assets/images/products/rg-ps300a170-rgb.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "122",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 34,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps180a170-w",
+      "name": "180W LED Panel Light-White RG-PS180A170-W",
+      "model": "RG-PS180A170-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 155.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "180W LED Panel Light-White",
+      "shortDesc": "180W LED Panel Light-White RG-PS180A170-W. Factory EXW from US$155",
+      "longDesc": "RG-PS180A170-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. *Power supply:AC100-240V 50-60Hz150W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Body Size",
+          "value": "470x260x80mm"
+        },
+        {
+          "label": "Packing Size",
+          "value": "620x360x140(2pcst)"
+        },
+        {
+          "label": "Net Weight",
+          "value": "7KG"
+        },
+        {
+          "label": "Power supply",
+          "value": "AC100-240V 50-60Hz150W"
+        },
+        {
+          "label": "Source",
+          "value": "0.5W LEDs*360pcs, 3200K/6500K; CRI>90"
+        },
+        {
+          "label": "Control",
+          "value": "3 DMX channels; Master/Slave"
+        },
+        {
+          "label": "Beam Angle",
+          "value": "170 degree"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$155 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1035"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "4 selectable dimming curves; Stand alone"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps180a170-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps180a170-w.jpg",
+        "assets/images/products/rg-ps180a170-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "155",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 35,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps150a110-wg",
+      "name": "NEW 200W RGBWW (5in1) LED flat surface panel light RG-PS150A110-Wg",
+      "model": "RG-PS150A110-Wg",
+      "category": "profile",
+      "sub": "colour",
+      "subLabel": "RGBW / RGBAL",
+      "family": "profile",
+      "price": 105.0,
+      "badge": "New",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "NEW 200W RGBWW (5in1) LED",
+      "shortDesc": "NEW 200W RGBWW (5in1) LED flat surface panel light RG-PS150A110-Wg. Factory EXW from US$105",
+      "longDesc": "RG-PS150A110-Wg is part of the RIGE RGBW / RGBAL range built in our own Guangzhou plant. LED flat panel light Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "556*316*122mm"
+        },
+        {
+          "label": "Net Weight",
+          "value": "5.5KG"
+        },
+        {
+          "label": "Gross weight",
+          "value": "6.5KG"
+        },
+        {
+          "label": "Packing Size",
+          "value": "64*20*38CM"
+        },
+        {
+          "label": "Model",
+          "value": "RG-PS150A110-Wg"
+        },
+        {
+          "label": "Light source",
+          "value": "LED2835+3030 SMD lamp beads"
+        },
+        {
+          "label": "Input Voltage",
+          "value": "AC90-240V, 50-60HZ"
+        },
+        {
+          "label": "Power",
+          "value": "200W"
+        },
+        {
+          "label": "Number of LEDs",
+          "value": "1080"
+        },
+        {
+          "label": "CRI",
+          "value": "≥95"
+        },
+        {
+          "label": "DMX channel",
+          "value": "2/10CH"
+        },
+        {
+          "label": "Control mode",
+          "value": "self-propelled, DMX, master-slave"
+        },
+        {
+          "label": "Luminous color",
+          "value": "RGBWWW"
+        },
+        {
+          "label": "Features",
+          "value": "high light transmittance, quiet, soft light"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$105 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥735"
+        },
+        {
+          "label": "Volume Price",
+          "value": "US$96 (over 30 pcs)"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "LED flat panel light"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps150a110-wg.jpg",
+      "images": [
+        "assets/images/products/rg-ps150a110-wg.jpg",
+        "assets/images/products/rg-ps150a110-wg-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "$105usd $96usd (over30pcs) · RMB ￥735 ￥675 (over30pcs)",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 30,
+      "sourceRow": 36,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "rg-ps200a110-w",
+      "name": "RG-PS200A110-W 200W LED tricolor soft light/surface light/fill light/flat light",
+      "model": "RG-PS200A110-W",
+      "category": "profile",
+      "sub": "fixed",
+      "subLabel": "Fixed Optics",
+      "family": "profile",
+      "price": 115.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "200W LED tricolor soft lig",
+      "shortDesc": "RG-PS200A110-W 200W LED tricolor soft light/surface light/fill light/flat light. Factory EXW from US$115",
+      "longDesc": "RG-PS200A110-W is part of the RIGE Fixed Optics range built in our own Guangzhou plant. Voltage: AC90-240V 50-60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "556*316*122mm"
+        },
+        {
+          "label": "Net Weight",
+          "value": "5KG"
+        },
+        {
+          "label": "Gross weight",
+          "value": "6KG"
+        },
+        {
+          "label": "Packing Size",
+          "value": "64*20*38CM"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC90-240V 50-60HZ"
+        },
+        {
+          "label": "Power",
+          "value": "200W"
+        },
+        {
+          "label": "Light source",
+          "value": "612 high-brightness LED2835 lamp beads"
+        },
+        {
+          "label": "Channel",
+          "value": "2CH"
+        },
+        {
+          "label": "Plug",
+          "value": "three-core blue and white power plug + three-core XLR signal plug"
+        },
+        {
+          "label": "Luminous color",
+          "value": "pure white 5600K/warm white 3200/pure white + warm white 5600K + 3200K"
+        },
+        {
+          "label": "Control mode",
+          "value": "voice control, self-propelled, DMX512, master-slave"
+        },
+        {
+          "label": "Material",
+          "value": "aluminum alloy + sheet metal structure"
+        },
+        {
+          "label": "Method",
+          "value": "surface installation/hanging/bracket/ground support"
+        },
+        {
+          "label": "Distance",
+          "value": "2-8M"
+        },
+        {
+          "label": "Color rendering index",
+          "value": "Ra≥97"
+        },
+        {
+          "label": "Source Life",
+          "value": "50,000 hours"
+        },
+        {
+          "label": "Adjustment Light",
+          "value": "0-100% linear dimming, no jitter, no stroboscopic"
+        },
+        {
+          "label": "Lens angle",
+          "value": "60-110° (angle adjustment through the shading plate)"
+        },
+        {
+          "label": "Waterproof grade",
+          "value": "IP20"
+        },
+        {
+          "label": "Heat dissipation",
+          "value": "no fan, natural heat dissipation, silent, temperature control self-test protection"
+        },
+        {
+          "label": "Product Size",
+          "value": "556*316*122mm"
+        },
+        {
+          "label": "Characteristics",
+          "value": "uniform, soft, high clarity, more accurate color reproduction, higher saturation"
+        },
+        {
+          "label": "Venues",
+          "value": "studio/conference room/multi-functional media/commercial shooting, etc."
+        },
+        {
+          "label": "Gross Weight",
+          "value": "6KG (estimated)"
+        },
+        {
+          "label": "Packing Size",
+          "value": "64*20*38CM (estimated)"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$115 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥800"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "RG-PS200A110-W"
+      ],
+      "applications": [
+        "Accessory",
+        "Compatibility"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/rg-ps200a110-w.jpg",
+      "images": [
+        "assets/images/products/rg-ps200a110-w.jpg",
+        "assets/images/products/rg-ps200a110-w-2.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "115",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 37,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
+    },
+    {
+      "id": "300w-led-panel-light-warm",
+      "name": "300W LED Panel light -warm white and cold white 2in1",
+      "model": "300W LED Panel light -warm",
+      "category": "profile",
+      "sub": "tunable",
+      "subLabel": "Tunable White",
+      "family": "profile",
+      "price": 205.0,
+      "badge": "",
+      "rating": 0.0,
+      "reviews": 0,
+      "sold": "",
+      "icon": "◉",
+      "iconColor": "#ff6b00",
+      "tagline": "300W LED Panel light -warm",
+      "shortDesc": "300W LED Panel light -warm white and cold white 2in1. Factory EXW from US$205",
+      "longDesc": "300W LED Panel light -warm is part of the RIGE Tunable White range built in our own Guangzhou plant. Voltage: AC110-240V, 50-60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+      "specs": [
+        {
+          "label": "Size",
+          "value": "657*415*127mm"
+        },
+        {
+          "label": "Weight",
+          "value": "9.8KG"
+        },
+        {
+          "label": "Voltage",
+          "value": "AC110-240V, 50-60HZ"
+        },
+        {
+          "label": "Power",
+          "value": "450W"
+        },
+        {
+          "label": "Color temperature",
+          "value": "3200K/5600K/2-in-1 optional"
+        },
+        {
+          "label": "Effective lighting distance",
+          "value": "8 meters"
+        },
+        {
+          "label": "Driving current",
+          "value": "20mA"
+        },
+        {
+          "label": "Color rendering index",
+          "value": "Ra≥90"
+        },
+        {
+          "label": "Number of patches",
+          "value": "600"
+        },
+        {
+          "label": "Control",
+          "value": "master control/DMX"
+        },
+        {
+          "label": "Control protocol",
+          "value": "DMX512"
+        },
+        {
+          "label": "Channel mode",
+          "value": "2/3 channel mode"
+        },
+        {
+          "label": "Dimming",
+          "value": "0-100% linear dimming smooth and flicker-free"
+        },
+        {
+          "label": "Working environment",
+          "value": "Indoor -20℃-50℃"
+        },
+        {
+          "label": "EXW Price",
+          "value": "US$205 / unit"
+        },
+        {
+          "label": "EXW Price (RMB)",
+          "value": "￥1400"
+        },
+        {
+          "label": "Price Terms",
+          "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+        }
+      ],
+      "features": [
+        "300W LED Panel light -warm"
+      ],
+      "applications": [
+        "Stage",
+        "Event",
+        "Rental",
+        "Touring"
+      ],
+      "priority": "Standard",
+      "phase": "Launch",
+      "hero": false,
+      "oem": true,
+      "image": "assets/images/products/300w-led-panel-light-warm.jpg",
+      "images": [
+        "assets/images/products/300w-led-panel-light-warm.jpg"
+      ],
+      "imageCredit": "RIGE Lighting",
+      "priceSource": "factory-exw",
+      "priceTiers": "205",
+      "currency": "USD",
+      "incoterm": "EXW",
+      "moq": 1,
+      "sourceRow": 38,
+      "sourceFile": "Led Profile Light成像灯面板灯.xlsx"
     }
   ]
 }
