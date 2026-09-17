@@ -481,6 +481,7 @@ section { padding: 100px 0; position: relative; }
 .cat-4 { color: #ec4899; }
 .cat-5 { color: #10b981; }
 .cat-6 { color: #fbbf24; }
+.cat-7 { color: #14b8a6; }
 
 /* ========== PRODUCTS GRID ========== */
 .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
