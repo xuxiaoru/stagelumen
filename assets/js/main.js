@@ -1,4 +1,4 @@
-/* StageLumen — Interactive behaviors (vanilla JS) */
+/* RiGeBa Lighting — Interactive behaviors (vanilla JS) */
 (function () {
   'use strict';
 

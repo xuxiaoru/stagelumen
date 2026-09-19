@@ -1,4 +1,4 @@
-# StageLumen Demo — Stage Lighting Foreign Trade Independent Site
+# RiGeBa Lighting — Stage Lighting Foreign Trade Independent Site
 
 A standalone, self-contained HTML demo for a B2B stage-lighting foreign-trade independent site, built from scratch with vanilla HTML, CSS and JavaScript — no build tools, no external dependencies.
 
@@ -29,7 +29,9 @@ demo/index.html
 
 ## Design System Snapshot
 
-- **Brand**: StageLumen ("S" mark + gradient orange→purple→cyan)
+- **Brand**: RiGeBa Lighting ("R" mark + gradient orange→purple→cyan)
+- **Legal entity**: GuangZhou GeLiang Lighting Technology Co.,Ltd · No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China
+- **Sales contact**: Vivian · sales20@rigelighting.com · +86 134 3026 2182 (Mobile / WhatsApp / WeChat / IMS / Facebook)
 - **Slogan**: Light Up Every Stage
 - **Theme**: Dark `#0a0a0a` base, primary `#ff6b00` (orange), accents cyan `#00d4ff` / violet `#7c3aed`
 - **Typography**: System font stack (no remote fonts)
@@ -50,8 +52,8 @@ demo/index.html
 
 This is a **design + UX demo**. To turn it into a real production site:
 
-- [ ] Replace placeholder brand "StageLumen" with your real brand name and logo
-- [ ] Replace all phone / email / address placeholders
+- [x] Replace placeholder brand "StageLumen" → **RiGeBa Lighting** (done 2026-09-19)
+- [x] Replace all phone / email / address placeholders (done 2026-09-19)
 - [ ] Replace `[Brand X]` and similar placeholders in reviews / hero text
 - [ ] Add a real SSL certificate + custom domain
 - [ ] Wire up form backend (Formspree, Getform, custom API, or HubSpot / Marketo)

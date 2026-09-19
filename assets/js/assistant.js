@@ -1,5 +1,5 @@
 /**
- * StageLumen sales assistant widget.
+ * RiGeBa Lighting sales assistant widget.
  *
  * Self-contained on purpose: owns its own <style> so it never depends on the
  * site stylesheet or its cache-busting version, and renders nothing until the
@@ -17,7 +17,7 @@
   'use strict';
 
   var ENDPOINT = '/api/chat';
-  var SALES_EMAIL = 'sales@rigelighting.com';
+  var SALES_EMAIL = 'sales20@rigelighting.com';
   var SESSION_KEY = 'sl_chat_session';
   var SESSION_MAX_MS = 24 * 60 * 60 * 1000;
 
@@ -181,7 +181,7 @@
     var head = el('div', 'sl-asst-head');
 
     var title = el('div');
-    title.appendChild(document.createTextNode('StageLumen Assistant'));
+    title.appendChild(document.createTextNode('RiGeBa Lighting Assistant'));
     title.appendChild(el('span', null, 'Typical reply: under 24h by email'));
 
     var close = el('button', 'sl-asst-close', '×');

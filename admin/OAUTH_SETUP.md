@@ -9,7 +9,7 @@ Decap CMS uses GitHub OAuth to let editors log in. On Netlify this is built-in; 
 1. Go to https://github.com/settings/developers
 2. Click **"OAuth Apps"** → **"New OAuth App"**
 3. Fill in:
-   - **Application name**: `StageLumen CMS` (or your brand)
+   - **Application name**: `RiGeBa Lighting CMS` (or your brand)
    - **Homepage URL**: `https://stagelumen.pages.dev`
    - **Authorization callback URL**: `https://stagelumen.pages.dev/admin/api/callback`
    - **Enable Device Flow**: leave unchecked

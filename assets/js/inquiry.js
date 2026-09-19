@@ -1,5 +1,5 @@
 /**
- * StageLumen — real inquiry capture (P0)
+ * RiGeBa Lighting — real inquiry capture (P0)
  *
  * Takes over every `form[data-ajax]` and posts it to /api/inquiry.
  * Registered in the CAPTURE phase on `document`, so it always runs before
@@ -256,7 +256,7 @@
         }
       })
       .catch(function (err) {
-        setStatus(form, 'Something went wrong. Please email sales@rigelighting.com', 'error');
+        setStatus(form, 'Something went wrong. Please email sales20@rigelighting.com', 'error');
         if (status) status.style.color = '#e5484d';
         console.error('[inquiry]', err);
       })

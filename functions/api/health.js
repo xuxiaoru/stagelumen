@@ -88,8 +88,8 @@ function notifyDiag(env) {
     autoreply: {
       enabled: String(env.AUTOREPLY || '1') !== '0',
       configured: !!env.RESEND_API_KEY,
-      from: mask(env.AUTOREPLY_FROM || env.NOTIFY_FROM || 'StageLumen <onboarding@resend.dev>'),
-      reply_to: env.REPLY_TO || 'sales@rigelighting.com (default)',
+      from: mask(env.AUTOREPLY_FROM || env.NOTIFY_FROM || 'RiGeBa Lighting <onboarding@resend.dev>'),
+      reply_to: env.REPLY_TO || 'sales20@rigelighting.com (default)',
       note: 'Sends an acknowledgement to every non-spam enquiry. Needs a verified ' +
             'sending domain, otherwise Resend can only reach your account email.',
     },
@@ -158,7 +158,7 @@ export async function onRequest(context) {
         id: 'test_' + Date.now(),
         name: 'Health check',
         email: 'healthcheck@stagelumen.pages.dev',
-        company: 'StageLumen self-test',
+        company: 'RiGeBa Lighting self-test',
         country: '-',
         phone: '-',
         qty: '-',
@@ -167,7 +167,7 @@ export async function onRequest(context) {
       };
       const base = { intent: 'quote', urgency: 'high', score: 99, stage: 'hot' };
       const [email, webhook] = await Promise.all([
-        sendEmailVerbose(env, '[TEST] StageLumen notification check',
+        sendEmailVerbose(env, '[TEST] RiGeBa Lighting notification check',
           'Delivery test — if you are reading this, email notification works.\n'),
         sendWebhook(env, probe, base),
       ]);

@@ -1,5 +1,5 @@
 /**
- * StageLumen AI — shared utilities (zero dependencies)
+ * RiGeBa Lighting AI — shared utilities (zero dependencies)
  * Runs on Cloudflare Pages Functions (V8 isolate, Web Standards only).
  */
 

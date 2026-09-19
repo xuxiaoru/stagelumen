@@ -2,7 +2,7 @@
 title: "Choosing the Right IP65 Outdoor Fixture"
 slug: "choosing-the-right-ip65-outdoor-fixture-tl62"
 date: "2026-09-12T14:01:53.575Z"
-author: "StageLumen Team"
+author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "Select from 400W to 600W, 2°–60° beam angles, and DMX512/RDM control."
 tags:

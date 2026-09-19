@@ -1,5 +1,5 @@
 /**
- * StageLumen — RFQ product section (v2, quote-cart driven)
+ * RiGeBa Lighting — RFQ product section (v2, quote-cart driven)
  *
  * Replaces the old single-product "Product of Interest" panel. The visitor now
  * brings a basket (see quote-cart.js) instead of exactly one SKU:

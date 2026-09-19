@@ -1,5 +1,5 @@
 /**
- * StageLumen — Quote cart (询价篮)
+ * RiGeBa Lighting — Quote cart (询价篮)
  *
  * Why this exists
  * ---------------

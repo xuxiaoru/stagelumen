@@ -2,7 +2,7 @@
 title: "Choosing the Right Fixture Type for Your Venue"
 slug: "choosing-the-right-fixture-type-for-your-venue-08je"
 date: "2026-09-12T13:59:03.947Z"
-author: "StageLumen Team"
+author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "Selecting the right fixture type for your venue depends on wattage, beam angle, IP rating, and control protocol."
 tags:

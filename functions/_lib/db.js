@@ -1,5 +1,5 @@
 /**
- * StageLumen AI — D1 access layer (zero dependencies)
+ * RiGeBa Lighting AI — D1 access layer (zero dependencies)
  *
  * Design rule: EVERY function here degrades gracefully.
  * If the D1 binding is missing (not yet configured in the Cloudflare

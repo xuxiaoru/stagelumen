@@ -77,7 +77,7 @@ export function pickTopic(dayIndex) {
 }
 
 const SYSTEM =
-  'You are a senior content writer for StageLumen, a stage lighting manufacturer in Guangzhou, China. ' +
+  'You are a senior content writer for RiGeBa Lighting, a stage lighting manufacturer in Guangzhou, China. ' +
   'You write for professional buyers: rental houses, touring productions, theatres, clubs, churches and event companies.';
 
 function buildPrompt(kind, topic, facts, words, lang, images) {
@@ -98,7 +98,7 @@ function buildPrompt(kind, topic, facts, words, lang, images) {
     '',
     'RULES:',
     '1. Never invent a specification, price, certification or model number. If it is not in FACTS, do not state it.',
-    '2. Reference real StageLumen models from FACTS where they genuinely fit — that is useful, not promotional.',
+    '2. Reference real RiGeBa Lighting models from FACTS where they genuinely fit — that is useful, not promotional.',
     '3. No marketing filler, no "in today\'s fast-paced world", no conclusion that restates the intro. ' +
       'Never close with "By understanding...", "Remember..." or any summary paragraph; end on a concrete next step.',
     '4. Use ## for sections. Short paragraphs. Concrete numbers where FACTS provide them.',
@@ -136,7 +136,7 @@ function yamlFrontMatter(f) {
     `title: "${esc(f.title)}"`,
     `slug: "${esc(f.slug)}"`,
     `date: "${f.date}"`,
-    `author: "StageLumen Team"`,
+    `author: "RiGeBa Lighting Team"`,
     `category: "${esc(f.category)}"`,
     `excerpt: "${esc(f.excerpt)}"`,
   ];

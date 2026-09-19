@@ -2,7 +2,7 @@
 title: "OEM Stage Lighting: A Buyer's Guide"
 slug: "oem-stage-lighting-a-buyers-guide-ptfr"
 date: "2026-09-11T13:52:30.739Z"
-author: "StageLumen Team"
+author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "Choose the right fixture type with our selection criteria"
 tags:

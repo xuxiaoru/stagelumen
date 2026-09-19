@@ -1,5 +1,5 @@
 /**
- * StageLumen — first-party, cookieless analytics beacon
+ * RiGeBa Lighting — first-party, cookieless analytics beacon
  *
  * What it records: pageviews, product views, RFQ clicks, product clicks, RFQ
  * form submissions and any [data-track] element. A random visitor id

@@ -256,7 +256,7 @@ function articlePage(p) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>${title} | StageLumen</title>
+  <title>${title} | RiGeBa Lighting</title>
   <meta name="description" content="${desc}" />
   <meta property="og:type" content="article" />
   <meta property="og:title" content="${title}" />
@@ -266,7 +266,7 @@ ${shareImage ? '  <meta property="og:image" content="' + escAttr(shareImage) + '
   <meta name="twitter:description" content="${desc}" />
 ${shareImage ? '  <meta name="twitter:image" content="' + escAttr(shareImage) + '" />\n' : ''}  <link rel="canonical" href="${SITE}/content/blog/${encodeURIComponent(p.slug)}" />
   <link rel="stylesheet" href="../../assets/css/style.css${cssVersion()}" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b00'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-size='48' font-weight='800' fill='white' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b00'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-size='48' font-weight='800' fill='white' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E" />
   <!-- ${GENERATED} -->
   <style>
     .blog-article { max-width: 760px; margin: 0 auto; }
@@ -295,7 +295,7 @@ ${shareImage ? '  <meta name="twitter:image" content="' + escAttr(shareImage) + 
 
 <header class="header">
   <div class="container header-inner">
-    <a href="../../index.html" class="logo"><span class="logo-mark">S</span> StageLumen</a>
+    <a href="../../index.html" class="logo"><span class="logo-mark">R</span> RiGeBa Lighting</a>
     <nav class="nav" id="mainNav">
       <a href="../../index.html">Home</a>
       <a href="../../products.html">Products</a>
@@ -350,8 +350,9 @@ ${p.tags.length ? '      <div class="blog-tags">' + p.tags.map((t) => '<span>' +
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand">
-        <a href="../../index.html" class="logo"><span class="logo-mark">S</span> StageLumen</a>
+        <a href="../../index.html" class="logo"><span class="logo-mark">R</span> RiGeBa Lighting</a>
         <p>Professional Stage Lighting for Rental, Events &amp; Venues.</p>
+        <p>RiGeBa Lighting · GuangZhou GeLiang Lighting Technology Co.,Ltd<br/>No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China</p>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
@@ -369,7 +370,7 @@ ${p.tags.length ? '      <div class="blog-tags">' + p.tags.map((t) => '<span>' +
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© 2026 StageLumen Lighting Co., Ltd. All rights reserved.</div>
+      <div>© 2026 GuangZhou GeLiang Lighting Technology Co., Ltd. All rights reserved.</div>
     </div>
   </div>
 </footer>
@@ -449,7 +450,7 @@ function main() {
       slug: String(data.slug || fallbackSlug).trim(),
       date: String(data.date || ''),
       datePretty: prettyDate(data.date) || 'Undated',
-      author: String(data.author || 'StageLumen Team'),
+      author: String(data.author || 'RiGeBa Lighting Team'),
       category: String(data.category || 'Article'),
       excerpt: String(data.excerpt || '').trim(),
       tags: Array.isArray(data.tags) ? data.tags : [],

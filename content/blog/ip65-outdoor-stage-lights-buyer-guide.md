@@ -2,7 +2,7 @@
 title: "How to Choose IP65 Outdoor Stage Lights for Festivals and Seaside Venues"
 slug: "ip65-outdoor-stage-lights-buyer-guide"
 date: "2026-09-11T09:00:00.000Z"
-author: "StageLumen Team"
+author: "RiGeBa Lighting Team"
 category: "Buyer's Guide"
 image: "assets/images/products/sl-ip-b400.jpg"
 excerpt: "A practical checklist for specifying weatherproof moving heads and washes — IP ratings, beam angle, control protocol, salt-spray resistance and power, with real fixture data."

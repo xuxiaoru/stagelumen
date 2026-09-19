@@ -1,5 +1,5 @@
 /**
- * StageLumen AI — self-healing schema
+ * RiGeBa Lighting AI — self-healing schema
  *
  * Runs a cheap existence check on each request. If the tables are missing
  * (e.g. right after binding D1), they are created automatically.

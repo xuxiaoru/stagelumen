@@ -51,7 +51,7 @@ async function handleInquiry(context) {
 
   // Throttle (only when D1 is available to count against)
   if (await rateLimited(env, ip, 8, 10)) {
-    return fail('Too many requests. Please contact sales@rigelighting.com directly.', 429);
+    return fail('Too many requests. Please contact sales20@rigelighting.com directly.', 429);
   }
 
   // ---- validate ----------------------------------------------------------

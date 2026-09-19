@@ -2,7 +2,7 @@
 title: "How to Set Up DMX Lighting for a Small Venue (Step-by-Step)"
 slug: "how-to-set-up-dmx-lighting"
 date: "2026-09-01T10:00:00.000Z"
-author: "StageLumen Team"
+author: "RiGeBa Lighting Team"
 category: "How-To"
 image: "assets/images/products/beam-moving-head.jpg"
 excerpt: "A practical guide to designing a DMX lighting rig for a small bar or club — covering channel math, fixture addressing, and controller setup."

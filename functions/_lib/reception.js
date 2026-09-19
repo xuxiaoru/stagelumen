@@ -1,5 +1,5 @@
 /**
- * StageLumen AI — Reception Agent
+ * RiGeBa Lighting AI — Reception Agent
  *
  * Two-stage design:
  *   1. A deterministic rule engine ALWAYS runs (zero cost, never fails).
@@ -294,7 +294,7 @@ export async function refineWithAI(env, lead, base) {
   const model = base.score >= 60 || base.intent === 'oem' ? MODEL_MID : MODEL_LIGHT;
 
   const prompt =
-    'You are a senior export sales engineer at StageLumen (RIGE Lighting), ' +
+    'You are a senior export sales engineer at RiGeBa Lighting, ' +
     'a Chinese manufacturer of professional stage lighting (moving head beam/spot/wash, ' +
     'LED par, laser projector, outdoor IP65, DMX controllers).\n\n' +
     'An inbound inquiry arrived. Analyse it and draft a reply.\n\n' +
@@ -348,22 +348,26 @@ export function templateReply(lead, base) {
   if (base.intent === 'spam') return '';
 
   const subject = zh
-    ? '关于您的舞台灯询盘 — StageLumen (RIGE Lighting)'
-    : 'Re: Your stage lighting inquiry — StageLumen (RIGE Lighting)';
+    ? '关于您的舞台灯询盘 — RiGeBa Lighting'
+    : 'Re: Your stage lighting inquiry — RiGeBa Lighting';
 
   let body;
   if (zh) {
     body =
       name + ' 您好，\n\n' +
-      '感谢您的询盘，我是 StageLumen（锐吉照明）的外贸工程师，已收到您的需求。\n\n' +
+      '感谢您的询盘，我是 RiGeBa Lighting（GuangZhou GeLiang Lighting Technology Co.,Ltd）的外贸经理 Vivian，已收到您的需求。\n\n' +
       '在我们准备正式报价前，想先和您确认几个关键点，以确保方案精准：\n' +
       '1. 具体应用场景与安装高度（这决定光束角与功率选型）\n' +
       '2. 预计数量与是否需要 OEM/ODM（丝印 logo、包装定制）\n' +
       '3. 目标交期与贸易条款（FOB 深圳 / CIF / DDP）\n' +
       '4. 是否需要认证文件（CE / RoHS / ETL）\n\n' +
       '确认后我们将在 24 小时内提供含阶梯价格、MOQ 与交期的正式报价单。\n\n' +
-      '顺祝商祺\nStageLumen 外贸部\n' +
-      '邮件 sales@rigelighting.com ｜ WhatsApp +86 180 2717 6247';
+      '顺祝商祺\n' +
+      'Vivian ｜ RiGeBa Lighting 外贸部\n' +
+      'GuangZhou GeLiang Lighting Technology Co.,Ltd\n' +
+      'No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China\n' +
+      '手机 / WhatsApp / 微信 / IMS / Facebook：+86 134 3026 2182\n' +
+      '邮件 sales20@rigelighting.com';
   } else {
     body =
       'Hi ' + name + ',\n\n' +
@@ -376,8 +380,12 @@ export function templateReply(lead, base) {
       '4. Certification documents needed (CE / RoHS / ETL)\n\n' +
       'Once confirmed, you will have a formal quote with tiered pricing, MOQ and ' +
       'lead time within 24 hours.\n\n' +
-      'Best regards,\nStageLumen Export Team\n' +
-      'sales@rigelighting.com | WhatsApp +86 180 2717 6247';
+      'Best regards,\n' +
+      'Vivian, Export Sales, RiGeBa Lighting\n' +
+      'GuangZhou GeLiang Lighting Technology Co.,Ltd\n' +
+      'No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China\n' +
+      'Mobile / WhatsApp / WeChat / IMS / Facebook: +86 134 3026 2182\n' +
+      'sales20@rigelighting.com';
   }
 
   return 'Subject: ' + subject + '\n\n' + body;

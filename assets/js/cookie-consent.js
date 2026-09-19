@@ -1,4 +1,4 @@
-/* StageLumen — GDPR Cookie Consent Banner
+/* RiGeBa Lighting — GDPR Cookie Consent Banner
    Drops a single bottom-pinned banner if no prior consent recorded.
    Stores decision in localStorage under 'stagelumen_cookie_consent'.
    Triggers a custom event 'sl:consent-changed' so analytics scripts can react.

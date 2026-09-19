@@ -1,4 +1,4 @@
-# StageLumen CMS Configuration
+# RiGeBa Lighting CMS Configuration
 # https://decapcms.org/docs/configuration-options/
 
 backend:
@@ -260,7 +260,7 @@ collections:
       - { name: title, label: "Title", widget: string }
       - { name: slug, label: "URL Slug", widget: string, hint: "kebab-case" }
       - { name: date, label: "Publish Date", widget: datetime }
-      - { name: author, label: "Author", widget: string, default: "StageLumen Team" }
+      - { name: author, label: "Author", widget: string, default: "RiGeBa Lighting Team" }
       - name: category
         label: "Category"
         widget: select
@@ -316,9 +316,16 @@ collections:
         fields:
           - { name: brand, label: "Brand Name", widget: string }
           - { name: tagline, label: "Site Tagline", widget: string }
+          - { name: companyLegalName, label: "Legal Company Name", widget: string }
           - { name: email, label: "Sales Email", widget: string }
           - { name: phone, label: "Sales Phone", widget: string }
+          - { name: mobile, label: "Mobile", widget: string, required: false }
+          - { name: wechat, label: "WeChat", widget: string, required: false }
+          - { name: ims, label: "IMS", widget: string, required: false }
+          - { name: facebook, label: "Facebook", widget: string, required: false }
           - { name: whatsapp, label: "WhatsApp Number", widget: string, required: false }
+          - { name: salesRep, label: "Sales Contact Name", widget: string, required: false }
+          - { name: salesRepTitle, label: "Sales Contact Title", widget: string, required: false }
           - { name: address, label: "Factory Address", widget: string }
           - { name: founded, label: "Founded Year", widget: number, value_type: int }
           - { name: teamSize, label: "Team Size", widget: string }

@@ -2,9 +2,9 @@
 title: "DMX Channel Planning for a 200-Fixture Stage"
 slug: "dmx-channel-planning-for-a-200-fixture-stage-k8b2"
 date: "2026-09-12T12:11:24.517Z"
-author: "StageLumen Team"
+author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Plan DMX channels for a 200-fixture stage with StageLumen's LED moving heads and profile spots."
+excerpt: "Plan DMX channels for a 200-fixture stage with RiGeBa Lighting's LED moving heads and profile spots."
 tags:
   - DMX Channel Planning
   - Stage Lighting

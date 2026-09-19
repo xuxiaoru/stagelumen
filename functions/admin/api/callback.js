@@ -90,7 +90,7 @@ export async function onRequest(context) {
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Login Successful — StageLumen CMS</title>
+  <title>Login Successful — RiGeBa Lighting CMS</title>
 </head>
 <body>
   <p>Logging you in…</p>

@@ -1,4 +1,4 @@
-# StageLumen — Deployment Guide
+# RiGeBa Lighting — Deployment Guide
 
 Goal: take `demo/` from a local folder to a live, globally-cached, HTTPS-enabled independent site **for $0/month** beyond the domain cost.
 
@@ -27,16 +27,20 @@ Goal: take `demo/` from a local folder to a live, globally-cached, HTTPS-enabled
 
 Open each HTML and replace globally:
 
-| Find | Replace with |
-|------|-------------|
-| `StageLumen` | your real brand name |
-| `stagelumen.com` | your real domain |
-| `sales@stagelumen.com` | ✅ 已全站替换为 `sales@rigelighting.com` |
-| `privacy@stagelumen.com` | real DPO email |
-| `legal@stagelumen.com` | real legal email |
-| `+86 138 0000 0000` | real phone / WhatsApp |
-| `No. xx Industrial Park Road, Guangzhou` | real address |
-| `[Brand X]` (in testimonials) | real reviewer names or remove |
+| Find | Replace with | Status |
+|------|-------------|--------|
+| `StageLumen` | your real brand name | ✅ `RiGeBa Lighting` (2026-09-19) |
+| `stagelumen.com` | your real domain | ⚠️ public pages now point at `stagelumen.pages.dev`; swap in the real domain when purchased |
+| `sales@stagelumen.com` | real sales email | ✅ `sales20@rigelighting.com` |
+| `privacy@stagelumen.com` | real DPO email | ✅ 指向 `sales20@rigelighting.com` |
+| `legal@stagelumen.com` | real legal email | ✅ 指向 `sales20@rigelighting.com` |
+| `+86 138 0000 0000` | real phone / WhatsApp | ✅ `+86 134 3026 2182`（Mobile / WhatsApp / WeChat / IMS / Facebook 同一号） |
+| `No. xx Industrial Park Road, Guangzhou` | real address | ✅ `No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China` |
+| `[Brand X]` (in testimonials) | real reviewer names or remove | |
+
+Source of truth for contact details: `content/settings.yml` (edited in the CMS).
+`node build/inject-settings.js` writes it into every element marked
+`data-set="email|phone|wechat|whatsapp"` at build time — edit the YAML, not the HTML.
 
 You can do this in VS Code with `Ctrl+Shift+H` for project-wide Find & Replace.
 

@@ -18,7 +18,7 @@ import { search, renderFacts } from './kb.js';
 
 const MODEL = MODELS.chat;
 
-const SYSTEM = `You are a sales engineer for StageLumen, a stage lighting manufacturer in Guangzhou, China. You are chatting with a potential buyer on the company website.
+const SYSTEM = `You are a sales engineer for RiGeBa Lighting, a stage lighting manufacturer in Guangzhou, China. You are chatting with a potential buyer on the company website.
 
 HARD RULES — violating them is worse than saying nothing:
 1. Use ONLY the facts in the CONTEXT block. Never invent prices, MOQ numbers, lead times, certifications, wattages or model names.
@@ -35,8 +35,8 @@ function langOf(message, hint) {
 }
 
 const NO_KB = {
-  en: "I don't have that detail to hand right now. Please email sales@rigelighting.com or submit an RFQ on this page with the model and quantity — a sales engineer will reply within 24 hours with pricing, MOQ and lead time.",
-  zh: '这个细节我暂时无法确认。请发邮件到 sales@rigelighting.com，或在页面上提交 RFQ 并注明型号和数量，销售工程师会在 24 小时内回复价格、起订量和交期。',
+  en: "I don't have that detail to hand right now. Please email sales20@rigelighting.com or submit an RFQ on this page with the model and quantity — a sales engineer will reply within 24 hours with pricing, MOQ and lead time.",
+  zh: '这个细节我暂时无法确认。请发邮件到 sales20@rigelighting.com，或在页面上提交 RFQ 并注明型号和数量，销售工程师会在 24 小时内回复价格、起订量和交期。',
 };
 
 /**
