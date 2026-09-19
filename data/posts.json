@@ -1,7 +1,100 @@
 {
-  "generated": "2026-09-19T00:55:13.750Z",
-  "count": 7,
+  "generated": "2026-09-19T01:04:22.724Z",
+  "count": 13,
   "posts": [
+    {
+      "title": "Power, cabling and daisy-chaining moving heads: avoiding the field-day disasters",
+      "slug": "power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as",
+      "date": "2026-09-18T18:36:26.771Z",
+      "datePretty": "September 18, 2026",
+      "category": "How-To",
+      "excerpt": "Choose a moving head with a suitable wattage for your application.",
+      "tags": [
+        "moving heads",
+        "power",
+        "cabling",
+        "daisy-chaining"
+      ],
+      "url": "content/blog/power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as.html",
+      "image": "assets/images/products/6-heads-full-color-swinging-laser.jpg"
+    },
+    {
+      "title": "Choosing the Right Moving Head for Theatre",
+      "slug": "choosing-the-right-moving-head-for-theatre-1r28",
+      "date": "2026-09-17T19:09:33.504Z",
+      "datePretty": "September 17, 2026",
+      "category": "How-To",
+      "excerpt": "Selecting a moving head with a beam angle of 10R for smooth cues and low noise.",
+      "tags": [
+        "Moving Heads",
+        "Theatre Lighting",
+        "Beam Angle",
+        "Control Protocol"
+      ],
+      "url": "content/blog/choosing-the-right-moving-head-for-theatre-1r28.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+    },
+    {
+      "title": "RDM and Remote Fixture Management: Less Ladder Time, Fewer Surprises on Show Day",
+      "slug": "rdm-and-remote-fixture-management-less-ladder-time-fewer-surprises-on-2lut",
+      "date": "2026-09-16T19:00:01.173Z",
+      "datePretty": "September 16, 2026",
+      "category": "How-To",
+      "excerpt": "Use RiGeBa Lighting's wireless remote control RG-CTCWIXLR-RS for 500M open area communication distance.",
+      "tags": [
+        "RDM",
+        "Remote Fixture Management",
+        "Wireless DMX",
+        "DMX512"
+      ],
+      "url": "content/blog/rdm-and-remote-fixture-management-less-ladder-time-fewer-surprises-on-2lut.html",
+      "image": ""
+    },
+    {
+      "title": "Practical Uses of Gobo and Prism Effects in Moving Heads",
+      "slug": "practical-uses-of-gobo-and-prism-effects-in-moving-heads-8wan",
+      "date": "2026-09-15T19:08:26.406Z",
+      "datePretty": "September 15, 2026",
+      "category": "How-To",
+      "excerpt": "Check 7 colors+white on RG-ML150BD-KEE1H16",
+      "tags": [
+        "moving heads",
+        "gobo effects",
+        "prism effects"
+      ],
+      "url": "content/blog/practical-uses-of-gobo-and-prism-effects-in-moving-heads-8wan.html",
+      "image": ""
+    },
+    {
+      "title": "Building a Rental-House Moving Head Inventory",
+      "slug": "building-a-rental-house-moving-head-inventory-1mrl",
+      "date": "2026-09-14T19:54:22.039Z",
+      "datePretty": "September 14, 2026",
+      "category": "How-To",
+      "excerpt": "Cover 90% of gig requests with a strategic selection of moving head fixtures.",
+      "tags": [
+        "Moving Heads",
+        "Inventory",
+        "Rental Houses"
+      ],
+      "url": "content/blog/building-a-rental-house-moving-head-inventory-1mrl.html",
+      "image": ""
+    },
+    {
+      "title": "Building a Rental-House Moving Head Inventory",
+      "slug": "building-a-rental-house-moving-head-inventory-5qva",
+      "date": "2026-09-14T14:23:21.546Z",
+      "datePretty": "September 14, 2026",
+      "category": "How-To",
+      "excerpt": "A 200W LED Beam Moving Head with DMX512 / RDM control can cover 70% of gig requests.",
+      "tags": [
+        "Rental Houses",
+        "Moving Heads",
+        "Inventory Management"
+      ],
+      "url": "content/blog/building-a-rental-house-moving-head-inventory-5qva.html",
+      "image": ""
+    },
     {
       "title": "Choosing the Right IP65 Outdoor Fixture",
       "slug": "choosing-the-right-ip65-outdoor-fixture-tl62",

@@ -2,7 +2,7 @@
 title: "Choosing the Right Moving Head for Theatre"
 slug: "choosing-the-right-moving-head-for-theatre-1r28"
 date: "2026-09-17T19:09:33.504Z"
-author: "StageLumen Team"
+author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "Selecting a moving head with a beam angle of 10R for smooth cues and low noise."
 image: "assets/images/products/new-295w-10r-beam-moving.jpg"

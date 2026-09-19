@@ -2,7 +2,7 @@
 title: "Building a Rental-House Moving Head Inventory"
 slug: "building-a-rental-house-moving-head-inventory-1mrl"
 date: "2026-09-14T19:54:22.039Z"
-author: "StageLumen Team"
+author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "Cover 90% of gig requests with a strategic selection of moving head fixtures."
 tags:
@@ -36,7 +36,7 @@ Once you have determined the types of fixtures you need, select specific models 
 * Availability: Can you source the fixtures you need in a timely manner?
 * Quality: What is the reputation of the manufacturer and the quality of the fixtures?
 
-For example, if you need a high-wattage fixture with a wide beam angle, you may consider the StageLumen RG-EL00DB-8e2A, which has a rated power of 300W and a beam angle of 10-60°.
+For example, if you need a high-wattage fixture with a wide beam angle, you may consider the RiGeBa Lighting RG-EL00DB-8e2A, which has a rated power of 300W and a beam angle of 10-60°.
 
 ## Building a Balanced Inventory
 

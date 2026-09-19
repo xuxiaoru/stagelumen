@@ -2,9 +2,9 @@
 title: "RDM and Remote Fixture Management: Less Ladder Time, Fewer Surprises on Show Day"
 slug: "rdm-and-remote-fixture-management-less-ladder-time-fewer-surprises-on-2lut"
 date: "2026-09-16T19:00:01.173Z"
-author: "StageLumen Team"
+author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Use StageLumen's wireless remote control RG-CTCWIXLR-RS for 500M open area communication distance."
+excerpt: "Use RiGeBa Lighting's wireless remote control RG-CTCWIXLR-RS for 500M open area communication distance."
 tags:
   - RDM
   - Remote Fixture Management
@@ -24,7 +24,7 @@ Before implementing RDM, it's essential to understand the requirements of your s
 
 When selecting a wireless remote control, consider the following factors:
 
-* Communication distance: Check the manufacturer's specifications for the maximum distance the device can communicate over open areas. For example, StageLumen's RG-CTCWIXLR-RS has a communication distance of 500M.
+* Communication distance: Check the manufacturer's specifications for the maximum distance the device can communicate over open areas. For example, RiGeBa Lighting's RG-CTCWIXLR-RS has a communication distance of 500M.
 * Working frequency: Ensure the device operates on a frequency that doesn't interfere with other equipment in the area.
 * Power requirements: Verify the device's power requirements and ensure they match your available power sources.
 

@@ -2,7 +2,7 @@
 title: "Power, cabling and daisy-chaining moving heads: avoiding the field-day disasters"
 slug: "power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as"
 date: "2026-09-18T18:36:26.771Z"
-author: "StageLumen Team"
+author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "Choose a moving head with a suitable wattage for your application."
 image: "assets/images/products/6-heads-full-color-swinging-laser.jpg"
@@ -48,7 +48,7 @@ When daisy-chaining moving heads, consider the following:
 
 ## Product Selection
 
-Based on the wattage requirements, consider the following StageLumen products:
+Based on the wattage requirements, consider the following RiGeBa Lighting products:
 
 * For low-wattage applications, the RG-ML80B-KCRe8AH38 (8x10W) or the RG-ML285WD-KOSe19AH25 (19x15W) may be suitable.
 * For medium-wattage applications, the 6W Moving head full color laser (6W) or the New 295W 10R beam moving head (295W) may be required.
