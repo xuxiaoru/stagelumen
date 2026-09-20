@@ -106,7 +106,7 @@
       "id": "kb-warranty",
       "topic": "warranty",
       "q": "What is the warranty?",
-      "a": "Every fixture ships with a 3-year warranty after final QC.",
+      "a": "Every fixture passes final QC before packing and ships with a limited warranty against manufacturing defects. Coverage terms are stated on your order confirmation, and spare parts are held in Guangzhou stock.",
       "tags": [
         "warranty",
         "guarantee",
@@ -202,7 +202,7 @@
       "id": "kb-process",
       "topic": "order",
       "q": "What does the ordering process look like?",
-      "a": "Four steps: 1) Inquiry & brief — submit an RFQ, we respond within 24h with pricing, MOQ and lead time. 2) Spec & sample — sign an NDA if needed, receive a PDF spec pack plus a refundable sample. 3) Production — 30% T/T deposit, weekly photo updates. 4) QC & ship — final QC report, FOB/CIF/DDP shipping and a 3-year warranty.",
+      "a": "Four steps: 1) Inquiry & brief — submit an RFQ, we respond within 24h with pricing, MOQ and lead time. 2) Spec & sample — sign an NDA if needed, receive a PDF spec pack plus a refundable sample. 3) Production — 30% T/T deposit, weekly photo updates. 4) QC & ship — final QC report, FOB/CIF/DDP shipping and a limited warranty whose terms are stated on your order confirmation.",
       "tags": [
         "process",
         "steps",
