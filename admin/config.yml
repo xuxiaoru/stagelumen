@@ -6,16 +6,16 @@ backend:
   repo: xuxiaoru/stagelumen
   branch: main
   # Cloudflare Pages OAuth proxy (see functions/admin/api/)
-  base_url: https://stagelumen.pages.dev
+  base_url: https://www.rigebalighting.com
   auth_endpoint: /admin/api/auth
 
 publish_mode: editorial_workflow
 # Enable local_backend only when running `npx decap-server` locally.
 # local_backend: true
 
-site_url: https://stagelumen.pages.dev
-display_url: https://stagelumen.pages.dev
-logo_url: https://stagelumen.pages.dev/assets/images/logo.png
+site_url: https://www.rigebalighting.com
+display_url: https://www.rigebalighting.com
+logo_url: https://www.rigebalighting.com/assets/images/logo.png
 
 search: true
 locale: en

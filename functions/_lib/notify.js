@@ -108,7 +108,7 @@ const REPLY_FOOTER = [
   'GuangZhou GeLiang Lighting Technology Co.,Ltd',
   'No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China',
   'Vivian (Export Sales)  |  sales20@rigelighting.com  |  Mobile / WhatsApp / WeChat / IMS / Facebook: +86 134 3026 2182',
-  'stagelumen.pages.dev',
+  'www.rigebalighting.com',
   '',
   'This is an automatic acknowledgement — replying to it reaches our export team directly.',
   'If you did not submit this enquiry, please ignore this message.',

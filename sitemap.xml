@@ -1,153 +1,228 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://stagelumen.pages.dev/</loc>
+    <loc>https://www.rigebalighting.com/</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/products.html</loc>
+    <loc>https://www.rigebalighting.com/products</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/product-detail.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://stagelumen.pages.dev/solutions.html</loc>
+    <loc>https://www.rigebalighting.com/solutions</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/projects.html</loc>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://stagelumen.pages.dev/oem-odm.html</loc>
+    <loc>https://www.rigebalighting.com/oem-odm</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/support.html</loc>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.rigebalighting.com/rfq</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/about</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/news.html</loc>
+    <loc>https://www.rigebalighting.com/contact</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/projects</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/support</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/resources</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/news</loc>
+    <lastmod>2026-09-23</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/about.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.rigebalighting.com/privacy</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/contact.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
+    <loc>https://www.rigebalighting.com/terms</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/rfq.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.rigebalighting.com/cookies</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/products?cat=moving</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/privacy.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.rigebalighting.com/products?cat=pixel</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/terms.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.rigebalighting.com/products?cat=theatre</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://stagelumen.pages.dev/cookies.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://www.rigebalighting.com/products?cat=par</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
   </url>
-<!-- SITEMAP:BEGIN -->
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as</loc>
-  <lastmod>2026-09-18</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/choosing-the-right-moving-head-for-theatre-1r28</loc>
-  <lastmod>2026-09-17</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/rdm-and-remote-fixture-management-less-ladder-time-fewer-surprises-on-2lut</loc>
-  <lastmod>2026-09-16</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/practical-uses-of-gobo-and-prism-effects-in-moving-heads-8wan</loc>
-  <lastmod>2026-09-15</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/building-a-rental-house-moving-head-inventory-1mrl</loc>
-  <lastmod>2026-09-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/building-a-rental-house-moving-head-inventory-5qva</loc>
-  <lastmod>2026-09-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/choosing-the-right-ip65-outdoor-fixture-tl62</loc>
-  <lastmod>2026-09-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/choosing-the-right-fixture-type-for-your-venue-08je</loc>
-  <lastmod>2026-09-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/dmx-channel-planning-for-a-200-fixture-stage-k8b2</loc>
-  <lastmod>2026-09-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/beam-vs-wash-vs-hybrid-moving-heads</loc>
-  <lastmod>2026-09-11</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/oem-stage-lighting-a-buyers-guide-ptfr</loc>
-  <lastmod>2026-09-11</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/ip65-outdoor-stage-lights-buyer-guide</loc>
-  <lastmod>2026-09-11</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<url>
-  <loc>https://stagelumen.pages.dev/content/blog/how-to-set-up-dmx-lighting</loc>
-  <lastmod>2026-09-01</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.6</priority>
-</url>
-<!-- SITEMAP:END -->
+  <url>
+    <loc>https://www.rigebalighting.com/products?cat=laser</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/products?cat=controller</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/products?cat=profile</loc>
+    <lastmod>2026-09-23</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- WARNING: do not index the Cloudflare preview host stagelumen.pages.dev -->
+  <!-- SITEMAP:BEGIN -->
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/zoom-range-in-moving-heads-tight-spots-vs-wide-washes-and-how-to-use-b-echt</loc>
+    <lastmod>2026-09-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/moving-head-faq-lifespan-service-spare-parts-and-what-to-ask-your-supp-3oz3</loc>
+    <lastmod>2026-09-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kzdj</loc>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as</loc>
+    <lastmod>2026-09-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/choosing-the-right-moving-head-for-theatre-1r28</loc>
+    <lastmod>2026-09-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/rdm-and-remote-fixture-management-less-ladder-time-fewer-surprises-on-2lut</loc>
+    <lastmod>2026-09-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/practical-uses-of-gobo-and-prism-effects-in-moving-heads-8wan</loc>
+    <lastmod>2026-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/building-a-rental-house-moving-head-inventory-1mrl</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/building-a-rental-house-moving-head-inventory-5qva</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/choosing-the-right-ip65-outdoor-fixture-tl62</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/choosing-the-right-fixture-type-for-your-venue-08je</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/dmx-channel-planning-for-a-200-fixture-stage-k8b2</loc>
+    <lastmod>2026-09-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/beam-vs-wash-vs-hybrid-moving-heads</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/oem-stage-lighting-a-buyers-guide-ptfr</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/ip65-outdoor-stage-lights-buyer-guide</loc>
+    <lastmod>2026-09-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.rigebalighting.com/content/blog/how-to-set-up-dmx-lighting</loc>
+    <lastmod>2026-09-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <!-- SITEMAP:END -->
 </urlset>

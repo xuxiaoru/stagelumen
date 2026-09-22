@@ -1,7 +1,53 @@
 {
-  "generated": "2026-09-19T01:04:22.724Z",
-  "count": 13,
+  "generated": "2026-09-22T16:07:10.292Z",
+  "count": 16,
   "posts": [
+    {
+      "title": "Zoom Range in Moving Heads: Tight Spots vs Wide Washes, and How to Use Both",
+      "slug": "zoom-range-in-moving-heads-tight-spots-vs-wide-washes-and-how-to-use-b-echt",
+      "date": "2026-09-21T20:05:12.975Z",
+      "datePretty": "September 21, 2026",
+      "category": "How-To",
+      "excerpt": "Achieve precise control with the 540-degree X-axis beam range of the 6W Moving head full color laser.",
+      "tags": [
+        "Moving Heads",
+        "Zoom Range",
+        "Beam Angle"
+      ],
+      "url": "content/blog/zoom-range-in-moving-heads-tight-spots-vs-wide-washes-and-how-to-use-b-echt.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg"
+    },
+    {
+      "title": "Moving Head FAQ: Lifespan, Service, Spare Parts and What to Ask Your Supplier",
+      "slug": "moving-head-faq-lifespan-service-spare-parts-and-what-to-ask-your-supp-3oz3",
+      "date": "2026-09-20T18:15:08.690Z",
+      "datePretty": "September 20, 2026",
+      "category": "How-To",
+      "excerpt": "Get the most out of your moving head with our expert advice on lifespan, service, spare parts and what to ask your supplier.",
+      "tags": [
+        "Moving Head",
+        "Lifespan",
+        "Service",
+        "Spare Parts"
+      ],
+      "url": "content/blog/moving-head-faq-lifespan-service-spare-parts-and-what-to-ask-your-supp-3oz3.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+    },
+    {
+      "title": "Preparing Moving Heads for Shipping: Flight Cases, Clamps, and the Pre-Tour Checklist",
+      "slug": "preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kzdj",
+      "date": "2026-09-19T18:09:22.331Z",
+      "datePretty": "September 19, 2026",
+      "category": "How-To",
+      "excerpt": "Verify the 2200-hour lifespan of the New 295W 10R beam moving head light.",
+      "tags": [
+        "Moving Heads",
+        "Shipping",
+        "Pre-Tour Checklist"
+      ],
+      "url": "content/blog/preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kzdj.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+    },
     {
       "title": "Power, cabling and daisy-chaining moving heads: avoiding the field-day disasters",
       "slug": "power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as",

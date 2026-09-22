@@ -168,7 +168,7 @@ export async function onRequest(context) {
         await mergePr(env, r.pr.number);
         await deleteBranch(env, branch);
         out.merged = true;
-        out.published = 'https://stagelumen.pages.dev/content/blog/' + res.slug + '.html';
+        out.published = 'https://www.rigebalighting.com/content/blog/' + res.slug;
       } else if (auto && hasError) {
         out.needsReview = true;
       }
