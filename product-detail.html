@@ -298,6 +298,83 @@
     document.title = `${p.name} | ${p.tagline} | RiGeBa Lighting`;
     document.getElementById('pageDescription').setAttribute('content', `${p.name}: ${p.shortDesc} OEM / ODM ready.`);
 
+    // 1b. 结构化数据 Product + Breadcrumb
+    // 产品数据由客户端渲染，所以 JSON-LD 只能在运行时注入（Google 执行 JS 后再读取）。
+    try {
+      const SITE_ORIGIN = 'https://www.rigebalighting.com';
+      const ORG_ID = SITE_ORIGIN + '/#organization';
+      const CAT_LABEL = {
+        moving: 'Moving Heads', pixel: 'Pixel & Effects', theatre: 'Theatre Lighting',
+        par: 'LED PAR & Uplights', laser: 'Lasers', controller: 'Controllers', profile: 'LED Profile Spot'
+      };
+      const _abs = (u) => (/^https?:\/\//.test(u || '') ? u : SITE_ORIGIN + '/' + String(u || '').replace(/^\//, ''));
+      const _txt = (s) => String(s || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+      const pageUrl = SITE_ORIGIN + '/product-detail?id=' + encodeURIComponent(p.id || productId);
+      const imgs = ((p.images && p.images.length) ? p.images : [p.image]).filter(Boolean).map(_abs);
+
+      const product = {
+        '@context': 'https://schema.org',
+        '@type': 'Product',
+        '@id': pageUrl + '#product',
+        name: p.name,
+        brand: { '@type': 'Brand', name: 'RiGeBa Lighting' },
+        url: pageUrl,
+        description: _txt(p.longDesc || p.shortDesc || p.name).slice(0, 500)
+      };
+      if (p.model) { product.sku = p.model; product.mpn = p.model; }
+      if (p.category) product.category = CAT_LABEL[p.category] || p.category;
+      if (imgs.length) product.image = imgs;
+
+      const _price = Number(p.price) || 0;
+      if (_price > 0) {
+        product.offers = {
+          '@type': 'Offer',
+          url: pageUrl,
+          price: _price,
+          priceCurrency: p.currency || 'USD',
+          priceValidUntil: new Date(Date.now() + 365 * 864e5).toISOString().slice(0, 10),
+          itemCondition: 'https://schema.org/NewCondition',
+          availability: 'https://schema.org/InStock',
+          seller: { '@id': ORG_ID }
+        };
+      }
+
+      // 评分只在真实存在时输出：rating=0 / reviews=0 会被判为无效结构化数据
+      const _r = Number(p.rating) || 0, _n = Number(p.reviews) || 0;
+      if (_r > 0 && _n > 0) {
+        product.aggregateRating = { '@type': 'AggregateRating', ratingValue: _r, reviewCount: _n };
+      }
+
+      if (Array.isArray(p.specs) && p.specs.length) {
+        product.additionalProperty = p.specs
+          .filter((s) => s && s.label && s.value)
+          .slice(0, 20)
+          .map((s) => ({ '@type': 'PropertyValue', name: String(s.label), value: String(s.value) }));
+      }
+
+      const breadcrumb = {
+        '@context': 'https://schema.org',
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_ORIGIN + '/' },
+          { '@type': 'ListItem', position: 2, name: 'Products', item: SITE_ORIGIN + '/products' },
+          { '@type': 'ListItem', position: 3, name: p.name, item: pageUrl }
+        ]
+      };
+
+      document.querySelectorAll('script[type="application/ld+json"][data-jsonld$="-runtime"]')
+        .forEach((n) => n.remove());
+      const _mk = (obj, id) => {
+        const el = document.createElement('script');
+        el.type = 'application/ld+json';
+        el.setAttribute('data-jsonld', id);
+        el.textContent = JSON.stringify(obj).replace(/</g, '\\u003c');
+        document.head.appendChild(el);
+      };
+      _mk(product, 'product-runtime');
+      _mk(breadcrumb, 'breadcrumb-runtime');
+    } catch (e) { /* 结构化数据失败绝不能影响页面渲染 */ }
+
     // 2. 顶部名称
     document.getElementById('breadcrumbName').textContent = p.name;
     document.getElementById('productName').textContent = p.name;
