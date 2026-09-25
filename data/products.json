@@ -1,8 +1,8 @@
 {
  "meta": {
   "updated": "2026-09-25",
-  "total": 439,
-  "note": "439 SKU. Moving Heads (LED / beam / spot / wash / hybrid / outdoor), Audience Blinder, LED Strobe, LED Profile Spot, Pixel & Effects, Lasers, Controllers and the LED PAR / Wall Washer & City Color ranges all carry real factory data extracted from RIGE quotation sheets. Prices EXW USD as quoted.",
+  "total": 476,
+  "note": "476 SKU. Moving Heads (LED / beam / spot / wash / hybrid / outdoor), Audience Blinder, LED Strobe, LED Profile Spot, Pixel & Effects, Lasers, Controllers and the LED PAR / Wall Washer & City Color ranges all carry real factory data extracted from RIGE quotation sheets. Stage Effect Machines, LED Kinetic Winch & Lighting Ball and LED Gobo & Logo Projector ranges were added from the second quotation batch. Prices EXW USD as quoted.",
   "lastUpdated": "2026-09-25"
  },
  "categories": {
@@ -59,6 +59,12 @@
    "color": "#818cf8",
    "icon": "✱",
    "desc": "Kinetic Winch · Lifting Ball · Ring · Tube · Special Effects"
+  },
+  "gobo": {
+   "label": "LED Gobo & Logo Projector Light",
+   "color": "#a855f7",
+   "icon": "◎",
+   "desc": "Logo & Gobo · Water Wave & Ripple · Aurora & Water Pattern · Multi-Pattern DMX"
   }
  },
  "subcategories": {
@@ -206,6 +212,28 @@
    {
     "id": "special",
     "label": "Kinetic Special Effects"
+   }
+  ],
+  "gobo": [
+   {
+    "id": "logo",
+    "label": "Outdoor Logo & Gobo Projector"
+   },
+   {
+    "id": "water",
+    "label": "Water Wave & Ripple Light"
+   },
+   {
+    "id": "indoor",
+    "label": "Indoor Logo Projector"
+   },
+   {
+    "id": "pattern",
+    "label": "Aurora & Water Pattern"
+   },
+   {
+    "id": "multi",
+    "label": "Multi-Pattern & Prism"
    }
   ]
  },
@@ -35601,6 +35629,4136 @@
    "moq": 1,
    "sourceRow": 52,
    "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "rg-gb150l0c6-bk",
+   "name": "RG-GB150L0C6-BK NEW outdoor 150w led water wave project light",
+   "model": "RG-GB150L0C6-BK",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 249.0,
+   "badge": "New",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "NEW outdoor 150w led water",
+   "shortDesc": "RG-GB150L0C6-BK NEW outdoor 150w led water wave project light. Factory EXW from US$249",
+   "longDesc": "RG-GB150L0C6-BK is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. Working voltage: AC110-240v Display mode: LCD display Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 30M · 3m-50m Installation"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 60M"
+    },
+    {
+     "label": "Working voltage",
+     "value": "AC110-240v Display"
+    },
+    {
+     "label": "Mode",
+     "value": "LCD display"
+    },
+    {
+     "label": "Total power",
+     "value": "150W LED"
+    },
+    {
+     "label": "Beads",
+     "value": "150W Osram LED"
+    },
+    {
+     "label": "Angle",
+     "value": "15 degrees, 25 degrees, 30 degrees, 40 degrees. Selectable"
+    },
+    {
+     "label": "Number of channels",
+     "value": "7 channels"
+    },
+    {
+     "label": "Pattern",
+     "value": "6 patterns + rotation effect"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear dimming"
+    },
+    {
+     "label": "Control mode",
+     "value": "DMX512, master-slave"
+    },
+    {
+     "label": "Auto-focus",
+     "value": "Manual focus"
+    },
+    {
+     "label": "Material",
+     "value": "High-quality aluminum alloy"
+    },
+    {
+     "label": "Cooling system",
+     "value": "Radiator, fan cooling"
+    },
+    {
+     "label": "Method",
+     "value": "Floor-standing/hanging type"
+    },
+    {
+     "label": "Lifespan",
+     "value": "More than 20,000 hours"
+    },
+    {
+     "label": "Luminous flux",
+     "value": "34,000 lm"
+    },
+    {
+     "label": "Size",
+     "value": "280*218*193mm"
+    },
+    {
+     "label": "Lamp",
+     "value": "6.8KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$249 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$239 (over 20 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "The pattern can be rotated and the projection direction of the lamp can be adjusted arbitrarily",
+    "② Six patterns can be switched in rotation, with adjustable switching speed and customizable projection content",
+    "③ All-aluminum alloy metal casing with high structural strength, treated with baking varnish or sandblasting oxidation (color can be customized)",
+    "④ Waterproof IP66",
+    "⑤ Built-in editing mode"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb150l0c6-bk.jpg",
+   "images": [
+    "assets/images/products/rg-gb150l0c6-bk.jpg",
+    "assets/images/products/rg-gb150l0c6-bk-2.jpg",
+    "assets/images/products/rg-gb150l0c6-bk-3.jpg",
+    "assets/images/products/rg-gb150l0c6-bk-4.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "249usd 239usd(over 20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 20,
+   "sourceRow": 2,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb200l0c6-bk",
+   "name": "RG-GB200L0C6-BK NEW 200W outdoor waterproof water wave project light",
+   "model": "RG-GB200L0C6-BK",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 268.0,
+   "badge": "New",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "NEW 200W outdoor waterproo",
+   "shortDesc": "RG-GB200L0C6-BK NEW 200W outdoor waterproof water wave project light. Factory EXW from US$268",
+   "longDesc": "RG-GB200L0C6-BK is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. Working Voltage: AC110-240v Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 30M · 3m-200m"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 60M"
+    },
+    {
+     "label": "Working Voltage",
+     "value": "AC110-240v"
+    },
+    {
+     "label": "Method",
+     "value": "LCD Display"
+    },
+    {
+     "label": "Total power",
+     "value": "200W"
+    },
+    {
+     "label": "Lamp beads",
+     "value": "200W LED OSRAM"
+    },
+    {
+     "label": "Angle",
+     "value": "25 degrees, 30 degrees, 40 degrees, 50 degrees optional"
+    },
+    {
+     "label": "Color temperature",
+     "value": "7500 K"
+    },
+    {
+     "label": "Number of channels",
+     "value": "6 channels"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear dimming"
+    },
+    {
+     "label": "Control mode",
+     "value": "DMX512, master-slave, self-propelled"
+    },
+    {
+     "label": "Focusing",
+     "value": "manual focusing"
+    },
+    {
+     "label": "Material",
+     "value": "high-quality aluminum alloy"
+    },
+    {
+     "label": "Cooling system",
+     "value": "heat sink, fan cooling"
+    },
+    {
+     "label": "Source Life",
+     "value": "greater than 20000H"
+    },
+    {
+     "label": "Luminous Flux",
+     "value": "20000lm"
+    },
+    {
+     "label": "Size",
+     "value": "280*218*193mm"
+    },
+    {
+     "label": "Weight",
+     "value": "6.8K"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$268 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$248 (over 20 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "The water pattern can be square and round. Square can be spliced.",
+    "The double hydrographic plate rotates, and the projection direction of the lamp can be adjusted arbitrarily",
+    "One color palette, 5 colors + white light.",
+    "All-aluminum alloy metal shell, high structural strength, painted or sandblasted oxidation treatment (color can be customized).",
+    "Waterproof IP66",
+    "Built-in editing mode"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb200l0c6-bk.jpg",
+   "images": [
+    "assets/images/products/rg-gb200l0c6-bk.jpg",
+    "assets/images/products/rg-gb200l0c6-bk-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "268usd 248usd(over 20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 20,
+   "sourceRow": 3,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb200l6c0-zk",
+   "name": "RG-GB200L6C0-ZK NEW ZOOM 200W Waterproof LOGO Projector Light for events (6 logos in one light )",
+   "model": "RG-GB200L6C0-ZK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 388.0,
+   "badge": "New",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "NEW ZOOM 200W Waterproof L",
+   "shortDesc": "RG-GB200L6C0-ZK NEW ZOOM 200W Waterproof LOGO Projector Light for events (6 logos in one light ). Factory EXW from US$388",
+   "longDesc": "RG-GB200L6C0-ZK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Working Voltage: AC110-240v Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 30M · 3m-200m"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 60M"
+    },
+    {
+     "label": "Working Voltage",
+     "value": "AC110-240v"
+    },
+    {
+     "label": "Method",
+     "value": "LCD Display"
+    },
+    {
+     "label": "Total power",
+     "value": "200W"
+    },
+    {
+     "label": "Lamp beads",
+     "value": "200W LED OSRAM"
+    },
+    {
+     "label": "Angle",
+     "value": "9-45 degrees"
+    },
+    {
+     "label": "Color temperature",
+     "value": "7500 K"
+    },
+    {
+     "label": "Number of channels",
+     "value": "13 channels"
+    },
+    {
+     "label": "Pattern",
+     "value": "6 patterns + rotation effect"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear dimming"
+    },
+    {
+     "label": "Control mode",
+     "value": "DMX512, master-slave, self-propelled"
+    },
+    {
+     "label": "Focusing",
+     "value": "Electric focusing"
+    },
+    {
+     "label": "Material",
+     "value": "high-quality aluminum alloy"
+    },
+    {
+     "label": "Cooling system",
+     "value": "heat sink, fan cooling"
+    },
+    {
+     "label": "Source Life",
+     "value": "greater than 20000H"
+    },
+    {
+     "label": "Luminous Flux",
+     "value": "20000lm"
+    },
+    {
+     "label": "Size",
+     "value": "405*218*193mm"
+    },
+    {
+     "label": "Weight",
+     "value": "11KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$388 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$378 (over 20 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "The pattern can be rotated, and the projection direction of the lamp can be adjusted arbitrarily",
+    "6 patterns can be switched in turn, the switching speed is adjustable, and the projection content can be customized",
+    "All-aluminum alloy metal shell, high structural strength, painted or sandblasted oxidation treatment (color can be customized).",
+    "Waterproof IP66",
+    "Built-in editing mode"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb200l6c0-zk.jpg",
+   "images": [
+    "assets/images/products/rg-gb200l6c0-zk.jpg",
+    "assets/images/products/rg-gb200l6c0-zk-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "388usd 378usd(over20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 20,
+   "sourceRow": 4,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb400l6c0-zk",
+   "name": "RG-GB400L6C0-ZK NEW ZOOM 400W Waterproof LOGO Projector Light for events (6 logos in one light )",
+   "model": "RG-GB400L6C0-ZK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 465.0,
+   "badge": "New",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "NEW ZOOM 400W Waterproof L",
+   "shortDesc": "RG-GB400L6C0-ZK NEW ZOOM 400W Waterproof LOGO Projector Light for events (6 logos in one light ). Factory EXW from US$465",
+   "longDesc": "RG-GB400L6C0-ZK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Working Voltage: AC110-240v Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 30M · 3m-200m"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 150M"
+    },
+    {
+     "label": "Working Voltage",
+     "value": "AC110-240v"
+    },
+    {
+     "label": "Method",
+     "value": "LCD Display"
+    },
+    {
+     "label": "Total power",
+     "value": "400W"
+    },
+    {
+     "label": "Lamp beads",
+     "value": "400W LED OSRAM"
+    },
+    {
+     "label": "Angle",
+     "value": "9-45 degrees"
+    },
+    {
+     "label": "Color temperature",
+     "value": "7500 K"
+    },
+    {
+     "label": "Number of channels",
+     "value": "13 channels"
+    },
+    {
+     "label": "Pattern",
+     "value": "6 patterns + rotation effect"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear dimming"
+    },
+    {
+     "label": "Control mode",
+     "value": "DMX512, master-slave, self-propelled"
+    },
+    {
+     "label": "Focusing",
+     "value": "Electric focusing"
+    },
+    {
+     "label": "Material",
+     "value": "high-quality aluminum alloy"
+    },
+    {
+     "label": "Cooling system",
+     "value": "heat sink, fan cooling"
+    },
+    {
+     "label": "Source Life",
+     "value": "greater than 20000H"
+    },
+    {
+     "label": "Size",
+     "value": "405*218*193mm"
+    },
+    {
+     "label": "Weight",
+     "value": "11KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$465 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$445 (over 20 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "The pattern can be rotated, and the projection direction of the lamp can be adjusted arbitrarily",
+    "6 patterns can be switched in turn, the switching speed is adjustable, and the projection content can be customized",
+    "All-aluminum alloy metal shell, high structural strength, painted or sandblasted oxidation treatment (color can be customized).",
+    "Waterproof IP66",
+    "Built-in editing mode"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb400l6c0-zk.jpg",
+   "images": [
+    "assets/images/products/rg-gb400l6c0-zk.jpg",
+    "assets/images/products/rg-gb400l6c0-zk-2.jpg",
+    "assets/images/products/rg-gb400l6c0-zk-3.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "465usd 445usd(over20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 20,
+   "sourceRow": 5,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj60le4r1y1-bk",
+   "name": "RG-PJ60LE4R1Y1-BK Outdoor 60W IP65 remote logo project light",
+   "model": "RG-PJ60LE4R1Y1-BK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 60.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "Outdoor 60W IP65 remote lo",
+   "shortDesc": "RG-PJ60LE4R1Y1-BK Outdoor 60W IP65 remote logo project light. Factory EXW from US$60",
+   "longDesc": "RG-PJ60LE4R1Y1-BK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Angle: 8°/15°/20%/30%/45° Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 10M · 3~30m (in relatively dark environments)"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 15m"
+    },
+    {
+     "label": "Angle",
+     "value": "8°/15°/20%/30%/45°"
+    },
+    {
+     "label": "Type",
+     "value": "Custom Power Supply"
+    },
+    {
+     "label": "Rated Voltage",
+     "value": "220V 50/60HZ"
+    },
+    {
+     "label": "Light Source Brand",
+     "value": "Osram"
+    },
+    {
+     "label": "Total Power",
+     "value": "78W/100W"
+    },
+    {
+     "label": "Rating",
+     "value": "IP65"
+    },
+    {
+     "label": "Lifespan",
+     "value": "80000H"
+    },
+    {
+     "label": "Luminous Flux",
+     "value": "8000-15000LM"
+    },
+    {
+     "label": "Weight",
+     "value": "2.85kg"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "1 9500K"
+    },
+    {
+     "label": "Size",
+     "value": "37-25mm"
+    },
+    {
+     "label": "Dimensions",
+     "value": "31*15*17.5CM"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$60 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$55 (over 30 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-PJ60LE4R1Y1-BK"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj60le4r1y1-bk.jpg",
+   "images": [
+    "assets/images/products/rg-pj60le4r1y1-bk.jpg",
+    "assets/images/products/rg-pj60le4r1y1-bk-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "60usd 55usd(over 30pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 30,
+   "sourceRow": 6,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj12-s",
+   "name": "RG-PJ12-S RG-PJ12-R 12W Cree LED Indoor stationary/ rotating projector",
+   "model": "RG-PJ12-S",
+   "category": "gobo",
+   "sub": "indoor",
+   "subLabel": "Indoor Logo Projector",
+   "family": "gobo",
+   "price": 36.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "RG-PJ12-R 12W Cree LED Ind",
+   "shortDesc": "RG-PJ12-S RG-PJ12-R 12W Cree LED Indoor stationary/ rotating projector. Factory EXW from US$36",
+   "longDesc": "RG-PJ12-S is part of the RIGE Indoor Logo Projector range built in our own Guangzhou plant. Pattern stationary, high-definition lens, high brightness Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 3M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 8M"
+    },
+    {
+     "label": "Installation",
+     "value": "ceiling, put on the table or modified into the ceiling"
+    },
+    {
+     "label": "Beam angle",
+     "value": "15 degrees/ 20 degrees/ 25 degrees (optional)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$36 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Pattern stationary, high-definition lens, high brightness"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj12-s.jpg",
+   "images": [
+    "assets/images/products/rg-pj12-s.jpg",
+    "assets/images/products/rg-pj12-s-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "Stationary:36USD MOQ:10pcs",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 10,
+   "sourceRow": 8,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj20-s",
+   "name": "RG-PJ20-S RG-PJ20-R 20W Cree LED Indoor stationary/ rotating projector",
+   "model": "RG-PJ20-S",
+   "category": "gobo",
+   "sub": "indoor",
+   "subLabel": "Indoor Logo Projector",
+   "family": "gobo",
+   "price": 50.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "RG-PJ20-R 20W Cree LED Ind",
+   "shortDesc": "RG-PJ20-S RG-PJ20-R 20W Cree LED Indoor stationary/ rotating projector. Factory EXW from US$50",
+   "longDesc": "RG-PJ20-S is part of the RIGE Indoor Logo Projector range built in our own Guangzhou plant. Pattern stationary, high-definition lens, high brightness Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 5M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 10M"
+    },
+    {
+     "label": "Installation",
+     "value": "ceiling, put on the table or modified into the ceiling"
+    },
+    {
+     "label": "Beam angle",
+     "value": "15 degrees/ 20 degrees/ 25 degrees (optional)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$50 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Pattern stationary, high-definition lens, high brightness"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj20-s.jpg",
+   "images": [
+    "assets/images/products/rg-pj20-s.jpg",
+    "assets/images/products/rg-pj20-s-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "Stationary:50USD MOQ:10pcs",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 10,
+   "sourceRow": 10,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj30-indoor",
+   "name": "RG-PJ30-indoor 30W Creen LED Indoor rotating projector",
+   "model": "RG-PJ30-indoor",
+   "category": "gobo",
+   "sub": "indoor",
+   "subLabel": "Indoor Logo Projector",
+   "family": "gobo",
+   "price": 63.5,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "30W Creen LED Indoor rotat",
+   "shortDesc": "RG-PJ30-indoor 30W Creen LED Indoor rotating projector. Factory EXW from US$63.5",
+   "longDesc": "RG-PJ30-indoor is part of the RIGE Indoor Logo Projector range built in our own Guangzhou plant. Pattern can be stationary or rotating, high-definition lens, high brightness Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 8M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 15M"
+    },
+    {
+     "label": "Installation",
+     "value": "ceiling, put on the table or modified into the ceiling"
+    },
+    {
+     "label": "Beam angle",
+     "value": "15 degrees/ 20 degrees/ 25 degrees (optional)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$63.5 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Pattern can be stationary or rotating, high-definition lens, high brightness"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj30-indoor.jpg",
+   "images": [
+    "assets/images/products/rg-pj30-indoor.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "63.5USD MOQ:10pcs",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 10,
+   "sourceRow": 12,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj40-indoor",
+   "name": "RG-PJ40-indoor 40W Cree LED Indoor rotating projector",
+   "model": "RG-PJ40-indoor",
+   "category": "gobo",
+   "sub": "indoor",
+   "subLabel": "Indoor Logo Projector",
+   "family": "gobo",
+   "price": 105.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "40W Cree LED Indoor rotati",
+   "shortDesc": "RG-PJ40-indoor 40W Cree LED Indoor rotating projector. Factory EXW from US$105",
+   "longDesc": "RG-PJ40-indoor is part of the RIGE Indoor Logo Projector range built in our own Guangzhou plant. Pattern can be stationary or rotating, high-definition lens, high brightness Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 12M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 20M"
+    },
+    {
+     "label": "Installation",
+     "value": "ceiling, put on the table or modified into the ceiling"
+    },
+    {
+     "label": "Beam angle",
+     "value": "15 degrees/ 20 degrees/ 25 degrees (optional)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$105 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Pattern can be stationary or rotating, high-definition lens, high brightness"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj40-indoor.jpg",
+   "images": [
+    "assets/images/products/rg-pj40-indoor.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "105USD MOQ:10pcs",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 10,
+   "sourceRow": 13,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj80-indoor",
+   "name": "RG-PJ80-indoor 80W Cree LED Indoor rotating projector",
+   "model": "RG-PJ80-indoor",
+   "category": "gobo",
+   "sub": "indoor",
+   "subLabel": "Indoor Logo Projector",
+   "family": "gobo",
+   "price": 135.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "80W Cree LED Indoor rotati",
+   "shortDesc": "RG-PJ80-indoor 80W Cree LED Indoor rotating projector. Factory EXW from US$135",
+   "longDesc": "RG-PJ80-indoor is part of the RIGE Indoor Logo Projector range built in our own Guangzhou plant. Pattern can be stationary or rotating, high-definition lens, high brightness Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 17M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 25M"
+    },
+    {
+     "label": "Installation",
+     "value": "ceiling, put on the table or modified into the ceiling"
+    },
+    {
+     "label": "Beam angle",
+     "value": "15 degrees/ 20 degrees/ 25 degrees (optional)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$135 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Pattern can be stationary or rotating, high-definition lens, high brightness"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj80-indoor.jpg",
+   "images": [
+    "assets/images/products/rg-pj80-indoor.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "135USD MOQ:10pcs",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 10,
+   "sourceRow": 14,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj30cr8s1y1-bk",
+   "name": "RG-PJ30CR8S1Y1-BK 30W Outdoor 30W led logo project light",
+   "model": "RG-PJ30CR8S1Y1-BK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 50.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "30W Outdoor 30W led logo p",
+   "shortDesc": "RG-PJ30CR8S1Y1-BK 30W Outdoor 30W led logo project light. Factory EXW from US$50",
+   "longDesc": "RG-PJ30CR8S1Y1-BK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Input voltage: 110V-220V 50-60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 8M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 15m"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "110V-220V 50-60HZ"
+    },
+    {
+     "label": "Angle",
+     "value": "20°"
+    },
+    {
+     "label": "Power",
+     "value": "30W"
+    },
+    {
+     "label": "Source Life",
+     "value": "80000H"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "10000-11000K"
+    },
+    {
+     "label": "Type",
+     "value": "high-quality customized power supply (built-in)"
+    },
+    {
+     "label": "Product material",
+     "value": "aluminum alloy"
+    },
+    {
+     "label": "Lens imaging ratio",
+     "value": "1:0.35"
+    },
+    {
+     "label": "Specifications",
+     "value": "37MM"
+    },
+    {
+     "label": "Control method",
+     "value": "self-propelled/remote control"
+    },
+    {
+     "label": "Machine",
+     "value": "1.6KG"
+    },
+    {
+     "label": "Waterproof grade",
+     "value": "IP65"
+    },
+    {
+     "label": "Size",
+     "value": "230*80*200MM"
+    },
+    {
+     "label": "Packing Weight",
+     "value": "1.85KG"
+    },
+    {
+     "label": "Packing Size",
+     "value": "30*17*20CM"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$50 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-PJ30CR8S1Y1-BK"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj30cr8s1y1-bk.jpg",
+   "images": [
+    "assets/images/products/rg-pj30cr8s1y1-bk.jpg",
+    "assets/images/products/rg-pj30cr8s1y1-bk-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "50usd",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 17,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj30cw1-bk",
+   "name": "RG-PJ30CW1-BK 30W Outdoor 30W led Ripple water wave project light",
+   "model": "RG-PJ30CW1-BK",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 45.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "30W Outdoor 30W led Ripple",
+   "shortDesc": "RG-PJ30CW1-BK 30W Outdoor 30W led Ripple water wave project light. Factory EXW from US$45",
+   "longDesc": "RG-PJ30CW1-BK is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. Input voltage: 110V-220V 50-60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 8M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 15m"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "110V-220V 50-60HZ"
+    },
+    {
+     "label": "Angle",
+     "value": "20°"
+    },
+    {
+     "label": "Power",
+     "value": "50W"
+    },
+    {
+     "label": "Source Life",
+     "value": "80000H"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "10000-11000K"
+    },
+    {
+     "label": "Type",
+     "value": "high-quality customized power supply (built-in)"
+    },
+    {
+     "label": "Product material",
+     "value": "aluminum alloy"
+    },
+    {
+     "label": "Lens imaging ratio",
+     "value": "1:0.35"
+    },
+    {
+     "label": "Color",
+     "value": "white, red, green, blue, yellow, etc. available"
+    },
+    {
+     "label": "Control method",
+     "value": "self-propelled/remote control"
+    },
+    {
+     "label": "Machine",
+     "value": "1.6KG"
+    },
+    {
+     "label": "Waterproof grade",
+     "value": "IP65"
+    },
+    {
+     "label": "Size",
+     "value": "220*80*200MM"
+    },
+    {
+     "label": "Packing Weight",
+     "value": "1.85KG"
+    },
+    {
+     "label": "Packing Size",
+     "value": "30*17*20CM"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$45 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-PJ30CW1-BK"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj30cw1-bk.jpg",
+   "images": [
+    "assets/images/products/rg-pj30cw1-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "45usd",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 18,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj50cr8s1y1-bk",
+   "name": "RG-PJ50CR8S1Y1-BK 50W Outdoor 50W led logo project light",
+   "model": "RG-PJ50CR8S1Y1-BK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 58.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "50W Outdoor 50W led logo p",
+   "shortDesc": "RG-PJ50CR8S1Y1-BK 50W Outdoor 50W led logo project light. Factory EXW from US$58",
+   "longDesc": "RG-PJ50CR8S1Y1-BK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Input voltage: 110V-220V 50-60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 10M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 15m"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "110V-220V 50-60HZ"
+    },
+    {
+     "label": "Angle",
+     "value": "20°"
+    },
+    {
+     "label": "Power",
+     "value": "50W"
+    },
+    {
+     "label": "Source Life",
+     "value": "80000H"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "10000-11000K"
+    },
+    {
+     "label": "Type",
+     "value": "high-quality customized power supply (built-in)"
+    },
+    {
+     "label": "Product material",
+     "value": "aluminum alloy"
+    },
+    {
+     "label": "Lens imaging ratio",
+     "value": "1:0.35"
+    },
+    {
+     "label": "Specifications",
+     "value": "37MM"
+    },
+    {
+     "label": "Control method",
+     "value": "self-propelled/remote control"
+    },
+    {
+     "label": "Machine",
+     "value": "1.8KG"
+    },
+    {
+     "label": "Waterproof grade",
+     "value": "IP65"
+    },
+    {
+     "label": "Size",
+     "value": "220*80*200MM"
+    },
+    {
+     "label": "Packing Weight",
+     "value": "2.1KG"
+    },
+    {
+     "label": "Packing Size",
+     "value": "30*17*20CM"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$58 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-PJ50CR8S1Y1-BK"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj50cr8s1y1-bk.jpg",
+   "images": [
+    "assets/images/products/rg-pj50cr8s1y1-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "58usd",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 19,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj50cw1-bk",
+   "name": "RG-PJ50CW1-BK 50W Outdoor 50W led Ripple water wave project light",
+   "model": "RG-PJ50CW1-BK",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 48.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "50W Outdoor 50W led Ripple",
+   "shortDesc": "RG-PJ50CW1-BK 50W Outdoor 50W led Ripple water wave project light. Factory EXW from US$48",
+   "longDesc": "RG-PJ50CW1-BK is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. Input voltage: 110V-220V 50-60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 10M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 15m"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "110V-220V 50-60HZ"
+    },
+    {
+     "label": "Angle",
+     "value": "20°"
+    },
+    {
+     "label": "Power",
+     "value": "50W"
+    },
+    {
+     "label": "Source Life",
+     "value": "80000H"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "10000-11000K"
+    },
+    {
+     "label": "Type",
+     "value": "high-quality customized power supply (built-in)"
+    },
+    {
+     "label": "Product material",
+     "value": "aluminum alloy"
+    },
+    {
+     "label": "Lens imaging ratio",
+     "value": "1:0.35"
+    },
+    {
+     "label": "Color",
+     "value": "white, red, green, blue, yellow, etc. available"
+    },
+    {
+     "label": "Control method",
+     "value": "self-propelled/remote control"
+    },
+    {
+     "label": "Machine",
+     "value": "1.8KG"
+    },
+    {
+     "label": "Waterproof grade",
+     "value": "IP65"
+    },
+    {
+     "label": "Size",
+     "value": "220*80*200MM"
+    },
+    {
+     "label": "Packing Weight",
+     "value": "2.1KG"
+    },
+    {
+     "label": "Packing Size",
+     "value": "30*17*20CM"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$48 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-PJ50CW1-BK"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj50cw1-bk.jpg",
+   "images": [
+    "assets/images/products/rg-pj50cw1-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "48usd",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 20,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj30le4c4y4-bk",
+   "name": "RG-PJ30LE4C4Y4-BK Outdoor 40W four-patterns Rotation waterproof LOGO project light",
+   "model": "RG-PJ30LE4C4Y4-BK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 139.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "Outdoor 40W four-patterns",
+   "shortDesc": "RG-PJ30LE4C4Y4-BK Outdoor 40W four-patterns Rotation waterproof LOGO project light. Factory EXW from US$139",
+   "longDesc": "RG-PJ30LE4C4Y4-BK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Light source type: OSRAM LED Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 10M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 15m"
+    },
+    {
+     "label": "Type",
+     "value": "OSRAM LED · Taiwan MEAN WELL"
+    },
+    {
+     "label": "Source Life",
+     "value": "50000h"
+    },
+    {
+     "label": "Method",
+     "value": "Turning the focus"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "7000K"
+    },
+    {
+     "label": "Angle",
+     "value": "15°-45° (optional)"
+    },
+    {
+     "label": "Number of channels",
+     "value": "8 channels"
+    },
+    {
+     "label": "System",
+     "value": "4-6 pictures installed glass pattern pieces, variable speed jitter effect, two-way variable speed flow effect"
+    },
+    {
+     "label": "Control mode",
+     "value": "international standard DMX512/manual mode control master-slave control/with RDM and other operating modes"
+    },
+    {
+     "label": "Protection level",
+     "value": "IP65"
+    },
+    {
+     "label": "Product Size",
+     "value": "155*185*215mm"
+    },
+    {
+     "label": "Product weight",
+     "value": "3.0KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$139 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$125 (over 50 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-PJ30LE4C4Y4-BK"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj30le4c4y4-bk.jpg",
+   "images": [
+    "assets/images/products/rg-pj30le4c4y4-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "139usd 125usd(over50pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 50,
+   "sourceRow": 21,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-w40ib1-kf40a",
+   "name": "RG-W40IB1-Kf40A RGBW4 in 1 3D dynamic water pattern light",
+   "model": "RG-W40IB1-Kf40A",
+   "category": "gobo",
+   "sub": "pattern",
+   "subLabel": "Aurora & Water Pattern",
+   "family": "gobo",
+   "price": 45.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "RGBW4 in 1 3D dynamic wate",
+   "shortDesc": "RG-W40IB1-Kf40A RGBW4 in 1 3D dynamic water pattern light. Factory EXW from US$45",
+   "longDesc": "RG-W40IB1-Kf40A is part of the RIGE Aurora & Water Pattern range built in our own Guangzhou plant. Model:RG-W40IB1-Kf40A Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 10M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 15m"
+    },
+    {
+     "label": "Model",
+     "value": "RG-W40IB1-Kf40A"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC90-240V, 50-60HZ"
+    },
+    {
+     "label": "Power",
+     "value": "40W · 5W"
+    },
+    {
+     "label": "Type",
+     "value": "LED"
+    },
+    {
+     "label": "Luminous color",
+     "value": "RGBW full-color/WWA dual color/monochrome RGBW optional"
+    },
+    {
+     "label": "Methods",
+     "value": "mobile app, remote control, self-propelled, master-slave"
+    },
+    {
+     "label": "Material",
+     "value": "aluminum+acrylic"
+    },
+    {
+     "label": "Body color",
+     "value": "optional in white/black"
+    },
+    {
+     "label": "Product Size",
+     "value": "100 * 7.5 * 17CM"
+    },
+    {
+     "label": "Unit",
+     "value": "4KG"
+    },
+    {
+     "label": "Packing Size",
+     "value": "104 * 21 * 13CM"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$45 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-W40IB1-Kf40A"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-w40ib1-kf40a.jpg",
+   "images": [
+    "assets/images/products/rg-w40ib1-kf40a.jpg",
+    "assets/images/products/rg-w40ib1-kf40a-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "45usd/pcs single color(white/ flame/gold/neutral optional) 60usd/pcs(RGBW)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 22,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj404s2n5-ad",
+   "name": "RG-PJ404S2N5-AD RGBW DMX512 48w Colorful Aurora Project water wave light",
+   "model": "RG-PJ404S2N5-AD",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 98.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "RGBW DMX512 48w Colorful A",
+   "shortDesc": "RG-PJ404S2N5-AD RGBW DMX512 48w Colorful Aurora Project water wave light. Factory EXW from US$98",
+   "longDesc": "RG-PJ404S2N5-AD is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. Light Source Power: 40W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 10M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 15m"
+    },
+    {
+     "label": "Power",
+     "value": "40W"
+    },
+    {
+     "label": "LED Lifespan",
+     "value": ">30,000 hours"
+    },
+    {
+     "label": "Angles",
+     "value": "8°-40°"
+    },
+    {
+     "label": "Control",
+     "value": "Anti-glare Grille"
+    },
+    {
+     "label": "Color Rendering Index",
+     "value": ">90"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "RGBW"
+    },
+    {
+     "label": "Effect",
+     "value": ">40 · Adjustable Direction and Speed"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC110V-220V"
+    },
+    {
+     "label": "Operation",
+     "value": "International Standard DMX512"
+    },
+    {
+     "label": "Number of Channels",
+     "value": "9"
+    },
+    {
+     "label": "Connection",
+     "value": "Male/Female"
+    },
+    {
+     "label": "Dimensions",
+     "value": "179*144*166mm (2.9kg) · 210*210*220mm (3.1kg) (1pc/CTN)"
+    },
+    {
+     "label": "Heat Dissipation",
+     "value": "Aluminum Sheet"
+    },
+    {
+     "label": "Rating",
+     "value": "IP65"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$98 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$95 (over 100 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Power Factor Corrected Switching Power Supply with Up to 85% Efficiency",
+    "440*440*490mm (13.45kg) (4pcs/CTN)"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj404s2n5-ad.jpg",
+   "images": [
+    "assets/images/products/rg-pj404s2n5-ad.jpg",
+    "assets/images/products/rg-pj404s2n5-ad-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "98USD (Moq 30pcs) 95USD (over 100pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 30,
+   "sourceRow": 23,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb200l0c4-bk",
+   "name": "RG-GB200L0C4-BK 200W OSRAM LED IP65 200W LED Water Ripple Light",
+   "model": "RG-GB200L0C4-BK",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 258.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "200W OSRAM LED IP65 200W L",
+   "shortDesc": "RG-GB200L0C4-BK 200W OSRAM LED IP65 200W LED Water Ripple Light Newest Hot selling. Factory EXW from US$258",
+   "longDesc": "RG-GB200L0C4-BK is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. Input voltage: AC110V-260V, 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 10M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within30M"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC110V-260V, 50/60Hz"
+    },
+    {
+     "label": "Source Life",
+     "value": "50000h"
+    },
+    {
+     "label": "Rated power",
+     "value": "300W"
+    },
+    {
+     "label": "Angle",
+     "value": "35°45°60°(optional)"
+    },
+    {
+     "label": "DMX channel",
+     "value": "5CH"
+    },
+    {
+     "label": "Model",
+     "value": "DMX, master-slave, Auto, Sound."
+    },
+    {
+     "label": "Color Temperature",
+     "value": "6500K-7000K"
+    },
+    {
+     "label": "Fixed color",
+     "value": "5 colors + white light, half-color rainbow effect, linear color conversion and two-way variable speed rotating rainbow"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear dimming, precise and excellent dimming, bright and full colors"
+    },
+    {
+     "label": "Optical system",
+     "value": "adopts industry-renowned brand optics, no film loss, positive color, high temperature resistance, customized light-enhanced light, and higher brightness"
+    },
+    {
+     "label": "Material",
+     "value": "die-casting mold + aluminum profile"
+    },
+    {
+     "label": "Detection",
+     "value": "If the temperature is too high, the brightness will automatically decrease"
+    },
+    {
+     "label": "Working environment",
+     "value": "-10℃～45℃"
+    },
+    {
+     "label": "Product Size",
+     "value": "31*25*35cm"
+    },
+    {
+     "label": "Product weight",
+     "value": "11kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$258 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Dynamic pattern: 2 dynamic water pattern discs, can be customized to customer requirements such as water pattern/flame/snowflake/petal effect, variable speed jitter/two-way flow effect, pattern index function and 16Bit precise fine-tuning"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb200l0c4-bk.jpg",
+   "images": [
+    "assets/images/products/rg-gb200l0c4-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "258USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 24,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb200l4c0-bk",
+   "name": "RG-GB200L4C0-BK 200W OSRAM LED IP65 200W outdoor LED Gobo Light",
+   "model": "RG-GB200L4C0-BK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 286.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "200W OSRAM LED IP65 200W o",
+   "shortDesc": "RG-GB200L4C0-BK 200W OSRAM LED IP65 200W outdoor LED Gobo Light Newest Hot selling. Factory EXW from US$286",
+   "longDesc": "RG-GB200L4C0-BK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Input voltage: AC110V-260V, 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 10M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 30M"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC110V-260V, 50/60Hz"
+    },
+    {
+     "label": "Source Life",
+     "value": "50000h"
+    },
+    {
+     "label": "Rated power",
+     "value": "300W"
+    },
+    {
+     "label": "Angle",
+     "value": "35°45°60°(optional)"
+    },
+    {
+     "label": "DMX channel",
+     "value": "5CH"
+    },
+    {
+     "label": "Test",
+     "value": "DMX, master-slave, Auto, Sound"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "6500K-7000K"
+    },
+    {
+     "label": "Dimming",
+     "value": "0-100% linear dimming, precise and excellent dimming, bright and full colors"
+    },
+    {
+     "label": "Optical system",
+     "value": "adopts industry-renowned brand optics, no film loss, positive color, high temperature resistance, customized light-enhanced light, and higher brightness"
+    },
+    {
+     "label": "Material",
+     "value": "die-casting mold + aluminum profile"
+    },
+    {
+     "label": "Detection",
+     "value": "If the temperature is too high, the brightness will automatically decrease"
+    },
+    {
+     "label": "Working environment",
+     "value": "-10℃～45℃"
+    },
+    {
+     "label": "Product Size",
+     "value": "31*25*35cm"
+    },
+    {
+     "label": "Product weight",
+     "value": "11kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$286 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$258 (over 30 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Dynamic pattern: 4 dynamic pattern discs, can be customized for customer requirements such as water pattern/flame/snowflake/petal effect, variable speed jitter/two-way flow effect, pattern index function and 16Bit precise fine-tuning"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb200l4c0-bk.jpg",
+   "images": [
+    "assets/images/products/rg-gb200l4c0-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "286USD( with 4 standard patterns) 258USD(over 30pcs) patterns can be customized, but have to add 15USD for each full color pattern.",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 30,
+   "sourceRow": 25,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb300l4c0-bkp",
+   "name": "RG-GB300L4C0-BKP 300W Cree LED IP65 300W outdoor 3-prisms effect LED Gobo Light",
+   "model": "RG-GB300L4C0-BKP",
+   "category": "gobo",
+   "sub": "multi",
+   "subLabel": "Multi-Pattern & Prism",
+   "family": "gobo",
+   "price": 315.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "300W Cree LED IP65 300W ou",
+   "shortDesc": "RG-GB300L4C0-BKP 300W Cree LED IP65 300W outdoor 3-prisms effect LED Gobo Light. Factory EXW from US$315",
+   "longDesc": "RG-GB300L4C0-BKP is part of the RIGE Multi-Pattern & Prism range built in our own Guangzhou plant. Input voltage: AC100-240V, 50 / 60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 30M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 60M"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC100-240V, 50 / 60Hz"
+    },
+    {
+     "label": "Rated power",
+     "value": "300W or 200W"
+    },
+    {
+     "label": "Life",
+     "value": "> 50000h"
+    },
+    {
+     "label": "Pattern",
+     "value": "rotating pattern disk, 4 patterns"
+    },
+    {
+     "label": "Dimming",
+     "value": "linear dimming from dark to light"
+    },
+    {
+     "label": "Angle",
+     "value": "20 °, 30 °, 45 °, 60 °"
+    },
+    {
+     "label": "Functional effects",
+     "value": "3-prisms effect, half color rainbow effect, linear color conversion and bidirectional variable speed rotating rainbow"
+    },
+    {
+     "label": "Control mode",
+     "value": "Standard DMX512, RDM, self-propelled, master-slave"
+    },
+    {
+     "label": "Number of channels",
+     "value": "Standard 5CH"
+    },
+    {
+     "label": "Grade",
+     "value": "IP65"
+    },
+    {
+     "label": "Working temperature",
+     "value": "- 20 ℃ - 45 ℃"
+    },
+    {
+     "label": "Net weight",
+     "value": "8.5Kg"
+    },
+    {
+     "label": "Size",
+     "value": "28 * 28 * 31cm"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$315 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$286 (over 30 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-GB300L4C0-BKP"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb300l4c0-bkp.jpg",
+   "images": [
+    "assets/images/products/rg-gb300l4c0-bkp.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "315usd ( with 4 standard patterns) 286usd(over 30pcs) patterns can be customized, but have to add 15USD for each full color pattern.",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 30,
+   "sourceRow": 26,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb300l4c0-wk",
+   "name": "RG-GB300L4C0-WK 300W Outdoor IP65 Gobo & Water Ripple Projector",
+   "model": "RG-GB300L4C0-WK",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 250.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "300W Outdoor",
+   "shortDesc": "RG-GB300L4C0-WK 300W Outdoor. Factory EXW from US$250",
+   "longDesc": "RG-GB300L4C0-WK is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. Angle: 8°/15°/20°/30°/45°/60° Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 30M · 3~40m (in dim environments)"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 60M"
+    },
+    {
+     "label": "Angle",
+     "value": "8°/15°/20°/30°/45°/60°"
+    },
+    {
+     "label": "Type",
+     "value": "Custom Power Supply"
+    },
+    {
+     "label": "Rated Voltage",
+     "value": "220V 50/60Hz"
+    },
+    {
+     "label": "Light Source Brand",
+     "value": "OSRAM"
+    },
+    {
+     "label": "Power Consumption",
+     "value": "200W-300W"
+    },
+    {
+     "label": "Rating",
+     "value": "IP65"
+    },
+    {
+     "label": "Source Life",
+     "value": "80,000H"
+    },
+    {
+     "label": "Luminous Flux",
+     "value": "12,000LM-15,000LM"
+    },
+    {
+     "label": "Net Weight",
+     "value": "7.55kg"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "9500K"
+    },
+    {
+     "label": "Specification",
+     "value": "37-25MM"
+    },
+    {
+     "label": "Dimensions",
+     "value": "43x30x25CM"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$250 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$235 (over 30 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Single Image",
+    "Quad-Image Rotation (Self-Rotation) / DMX512",
+    "Single-Color Water Ripple / Four-Color Water Ripple / DMX512",
+    "Ceiling Mount / Pole Mount",
+    "Mobile/Static Mode (Default) / Remote Control / Console Control",
+    "Tri-Prism Effect / Quad-Prism Effect"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb300l4c0-wk.jpg",
+   "images": [
+    "assets/images/products/rg-gb300l4c0-wk.jpg",
+    "assets/images/products/rg-gb300l4c0-wk-2.jpg",
+    "assets/images/products/rg-gb300l4c0-wk-3.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "250usd ( with 4 standard patterns) 235usd(over 30pcs) patterns can be customized, but have to add 15USD for each full color pattern.",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 30,
+   "sourceRow": 27,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb200l4c0-wk",
+   "name": "RG-GB200L4C0-WK 200w IP65 outdoor led logo project light",
+   "model": "RG-GB200L4C0-WK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 300.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "200w IP65 outdoor led logo",
+   "shortDesc": "RG-GB200L4C0-WK 200w IP65 outdoor led logo project light. Factory EXW from US$300",
+   "longDesc": "RG-GB200L4C0-WK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Rated voltage: AC110V/240V 50-60HZ Maximum power: 230W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 30M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 60M"
+    },
+    {
+     "label": "Rated voltage",
+     "value": "AC110V/240V 50-60HZ"
+    },
+    {
+     "label": "Maximum power",
+     "value": "230W"
+    },
+    {
+     "label": "Specifications",
+     "value": "LED150W"
+    },
+    {
+     "label": "Lamp life",
+     "value": "50,000 hours"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "6500K-7000K"
+    },
+    {
+     "label": "Angle",
+     "value": "28°36°40° (optional) · Up and down adjustment > 180°"
+    },
+    {
+     "label": "Channel mode",
+     "value": "6 channels"
+    },
+    {
+     "label": "Colors",
+     "value": "1 color disk (five colors + white light) (optional)"
+    },
+    {
+     "label": "Pattern",
+     "value": "1 large disk (built-in 4 independent rotating custom patterns) with variable speed rotation"
+    },
+    {
+     "label": "Function",
+     "value": "Manual clarity adjustment · With electronic positioning function, light source overheating protection"
+    },
+    {
+     "label": "Control mode",
+     "value": "International standard DMX512/manual/master-slave mode control Other"
+    },
+    {
+     "label": "Mode",
+     "value": "Real-time monitoring of light source temperature"
+    },
+    {
+     "label": "Protection level",
+     "value": "IP65"
+    },
+    {
+     "label": "Packing Size",
+     "value": "460*360*230mm"
+    },
+    {
+     "label": "Weight",
+     "value": "12kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$300 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$285 (over 10 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-GB200L4C0-WK"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb200l4c0-wk.jpg",
+   "images": [
+    "assets/images/products/rg-gb200l4c0-wk.jpg",
+    "assets/images/products/rg-gb200l4c0-wk-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "300usd 285usd(over10pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 10,
+   "sourceRow": 28,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj300bl1s0n1-wk",
+   "name": "RG-PJ300BL1S0N1-WK 300W LED IP65 outdoor led logo project light",
+   "model": "RG-PJ300BL1S0N1-WK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 325.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "300W LED IP65 outdoor led",
+   "shortDesc": "RG-PJ300BL1S0N1-WK 300W LED IP65 outdoor led logo project light. Factory EXW from US$325",
+   "longDesc": "RG-PJ300BL1S0N1-WK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. 300W LED waterproof single-image projector Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 30M · 80M (dark environment)"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 60M"
+    },
+    {
+     "label": "Model",
+     "value": "RG-PJ300BL1S0N1-WK"
+    },
+    {
+     "label": "Type",
+     "value": "OSRAM ultra-high power LED · Meanwell power supply"
+    },
+    {
+     "label": "Power",
+     "value": "300W"
+    },
+    {
+     "label": "Source Life",
+     "value": "30000H"
+    },
+    {
+     "label": "Luminous flux",
+     "value": "30000Lm"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "3000K/8000K"
+    },
+    {
+     "label": "Specifications",
+     "value": "53/31mm"
+    },
+    {
+     "label": "Beam angle",
+     "value": "9°, 15°, 20°, 30°, 45°, 60° optional, default 20°"
+    },
+    {
+     "label": "Rated voltage",
+     "value": "90-240V 50-60HZ"
+    },
+    {
+     "label": "Function",
+     "value": "pattern can rotate/stationary"
+    },
+    {
+     "label": "Protection level",
+     "value": "IP65"
+    },
+    {
+     "label": "Size",
+     "value": "40*25*35CM"
+    },
+    {
+     "label": "Net Weight",
+     "value": "5KG"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "5.6KG · 23.8KG"
+    },
+    {
+     "label": "Package Size",
+     "value": "46*29*20CM · 50*49*49cm"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$325 / unit"
+    },
+    {
+     "label": "Volume Price",
+     "value": "US$308 (over 20 pcs)"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "300W LED waterproof single-image projector"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj300bl1s0n1-wk.jpg",
+   "images": [
+    "assets/images/products/rg-pj300bl1s0n1-wk.jpg",
+    "assets/images/products/rg-pj300bl1s0n1-wk-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "325usd 308usd(over 20pcs)",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 20,
+   "sourceRow": 29,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb400l1c0-bk400w",
+   "name": "RG-GB400L1C0-BK400W 400W waterproof logo projector",
+   "model": "RG-GB400L1C0-BK400W",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 465.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "400W waterproof logo proje",
+   "shortDesc": "RG-GB400L1C0-BK400W 400W waterproof logo projector. Factory EXW from US$465",
+   "longDesc": "RG-GB400L1C0-BK400W is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Item Number: RG-GB400L1C0- BK400W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 150M"
+    },
+    {
+     "label": "Number",
+     "value": "RG-GB400L1C0- BK400W"
+    },
+    {
+     "label": "Angle",
+     "value": "10°20°30°45°60°"
+    },
+    {
+     "label": "Name",
+     "value": "400w outdoor project light"
+    },
+    {
+     "label": "Types",
+     "value": "Raiwan Mingwei"
+    },
+    {
+     "label": "Distance",
+     "value": "3~150m(dark enviroment)"
+    },
+    {
+     "label": "Rated Voltage",
+     "value": "220V 50/60H"
+    },
+    {
+     "label": "Light Source",
+     "value": "osram"
+    },
+    {
+     "label": "Total power",
+     "value": "400W"
+    },
+    {
+     "label": "Power",
+     "value": "380W"
+    },
+    {
+     "label": "IP grade",
+     "value": "IP65"
+    },
+    {
+     "label": "Life",
+     "value": "50000h"
+    },
+    {
+     "label": "Size",
+     "value": "28*23*33cm"
+    },
+    {
+     "label": "Luminous",
+     "value": "25000lm"
+    },
+    {
+     "label": "Weight",
+     "value": "9.5kg"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "8000K"
+    },
+    {
+     "label": "Specification",
+     "value": "37/25mm"
+    },
+    {
+     "label": "Package Size",
+     "value": "30*23*43"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$465 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "power supply"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb400l1c0-bk400w.jpg",
+   "images": [
+    "assets/images/products/rg-gb400l1c0-bk400w.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "465USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 30,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb30l0c1-bk",
+   "name": "RG-GB30L0C1-BK IP65 30W outdoor waterproof water wave light",
+   "model": "RG-GB30L0C1-BK",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 58.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "IP65 30W outdoor waterproo",
+   "shortDesc": "RG-GB30L0C1-BK IP65 30W outdoor waterproof water wave light. Factory EXW from US$58",
+   "longDesc": "RG-GB30L0C1-BK is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. 1. Input voltage: AC100V-240V 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 8M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 15M"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC100V-240V 50/60Hz"
+    },
+    {
+     "label": "Power",
+     "value": "30W"
+    },
+    {
+     "label": "Current",
+     "value": "0.1A"
+    },
+    {
+     "label": "Power supply",
+     "value": "30W 12V 1A-2A"
+    },
+    {
+     "label": "Color temperature",
+     "value": "8000K-9000K"
+    },
+    {
+     "label": "Lamp Beads",
+     "value": "1 30W white light lamp beads"
+    },
+    {
+     "label": "Color",
+     "value": "cool white"
+    },
+    {
+     "label": "Working life",
+     "value": "50000 hours"
+    },
+    {
+     "label": "Lens angle",
+     "value": "20°"
+    },
+    {
+     "label": "Working environment",
+     "value": "indoor/outdoor use"
+    },
+    {
+     "label": "Connection",
+     "value": "manual connection"
+    },
+    {
+     "label": "Control mode",
+     "value": "none"
+    },
+    {
+     "label": "Materials",
+     "value": "environmentally friendly materials, die-cast chassis"
+    },
+    {
+     "label": "Packing Size",
+     "value": "290mm*220mm*230mm"
+    },
+    {
+     "label": "Size",
+     "value": "220mm*180mm*180mm"
+    },
+    {
+     "label": "Net weight",
+     "value": "2.65KG"
+    },
+    {
+     "label": "Gross weight",
+     "value": "3KG"
+    },
+    {
+     "label": "Ambient temperature",
+     "value": "-20℃～+40℃"
+    },
+    {
+     "label": "Rating",
+     "value": "IP65"
+    },
+    {
+     "label": "Chassis color",
+     "value": "black"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$58 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-GB30L0C1-BK"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb30l0c1-bk.jpg",
+   "images": [
+    "assets/images/products/rg-gb30l0c1-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "58USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 31,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj80le8r1y1-bk",
+   "name": "RG-PJ80LE8R1Y1-BK IP65 80W outdoor rotating projector",
+   "model": "RG-PJ80LE8R1Y1-BK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 115.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "IP65 80W outdoor rotating",
+   "shortDesc": "RG-PJ80LE8R1Y1-BK IP65 80W outdoor rotating projector. Factory EXW from US$115",
+   "longDesc": "RG-PJ80LE8R1Y1-BK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. 1. Input voltage: AC100V-240V 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 17M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 25M"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC100V-240V 50/60Hz"
+    },
+    {
+     "label": "Power",
+     "value": "80W"
+    },
+    {
+     "label": "Current",
+     "value": "0.459A"
+    },
+    {
+     "label": "Power supply",
+     "value": "80W 12-14V 5A-6A"
+    },
+    {
+     "label": "Color temperature",
+     "value": "8000K-9000K"
+    },
+    {
+     "label": "Lamp Beads",
+     "value": "1 80W white light lamp beads"
+    },
+    {
+     "label": "Color",
+     "value": "cool white"
+    },
+    {
+     "label": "Working life",
+     "value": "50000 hours"
+    },
+    {
+     "label": "Lens angle",
+     "value": "20°"
+    },
+    {
+     "label": "Working environment",
+     "value": "indoor/outdoor use"
+    },
+    {
+     "label": "Connection",
+     "value": "manual connection"
+    },
+    {
+     "label": "Control mode",
+     "value": "manual control"
+    },
+    {
+     "label": "Materials",
+     "value": "environmentally friendly materials, die-cast chassis"
+    },
+    {
+     "label": "Packing Size",
+     "value": "325mm*250mm*245mm"
+    },
+    {
+     "label": "Size",
+     "value": "300mm*200mm*220mm"
+    },
+    {
+     "label": "Net weight",
+     "value": "5.06KG"
+    },
+    {
+     "label": "Gross weight",
+     "value": "5.52KG"
+    },
+    {
+     "label": "Ambient temperature",
+     "value": "-20℃～+40℃"
+    },
+    {
+     "label": "Rating",
+     "value": "IP65"
+    },
+    {
+     "label": "Chassis color",
+     "value": "black"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$115 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-PJ80LE8R1Y1-BK"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj80le8r1y1-bk.jpg",
+   "images": [
+    "assets/images/products/rg-pj80le8r1y1-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "115USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 32,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj150le8r1y1-bk",
+   "name": "RG-PJ150LE8R1Y1-BK IP65 150W outdoor rotating projector",
+   "model": "RG-PJ150LE8R1Y1-BK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 186.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "IP65 150W outdoor rotating",
+   "shortDesc": "RG-PJ150LE8R1Y1-BK IP65 150W outdoor rotating projector. Factory EXW from US$186",
+   "longDesc": "RG-PJ150LE8R1Y1-BK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. 1. Input voltage: AC100V-240V 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 30M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 45M"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC100V-240V 50/60Hz"
+    },
+    {
+     "label": "Power",
+     "value": "150W"
+    },
+    {
+     "label": "Current",
+     "value": "0.459A"
+    },
+    {
+     "label": "Power supply",
+     "value": "150W 12-14V 5A-6A"
+    },
+    {
+     "label": "Color temperature",
+     "value": "8000K-9000K"
+    },
+    {
+     "label": "Lamp Beads",
+     "value": "1 150W white light lamp beads"
+    },
+    {
+     "label": "Color",
+     "value": "cool white"
+    },
+    {
+     "label": "Working life",
+     "value": "50000 hours"
+    },
+    {
+     "label": "Lens angle",
+     "value": "20°"
+    },
+    {
+     "label": "Working environment",
+     "value": "indoor/outdoor use"
+    },
+    {
+     "label": "Connection",
+     "value": "manual connection"
+    },
+    {
+     "label": "Control mode",
+     "value": "manual control"
+    },
+    {
+     "label": "Materials",
+     "value": "environmentally friendly materials, die-cast chassis"
+    },
+    {
+     "label": "Packing Size",
+     "value": "325mm*250mm*245mm"
+    },
+    {
+     "label": "Size",
+     "value": "300mm*200mm*220mm"
+    },
+    {
+     "label": "Net weight",
+     "value": "5.06KG"
+    },
+    {
+     "label": "Gross weight",
+     "value": "5.52KG"
+    },
+    {
+     "label": "Ambient temperature",
+     "value": "-20℃～+40℃"
+    },
+    {
+     "label": "Rating",
+     "value": "IP65"
+    },
+    {
+     "label": "Chassis color",
+     "value": "black"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$186 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-PJ150LE8R1Y1-BK"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj150le8r1y1-bk.jpg",
+   "images": [
+    "assets/images/products/rg-pj150le8r1y1-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "186USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 33,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb500l4c0-bk",
+   "name": "RG-GB500L4C0-BK IP65 500W outdoor rotating projector",
+   "model": "RG-GB500L4C0-BK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 593.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "RG-GB500L4C0-BK IP65 500W",
+   "shortDesc": "RG-GB500L4C0-BK IP65 500W outdoor rotating projector rg-gb500l4c0-bk. Factory EXW from US$593",
+   "longDesc": "rg-gb500l4c0-bk is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. 1.Input voltage: AC110V-240V 50-60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 50M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 100M"
+    },
+    {
+     "label": "Voltage",
+     "value": "AC110V-240V 50-60Hz"
+    },
+    {
+     "label": "Model",
+     "value": "rg-gb500l4c0-bk"
+    },
+    {
+     "label": "Type",
+     "value": "LED * 500W"
+    },
+    {
+     "label": "Sources",
+     "value": "1pcs"
+    },
+    {
+     "label": "Hours)",
+     "value": "50000h"
+    },
+    {
+     "label": "Power",
+     "value": "550W"
+    },
+    {
+     "label": "Temperature",
+     "value": "6500k-7000k"
+    },
+    {
+     "label": "Mode",
+     "value": "conduction air cooling · manual adjustment · DMX512 / manual mode control / master-slave mode contr"
+    },
+    {
+     "label": "Colors",
+     "value": "1 color disc (5 colors + white light)"
+    },
+    {
+     "label": "12.IP Rating",
+     "value": ": IP65"
+    },
+    {
+     "label": "Environment",
+     "value": "- 25 ℃ ~ 35 ℃"
+    },
+    {
+     "label": "Size",
+     "value": "41 * 26 * 24cm (with handle height of 40)"
+    },
+    {
+     "label": "Weight",
+     "value": "15.5kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$593 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "rg-gb500l4c0-bk"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb500l4c0-bk.jpg",
+   "images": [
+    "assets/images/products/rg-gb500l4c0-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "593USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 34,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj600bl1s0n1-wk",
+   "name": "RG-PJ600BL1S0N1-WK IP65 600W outdoor rotating projector",
+   "model": "RG-PJ600BL1S0N1-WK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 650.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "IP65 600W outdoor rotating",
+   "shortDesc": "RG-PJ600BL1S0N1-WK IP65 600W outdoor rotating projector. Factory EXW from US$650",
+   "longDesc": "RG-PJ600BL1S0N1-WK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Voltage: AC 110-220V 50/60HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 50M · 2-100 meters in low light conditions"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 100M"
+    },
+    {
+     "label": "Voltage",
+     "value": "AC 110-220V 50/60HZ"
+    },
+    {
+     "label": "Power",
+     "value": "600W"
+    },
+    {
+     "label": "Light Source",
+     "value": "OSRAM"
+    },
+    {
+     "label": "LED",
+     "value": "3000-9000k (Default 8500K White Light)"
+    },
+    {
+     "label": "Lumens",
+     "value": "66000lm"
+    },
+    {
+     "label": "Color Rendering Index",
+     "value": "85Ra"
+    },
+    {
+     "label": "Waterproof",
+     "value": "IP65"
+    },
+    {
+     "label": "Throw Ratio",
+     "value": "1:0.3"
+    },
+    {
+     "label": "Rotation",
+     "value": "Built-in button control for rotation/stationary"
+    },
+    {
+     "label": "Casing Material",
+     "value": "All-aluminum alloy"
+    },
+    {
+     "label": "Lens",
+     "value": "High-definition double-coated lens"
+    },
+    {
+     "label": "Power Supply",
+     "value": "Dual MEANWELL power supplies"
+    },
+    {
+     "label": "Cooling System",
+     "value": "Copper + CPU-grade waterproof fan"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "16KG"
+    },
+    {
+     "label": "Dimensions",
+     "value": "61*33*40CM"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$650 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RG-PJ600BL1S0N1-WK"
+   ],
+   "applications": [
+    "Accessory",
+    "Compatibility"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj600bl1s0n1-wk.jpg",
+   "images": [
+    "assets/images/products/rg-pj600bl1s0n1-wk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "650USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 35,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-gb750l4c0-bk",
+   "name": "RG-GB750L4C0-BK IP65 High power 700W outdoor rotating projector Light",
+   "model": "RG-GB750L4C0-BK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 885.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "IP65 High power 700W outdo",
+   "shortDesc": "RG-GB750L4C0-BK IP65 High power 700W outdoor rotating projector Light. Factory EXW from US$885",
+   "longDesc": "RG-GB750L4C0-BK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Light source type/specification :LED module light source/700W Osram chip Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 50M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 100M"
+    },
+    {
+     "label": "Type/specification",
+     "value": "LED module light source/700W Osram chip"
+    },
+    {
+     "label": "Power",
+     "value": "700W module light led"
+    },
+    {
+     "label": "Color temperature",
+     "value": "7500-8500K"
+    },
+    {
+     "label": "Efficiency",
+     "value": "150lm/w"
+    },
+    {
+     "label": "LED Lifespan",
+     "value": ">50000H"
+    },
+    {
+     "label": "Focus",
+     "value": "28 ° 36 ° 45 ° (optional)"
+    },
+    {
+     "label": "Shape",
+     "value": "square or circular (optional)"
+    },
+    {
+     "label": "Dimming",
+     "value": "curve 0-100%"
+    },
+    {
+     "label": "Number of channels",
+     "value": "6 channels"
+    },
+    {
+     "label": "Effect",
+     "value": "1 large image tray (with 4 custom rotating images built-in)"
+    },
+    {
+     "label": "Mode",
+     "value": "LED touch screen LCD display"
+    },
+    {
+     "label": "Function",
+     "value": "overheat protection"
+    },
+    {
+     "label": "Control mode DMX512",
+     "value": "manual mode control/master-slave control"
+    },
+    {
+     "label": "Control",
+     "value": "real-time monitoring of temperature"
+    },
+    {
+     "label": "Controls",
+     "value": "auto mode and change color"
+    },
+    {
+     "label": "Angle",
+     "value": "up and down>± 45 °"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC110-240V 50/60HZ"
+    },
+    {
+     "label": "Working environment",
+     "value": "-25 ° -+35 °"
+    },
+    {
+     "label": "Method",
+     "value": "conductive heat dissipation"
+    },
+    {
+     "label": "Color",
+     "value": "Die cast aluminum shell (gray)"
+    },
+    {
+     "label": "Size",
+     "value": "320 * 285 * 421mm"
+    },
+    {
+     "label": "Package size",
+     "value": "52.5*36.5*31.5cm"
+    },
+    {
+     "label": "Net weight",
+     "value": "16kg"
+    },
+    {
+     "label": "Product weight",
+     "value": "19kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$885 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Lighting fixtures and electrical appliances",
+    "Fixture and Electrical Equipment",
+    "Dynamic pattern 1 dynamic disc:",
+    "Power device full power overheating protection",
+    "Manual adjustment method",
+    "Internal protection electronic moisture-proof process treatment"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-gb750l4c0-bk.jpg",
+   "images": [
+    "assets/images/products/rg-gb750l4c0-bk.jpg",
+    "assets/images/products/rg-gb750l4c0-bk-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "885USD 857USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 36,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj20cr2r1n1-bk",
+   "name": "RG-PJ20CR2R1N1-BK 20w/30w waterproof logo projector",
+   "model": "RG-PJ20CR2R1N1-BK",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 63.5,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "20w/30w waterproof logo pr",
+   "shortDesc": "RG-PJ20CR2R1N1-BK 20w/30w waterproof logo projector. Factory EXW from US$63.5",
+   "longDesc": "RG-PJ20CR2R1N1-BK is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Voltage:110-220v Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "within 10M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 15m"
+    },
+    {
+     "label": "Voltage",
+     "value": "110-220v"
+    },
+    {
+     "label": "Power",
+     "value": "20w Cree led"
+    },
+    {
+     "label": "Installation",
+     "value": "ceiling, put on the table or modified into the ceiling"
+    },
+    {
+     "label": "Beam angle",
+     "value": "15 degrees/ 20 degrees/ 25 degrees (optional)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$63.5 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Pattern can be stationary or rotating, high-definition lens, high brightness"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj20cr2r1n1-bk.jpg",
+   "images": [
+    "assets/images/products/rg-pj20cr2r1n1-bk.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "63.5USD 65usd MOQ:10pcs",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 10,
+   "sourceRow": 37,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj30-outdoor",
+   "name": "RG-PJ30-Outdoor 30W Creen LED Outdoor rotating projector",
+   "model": "RG-PJ30-Outdoor",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 99.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "30W Creen LED Outdoor rota",
+   "shortDesc": "RG-PJ30-Outdoor 30W Creen LED Outdoor rotating projector. Factory EXW from US$99",
+   "longDesc": "RG-PJ30-Outdoor is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Waterproof IP65 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 8M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 15M"
+    },
+    {
+     "label": "Method",
+     "value": "ceiling, put on the table"
+    },
+    {
+     "label": "Beam angle",
+     "value": "15 degrees/ 20 degrees/ 25 degrees (optional)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$99 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Waterproof IP65",
+    "Pattern can be stationary or rotating, high-definition lens, high brightness"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj30-outdoor.jpg",
+   "images": [
+    "assets/images/products/rg-pj30-outdoor.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "99USD MOQ:10pcs",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 10,
+   "sourceRow": 38,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj100-outdoor",
+   "name": "RG-PJ100-Outdoor 100W Cree LED outdoor rotating projector",
+   "model": "RG-PJ100-Outdoor",
+   "category": "gobo",
+   "sub": "logo",
+   "subLabel": "Outdoor Logo & Gobo Projector",
+   "family": "gobo",
+   "price": 199.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "100W Cree LED outdoor rota",
+   "shortDesc": "RG-PJ100-Outdoor 100W Cree LED outdoor rotating projector. Factory EXW from US$199",
+   "longDesc": "RG-PJ100-Outdoor is part of the RIGE Outdoor Logo & Gobo Projector range built in our own Guangzhou plant. Waterproof IP65 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 20M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "within 35M"
+    },
+    {
+     "label": "Method",
+     "value": "ceiling, put on the table"
+    },
+    {
+     "label": "Beam angle",
+     "value": "15 degrees/ 20 degrees/ 25 degrees (optional)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$199 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Waterproof IP65",
+    "Pattern can be stationary or rotating, high-definition lens, high brightness"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj100-outdoor.jpg",
+   "images": [
+    "assets/images/products/rg-pj100-outdoor.jpg",
+    "assets/images/products/rg-pj100-outdoor-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "199usd",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 39,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-pj30-multi-indoor",
+   "name": "RG-PJ30-Multi-Indoor 30W LED Indoor DMX512 Multi-Pattern LED projector",
+   "model": "RG-PJ30-Multi-Indoor",
+   "category": "gobo",
+   "sub": "multi",
+   "subLabel": "Multi-Pattern & Prism",
+   "family": "gobo",
+   "price": 152.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "30W LED Indoor DMX512 Mult",
+   "shortDesc": "RG-PJ30-Multi-Indoor 30W LED Indoor DMX512 Multi-Pattern LED projector. Factory EXW from US$152",
+   "longDesc": "RG-PJ30-Multi-Indoor is part of the RIGE Multi-Pattern & Prism range built in our own Guangzhou plant. 1-4 kinds of color can automatically change，Customers can customize colors, Customers can set color change time. Or can  Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Projection Distance",
+     "value": "Within 8M"
+    },
+    {
+     "label": "Max. Projection Distance",
+     "value": "Within 15M"
+    },
+    {
+     "label": "Method",
+     "value": "ceiling, put on the table."
+    },
+    {
+     "label": "Note",
+     "value": "The price have to confirm with us if you need over 4patettern."
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$152 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "1-4 kinds of color can automatically change，Customers can customize colors, Customers can set color change time. Or can put 1-4 design in at the same time, Can automatically transform pattern, Customers can also set time. Up to 8 patterns do."
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-pj30-multi-indoor.jpg",
+   "images": [
+    "assets/images/products/rg-pj30-multi-indoor.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "152USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 42,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-w40ib1-kf100a",
+   "name": "RG-W40IB1-Kf100A Led Roller Wave Water Ripple Light (Single Color)",
+   "model": "RG-W40IB1-Kf100A",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 52.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "Led roller wave water Ripp",
+   "shortDesc": "Led roller wave water Ripple Light (single color ) RG-W40IB1-Kf100A 1米户外滚筒波浪款水纹灯(单色) AC220V/100W. Factory EXW from US$52",
+   "longDesc": "RG-W40IB1-Kf100A is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. Light source color temperature: blue, lake blue, red, green, golden, etc. Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "LED Beads",
+     "value": "12 pcs beads 5050"
+    },
+    {
+     "label": "Color Temperature",
+     "value": "blue, lake blue, red, green, golden, etc."
+    },
+    {
+     "label": "Angle",
+     "value": "120°"
+    },
+    {
+     "label": "Product Size",
+     "value": "W90*H175*L1000mm"
+    },
+    {
+     "label": "Product material",
+     "value": "6063 aluminum + tempered glass + metal roller"
+    },
+    {
+     "label": "Color",
+     "value": "sand gray"
+    },
+    {
+     "label": "Protection level",
+     "value": "IP67"
+    },
+    {
+     "label": "Ambient temperature",
+     "value": "-20℃～50℃"
+    },
+    {
+     "label": "Environment",
+     "value": "temperature -40℃～85℃, humidity ≤70%RH"
+    },
+    {
+     "label": "Packing Size",
+     "value": "106*32.5*24CM (4 pieces/box)"
+    },
+    {
+     "label": "Control mode",
+     "value": "on/off"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$52 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "光源色温：蓝、湖蓝、红、绿、金黄等",
+    "发光角度：120°",
+    "产品尺寸：W87*H170*L1000mm",
+    "产品材质：6063铝+钢化玻璃+ 金属滚筒",
+    "产品颜色：砂灰",
+    "防护等级：IP67"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-w40ib1-kf100a.jpg",
+   "images": [
+    "assets/images/products/rg-w40ib1-kf100a.jpg",
+    "assets/images/products/rg-w40ib1-kf100a-2.jpg",
+    "assets/images/products/rg-w40ib1-kf100a-3.jpg",
+    "assets/images/products/rg-w40ib1-kf100a-4.jpg",
+    "assets/images/products/rg-w40ib1-kf100a-5.jpg",
+    "assets/images/products/rg-w40ib1-kf100a-6.jpg",
+    "assets/images/products/rg-w40ib1-kf100a-7.jpg",
+    "assets/images/products/rg-w40ib1-kf100a-8.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "118USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 44,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-w40ib1-kf100f",
+   "name": "RG-W40IB1-Kf100F Led Roller Wave Water Ripple Light (RGBW Full Color DMX512)",
+   "model": "RG-W40IB1-Kf100F",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 52.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "Led roller wave water Ripp",
+   "shortDesc": "Led roller wave water Ripple Light (RGBW full color DMX 512 ) RG-W40IB1-Kf100F 1米户外滚筒波浪款水纹灯(RGBW全彩) AC220V/120W. Factory EXW from US$52",
+   "longDesc": "RG-W40IB1-Kf100F is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. Light source color temperature: RGBW(W:2700K-6500K) Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "LED Beads",
+     "value": "10-12 pcs beads 5050"
+    },
+    {
+     "label": "RGBW(W",
+     "value": "2700K-6500K)"
+    },
+    {
+     "label": "Angle",
+     "value": "120°"
+    },
+    {
+     "label": "Product Size",
+     "value": "W87*H170*L1000mm"
+    },
+    {
+     "label": "Product material",
+     "value": "6063 aluminum + tempered glass + metal roller"
+    },
+    {
+     "label": "Color",
+     "value": "sand gray"
+    },
+    {
+     "label": "Protection level",
+     "value": "IP67"
+    },
+    {
+     "label": "Ambient temperature",
+     "value": "-20℃～50℃"
+    },
+    {
+     "label": "Environment",
+     "value": "temperature -40℃～85℃, humidity ≤70%RH"
+    },
+    {
+     "label": "Packing Size",
+     "value": "106*32.5*24CM (4 pieces/box)"
+    },
+    {
+     "label": "Control method",
+     "value": "DMX512"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$52 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "发光角度：120°",
+    "产品尺寸：W87*H170*L1000mm",
+    "产品材质：6063铝+钢化玻璃+ 透明圆形滚筒",
+    "产品颜色：砂灰",
+    "防护等级：IP67",
+    "环境温度：-20℃～50℃"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-w40ib1-kf100f.jpg",
+   "images": [
+    "assets/images/products/rg-w40ib1-kf100f.jpg",
+    "assets/images/products/rg-w40ib1-kf100f-2.jpg",
+    "assets/images/products/rg-w40ib1-kf100f-3.jpg",
+    "assets/images/products/rg-w40ib1-kf100f-4.jpg",
+    "assets/images/products/rg-w40ib1-kf100f-5.jpg",
+    "assets/images/products/rg-w40ib1-kf100f-6.jpg",
+    "assets/images/products/rg-w40ib1-kf100f-7.jpg",
+    "assets/images/products/rg-w40ib1-kf100f-8.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "118USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 50,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
+  },
+  {
+   "id": "rg-w40ib2-kf60f",
+   "name": "RG-W40IB2-Kf60F LED Optical Glass Water Ripple Light (Full Color DMX512)",
+   "model": "RG-W40IB2-Kf60F",
+   "category": "gobo",
+   "sub": "water",
+   "subLabel": "Water Wave & Ripple Light",
+   "family": "gobo",
+   "price": 52.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "LED optical glass water ri",
+   "shortDesc": "LED optical glass water ripple Light ( full color DMX 512) RG-W40IB2-Kf60F 1米户外光学玻璃分段水波纹水纹灯(全彩) AC220V/120W. Factory EXW from US$52",
+   "longDesc": "RG-W40IB2-Kf60F is part of the RIGE Water Wave & Ripple Light range built in our own Guangzhou plant. Light source color temperature: RGBW(W:2700K-6500K) Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "LED Beads",
+     "value": "2-3 pcs beads 6065"
+    },
+    {
+     "label": "RGBW(W",
+     "value": "2700K-6500K)"
+    },
+    {
+     "label": "Angle",
+     "value": "45°"
+    },
+    {
+     "label": "Product Size",
+     "value": "W87*H170*L1000mm"
+    },
+    {
+     "label": "Product material",
+     "value": "6063 aluminum + tempered glass + square glass roller"
+    },
+    {
+     "label": "Color",
+     "value": "sand gray"
+    },
+    {
+     "label": "Protection level",
+     "value": "IP67"
+    },
+    {
+     "label": "Ambient temperature",
+     "value": "-20℃～50℃"
+    },
+    {
+     "label": "Environment",
+     "value": "temperature -40℃～85℃, humidity ≤70%RH"
+    },
+    {
+     "label": "Packing Size",
+     "value": "106*32.5*24CM (4 pieces/box)"
+    },
+    {
+     "label": "Control method",
+     "value": "DMX512"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$52 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "发光角度：45°",
+    "产品尺寸：W87*H170*L1000mm",
+    "产品材质：6063铝+钢化玻璃+方形玻璃滚筒",
+    "产品颜色：砂灰",
+    "防护等级：IP67",
+    "环境温度：-20℃～50℃"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/rg-w40ib2-kf60f.jpg",
+   "images": [
+    "assets/images/products/rg-w40ib2-kf60f.jpg",
+    "assets/images/products/rg-w40ib2-kf60f-2.jpg",
+    "assets/images/products/rg-w40ib2-kf60f-3.jpg",
+    "assets/images/products/rg-w40ib2-kf60f-4.jpg",
+    "assets/images/products/rg-w40ib2-kf60f-5.jpg",
+    "assets/images/products/rg-w40ib2-kf60f-6.jpg",
+    "assets/images/products/rg-w40ib2-kf60f-7.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "118USD",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 56,
+   "sourceFile": "Logo gobo projector water wave  Light _RIGEBA(3).xlsx"
   }
  ]
 }

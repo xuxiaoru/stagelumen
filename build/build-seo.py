@@ -41,7 +41,7 @@ STATIC_PAGES = [
 ]
 
 CATS = ["moving", "pixel", "theatre", "par", "laser", "controller", "profile",
-        "effect", "kinetic"]
+        "effect", "kinetic", "gobo"]
 
 AI_BOTS = [
     ("GPTBot",              "OpenAI"),

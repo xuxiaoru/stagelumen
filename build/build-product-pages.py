@@ -57,6 +57,7 @@ def build_page(tpl, p):
         "par": "LED PAR & Uplights", "laser": "Lasers", "controller": "Controllers",
         "profile": "LED Profile Spot", "effect": "Stage Effect Machines",
         "kinetic": "LED Kinetic Winch & Lighting Ball",
+        "gobo": "LED Gobo & Logo Projector Light",
     }
     url = page_url(p)
     name = p.get("name") or p["id"]
