@@ -102,9 +102,14 @@
           send({ type: 'event', name: 'rfq_click', model: m, path: location.pathname });
           return;
         }
-        if (/product-detail/.test(href) || (a.closest && a.closest('.product-card'))) {
+        if (/product-detail/.test(href) || /\/products\/[a-z]+\/[a-z0-9._-]+/i.test(href.split('?')[0]) || (a.closest && a.closest('.product-card'))) {
           var pp = new URLSearchParams((href.split('?')[1]) || '');
           var pm = pp.get('product') || pp.get('id') || pp.get('sku') || pp.get('model') || '';
+          // pretty URL: /products/{category}/{id} — id 在路径末段
+          if (!pm) {
+            var seg = href.split('?')[0].replace(/\.html$/, '').split('/').filter(Boolean);
+            if (seg.length >= 3 && seg[seg.length - 3] === 'products') pm = seg.pop() || '';
+          }
           send({ type: 'event', name: 'product_click', model: pm, path: location.pathname });
           return;
         }
@@ -123,11 +128,15 @@
     // Pageview for this load.
     send({ type: 'pageview', path: location.pathname, ref: document.referrer || '' });
 
-    // Product view (product-detail.html?product=<id>).
+    // Product view: product-detail.html?product=<id> 或静态页 /products/{category}/{id}
+    var _pv = '';
     if (/product-detail/.test(location.pathname)) {
-      var m = param('product') || param('id') || param('sku') || param('model') || '';
-      if (m) send({ type: 'event', name: 'product_view', model: m, path: location.pathname });
+      _pv = param('product') || param('id') || param('sku') || param('model') || '';
+    } else {
+      var _seg = location.pathname.replace(/\.html$/, '').split('/').filter(Boolean);
+      if (_seg.length >= 3 && _seg[_seg.length - 3] === 'products') _pv = _seg[_seg.length - 1];
     }
+    if (_pv) send({ type: 'event', name: 'product_view', model: _pv, path: location.pathname });
 
     document.addEventListener('click', onClick, true);
   }

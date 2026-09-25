@@ -122,7 +122,7 @@ def main():
         blog_entries.append(url_block("%s/content/blog/%s" % (SITE, slug), d, "monthly", "0.6"))
     if with_products:
         for prod in products:
-            body.append(url_block("%s/product-detail?id=%s" % (SITE, prod["id"]), TODAY, "weekly", "0.7"))
+            body.append(url_block("%s/products/%s/%s" % (SITE, prod["category"], prod["id"]), TODAY, "weekly", "0.7"))
     tail = ["</urlset>", ""]
     xml = "\n".join(
         head + body
@@ -132,7 +132,7 @@ def main():
     write("sitemap.xml", xml)
 
     # ---------------- sitemap-products.xml（待启用） ----------------
-    pentry = [url_block("%s/product-detail?id=%s" % (SITE, p["id"]), TODAY, "weekly", "0.7")
+    pentry = [url_block("%s/products/%s/%s" % (SITE, p["category"], p["id"]), TODAY, "weekly", "0.7")
               for p in products]
     write("sitemap-products.xml",
           "\n".join(['<?xml version="1.0" encoding="UTF-8"?>',
@@ -195,7 +195,7 @@ def main():
             price = p.get("price")
             inc = p.get("incoterm") or "EXW"
             tail_ = " — %s from US$%s" % (inc, f"{price:,.0f}") if price else ""
-            L.append("- %s — %s%s — %s/product-detail?id=%s" % (p["model"], desc, tail_, SITE, p["id"]))
+            L.append("- %s — %s%s — %s/products/%s/%s" % (p["model"], desc, tail_, SITE, p["category"], p["id"]))
 
     kb = load("kb.json")
     entries = kb.get("entries", [])

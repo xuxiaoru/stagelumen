@@ -276,7 +276,7 @@
 
 <script src="assets/js/cookie-consent.js"></script>
 <script src="assets/js/quote-cart.js?v=1"></script>
-<script src="assets/js/products.js?v=10"></script>
+<script src="assets/js/products.js?v=11"></script>
 <script src="assets/js/main.js?v=8"></script>
 <script src="assets/js/inquiry.js?v=12"></script>
 <script src="assets/js/assistant.js?v=11"></script>
@@ -284,13 +284,19 @@
   // 详情页动态加载
   (async () => {
     const params = new URLSearchParams(window.location.search);
-    let productId = params.get('id');
+    let productId = window.__PRODUCT_ID__ || params.get('id');
     if (!productId) productId = 'sl-b230'; // fallback 默认展示 SL-B230
 
     const p = await StageLumenProducts.get(productId);
     if (!p) {
       document.getElementById('productName').textContent = 'Product not found';
       document.getElementById('descPanel').innerHTML = '<p>Sorry, this product is no longer in catalog. <a href="products.html" class="active">Browse all products →</a></p>';
+      return;
+    }
+
+    // 0. canonical：静态化后的 /products/{cat}/{id} 是唯一正式 URL，老的 ?id= 链接一律跳过去
+    if (!window.__PRODUCT_ID__ && p.category && p.id) {
+      location.replace('/products/' + p.category + '/' + p.id);
       return;
     }
 
@@ -309,7 +315,7 @@
       };
       const _abs = (u) => (/^https?:\/\//.test(u || '') ? u : SITE_ORIGIN + '/' + String(u || '').replace(/^\//, ''));
       const _txt = (s) => String(s || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
-      const pageUrl = SITE_ORIGIN + '/product-detail?id=' + encodeURIComponent(p.id || productId);
+      const pageUrl = SITE_ORIGIN + (window.__PRODUCT_URL__ || ('/product-detail?id=' + encodeURIComponent(p.id || productId)));
       const imgs = ((p.images && p.images.length) ? p.images : [p.image]).filter(Boolean).map(_abs);
 
       const product = {
@@ -482,6 +488,6 @@
     document.querySelectorAll('.product-card.fade-up').forEach(el => el.classList.add('fade-up'));
   })();
 </script>
-<script src="assets/js/track.js?v=2"></script>
+<script src="assets/js/track.js?v=3"></script>
 </body>
 </html>
