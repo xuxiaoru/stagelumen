@@ -6,7 +6,7 @@
   robots.txt              正式域名 Sitemap + 显式放行 AI 爬虫
   sitemap.xml             静态页 + 7 个分类页 + 全部博客（真实可达、有实质内容的 URL）
   sitemap-products.xml    361 个产品 URL（**默认不写进 robots.txt**，等 W3-4 产品页静态化后再合并）
-  llms.txt                GEO 品牌档案：公司事实 / 7 大品类 / 代表型号 / 买家问答
+  llms.txt                GEO 品牌档案：公司事实 / 各品类 / 代表型号 / 买家问答
 
 用法：
   python build/build-seo.py                 # 常规
@@ -40,7 +40,8 @@ STATIC_PAGES = [
     ("/cookies",        "yearly",  "0.3"),
 ]
 
-CATS = ["moving", "pixel", "theatre", "par", "laser", "controller", "profile"]
+CATS = ["moving", "pixel", "theatre", "par", "laser", "controller", "profile",
+        "effect", "kinetic"]
 
 AI_BOTS = [
     ("GPTBot",              "OpenAI"),

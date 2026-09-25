@@ -1,7 +1,7 @@
 # RiGeBa Lighting
 > Guangzhou manufacturer of professional LED stage lighting: moving heads, pixel and effect
 > fixtures, outdoor IP65 units, LED PAR and uplights, profile spots, lasers and DMX control.
-> 420 models in catalogue, factory-direct EXW pricing, OEM / ODM for rental houses,
+> 439 models in catalogue, factory-direct EXW pricing, OEM / ODM for rental houses,
 > distributors, integrators and venues.
 
 ## Company facts
@@ -25,7 +25,7 @@
 - E-mail: sales20@rigelighting.com
 - Mobile / WhatsApp / WeChat: +86 134 3026 2182
 
-## Catalogue — 420 models in 7 ranges
+## Catalogue — 439 models in 7 ranges
 
 ### Moving Heads — 64 models (Beam · Spot · Wash · Hybrid · Outdoor IP65)
 - Category page: https://www.rigebalighting.com/products?cat=moving
@@ -76,6 +76,20 @@
 - RG-PS300A19F-W — 300W LED Profile Light-Whi — EXW from US$316 — https://www.rigebalighting.com/products/profile/rg-ps300a19f-w
 - RG-PS200A15T65M-W — 200W LED Zoom Fresnel Ligh — EXW from US$277 — https://www.rigebalighting.com/products/profile/rg-ps200a15t65m-w
 
+### Stage Effect Machines — 59 models (Spark & Flame · CO2 · Fog & Haze · Snow · Bubble & Foam · Dry Ice · Confetti)
+- Category page: https://www.rigebalighting.com/products?cat=effect
+- RG-FR2400H8S-D — Spark Fog Machine — EXW from US$795 — https://www.rigebalighting.com/products/effect/rg-fr2400h8s-d
+- RG-FO800V250DP-K — strong CO2 jet — EXW from US$776 — https://www.rigebalighting.com/products/effect/rg-fo800v250dp-k
+- RG-FR750H5-D8 — New high quality moving he — EXW from US$549 — https://www.rigebalighting.com/products/effect/rg-fr750h5-d8
+- RG-BM1200C500H-K — hang foam machine — EXW from US$485 — https://www.rigebalighting.com/products/effect/rg-bm1200c500h-k
+
+### LED Kinetic Winch & Lighting Ball — 19 models (Kinetic Winch · Lifting Ball · Ring · Tube · Special Effects)
+- Category page: https://www.rigebalighting.com/products?cat=kinetic
+- SH-AR15A40AAd-B6Kf — LED circle RGB ring one se — EXW from US$818 — https://www.rigebalighting.com/products/kinetic/sh-ar15a40aad-b6kf
+- TS-MG2D1H4LBS14YT1-N1 — 5KG DMX winch kinetic moto — EXW from US$705 — https://www.rigebalighting.com/products/kinetic/ts-mg2d1h4lbs14yt1-n1
+- EP-LFBA040B1-DhWf — 10KG DMX winch kinetic mot — EXW from US$446 — https://www.rigebalighting.com/products/kinetic/ep-lfba040b1-dhwf
+- TS-MTD8H2LBS30YT1-N — 20KG DMX control Winch lif — EXW from US$375 — https://www.rigebalighting.com/products/kinetic/ts-mtd8h2lbs30yt1-n
+
 ## Buyer questions
 
 Q: What is the typical lead time?
@@ -101,7 +115,7 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 
 ## Key pages
 - Home: https://www.rigebalighting.com/
-- All 420 models: https://www.rigebalighting.com/products
+- All 439 models: https://www.rigebalighting.com/products
 - Moving Heads: https://www.rigebalighting.com/products?cat=moving
 - Pixel & Effects: https://www.rigebalighting.com/products?cat=pixel
 - Theatre Lighting: https://www.rigebalighting.com/products?cat=theatre
@@ -109,6 +123,8 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 - Lasers: https://www.rigebalighting.com/products?cat=laser
 - Controllers: https://www.rigebalighting.com/products?cat=controller
 - LED Profile Spot: https://www.rigebalighting.com/products?cat=profile
+- Stage Effect Machines: https://www.rigebalighting.com/products?cat=effect
+- LED Kinetic Winch & Lighting Ball: https://www.rigebalighting.com/products?cat=kinetic
 - Request a quote (RFQ): https://www.rigebalighting.com/rfq
 - OEM / ODM service: https://www.rigebalighting.com/oem-odm
 - Solutions by venue: https://www.rigebalighting.com/solutions

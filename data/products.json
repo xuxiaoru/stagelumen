@@ -1,8 +1,8 @@
 {
  "meta": {
   "updated": "2026-09-25",
-  "total": 420,
-  "note": "420 SKU. Moving Heads (LED / beam / spot / wash / hybrid / outdoor), Audience Blinder, LED Strobe, LED Profile Spot, Pixel & Effects, Lasers, Controllers and the LED PAR / Wall Washer & City Color ranges all carry real factory data extracted from RIGE quotation sheets. Prices EXW USD as quoted.",
+  "total": 439,
+  "note": "439 SKU. Moving Heads (LED / beam / spot / wash / hybrid / outdoor), Audience Blinder, LED Strobe, LED Profile Spot, Pixel & Effects, Lasers, Controllers and the LED PAR / Wall Washer & City Color ranges all carry real factory data extracted from RIGE quotation sheets. Prices EXW USD as quoted.",
   "lastUpdated": "2026-09-25"
  },
  "categories": {
@@ -53,6 +53,12 @@
    "color": "#f97316",
    "icon": "✺",
    "desc": "Spark & Flame · CO2 · Fog & Haze · Snow · Bubble & Foam · Dry Ice · Confetti"
+  },
+  "kinetic": {
+   "label": "LED Kinetic Winch & Lighting Ball",
+   "color": "#818cf8",
+   "icon": "✱",
+   "desc": "Kinetic Winch · Lifting Ball · Ring · Tube · Special Effects"
   }
  },
  "subcategories": {
@@ -178,6 +184,28 @@
    {
     "id": "consumable",
     "label": "Consumables"
+   }
+  ],
+  "kinetic": [
+   {
+    "id": "ball",
+    "label": "Kinetic LED Ball"
+   },
+   {
+    "id": "winch",
+    "label": "Kinetic Winch & Motor"
+   },
+   {
+    "id": "ring",
+    "label": "Kinetic Ring & Halo"
+   },
+   {
+    "id": "tube",
+    "label": "Kinetic LED Tube"
+   },
+   {
+    "id": "special",
+    "label": "Kinetic Special Effects"
    }
   ]
  },
@@ -33693,6 +33721,1886 @@
    "moq": 1,
    "sourceRow": 61,
    "sourceFile": "Bubble Fog Machine C02 And Foam Stage Effect泡泡机烟雾机喷火机.xlsx"
+  },
+  {
+   "id": "ep-lfba020l-dhwa",
+   "name": "EP-LFBA020L-DhWA 3KG DMX control LED lifting ball (Plastic shell)",
+   "model": "EP-LFBA020L-DhWA",
+   "category": "kinetic",
+   "sub": "ball",
+   "subLabel": "Kinetic LED Ball",
+   "family": "kinetic",
+   "price": 92.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "3KG DMX control LED liftin",
+   "shortDesc": "EP-LFBA020L-DhWA 3KG DMX control LED lifting ball (Plastic shell). Factory EXW from US$92",
+   "longDesc": "EP-LFBA020L-DhWA is part of the RIGE Kinetic LED Ball range built in our own Guangzhou plant. Working voltage: AC90V-240V50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "0-4M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "4KG/5KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "39*28*21"
+    },
+    {
+     "label": "CBM",
+     "value": "0.023"
+    },
+    {
+     "label": "Working voltage",
+     "value": "AC90V-240V50/60Hz"
+    },
+    {
+     "label": "Light source",
+     "value": "6 4-in-1 lamp beads, single family lamp beads, 3W"
+    },
+    {
+     "label": "Total power",
+     "value": "100W"
+    },
+    {
+     "label": "Working environment temperature",
+     "value": "5 ℃ -45 ℃"
+    },
+    {
+     "label": "DMX channel",
+     "value": "10CH"
+    },
+    {
+     "label": "Control mode",
+     "value": "DMX512 control system/master-slave/self-propelled"
+    },
+    {
+     "label": "Color",
+     "value": "Red, green, blue, and white can be individually dimmer"
+    },
+    {
+     "label": "Gray level",
+     "value": "256 level brightness control, no flicker and multiple strobe effects"
+    },
+    {
+     "label": "Speed",
+     "value": "30CM/s"
+    },
+    {
+     "label": "Range",
+     "value": "1.5-4m"
+    },
+    {
+     "label": "Weight",
+     "value": "≤3kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$92 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "EP-LFBA020L-DhWA"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ep-lfba020l-dhwa.jpg",
+   "images": [
+    "assets/images/products/ep-lfba020l-dhwa.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "92",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 2,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "ep-lfba020b1-dhwf",
+   "name": "EP-LFBA020B1-DhWf 1.5KG DMX control LED lifting ball with 20cm RGB ball",
+   "model": "EP-LFBA020B1-DhWf",
+   "category": "kinetic",
+   "sub": "ball",
+   "subLabel": "Kinetic LED Ball",
+   "family": "kinetic",
+   "price": 105.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1.5KG DMX control LED lift",
+   "shortDesc": "EP-LFBA020B1-DhWf 1.5KG DMX control LED lifting ball with 20cm RGB ball. Factory EXW from US$105",
+   "longDesc": "EP-LFBA020B1-DhWf is part of the RIGE Kinetic LED Ball range built in our own Guangzhou plant. LED Qty RGB 3in1 LED,18Pcs Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "0-5M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "6.5KG/7.5KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "39*28*21 22*22*22"
+    },
+    {
+     "label": "CBM",
+     "value": "0.034"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$105 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "LED Qty RGB 3in1 LED,18Pcs",
+    "Rated Power 200W",
+    "Input Voltage AC 100-240V 50/60Hz",
+    "Working life 50000Hrs",
+    "Gray Level 256",
+    "Control mode Auto-run-mode、DMX 512、sound active mode"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ep-lfba020b1-dhwf.jpg",
+   "images": [
+    "assets/images/products/ep-lfba020b1-dhwf.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "105",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 3,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "5kg-dmx-control-winch-lifting-machine",
+   "name": "5KG Dmx Control winch/lifting machine",
+   "model": "5KG Dmx Control winch/lifting",
+   "category": "kinetic",
+   "sub": "winch",
+   "subLabel": "Kinetic Winch & Motor",
+   "family": "kinetic",
+   "price": 138.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "5KG Dmx Control winch/lift",
+   "shortDesc": "5KG Dmx Control winch/lifting machine. Factory EXW from US$138",
+   "longDesc": "5KG Dmx Control winch/lifting is part of the RIGE Kinetic Winch & Motor range built in our own Guangzhou plant. Control mode: 6/10 CH Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "0-2M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "6KG/7KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "39*28*21"
+    },
+    {
+     "label": "CBM",
+     "value": "0.023"
+    },
+    {
+     "label": "Control mode",
+     "value": "6/10 CH"
+    },
+    {
+     "label": "Speed",
+     "value": "about 0.1m-0.5/s"
+    },
+    {
+     "label": "Voltage",
+     "value": "90V-240V 50-60Hz 80W in total"
+    },
+    {
+     "label": "Working temperature",
+     "value": "-5 ° C-45 ° C"
+    },
+    {
+     "label": "Range",
+     "value": "0--15m"
+    },
+    {
+     "label": "Weight",
+     "value": "≦3KG"
+    },
+    {
+     "label": "Net Weight",
+     "value": "6 KG"
+    },
+    {
+     "label": "Gross Weight",
+     "value": "7 kg"
+    },
+    {
+     "label": "Dimensions",
+     "value": "300x230x145mm,Packing · 390 * 280 *210MM"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$138 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "5KG Dmx Control winch/lifting"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/5kg-dmx-control-winch-lifting-machine.jpg",
+   "images": [
+    "assets/images/products/5kg-dmx-control-winch-lifting-machine.jpg",
+    "assets/images/products/5kg-dmx-control-winch-lifting-machine-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "138",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 4,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "ts-mtd8h2lbs30yt1-n",
+   "name": "TS-MTD8H2LBS30YT1-N 20KG DMX control Winch lifting machine",
+   "model": "TS-MTD8H2LBS30YT1-N",
+   "category": "kinetic",
+   "sub": "winch",
+   "subLabel": "Kinetic Winch & Motor",
+   "family": "kinetic",
+   "price": 375.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "20KG DMX control Winch lif",
+   "shortDesc": "TS-MTD8H2LBS30YT1-N 20KG DMX control Winch lifting machine. Factory EXW from US$375",
+   "longDesc": "TS-MTD8H2LBS30YT1-N is part of the RIGE Kinetic Winch & Motor range built in our own Guangzhou plant. 1. Load Capacity: 20KG Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "0-4M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "20KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "60*20*25"
+    },
+    {
+     "label": "CBM",
+     "value": "0.03"
+    },
+    {
+     "label": "Capacity",
+     "value": "20KG"
+    },
+    {
+     "label": "Motor",
+     "value": "400W Servo Motor (Single-Layer Disc Winding)"
+    },
+    {
+     "label": "Stroke",
+     "value": "4M"
+    },
+    {
+     "label": "Speed",
+     "value": "0.28m/s (Average)"
+    },
+    {
+     "label": "Method",
+     "value": "Suspension"
+    },
+    {
+     "label": "Control Method",
+     "value": "DMX Control"
+    },
+    {
+     "label": "Points",
+     "value": "2"
+    },
+    {
+     "label": "Protection",
+     "value": "Origin Switch, RV Reducer Self-Locking"
+    },
+    {
+     "label": "Dimensions",
+     "value": "60×20×25cm"
+    },
+    {
+     "label": "Product weight",
+     "value": "20kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$375 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "8. 3MM Steel Wire"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ts-mtd8h2lbs30yt1-n.jpg",
+   "images": [
+    "assets/images/products/ts-mtd8h2lbs30yt1-n.jpg",
+    "assets/images/products/ts-mtd8h2lbs30yt1-n-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "375",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 12,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "ep-lfba067l-dhwf",
+   "name": "EP-LFBA067L-DhWf 3KG DMX winch/lifting football light",
+   "model": "EP-LFBA067L-DhWf",
+   "category": "kinetic",
+   "sub": "ball",
+   "subLabel": "Kinetic LED Ball",
+   "family": "kinetic",
+   "price": 135.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "3KG DMX winch/lifting foot",
+   "shortDesc": "EP-LFBA067L-DhWf 3KG DMX winch/lifting football light. Factory EXW from US$135",
+   "longDesc": "EP-LFBA067L-DhWf is part of the RIGE Kinetic LED Ball range built in our own Guangzhou plant. EP-LFBA067L-DhWf Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "0-4m"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "8KG/10KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "36*30*15 26*26*26"
+    },
+    {
+     "label": "CBM",
+     "value": "0.016"
+    },
+    {
+     "label": "Input Voltage",
+     "value": "AC90-240V 50-60HZ"
+    },
+    {
+     "label": "Power",
+     "value": "200W"
+    },
+    {
+     "label": "Lamp bead",
+     "value": "4-in-1 lamp bead/auxiliary light 3-in-1 lamp bead"
+    },
+    {
+     "label": "Channel",
+     "value": "18CH/67CH"
+    },
+    {
+     "label": "Control mode",
+     "value": "DMX/master-slave/voice control/self-propelled"
+    },
+    {
+     "label": "Strobe",
+     "value": "1-25 times/second or random"
+    },
+    {
+     "label": "Display screen",
+     "value": "LCD display"
+    },
+    {
+     "label": "Net weight",
+     "value": "5.4kg"
+    },
+    {
+     "label": "Height",
+     "value": "0-9 meters"
+    },
+    {
+     "label": "Speed",
+     "value": "0-0.7M/s"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$135 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "EP-LFBA067L-DhWf",
+    "LED illuminated lifting soccer light (0-9 meters)"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ep-lfba067l-dhwf.jpg",
+   "images": [
+    "assets/images/products/ep-lfba067l-dhwf.jpg",
+    "assets/images/products/ep-lfba067l-dhwf-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "135",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 13,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "ep-lfba020l-dhwf",
+   "name": "DMX 3KG Controller led lifting football light (one set including one lfting motor and one football light ) EP-LFBA020L-DhWf",
+   "model": "EP-LFBA020L-DhWf",
+   "category": "kinetic",
+   "sub": "ball",
+   "subLabel": "Kinetic LED Ball",
+   "family": "kinetic",
+   "price": 188.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "DMX 3KG Controller led lif",
+   "shortDesc": "DMX 3KG Controller led lifting football light (one set including one lfting motor and one football light ) EP-LFBA020L-DhWf. Factory EXW from US$188",
+   "longDesc": "EP-LFBA020L-DhWf is part of the RIGE Kinetic LED Ball range built in our own Guangzhou plant. Light source: 10W*8pcs RGBW 4in1 LEDs, 96pcs RGB 3in1 LEDs Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "4M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "5KG/7KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "17*13*33 26*26*26"
+    },
+    {
+     "label": "CBM",
+     "value": "0.02"
+    },
+    {
+     "label": "Light source",
+     "value": "10W*8pcs RGBW 4in1 LEDs, 96pcs RGB 3in1 LEDs"
+    },
+    {
+     "label": "Power",
+     "value": "100W · 150W"
+    },
+    {
+     "label": "Size",
+     "value": "20cm"
+    },
+    {
+     "label": "Height",
+     "value": "3m"
+    },
+    {
+     "label": "Weight",
+     "value": "≤1.5KG"
+    },
+    {
+     "label": "Speed",
+     "value": "≤0.5m/s"
+    },
+    {
+     "label": "Model",
+     "value": "DMX512/ArtNet mode"
+    },
+    {
+     "label": "Channel",
+     "value": "15CH/64CH"
+    },
+    {
+     "label": "Voltage",
+     "value": "AC100V-240V/50-60HZ"
+    },
+    {
+     "label": "Rating",
+     "value": "IP20"
+    },
+    {
+     "label": "Protection",
+     "value": "Physical Braking, Electronics Protection"
+    },
+    {
+     "label": "Installation",
+     "value": "Vertical lifting"
+    },
+    {
+     "label": "Winch",
+     "value": "170*130*330mm · 5KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$188 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Winch"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ep-lfba020l-dhwf.jpg",
+   "images": [
+    "assets/images/products/ep-lfba020l-dhwf.jpg",
+    "assets/images/products/ep-lfba020l-dhwf-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "188",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 17,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "ts-mg2d1h4lbs14yt1-n1",
+   "name": "TS-MG2D1H4LBS14YT1-N1 5KG DMX winch kinetic motor one set make up of 3pcs motors and 1pcs led circle ring",
+   "model": "TS-MG2D1H4LBS14YT1-N1",
+   "category": "kinetic",
+   "sub": "winch",
+   "subLabel": "Kinetic Winch & Motor",
+   "family": "kinetic",
+   "price": 705.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "5KG DMX winch kinetic moto",
+   "shortDesc": "TS-MG2D1H4LBS14YT1-N1 5KG DMX winch kinetic motor one set make up of 3pcs motors and 1pcs led circle ring. Factory EXW from US$705",
+   "longDesc": "TS-MG2D1H4LBS14YT1-N1 is part of the RIGE Kinetic Winch & Motor range built in our own Guangzhou plant. Rated Voltage: AC100V-240V, 50/60Hz Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "1-6M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "13KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "43*36*26"
+    },
+    {
+     "label": "CBM",
+     "value": "0.04"
+    },
+    {
+     "label": "Rated Voltage",
+     "value": "AC100V-240V, 50/60Hz"
+    },
+    {
+     "label": "Maximum Power",
+     "value": "Total power 450W"
+    },
+    {
+     "label": "Display",
+     "value": "1.77-inch color screen, bilingual display"
+    },
+    {
+     "label": "Functions",
+     "value": "Electronic anti-fall/shaft brake"
+    },
+    {
+     "label": "Control Mode",
+     "value": "DMX512, sound control, self-walking function"
+    },
+    {
+     "label": "Channel Mode",
+     "value": "25CH"
+    },
+    {
+     "label": "Connection Method",
+     "value": "Blue and white plug/XLR3 pin Canon seat"
+    },
+    {
+     "label": "Rang",
+     "value": "1 meter to 6 meters"
+    },
+    {
+     "label": "Speed",
+     "value": "0.3-0.5 meters /s"
+    },
+    {
+     "label": "Load",
+     "value": "5kg"
+    },
+    {
+     "label": "Rating",
+     "value": "IP20"
+    },
+    {
+     "label": "Material",
+     "value": "Fireproof aluminum alloy"
+    },
+    {
+     "label": "Product Size",
+     "value": "381*153*293MM"
+    },
+    {
+     "label": "Weight",
+     "value": "10kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$705 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "TS-MG2D1H4LBS14YT1-N1"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ts-mg2d1h4lbs14yt1-n1.jpg",
+   "images": [
+    "assets/images/products/ts-mg2d1h4lbs14yt1-n1.jpg",
+    "assets/images/products/ts-mg2d1h4lbs14yt1-n1-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "705",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 21,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "sh-ar06a60aad-b6kf",
+   "name": "SH-AR06A60AAd-B6Kf 1.1m diameter lifting beam ring",
+   "model": "SH-AR06A60AAd-B6Kf",
+   "category": "kinetic",
+   "sub": "ring",
+   "subLabel": "Kinetic Ring & Halo",
+   "family": "kinetic",
+   "price": 335.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "1.1m diameter lifting beam",
+   "shortDesc": "SH-AR06A60AAd-B6Kf 1.1m diameter lifting beam ring. Factory EXW from US$335",
+   "longDesc": "SH-AR06A60AAd-B6Kf is part of the RIGE Kinetic Ring & Halo range built in our own Guangzhou plant. Kinetic Ring:36LEDS*20W Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "1.1m"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "13KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "118*19*118"
+    },
+    {
+     "label": "CBM",
+     "value": "0.265"
+    },
+    {
+     "label": "Ring",
+     "value": "36LEDS*20W"
+    },
+    {
+     "label": "Power",
+     "value": "700W"
+    },
+    {
+     "label": "Light source",
+     "value": "36 OSRAM 20W four-in-one"
+    },
+    {
+     "label": "Size",
+     "value": "1.1 meters in diameter"
+    },
+    {
+     "label": "Beam Angle",
+     "value": "3°"
+    },
+    {
+     "label": "Features",
+     "value": "Flashing + Light Speed Pointing and Running Lights"
+    },
+    {
+     "label": "Weight",
+     "value": "8.5KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$335 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "SH-AR06A60AAd-B6Kf"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/sh-ar06a60aad-b6kf.jpg",
+   "images": [
+    "assets/images/products/sh-ar06a60aad-b6kf.jpg",
+    "assets/images/products/sh-ar06a60aad-b6kf-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 22,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "ep-lfba0b1-dhwf",
+   "name": "EP-LFBA0B1-DhWf DMX Winch led lifting circle ring one set inclulding 3pcs lift motors and 1pcs circle ring",
+   "model": "EP-LFBA0B1-DhWf",
+   "category": "kinetic",
+   "sub": "ring",
+   "subLabel": "Kinetic Ring & Halo",
+   "family": "kinetic",
+   "price": 355.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "DMX Winch led lifting circ",
+   "shortDesc": "EP-LFBA0B1-DhWf DMX Winch led lifting circle ring one set inclulding 3pcs lift motors and 1pcs circle ring. Factory EXW from US$355",
+   "longDesc": "EP-LFBA0B1-DhWf is part of the RIGE Kinetic Ring & Halo range built in our own Guangzhou plant. Lift × 3 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "80cm"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "24kg"
+    },
+    {
+     "label": "Carton Size",
+     "value": "110*20*110"
+    },
+    {
+     "label": "CBM",
+     "value": "0.242"
+    },
+    {
+     "label": "Rated voltage",
+     "value": "AC100V-240V, 50/60Hz"
+    },
+    {
+     "label": "Maximum power",
+     "value": "150W for the whole lamp × 3, 450W in total"
+    },
+    {
+     "label": "Display",
+     "value": "1.77-inch color screen, Chinese and English display"
+    },
+    {
+     "label": "Function",
+     "value": "electronic anti-fall/drive shaft brake"
+    },
+    {
+     "label": "Control mode",
+     "value": "DMX512 voice control, self-propelled function"
+    },
+    {
+     "label": "Channel mode",
+     "value": "10CH"
+    },
+    {
+     "label": "Connection method",
+     "value": "blue and white plug/XLR3-core cannon socket"
+    },
+    {
+     "label": "Stroke",
+     "value": "1m-6m"
+    },
+    {
+     "label": "Speed",
+     "value": "0.5m/s"
+    },
+    {
+     "label": "Capacity",
+     "value": "4kg"
+    },
+    {
+     "label": "Protection level",
+     "value": "IP20"
+    },
+    {
+     "label": "Casing material",
+     "value": "fireproof aluminum alloy"
+    },
+    {
+     "label": "Product Size",
+     "value": "363*292*130MM"
+    },
+    {
+     "label": "Packaging",
+     "value": "1 in 2"
+    },
+    {
+     "label": "Product weight",
+     "value": "16KG"
+    },
+    {
+     "label": "Power",
+     "value": "300W"
+    },
+    {
+     "label": "Light source",
+     "value": "150 0.5W three-in-one"
+    },
+    {
+     "label": "Surface",
+     "value": "5cm"
+    },
+    {
+     "label": "Features",
+     "value": "dot-and-empty horse racing"
+    },
+    {
+     "label": "Size",
+     "value": "1 meter in diameter"
+    },
+    {
+     "label": "Weight",
+     "value": "4KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$355 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Lift × 3",
+    "Rainbow circle"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ep-lfba0b1-dhwf.jpg",
+   "images": [
+    "assets/images/products/ep-lfba0b1-dhwf.jpg",
+    "assets/images/products/ep-lfba0b1-dhwf-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "365",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 24,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "ep-lfba060b1-dhwf",
+   "name": "EP-LFBA060B1-DhWf DMX Winch led lifting circle ring one set inclulding 1pcs lift motors and 1pcs circle ring",
+   "model": "EP-LFBA060B1-DhWf",
+   "category": "kinetic",
+   "sub": "ring",
+   "subLabel": "Kinetic Ring & Halo",
+   "family": "kinetic",
+   "price": 160.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "DMX Winch led lifting circ",
+   "shortDesc": "EP-LFBA060B1-DhWf DMX Winch led lifting circle ring one set inclulding 1pcs lift motors and 1pcs circle ring. Factory EXW from US$160",
+   "longDesc": "EP-LFBA060B1-DhWf is part of the RIGE Kinetic Ring & Halo range built in our own Guangzhou plant. voltage：AC90-240v Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "60cm"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "13KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "65*20*65"
+    },
+    {
+     "label": "CBM",
+     "value": "0.1"
+    },
+    {
+     "label": "Voltage",
+     "value": "AC90-240v"
+    },
+    {
+     "label": "Rate",
+     "value": "150W · 50-60Hz"
+    },
+    {
+     "label": "LED",
+     "value": "8 10W 4 in 1 lamp beads"
+    },
+    {
+     "label": "Diameter",
+     "value": "60cm"
+    },
+    {
+     "label": "Channel",
+     "value": "10CH/ 11CH/ 18CH"
+    },
+    {
+     "label": "Mode",
+     "value": "DMX/ master-slave/voice control High and"
+    },
+    {
+     "label": "Low",
+     "value": "1.5 to 4 meters"
+    },
+    {
+     "label": "Weight",
+     "value": "2.5KG · 8Kg"
+    },
+    {
+     "label": "Display",
+     "value": "1.77 \"color screen/Chinese and English"
+    },
+    {
+     "label": "Inch",
+     "value": "380x320x450mm300"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$160 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Channel"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ep-lfba060b1-dhwf.jpg",
+   "images": [
+    "assets/images/products/ep-lfba060b1-dhwf.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "160usd",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 26,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "ep-lfba010b1-dhwf",
+   "name": "EP-LFBA010B1-DhWf Mini 1KG DMX Lifting Motor (1pcs led circle ring need 3 pcs motors) 3pcs led circle ring need 9pcs motors",
+   "model": "EP-LFBA010B1-DhWf",
+   "category": "kinetic",
+   "sub": "winch",
+   "subLabel": "Kinetic Winch & Motor",
+   "family": "kinetic",
+   "price": 65.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "Mini 1KG DMX Lifting Motor",
+   "shortDesc": "EP-LFBA010B1-DhWf Mini 1KG DMX Lifting Motor (1pcs led circle ring need 3 pcs motors) 3pcs led circle ring need 9pcs motors. Factory EXW from US$65",
+   "longDesc": "EP-LFBA010B1-DhWf is part of the RIGE Kinetic Winch & Motor range built in our own Guangzhou plant. Voltage: 220V/50HZ Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "1.5M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "1KG/2KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "13*10.5*14"
+    },
+    {
+     "label": "CBM",
+     "value": "0.0019"
+    },
+    {
+     "label": "Voltage",
+     "value": "220V/50HZ"
+    },
+    {
+     "label": "Power",
+     "value": "15W"
+    },
+    {
+     "label": "Weight",
+     "value": "1KG · ≤1KG"
+    },
+    {
+     "label": "Dimensions",
+     "value": "130*105*140mm"
+    },
+    {
+     "label": "Height",
+     "value": "Suitable for height within 1.5 meters"
+    },
+    {
+     "label": "Speed",
+     "value": "<2m/min"
+    },
+    {
+     "label": "Control mode",
+     "value": "DMX512"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$65 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Please be careful not to lift without load weight, the minimum lifting weight is 0.5KG.",
+    "Do not touch the ground. If you touch the ground, please stop the operation immediately to avoid damaging the body parts."
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ep-lfba010b1-dhwf.jpg",
+   "images": [
+    "assets/images/products/ep-lfba010b1-dhwf.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "65",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 27,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "ep-lfba040b1-dhwf",
+   "name": "EP-LFBA040B1-DhWf 10KG DMX winch kinetic motor (1pcs led circle ring need 3 pcs motors) 3pcs led circle ring need 9pcs motors",
+   "model": "EP-LFBA040B1-DhWf",
+   "category": "kinetic",
+   "sub": "winch",
+   "subLabel": "Kinetic Winch & Motor",
+   "family": "kinetic",
+   "price": 446.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "10KG DMX winch kinetic mot",
+   "shortDesc": "EP-LFBA040B1-DhWf 10KG DMX winch kinetic motor (1pcs led circle ring need 3 pcs motors) 3pcs led circle ring need 9pcs motors. Factory EXW from US$446",
+   "longDesc": "EP-LFBA040B1-DhWf is part of the RIGE Kinetic Winch & Motor range built in our own Guangzhou plant. DMX 10KG kinetic Lifting Winch Lifting motor machine for Led Circle Ring Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "0-6M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "16KG/17KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "53*35*37"
+    },
+    {
+     "label": "CBM",
+     "value": "0.068"
+    },
+    {
+     "label": "Weight",
+     "value": "≤10KG · 17Kg"
+    },
+    {
+     "label": "Travel",
+     "value": "0-6M"
+    },
+    {
+     "label": "Speed",
+     "value": "0.1m-0.5m/s"
+    },
+    {
+     "label": "Size",
+     "value": "53*35*37CM"
+    },
+    {
+     "label": "Control method",
+     "value": "DMX 512"
+    },
+    {
+     "label": "Points",
+     "value": "1"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$446 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "DMX 10KG kinetic Lifting Winch Lifting motor machine for Led Circle Ring",
+    "4CH"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ep-lfba040b1-dhwf.jpg",
+   "images": [
+    "assets/images/products/ep-lfba040b1-dhwf.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "446",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 28,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "sh-ar15a40aad-b6kf",
+   "name": "SH-AR15A40AAd-B6Kf LED circle RGB ring one set including 3pcs",
+   "model": "SH-AR15A40AAd-B6Kf",
+   "category": "kinetic",
+   "sub": "ring",
+   "subLabel": "Kinetic Ring & Halo",
+   "family": "kinetic",
+   "price": 818.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "LED circle RGB ring one se",
+   "shortDesc": "SH-AR15A40AAd-B6Kf LED circle RGB ring one set including 3pcs. Factory EXW from US$818",
+   "longDesc": "SH-AR15A40AAd-B6Kf is part of the RIGE Kinetic Ring & Halo range built in our own Guangzhou plant. RGBW Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "24.5KG/28KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "178*178*10 133*133*10 89*89*10"
+    },
+    {
+     "label": "CBM",
+     "value": "0.573"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$818 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RGBW",
+    "SMD5050 12V RGBW 3000K/6000K 60leds/m 60ic/m",
+    "1PCS 1.75m diameter Led Circle Ring 1PCS 1.3m diameter Led Circle Ring 1PCS 0.85m diameter Led Circle Ring"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/sh-ar15a40aad-b6kf.jpg",
+   "images": [
+    "assets/images/products/sh-ar15a40aad-b6kf.jpg",
+    "assets/images/products/sh-ar15a40aad-b6kf-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "818",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 29,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "led-water-drop-ball",
+   "name": "LED Water drop ball",
+   "model": "LED Water drop ball",
+   "category": "kinetic",
+   "sub": "ball",
+   "subLabel": "Kinetic LED Ball",
+   "family": "kinetic",
+   "price": 8.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "LED Water drop ball",
+   "shortDesc": "LED Water drop ball. Factory EXW from US$8",
+   "longDesc": "LED Water drop ball is part of the RIGE Kinetic LED Ball range built in our own Guangzhou plant. LED Water drop ball (color: silver, gold, rose gold) Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "12*7"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "/"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "0.05KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "/"
+    },
+    {
+     "label": "Color",
+     "value": "silver, gold, rose gold)"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$8 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Height 30CM*diameter 12CM",
+    "Height 20CM*diameter 10CM",
+    "Height 18CM*diameter 8CM",
+    "Height 12CM*diameter 7CM",
+    "Match 1.5KG Lifting machine"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/led-water-drop-ball.jpg",
+   "images": [
+    "assets/images/products/led-water-drop-ball.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "15",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 30,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "ep-lfba015l-dhwf",
+   "name": "EP-LFBA015L-DhWf",
+   "model": "EP-LFBA015L-DhWf",
+   "category": "kinetic",
+   "sub": "ball",
+   "subLabel": "Kinetic LED Ball",
+   "family": "kinetic",
+   "price": 10.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "Wall Washer & City Color",
+   "shortDesc": "EP-LFBA015L-DhWf. Factory EXW from US$10",
+   "longDesc": "EP-LFBA015L-DhWf is part of the RIGE Kinetic LED Ball range built in our own Guangzhou plant. Light source: 6LEDS3x1W RGB 3in1 Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "12CM"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "0.2KG/0.5KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "13*13*13"
+    },
+    {
+     "label": "CBM",
+     "value": "0.002"
+    },
+    {
+     "label": "Light source",
+     "value": "6LEDS3x1W RGB 3in1"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$10 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Three colors can be separately dimmed, 256 levels of brightness control, no flicke",
+    "10- 35CM LED Ball",
+    "Match 1.5KG Lifting machine",
+    "40CM-50CM LED Ball Match 3KG Lifting machine"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/ep-lfba015l-dhwf.jpg",
+   "images": [
+    "assets/images/products/ep-lfba015l-dhwf.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "10",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 34,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "dmx-control-led-lifting-tube",
+   "name": "DMX Control LED Lifting Tube",
+   "model": "DMX Control LED Lifting Tube",
+   "category": "kinetic",
+   "sub": "tube",
+   "subLabel": "Kinetic LED Tube",
+   "family": "kinetic",
+   "price": 15.0,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "DMX Control LED Lifting Tu",
+   "shortDesc": "DMX Control LED Lifting Tube. Factory EXW from US$15",
+   "longDesc": "DMX Control LED Lifting Tube is part of the RIGE Kinetic LED Tube range built in our own Guangzhou plant. RGB,DMX control,360 degree bright Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "0.5M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "0.2KG"
+    },
+    {
+     "label": "Carton Size",
+     "value": "/"
+    },
+    {
+     "label": "CBM",
+     "value": "/"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$15 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RGB,DMX control,360 degree bright",
+    "Match 1.5KG Lifting machine"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/dmx-control-led-lifting-tube.jpg",
+   "images": [
+    "assets/images/products/dmx-control-led-lifting-tube.jpg",
+    "assets/images/products/dmx-control-led-lifting-tube-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "15",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 43,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "dmx-control-pixel-led-lifting",
+   "name": "DMX Control Pixel LED Lifting Tube (point control)",
+   "model": "DMX Control Pixel LED Lifting",
+   "category": "kinetic",
+   "sub": "tube",
+   "subLabel": "Kinetic LED Tube",
+   "family": "kinetic",
+   "price": 18.5,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "DMX Control Pixel LED Lift",
+   "shortDesc": "DMX Control Pixel LED Lifting Tube (point control). Factory EXW from US$18.5",
+   "longDesc": "DMX Control Pixel LED Lifting is part of the RIGE Kinetic LED Tube range built in our own Guangzhou plant. RGB,DMX control,Pixel 360 degree bright Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "0.5M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "0.2KG"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$18.5 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "RGB,DMX control,Pixel 360 degree bright",
+    "Match 1.5KG Lifting machine"
+   ],
+   "applications": [
+    "Stage",
+    "Architectural",
+    "Event",
+    "Rental"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/dmx-control-pixel-led-lifting.jpg",
+   "images": [
+    "assets/images/products/dmx-control-pixel-led-lifting.jpg",
+    "assets/images/products/dmx-control-pixel-led-lifting-2.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "18.5",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 47,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "dmx-point-controlled-meteor-tube",
+   "name": "DMX Point controlled meteor tube",
+   "model": "DMX Point controlled meteor tube",
+   "category": "kinetic",
+   "sub": "tube",
+   "subLabel": "Kinetic LED Tube",
+   "family": "kinetic",
+   "price": 14.5,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "DMX Point controlled meteo",
+   "shortDesc": "DMX Point controlled meteor tube. Factory EXW from US$14.5",
+   "longDesc": "DMX Point controlled meteor tube is part of the RIGE Kinetic LED Tube range built in our own Guangzhou plant. Match 1.5KG Lifting machine Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "1M"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "Net / Gross Weight",
+     "value": "0.5kg"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$14.5 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Match 1.5KG Lifting machine"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/dmx-point-controlled-meteor-tube.jpg",
+   "images": [
+    "assets/images/products/dmx-point-controlled-meteor-tube.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "14.5",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 51,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
+  },
+  {
+   "id": "dmx-led-lifting-jellyfish-light",
+   "name": "DMX LED lifting Jellyfish light RGB",
+   "model": "DMX LED lifting Jellyfish light",
+   "category": "kinetic",
+   "sub": "special",
+   "subLabel": "Kinetic Special Effects",
+   "family": "kinetic",
+   "price": 16.5,
+   "badge": "",
+   "rating": 0.0,
+   "reviews": 0,
+   "sold": "",
+   "icon": "◉",
+   "iconColor": "#ff6b00",
+   "tagline": "DMX LED lifting Jellyfish",
+   "shortDesc": "DMX LED lifting Jellyfish light RGB. Factory EXW from US$16.5",
+   "longDesc": "DMX LED lifting Jellyfish light is part of the RIGE Kinetic Special Effects range built in our own Guangzhou plant. Match 1.5KG lifting machine, other colors, sizes can be customized Every unit is assembled on our own line, run for 48 hours before packing and shipped with an individual QC card and DMX chart, so rental houses and distributors can put it straight into stock. OEM / ODM branding and custom configurations are available on request.",
+   "specs": [
+    {
+     "label": "Lifting Range / Size",
+     "value": "60cm"
+    },
+    {
+     "label": "Pcs/Carton",
+     "value": "1"
+    },
+    {
+     "label": "EXW Price",
+     "value": "US$16.5 / unit"
+    },
+    {
+     "label": "Price Terms",
+     "value": "EXW Guangzhou · T/T · tax & delivery excluded · volume discount available"
+    }
+   ],
+   "features": [
+    "Match 1.5KG lifting machine, other colors, sizes can be customized"
+   ],
+   "applications": [
+    "Stage",
+    "Event",
+    "Rental",
+    "Touring"
+   ],
+   "priority": "Standard",
+   "phase": "Launch",
+   "hero": false,
+   "oem": true,
+   "image": "assets/images/products/dmx-led-lifting-jellyfish-light.jpg",
+   "images": [
+    "assets/images/products/dmx-led-lifting-jellyfish-light.jpg"
+   ],
+   "imageCredit": "RIGE Lighting",
+   "priceSource": "factory-exw",
+   "priceTiers": "16.5",
+   "currency": "USD",
+   "incoterm": "EXW",
+   "moq": 1,
+   "sourceRow": 52,
+   "sourceFile": "Dmx Control winch and lifting system RGB kinetic led ball.xlsx"
   }
  ]
 }

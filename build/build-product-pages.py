@@ -55,7 +55,8 @@ def build_page(tpl, p):
     cat_label = {
         "moving": "Moving Heads", "pixel": "Pixel & Effects", "theatre": "Theatre Lighting",
         "par": "LED PAR & Uplights", "laser": "Lasers", "controller": "Controllers",
-        "profile": "LED Profile Spot",
+        "profile": "LED Profile Spot", "effect": "Stage Effect Machines",
+        "kinetic": "LED Kinetic Winch & Lighting Ball",
     }
     url = page_url(p)
     name = p.get("name") or p["id"]
