@@ -5,8 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us | RiGeBa Lighting</title>
   <meta name="description" content="Get in touch with RiGeBa Lighting for stage lighting quotes, technical support and OEM/ODM inquiries." />
+  <link rel="canonical" href="https://www.rigebalighting.com/contact" />
   <link rel="stylesheet" href="assets/css/style.css?v=12" />
+  <link rel="alternate" hreflang="en" href="https://www.rigebalighting.com/contact" />
+  <link rel="alternate" hreflang="de" href="https://www.rigebalighting.com/de/contact" />
+  <link rel="alternate" hreflang="es" href="https://www.rigebalighting.com/es/contact" />
+  <link rel="alternate" hreflang="x-default" href="https://www.rigebalighting.com/contact" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b00'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-size='48' font-weight='800' fill='white' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E" />
+  <style>
+    .lsm{position:relative;display:inline-block}
+    .lsm-menu{display:none;position:absolute;right:0;top:calc(100% + 8px);background:var(--bg-2,#161a22);border:1px solid rgba(255,255,255,.14);border-radius:10px;min-width:130px;padding:6px;z-index:99;box-shadow:0 8px 24px rgba(0,0,0,.35)}
+    .lsm.open .lsm-menu{display:block}
+    .lsm-menu a{display:block;padding:7px 10px;border-radius:7px;color:var(--text-1,#e8eaee);text-decoration:none;font-size:13px;white-space:nowrap}
+    .lsm-menu a:hover{background:rgba(255,255,255,.08)}
+    .lsm-menu a.cur{opacity:.55;pointer-events:none}
+  </style>
 </head>
 <body>
 <div class="topbar">
@@ -86,7 +99,14 @@
     </nav>
     <div class="header-right">
       <a href="products.html" class="header-icon" aria-label="Search">&#8973;</a>
-      <button class="lang-switch" aria-label="Language">EN <span class="caret">&#9662;</span></button>
+      <div class="lsm" id="lsm">
+        <button class="lang-switch lsm-toggle" aria-label="Language">EN <span class="caret">&#9662;</span></button>
+        <div class="lsm-menu">
+          <a href="contact.html" class="cur">English</a>
+          <a href="de/contact.html">Deutsch</a>
+          <a href="es/contact.html">Español</a>
+        </div>
+      </div>
       <a href="rfq.html" class="btn btn-primary">Get a Quote</a>
       <button class="menu-toggle" aria-label="Menu" id="menuToggle"><span></span><span></span><span></span></button>
     </div>
@@ -297,6 +317,15 @@
 <script src="assets/js/cookie-consent.js"></script>
 <script src="assets/js/main.js?v=8"></script>
 <script src="assets/js/inquiry.js?v=12"></script>
+<script>
+  (function () {
+    var w = document.getElementById('lsm');
+    if (!w) return;
+    var t = w.querySelector('.lsm-toggle');
+    t.addEventListener('click', function (e) { e.stopPropagation(); w.classList.toggle('open'); });
+    document.addEventListener('click', function () { w.classList.remove('open'); });
+  })();
+</script>
 <script src="assets/js/track.js?v=3"></script>
 </body>
 </html>

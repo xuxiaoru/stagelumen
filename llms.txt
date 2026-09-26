@@ -155,3 +155,4 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 - About the factory: https://www.rigebalighting.com/about
 - Support, downloads and DMX files: https://www.rigebalighting.com/support
 - Blog / buyer guides: https://www.rigebalighting.com/news
+- Other languages: German https://www.rigebalighting.com/de/ and Spanish https://www.rigebalighting.com/es/ (home, catalogue, company, contact, RFQ)

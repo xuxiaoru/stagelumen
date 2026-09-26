@@ -41,7 +41,22 @@ STATIC_PAGES = [
 ]
 
 CATS = ["moving", "pixel", "theatre", "par", "laser", "controller", "profile",
-        "effect", "kinetic", "gobo"]
+        "effect", "kinetic", "gobo", "floor", "truss"]
+
+# W9-10 multilingual: /de/ + /es/ core funnel pages (self-canonical, hreflang cluster
+# injected in each HTML head; alternates mirrored here for search engines).
+LANG_PAGES = [
+    ("/de/",         {"en": "/",           "de": "/de/",         "es": "/es/"}),
+    ("/de/products", {"en": "/products",    "de": "/de/products", "es": "/es/products"}),
+    ("/de/about",    {"en": "/about",       "de": "/de/about",    "es": "/es/about"}),
+    ("/de/contact",  {"en": "/contact",     "de": "/de/contact",  "es": "/es/contact"}),
+    ("/de/rfq",      {"en": "/rfq",         "de": "/de/rfq",      "es": "/es/rfq"}),
+    ("/es/",         {"en": "/",            "de": "/de/",         "es": "/es/"}),
+    ("/es/products", {"en": "/products",    "de": "/de/products", "es": "/es/products"}),
+    ("/es/about",    {"en": "/about",       "de": "/de/about",    "es": "/es/about"}),
+    ("/es/contact",  {"en": "/contact",     "de": "/de/contact",  "es": "/es/contact"}),
+    ("/es/rfq",      {"en": "/rfq",         "de": "/de/rfq",      "es": "/es/rfq"}),
+]
 
 AI_BOTS = [
     ("GPTBot",              "OpenAI"),
@@ -111,8 +126,16 @@ def main():
 
     # ---------------- sitemap.xml ----------------
     head = ['<?xml version="1.0" encoding="UTF-8"?>',
-            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+            '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">']
     body = [url_block(SITE + path, TODAY, cf, pr) for path, cf, pr in STATIC_PAGES]
+    for self_path, alts in LANG_PAGES:
+        lines = ["  <url>", "    <loc>%s%s</loc>" % (SITE, self_path)]
+        for lang in ("en", "de", "es"):
+            lines.append('    <xhtml:link rel="alternate" hreflang="%s" href="%s%s" />' % (lang, SITE, alts[lang]))
+        lines.append('    <xhtml:link rel="alternate" hreflang="x-default" href="%s%s" />' % (SITE, alts["en"]))
+        lines += ["    <lastmod>%s</lastmod>" % TODAY, "    <changefreq>monthly</changefreq>",
+                  "    <priority>0.7</priority>", "  </url>"]
+        body.append("\n".join(lines))
     for c in CATS:
         body.append(url_block("%s/products?cat=%s" % (SITE, c), TODAY, "weekly", "0.8"))
     body.append("  <!-- WARNING: do not index the Cloudflare preview host stagelumen.pages.dev -->")
@@ -225,6 +248,7 @@ def main():
           "- About the factory: %s/about" % SITE,
           "- Support, downloads and DMX files: %s/support" % SITE,
           "- Blog / buyer guides: %s/news" % SITE,
+          "- Other languages: German %s/de/ and Spanish %s/es/ (home, catalogue, company, contact, RFQ)" % (SITE, SITE),
           ""]
     write("llms.txt", "\n".join(L))
 
