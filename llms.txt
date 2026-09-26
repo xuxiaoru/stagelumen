@@ -1,7 +1,7 @@
 # RiGeBa Lighting
 > Guangzhou manufacturer of professional LED stage lighting: moving heads, pixel and effect
 > fixtures, outdoor IP65 units, LED PAR and uplights, profile spots, lasers and DMX control.
-> 476 models in catalogue, factory-direct EXW pricing, OEM / ODM for rental houses,
+> 632 models in catalogue, factory-direct EXW pricing, OEM / ODM for rental houses,
 > distributors, integrators and venues.
 
 ## Company facts
@@ -25,7 +25,7 @@
 - E-mail: sales20@rigelighting.com
 - Mobile / WhatsApp / WeChat: +86 134 3026 2182
 
-## Catalogue — 476 models in 7 ranges
+## Catalogue — 632 models in 7 ranges
 
 ### Moving Heads — 64 models (Beam · Spot · Wash · Hybrid · Outdoor IP65)
 - Category page: https://www.rigebalighting.com/products?cat=moving
@@ -97,6 +97,20 @@
 - RG-GB500L4C0-BK — RG-GB500L4C0-BK IP65 500W — EXW from US$593 — https://www.rigebalighting.com/products/gobo/rg-gb500l4c0-bk
 - RG-GB400L6C0-ZK — NEW ZOOM 400W Waterproof L — EXW from US$465 — https://www.rigebalighting.com/products/gobo/rg-gb400l6c0-zk
 
+### LED Dance Floor Light — 28 models (3D Mirror · Interactive · Magnetic · Starry · Video · Digital dance floors)
+- Category page: https://www.rigebalighting.com/products?cat=floor
+- RG-DDF40S45-V32 — led pole dance stage — EXW from US$1,490 — https://www.rigebalighting.com/products/floor/rg-ddf40s45-v32
+- RG-VDF44S2976-KV0 — P2.976 Led Video Dance Flo — EXW from US$895 — https://www.rigebalighting.com/products/floor/rg-vdf44s2976-kv0
+- RG-VDF44S391-KV0 — P3.91 Led Video Dance Floo — EXW from US$645 — https://www.rigebalighting.com/products/floor/rg-vdf44s391-kv0
+- RG-DDF56S125-V4 — 1m*1m Professional Version — EXW from US$299 — https://www.rigebalighting.com/products/floor/rg-ddf56s125-v4
+
+### Aluminum Truss and Stage — 128 models (Square · Triangle · Ladder · Circle truss, truss accessories, stage platform & stairs)
+- Category page: https://www.rigebalighting.com/products?cat=truss
+- YJ-L1FMY303030T30-W2S — bolt truss — EXW from US$1,194 — https://www.rigebalighting.com/products/truss/yj-l1fmy303030t30-w2s
+- YJ-L1FMY303030T30-W2O — bolt truss — EXW from US$957 — https://www.rigebalighting.com/products/truss/yj-l1fmy303030t30-w2o
+- YJ-L1FMY303030T30-W2H — bolt truss — EXW from US$956 — https://www.rigebalighting.com/products/truss/yj-l1fmy303030t30-w2h
+- HJ-L1FCY6010010T50-W — 600x1000mm Pipe diameter: — EXW from US$292 — https://www.rigebalighting.com/products/truss/hj-l1fcy6010010t50-w
+
 ## Buyer questions
 
 Q: What is the typical lead time?
@@ -122,7 +136,7 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 
 ## Key pages
 - Home: https://www.rigebalighting.com/
-- All 476 models: https://www.rigebalighting.com/products
+- All 632 models: https://www.rigebalighting.com/products
 - Moving Heads: https://www.rigebalighting.com/products?cat=moving
 - Pixel & Effects: https://www.rigebalighting.com/products?cat=pixel
 - Theatre Lighting: https://www.rigebalighting.com/products?cat=theatre
@@ -133,6 +147,8 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 - Stage Effect Machines: https://www.rigebalighting.com/products?cat=effect
 - LED Kinetic Winch & Lighting Ball: https://www.rigebalighting.com/products?cat=kinetic
 - LED Gobo & Logo Projector Light: https://www.rigebalighting.com/products?cat=gobo
+- LED Dance Floor Light: https://www.rigebalighting.com/products?cat=floor
+- Aluminum Truss and Stage: https://www.rigebalighting.com/products?cat=truss
 - Request a quote (RFQ): https://www.rigebalighting.com/rfq
 - OEM / ODM service: https://www.rigebalighting.com/oem-odm
 - Solutions by venue: https://www.rigebalighting.com/solutions
