@@ -245,6 +245,28 @@ function mdToHtml(md) {
 
 // ------------------------------------------------------------- templates
 
+function faqHtml(p) {
+  if (!p.faq || !p.faq.length) return '';
+  const items = p.faq.map((f) =>
+    '        <div class="faq-item">\n          <h3>' + escHtml(f.q) + '</h3>\n          <p>' + escHtml(f.a) + '</p>\n        </div>'
+  ).join('\n');
+  return '\n      <h2>Frequently Asked Questions</h2>\n' + items;
+}
+
+function faqJsonLd(p) {
+  if (!p.faq || !p.faq.length) return '';
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: p.faq.map((f) => ({
+      '@type': 'Question',
+      name: f.q,
+      acceptedAnswer: { '@type': 'Answer', text: f.a },
+    })),
+  };
+  return '  <script type="application/ld+json">' + JSON.stringify(data) + '</script>\n';
+}
+
 function articlePage(p) {
   const title = escHtml(p.title);
   const desc = escAttr(p.excerpt || p.title);
@@ -268,7 +290,7 @@ ${shareImage ? '  <meta name="twitter:image" content="' + escAttr(shareImage) + 
   <link rel="stylesheet" href="../../assets/css/style.css${cssVersion()}" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b00'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-size='48' font-weight='800' fill='white' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E" />
   <!-- ${GENERATED} -->
-  <style>
+${faqJsonLd(p)}  <style>
     .blog-article { max-width: 760px; margin: 0 auto; }
     .blog-article h1 { font-size: 2.2rem; margin-bottom: 16px; }
     .blog-article h2 { font-size: 1.4rem; margin: 40px 0 16px; color: var(--text); }
@@ -330,7 +352,7 @@ ${shareImage ? '  <meta name="twitter:image" content="' + escAttr(shareImage) + 
 ${p.image ? '      <img class="blog-hero-img" src="' + escAttr(imgSrc(p.image)) + '" alt="' + escAttr(p.title) + '" />\n' : ''}      <p class="blog-meta">${escHtml(p.datePretty)} · ${escHtml(p.author)} · ${escHtml(p.category)}</p>
 
       ${p.html}
-
+${faqHtml(p)}
 ${p.tags.length ? '      <div class="blog-tags">' + p.tags.map((t) => '<span>' + escHtml(t) + '</span>').join('') + '</div>\n' : ''}
       <p style="margin-top:32px">Need help choosing fixtures for your project? Tell us the venue type and room size — we'll spec it for free.</p>
       <a href="../../rfq.html" class="btn btn-primary btn-lg">Request a Free Rig Spec →</a>
@@ -456,6 +478,13 @@ function main() {
       tags: Array.isArray(data.tags) ? data.tags : [],
       image: String(data.image || '').trim(),
       imageAlt: String(data.imageAlt || '').trim(),
+      faq: (Array.isArray(data.faq) ? data.faq : [])
+        .map((item) => {
+          const i = String(item).indexOf('::');
+          if (i < 1) return null;
+          return { q: String(item).slice(0, i).trim(), a: String(item).slice(i + 2).trim() };
+        })
+        .filter(Boolean),
       html: mdToHtml(body),
       url: 'content/blog/' + String(data.slug || fallbackSlug).trim() + '.html',
     };

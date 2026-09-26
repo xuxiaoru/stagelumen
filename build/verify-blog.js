@@ -18,7 +18,7 @@ const ROOT = path.resolve(__dirname, '..');
 const BLOG_DIR = path.join(ROOT, 'content', 'blog');
 const CATALOGUE = path.join(ROOT, 'data', 'products.json');
 
-const MODEL_RE = /\bSL-[A-Z0-9][A-Z0-9-]{1,14}/g;
+const MODEL_RE = /\b(?:SL|RG|FG|EP|TS|SH)-[A-Za-z0-9][A-Za-z0-9-]{1,22}/g;
 
 // Generic marketing filler the prompt already bans but models keep emitting.
 const FILLER = [

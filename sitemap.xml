@@ -3949,102 +3949,150 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
-  <!-- SITEMAP:BEGIN -->
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/zoom-range-in-moving-heads-tight-spots-vs-wide-washes-and-how-to-use-b-echt</loc>
-    <lastmod>2026-09-21</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/moving-head-faq-lifespan-service-spare-parts-and-what-to-ask-your-supp-3oz3</loc>
-    <lastmod>2026-09-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kzdj</loc>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as</loc>
-    <lastmod>2026-09-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/choosing-the-right-moving-head-for-theatre-1r28</loc>
-    <lastmod>2026-09-17</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/rdm-and-remote-fixture-management-less-ladder-time-fewer-surprises-on-2lut</loc>
-    <lastmod>2026-09-16</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/practical-uses-of-gobo-and-prism-effects-in-moving-heads-8wan</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/building-a-rental-house-moving-head-inventory-1mrl</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/building-a-rental-house-moving-head-inventory-5qva</loc>
-    <lastmod>2026-09-14</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/choosing-the-right-ip65-outdoor-fixture-tl62</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/choosing-the-right-fixture-type-for-your-venue-08je</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/dmx-channel-planning-for-a-200-fixture-stage-k8b2</loc>
-    <lastmod>2026-09-12</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/beam-vs-wash-vs-hybrid-moving-heads</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/oem-stage-lighting-a-buyers-guide-ptfr</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/ip65-outdoor-stage-lights-buyer-guide</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.rigebalighting.com/content/blog/how-to-set-up-dmx-lighting</loc>
-    <lastmod>2026-09-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <!-- SITEMAP:END -->
+<!-- SITEMAP:BEGIN -->
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/dmx-addressing-explained-guide-for-rental-houses</loc>
+  <lastmod>2026-09-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/how-to-choose-a-stage-lighting-manufacturer-in-china</loc>
+  <lastmod>2026-09-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/moving-head-lights-for-small-venues-buyers-guide</loc>
+  <lastmod>2026-09-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/moving-head-vs-led-par-vs-wall-washer-guide</loc>
+  <lastmod>2026-09-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/step-by-step-guide-to-rigging-and-aiming-moving-heads-safely-5p0x</loc>
+  <lastmod>2026-09-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/choosing-a-moving-head-for-a-small-club-2k65</loc>
+  <lastmod>2026-09-24</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/what-to-verify-before-buying-ip-rated-moving-heads-for-permanent-outdo-2sy7</loc>
+  <lastmod>2026-09-23</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/pantilt-speed-and-accuracy-in-moving-heads-why-it-matters-for-broadcas-z5qa</loc>
+  <lastmod>2026-09-22</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/zoom-range-in-moving-heads-tight-spots-vs-wide-washes-and-how-to-use-b-echt</loc>
+  <lastmod>2026-09-21</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/moving-head-faq-lifespan-service-spare-parts-and-what-to-ask-your-supp-3oz3</loc>
+  <lastmod>2026-09-20</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kzdj</loc>
+  <lastmod>2026-09-19</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as</loc>
+  <lastmod>2026-09-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/choosing-the-right-moving-head-for-theatre-1r28</loc>
+  <lastmod>2026-09-17</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/rdm-and-remote-fixture-management-less-ladder-time-fewer-surprises-on-2lut</loc>
+  <lastmod>2026-09-16</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/practical-uses-of-gobo-and-prism-effects-in-moving-heads-8wan</loc>
+  <lastmod>2026-09-15</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/building-a-rental-house-moving-head-inventory-1mrl</loc>
+  <lastmod>2026-09-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/building-a-rental-house-moving-head-inventory-5qva</loc>
+  <lastmod>2026-09-14</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/choosing-the-right-ip65-outdoor-fixture-tl62</loc>
+  <lastmod>2026-09-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/choosing-the-right-fixture-type-for-your-venue-08je</loc>
+  <lastmod>2026-09-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/dmx-channel-planning-for-a-200-fixture-stage-k8b2</loc>
+  <lastmod>2026-09-12</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/beam-vs-wash-vs-hybrid-moving-heads</loc>
+  <lastmod>2026-09-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/oem-stage-lighting-a-buyers-guide-ptfr</loc>
+  <lastmod>2026-09-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/ip65-outdoor-stage-lights-buyer-guide</loc>
+  <lastmod>2026-09-11</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<url>
+  <loc>https://www.rigebalighting.com/content/blog/how-to-set-up-dmx-lighting</loc>
+  <lastmod>2026-09-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.6</priority>
+</url>
+<!-- SITEMAP:END -->
 </urlset>

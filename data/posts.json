@@ -1,7 +1,139 @@
 {
-  "generated": "2026-09-22T16:07:10.292Z",
-  "count": 16,
+  "generated": "2026-09-26T14:12:35.219Z",
+  "count": 24,
   "posts": [
+    {
+      "title": "DMX Addressing Explained: A Practical Guide for Rental Houses",
+      "slug": "dmx-addressing-explained-guide-for-rental-houses",
+      "date": "2026-09-27",
+      "datePretty": "September 27, 2026",
+      "category": "Technical Guide",
+      "excerpt": "Start addresses, footprints, patch sheets and splitters for working rental techs — real addressing math and a worked 20-fixture one-universe patch.",
+      "tags": [
+        "dmx512",
+        "addressing",
+        "rental",
+        "technical guide",
+        "console"
+      ],
+      "url": "content/blog/dmx-addressing-explained-guide-for-rental-houses.html",
+      "image": "assets/images/products/rg-mini1024.jpg"
+    },
+    {
+      "title": "How to Choose a Stage Lighting Manufacturer in China",
+      "slug": "how-to-choose-a-stage-lighting-manufacturer-in-china",
+      "date": "2026-09-27",
+      "datePretty": "September 27, 2026",
+      "category": "Buyer's Guide",
+      "excerpt": "How to tell a factory from a trader, which pricing and MOQ signals matter, what OEM/ODM requires, and the QC gates before your shipment leaves.",
+      "tags": [
+        "manufacturer",
+        "oem odm",
+        "sourcing",
+        "buyer's guide",
+        "guangzhou"
+      ],
+      "url": "content/blog/how-to-choose-a-stage-lighting-manufacturer-in-china.html",
+      "image": "assets/images/products/rg-ml760wc-kch99.jpg"
+    },
+    {
+      "title": "How to Choose Moving Head Lights for Small Venues",
+      "slug": "moving-head-lights-for-small-venues-buyers-guide",
+      "date": "2026-09-27",
+      "datePretty": "September 27, 2026",
+      "category": "Buyer's Guide",
+      "excerpt": "How to size beams and washes to a low ceiling, what to check before you buy, and three budget packages built from real factory pricing.",
+      "tags": [
+        "moving head",
+        "small venue",
+        "buyer's guide",
+        "house of worship",
+        "mobile DJ"
+      ],
+      "url": "content/blog/moving-head-lights-for-small-venues-buyers-guide.html",
+      "image": "assets/images/products/rg-ml150br-knnw1h13.jpg"
+    },
+    {
+      "title": "Moving Head vs LED PAR vs Wall Washer: 2026 Buyer's Guide",
+      "slug": "moving-head-vs-led-par-vs-wall-washer-guide",
+      "date": "2026-09-27",
+      "datePretty": "September 27, 2026",
+      "category": "Buyer's Guide",
+      "excerpt": "Moving heads, LED PARs and wall washers compared on optics, coverage, control data and real factory pricing, with a worked example rig that uses all three.",
+      "tags": [
+        "moving head",
+        "led par",
+        "wall washer",
+        "buyer's guide",
+        "fixture comparison"
+      ],
+      "url": "content/blog/moving-head-vs-led-par-vs-wall-washer-guide.html",
+      "image": "assets/images/products/rg-w38tb30-ke14.jpg"
+    },
+    {
+      "title": "Step-by-Step Guide to Rigging and Aiming Moving Heads Safely",
+      "slug": "step-by-step-guide-to-rigging-and-aiming-moving-heads-safely-5p0x",
+      "date": "2026-09-25T19:23:27.132Z",
+      "datePretty": "September 25, 2026",
+      "category": "How-To",
+      "excerpt": "Check 6 heads full-color swinging laser",
+      "tags": [
+        "stage lighting",
+        "event setup",
+        "safety protocols"
+      ],
+      "url": "content/blog/step-by-step-guide-to-rigging-and-aiming-moving-heads-safely-5p0x.html",
+      "image": "assets/images/products/6-heads-full-color-swinging-laser.jpg"
+    },
+    {
+      "title": "Choosing a Moving Head for a Small Club",
+      "slug": "choosing-a-moving-head-for-a-small-club-2k65",
+      "date": "2026-09-24T19:22:28.219Z",
+      "datePretty": "September 24, 2026",
+      "category": "How-To",
+      "excerpt": "Selecting a moving head for a small club requires careful consideration of beam angle, output, and noise floor.",
+      "tags": [
+        "moving head",
+        "small club",
+        "beam angle",
+        "output",
+        "noise floor"
+      ],
+      "url": "content/blog/choosing-a-moving-head-for-a-small-club-2k65.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+    },
+    {
+      "title": "What to Verify Before Buying IP-Rated Moving Heads for Permanent Outdoor Installs",
+      "slug": "what-to-verify-before-buying-ip-rated-moving-heads-for-permanent-outdo-2sy7",
+      "date": "2026-09-23T19:09:08.243Z",
+      "datePretty": "September 23, 2026",
+      "category": "How-To",
+      "excerpt": "Verify the IP rating, wattage, and control protocol before buying IP-rated moving heads for permanent outdoor installs.",
+      "tags": [
+        "outdoor lighting",
+        "moving heads",
+        "IP rating"
+      ],
+      "url": "content/blog/what-to-verify-before-buying-ip-rated-moving-heads-for-permanent-outdo-2sy7.html",
+      "image": "assets/images/products/rg-m420bn-kh24.jpg"
+    },
+    {
+      "title": "Pan/Tilt Speed and Accuracy in Moving Heads: Why It Matters for Broadcast and Capture",
+      "slug": "pantilt-speed-and-accuracy-in-moving-heads-why-it-matters-for-broadcas-z5qa",
+      "date": "2026-09-22T19:01:29.199Z",
+      "datePretty": "September 22, 2026",
+      "category": "How-To",
+      "excerpt": "A 240-degree pan and 540-degree tilt range is essential for capturing dynamic performances.",
+      "tags": [
+        "moving heads",
+        "pan/tilt speed",
+        "accuracy",
+        "broadcast",
+        "capture"
+      ],
+      "url": "content/blog/pantilt-speed-and-accuracy-in-moving-heads-why-it-matters-for-broadcas-z5qa.html",
+      "image": "assets/images/products/6-heads-full-color-swinging-laser.jpg"
+    },
     {
       "title": "Zoom Range in Moving Heads: Tight Spots vs Wide Washes, and How to Use Both",
       "slug": "zoom-range-in-moving-heads-tight-spots-vs-wide-washes-and-how-to-use-b-echt",
