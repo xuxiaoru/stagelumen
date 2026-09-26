@@ -200,7 +200,9 @@ export async function proposeFiles(env, { branch, files, title, body }) {
   await createBranch(env, branch, sha);
 
   for (const f of files) {
-    await putFile(env, f.path, f.content, branch, f.message || title);
+    // f.sha is required when the file already exists on main (the branch is
+    // cut from main, so GitHub rejects the update otherwise).
+    await putFile(env, f.path, f.content, branch, f.message || title, f.sha);
   }
 
   const pr = await openPr(env, { title, body, head: branch, base: 'main' });

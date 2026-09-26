@@ -21,7 +21,29 @@
 import { ok, fail, handleOptions, adminAuthorized, readBody, str, uid, nowIso } from '../_lib/util.js';
 import { hitRate, logAgentRun, hasDb } from '../_lib/db.js';
 import { draft, pickTopic } from '../_lib/content.js';
-import { ghConfigured, proposeFiles, mergePr, deleteBranch } from '../_lib/github.js';
+import { ghConfigured, proposeFiles, mergePr, deleteBranch, getFile } from '../_lib/github.js';
+
+// Rolling record of hero images used by published posts. The nightly agent
+// reads it to avoid repeating the same product photo on consecutive articles —
+// search returns the same top fixtures for the whole moving-head topic pool,
+// so without this ledger the deterministic image fallback published near-identical
+// heroes day after day. Kept small (last 40) and committed in the same PR as
+// the post, so it only advances when the post actually ships.
+const IMAGE_LEDGER = 'content/blog/.used-images.json';
+const LEDGER_KEEP = 40;
+const RECENT_HINT = 12;
+
+async function readImageLedger(env) {
+  try {
+    const f = await getFile(env, IMAGE_LEDGER);
+    if (!f) return { sha: null, recent: [] };
+    const j = JSON.parse(f.text);
+    const recent = Array.isArray(j.recent) ? j.recent.filter((s) => typeof s === 'string' && s) : [];
+    return { sha: f.sha, recent };
+  } catch (e) {
+    return { sha: null, recent: [] }; // missing or malformed ledger = no history
+  }
+}
 
 // Surfaced in the PR body so a reviewer sees the known problems without
 // reading the draft. An empty check list is a signal, not a guarantee.
@@ -126,9 +148,21 @@ export async function onRequest(context) {
   const runId = uid('run_');
   const t0 = Date.now();
 
+  // Auto mode: know which hero images recent posts already used, so the draft
+  // (and its deterministic fallback) can prefer something fresh.
+  let ledger = { sha: null, recent: [] };
+  if (auto && ghConfigured(env)) {
+    ledger = await readImageLedger(env);
+  }
+
   let res;
   try {
-    res = await draft(env, request, { kind, topic, words: Number(body.words) || 700 });
+    res = await draft(env, request, {
+      kind,
+      topic,
+      words: Number(body.words) || 700,
+      recentImages: ledger.recent.slice(-RECENT_HINT),
+    });
   } catch (e) {
     console.error('[content] ' + (e && e.message ? e.message : String(e)));
     return fail('Drafting failed: ' + (e && e.message ? e.message : 'unknown'), 503);
@@ -155,9 +189,23 @@ export async function onRequest(context) {
     try {
       const branch = 'ai/blog-' + res.slug;
       const hasError = (res.checks || []).some((c) => c.level === 'error');
+      const files = [{ path: res.path, content: res.markdown }];
+      // Advance the ledger only when this run is certain to publish (auto,
+      // fact-check clean) and the post actually carries a hero image. Manual
+      // PRs and NEEDS-REVIEW drafts leave the ledger untouched — the image
+      // only becomes "used" once something is really merged.
+      if (auto && !hasError && res.image) {
+        const recent = ledger.recent.filter((x) => x !== res.image).concat(res.image).slice(-LEDGER_KEEP);
+        files.push({
+          path: IMAGE_LEDGER,
+          content: JSON.stringify({ updated: nowIso(), recent }, null, 2) + '\n',
+          sha: ledger.sha || undefined,
+          message: 'chore(blog): record used hero image',
+        });
+      }
       const r = await proposeFiles(env, {
         branch,
-        files: [{ path: res.path, content: res.markdown }],
+        files,
         title: (auto ? 'AI draft (auto): ' : 'AI draft: ') + res.title,
         body: prBody({ kind, model: res.model, sources: res.sources, checks: res.checks, auto, merged: auto && !hasError }),
       });

@@ -80,7 +80,7 @@ const SYSTEM =
   'You are a senior content writer for RiGeBa Lighting, a stage lighting manufacturer in Guangzhou, China. ' +
   'You write for professional buyers: rental houses, touring productions, theatres, clubs, churches and event companies.';
 
-function buildPrompt(kind, topic, facts, words, lang, images) {
+function buildPrompt(kind, topic, facts, words, lang, images, recentImages) {
   return [
     SYSTEM,
     '',
@@ -90,6 +90,11 @@ function buildPrompt(kind, topic, facts, words, lang, images) {
     images && images.length
       ? 'AVAILABLE IMAGES — real product photographs, use one verbatim:\n' + images.join('\n')
       : 'AVAILABLE IMAGES — none retrieved for this topic. Set "image" to an empty string.',
+    '',
+    recentImages && recentImages.length
+      ? 'RECENTLY USED HERO IMAGES — earlier posts already use these. Pick one ONLY if every other ' +
+        'available image clearly fits the topic worse:\n' + recentImages.join('\n')
+      : '',
     '',
     'TASK: write ' + (KIND_BRIEF[kind] || KIND_BRIEF['buyer-guide']) + '.',
     'Topic: ' + topic,
@@ -292,14 +297,27 @@ function factCheck(body, facts, products, image, allowedImages) {
  * else — a hallucinated path, a plausible-looking rename, an absolute URL to
  * somewhere else — is replaced by the best-matching real product photo rather
  * than published as-is.
+ *
+ * `recentImages` (paths used by recently published posts) deprioritises repeats:
+ * both the model pick and the deterministic fallback prefer an image that no
+ * recent post used, and only settle for a repeat when nothing fresh fits.
  */
-function resolveImage(picked, products, allowedImages) {
+function resolveImage(picked, products, allowedImages, recentImages) {
+  const recent = Array.isArray(recentImages) ? recentImages : [];
   const want = String(picked || '').trim();
-  if (want && allowedImages.indexOf(want) !== -1) return want;
+  const allowed = (im) => im && allowedImages.indexOf(im) !== -1;
+  const fresh = (im) => allowed(im) && recent.indexOf(im) === -1;
 
+  if (want && fresh(want)) return want;
   for (const p of products || []) {
     const im = String((p && p.image) || '').trim();
-    if (im && allowedImages.indexOf(im) !== -1) return im;
+    if (fresh(im)) return im;
+  }
+  // Nothing unused among the candidates — better a repeat than no hero.
+  if (want && allowed(want)) return want;
+  for (const p of products || []) {
+    const im = String((p && p.image) || '').trim();
+    if (allowed(im)) return im;
   }
   return '';
 }
@@ -314,6 +332,9 @@ export async function draft(env, request, opts) {
   const topic = String(opts.topic || '').slice(0, 300);
   const words = Math.min(Math.max(Number(opts.words) || 700, 300), 1400);
   const lang = /[\u4e00-\u9fff]/.test(topic) ? 'zh' : 'en';
+  const recentImages = Array.isArray(opts.recentImages)
+    ? opts.recentImages.filter((s) => typeof s === 'string' && s).slice(0, 12)
+    : [];
 
   if (!topic) return { ok: false, error: 'topic is required' };
 
@@ -321,7 +342,7 @@ export async function draft(env, request, opts) {
   const facts = renderFacts(result, { images: true });
   const allowedImages = factImages(result);
 
-  const prompt = buildPrompt(kind, topic, facts, words, lang, allowedImages);
+  const prompt = buildPrompt(kind, topic, facts, words, lang, allowedImages, recentImages);
 
   // Long-form output is exactly where models fail: the 70B option is slower and
   // can be truncated mid-JSON. Walk the chain rather than betting on one model.
@@ -366,7 +387,7 @@ export async function draft(env, request, opts) {
     };
   }
 
-  const productImage = resolveImage(parsed.image, result.products, allowedImages);
+  const productImage = resolveImage(parsed.image, result.products, allowedImages, recentImages);
   const imageAlt = productImage ? String(parsed.imageAlt || '').trim().slice(0, 120) : '';
   const checks = factCheck(String(parsed.body), facts, result.products || [], String(parsed.image || '').trim(), allowedImages);
 
