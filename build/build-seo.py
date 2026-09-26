@@ -205,7 +205,7 @@ def main():
           "- E-mail: sales20@rigelighting.com",
           "- Mobile / WhatsApp / WeChat: +86 134 3026 2182",
           "",
-          "## Catalogue — %d models in 7 ranges" % len(products)]
+          "## Catalogue — %d models in %d ranges" % (len(products), len(CATS))]
     for c in CATS:
         meta = cats.get(c, {})
         n = len([p for p in products if p["category"] == c])
