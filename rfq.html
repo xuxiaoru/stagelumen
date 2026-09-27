@@ -6,7 +6,7 @@
   <title>Request a Quote | B2B Stage Lighting RFQ | RiGeBa Lighting</title>
   <meta name="description" content="Get a tailored quote for stage lighting, OEM/ODM services and bulk orders. Response within 24 hours." data-page-node-id="ECKlcSGPJd3jEsDKCPfyA9" />
   <link rel="canonical" href="https://www.rigebalighting.com/rfq" />
-  <link rel="stylesheet" href="assets/css/style.css?v=13" data-page-node-id="sUCDUo79ruoq9w2yaMAgFo" />
+  <link rel="stylesheet" href="assets/css/style.css?v=14" data-page-node-id="sUCDUo79ruoq9w2yaMAgFo" />
   <link rel="alternate" hreflang="en" href="https://www.rigebalighting.com/rfq" />
   <link rel="alternate" hreflang="de" href="https://www.rigebalighting.com/de/rfq" />
   <link rel="alternate" hreflang="es" href="https://www.rigebalighting.com/es/rfq" />
@@ -129,7 +129,7 @@
       <!-- Form -->
       <div class="form-card" data-page-node-id="1hTdYTSTxDX7KnyuFGeWA3">
         <h2 data-page-node-id="9n4Wz7yxNFtXQI8A8RTuRB">Project Brief</h2>
-        <p data-page-node-id="BFQfYHBf6Yu7uqaSMd9tBo">Fields marked with * are required. No products selected? Leave the quote list empty — we will quote from your description instead. All briefs are treated as confidential.</p>
+        <p data-page-node-id="BFQfYHBf6Yu7uqaSMd9tBo">Only four things are required — first name, business email, country and consent. Everything else is optional and simply helps us quote more accurately. No products selected? Leave the quote list empty; we will quote from your description. All briefs are treated as confidential.</p>
 
         <form data-ajax data-page-node-id="J7wAtPQUJpN06EFyRvHyJD">
 
@@ -162,8 +162,8 @@
               <input type="text" name="firstName" required autocomplete="given-name" placeholder="Jane" />
             </div>
             <div class="form-group">
-              <label>Last Name *</label>
-              <input type="text" name="lastName" required autocomplete="family-name" placeholder="Smith" />
+              <label>Last Name</label>
+              <input type="text" name="lastName" autocomplete="family-name" placeholder="Smith" />
             </div>
           </div>
           <div class="form-row">
@@ -178,8 +178,8 @@
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label>Company *</label>
-              <input type="text" name="company" required autocomplete="organization" placeholder="Your Company" />
+              <label>Company</label>
+              <input type="text" name="company" autocomplete="organization" placeholder="Your Company" />
             </div>
             <div class="form-group">
               <label>Country *</label>
@@ -259,8 +259,8 @@
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label>Product Category *</label>
-              <select name="category" required>
+              <label>Product Category</label>
+              <select name="category">
                 <option value="">Select category</option>
                 <option value="Moving Heads">Moving Heads</option>
                 <option value="Pixel &amp; Effects">Pixel &amp; Effects</option>
@@ -278,8 +278,8 @@
               </select>
             </div>
             <div class="form-group">
-              <label>Application *</label>
-              <select name="application" required>
+              <label>Application</label>
+              <select name="application">
                 <option value="">Select application</option>
                 <option value="Concert &amp; Festival">Concert &amp; Festival</option>
                 <option value="Rental &amp; Touring">Rental &amp; Touring</option>
@@ -295,8 +295,8 @@
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label>Estimated Quantity *</label>
-              <select name="qty" required>
+              <label>Estimated Quantity</label>
+              <select name="qty">
                 <option value="">Select</option>
                 <option value="1 - 10 units">1 - 10 units</option>
                 <option value="10 - 50 units">10 - 50 units</option>
@@ -343,9 +343,19 @@
               <textarea name="message" rows="4" placeholder="Room size, mounting height, beam distance, color preferences, OEM/ODM needs…"></textarea>
           </div>
           <div class="form-group">
+              <label>Drawings &amp; Specs (optional)</label>
+              <label class="file-drop" data-file-drop>
+                <input type="file" data-attach="1" multiple accept=".pdf,.jpg,.jpeg,.png,.webp,.heic,.dwg,.dxf,.skp,.zip,.rar,.7z,.xlsx,.xls,.csv,.doc,.docx,.ppt,.pptx,.txt,.rtf" />
+                <span class="file-drop-text">Drop files here or click to browse — lighting plot, fixture schedule, CAD drawing, room photo. Up to 5 files, 10 MB each.</span>
+              </label>
+              <div class="file-list" data-file-list></div>
+              <input type="hidden" name="attachments" data-attach-field />
+              <p class="file-note">PDF, JPG/PNG, DWG/DXF, SketchUp, Excel, Word, ZIP. Files go straight to our engineer — they speed up an accurate quote.</p>
+          </div>
+          <div class="form-group">
               <label style="display:flex;gap:9px;align-items:flex-start;font-weight:400;font-size:13px;line-height:1.55;cursor:pointer;text-transform:none">
                 <input type="checkbox" name="consent" value="1" required style="width:auto;flex:0 0 auto;margin:3px 0 0" />
-                <span>I agree to the <a href="privacy.html">Privacy Policy</a> and to being contacted about this enquiry. *</span>
+                <span>I agree to the <a href="privacy.html">Privacy Policy</a> and to being contacted about this enquiry. We record the date and the policy version of this consent. *</span>
               </label>
           </div>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Send Inquiry →</button>
@@ -465,7 +475,7 @@
 <script src="assets/js/cookie-consent.js"></script>
 <script src="assets/js/quote-cart.js?v=1"></script>
 <script src="assets/js/main.js?v=8"></script>
-<script src="assets/js/inquiry.js?v=13"></script>
+<script src="assets/js/inquiry.js?v=14"></script>
 <script src="assets/js/assistant.js?v=11"></script>
 <script src="assets/js/rfq-product.js?v=3"></script>
 <script>

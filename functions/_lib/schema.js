@@ -23,6 +23,9 @@ const STATEMENTS = [
      sku TEXT, product_name TEXT, category TEXT, application TEXT,
      qty TEXT, budget TEXT, lead_time TEXT, trade_terms TEXT,
      raw_text TEXT, lang TEXT,
+     attachments TEXT,          -- JSON [{key,name,size,type}] stored in R2
+     consent_at TEXT,           -- GDPR: when the visitor ticked the consent box
+     consent_ver TEXT,          -- which privacy-policy revision they agreed to
      intent TEXT, urgency TEXT, score INTEGER DEFAULT 0, stage TEXT,
      ai_summary TEXT, ai_reply TEXT,
      status TEXT DEFAULT 'new', lost_reason TEXT,
@@ -133,6 +136,13 @@ const COLUMN_MIGRATIONS = [
   // Added well after launch, so existing rows keep NULL and every reader must
   // fall back to the single sku/product_name columns.
   { column: 'items', ddl: 'ALTER TABLE leads ADD COLUMN items TEXT' },
+  // GDPR: proof of consent. A checkbox that is not recorded is not consent —
+  // when a regulator (or a buyer) asks "show me they agreed", these two
+  // columns are the answer. consent_ver pins the policy revision they saw.
+  { column: 'consent_at', ddl: 'ALTER TABLE leads ADD COLUMN consent_at TEXT' },
+  { column: 'consent_ver', ddl: 'ALTER TABLE leads ADD COLUMN consent_ver TEXT' },
+  // RFQ file attachments, stored in R2; the row only keeps the descriptors.
+  { column: 'attachments', ddl: 'ALTER TABLE leads ADD COLUMN attachments TEXT' },
 ];
 
 async function ensureColumns(env) {

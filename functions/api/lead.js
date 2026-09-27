@@ -113,13 +113,31 @@ export async function onRequest(context) {
 
   // ---- delete ------------------------------------------------------------
   // Hard delete, for spam and test records. Notes go with it (no FK cascade
-  // guarantee in D1 without PRAGMA, so clean up explicitly).
+  // guarantee in D1 without PRAGMA, so clean up explicitly), and so do the R2
+  // attachment objects — the privacy policy promises deletion, and a deleted
+  // lead whose drawings are still fetchable is not deleted.
   if (request.method === 'DELETE') {
-    const exists = await one(env, 'SELECT id FROM leads WHERE id = ?', [id]);
-    if (!exists) return fail('Lead not found', 404);
+    const row = await one(env, 'SELECT id, attachments FROM leads WHERE id = ?', [id]);
+    if (!row) return fail('Lead not found', 404);
+
+    let removedFiles = 0;
+    try {
+      const files = JSON.parse(row.attachments || '[]');
+      if (Array.isArray(files) && env.UPLOADS && typeof env.UPLOADS.delete === 'function') {
+        for (const f of files) {
+          if (f && typeof f.key === 'string' && f.key.indexOf('uploads/') === 0) {
+            await env.UPLOADS.delete(f.key);
+            removedFiles++;
+          }
+        }
+      }
+    } catch (e) {
+      console.error('[lead.delete] attachments: ' + ((e && e.message) || e));
+    }
+
     await run(env, 'DELETE FROM lead_notes WHERE lead_id = ?', [id]);
     await run(env, 'DELETE FROM leads WHERE id = ?', [id]);
-    return ok({ deleted: true, id });
+    return ok({ deleted: true, id, files_removed: removedFiles });
   }
 
   return fail('Method not allowed', 405);

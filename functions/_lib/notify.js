@@ -14,6 +14,34 @@ function shortText(s, n) {
   return t.length > n ? t.slice(0, n) + '…' : t;
 }
 
+/** Human-readable size for the attachment lines below. */
+function kb(n) {
+  const v = Number(n) || 0;
+  if (v >= 1024 * 1024) return (v / 1024 / 1024).toFixed(1) + ' MB';
+  if (v >= 1024) return Math.round(v / 1024) + ' KB';
+  return v + ' B';
+}
+
+/**
+ * Files attached to the enquiry, read from the JSON descriptor column.
+ * The bytes live in R2 and are never linked from an outbound email: these
+ * mails go to a shared sales inbox and to third-party webhooks, and a
+ * signed-less URL would either be public or leak the admin token.
+ */
+function attachmentList(lead) {
+  try {
+    const arr = JSON.parse((lead && lead.attachments) || '[]');
+    if (Array.isArray(arr)) return arr.filter((f) => f && f.key);
+  } catch (e) { /* fall through */ }
+  return [];
+}
+
+function attachSummary(lead) {
+  const files = attachmentList(lead);
+  if (!files.length) return 'none';
+  return files.map((f) => (f.name || f.key) + ' (' + kb(f.size) + ')').join(', ');
+}
+
 async function postJson(url, body, headers) {
   try {
     const res = await fetch(url, {
@@ -214,7 +242,8 @@ export async function sendWebhook(env, lead, base) {
     '- Qty: ' + (lead.qty || '-') + ' | Budget: ' + (lead.budget || '-') + '\n' +
     '- Urgency: ' + base.urgency + '\n' +
     '- Source: ' + shortText(lead.page_url, 120) + '\n' +
-    '- Message: ' + shortText(lead.raw_text, 600) + '\n';
+    '- Message: ' + shortText(lead.raw_text, 600) + '\n' +
+    '- Attachments: ' + attachSummary(lead) + '\n';
 
   // 企业微信机器人
   if (url.indexOf('qyapi.weixin.qq.com') !== -1) {
@@ -270,7 +299,9 @@ export async function createGithubIssue(env, lead, base) {
     '| Intent | ' + base.intent + ' |\n' +
     '| Urgency | ' + base.urgency + ' |\n' +
     '| Score | ' + base.score + ' |\n' +
-    '| Page | ' + shortText(lead.page_url, 200) + ' |\n\n' +
+    '| Page | ' + shortText(lead.page_url, 200) + ' |\n' +
+    '| Attachments | ' + attachSummary(lead) + ' |\n' +
+    '| Consent | ' + (lead.consent_at ? lead.consent_at + ' (policy ' + (lead.consent_ver || '-') + ')' : 'not recorded') + ' |\n\n' +
     '### Message\n\n' + (lead.raw_text || '_empty_') + '\n\n' +
     '### AI summary\n\n' + (lead.ai_summary || '_n/a_') + '\n\n' +
     '### Drafted reply\n\n```\n' + (lead.ai_reply || '_n/a_') + '\n```\n\n' +
@@ -310,6 +341,8 @@ export async function notifyAll(env, lead, base) {
     'New ' + base.intent + ' inquiry — ' + (lead.company || lead.name || 'Unknown') +
     ' (' + base.score + ')';
 
+  const attachFiles = attachmentList(lead);
+
   // The alert is usually read on a phone, so when the visitor built a quote
   // list we print every line instead of just the first product.
   let productBlock = 'Product: ' + (lead.product_name || lead.category || '-') +
@@ -333,7 +366,11 @@ export async function notifyAll(env, lead, base) {
     'Email:   ' + (lead.email || '-') + '\n' +
     'Phone:   ' + (lead.phone || '-') + '\n' +
     productBlock +
-    'Qty:     ' + (lead.qty || '-') + '\n\n' +
+    'Qty:     ' + (lead.qty || '-') + '\n' +
+    (attachFiles.length
+      ? 'Files:   ' + attachFiles.length + ' attached — open the lead in the admin board to download\n' +
+        attachFiles.map((f) => '           - ' + (f.name || f.key) + ' (' + kb(f.size) + ')\n').join('')
+      : '') + '\n' +
     'Message:\n' + (lead.raw_text || '-') + '\n\n' +
     'AI summary:\n' + (lead.ai_summary || '-') + '\n\n' +
     'Drafted reply:\n' + (lead.ai_reply || '-') + '\n';

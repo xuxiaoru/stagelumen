@@ -61,6 +61,10 @@
   .overlay.open{display:block}
   .empty{padding:40px;text-align:center;color:var(--dim)}
   @media(max-width:720px){ .hide-sm{display:none} }
+  /* Bulk-select column: the shared input rule gives every field 8px padding,
+     which makes a checkbox look like a button. */
+  th input[type=checkbox], td input[type=checkbox]{width:auto;margin:0;padding:0}
+  td .pitem a{word-break:break-all}
 
   .anav{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:18px;
         padding:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
@@ -124,20 +128,36 @@
       <option value="nurture">Nurture</option>
       <option value="spam">Spam</option>
     </select>
-    <input id="fQ" placeholder="Search email / company / name…" style="min-width:220px" />
+    <select id="fDays">
+      <option value="0">All time</option>
+      <option value="7">Last 7 days</option>
+      <option value="30" selected>Last 30 days</option>
+      <option value="90">Last 90 days</option>
+    </select>
+    <input id="fQ" placeholder="Search email / company / name / model / message…" style="min-width:240px" />
     <button id="btnSearch" class="primary">Apply</button>
+    <button id="btnExport" title="Exports every row matching the current filters">Export CSV</button>
+    <button id="btnSpam" class="danger" disabled>Mark spam (0)</button>
+    <button id="btnBulkDelete" class="danger" disabled>Delete (0)</button>
+    <span class="spacer" style="flex:1"></span>
     <span class="muted" id="count"></span>
   </div>
 
   <table>
     <thead>
       <tr>
+        <th style="width:32px"><input type="checkbox" id="chkAll" title="Select all" /></th>
         <th>Score</th><th>Contact</th><th>Company</th><th>Products</th><th class="hide-sm">Country</th>
         <th>Message</th><th class="hide-sm">Intent</th><th>Status</th><th class="hide-sm">When</th><th></th>
       </tr>
     </thead>
-    <tbody id="tbody"><tr><td colspan="10" class="empty">Loading…</td></tr></tbody>
+    <tbody id="tbody"><tr><td colspan="11" class="empty">Loading…</td></tr></tbody>
   </table>
+
+  <div class="bar" style="margin-top:14px">
+    <button id="btnMore" style="display:none">Load more</button>
+    <span class="muted" id="pageInfo"></span>
+  </div>
 </div>
 
 <div class="overlay" id="overlay"></div>
@@ -155,10 +175,21 @@
   var TOKEN_KEY = 'sl_admin_token';
   var token = localStorage.getItem(TOKEN_KEY) || '';
   var current = null;
+  var rows = [];
+  var offset = 0;
+  var total = 0;
+  var PAGE = 50;
+  var selected = {};
 
   function $(id){ return document.getElementById(id); }
   function esc(s){ return String(s==null?'':s).replace(/[&<>"]/g, function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]; }); }
+  function kb(n){
+    var v = Number(n)||0;
+    if (v >= 1024*1024) return (v/1024/1024).toFixed(1)+' MB';
+    if (v >= 1024) return Math.round(v/1024)+' KB';
+    return v+' B';
+  }
   /* Quote basket (leads.items) with a graceful fallback to the older flat
      columns, so leads captured before the basket existed still show something. */
   function itemsOf(l){
@@ -172,6 +203,13 @@
       return [{ model: l.sku || '', name: l.product_name || '', qty: 1,
                 image: l.product_image || '', category: l.product_category || '', price: null }];
     }
+    return [];
+  }
+  function filesOf(l){
+    try {
+      var arr = JSON.parse(l.attachments || '[]');
+      if (Array.isArray(arr)) return arr.filter(function(f){ return f && f.key; });
+    } catch (e) {}
     return [];
   }
   function thumb(it){
@@ -208,6 +246,18 @@
     '<div class="muted" style="font-size:12px">' + items.length + ' item' + (items.length>1?'s':'') +
     ' · ' + totalUnits + ' units total</div></div>';
   }
+  /* Attachments live in R2 and are only reachable through the token-protected
+     download route, so the link must carry the token the browser already has. */
+  function attachBlock(l){
+    var files = filesOf(l);
+    if (!files.length) return '<span class="muted">none</span>';
+    return '<div style="display:grid;gap:6px">' + files.map(function(f){
+      return '<div class="pitem"><span style="flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis">' +
+        '<a href="/api/upload?key=' + encodeURIComponent(f.key) + '&token=' + encodeURIComponent(token) +
+        '" target="_blank" rel="noopener">' + esc(f.name || f.key) + '</a></span>' +
+        '<span class="muted" style="font-size:12px">' + kb(f.size) + '</span></div>';
+    }).join('') + '</div>';
+  }
   // notified is a bitmask: 1 = email, 2 = webhook, 4 = github issue
   function notifyLabel(m){
     m = m|0;
@@ -235,6 +285,26 @@
     if (m & 2) p.push('webhook');
     if (m & 4) p.push('GitHub issue');
     return 'Delivered via ' + p.join(', ');
+  }
+  /* GDPR: the stored timestamp is the proof, so show it plainly instead of
+     hiding it in the raw JSON. */
+  function consentLine(l){
+    if (!l.consent_at) {
+      return '<span class="muted">not recorded</span>' +
+        (l.created_at && l.created_at < '2026-09-27' ? ' <span class="muted">(pre-dates consent logging)</span>' : '');
+    }
+    return '<span class="pill" style="color:var(--green)">opted in</span> ' +
+      esc(l.consent_at) + ' <span class="muted">· policy ' + esc(l.consent_ver || '-') + '</span>';
+  }
+  function utmLine(l){
+    try {
+      var u = JSON.parse(l.utm || '{}');
+      var parts = [u.utm_source, u.utm_medium, u.utm_campaign].filter(Boolean);
+      if (parts.length) return parts.join(' / ');
+      if (u.gclid || u.fbclid) return 'paid click (' + (u.gclid ? 'google' : 'meta') + ')';
+      if (u.ref) return 'referrer: ' + String(u.ref).slice(0, 90);
+    } catch (e) {}
+    return '—';
   }
   function ago(ts){
     if(!ts) return '-';
@@ -281,15 +351,17 @@
     }).join('');
   }
 
-  function render(rows){
+  function render(){
     var tb = $('tbody');
-    if (!rows || !rows.length){
-      tb.innerHTML = '<tr><td colspan="10" class="empty">No leads yet. Submit the RFQ form to test.</td></tr>';
+    if (!rows.length){
+      tb.innerHTML = '<tr><td colspan="11" class="empty">No leads match these filters.</td></tr>';
       return;
     }
     tb.innerHTML = rows.map(function(l){
       var scoreColor = l.score>=70 ? 'var(--red)' : l.score>=45 ? 'var(--amber)' : 'var(--dim)';
+      var files = filesOf(l);
       return '<tr data-id="' + esc(l.id) + '">' +
+        '<td><input type="checkbox" data-pick="' + esc(l.id) + '"' + (selected[l.id] ? ' checked' : '') + ' /></td>' +
         '<td class="score" style="color:' + scoreColor + '">' + esc(l.score) + '</td>' +
         '<td><div>' + esc(l.name || '—') + '</div><div class="muted" style="font-size:12px">' + esc(l.email) + '</div></td>' +
         '<td>' + esc(l.company || '—') + '</td>' +
@@ -300,29 +372,69 @@
         '<td><span class="pill ' + esc(l.stage || '') + '">' + esc(l.status || 'new') + '</span></td>' +
         '<td class="hide-sm" title="' + esc(notifyTitle(l.notified)) + '">' + notifyLabel(l.notified) + ' ' + autoLabel(l.autoreply_sent) + '</td>' +
         '<td class="hide-sm muted">' + ago(l.created_at) + '</td>' +
-        '<td><button data-open="' + esc(l.id) + '">Open</button></td>' +
+        '<td style="white-space:nowrap"><button data-open="' + esc(l.id) + '">Open</button>' +
+        (files.length ? ' <span class="pill" title="' + esc(files.map(function(f){ return f.name; }).join(', ')) + '">📎' + files.length + '</span>' : '') +
+        '</td>' +
       '</tr>';
     }).join('');
   }
 
-  function load(){
+  function filterQs(){
     var qs = [];
     var st = $('fStatus').value; if (st !== 'all') qs.push('status=' + encodeURIComponent(st));
     var sg = $('fStage').value;  if (sg !== 'all') qs.push('stage=' + encodeURIComponent(sg));
+    var dy = $('fDays').value;   if (dy && dy !== '0') qs.push('days=' + encodeURIComponent(dy));
     var q  = $('fQ').value.trim(); if (q) qs.push('q=' + encodeURIComponent(q));
-    qs.push('limit=100');
+    return qs;
+  }
 
-    $('tbody').innerHTML = '<tr><td colspan="10" class="empty">Loading…</td></tr>';
+  function load(more){
+    if (!more) { offset = 0; rows = []; }
+    if (!more) $('tbody').innerHTML = '<tr><td colspan="11" class="empty">Loading…</td></tr>';
+
+    var qs = filterQs().concat(['limit=' + PAGE, 'offset=' + offset]);
 
     api('/api/leads?' + qs.join('&')).then(function(d){
-      if (!d.ok) { $('tbody').innerHTML = '<tr><td colspan="10" class="empty">' + esc(d.error||'error') + '</td></tr>'; return; }
-      render(d.leads);
-      $('count').textContent = (d.leads ? d.leads.length : 0) + ' shown / ' + (d.total||0) + ' total';
+      if (!d.ok) { $('tbody').innerHTML = '<tr><td colspan="11" class="empty">' + esc(d.error||'error') + '</td></tr>'; return; }
+      rows = more ? rows.concat(d.leads || []) : (d.leads || []);
+      total = d.total || rows.length;
+      offset = rows.length;
+      render();
+      updateBulk();
+      $('count').textContent = rows.length + ' shown / ' + total + ' matching';
+      var moreLeft = rows.length < total;
+      $('btnMore').style.display = moreLeft ? '' : 'none';
+      $('btnMore').textContent = 'Load ' + Math.min(PAGE, total - rows.length) + ' more';
+      $('pageInfo').textContent = moreLeft ? '' : (rows.length ? 'End of list.' : '');
     }).catch(function(e){
-      $('tbody').innerHTML = '<tr><td colspan="10" class="empty">' + esc(e.message) + '</td></tr>';
+      $('tbody').innerHTML = '<tr><td colspan="11" class="empty">' + esc(e.message) + '</td></tr>';
     });
 
     api('/api/stats?days=30').then(function(d){ if (d.ok) renderCards(d); }).catch(function(){});
+  }
+
+  function updateBulk(){
+    var ids = Object.keys(selected).filter(function(k){ return selected[k]; });
+    $('btnSpam').disabled = !ids.length;
+    $('btnBulkDelete').disabled = !ids.length;
+    $('btnSpam').textContent = 'Mark spam (' + ids.length + ')';
+    $('btnBulkDelete').textContent = 'Delete (' + ids.length + ')';
+  }
+
+  function selectedIds(){
+    return Object.keys(selected).filter(function(k){ return selected[k]; });
+  }
+
+  /* Sequential on purpose: a burst of parallel writes on one D1 instance is
+     how you get a 429 from your own rate limiter, and a half-applied batch is
+     harder to reason about than a slow one. */
+  function runBatch(ids, fn, btn, label, done){
+    var i = 0;
+    (function next(){
+      if (i >= ids.length) { done(); return; }
+      btn.textContent = label + ' ' + (i + 1) + '/' + ids.length + '…';
+      fn(ids[i]).then(function(){ i++; next(); }).catch(function(){ i++; next(); });
+    })();
   }
 
   function openLead(id){
@@ -348,10 +460,15 @@
         '<dt>Qty / Budget</dt><dd>' + esc([l.qty, l.budget].filter(Boolean).join('  ·  ')||'-') + '</dd>' +
         '<dt>Lead time</dt><dd>' + esc(l.lead_time||'-') + '</dd>' +
         '<dt>Trade terms</dt><dd>' + esc(l.trade_terms||'-') + '</dd>' +
+        '<dt>Attachments</dt><dd>' + attachBlock(l) + '</dd>' +
+        '<dt>Consent</dt><dd>' + consentLine(l) + '</dd>' +
         '<dt>Intent</dt><dd>' + esc(l.intent) + ' · ' + esc(l.urgency) + '</dd>' +
         '<dt>Alert</dt><dd>' + notifyLabel(l.notified) + ' <span class="muted">' + esc(notifyTitle(l.notified)) + '</span></dd>' +
         '<dt>Ack to customer</dt><dd>' + autoLabel(l.autoreply_sent) + '</dd>' +
+        '<dt>Language</dt><dd>' + esc(l.lang || '-') + '</dd>' +
+        '<dt>Campaign</dt><dd>' + esc(utmLine(l)) + '</dd>' +
         '<dt>Source</dt><dd class="muted">' + esc((l.page_url||'').slice(0,120)) + '</dd>' +
+        '<dt>IP / UA</dt><dd class="muted" style="font-size:12px">' + esc(l.ip||'-') + '<br>' + esc(String(l.ua||'').slice(0,90)) + '</dd>' +
         '<dt>Received</dt><dd>' + esc(l.created_at) + '</dd>' +
         '</dl>' +
         '<div><strong>Customer message</strong><pre>' + esc(l.raw_text||'-') + '</pre></div>' +
@@ -389,16 +506,66 @@
   }
 
   // ---- events ------------------------------------------------------------
-  $('btnRefresh').onclick = load;
+  $('btnRefresh').onclick = function(){ load(); };
   $('btnToken').onclick = function(){ askToken(true); };
-  $('btnSearch').onclick = load;
+  $('btnSearch').onclick = function(){ load(); };
   $('fQ').addEventListener('keydown', function(e){ if (e.key === 'Enter') load(); });
+  $('fStatus').addEventListener('change', function(){ load(); });
+  $('fStage').addEventListener('change', function(){ load(); });
+  $('fDays').addEventListener('change', function(){ load(); });
   $('dClose').onclick = function(){ $('drawer').classList.remove('open'); $('overlay').classList.remove('open'); };
   $('overlay').onclick = function(){ $('drawer').classList.remove('open'); $('overlay').classList.remove('open'); };
+  $('btnMore').onclick = function(){ load(true); };
+
+  $('chkAll').onchange = function(){
+    var on = this.checked;
+    rows.forEach(function(l){ selected[l.id] = on; });
+    render();
+    updateBulk();
+  };
+
+  /* CSV runs through the same filters as the table, so what you see is what
+     you export. Served by the API (not assembled in the browser) because the
+     browser only ever holds one page of rows. */
+  $('btnExport').onclick = function(){
+    if (!token) { alert('Enter your admin token first (Token button).'); return; }
+    var qs = filterQs().concat(['format=csv', 'token=' + encodeURIComponent(token)]);
+    window.location.href = '/api/leads?' + qs.join('&');
+  };
+
+  $('btnSpam').onclick = function(){
+    var ids = selectedIds();
+    if (!ids.length) return;
+    if (!confirm('Mark ' + ids.length + ' lead(s) as spam?\n\nThey stay in the database but leave the working list.')) return;
+    this.disabled = true;
+    var self = this;
+    runBatch(ids, function(id){
+      return api('/api/lead?id=' + encodeURIComponent(id), { method:'PATCH', body: JSON.stringify({ status: 'spam' }) });
+    }, this, 'Spamming', function(){
+      selected = {};
+      load();
+    });
+  };
+
+  $('btnBulkDelete').onclick = function(){
+    var ids = selectedIds();
+    if (!ids.length) return;
+    if (!confirm('Permanently delete ' + ids.length + ' lead(s)?\n\nThis also deletes their uploaded files and cannot be undone.')) return;
+    this.disabled = true;
+    runBatch(ids, function(id){
+      return api('/api/lead?id=' + encodeURIComponent(id), { method:'DELETE' });
+    }, this, 'Deleting', function(){
+      selected = {};
+      load();
+    });
+  };
 
   document.addEventListener('click', function(e){
     var t = e.target;
     if (!t || !t.getAttribute) return;
+
+    var pick = t.getAttribute('data-pick');
+    if (pick !== null) { selected[pick] = !!t.checked; updateBulk(); return; }
 
     var openId = t.getAttribute('data-open');
     if (openId) { openLead(openId); return; }
@@ -489,9 +656,10 @@
     if (!(nt.email && nt.email.configured) && !(nt.webhook && nt.webhook.configured) && !(nt.github_issue && nt.github_issue.configured)) {
       missing.push('notify channel');
     }
+    var extra = b.UPLOADS ? '' : ' · uploads off';
     $('envBadge').textContent = missing.length
-      ? 'missing bindings: ' + missing.join(', ')
-      : 'all systems go · ' + (d.leads||0) + ' leads';
+      ? 'missing bindings: ' + missing.join(', ') + extra
+      : 'all systems go · ' + (d.leads||0) + ' leads' + extra;
     $('envBadge').style.color = missing.length ? 'var(--amber)' : 'var(--green)';
   }).catch(function(){ $('envBadge').textContent = 'api offline'; });
 

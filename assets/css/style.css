@@ -2660,3 +2660,48 @@ footer {
   .cta-buttons { flex-direction: column; }
   .newsletter-inline { flex-direction: column; }
 }
+
+/* ========== RFQ ATTACHMENTS (2026-09-27) ==========
+   Drop zone + file chips used by the six localized enquiry forms. Lives here
+   rather than in an inline <style> so all of them (and the product-page RFQ
+   panel) share one definition. */
+.form-group .file-drop {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  background: var(--bg);
+  cursor: pointer;
+  transition: var(--transition);
+}
+.form-group .file-drop:hover,
+.form-group .file-drop.is-over {
+  border-color: var(--primary);
+  background: rgba(255, 107, 0, 0.06);
+}
+.form-group .file-drop input[type="file"] {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+.file-drop-text { font-size: 0.85rem; font-weight: 400; color: var(--text-2); line-height: 1.5; }
+.file-list { display: grid; gap: 6px; margin-top: 10px; }
+.file-chip {
+  display: flex; align-items: center; gap: 8px;
+  padding: 7px 10px; border: 1px solid var(--border);
+  border-radius: var(--radius); background: var(--surface); font-size: 0.8rem;
+}
+.file-chip .fc-name { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.file-chip .fc-size { margin-left: auto; color: var(--text-3); flex: 0 0 auto; }
+.file-chip .fc-x {
+  flex: 0 0 auto; border: 0; background: none; color: var(--text-3);
+  font-size: 1rem; line-height: 1; padding: 0 2px; cursor: pointer;
+}
+.file-chip .fc-x:hover { color: #e5484d; }
+.file-chip.is-bad { border-color: rgba(229, 72, 77, 0.5); color: #ff8b8f; }
+.file-note { font-size: 0.75rem; color: var(--text-3); margin-top: 8px; }

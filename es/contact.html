@@ -11,7 +11,7 @@
   <link rel="alternate" hreflang="de" href="https://www.rigebalighting.com/de/contact" />
   <link rel="alternate" hreflang="es" href="https://www.rigebalighting.com/es/contact" />
   <link rel="alternate" hreflang="x-default" href="https://www.rigebalighting.com/contact" />
-  <link rel="stylesheet" href="assets/css/style.css?v=13" />
+  <link rel="stylesheet" href="assets/css/style.css?v=14" />
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b00'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-size='48' font-weight='800' fill='white' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E" />
   <style>
     .lsm{position:relative;display:inline-block}
@@ -181,8 +181,8 @@
               <input type="text" name="firstName" required autocomplete="given-name" placeholder="Jane" />
             </div>
             <div class="form-group">
-              <label>Apellido *</label>
-              <input type="text" name="lastName" required autocomplete="family-name" placeholder="Smith" />
+              <label>Apellido</label>
+              <input type="text" name="lastName" autocomplete="family-name" placeholder="Smith" />
             </div>
           </div>
           <div class="form-row">
@@ -197,12 +197,12 @@
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label>Empresa *</label>
-              <input type="text" name="company" required autocomplete="organization" placeholder="Your Company" />
+              <label>Empresa</label>
+              <input type="text" name="company" autocomplete="organization" placeholder="Your Company" />
             </div>
             <div class="form-group">
-              <label>País *</label>
-              <select name="country" required>
+              <label>País</label>
+              <select name="country">
                 <option value="">Seleccionar país</option>
                 <optgroup label="Norteamérica">
                 <option value="United States">United States</option>
@@ -281,9 +281,19 @@
               <textarea name="message" required rows="5" placeholder="Cuéntenos sobre su proyecto, los productos de interés y la cantidad estimada…"></textarea>
           </div>
           <div class="form-group">
+              <label>Planos y especificaciones (opcional)</label>
+              <label class="file-drop" data-file-drop>
+                <input type="file" data-attach="1" multiple accept=".pdf,.jpg,.jpeg,.png,.webp,.heic,.dwg,.dxf,.skp,.zip,.rar,.7z,.xlsx,.xls,.csv,.doc,.docx,.ppt,.pptx,.txt,.rtf" />
+                <span class="file-drop-text">Arrastre archivos aquí o haga clic — plano de iluminación, listado de equipos, dibujo CAD, foto del recinto. Máx. 5 archivos, 10 MB cada uno.</span>
+              </label>
+              <div class="file-list" data-file-list></div>
+              <input type="hidden" name="attachments" data-attach-field />
+              <p class="file-note">PDF, JPG/PNG, DWG/DXF, SketchUp, Excel, Word, ZIP. Los archivos llegan directamente a nuestro ingeniero y aceleran un presupuesto preciso.</p>
+          </div>
+          <div class="form-group">
               <label style="display:flex;gap:9px;align-items:flex-start;font-weight:400;font-size:13px;line-height:1.55;cursor:pointer;text-transform:none">
                 <input type="checkbox" name="consent" value="1" required style="width:auto;flex:0 0 auto;margin:3px 0 0" />
-                <span>Acepto la <a href="privacy.html">Política de Privacidad</a> y ser contactado sobre esta consulta. *</span>
+                <span>Acepto la <a href="privacy.html">Política de Privacidad</a> y ser contactado sobre esta consulta. Guardamos la fecha y la versión de la política de esta aceptación. *</span>
               </label>
           </div>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar mensaje</button>
@@ -378,7 +388,7 @@
 
 <script src="assets/js/cookie-consent.js"></script>
 <script src="assets/js/main.js?v=8"></script>
-<script src="assets/js/inquiry.js?v=13"></script>
+<script src="assets/js/inquiry.js?v=14"></script>
 <script>
   (function () {
     var w = document.getElementById('lsm');

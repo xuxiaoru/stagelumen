@@ -23,7 +23,7 @@ import { sendEmailVerbose, sendWebhook } from '../_lib/notify.js';
  */
 const WHITELIST = [
   'AI', 'DB', 'ADMIN_TOKEN', 'GITHUB_PAT', 'RESEND_API_KEY',
-  'NOTIFY_WEBHOOK', 'VECTORIZE', 'KV', 'R2', 'ASSETS',
+  'NOTIFY_WEBHOOK', 'VECTORIZE', 'KV', 'R2', 'ASSETS', 'UPLOADS',
 ];
 
 function diagnose(env) {
@@ -190,6 +190,9 @@ export async function onRequest(context) {
     time: new Date().toISOString(),
     bindings: {
       DB: hasDb(env),
+      // RFQ attachments. Absent is not fatal: /api/upload answers 501 and the
+      // form silently falls back to "email us the drawings".
+      UPLOADS: !!(env && env.UPLOADS),
       AI: !!(env && env.AI),
       ADMIN_TOKEN: !!env.ADMIN_TOKEN,
       RESEND: !!env.RESEND_API_KEY,

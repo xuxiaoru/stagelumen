@@ -13,6 +13,15 @@ import { ensureSchema } from '../_lib/schema.js';
 import { triage, refineWithAI, templateReply } from '../_lib/reception.js';
 import { notifyAll, sendAutoReplyVerbose } from '../_lib/notify.js';
 
+/**
+ * Privacy-policy revision the RFQ consent box refers to.
+ *
+ * A timestamp alone proves nothing: it only means something next to the wording
+ * the visitor actually saw. Bump this whenever privacy.html changes in a way
+ * that matters, so old records keep pointing at the text they agreed to.
+ */
+const CONSENT_VERSION = '2026-09-27';
+
 export async function onRequest(context) {
   // Nothing below may escape as an unhandled exception: the lead is usually
   // already persisted by then, so a throw would mean "saved but visitor sees
@@ -54,23 +63,15 @@ async function handleInquiry(context) {
     return fail('Too many requests. Please contact sales20@rigelighting.com directly.', 429);
   }
 
-  // ---- validate ----------------------------------------------------------
-  const email = str(body.email, 254).toLowerCase();
-  if (!isEmail(email)) {
-    return fail('A valid business email is required.', 422);
-  }
-  const rawText = str(body.message, 4000);
-  if (!rawText && !str(body.category, 80)) {
-    return fail('Please tell us what you need.', 422);
-  }
-
-  await ensureSchema(env);
-
   // ---- quote basket -----------------------------------------------------
   // items arrives as a JSON string produced by the RFQ quote list. It is the
   // authoritative version of "what did they ask for"; the flat sku / product
   // columns are still filled from the first line so older reports, the modal
   // notification emails and any external consumer keep working unchanged.
+  //
+  // Parsed before validation on purpose: a visitor who only built a quote list
+  // and left the free-text box alone is a perfectly good lead, and the old
+  // order rejected exactly those ("Please tell us what you need").
   let items = [];
   try {
     const parsed = JSON.parse(str(body.items, 8000) || '[]');
@@ -88,11 +89,50 @@ async function handleInquiry(context) {
     items = []; // a malformed basket must never lose the enquiry itself
   }
 
+  // ---- attachments -------------------------------------------------------
+  // Files go to R2 one at a time via POST /api/upload; only their descriptors
+  // travel with the enquiry. Nothing here is trusted — the key must be one we
+  // minted under uploads/, and the size is re-clamped — so a forged payload
+  // cannot turn the lead row into a pointer to somebody else's object.
+  let attachments = [];
+  try {
+    const parsed = JSON.parse(str(body.attachments, 4000) || '[]');
+    if (Array.isArray(parsed)) {
+      attachments = parsed.slice(0, 5).map((f) => ({
+        key: str(f.key, 300),
+        name: str(f.name, 160),
+        size: Math.min(Math.max(parseInt(f.size, 10) || 0, 0), 20 * 1024 * 1024),
+        type: str(f.type, 80),
+      })).filter((f) => f.key.indexOf('uploads/') === 0);
+    }
+  } catch (e) {
+    attachments = [];
+  }
+
+  // ---- validate ----------------------------------------------------------
+  // Deliberately minimal. The RFQ form used to demand nine answers before it
+  // would submit; a reachable address plus *some* signal of what they want is
+  // the whole requirement now. Everything else is a helpful hint, not a gate.
+  const email = str(body.email, 254).toLowerCase();
+  if (!isEmail(email)) {
+    return fail('A valid business email is required.', 422);
+  }
+  const rawText = str(body.message, 4000);
+  if (!rawText && !str(body.category, 80) && !items.length) {
+    return fail('Please tell us what you need.', 422);
+  }
+
+  await ensureSchema(env);
+
   const primary = items[0] || null;
   const totalQty = items.reduce((a, b) => a + (b.qty || 0), 0);
 
   // ---- assemble ----------------------------------------------------------
   const ts = nowIso();
+  // Anything but an explicit yes is a no. Recorded with the timestamp below,
+  // so the consent trail is provable rather than merely asserted.
+  const consented = ['1', 'on', 'true', 'yes']
+    .indexOf(str(body.consent, 8).toLowerCase()) !== -1;
   const lead = {
     id: uid('ld'),
     customer_id: null,
@@ -114,6 +154,9 @@ async function handleInquiry(context) {
     lead_time: str(body.leadTime, 40),
     trade_terms: str(body.tradeTerms, 40),
     raw_text: rawText,
+    attachments: JSON.stringify(attachments),
+    consent_at: consented ? ts : '',
+    consent_ver: consented ? CONSENT_VERSION : '',
     lang: str(body.lang, 8) || 'en',
     page_url: str(body.pageUrl, 500),
     referrer: str(request.headers.get('referer'), 500),
@@ -162,7 +205,11 @@ async function handleInquiry(context) {
   lead.urgency = base.urgency;
   lead.score = base.score;
   lead.stage = base.stage;
-  lead.lang = base.lang;
+  // The language the visitor actually read the page in is a stronger signal
+  // than a guess made from their free text — which is empty whenever they only
+  // built a quote list, and then "detect" always answers 'en'. base.lang still
+  // drives the auto-reply wording, which is a separate decision.
+  lead.lang = str(body.lang, 8) || base.lang || 'en';
   lead.ai_summary = aiSummary;
   lead.ai_reply = aiReply;
   lead.status = base.intent === 'spam' ? 'spam' : 'new';

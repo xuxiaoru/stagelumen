@@ -6,7 +6,7 @@
   <title>Contact Us | RiGeBa Lighting</title>
   <meta name="description" content="Get in touch with RiGeBa Lighting for stage lighting quotes, technical support and OEM/ODM inquiries." />
   <link rel="canonical" href="https://www.rigebalighting.com/contact" />
-  <link rel="stylesheet" href="assets/css/style.css?v=13" />
+  <link rel="stylesheet" href="assets/css/style.css?v=14" />
   <link rel="alternate" hreflang="en" href="https://www.rigebalighting.com/contact" />
   <link rel="alternate" hreflang="de" href="https://www.rigebalighting.com/de/contact" />
   <link rel="alternate" hreflang="es" href="https://www.rigebalighting.com/es/contact" />
@@ -182,8 +182,8 @@
               <input type="text" name="firstName" required autocomplete="given-name" placeholder="Jane" />
             </div>
             <div class="form-group">
-              <label>Last Name *</label>
-              <input type="text" name="lastName" required autocomplete="family-name" placeholder="Smith" />
+              <label>Last Name</label>
+              <input type="text" name="lastName" autocomplete="family-name" placeholder="Smith" />
             </div>
           </div>
           <div class="form-row">
@@ -198,12 +198,12 @@
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label>Company *</label>
-              <input type="text" name="company" required autocomplete="organization" placeholder="Your Company" />
+              <label>Company</label>
+              <input type="text" name="company" autocomplete="organization" placeholder="Your Company" />
             </div>
             <div class="form-group">
-              <label>Country *</label>
-              <select name="country" required>
+              <label>Country</label>
+              <select name="country">
                 <option value="">Select country</option>
                 <optgroup label="North America">
                 <option value="United States">United States</option>
@@ -282,9 +282,19 @@
               <textarea name="message" required rows="5" placeholder="Tell us about your project, products of interest and estimated quantity…"></textarea>
           </div>
           <div class="form-group">
+              <label>Drawings &amp; Specs (optional)</label>
+              <label class="file-drop" data-file-drop>
+                <input type="file" data-attach="1" multiple accept=".pdf,.jpg,.jpeg,.png,.webp,.heic,.dwg,.dxf,.skp,.zip,.rar,.7z,.xlsx,.xls,.csv,.doc,.docx,.ppt,.pptx,.txt,.rtf" />
+                <span class="file-drop-text">Drop files here or click to browse — lighting plot, fixture schedule, CAD drawing, room photo. Up to 5 files, 10 MB each.</span>
+              </label>
+              <div class="file-list" data-file-list></div>
+              <input type="hidden" name="attachments" data-attach-field />
+              <p class="file-note">PDF, JPG/PNG, DWG/DXF, SketchUp, Excel, Word, ZIP. Files go straight to our engineer — they speed up an accurate quote.</p>
+          </div>
+          <div class="form-group">
               <label style="display:flex;gap:9px;align-items:flex-start;font-weight:400;font-size:13px;line-height:1.55;cursor:pointer;text-transform:none">
                 <input type="checkbox" name="consent" value="1" required style="width:auto;flex:0 0 auto;margin:3px 0 0" />
-                <span>I agree to the <a href="privacy.html">Privacy Policy</a> and to being contacted about this enquiry. *</span>
+                <span>I agree to the <a href="privacy.html">Privacy Policy</a> and to being contacted about this enquiry. We record the date and the policy version of this consent. *</span>
               </label>
           </div>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Send Message</button>
@@ -379,7 +389,7 @@
 
 <script src="assets/js/cookie-consent.js"></script>
 <script src="assets/js/main.js?v=8"></script>
-<script src="assets/js/inquiry.js?v=13"></script>
+<script src="assets/js/inquiry.js?v=14"></script>
 <script>
   (function () {
     var w = document.getElementById('lsm');

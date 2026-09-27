@@ -114,15 +114,16 @@ export async function insertLead(env, lead) {
     `INSERT INTO leads (
        id, customer_id, name, email, company, country, phone,
        sku, product_name, product_category, product_image, items, category, application, qty, budget, lead_time, trade_terms,
-       raw_text, lang, intent, urgency, score, stage,
+       raw_text, lang, attachments, consent_at, consent_ver, intent, urgency, score, stage,
        ai_summary, ai_reply, status, page_url, referrer, utm, ip, ua, created_at, updated_at
-     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
+     ) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)`,
     [
       lead.id, lead.customer_id, lead.name, lead.email, lead.company,
       lead.country, lead.phone, lead.sku, lead.product_name, lead.product_category, lead.product_image,
       lead.items || '', lead.category,
       lead.application, lead.qty, lead.budget, lead.lead_time, lead.trade_terms,
-      lead.raw_text, lead.lang, lead.intent, lead.urgency, lead.score, lead.stage,
+      lead.raw_text, lead.lang, lead.attachments || '', lead.consent_at || '', lead.consent_ver || '',
+      lead.intent, lead.urgency, lead.score, lead.stage,
       lead.ai_summary, lead.ai_reply, lead.status, lead.page_url, lead.referrer,
       lead.utm, lead.ip, lead.ua, lead.created_at, lead.updated_at,
     ]
