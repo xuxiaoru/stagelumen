@@ -368,11 +368,23 @@ export async function listChatMessages(env, sessionId, limit = 200) {
   );
 }
 
-export async function countChatSessions(env, status) {
+/**
+ * Count sessions under the same filters the list uses.
+ *
+ * The transcript search used to be ignored here, so a search that matched one
+ * thread still reported "1 of 12" — nobody could tell whether the other eleven
+ * existed or the count was simply broken.
+ */
+export async function countChatSessions(env, status, q) {
   if (!hasDb(env)) return 0;
   const args = [];
-  let sql = 'SELECT COUNT(*) AS c FROM chat_sessions';
-  if (status && status !== 'all') { sql += ' WHERE status = ?'; args.push(status); }
+  let sql = 'SELECT COUNT(*) AS c FROM chat_sessions WHERE 1=1';
+  if (status && status !== 'all') { sql += ' AND status = ?'; args.push(status); }
+  if (q) {
+    sql += ' AND EXISTS (SELECT 1 FROM chat_messages m WHERE m.session_id = chat_sessions.id'
+      + ' AND lower(m.content) LIKE ?)';
+    args.push('%' + String(q).toLowerCase() + '%');
+  }
   return scalar(env, sql, args);
 }
 

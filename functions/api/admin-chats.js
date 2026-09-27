@@ -56,7 +56,8 @@ async function get_(context) {
   const q = str(url.searchParams.get('q'), 80);
 
   const sessions = await listChatSessions(env, { status, q, limit, offset });
-  const total = await countChatSessions(env, status);
+  // Same filters as the list above, or the header contradicts the rows.
+  const total = await countChatSessions(env, status, q);
 
   // Headline numbers for the board: how much is waiting on us.
   const open = await countChatSessions(env, 'open');

@@ -107,11 +107,96 @@
     which regenerates blog pages, the news feed and the sitemap.
   </div>
 
+  <div style="margin-top:28px;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:12px">
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">
+      <strong style="font-size:15px">System status</strong>
+      <span id="hState" style="font-size:11px;padding:3px 9px;border-radius:99px;background:var(--panel2);color:var(--dim);border:1px solid var(--line)">checking…</span>
+      <span style="flex:1"></span>
+      <button id="hRefresh" style="background:var(--panel2);border:1px solid var(--line);color:var(--dim);border-radius:7px;padding:5px 10px;font-size:12px;cursor:pointer">Refresh</button>
+    </div>
+    <div id="hGrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px;margin-top:14px"></div>
+    <p id="hNote" style="margin:12px 0 0;font-size:12.5px;color:var(--dim);line-height:1.6"></p>
+  </div>
+
   <div class="foot">
     <a href="/">← Back to site</a>
     <a href="/news.html">News</a>
     <a href="/products.html">Products</a>
   </div>
 </div>
+
+<script>
+/* One glance should answer "is anything broken right now" without opening five
+   pages. /api/health already reports every binding and channel — until now you
+   only saw it if you knew to open the lead board (or curl it by hand). */
+(function () {
+  var grid = document.getElementById('hGrid');
+  var state = document.getElementById('hState');
+  var note = document.getElementById('hNote');
+
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/[&<>"]/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+    });
+  }
+
+  function chip(label, ok, hint) {
+    return '<div title="' + esc(hint || '') + '" style="display:flex;align-items:center;gap:8px;padding:9px 11px;' +
+      'background:var(--panel2);border:1px solid var(--line);border-radius:9px;font-size:12.5px">' +
+      '<span style="width:8px;height:8px;border-radius:50%;flex:0 0 8px;background:' +
+      (ok ? '#16a34a' : '#6b7280') + '"></span>' +
+      '<span style="color:' + (ok ? 'var(--txt)' : 'var(--dim)') + '">' + esc(label) + '</span></div>';
+  }
+
+  function load() {
+    state.textContent = 'checking…';
+    state.style.color = 'var(--dim)';
+    fetch('/api/health').then(function (r) { return r.json(); }).then(function (d) {
+      if (!d || d.service !== 'stagelumen-ai') throw new Error('unexpected /api/health payload');
+      var b = d.bindings || {};
+      var nt = d.notify || {};
+      var mailOk = !!(nt.email && nt.email.configured);
+
+      grid.innerHTML = [
+        chip('Database (D1)', !!b.DB, 'Stores leads, conversations, analytics.'),
+        chip('AI (Workers AI)', !!b.AI, 'Powers the reception agent and the content factory.'),
+        chip('Attachment storage (R2)', !!b.UPLOADS,
+          b.UPLOADS ? 'RFQ files land here.' : 'Not bound — the RFQ form falls back to "email us the drawings".'),
+        chip('Lead email alerts', mailOk,
+          mailOk ? '' : 'Set RESEND_API_KEY and NOTIFY_EMAIL in the Cloudflare dashboard.'),
+        chip('Team webhook', !!b.WEBHOOK, '企业微信 / 飞书 / 钉钉 / Slack / Make.'),
+        chip('GitHub fallback', !!b.GITHUB_FALLBACK, 'Opens an issue for every inquiry.')
+      ].join('');
+
+      var missing = [];
+      if (!b.DB) missing.push('D1');
+      if (!b.UPLOADS) missing.push('R2 attachments');
+      if (!mailOk) missing.push('lead email alerts');
+      if (!mailOk && !b.WEBHOOK && !b.GITHUB_FALLBACK) missing.push('any notification channel');
+
+      state.textContent = missing.length ? missing.length + ' missing' : 'all systems go';
+      state.style.color = missing.length ? 'var(--amber)' : 'var(--green)';
+      state.style.borderColor = missing.length ? 'rgba(245,165,36,.5)' : 'rgba(22,163,74,.5)';
+
+      note.innerHTML =
+        esc(d.leads || 0) + ' leads · ' + esc(d.analytics_events || 0) + ' events tracked · deployed commit ' +
+        '<code style="background:var(--panel2);padding:1px 6px;border-radius:4px">' +
+        esc((d.diag && d.diag.pages && d.diag.pages.commit) || '—') + '</code>' +
+        (missing.length
+          ? ' — missing: <strong style="color:var(--amber)">' + esc(missing.join(', ')) + '</strong>'
+          : '') +
+        '<br>Bindings are set in the Cloudflare dashboard, and a new deployment is required before a change takes effect.';
+    }).catch(function (e) {
+      state.textContent = 'api offline';
+      state.style.color = 'var(--red)';
+      grid.innerHTML = chip('/api/health unreachable', false, String((e && e.message) || e));
+      note.textContent = 'The Functions layer did not answer — check the Cloudflare Pages deployment.';
+    });
+  }
+
+  document.getElementById('hRefresh').addEventListener('click', load);
+  load();
+})();
+</script>
 </body>
 </html>
