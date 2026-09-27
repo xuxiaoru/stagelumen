@@ -16,6 +16,51 @@
 
   var ENDPOINT = '/api/inquiry';
 
+  /**
+   * The RFQ form ships in English, German and Spanish. Field mapping no longer
+   * depends on the copy (every control carries a `name`), but the visitor still
+   * deserves status text in their own language — this block is why /de/ and
+   * /es/ no longer answer in English.
+   */
+  function langKey() {
+    var l = String((document.documentElement && document.documentElement.getAttribute('lang')) || 'en');
+    l = l.slice(0, 2).toLowerCase();
+    return (l === 'de' || l === 'es') ? l : 'en';
+  }
+
+  var I18N = {
+    en: {
+      sending: 'Submitting your request…',
+      busy: 'Sending…',
+      badEmail: 'Please enter a valid business email.',
+      ok: '✓ Thanks! Our sales engineer will reply within 24 hours',
+      urgent: ' (flagged urgent).',
+      acked: ' A confirmation has been sent to your inbox — please check your spam folder if it does not arrive.',
+      wa: ' Need it faster? WhatsApp +86 134 3026 2182.',
+      fail: 'Something went wrong. Please email sales20@rigelighting.com or WhatsApp +86 134 3026 2182.'
+    },
+    de: {
+      sending: 'Ihre Anfrage wird gesendet…',
+      busy: 'Wird gesendet…',
+      badEmail: 'Bitte geben Sie eine gültige geschäftliche E-Mail-Adresse ein.',
+      ok: '✓ Danke! Unser Vertrieb antwortet innerhalb von 24 Stunden',
+      urgent: ' (als dringend markiert).',
+      acked: ' Eine Bestätigung wurde an Ihr Postfach gesendet — prüfen Sie bitte auch den Spam-Ordner.',
+      wa: ' Eilt es? WhatsApp +86 134 3026 2182.',
+      fail: 'Es ist ein Fehler aufgetreten. Bitte schreiben Sie an sales20@rigelighting.com oder per WhatsApp +86 134 3026 2182.'
+    },
+    es: {
+      sending: 'Enviando su solicitud…',
+      busy: 'Enviando…',
+      badEmail: 'Introduzca un correo comercial válido.',
+      ok: '✓ ¡Gracias! Nuestro equipo responderá en 24 horas',
+      urgent: ' (marcada como urgente).',
+      acked: ' Hemos enviado una confirmación a su correo — revise también la carpeta de spam.',
+      wa: ' ¿Lo necesita antes? WhatsApp +86 134 3026 2182.',
+      fail: 'Algo salió mal. Escríbanos a sales20@rigelighting.com o por WhatsApp +86 134 3026 2182.'
+    }
+  };
+
   var LABEL_MAP = {
     'first name': 'firstName',
     'last name': 'lastName',
@@ -191,16 +236,20 @@
     var status = form.querySelector('[data-status]');
     var btn = form.querySelector('button[type="submit"]');
     var payload = serialize(form);
+    var T = I18N[langKey()];
 
     if (!payload.email) {
-      setStatus(form, 'Please enter a valid business email.', 'error');
+      setStatus(form, T.badEmail, 'error');
       if (status) status.style.color = '#e5484d';
       return;
     }
 
     var utm = firstTouch();
     payload.pageUrl = location.href;
-    payload.lang = navigator.language && navigator.language.indexOf('zh') === 0 ? 'zh' : 'en';
+    // navigator.language described the *browser*, so a German buyer on a German
+    // phone was filed as 'en' whenever their UI language was English. The page
+    // language is what we actually serve.
+    payload.lang = langKey();
     payload.utm = JSON.stringify(utm);
     payload.sku = payload.sku || currentSku();
 
@@ -212,12 +261,18 @@
       var h1 = document.querySelector('h1');
       if (h1) payload.productName = String(h1.textContent || '').trim().slice(0, 160);
     }
-    payload.hp = '';
+    // The dropdown and the basket both answer "what do they want", and the
+    // sales board reads product_category — never hand it an empty value when
+    // the form has an answer.
+    if (!payload.productCategory && payload.category) payload.productCategory = payload.category;
+    // The honeypot (input[name=hp]) is a real field in the markup, so it is
+    // deliberately NOT cleared here — blanking it made the trap useless. A bot
+    // that autofills every input trips it and the API drops the post.
 
     addHoneypot(form);
     form.setAttribute('data-sl-busy', '1');
-    if (btn) { btn.disabled = true; btn.setAttribute('data-sl-text', btn.textContent); btn.textContent = 'Sending…'; }
-    setStatus(form, 'Submitting your request…', 'loading');
+    if (btn) { btn.disabled = true; btn.setAttribute('data-sl-text', btn.textContent); btn.textContent = T.busy; }
+    setStatus(form, T.sending, 'loading');
 
     fetch(ENDPOINT, {
       method: 'POST',
@@ -242,11 +297,10 @@
           var acked = data.autoreply && data.autoreply.sent;
           setStatus(
             form,
-            '✓ Thanks! Our sales engineer will reply within 24 hours' +
-              (data.triage && data.triage.urgency === 'high' ? ' (flagged urgent).' : '.') +
-              (acked
-                ? ' A confirmation has been sent to your inbox — please check your spam folder if it does not arrive.'
-                : ''),
+            T.ok +
+              (data.triage && data.triage.urgency === 'high' ? T.urgent : '.') +
+              (acked ? T.acked : '') +
+              T.wa,
             'success'
           );
           if (status) status.style.color = '#16a34a';
@@ -256,7 +310,14 @@
         }
       })
       .catch(function (err) {
-        setStatus(form, 'Something went wrong. Please email sales20@rigelighting.com', 'error');
+        // The API answers with actionable reasons ("A valid business email is
+        // required.", "Too many requests…"). Those used to be thrown away in
+        // favour of a dead-end notice, losing enquiries that were one field
+        // away from being sent. Pass anything clearly meant for the visitor
+        // through; fall back only for genuine failures.
+        var msg = String((err && err.message) || '').trim();
+        var recoverable = /required|valid|tell us|too many|rate/i.test(msg);
+        setStatus(form, recoverable ? msg : T.fail, 'error');
         if (status) status.style.color = '#e5484d';
         console.error('[inquiry]', err);
       })

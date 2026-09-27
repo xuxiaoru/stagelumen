@@ -88,6 +88,38 @@
     return q || '';
   }
 
+  /**
+   * Remember where this session came from, on the landing page itself.
+   *
+   * inquiry.js already reads sessionStorage['sl_utm'] at submit time, but
+   * nothing ever wrote it: the form fell back to reading location.search on the
+   * /rfq page, where the campaign parameters no longer exist. Every paid or
+   * organic lead therefore arrived with empty attribution. sessionStorage only,
+   * no identifier, nothing transmitted from here.
+   */
+  function rememberCampaign() {
+    try {
+      if (sessionStorage.getItem('sl_utm')) return;
+      var p = new URLSearchParams(location.search);
+      var data = {
+        utm_source: p.get('utm_source') || '',
+        utm_medium: p.get('utm_medium') || '',
+        utm_campaign: p.get('utm_campaign') || '',
+        gclid: p.get('gclid') || '',
+        fbclid: p.get('fbclid') || '',
+        ref: ''
+      };
+      var hasCampaign = !!(data.utm_source || data.utm_medium || data.utm_campaign ||
+        data.gclid || data.fbclid);
+      try {
+        var r = document.referrer || '';
+        if (r && r.indexOf(location.origin) !== 0) data.ref = r;
+      } catch (e) { /* ignore */ }
+      if (!hasCampaign && !data.ref) return;
+      sessionStorage.setItem('sl_utm', JSON.stringify(data));
+    } catch (e) { /* private mode: attribution is optional */ }
+  }
+
   function onClick(e) {
     try {
       var t = e.target;
@@ -161,6 +193,10 @@
   var state = consentState();
   if (state === 'decline') blocked = true;
   withId = state === 'accept';
+
+  // Skipped for visitors who declined: attribution is marketing, and we honour
+  // the opt-out even when it costs us a data point.
+  if (state !== 'decline') rememberCampaign();
 
   if (!blocked && (!REQUIRE_CONSENT || withId)) start();
 

@@ -155,139 +155,201 @@
             <p id="poiHint" style="font-size:12px;color:var(--dim);margin:8px 0 0;"></p>
           </div>
 
-          <div class="form-row" data-page-node-id="jdiwZUlpOetEf6O3mTRlbm">
-            <div class="form-group" data-page-node-id="I2CPhyHghh0UwFdWMgxAg0">
-              <label data-page-node-id="DO8dr5yon876rce5g9W1EJ">First Name *</label>
-              <input type="text" required placeholder="Jane" data-page-node-id="kFWPHcE9hrYZEAssKA6VSj" />
+          <input type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none" />
+          <div class="form-row">
+            <div class="form-group">
+              <label>First Name *</label>
+              <input type="text" name="firstName" required autocomplete="given-name" placeholder="Jane" />
             </div>
-            <div class="form-group" data-page-node-id="BFaywZsUzJOS66MbIV6pod">
-              <label data-page-node-id="DCjyKySYFm5bN6CwQS0ycf">Last Name *</label>
-              <input type="text" required placeholder="Smith" data-page-node-id="XtPWMzhcyzqmzn0Og1OlRK" />
-            </div>
-          </div>
-
-          <div class="form-row" data-page-node-id="TKzRKRmMylltNByUSxeYSL">
-            <div class="form-group" data-page-node-id="ZSRsQZQ3IGUJdcxqMb7iIo">
-              <label data-page-node-id="Oje3fmFqzln5OKsIQf3KP0">Business Email *</label>
-              <input type="email" required placeholder="jane@yourcompany.com" data-page-node-id="2REKL9W0qc9IvLrAciElHL" />
-            </div>
-            <div class="form-group" data-page-node-id="AhzdiQpMEqGMsQ9cYUuJIr">
-              <label data-page-node-id="5HueCxIrcCk7REc68hqycc">Phone / WhatsApp</label>
-              <input type="tel" placeholder="+1 555 123 4567" data-page-node-id="fDyeB5VgMLymzQLHT68lO0" />
+            <div class="form-group">
+              <label>Last Name *</label>
+              <input type="text" name="lastName" required autocomplete="family-name" placeholder="Smith" />
             </div>
           </div>
-
-          <div class="form-row" data-page-node-id="Ys4iELNoiX0YZOUvmtRuy9">
-            <div class="form-group" data-page-node-id="9aqXH67qIHE8HOJSo6SS2S">
-              <label data-page-node-id="HbMUVWhGquESxJDfgMsKBh">Company *</label>
-              <input type="text" required placeholder="Your Company" data-page-node-id="oQPGm3Xv5wgZt7MqojsgL7" />
+          <div class="form-row">
+            <div class="form-group">
+              <label>Business Email *</label>
+              <input type="email" name="email" required autocomplete="email" placeholder="jane@yourcompany.com" />
             </div>
-            <div class="form-group" data-page-node-id="hNad6lgBHPIkvIfS5hkia4">
-              <label data-page-node-id="zW2Nvvg46naslG51cudn3Z">Country *</label>
-              <select required data-page-node-id="NGaLAFO4Ngp9kpgAlOlcXY">
-                <option value="" data-page-node-id="jaBwhYHgow5lmhhFMAhGcZ">Select country</option>
-                <option data-page-node-id="YnY8kGXaH7TnH2Bu2BNDci">United States</option>
-                <option data-page-node-id="wG2ZoT6R6105rwGWLtBeLV">United Kingdom</option>
-                <option data-page-node-id="J765qT4mrdCV2BX8ahQQLI">Germany</option>
-                <option data-page-node-id="MT6T8RfHzcSdy047Fd6I5k">France</option>
-                <option data-page-node-id="7KL5rHfVCcqookLqCstA7K">Spain</option>
-                <option data-page-node-id="J5SSKhj2yZXGltNytRBwrK">Australia</option>
-                <option data-page-node-id="79aNF9bQZifmEkl1Yk6Glr">Japan</option>
-                <option data-page-node-id="XMozxt6miHTF4ouyvSdMCs">Singapore</option>
-                <option data-page-node-id="mE8T8CoPWrNeEsp97zidDB">UAE</option>
-                <option data-page-node-id="7PbMnSGL1uLC04kp4SwKd6">Brazil</option>
-                <option data-page-node-id="Q46akL8pIAGEFKYTx3cWay">Mexico</option>
-                <option data-page-node-id="T22W7gFqy4Ds98krgA9gnU">Other</option>
+            <div class="form-group">
+              <label>Phone / WhatsApp</label>
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+1 555 123 4567" />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Company *</label>
+              <input type="text" name="company" required autocomplete="organization" placeholder="Your Company" />
+            </div>
+            <div class="form-group">
+              <label>Country *</label>
+              <select name="country" required>
+                <option value="">Select country</option>
+                <optgroup label="North America">
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                </optgroup>
+                <optgroup label="Latin America">
+                <option value="Mexico">Mexico</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Peru">Peru</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Panama">Panama</option>
+                <option value="Uruguay">Uruguay</option>
+                </optgroup>
+                <optgroup label="Europe">
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="Italy">Italy</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Norway">Norway</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Finland">Finland</option>
+                <option value="Austria">Austria</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Romania">Romania</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Greece">Greece</option>
+                <option value="Ireland">Ireland</option>
+                </optgroup>
+                <optgroup label="Middle East &amp; Africa">
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Israel">Israel</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Egypt">Egypt</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Algeria">Algeria</option>
+                </optgroup>
+                <optgroup label="Asia-Pacific">
+                <option value="Australia">Australia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Japan">Japan</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Philippines">Philippines</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                </optgroup>
+                <option value="Other">Other</option>
               </select>
             </div>
           </div>
-
-          <div class="form-row" data-page-node-id="JGM17VjwCzNi0mRl9uxgIN">
-            <div class="form-group" data-page-node-id="Ovd0bRfLGCHqUhZ0lnlzZw">
-              <label data-page-node-id="ADTZtY8NGeEQibfbH5zH44">Product Category *</label>
-              <select required data-page-node-id="bGmpqE6luwNOY3PprwrNXR">
-                <option value="" data-page-node-id="5Pw51oOtpj87R15ywDA12n">Select category</option>
-                <option data-page-node-id="yP4EehnPtul6YHDq36FrlQ">Moving Head Beam</option>
-                <option data-page-node-id="TQQG0B2YkmtdCCDLMxf4Iq">Moving Head Spot</option>
-                <option data-page-node-id="nF0ALSsMb4cC4tLSYKB82b">Moving Head Wash</option>
-                <option data-page-node-id="6DcjH7aawVoQFl4CGMfGqF">LED Par</option>
-                <option data-page-node-id="3xsUsXQlmscL1ieeKgHIFk">Laser Projector</option>
-                <option data-page-node-id="RIFM0KIwr8GDwi8VANNEIf">Outdoor IP65</option>
-                <option data-page-node-id="4Py1bCw1hYRWDriJTwIuLT">DMX Controller</option>
-                <option data-page-node-id="6XzPKIbVhZkivfrCLxcyqR">Package / Bundle</option>
-                <option data-page-node-id="jVNshPFJm8Uq4gTXqfluAB">Custom OEM</option>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Product Category *</label>
+              <select name="category" required>
+                <option value="">Select category</option>
+                <option value="Moving Heads">Moving Heads</option>
+                <option value="Pixel &amp; Effects">Pixel &amp; Effects</option>
+                <option value="Theatre Lighting">Theatre Lighting</option>
+                <option value="LED PAR &amp; Uplights">LED PAR &amp; Uplights</option>
+                <option value="Lasers">Lasers</option>
+                <option value="Controllers">Controllers</option>
+                <option value="LED Profile Spot">LED Profile Spot</option>
+                <option value="Stage Effect Machines">Stage Effect Machines</option>
+                <option value="LED Kinetic Winch &amp; Lighting Ball">LED Kinetic Winch &amp; Lighting Ball</option>
+                <option value="LED Gobo &amp; Logo Projector Light">LED Gobo &amp; Logo Projector Light</option>
+                <option value="LED Dance Floor Light">LED Dance Floor Light</option>
+                <option value="Aluminum Truss and Stage">Aluminum Truss and Stage</option>
+                <option value="Other / Not sure yet">Other / Not sure yet</option>
               </select>
             </div>
-            <div class="form-group" data-page-node-id="CUp8vdXKCEHhdDORtpfVDj">
-              <label data-page-node-id="dHPoZJVKVrpxiAcdihNlGz">Application *</label>
-              <select required data-page-node-id="4fW9rt4nUqae3RW01zOQsD">
-                <option value="" data-page-node-id="da9OUzY7UyapqwvUYlpOxh">Select application</option>
-                <option data-page-node-id="yyYxur0sqEvvbOgAbbkXDF">Bar / Nightclub</option>
-                <option data-page-node-id="bIISWDXcwfySqcwdkhnSRb">Concert / Tour</option>
-                <option data-page-node-id="hsEG3PRDFz4FJJxdYi3uuA">Church / Worship</option>
-                <option data-page-node-id="kvqQ1e1NvX0H64wtbGeyEu">Theatre / Auditorium</option>
-                <option data-page-node-id="FzpiyvTeWlQRtFsxrW6hu3">Rental / Staging</option>
-                <option data-page-node-id="BURONoqWTLfcwT6sJZP12u">Retail / Commercial</option>
-                <option data-page-node-id="sXlQzFuaYahTVBb4cHax3v">Outdoor Event</option>
-                <option data-page-node-id="7OMMRynN6qFhTT8aRIH216">Other</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="form-row" data-page-node-id="4wVCeDTDto0qqBcwLRSNPW">
-            <div class="form-group" data-page-node-id="I1U1jDK8dLaFJASGpj9JCh">
-              <label data-page-node-id="03peFT0AfYVAugwQBgxxHN">Estimated Quantity *</label>
-              <select required data-page-node-id="RDdpzjo1BCKMaZpolkacTz">
-                <option value="" data-page-node-id="JiP5hEyhUhEKVuPKyAyQdw">Select</option>
-                <option data-page-node-id="ag4gc1eIvDUSn4jhYWlXHx">1 – 10 units</option>
-                <option data-page-node-id="Vnr830JFgSI3ZvglCTpQLS">10 – 50 units</option>
-                <option data-page-node-id="fXhqtMPoPhD3otGq5XSnoy">50 – 200 units</option>
-                <option data-page-node-id="9MPK4koINLirJkNifDFJ9y">200 – 1000 units</option>
-                <option data-page-node-id="MsiPpd415zMHSdjjlLmQmi">1000+ units</option>
-              </select>
-            </div>
-            <div class="form-group" data-page-node-id="CiDpkEBaTLSKfkaxAC7cBM">
-              <label data-page-node-id="GzgJA6juiMf5kyBBqgXQEd">Target Budget (USD)</label>
-              <select data-page-node-id="mlSGLYRtDpU1WbWNVe8O3f">
-                <option value="" data-page-node-id="PVa8NVeKlp8pHVU1bcVhCo">Optional</option>
-                <option data-page-node-id="BUbsMDv35khw5snskR7nSl">Under $2,000</option>
-                <option data-page-node-id="PPYx0UVOBsZVtqJQbCxuiz">$2,000 – $10,000</option>
-                <option data-page-node-id="uT9yoSdxaXg8SWEY1SR7FI">$10,000 – $50,000</option>
-                <option data-page-node-id="iQVtHwBTSq995iU2yUZT6n">$50,000 – $200,000</option>
-                <option data-page-node-id="FuseQqYHlHjFmo3OpDnDAV">$200,000+</option>
+            <div class="form-group">
+              <label>Application *</label>
+              <select name="application" required>
+                <option value="">Select application</option>
+                <option value="Concert &amp; Festival">Concert &amp; Festival</option>
+                <option value="Rental &amp; Touring">Rental &amp; Touring</option>
+                <option value="Theatre &amp; Performing Arts">Theatre &amp; Performing Arts</option>
+                <option value="Club &amp; DJ / Bar">Club &amp; DJ / Bar</option>
+                <option value="Church &amp; Worship">Church &amp; Worship</option>
+                <option value="Event &amp; Wedding">Event &amp; Wedding</option>
+                <option value="Retail / Commercial">Retail / Commercial</option>
+                <option value="Outdoor / Architectural">Outdoor / Architectural</option>
+                <option value="Other">Other</option>
               </select>
             </div>
           </div>
-
-          <div class="form-row" data-page-node-id="Js9Q7tEgCGDaXFmNkakbwI">
-            <div class="form-group" data-page-node-id="JaD71GRGi2yUGoKAdvKJm3">
-              <label data-page-node-id="bENDOCTpBsdIfxNCOCdIZw">Lead Time Expected</label>
-              <select data-page-node-id="yaNi4czhlfcF2Q4PWXgSjv">
-                <option value="" data-page-node-id="c4C12vZUPLYMnvrPZ9gRD5">Optional</option>
-                <option data-page-node-id="33Ai9TS03gdHugOWMvDgf4">Urgent (≤7 days)</option>
-                <option data-page-node-id="0kYxFG1Kuz9SJO6dOfyJzF">Standard (15–30 days)</option>
-                <option data-page-node-id="9HUjPioF8hLWxQJWRtrABn">Flexible (30+ days)</option>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Estimated Quantity *</label>
+              <select name="qty" required>
+                <option value="">Select</option>
+                <option value="1 - 10 units">1 - 10 units</option>
+                <option value="10 - 50 units">10 - 50 units</option>
+                <option value="50 - 200 units">50 - 200 units</option>
+                <option value="200 - 1000 units">200 - 1000 units</option>
+                <option value="1000+ units">1000+ units</option>
               </select>
             </div>
-            <div class="form-group" data-page-node-id="CeTdtS6lskLDCFtXPJ68z8">
-              <label data-page-node-id="RByd9tesLpOZT0G0AiPLMu">Trade Terms</label>
-              <select data-page-node-id="0rqnjI0ZDWLXjHWw6mijoe">
-                <option value="" data-page-node-id="sY598JDsCHr6tXgGnCnBvW">Optional</option>
-                <option data-page-node-id="Cp1ho9qeFPNyMKBgyPTKDy">FOB Shenzhen</option>
-                <option data-page-node-id="tLtxhLPCJcBfupBjZYUH6F">CIF destination port</option>
-                <option data-page-node-id="Ty5bas6YHYpmMeUVDGNdGF">DDP US / EU</option>
-                <option data-page-node-id="XIsnzeEVzdNYKHnXbnyNie">EXW</option>
+            <div class="form-group">
+              <label>Target Budget (USD)</label>
+              <select name="budget">
+                <option value="">Optional</option>
+                <option value="Under $2,000">Under $2,000</option>
+                <option value="$2,000 - $10,000">$2,000 - $10,000</option>
+                <option value="$10,000 - $50,000">$10,000 - $50,000</option>
+                <option value="$50,000 - $200,000">$50,000 - $200,000</option>
+                <option value="$200,000+">$200,000+</option>
               </select>
             </div>
           </div>
-
-          <div class="form-group" data-page-node-id="poQesXBGaJwtErBB7Za3xD">
-            <label data-page-node-id="wji1iQ2yFj28QBTed5PBUF">Project Details</label>
-            <textarea placeholder="Room size, mounting height, beam distance, color preferences, OEM/ODM needs…"></textarea>
+          <div class="form-row">
+            <div class="form-group">
+              <label>Lead Time Expected</label>
+              <select name="leadTime">
+                <option value="">Optional</option>
+                <option value="Urgent (≤7 days)">Urgent (≤7 days)</option>
+                <option value="Standard (15-30 days)">Standard (15-30 days)</option>
+                <option value="Flexible (30+ days)">Flexible (30+ days)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Trade Terms</label>
+              <select name="tradeTerms">
+                <option value="">Optional</option>
+                <option value="FOB Shenzhen">FOB Shenzhen</option>
+                <option value="CIF destination port">CIF destination port</option>
+                <option value="DDP US / EU">DDP US / EU</option>
+                <option value="EXW">EXW</option>
+              </select>
+            </div>
           </div>
-
-          <button type="submit" class="btn btn-primary btn-lg btn-block" data-page-node-id="h3iH48DJWCJaTgexwxMyZT">Send Inquiry →</button>
-          <div class="form-status" data-status data-page-node-id="E4ESgUFpNt6uixEZSZKbYn"></div>
+          <div class="form-group">
+              <label>Project Details</label>
+              <textarea name="message" rows="4" placeholder="Room size, mounting height, beam distance, color preferences, OEM/ODM needs…"></textarea>
+          </div>
+          <div class="form-group">
+              <label style="display:flex;gap:9px;align-items:flex-start;font-weight:400;font-size:13px;line-height:1.55;cursor:pointer;text-transform:none">
+                <input type="checkbox" name="consent" value="1" required style="width:auto;flex:0 0 auto;margin:3px 0 0" />
+                <span>I agree to the <a href="privacy.html">Privacy Policy</a> and to being contacted about this enquiry. *</span>
+              </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Send Inquiry →</button>
+          <div class="form-status" data-status></div>
         </form>
       </div>
 
@@ -403,9 +465,9 @@
 <script src="assets/js/cookie-consent.js"></script>
 <script src="assets/js/quote-cart.js?v=1"></script>
 <script src="assets/js/main.js?v=8"></script>
-<script src="assets/js/inquiry.js?v=12"></script>
+<script src="assets/js/inquiry.js?v=13"></script>
 <script src="assets/js/assistant.js?v=11"></script>
-<script src="assets/js/rfq-product.js?v=2"></script>
+<script src="assets/js/rfq-product.js?v=3"></script>
 <script>
   (function () {
     var w = document.getElementById('lsm');
@@ -415,6 +477,6 @@
     document.addEventListener('click', function () { w.classList.remove('open'); });
   })();
 </script>
-<script src="assets/js/track.js?v=3"></script>
+<script src="assets/js/track.js?v=4"></script>
 </body>
 </html>

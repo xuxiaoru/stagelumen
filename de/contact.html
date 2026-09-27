@@ -173,56 +173,121 @@
       <div class="form-card">
         <h2>Nachricht senden</h2>
         <form data-ajax>
+
+          <input type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none" />
           <div class="form-row">
             <div class="form-group">
               <label>Vorname *</label>
-              <input type="text" required placeholder="Jane" />
+              <input type="text" name="firstName" required autocomplete="given-name" placeholder="Jane" />
             </div>
             <div class="form-group">
               <label>Nachname *</label>
-              <input type="text" required placeholder="Smith" />
+              <input type="text" name="lastName" required autocomplete="family-name" placeholder="Smith" />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
-              <label>Geschäfts-E-Mail *</label>
-              <input type="email" required placeholder="jane@yourcompany.com" />
+              <label>Geschäftliche E-Mail *</label>
+              <input type="email" name="email" required autocomplete="email" placeholder="jane@yourcompany.com" />
             </div>
             <div class="form-group">
               <label>Telefon / WhatsApp</label>
-              <input type="tel" placeholder="+49 170 123 4567" />
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+1 555 123 4567" />
             </div>
           </div>
           <div class="form-row">
             <div class="form-group">
               <label>Unternehmen *</label>
-              <input type="text" required placeholder="Ihr Unternehmen" />
+              <input type="text" name="company" required autocomplete="organization" placeholder="Your Company" />
             </div>
             <div class="form-group">
               <label>Land *</label>
-              <select required>
+              <select name="country" required>
                 <option value="">Land auswählen</option>
-                <option>United States</option>
-                <option>United Kingdom</option>
-                <option>Deutschland</option>
-                <option>France</option>
-                <option>España</option>
-                <option>Australia</option>
-                <option>Japan</option>
-                <option>Singapore</option>
-                <option>UAE</option>
-                <option>Brazil</option>
-                <option>Mexico</option>
-                <option>Anderes Land</option>
+                <optgroup label="Nordamerika">
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                </optgroup>
+                <optgroup label="Lateinamerika">
+                <option value="Mexico">Mexico</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Peru">Peru</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Panama">Panama</option>
+                <option value="Uruguay">Uruguay</option>
+                </optgroup>
+                <optgroup label="Europa">
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="Italy">Italy</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Norway">Norway</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Finland">Finland</option>
+                <option value="Austria">Austria</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Romania">Romania</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Greece">Greece</option>
+                <option value="Ireland">Ireland</option>
+                </optgroup>
+                <optgroup label="Naher Osten &amp; Afrika">
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Israel">Israel</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Egypt">Egypt</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Algeria">Algeria</option>
+                </optgroup>
+                <optgroup label="Asien-Pazifik">
+                <option value="Australia">Australia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Japan">Japan</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Philippines">Philippines</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                </optgroup>
+                <option value="Sonstiges">Sonstiges</option>
               </select>
             </div>
           </div>
           <div class="form-group">
-            <label>Nachricht *</label>
-            <textarea required rows="5" placeholder="Erzählen Sie uns von Ihrem Projekt, den gewünschten Produkten und der geschätzten Stückzahl…"></textarea>
+              <label>Nachricht *</label>
+              <textarea name="message" required rows="5" placeholder="Erzählen Sie uns von Ihrem Projekt, den gewünschten Produkten und der geschätzten Stückzahl…"></textarea>
+          </div>
+          <div class="form-group">
+              <label style="display:flex;gap:9px;align-items:flex-start;font-weight:400;font-size:13px;line-height:1.55;cursor:pointer;text-transform:none">
+                <input type="checkbox" name="consent" value="1" required style="width:auto;flex:0 0 auto;margin:3px 0 0" />
+                <span>Ich stimme der <a href="privacy.html">Datenschutzerklärung</a> zu und damit, zu dieser Anfrage kontaktiert zu werden. *</span>
+              </label>
           </div>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Nachricht senden</button>
-          <p data-status class="form-status"></p>
+          <div class="form-status" data-status></div>
         </form>
       </div>
     </div>
@@ -313,7 +378,7 @@
 
 <script src="assets/js/cookie-consent.js"></script>
 <script src="assets/js/main.js?v=8"></script>
-<script src="assets/js/inquiry.js?v=12"></script>
+<script src="assets/js/inquiry.js?v=13"></script>
 <script>
   (function () {
     var w = document.getElementById('lsm');
@@ -323,6 +388,6 @@
     document.addEventListener('click', function () { w.classList.remove('open'); });
   })();
 </script>
-<script src="assets/js/track.js?v=3"></script>
+<script src="assets/js/track.js?v=4"></script>
 </body>
 </html>

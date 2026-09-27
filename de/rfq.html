@@ -154,137 +154,199 @@
             <p id="poiHint" style="font-size:12px;color:var(--dim);margin:8px 0 0;"></p>
           </div>
 
+          <input type="text" name="hp" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none" />
           <div class="form-row">
             <div class="form-group">
               <label>Vorname *</label>
-              <input type="text" required placeholder="Jane" />
+              <input type="text" name="firstName" required autocomplete="given-name" placeholder="Jane" />
             </div>
             <div class="form-group">
               <label>Nachname *</label>
-              <input type="text" required placeholder="Smith" />
+              <input type="text" name="lastName" required autocomplete="family-name" placeholder="Smith" />
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
-              <label>Geschäfts-E-Mail *</label>
-              <input type="email" required placeholder="jane@yourcompany.com" />
+              <label>Geschäftliche E-Mail *</label>
+              <input type="email" name="email" required autocomplete="email" placeholder="jane@yourcompany.com" />
             </div>
             <div class="form-group">
               <label>Telefon / WhatsApp</label>
-              <input type="tel" placeholder="+49 170 123 4567" />
+              <input type="tel" name="phone" autocomplete="tel" placeholder="+1 555 123 4567" />
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label>Unternehmen *</label>
-              <input type="text" required placeholder="Ihr Unternehmen" />
+              <input type="text" name="company" required autocomplete="organization" placeholder="Your Company" />
             </div>
             <div class="form-group">
               <label>Land *</label>
-              <select required>
+              <select name="country" required>
                 <option value="">Land auswählen</option>
-                <option>United States</option>
-                <option>United Kingdom</option>
-                <option>Deutschland</option>
-                <option>France</option>
-                <option>España</option>
-                <option>Australia</option>
-                <option>Japan</option>
-                <option>Singapore</option>
-                <option>UAE</option>
-                <option>Brazil</option>
-                <option>Mexico</option>
-                <option>Anderes Land</option>
+                <optgroup label="Nordamerika">
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                </optgroup>
+                <optgroup label="Lateinamerika">
+                <option value="Mexico">Mexico</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Chile">Chile</option>
+                <option value="Colombia">Colombia</option>
+                <option value="Peru">Peru</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Dominican Republic">Dominican Republic</option>
+                <option value="Guatemala">Guatemala</option>
+                <option value="Costa Rica">Costa Rica</option>
+                <option value="Panama">Panama</option>
+                <option value="Uruguay">Uruguay</option>
+                </optgroup>
+                <optgroup label="Europa">
+                <option value="United Kingdom">United Kingdom</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Spain">Spain</option>
+                <option value="Italy">Italy</option>
+                <option value="Netherlands">Netherlands</option>
+                <option value="Belgium">Belgium</option>
+                <option value="Poland">Poland</option>
+                <option value="Portugal">Portugal</option>
+                <option value="Sweden">Sweden</option>
+                <option value="Norway">Norway</option>
+                <option value="Denmark">Denmark</option>
+                <option value="Finland">Finland</option>
+                <option value="Austria">Austria</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Czech Republic">Czech Republic</option>
+                <option value="Romania">Romania</option>
+                <option value="Hungary">Hungary</option>
+                <option value="Greece">Greece</option>
+                <option value="Ireland">Ireland</option>
+                </optgroup>
+                <optgroup label="Naher Osten &amp; Afrika">
+                <option value="United Arab Emirates">United Arab Emirates</option>
+                <option value="Saudi Arabia">Saudi Arabia</option>
+                <option value="Qatar">Qatar</option>
+                <option value="Kuwait">Kuwait</option>
+                <option value="Israel">Israel</option>
+                <option value="Turkey">Turkey</option>
+                <option value="Egypt">Egypt</option>
+                <option value="South Africa">South Africa</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Morocco">Morocco</option>
+                <option value="Algeria">Algeria</option>
+                </optgroup>
+                <optgroup label="Asien-Pazifik">
+                <option value="Australia">Australia</option>
+                <option value="New Zealand">New Zealand</option>
+                <option value="Japan">Japan</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Singapore">Singapore</option>
+                <option value="Malaysia">Malaysia</option>
+                <option value="Thailand">Thailand</option>
+                <option value="Vietnam">Vietnam</option>
+                <option value="Indonesia">Indonesia</option>
+                <option value="Philippines">Philippines</option>
+                <option value="India">India</option>
+                <option value="Pakistan">Pakistan</option>
+                </optgroup>
+                <option value="Sonstiges">Sonstiges</option>
               </select>
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label>Produktkategorie *</label>
-              <select required>
+              <select name="category" required>
                 <option value="">Kategorie auswählen</option>
-                <option>Moving Head Beam</option>
-                <option>Moving Head Spot</option>
-                <option>Moving Head Wash</option>
-                <option>LED Par</option>
-                <option>Laser Projector</option>
-                <option>Outdoor IP65</option>
-                <option>DMX Controller</option>
-                <option>Package / Bundle</option>
-                <option>Custom OEM</option>
+                <option value="Moving Heads">Moving Heads</option>
+                <option value="Pixel &amp; Effects">Pixel &amp; Effekte</option>
+                <option value="Theatre Lighting">Theaterbeleuchtung</option>
+                <option value="LED PAR &amp; Uplights">LED PAR &amp; Uplights</option>
+                <option value="Lasers">Laser</option>
+                <option value="Controllers">Controller</option>
+                <option value="LED Profile Spot">LED-Profilscheinwerfer</option>
+                <option value="Stage Effect Machines">Bühneneffektmaschinen</option>
+                <option value="LED Kinetic Winch &amp; Lighting Ball">LED Kinetic Winde &amp; Lichtkugel</option>
+                <option value="LED Gobo &amp; Logo Projector Light">LED Gobo- &amp; Logo-Projektor</option>
+                <option value="LED Dance Floor Light">LED Tanzflächenlicht</option>
+                <option value="Aluminum Truss and Stage">Aluminium-Traversen &amp; Bühne</option>
+                <option value="Other / Not sure yet">Sonstiges / Noch unklar</option>
               </select>
             </div>
             <div class="form-group">
               <label>Anwendung *</label>
-              <select required>
+              <select name="application" required>
                 <option value="">Anwendung auswählen</option>
-                <option>Bar / Nachtclub</option>
-                <option>Konzert / Tour</option>
-                <option>Kirche / Gottesdienst</option>
-                <option>Theater / Auditoium</option>
-                <option>Verleih / Staging</option>
-                <option>Einzelhandel / Gewerbe</option>
-                <option>Outdoor-Event</option>
-                <option>Sonstiges</option>
+                <option value="Concert &amp; Festival">Konzert &amp; Festival</option>
+                <option value="Rental &amp; Touring">Verleih &amp; Touring</option>
+                <option value="Theatre &amp; Performing Arts">Theater &amp; Darstellende Kunst</option>
+                <option value="Club &amp; DJ / Bar">Club &amp; DJ / Bar</option>
+                <option value="Church &amp; Worship">Kirche &amp; Gottesdienst</option>
+                <option value="Event &amp; Wedding">Event &amp; Hochzeit</option>
+                <option value="Retail / Commercial">Einzelhandel / Gewerbe</option>
+                <option value="Outdoor / Architectural">Außenbereich / Architektur</option>
+                <option value="Other">Sonstiges</option>
               </select>
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
               <label>Geschätzte Stückzahl *</label>
-              <select required>
+              <select name="qty" required>
                 <option value="">Auswählen</option>
-                <option>1 – 10 Stück</option>
-                <option>10 – 50 Stück</option>
-                <option>50 – 200 Stück</option>
-                <option>200 – 1000 Stück</option>
-                <option>1000+ Stück</option>
+                <option value="1 - 10 units">1 - 10 Stück</option>
+                <option value="10 - 50 units">10 - 50 Stück</option>
+                <option value="50 - 200 units">50 - 200 Stück</option>
+                <option value="200 - 1000 units">200 - 1000 Stück</option>
+                <option value="1000+ units">über 1000 Stück</option>
               </select>
             </div>
             <div class="form-group">
               <label>Zielbudget (USD)</label>
-              <select>
+              <select name="budget">
                 <option value="">Optional</option>
-                <option>Unter $2.000</option>
-                <option>$2.000 – $10.000</option>
-                <option>$10.000 – $50.000</option>
-                <option>$50.000 – $200.000</option>
-                <option>$200.000+</option>
+                <option value="Under $2,000">Unter $2,000</option>
+                <option value="$2,000 - $10,000">$2,000 - $10,000</option>
+                <option value="$10,000 - $50,000">$10,000 - $50,000</option>
+                <option value="$50,000 - $200,000">$50,000 - $200,000</option>
+                <option value="$200,000+">$200,000+</option>
               </select>
             </div>
           </div>
-
           <div class="form-row">
             <div class="form-group">
-              <label>Wunsch-Lieferzeit</label>
-              <select>
+              <label>Gewünschte Lieferzeit</label>
+              <select name="leadTime">
                 <option value="">Optional</option>
-                <option>Dringend (≤7 Tage)</option>
-                <option>Standard (15–30 Tage)</option>
-                <option>Flexibel (30+ Tage)</option>
+                <option value="Urgent (≤7 days)">Dringend (≤7 Tage)</option>
+                <option value="Standard (15-30 days)">Standard (15-30 Tage)</option>
+                <option value="Flexible (30+ days)">Flexibel (30+ Tage)</option>
               </select>
             </div>
             <div class="form-group">
-              <label>Lieferkonditionen</label>
-              <select>
+              <label>Lieferbedingungen</label>
+              <select name="tradeTerms">
                 <option value="">Optional</option>
-                <option>FOB Shenzhen</option>
-                <option>CIF Zielhafen</option>
-                <option>DDP USA / EU</option>
-                <option>EXW</option>
+                <option value="FOB Shenzhen">FOB Shenzhen</option>
+                <option value="CIF destination port">CIF destination port</option>
+                <option value="DDP US / EU">DDP US / EU</option>
+                <option value="EXW">EXW</option>
               </select>
             </div>
           </div>
-
           <div class="form-group">
-            <label>Projektdetails</label>
-            <textarea placeholder="Raumgröße, Montagehöhe, Beam-Distanz, Farbwünsche, OEM/ODM-Anforderungen…"></textarea>
+              <label>Projektdetails</label>
+              <textarea name="message" rows="4" placeholder="Raumgröße, Montagehöhe, Strahldistanz, Farbwünsche, OEM/ODM-Anforderungen…"></textarea>
           </div>
-
+          <div class="form-group">
+              <label style="display:flex;gap:9px;align-items:flex-start;font-weight:400;font-size:13px;line-height:1.55;cursor:pointer;text-transform:none">
+                <input type="checkbox" name="consent" value="1" required style="width:auto;flex:0 0 auto;margin:3px 0 0" />
+                <span>Ich stimme der <a href="privacy.html">Datenschutzerklärung</a> zu und damit, zu dieser Anfrage kontaktiert zu werden. *</span>
+              </label>
+          </div>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Anfrage senden →</button>
           <div class="form-status" data-status></div>
         </form>
@@ -402,9 +464,9 @@
 <script src="assets/js/cookie-consent.js"></script>
 <script src="assets/js/quote-cart.js?v=1"></script>
 <script src="assets/js/main.js?v=8"></script>
-<script src="assets/js/inquiry.js?v=12"></script>
+<script src="assets/js/inquiry.js?v=13"></script>
 <script src="assets/js/assistant.js?v=11"></script>
-<script src="assets/js/rfq-product.js?v=2"></script>
+<script src="assets/js/rfq-product.js?v=3"></script>
 <script>
   (function () {
     var w = document.getElementById('lsm');
@@ -414,6 +476,6 @@
     document.addEventListener('click', function () { w.classList.remove('open'); });
   })();
 </script>
-<script src="assets/js/track.js?v=3"></script>
+<script src="assets/js/track.js?v=4"></script>
 </body>
 </html>

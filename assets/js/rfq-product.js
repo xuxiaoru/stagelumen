@@ -33,8 +33,16 @@
   /* ------------------------------------------------------- form introspection */
 
   /**
-   * The form has no stable ids, so locate a control by the text of its label —
-   * the same trick inquiry.js uses, which keeps working if the markup shifts.
+   * Every control now carries a canonical `name`. Looking a field up by its
+   * <label> text only ever worked in English, which is why the German and
+   * Spanish pages kept showing the stale hardcoded category list.
+   */
+  function controlByName(form, tagName, name) {
+    return form.querySelector(tagName + '[name="' + name + '"]');
+  }
+
+  /**
+   * Legacy fallback: locate a control by the text of its label.
    */
   function controlByLabel(form, tagName, needles) {
     var groups = form.querySelectorAll('.form-group');
@@ -49,32 +57,84 @@
     return null;
   }
 
-  /** Replace the hardcoded category list with the real catalogue taxonomy. */
+  /** Localised display names for the catalogue families (values stay English). */
+  var CAT_L10N = {
+    de: {
+      'Pixel & Effects': 'Pixel & Effekte',
+      'Theatre Lighting': 'Theaterbeleuchtung',
+      'Lasers': 'Laser',
+      'Controllers': 'Controller',
+      'LED Profile Spot': 'LED-Profilscheinwerfer',
+      'Stage Effect Machines': 'Bühneneffektmaschinen',
+      'LED Kinetic Winch & Lighting Ball': 'LED Kinetic Winde & Lichtkugel',
+      'LED Gobo & Logo Projector Light': 'LED Gobo- & Logo-Projektor',
+      'LED Dance Floor Light': 'LED Tanzflächenlicht',
+      'Aluminum Truss and Stage': 'Aluminium-Traversen & Bühne'
+    },
+    es: {
+      'Moving Heads': 'Cabezas Móviles',
+      'Pixel & Effects': 'Pixel y Efectos',
+      'Theatre Lighting': 'Iluminación Teatral',
+      'LED PAR & Uplights': 'LED PAR y Uplights',
+      'Lasers': 'Láseres',
+      'Controllers': 'Controladoras',
+      'LED Profile Spot': 'Proyector de Perfil LED',
+      'Stage Effect Machines': 'Máquinas de Efectos',
+      'LED Kinetic Winch & Lighting Ball': 'Polipasto Cinético LED y Bola de Luz',
+      'LED Gobo & Logo Projector Light': 'Proyector Gobo y Logo LED',
+      'LED Dance Floor Light': 'Suelo de Baile LED',
+      'Aluminum Truss and Stage': 'Estructuras de Aluminio y Escenario'
+    }
+  };
+
+  var CAT_UI = {
+    en: { ph: 'Select category', other: 'Other / Not sure yet' },
+    de: { ph: 'Kategorie auswählen', other: 'Sonstiges / Noch unklar' },
+    es: { ph: 'Seleccionar categoría', other: 'Otro / Aún no lo sé' }
+  };
+
+  function uiLang() {
+    var l = String((document.documentElement && document.documentElement.getAttribute('lang')) || 'en');
+    l = l.slice(0, 2).toLowerCase();
+    return (l === 'de' || l === 'es') ? l : 'en';
+  }
+
+  /**
+   * Rebuild the category select from the live catalogue taxonomy, in the
+   * language of the page. The option *value* is always the canonical English
+   * family name so the CRM stays comparable across the three sites.
+   */
   function fillCategories(data) {
     var form = document.querySelector('form[data-ajax]');
     if (!form || !data || !data.categories) return null;
-    var sel = controlByLabel(form, 'select', ['product category']);
+    var sel = controlByName(form, 'select', 'category');
     if (!sel) return null;
 
-    var keep = [];
-    for (var i = 0; i < sel.options.length; i++) {
-      var t = String(sel.options[i].text).toLowerCase();
-      if (t.indexOf('package') !== -1 || t.indexOf('custom') !== -1) keep.push(sel.options[i].text);
-    }
+    var lang = uiLang();
+    var dict = CAT_L10N[lang] || {};
+    var ui = CAT_UI[lang];
+    var chosen = sel.value; // never discard a choice already made
 
-    sel.innerHTML = '<option value="">Select category</option>';
+    sel.innerHTML = '';
+    var ph = document.createElement('option');
+    ph.value = '';
+    ph.textContent = ui.ph;
+    sel.appendChild(ph);
+
     Object.keys(data.categories).forEach(function (k) {
+      var en = data.categories[k].label || k;
       var o = document.createElement('option');
-      o.value = data.categories[k].label || k;
-      o.textContent = data.categories[k].label || k;
+      o.value = en;
+      o.textContent = dict[en] || en;
       sel.appendChild(o);
     });
-    keep.forEach(function (t) {
-      var o = document.createElement('option');
-      o.value = t;
-      o.textContent = t;
-      sel.appendChild(o);
-    });
+
+    var other = document.createElement('option');
+    other.value = 'Other / Not sure yet';
+    other.textContent = ui.other;
+    sel.appendChild(other);
+
+    if (chosen) sel.value = chosen;
     return sel;
   }
 
@@ -82,7 +142,7 @@
   function syncQtySelect(total) {
     var form = document.querySelector('form[data-ajax]');
     if (!form || !total) return;
-    var sel = controlByLabel(form, 'select', ['estimated quantity', 'quantity']);
+    var sel = controlByName(form, 'select', 'qty');
     if (!sel || sel.getAttribute('data-user-touched') === '1') return;
     sel.addEventListener('change', function () { sel.setAttribute('data-user-touched', '1'); });
 
