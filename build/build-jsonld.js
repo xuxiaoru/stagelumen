@@ -176,6 +176,15 @@ function main() {
     name: brand,
     legalName: settings.companyLegalName || brand,
     url: SITE + '/',
+    // Google and Bing use `logo` as the brand mark in knowledge panels and
+    // entity cards; `image` is the generic fallback. Both must be absolute.
+    logo: {
+      '@type': 'ImageObject',
+      url: SITE + '/assets/images/brand/logo-rigeba.png',
+      width: 182,
+      height: 170,
+    },
+    image: SITE + '/assets/images/brand/og-image.jpg',
     description:
       'Professional stage lighting manufacturer in Guangzhou, China. Moving heads, pixel and effect fixtures, ' +
       'LED PAR and wall washers, lasers, controllers and theatre lighting, supplied factory-direct with OEM / ODM service.',

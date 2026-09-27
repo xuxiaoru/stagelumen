@@ -272,7 +272,15 @@ function articlePage(p) {
   const desc = escAttr(p.excerpt || p.title);
   // Social cards need an absolute URL; a relative path is silently ignored by
   // WhatsApp, LinkedIn and X, which then post a text-only link.
-  const shareImage = p.image ? SITE + '/' + String(p.image).replace(/^\.?\//, '') : '';
+  // Posts with no hero image fall back to the site-wide card so the link still
+  // unfurls with a picture instead of degrading to a bare text link — buyers
+  // forward these links on WhatsApp constantly.
+  const DEFAULT_OG = SITE + '/assets/images/brand/og-image.jpg';
+  const shareImage = p.image ? SITE + '/' + String(p.image).replace(/^\.?\//, '') : DEFAULT_OG;
+  const shareAlt = escAttr(
+    p.imageAlt || (p.image ? p.title : 'RiGeBa Lighting — professional stage lighting manufacturer in Guangzhou, China')
+  );
+  const canonical = SITE + '/content/blog/' + encodeURIComponent(p.slug);
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -281,14 +289,20 @@ function articlePage(p) {
   <title>${title} | RiGeBa Lighting</title>
   <meta name="description" content="${desc}" />
   <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="RiGeBa Lighting" />
   <meta property="og:title" content="${title}" />
   <meta property="og:description" content="${desc}" />
-${shareImage ? '  <meta property="og:image" content="' + escAttr(shareImage) + '" />\n' : ''}${shareImage ? '  <meta property="og:image:alt" content="' + escAttr(p.imageAlt || p.title) + '" />\n' : ''}  <meta name="twitter:card" content="${shareImage ? 'summary_large_image' : 'summary'}" />
+  <meta property="og:url" content="${canonical}" />
+  <meta property="og:image" content="${escAttr(shareImage)}" />
+  <meta property="og:image:alt" content="${shareAlt}" />
+  <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="${title}" />
   <meta name="twitter:description" content="${desc}" />
-${shareImage ? '  <meta name="twitter:image" content="' + escAttr(shareImage) + '" />\n' : ''}  <link rel="canonical" href="${SITE}/content/blog/${encodeURIComponent(p.slug)}" />
+  <meta name="twitter:image" content="${escAttr(shareImage)}" />
+  <link rel="canonical" href="${canonical}" />
   <link rel="stylesheet" href="../../assets/css/style.css${cssVersion()}" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b00'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-size='48' font-weight='800' fill='white' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/brand/favicon-32.png" />
   <!-- ${GENERATED} -->
 ${faqJsonLd(p)}  <style>
     .blog-article { max-width: 760px; margin: 0 auto; }

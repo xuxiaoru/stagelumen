@@ -11,9 +11,10 @@
   <link rel="alternate" hreflang="de" href="https://www.rigebalighting.com/de/about" />
   <link rel="alternate" hreflang="es" href="https://www.rigebalighting.com/es/about" />
   <link rel="alternate" hreflang="x-default" href="https://www.rigebalighting.com/about" />
-  <link rel="stylesheet" href="assets/css/style.css?v=14" />
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23ff6b00'/%3E%3Ctext x='50' y='62' text-anchor='middle' font-size='48' font-weight='800' fill='white' font-family='Arial'%3ER%3C/text%3E%3C/svg%3E" />
-  <style>
+  <link rel="stylesheet" href="assets/css/style.css?v=15" />
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/brand/favicon-32.png" />
+<style>
     .lsm{position:relative;display:inline-block}
     .lsm-menu{display:none;position:absolute;right:0;top:calc(100% + 8px);background:var(--bg-2,#161a22);border:1px solid rgba(255,255,255,.14);border-radius:10px;min-width:130px;padding:6px;z-index:99;box-shadow:0 8px 24px rgba(0,0,0,.35)}
     .lsm.open .lsm-menu{display:block}
@@ -21,6 +22,18 @@
     .lsm-menu a:hover{background:rgba(255,255,255,.08)}
     .lsm-menu a.cur{opacity:.55;pointer-events:none}
   </style>
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="RiGeBa Lighting" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:title" content="Sobre RiGeBa Lighting | Fabricante de Iluminación Escénica desde 2010" />
+  <meta property="og:description" content="RiGeBa Lighting opera una instalación de 8.000 m² en Guangzhou con líneas SMT, montaje y test de envejecimiento. Certificado ISO 9001, OEM / ODM para marcas globales." />
+  <meta property="og:url" content="https://www.rigebalighting.com/es/about" />
+  <meta property="og:image" content="https://www.rigebalighting.com/assets/images/brand/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="RiGeBa Lighting — professional stage lighting manufacturer in Guangzhou, China" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://www.rigebalighting.com/assets/images/brand/og-image.jpg" />
 </head>
 <body>
 <div class="topbar">
@@ -162,16 +175,42 @@
       <p class="section-eyebrow">Nuestra fábrica</p>
       <h2 class="section-title">Dentro de RiGeBa Lighting, Guangzhou</h2>
     </div>
-    <div class="factory-grid">
-      <div class="factory-tile">🏭</div>
-      <div class="factory-tile">🔧</div>
-      <div class="factory-tile">⚙️</div>
-      <div class="factory-tile">🔬</div>
-      <div class="factory-tile">📦</div>
-      <div class="factory-tile">🚛</div>
-      <div class="factory-tile">💡</div>
-      <div class="factory-tile">✅</div>
+    <div class="factory-photos">
+      <figure class="factory-shot">
+        <img src="/assets/images/factory/workshop.jpg" alt="Chapa y mecanizado CNC en la fábrica de RiGeBa Lighting en Cantón" width="960" height="540" loading="lazy" />
+        <figcaption>Chapa y CNC</figcaption>
+      </figure>
+      <figure class="factory-shot">
+        <img src="/assets/images/factory/assembly.jpg" alt="Operario montando el cableado LED de un equipo de iluminación" width="960" height="540" loading="lazy" />
+        <figcaption>Cableado LED y montaje</figcaption>
+      </figure>
+      <figure class="factory-shot">
+        <img src="/assets/images/factory/testing.jpg" alt="Cabezas móviles encendidas en la sala de pruebas antes del embalaje" width="960" height="540" loading="lazy" />
+        <figcaption>Sala de pruebas: equipos encendidos antes del embalaje</figcaption>
+      </figure>
+      <figure class="factory-shot">
+        <img src="/assets/images/factory/control-room.jpg" alt="Ingenieros de software programando y probando el comportamiento de los equipos" width="960" height="540" loading="lazy" />
+        <figcaption>Firmware y programación de espectáculos</figcaption>
+      </figure>
     </div>
+
+    <figure class="factory-video">
+      <video controls preload="none" playsinline width="960" height="540" poster="/assets/images/factory/factory-tour-poster.jpg">
+        <source src="/assets/video/factory-tour.mp4" type="video/mp4" />
+        Su navegador no puede reproducir este vídeo. <a href="/assets/video/factory-tour.mp4">Descargar la visita a la fábrica (MP4, 41 s, 4,5 MB)</a>.
+      </video>
+      <figcaption>Visita a la fábrica: 41 segundos grabados en nuestra propia planta: taller de metal, línea de montaje, sala de pruebas y software de control.</figcaption>
+    </figure>
+
+    <figure class="factory-wide">
+      <img src="/assets/images/factory/overview.jpg" alt="Instalaciones de RiGeBa Lighting de un vistazo: edificios, taller de montaje, equipo y almacén de producto acabado" width="1024" height="958" loading="lazy" />
+      <figcaption>Nuestras instalaciones de un vistazo: edificios, talleres, equipo de montaje y almacén de producto acabado.</figcaption>
+    </figure>
+
+    <figure class="factory-wide">
+      <img src="/assets/images/factory/team-tradeshow-2.jpg" alt="El equipo de ventas e ingeniería de RiGeBa Lighting en una feria" width="1500" height="1002" loading="lazy" />
+      <figcaption>Nuestro equipo de ventas e ingeniería en una feria.</figcaption>
+    </figure>
 
     <div class="stats-grid">
       <div class="stat-block">

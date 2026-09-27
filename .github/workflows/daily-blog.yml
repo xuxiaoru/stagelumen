@@ -43,3 +43,40 @@ jobs:
             else if (r.pr) console.log("PR opened:", r.pr.url);
             else console.log("No publish. autoSkipped:", r.autoSkipped || "unknown");
           '
+
+      # Tell Bing about the new post instead of waiting for the crawler to find
+      # it. Only runs when this scheduled run actually published something
+      # (auto-merge clean); the key file is permanently live, so the only wait
+      # needed is for Cloudflare Pages to finish building the commit.
+      - name: Ping IndexNow for the new post
+        if: always()
+        env:
+          ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+        run: |
+          if [ ! -f /tmp/content-resp.json ]; then
+            echo "no content response — nothing to submit"
+            exit 0
+          fi
+          URL=$(node -e '
+            const fs = require("fs");
+            try {
+              const r = JSON.parse(fs.readFileSync("/tmp/content-resp.json","utf8"));
+              if (r.published) console.log(r.published);
+            } catch (e) {}
+          ')
+          if [ -z "$URL" ]; then
+            echo "nothing published this run — IndexNow not called"
+            exit 0
+          fi
+          echo "published: $URL"
+          echo "waiting 180s for the Pages deployment to go live…"
+          sleep 180
+          curl -sS -X POST "https://www.rigebalighting.com/api/indexnow" \
+            -H "authorization: Bearer ${ADMIN_TOKEN}" \
+            -H "content-type: application/json" \
+            -d "{\"urls\":[\"${URL}\"]}" \
+            -o /tmp/indexnow-resp.json \
+            || echo "::warning::IndexNow request failed (non-fatal — the post is already live)"
+          echo "---- indexnow response ----"
+          cat /tmp/indexnow-resp.json 2>/dev/null || true
+          echo

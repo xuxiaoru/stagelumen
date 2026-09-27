@@ -2705,3 +2705,65 @@ footer {
 .file-chip .fc-x:hover { color: #e5484d; }
 .file-chip.is-bad { border-color: rgba(229, 72, 77, 0.5); color: #ff8b8f; }
 .file-note { font-size: 0.75rem; color: var(--text-3); margin-top: 8px; }
+
+
+/* ---------------------------------------------------------------- Factory
+   About-page gallery: real floor photos and the factory-tour video replaced
+   the emoji placeholders that shipped with the first version of the page. */
+.factory-photos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin: 40px 0 0;
+}
+.factory-shot {
+  position: relative;
+  margin: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface-2);
+}
+.factory-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+.factory-shot figcaption {
+  position: absolute;
+  left: 0; right: 0; bottom: 0;
+  padding: 24px 14px 10px;
+  font-size: 0.82rem;
+  color: #fff;
+  background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.74) 100%);
+}
+.factory-video,
+.factory-wide {
+  margin: 24px 0 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--surface-2);
+}
+.factory-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #000;
+}
+.factory-wide img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.factory-video figcaption,
+.factory-wide figcaption {
+  padding: 12px 16px;
+  font-size: 0.85rem;
+  color: var(--text-2);
+}
+@media (max-width: 720px) {
+  .factory-photos { grid-template-columns: 1fr; }
+}
