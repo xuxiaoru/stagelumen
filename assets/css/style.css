@@ -1369,11 +1369,16 @@ footer {
   .menu-toggle { display: flex; }
   .product-grid, .category-grid, .applications-grid,
   .features-grid, .testimonials-grid,
-  .details-grid, .rfq-grid, .footer-grid,
+  .details-grid, .footer-grid,
   .factory-grid, .stats-grid {
     grid-template-columns: repeat(2, 1fr);
   }
   .download-grid { grid-template-columns: 1fr; }
+  /* The form + aside pair stacks from here down. As two equal columns a 768px
+     tablet left the card ~350px wide while its field rows were still two-up,
+     collapsing every input to ~165px — unusable, and the interval where most
+     mobile enquiries were lost. */
+  .rfq-grid { grid-template-columns: 1fr; gap: 36px; }
   .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   section { padding: 60px 0; }
   .detail-grid { grid-template-columns: 1fr; }
