@@ -1,7 +1,22 @@
 {
-  "generated": "2026-09-28T15:41:54.565Z",
-  "count": 25,
+  "generated": "2026-09-28T16:51:39.775Z",
+  "count": 26,
   "posts": [
+    {
+      "title": "Decoding Moving Head Spec Sheets",
+      "slug": "decoding-moving-head-spec-sheets-k3dw",
+      "date": "2026-09-27T19:08:03.242Z",
+      "datePretty": "September 27, 2026",
+      "category": "How-To",
+      "excerpt": "How to read a moving head spec sheet: output, beam angle, pan and tilt range, IP rating and the numbers that actually decide a purchase.",
+      "tags": [
+        "moving heads",
+        "lighting specs",
+        "stage lighting"
+      ],
+      "url": "content/blog/decoding-moving-head-spec-sheets-k3dw.html",
+      "image": "assets/images/products/rg-ml400rs-knnw1h21.jpg"
+    },
     {
       "title": "DMX Addressing Explained: A Practical Guide for Rental Houses",
       "slug": "dmx-addressing-explained-guide-for-rental-houses",
@@ -93,14 +108,14 @@
       "date": "2026-09-25T19:23:27.132Z",
       "datePretty": "September 25, 2026",
       "category": "How-To",
-      "excerpt": "Check 6 heads full-color swinging laser",
+      "excerpt": "A step-by-step rigging and aiming routine: safe hanging, secure clamping, accurate focus and the checks that keep fixtures on the truss.",
       "tags": [
         "stage lighting",
         "event setup",
         "safety protocols"
       ],
       "url": "content/blog/step-by-step-guide-to-rigging-and-aiming-moving-heads-safely-5p0x.html",
-      "image": "assets/images/products/6-heads-full-color-swinging-laser.jpg"
+      "image": "assets/images/products/rg-m300bh-kyh16.jpg"
     },
     {
       "title": "Choosing a Moving Head for a Small Club",
@@ -149,7 +164,7 @@
         "capture"
       ],
       "url": "content/blog/pantilt-speed-and-accuracy-in-moving-heads-why-it-matters-for-broadcas-z5qa.html",
-      "image": "assets/images/products/6-heads-full-color-swinging-laser.jpg"
+      "image": "assets/images/products/rg-ml500rs-knnw1h20.jpg"
     },
     {
       "title": "Zoom Range in Moving Heads: Tight Spots vs Wide Washes, and How to Use Both",
@@ -180,7 +195,7 @@
         "Spare Parts"
       ],
       "url": "content/blog/moving-head-faq-lifespan-service-spare-parts-and-what-to-ask-your-supp-3oz3.html",
-      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+      "image": "assets/images/products/rg-m230bn-kmh16.jpg"
     },
     {
       "title": "Preparing Moving Heads for Shipping: Flight Cases, Clamps, and the Pre-Tour Checklist",
@@ -188,14 +203,14 @@
       "date": "2026-09-19T18:09:22.331Z",
       "datePretty": "September 19, 2026",
       "category": "How-To",
-      "excerpt": "Verify the 2200-hour lifespan of the New 295W 10R beam moving head light.",
+      "excerpt": "Flight cases, clamps and the pre-tour checklist: how to pack, protect and verify moving heads before they leave the warehouse.",
       "tags": [
         "Moving Heads",
         "Shipping",
         "Pre-Tour Checklist"
       ],
       "url": "content/blog/preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kzdj.html",
-      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+      "image": "assets/images/products/rg-m250s-knh20.jpg"
     },
     {
       "title": "Power, cabling and daisy-chaining moving heads: avoiding the field-day disasters",
@@ -211,7 +226,7 @@
         "daisy-chaining"
       ],
       "url": "content/blog/power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as.html",
-      "image": "assets/images/products/6-heads-full-color-swinging-laser.jpg"
+      "image": "assets/images/products/rg-ml600wr-kose12h58.jpg"
     },
     {
       "title": "Choosing the Right Moving Head for Theatre",
@@ -227,7 +242,7 @@
         "Control Protocol"
       ],
       "url": "content/blog/choosing-the-right-moving-head-for-theatre-1r28.html",
-      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+      "image": "assets/images/products/rg-ps200a20t50-k.jpg"
     },
     {
       "title": "RDM and Remote Fixture Management: Less Ladder Time, Fewer Surprises on Show Day",

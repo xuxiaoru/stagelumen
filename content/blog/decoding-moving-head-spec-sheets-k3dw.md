@@ -4,9 +4,9 @@ slug: "decoding-moving-head-spec-sheets-k3dw"
 date: "2026-09-27T19:08:03.242Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check 2200 hours life"
-image: "assets/images/products/rg-ml760wc-kch99.jpg"
-imageAlt: "New 295W 10R beam moving head"
+excerpt: "How to read a moving head spec sheet: output, beam angle, pan and tilt range, IP rating and the numbers that actually decide a purchase."
+image: "assets/images/products/rg-ml400rs-knnw1h21.jpg"
+imageAlt: "400W LED CMY 3-in-1 BSW moving head light"
 tags:
   - moving heads
   - lighting specs

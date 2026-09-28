@@ -4,9 +4,9 @@ slug: "preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kz
 date: "2026-09-19T18:09:22.331Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Verify the 2200-hour lifespan of the New 295W 10R beam moving head light."
-image: "assets/images/products/new-295w-10r-beam-moving.jpg"
-imageAlt: "New 295W 10R beam moving head light."
+excerpt: "Flight cases, clamps and the pre-tour checklist: how to pack, protect and verify moving heads before they leave the warehouse."
+image: "assets/images/products/rg-m250s-knh20.jpg"
+imageAlt: "250W 8R moving head spot light"
 tags:
   - Moving Heads
   - Shipping

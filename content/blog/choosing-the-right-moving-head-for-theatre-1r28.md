@@ -5,8 +5,8 @@ date: "2026-09-17T19:09:33.504Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "Selecting a moving head with a beam angle of 10R for smooth cues and low noise."
-image: "assets/images/products/new-295w-10r-beam-moving.jpg"
-imageAlt: "New 295W 10R beam moving head light"
+image: "assets/images/products/rg-ps200a20t50-k.jpg"
+imageAlt: "200W LED Fresnel zoom profile light for theatre"
 tags:
   - Moving Heads
   - Theatre Lighting

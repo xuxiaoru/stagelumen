@@ -5,8 +5,8 @@ date: "2026-09-18T18:36:26.771Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "Choose a moving head with a suitable wattage for your application."
-image: "assets/images/products/6-heads-full-color-swinging-laser.jpg"
-imageAlt: "6 heads full-color swinging laser arrows moving head laser"
+image: "assets/images/products/rg-ml600wr-kose12h58.jpg"
+imageAlt: "12x40W RGBW LED moving head wash light"
 tags:
   - moving heads
   - power

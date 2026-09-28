@@ -5,8 +5,8 @@ date: "2026-09-20T18:15:08.690Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "Get the most out of your moving head with our expert advice on lifespan, service, spare parts and what to ask your supplier."
-image: "assets/images/products/new-295w-10r-beam-moving.jpg"
-imageAlt: "New 295W 10R beam moving head light."
+image: "assets/images/products/rg-m230bn-kmh16.jpg"
+imageAlt: "230W LED beam moving head light"
 tags:
   - Moving Head
   - Lifespan

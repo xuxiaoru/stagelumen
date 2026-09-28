@@ -5,8 +5,8 @@ date: "2026-09-22T19:01:29.199Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "A 240-degree pan and 540-degree tilt range is essential for capturing dynamic performances."
-image: "assets/images/products/6-heads-full-color-swinging-laser.jpg"
-imageAlt: "6 heads full-color swinging laser arrows moving head laser"
+image: "assets/images/products/rg-ml500rs-knnw1h20.jpg"
+imageAlt: "500W LED CMY 3-in-1 BSW moving head light"
 tags:
   - moving heads
   - pan/tilt speed

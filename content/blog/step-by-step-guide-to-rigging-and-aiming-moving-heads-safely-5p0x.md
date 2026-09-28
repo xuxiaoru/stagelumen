@@ -4,9 +4,9 @@ slug: "step-by-step-guide-to-rigging-and-aiming-moving-heads-safely-5p0x"
 date: "2026-09-25T19:23:27.132Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check 6 heads full-color swinging laser"
-image: "assets/images/products/6-heads-full-color-swinging-laser.jpg"
-imageAlt: "6 heads full-color swinging laser"
+excerpt: "A step-by-step rigging and aiming routine: safe hanging, secure clamping, accurate focus and the checks that keep fixtures on the truss."
+image: "assets/images/products/rg-m300bh-kyh16.jpg"
+imageAlt: "300W LED beam moving head light"
 tags:
   - stage lighting
   - event setup
