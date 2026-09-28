@@ -142,8 +142,8 @@ function renderTable(head, rows) {
   const tb = rows
     .map((r) => '<tr>' + r.map((c) => '<td>' + inline(c) + '</td>').join('') + '</tr>')
     .join('\n          ');
-  return '<table>\n        <thead>\n          <tr>' + th + '</tr>\n        </thead>\n' +
-    '        <tbody>\n          ' + tb + '\n        </tbody>\n      </table>';
+  return '<div class="table-scroll"><table>\n        <thead>\n          <tr>' + th + '</tr>\n        </thead>\n' +
+    '        <tbody>\n          ' + tb + '\n        </tbody>\n      </table></div>';
 }
 
 /** Deliberately small subset: what our own content agent actually emits. */

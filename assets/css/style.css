@@ -2812,3 +2812,39 @@ footer {
   .news-card.featured .news-thumb { padding: 18px; }
   .blog-hero { padding: 16px; }
 }
+
+/* ------------------------------------------------------- Article tables
+   Post bodies had no styling at all in this stylesheet: the DMX address
+   tables were rendering with UA defaults, ~474px wide, and pushed a 360px
+   phone viewport out to 498px (measured). The wrapper scrolls the table
+   instead of stretching the page, and the cells pick up the site's dark
+   surface treatment so they stop looking like raw 1998 markup. */
+.table-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 22px 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+}
+.blog-article table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+.blog-article th {
+  text-align: left;
+  padding: 10px 12px;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text-3);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.blog-article td {
+  padding: 11px 12px;
+  border-top: 1px solid var(--border);
+  color: var(--text-2);
+}
+.blog-article td:first-child { color: var(--text); font-weight: 500; }
