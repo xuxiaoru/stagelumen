@@ -4,7 +4,8 @@ slug: "ip65-outdoor-stage-lights-buyer-guide"
 date: "2026-09-11T09:00:00.000Z"
 author: "RiGeBa Lighting Team"
 category: "Buyer's Guide"
-image: "assets/images/products/rg-w25tb10-ke120a.jpg"
+image: "assets/images/products/rg-p47tc10-we7a.jpg"
+imageAlt: "IP65 outdoor high power LED par light"
 excerpt: "A practical checklist for specifying weatherproof moving heads and washes — IP ratings, beam angle, control protocol, salt-spray resistance and power, with real fixture data."
 tags:
   - IP65

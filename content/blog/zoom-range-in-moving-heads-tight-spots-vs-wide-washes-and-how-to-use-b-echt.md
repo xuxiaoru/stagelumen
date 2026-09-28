@@ -4,9 +4,9 @@ slug: "zoom-range-in-moving-heads-tight-spots-vs-wide-washes-and-how-to-use-b-ec
 date: "2026-09-21T20:05:12.975Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Achieve precise control with the 540-degree X-axis beam range of the 6W Moving head full color laser."
-image: "assets/images/products/6w-moving-head-full-color.jpg"
-imageAlt: "6W Moving head full color laser light with led circle"
+excerpt: "Tight spots vs wide washes: how zoom range and beam angle decide what a moving head can cover, and how to use both ends well."
+image: "assets/images/products/rg-ml216wd-ktxf72ah12.jpg"
+imageAlt: "72x3W RGB LED moving head wash light with zoom"
 tags:
   - Moving Heads
   - Zoom Range

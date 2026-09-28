@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-28T16:51:39.775Z",
+  "generated": "2026-09-28T16:59:11.330Z",
   "count": 26,
   "posts": [
     {
@@ -83,7 +83,7 @@
         "fixture comparison"
       ],
       "url": "content/blog/moving-head-vs-led-par-vs-wall-washer-guide.html",
-      "image": "assets/images/products/rg-w38tb30-ke14.jpg"
+      "image": "assets/images/products/rg-w12ib10-ke6a.jpg"
     },
     {
       "title": "DMX vs Art-Net vs sACN: which control protocol to specify for a touring rig",
@@ -172,14 +172,14 @@
       "date": "2026-09-21T20:05:12.975Z",
       "datePretty": "September 21, 2026",
       "category": "How-To",
-      "excerpt": "Achieve precise control with the 540-degree X-axis beam range of the 6W Moving head full color laser.",
+      "excerpt": "Tight spots vs wide washes: how zoom range and beam angle decide what a moving head can cover, and how to use both ends well.",
       "tags": [
         "Moving Heads",
         "Zoom Range",
         "Beam Angle"
       ],
       "url": "content/blog/zoom-range-in-moving-heads-tight-spots-vs-wide-washes-and-how-to-use-b-echt.html",
-      "image": "assets/images/products/6w-moving-head-full-color.jpg"
+      "image": "assets/images/products/rg-ml216wd-ktxf72ah12.jpg"
     },
     {
       "title": "Moving Head FAQ: Lifespan, Service, Spare Parts and What to Ask Your Supplier",
@@ -266,14 +266,14 @@
       "date": "2026-09-15T19:08:26.406Z",
       "datePretty": "September 15, 2026",
       "category": "How-To",
-      "excerpt": "Check 7 colors+white on RG-ML150BD-KEE1H16",
+      "excerpt": "How gobo wheels and prisms shape a moving head's look: breakups, rotating patterns, beam splitting and the effects worth specifying.",
       "tags": [
         "moving heads",
         "gobo effects",
         "prism effects"
       ],
       "url": "content/blog/practical-uses-of-gobo-and-prism-effects-in-moving-heads-8wan.html",
-      "image": "assets/images/products/rg-gb400l6c0-zk.jpg"
+      "image": "assets/images/products/rg-gb750l4c0-bk.jpg"
     },
     {
       "title": "Building a Rental-House Moving Head Inventory",
@@ -349,7 +349,7 @@
         "Profile Spots"
       ],
       "url": "content/blog/dmx-channel-planning-for-a-200-fixture-stage-k8b2.html",
-      "image": "assets/images/products/rg-ctd1024s16f-k.jpg"
+      "image": "assets/images/products/rg-cts4.jpg"
     },
     {
       "title": "Beam vs Wash vs Hybrid Moving Heads: How to Choose",
@@ -398,7 +398,7 @@
         "Buyer's Guide"
       ],
       "url": "content/blog/ip65-outdoor-stage-lights-buyer-guide.html",
-      "image": "assets/images/products/rg-w25tb10-ke120a.jpg"
+      "image": "assets/images/products/rg-p47tc10-we7a.jpg"
     },
     {
       "title": "How to Set Up DMX Lighting for a Small Venue (Step-by-Step)",
@@ -414,7 +414,7 @@
         "Lighting Design"
       ],
       "url": "content/blog/how-to-set-up-dmx-lighting.html",
-      "image": "assets/images/products/beam-moving-head.jpg"
+      "image": "assets/images/products/rg-ctd512s2.jpg"
     }
   ]
 }

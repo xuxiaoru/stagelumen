@@ -5,8 +5,8 @@ date: 2026-09-27
 author: RiGeBa Lighting Team
 category: Buyer's Guide
 excerpt: Moving heads, LED PARs and wall washers compared on optics, coverage, control data and real factory pricing, with a worked example rig that uses all three.
-image: assets/images/products/rg-w38tb30-ke14.jpg
-imageAlt: RG-W38TB30 outdoor LED wall washer light
+image: "assets/images/products/rg-w12ib10-ke6a.jpg"
+imageAlt: "RGBW LED city color wall washer with 24 LEDs"
 tags:
 - moving head
 - led par

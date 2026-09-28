@@ -4,7 +4,8 @@ slug: "how-to-set-up-dmx-lighting"
 date: "2026-09-01T10:00:00.000Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-image: "assets/images/products/beam-moving-head.jpg"
+image: "assets/images/products/rg-ctd512s2.jpg"
+imageAlt: "DMX512 USB interface with control software"
 excerpt: "A practical guide to designing a DMX lighting rig for a small bar or club — covering channel math, fixture addressing, and controller setup."
 tags:
   - DMX
