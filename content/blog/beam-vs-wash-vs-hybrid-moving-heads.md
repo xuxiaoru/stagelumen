@@ -28,7 +28,7 @@ Those ranges are not marketing copy — they are the actual zoom ranges across o
 
 ## Beam: When You Want to See the Air
 
-Beam fixtures make the light itself the subject. They work at very narrow angles — our range runs from **2.0°–4.0°** on the SL-B150 up to **1.8°–3.5°** on the SL-B600 — and they are what produce the hard, defined shafts you see in concert photography.
+Beam fixtures make the light itself the subject. They work at very narrow angles — our range runs from **2.0°–4.0°** up to **1.8°–3.5°** — and they are what produce the hard, defined shafts you see in concert photography.
 
 What you give up is coverage. A 2° beam does almost nothing to light a performer's face; it lights dust and haze. Beam fixtures are an effect layer, not a key light.
 
@@ -42,7 +42,7 @@ Our beam range runs from 150W to 600W. Above 400W, models add **Art-Net** alongs
 
 ## Wash: When the Stage Needs to Be Lit
 
-Wash fixtures do the opposite job: cover an area evenly. The zoom ranges are wide — **7°–55°** on the SL-W200, **4°–60°** on the SL-W600 — which means one fixture can work as a front wash from a short throw or as a backlight from a long one.
+Wash fixtures do the opposite job: cover an area evenly. The zoom ranges are wide — **7°–55°** on the smaller units, **4°–60°** on the larger ones — which means one fixture can work as a front wash from a short throw or as a backlight from a long one.
 
 The colour system is the real difference here. Wash fixtures use **RGBW mixing, with CTO correction on the 400W and 600W models**. That gives you the tunable whites you need for camera work, which a colour wheel cannot deliver. If there is a camera on the stage, wash is not optional.
 
@@ -53,7 +53,7 @@ Two things buyers underestimate:
 
 ## Hybrid: The Rental-House Calculation
 
-Hybrid fixtures zoom across both territories. Our SL-H280 covers **2.5°–35°**, the SL-H400 **2°–40°**, and the SL-H800 spans **1.5°–50°** — a wider total range than most dedicated beam or wash fixtures manage individually.
+Hybrid fixtures zoom across both territories. Our hybrids cover **2.5°–35°**, **2°–40°**, and **1.5°–50°** — a wider total range than most dedicated beam or wash fixtures manage individually.
 
 On paper that makes dedicated fixtures look redundant. In practice it is a trade, and rental houses understand it best:
 

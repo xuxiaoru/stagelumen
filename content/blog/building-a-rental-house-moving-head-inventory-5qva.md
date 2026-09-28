@@ -51,16 +51,16 @@ The control protocol requirements can be determined based on the gig request cat
 
 Based on the wattage, beam angle, and control protocol requirements, the inventory can be built as follows:
 
-* 400W or higher moving heads: SL-B400 (400W LED Beam Moving Head) or SL-S400 (400W LED Spot Moving Head)
-* 200-400W moving heads: SL-B200 (200W LED Beam Moving Head) or SL-S300 (300W LED Spot Moving Head)
-* 200W or lower moving heads: SL-B200 (200W LED Beam Moving Head) or SL-S200 (200W LED Spot Moving Head)
+* 400W or higher moving heads: a 400W LED beam moving head or a 400W LED spot moving head
+* 200-400W moving heads: a 200W LED beam moving head or a 300W LED spot moving head
+* 200W or lower moving heads: a 200W LED beam moving head or a 200W LED spot moving head
 
 ## Practical Trade-Offs
 
 When building the inventory, it's essential to consider the practical trade-offs between the different fixture types. For example:
 
-* SL-B400 (400W LED Beam Moving Head) has a narrow beam angle (2.0°-4.0°) but is more expensive than SL-B200 (200W LED Beam Moving Head)
-* SL-S400 (400W LED Spot Moving Head) has a wide beam angle (7°-45°) but is more expensive than SL-S300 (300W LED Spot Moving Head)
+* A 400W LED beam moving head has a narrow beam angle (2.0°-4.0°) but is more expensive than a 200W LED beam moving head
+* A 400W LED spot moving head has a wide beam angle (7°-45°) but is more expensive than a 300W LED spot moving head
 
 ## Next Steps
 

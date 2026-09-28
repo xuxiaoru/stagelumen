@@ -37,7 +37,7 @@ One thing the rating does not cover: **corrosion**. A fixture can be perfectly s
 
 This decides what the fixture is for, and it is the single most common mismatch we see in enquiries.
 
-- **2°–5°** — a true beam look, tight aerial shafts. This is the SL-IP-B400's range.
+- **2°–5°** — a true beam look, tight aerial shafts. This is the tight-beam range.
 - **5°–55°** — a wash that can also punch. Wide zoom ratio, one fixture covers both front wash and mid-air work.
 - **2°–45°** — hybrid territory. Broad enough to be useful, tight enough to be dramatic.
 
@@ -47,25 +47,25 @@ If your design needs both hard beams and even stage wash, one hybrid fixture oft
 
 DMX512 is the baseline. The upgrade worth paying for is **RDM** (Remote Device Management), which lets the console discover fixtures, set addresses and read fault status remotely — instead of sending someone up a truss with a ladder.
 
-| Model | Control protocols |
+| Fixture type | Control protocols |
 | --- | --- |
-| SL-IP-B400 | DMX512 / RDM |
-| SL-IP-W400 | DMX512 / RDM |
-| SL-IP-H600 | DMX512 / RDM / Art-Net |
-| SL-BPAR | DMX512 / Wireless DMX |
-| SL-PW-CITY | DMX512 / RDM / Auto / Master-Slave |
+| Beam fixtures | DMX512 / RDM |
+| Wash fixtures | DMX512 / RDM |
+| Hybrid fixtures | DMX512 / RDM / Art-Net |
+| Battery uplighters | DMX512 / Wireless DMX |
+| City-colour units | DMX512 / RDM / Auto / Master-Slave |
 
-Art-Net on the SL-IP-H600 matters if you are running pixel-mapped or large-channel-count rigs over network infrastructure rather than copper DMX runs.
+Art-Net on the hybrid fixtures matters if you are running pixel-mapped or large-channel-count rigs over network infrastructure rather than copper DMX runs.
 
 ### 3. Colour system
 
-- **Colour wheel** (SL-IP-B400) — fast, punchy, saturated. Good for beam work where you want instant hard colour changes.
-- **RGBW / CTO** (SL-IP-W400) — smooth mixing plus tungsten correction. The practical choice for washing skin tones on camera.
-- **CMY / CTO** (SL-IP-H600) — subtractive mixing, the widest usable colour gamut, and the standard for broadcast and theatre.
+- **Colour wheel** (beam fixtures) — fast, punchy, saturated. Good for beam work where you want instant hard colour changes.
+- **RGBW / CTO** (wash fixtures) — smooth mixing plus tungsten correction. The practical choice for washing skin tones on camera.
+- **CMY / CTO** (hybrid fixtures) — subtractive mixing, the widest usable colour gamut, and the standard for broadcast and theatre.
 
 ### 4. Weight and rigging
 
-Our outdoor moving heads sit in the **15–24 kg** band depending on configuration. That is relevant twice: when you calculate truss loading, and when you calculate how many fixtures two crew can hang in an hour. The SL-PW-CITY city-colour unit is heavier at 18.5 kg.
+Our outdoor moving heads sit in the **15–24 kg** band depending on configuration. That is relevant twice: when you calculate truss loading, and when you calculate how many fixtures two crew can hang in an hour. A city-colour unit is heavier at 18.5 kg.
 
 Every moving head in the range gives you **540° pan / 270° tilt at 16-bit** resolution, with **0–100% linear 16-bit dimming** — so slow fades stay smooth instead of stepping at the bottom of the curve.
 
@@ -73,15 +73,15 @@ Every moving head in the range gives you **540° pan / 270° tilt at 16-bit** re
 
 This is where most weatherproof specifications fall short, and it is worth being blunt about it: an IP rating tells you nothing about salt.
 
-Salt-laden air attacks aluminium housings and connectors. If your venue is within a few hundred metres of the sea, ask specifically about salt-spray testing rather than relying on the IP number. Our **SL-PW-CITY** uses a die-cast aluminium housing that is **salt-spray tested**, which is why it is specified for permanent architectural and seafront work rather than touring.
+Salt-laden air attacks aluminium housings and connectors. If your venue is within a few hundred metres of the sea, ask specifically about salt-spray testing rather than relying on the IP number. Our **city-colour units** use a die-cast aluminium housing that is **salt-spray tested**, which is why it is specified for permanent architectural and seafront work rather than touring.
 
 For touring fixtures that will only occasionally see coastal air, the practical mitigations are rinse-downs with fresh water after exposure and dielectric grease on connectors.
 
 ## Power and Logistics
 
-Every fixture in the outdoor range runs on **AC 100–240V, 50/60Hz** — so the same inventory ships to Europe, North America and Asia without transformer planning. Worth confirming your distribution is rated for the draw: the SL-PW-CITY pulls up to **960 W** at full output.
+Every fixture in the outdoor range runs on **AC 100–240V, 50/60Hz** — so the same inventory ships to Europe, North America and Asia without transformer planning. Worth confirming your distribution is rated for the draw: a city-colour unit pulls up to **960 W** at full output.
 
-Warranty is **3 years (limited)** across the moving head range, and **2 years (limited)** on the SL-PW-CITY.
+Warranty is **3 years (limited)** across the moving head range, and **2 years (limited)** on city-colour units.
 
 ## What Ships in the Box
 
@@ -91,11 +91,11 @@ Each unit goes through a **48-hour burn-in** before it leaves the factory, and s
 
 | If you need | Look at |
 | --- | --- |
-| Tight aerial beams, festival main stage | SL-IP-B400 (400W, 2°–5°, IP65) |
-| One fixture for wash and mid-air work | SL-IP-W400 (400W, 5°–55° zoom, RGBW/CTO) |
-| Maximum flexibility, network control | SL-IP-H600 (600W, 2°–45°, CMY, Art-Net) |
-| Cable-free uplighting, fast setup | SL-BPAR (100W battery, wireless DMX, IP65) |
-| Permanent architectural / seafront | SL-PW-CITY (96×10W RGBW, salt-spray tested) |
+| Tight aerial beams, festival main stage | 400W beam fixture, 2°–5°, IP65 |
+| One fixture for wash and mid-air work | 400W wash fixture, 5°–55° zoom, RGBW/CTO |
+| Maximum flexibility, network control | 600W hybrid fixture, 2°–45°, CMY, Art-Net |
+| Cable-free uplighting, fast setup | 100W battery uplighter, wireless DMX, IP65 |
+| Permanent architectural / seafront | 96×10W RGBW city-colour unit, salt-spray tested |
 
 ## Next Step
 

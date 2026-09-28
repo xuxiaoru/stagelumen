@@ -19,7 +19,7 @@ When selecting a fixture for your venue, it's essential to understand the differ
 
 Beam fixtures are designed to produce a narrow, focused beam of light. They are ideal for applications where a high-intensity beam is required, such as in concert touring or large theatrical productions.
 
-* Wattage: 600W (SL-S600)
+* Wattage: 600W
 * Beam Angle: 6°–50°
 * IP Rating: IP20
 * Control Protocol: DMX512 / RDM / Art-Net
@@ -28,7 +28,7 @@ Beam fixtures are designed to produce a narrow, focused beam of light. They are 
 
 Spot fixtures are similar to beam fixtures but offer a slightly wider beam angle. They are suitable for applications where a high-intensity beam is required, but a slightly wider beam is acceptable.
 
-* Wattage: 400W (SL-S400)
+* Wattage: 400W
 * Beam Angle: 7°–45°
 * IP Rating: IP20
 * Control Protocol: DMX512 / RDM
@@ -37,7 +37,7 @@ Spot fixtures are similar to beam fixtures but offer a slightly wider beam angle
 
 Wash fixtures are designed to produce a wide, soft beam of light. They are ideal for applications where a gentle, even wash of light is required, such as in event or club productions.
 
-* Wattage: 300W (SL-W300)
+* Wattage: 300W
 * Beam Angle: 6°–50°
 * IP Rating: IP20
 * Control Protocol: DMX512 / RDM

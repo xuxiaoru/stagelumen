@@ -19,11 +19,11 @@ The IP65 rating means the fixture is dust-tight and can withstand low-pressure j
 
 ## Wattage and Beam Angle Considerations
 
-When selecting an IP65 outdoor fixture, the wattage and beam angle are crucial factors to consider. For example, a 400W fixture with a 2°–5° beam angle, such as the SL-IP-B400, is suitable for applications requiring a narrow beam and high intensity. On the other hand, a 600W fixture with a 2°–45° beam angle, like the SL-IP-H600, offers a wider beam and more versatility.
+When selecting an IP65 outdoor fixture, the wattage and beam angle are crucial factors to consider. For example, a 400W fixture with a 2°–5° beam angle is suitable for applications requiring a narrow beam and high intensity. On the other hand, a 600W fixture with a 2°–45° beam angle offers a wider beam and more versatility.
 
 ## Control Protocol Options
 
-IP65 outdoor fixtures often come with various control protocol options, including DMX512 and RDM. DMX512 is a widely used protocol for controlling lighting fixtures, while RDM (Remote Device Management) allows for remote monitoring and control of the fixture. Some fixtures, like the SL-IP-W400, also offer Art-Net control, which is useful for large-scale installations.
+IP65 outdoor fixtures often come with various control protocol options, including DMX512 and RDM. DMX512 is a widely used protocol for controlling lighting fixtures, while RDM (Remote Device Management) allows for remote monitoring and control of the fixture. Some fixtures also offer Art-Net control, which is useful for large-scale installations.
 
 ## Practical Trade-Offs
 
@@ -41,7 +41,7 @@ To ensure the right fixture is selected, consider the following criteria:
 
 ## Real-World Applications
 
-IP65 outdoor fixtures are suitable for various applications, including outdoor concerts, festivals, and events. For example, the SL-PW-CITY is designed for building façades, bridges, and other large-scale installations, while the SL-BPAR is ideal for wedding and event lighting.
+IP65 outdoor fixtures are suitable for various applications, including outdoor concerts, festivals, and events. For example, city-colour units are designed for building façades, bridges, and other large-scale installations, while battery-powered LED pars are ideal for wedding and event lighting.
 
 ## Conclusion
 
