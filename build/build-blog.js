@@ -322,7 +322,6 @@ ${faqJsonLd(p)}  <style>
     .blog-article pre code { background: none; padding: 0; }
     .blog-article a { color: var(--accent); }
     .blog-meta { color: var(--text-3); font-size: 0.9rem; margin-bottom: 32px; }
-    .blog-hero-img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 28px; display: block; }
     .blog-tags { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--border); }
     .blog-tags span { display: inline-block; background: var(--surface); color: var(--text-2); font-size: 0.8rem; padding: 4px 10px; border-radius: 999px; margin: 0 6px 6px 0; }
   </style>
@@ -363,7 +362,7 @@ ${faqJsonLd(p)}  <style>
 <section>
   <div class="container">
     <article class="blog-article">
-${p.image ? '      <img class="blog-hero-img" src="' + escAttr(imgSrc(p.image)) + '" alt="' + escAttr(p.title) + '" />\n' : ''}      <p class="blog-meta">${escHtml(p.datePretty)} · ${escHtml(p.author)} · ${escHtml(p.category)}</p>
+${p.image ? '      <div class="blog-hero"><img class="blog-hero-img" src="' + escAttr(imgSrc(p.image)) + '" alt="' + escAttr(p.title) + '" /></div>\n' : ''}      <p class="blog-meta">${escHtml(p.datePretty)} · ${escHtml(p.author)} · ${escHtml(p.category)}</p>
 
       ${p.html}
 ${faqHtml(p)}

@@ -2347,15 +2347,24 @@ footer {
 }
 .news-thumb {
   aspect-ratio: 16/10;
-  background: linear-gradient(135deg, var(--surface-2), var(--surface));
   position: relative;
   overflow: hidden;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  background: radial-gradient(120% 100% at 50% 0%, #ffffff 0%, #eef1f6 58%, #dee4ec 100%);
 }
 .news-thumb > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
+  mix-blend-mode: multiply;
+}
+.news-card.featured .news-thumb {
+  padding: 30px;
 }
 /* A post with no artwork used to render a full 16/10 gradient panel, which
    reads as a large empty box. Collapse it to a slim band instead. */
@@ -2766,4 +2775,40 @@ footer {
 }
 @media (max-width: 720px) {
   .factory-photos { grid-template-columns: 1fr; }
+}
+
+/* ---------------------------------------------------------------- Blog hero
+   Same problem as the news cards: article artwork is supplier catalogue
+   photography — near-square, low resolution, shot against a white studio
+   backdrop. Stretched with object-fit:cover into a 16/9 frame it lost the
+   bottom of the fixture, was upscaled ~4x and the raw white backdrop ran to
+   the frame edge, so the picture read as spilling out of the page.
+   Contains the photo inside a soft light pool instead and multiplies the white
+   backdrop into it, so the whole fixture fits and there is no hard edge. */
+.blog-hero {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 28px;
+  margin-bottom: 28px;
+  border-radius: var(--radius-lg);
+  background: radial-gradient(120% 100% at 50% 0%, #ffffff 0%, #eef1f6 58%, #dee4ec 100%);
+}
+.blog-hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 720px) {
+  .news-thumb { padding: 14px; }
+  .news-card.featured .news-thumb { padding: 18px; }
+  .blog-hero { padding: 16px; }
 }
