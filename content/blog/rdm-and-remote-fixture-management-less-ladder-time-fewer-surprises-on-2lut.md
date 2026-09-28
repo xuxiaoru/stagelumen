@@ -4,6 +4,7 @@ slug: "rdm-and-remote-fixture-management-less-ladder-time-fewer-surprises-on-2lu
 date: "2026-09-16T19:00:01.173Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
+image: "assets/images/products/rg-ca8402a.jpg"
 excerpt: "Use RiGeBa Lighting's wireless remote control RG-CTCWIXLR-RS for 500M open area communication distance."
 tags:
   - RDM

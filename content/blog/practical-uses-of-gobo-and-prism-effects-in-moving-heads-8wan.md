@@ -4,6 +4,7 @@ slug: "practical-uses-of-gobo-and-prism-effects-in-moving-heads-8wan"
 date: "2026-09-15T19:08:26.406Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
+image: "assets/images/products/rg-gb400l6c0-zk.jpg"
 excerpt: "Check 7 colors+white on RG-ML150BD-KEE1H16"
 tags:
   - moving heads

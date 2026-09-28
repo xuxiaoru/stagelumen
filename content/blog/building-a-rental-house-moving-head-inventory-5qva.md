@@ -4,6 +4,7 @@ slug: "building-a-rental-house-moving-head-inventory-5qva"
 date: "2026-09-14T14:23:21.546Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
+image: "assets/images/products/rg-el00db-8e2a.jpg"
 excerpt: "A 200W LED Beam Moving Head with DMX512 / RDM control can cover 70% of gig requests."
 tags:
   - Rental Houses

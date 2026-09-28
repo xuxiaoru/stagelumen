@@ -4,6 +4,7 @@ slug: "choosing-the-right-fixture-type-for-your-venue-08je"
 date: "2026-09-12T13:59:03.947Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
+image: "assets/images/products/rg-ml150bp-knnw1h16.jpg"
 excerpt: "Selecting the right fixture type for your venue depends on wattage, beam angle, IP rating, and control protocol."
 tags:
   - fixture selection

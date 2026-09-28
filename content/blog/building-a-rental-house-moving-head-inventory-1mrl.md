@@ -4,6 +4,7 @@ slug: "building-a-rental-house-moving-head-inventory-1mrl"
 date: "2026-09-14T19:54:22.039Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
+image: "assets/images/products/rg-ml500bl-kcre12ah194.jpg"
 excerpt: "Cover 90% of gig requests with a strategic selection of moving head fixtures."
 tags:
   - Moving Heads

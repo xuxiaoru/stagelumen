@@ -4,6 +4,7 @@ slug: "choosing-the-right-ip65-outdoor-fixture-tl62"
 date: "2026-09-12T14:01:53.575Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
+image: "assets/images/products/rg-ml420wc-kch93.jpg"
 excerpt: "Select from 400W to 600W, 2°–60° beam angles, and DMX512/RDM control."
 tags:
   - outdoor lighting
