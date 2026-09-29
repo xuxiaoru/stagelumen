@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T15:00:46.850Z",
+  "generated": "2026-09-29T15:29:58.887Z",
   "count": 27,
   "posts": [
     {
@@ -23,7 +23,7 @@
       "date": "2026-09-27T19:08:03.242Z",
       "datePretty": "September 27, 2026",
       "category": "How-To",
-      "excerpt": "Ignore the wattage headline. To compare moving heads, check beam angle at a stated distance, lux at that distance, LED configuration, pan/tilt range and IP rating — then look at what the fixtures actually cost. Real EXW prices from a Guangzhou factory, 100W to 500W.",
+      "excerpt": "Compare moving heads on beam angle, lux at a stated distance, LED configuration and IP rating — not wattage. Real EXW prices from US$96 to US$757.",
       "tags": [
         "moving heads",
         "lighting specs",
@@ -158,11 +158,12 @@
       "date": "2026-09-23T19:09:08.243Z",
       "datePretty": "September 23, 2026",
       "category": "How-To",
-      "excerpt": "Verify the IP rating, wattage, and control protocol before buying IP-rated moving heads for permanent outdoor installs.",
+      "excerpt": "Six things to verify in writing before ordering IP-rated moving heads — from how the IP test was done to whether the yoke bearing can be serviced.",
       "tags": [
         "outdoor lighting",
         "moving heads",
-        "IP rating"
+        "IP rating",
+        "quality control"
       ],
       "url": "content/blog/what-to-verify-before-buying-ip-rated-moving-heads-for-permanent-outdo-2sy7.html",
       "image": "assets/images/products/rg-m420bn-kh24.jpg"
@@ -190,11 +191,12 @@
       "date": "2026-09-21T20:05:12.975Z",
       "datePretty": "September 21, 2026",
       "category": "How-To",
-      "excerpt": "Tight spots vs wide washes: how zoom range and beam angle decide what a moving head can cover, and how to use both ends well.",
+      "excerpt": "A 17-50 degree zoom covers both ends of a show. How beam angle decides lux, what zoom range to specify, and what the mechanisms cost.",
       "tags": [
         "Moving Heads",
         "Zoom Range",
-        "Beam Angle"
+        "Beam Angle",
+        "Lux"
       ],
       "url": "content/blog/zoom-range-in-moving-heads-tight-spots-vs-wide-washes-and-how-to-use-b-echt.html",
       "image": "assets/images/products/rg-ml216wd-ktxf72ah12.jpg"
@@ -231,12 +233,12 @@
       "image": "assets/images/products/rg-m250s-knh20.jpg"
     },
     {
-      "title": "Power, cabling and daisy-chaining moving heads: avoiding the field-day disasters",
+      "title": "Power, Cabling and Daisy-Chaining Moving Heads: Avoiding the Field-Day Disasters",
       "slug": "power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as",
       "date": "2026-09-18T18:36:26.771Z",
       "datePretty": "September 18, 2026",
       "category": "How-To",
-      "excerpt": "Choose a moving head with a suitable wattage for your application.",
+      "excerpt": "A 16A circuit does not take 14 moving heads. How to size power, cable and chain length for a moving-head rig without tripping on load-in.",
       "tags": [
         "moving heads",
         "power",
@@ -252,12 +254,12 @@
       "date": "2026-09-17T19:09:33.504Z",
       "datePretty": "September 17, 2026",
       "category": "How-To",
-      "excerpt": "Selecting a moving head with a beam angle of 10R for smooth cues and low noise.",
+      "excerpt": "Noise, colour temperature and a clean beam edge matter more than output in a theatre. What to specify, with EXW prices from US$64 to US$223.",
       "tags": [
         "Moving Heads",
         "Theatre Lighting",
-        "Beam Angle",
-        "Control Protocol"
+        "Colour Temperature",
+        "Noise"
       ],
       "url": "content/blog/choosing-the-right-moving-head-for-theatre-1r28.html",
       "image": "assets/images/products/rg-ps200a20t50-k.jpg"
@@ -268,12 +270,12 @@
       "date": "2026-09-16T19:00:01.173Z",
       "datePretty": "September 16, 2026",
       "category": "How-To",
-      "excerpt": "Use RiGeBa Lighting's wireless remote control RG-CTCWIXLR-RS for 500M open area communication distance.",
+      "excerpt": "RDM reads fixture status and sets addresses over the DMX line itself. What it can and cannot do, and the hardware that makes it work.",
       "tags": [
         "RDM",
         "Remote Fixture Management",
-        "Wireless DMX",
-        "DMX512"
+        "DMX512",
+        "Wireless DMX"
       ],
       "url": "content/blog/rdm-and-remote-fixture-management-less-ladder-time-fewer-surprises-on-2lut.html",
       "image": "assets/images/products/rg-ca8402a.jpg"
@@ -309,16 +311,17 @@
       "image": "assets/images/products/rg-ml500bl-kcre12ah194.jpg"
     },
     {
-      "title": "Building a Rental-House Moving Head Inventory",
+      "title": "Building a Rental-House Moving Head Inventory: The First Ten Fixtures",
       "slug": "building-a-rental-house-moving-head-inventory-5qva",
       "date": "2026-09-14T14:23:21.546Z",
       "datePretty": "September 14, 2026",
       "category": "How-To",
-      "excerpt": "A 200W LED Beam Moving Head with DMX512 / RDM control can cover 70% of gig requests.",
+      "excerpt": "Ten fixtures and about US$1,500 EXW is enough to accept most small-venue work. Which two types to buy, and why quantity beats variety.",
       "tags": [
         "Rental Houses",
         "Moving Heads",
-        "Inventory Management"
+        "Inventory Management",
+        "Rental stock"
       ],
       "url": "content/blog/building-a-rental-house-moving-head-inventory-5qva.html",
       "image": "assets/images/products/rg-el00db-8e2a.jpg"
@@ -329,11 +332,12 @@
       "date": "2026-09-12T14:01:53.575Z",
       "datePretty": "September 12, 2026",
       "category": "How-To",
-      "excerpt": "Select from 400W to 600W, 2°–60° beam angles, and DMX512/RDM control.",
+      "excerpt": "IP65 covers dust-tight and water jets, not immersion. Which rating you actually need outdoors, and real EXW prices from US$185 to US$757.",
       "tags": [
         "outdoor lighting",
         "IP65 rating",
-        "fixture selection"
+        "fixture selection",
+        "moving heads"
       ],
       "url": "content/blog/choosing-the-right-ip65-outdoor-fixture-tl62.html",
       "image": "assets/images/products/rg-ml420wc-kch93.jpg"
@@ -344,11 +348,12 @@
       "date": "2026-09-12T13:59:03.947Z",
       "datePretty": "September 12, 2026",
       "category": "How-To",
-      "excerpt": "Selecting the right fixture type for your venue depends on wattage, beam angle, IP rating, and control protocol.",
+      "excerpt": "Fixed PAR, LED bar, profile, moving head or wash: which family does which job, with real EXW prices from US$45 to US$223 per fixture.",
       "tags": [
         "fixture selection",
         "lighting design",
-        "venue planning"
+        "venue planning",
+        "LED PAR"
       ],
       "url": "content/blog/choosing-the-right-fixture-type-for-your-venue-08je.html",
       "image": "assets/images/products/rg-ml150bp-knnw1h16.jpg"
@@ -359,12 +364,12 @@
       "date": "2026-09-12T12:11:24.517Z",
       "datePretty": "September 12, 2026",
       "category": "How-To",
-      "excerpt": "Plan DMX channels for a 200-fixture stage with RiGeBa Lighting's LED moving heads and profile spots.",
+      "excerpt": "A 200-fixture stage of 24-channel heads is ten universes, not one. How to budget channels, split universes and keep the patch readable.",
       "tags": [
         "DMX Channel Planning",
         "Stage Lighting",
         "LED Moving Heads",
-        "Profile Spots"
+        "DMX Universes"
       ],
       "url": "content/blog/dmx-channel-planning-for-a-200-fixture-stage-k8b2.html",
       "image": "assets/images/products/rg-cts4.jpg"
@@ -424,7 +429,7 @@
       "date": "2026-09-01T10:00:00.000Z",
       "datePretty": "September 1, 2026",
       "category": "How-To",
-      "excerpt": "A practical guide to designing a DMX lighting rig for a small bar or club — covering channel math, fixture addressing, and controller setup.",
+      "excerpt": "Channel math, addressing and controller choice for a small bar rig — with real EXW prices for 192-, 408- and 1024-channel DMX controllers.",
       "tags": [
         "DMX",
         "How-To",

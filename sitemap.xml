@@ -257,7 +257,7 @@
     <priority>0.8</priority>
   </url>
   <!-- WARNING: do not index the Cloudflare preview host stagelumen.pages.dev -->
-<!-- SITEMAP:BEGIN -->
+  <!-- SITEMAP:BEGIN -->
   <url>
     <loc>https://www.rigebalighting.com/content/blog/designing-moving-head-looks-for-a-church-sanctuary-without-blinding-th-4y4b</loc>
     <lastmod>2026-09-28</lastmod>

@@ -80,17 +80,101 @@ function loadCatalogue() {
   }
 }
 
+/**
+ * Front matter reader for the flat shape the CMS and the content agent write:
+ * scalars (key: "value") plus one level of "- item" lists (tags, faq).
+ *
+ * The list branch matters: without it `faq:` parsed as an empty string and the
+ * FAQ coverage of every post silently read as zero. Kept identical to the
+ * reader in build/blog.js so a file cannot pass one and fail the other.
+ */
 function parseFrontMatter(text) {
   const src = String(text).replace(/^\uFEFF/, '');
   const m = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/.exec(src);
   if (!m) return { data: {}, body: src };
+
   const data = {};
-  for (const line of m[1].split(/\r?\n/)) {
+  let listKey = null;
+
+  for (const raw of m[1].split(/\r?\n/)) {
+    const line = raw.trim();
+    if (!line || line === '---') continue;
+
+    if (listKey && /^-\s+/.test(line)) {
+      data[listKey].push(line.replace(/^-\s+/, '').trim().replace(/^"(.*)"$/, '$1'));
+      continue;
+    }
+
     const i = line.indexOf(':');
     if (i < 1) continue;
-    data[line.slice(0, i).trim()] = line.slice(i + 1).trim().replace(/^"(.*)"$/, '$1');
+    const key = line.slice(0, i).trim();
+    let val = line.slice(i + 1).trim();
+    if (/^"(.*)"$/.test(val)) val = val.slice(1, -1);
+
+    if (val === '') {
+      data[key] = [];
+      listKey = key;
+    } else {
+      data[key] = val;
+      listKey = null;
+    }
   }
   return { data, body: src.slice(m[0].length) };
+}
+
+/**
+ * The house GEO structure, in one place.
+ *
+ * These are the requirements that decide whether a generative engine quotes the
+ * page. They are ERRORs (not warnings) because the whole point is to stop a
+ * thin post shipping: an article that fails this is not publishable.
+ * Mirrored by the GEO block in functions/_lib/content.js factCheck().
+ */
+const GEO = {
+  // 1,000 words of dense, factual body — roughly a 30% increase on the 2026-09
+  // back-catalogue average. Chosen over 1,500 because every article that clears
+  // this bar already carries three or four real catalogue tables, and padded
+  // word count does not earn citations; sourced tables do.
+  minWords: 1000,
+  minQuestions: 4,
+  minTables: 2,
+  minFaq: 4,
+  maxFaq: 6,
+};
+
+function geoChecks(body, data) {
+  const problems = [];
+  const headings = body.match(/^##\s+(.+)$/gm) || [];
+  const questions = headings.filter((h) => /\?\s*$/.test(h));
+  const tables = (body.match(/^\|(?:[-: ]+\|)+\s*$/gm) || []).length;
+  const faq = Array.isArray(data.faq) ? data.faq.filter((f) => String(f).indexOf('::') > 0) : [];
+
+  if (!/^##\s+(the\s+)?short\s+answer\b/im.test(body)) {
+    problems.push(['ERROR', 'GEO: missing the "## The short answer" block']);
+  }
+  if (questions.length < GEO.minQuestions) {
+    problems.push(['ERROR', 'GEO: ' + questions.length + ' question-form H2(s), need ' + GEO.minQuestions + '+']);
+  }
+  if (tables < GEO.minTables) {
+    problems.push(['ERROR', 'GEO: ' + tables + ' data table(s), need ' + GEO.minTables + '+']);
+  }
+  if (faq.length < GEO.minFaq) {
+    problems.push(['ERROR', 'GEO: ' + faq.length + ' FAQ pair(s), need ' + GEO.minFaq + '-' + GEO.maxFaq]);
+  }
+  if (faq.length > GEO.maxFaq) {
+    problems.push(['WARN', 'GEO: ' + faq.length + ' FAQ pairs — trim to ' + GEO.maxFaq]);
+  }
+  if (!/\]\(\/products\//.test(body)) {
+    problems.push(['WARN', 'GEO: no internal link to a product page']);
+  }
+  for (const f of faq) {
+    const s = String(f);
+    if (s.length > 400) problems.push(['WARN', 'GEO: FAQ answer longer than 400 chars — trim it']);
+    if (s.indexOf('::') !== s.lastIndexOf('::')) {
+      problems.push(['WARN', 'GEO: FAQ item contains a second "::" — only the first one splits question from answer']);
+    }
+  }
+  return problems;
 }
 
 function check(file, cat) {
@@ -113,7 +197,9 @@ function check(file, cat) {
   }
 
   const words = (body.match(/[A-Za-z0-9''-]+/g) || []).length;
-  if (words < 700) problems.push(['WARN', 'only ' + words + ' words — thin for organic search']);
+  if (words < GEO.minWords) {
+    problems.push(['ERROR', 'GEO: only ' + words + ' words — the house floor is ' + GEO.minWords]);
+  }
 
   // Model numbers must exist in the catalogue.
   const found = new Set((body.match(MODEL_RE) || []).map((m) => m.toUpperCase()));
@@ -125,10 +211,15 @@ function check(file, cat) {
   }
   if (!found.size) problems.push(['WARN', 'no model numbers cited — the post cannot sell anything']);
 
-  // Prices drift; a post that hardcodes one goes stale.
-  const prices = body.match(/\$\s?\d{2,5}/g) || [];
-  if (prices.length) {
-    problems.push(['WARN', 'hardcoded price(s) ' + prices.join(', ') + ' — these go stale; link to the RFQ instead']);
+  // A price inside a price ladder is the data the article exists to publish; a
+  // price in running prose on an article with no ladder is a throwaway figure
+  // that dates. Only the second case is flagged.
+  const tables = (body.match(/^\|(?:[-: ]+\|)+\s*$/gm) || []).length;
+  if (tables === 0) {
+    const prices = body.match(/\$\s?\d{2,5}/g) || [];
+    if (prices.length) {
+      problems.push(['WARN', 'price with no price table: ' + prices.join(', ') + ' — put it in a ladder or link to the RFQ']);
+    }
   }
 
   for (const re of FILLER) {
@@ -146,6 +237,9 @@ function check(file, cat) {
   if (/\bplaybacks?\b/i.test(body)) {
     problems.push(['WARN', 'mentions "playback" — that is a console feature; make sure it is not attributed to a fixture']);
   }
+
+  // House GEO structure — the checks the nightly content agent also runs.
+  problems.push(...geoChecks(body, data));
 
   return { rel, problems, notes, words, models: [...found] };
 }

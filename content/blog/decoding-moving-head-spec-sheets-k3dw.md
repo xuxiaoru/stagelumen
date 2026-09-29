@@ -5,7 +5,7 @@ date: "2026-09-27T19:08:03.242Z"
 updated: "2026-09-29"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Ignore the wattage headline. To compare moving heads, check beam angle at a stated distance, lux at that distance, LED configuration, pan/tilt range and IP rating — then look at what the fixtures actually cost. Real EXW prices from a Guangzhou factory, 100W to 500W."
+excerpt: "Compare moving heads on beam angle, lux at a stated distance, LED configuration and IP rating — not wattage. Real EXW prices from US$96 to US$757."
 image: "assets/images/products/rg-ml400rs-knnw1h21.jpg"
 imageAlt: "400W LED CMY 3-in-1 BSW moving head light"
 tags:
@@ -16,11 +16,11 @@ tags:
   - beam angle
   - lux
 faq:
-  - Why does a 150W moving head cost $96 while another 150W model costs $258?::Because wattage measures how much power the fixture draws, not how much light it delivers or how well it is built. The two 150W models in our own catalogue differ in LED bin, lens and optical train, colour mixing system, housing material and cooling design. Same input power, very different output and service life. Always compare lux at a stated distance, not watts.
-  - Should I compare fixtures by lumens or by lux?::Lux, and only at a distance you intend to use. Lumens is total light emitted in every direction; lux is illuminance on a surface. A fixture's lumens figure tells you nothing about how bright the beam will look 8 metres away, because that depends on beam angle. For a rough conversion at a known distance, use the inverse-square relationship: doubling the distance quarters the lux.
+  - "Why does a 150W moving head cost US$96 while another 150W model costs US$258?::Wattage measures how much power a fixture draws, not how much light it delivers or how well it is built. The two 150W models in our catalogue differ in LED bin, lens and optical train, colour mixing system, housing and cooling design. Compare lux at a stated distance, not watts."
+  - "Should I compare fixtures by lumens or by lux?::Lux, and only at a distance you intend to use. Lumens is total light emitted in every direction; lux is illuminance on a surface. A fixture's lumen figure says nothing about how bright the beam looks at 8 m, because that depends on beam angle. Doubling the distance quarters the lux."
   - How many DMX channels does a moving head need?::A basic 16-channel head fits easily into one 512-channel universe, and 16-bit pan/tilt or CMY plus gobo and prism rotation can push a fixture to 24-40 channels. Divide 512 by the footprint to size the universe — with a 32-channel footprint you can run 16 fixtures per universe before you need a splitter.
-  - What IP rating do I need for an outdoor moving head?::IP65 is the workable minimum for permanent outdoor installation: it is dust-tight and protected against water jets, so normal rain and washdown are survivable. IP54 covers splash only and is a poor fit for permanent outdoor use. For anything with a moving head, check the rating applies to the head and yoke as assembled, not just to the housing.
-  - Does a higher price always mean a better fixture?::No — it means a different fixture. In our own catalogue a 10x40W pixel moving bar costs $199 while a single-source 400W BSW costs $459. The pixel bar is the better buy for eye-candy and matrix effects; the BSW is the better buy for wash, gobo work and long throws. Match the class to the job before comparing price.
+  - "What IP rating do I need for an outdoor moving head?::IP65 is the workable minimum for permanent outdoor installation — dust-tight and protected against water jets, so rain and washdown are survivable. IP54 covers splash only. Check the rating applies to the head and yoke as assembled, not just the housing."
+  - "Does a higher price always mean a better fixture?::No, it means a different fixture. A 10x40W pixel moving bar costs far less than a single-source 400W BSW, and each is the better buy in its own class: the pixel bar for matrix effects, the BSW for wash, gobo work and long throws."
 ---
 
 Most moving head spec sheets are written to be impressive rather than useful. They lead with a wattage, bury the two figures that decide everything — **beam angle and lux at a stated distance** — and omit the one number a buyer actually needs: what the fixture costs at the quantities you are ordering. This guide is the version we give distributors: which numbers to trust, which to distrust, and what those numbers mean in money.
@@ -29,7 +29,7 @@ Most moving head spec sheets are written to be impressive rather than useful. Th
 
 To compare two moving heads, ask for five figures: **beam angle**, **lux at a stated distance**, **LED configuration** (how many sources, and at what wattage each), **pan and tilt range**, and **IP rating**. Compare them at the same distance and the same beam angle. Everything else on the sheet — wattage, "high brightness", model numbers — is decoration. Then ask for the EXW price at your order quantity, because two fixtures with identical wattage can differ in price by more than 2×.
 
-## Why the wattage on the box tells you almost nothing
+## Why does the wattage on the box tell you almost nothing?
 
 Watts measure how much electrical power a fixture draws. They do not measure light output, colour quality, or build quality.
 
@@ -60,7 +60,7 @@ The reason beam angle matters so much is geometry. Halve the beam angle and you 
 
 The same relationship governs throw distance. **Illuminance falls with the square of the distance**: a fixture that gives 10,000 lux at 5 m gives roughly 2,500 lux at 10 m. If a supplier quotes lux without quoting the distance, treat the number as marketing.
 
-## What LED configuration actually tells you
+## What does LED configuration actually tell you?
 
 "LED configuration" is written as sources × wattage per source — `1×400W`, `12×40W`, `19×40W`. It tells you whether the fixture is a **single-source** light or a **multi-source array**, which is the difference between a beam/spots fixture and a pixel/eye-candy fixture.
 
@@ -73,7 +73,7 @@ Both of these draw 400W in total. They are not competitors:
 
 The pixel bar wins on visual impact per dollar for a club or a bar wall. The single-source BSW wins when you need one controllable beam with colour mixing, gobos and a clean edge. Buying the pixel bar for a theatre front-of-house position, or the BSW for a pixel-mapped club ceiling, is how rigs end up disappointing people who spent real money.
 
-## Read the fixture class before the numbers
+## Which fixture class do I need before I read the numbers?
 
 Four classes cover almost every moving head purchase. Knowing which one you need eliminates most of the spec sheet before you read it:
 
@@ -86,7 +86,7 @@ Four classes cover almost every moving head purchase. Knowing which one you need
 
 A hybrid costs more because it has to be good at everything: more zoom mechanism, more optics, more alignment work in production. That is why a single-source 400W BSW sits at US$459 in our catalogue while a 10×40W pixel bar of the same total wattage sits at US$199.
 
-## What moving heads actually cost, EXW Guangzhou
+## What do moving heads actually cost, EXW Guangzhou?
 
 These are real prices from our current catalogue — EXW Guangzhou in USD, single-unit and volume tiers where a tier exists. Prices move with LED and driver cost, so always re-quote, but the shape of the ladder is stable and worth understanding before you budget.
 
@@ -101,9 +101,9 @@ These are real prices from our current catalogue — EXW Guangzhou in USD, singl
 | RG-ML150BR-KNNW1H16 | White beam | 1×150W | US$258 | — |
 | RG-ML300BR-KN1H17 | 3-in-1 BSW | 1×300W | US$315 | US$300 over 20 pcs |
 | RG-ML500BL-KCRe12AH194 | Zoom wash | 12×40W | US$325 | US$290 over 50 pcs |
-| RG-ML400RS-KNNW1H21 | 3-in-1 BSW + CMY | 1×400W | US$459 | — |
+| [RG-ML400RS-KNNW1H21](/products/moving/rg-ml400rs-knnw1h21) | 3-in-1 BSW + CMY | 1×400W | US$459 | — |
 | RG-ML720BL-KCRe12AH179 | Wave bar | 12×60W RGBW | US$470 | US$455 over 30 pcs |
-| RG-ML760WC-KCH99 | Outdoor zoom (IP65) | 19×40W | US$560 | US$530 over 20 pcs |
+| [RG-ML760WC-KCH99](/products/moving/rg-ml760wc-kch99) | Outdoor zoom (IP65) | 19×40W | US$560 | US$530 over 20 pcs |
 | RG-ML500RS-KNNW1H20 | 3-in-1 BSW + CMY | 1×500W | US$569 | — |
 | RG-ML420WC-KCH93 | Outdoor (IP65) | 7×60W | US$590 | US$572 over 30 pcs |
 | RG-M420BN-KH24 | Outdoor beam (IP65) | 420W | US$757 | — |
@@ -117,7 +117,7 @@ These are real prices from our current catalogue — EXW Guangzhou in USD, singl
 
 Two things to notice about the tiers: they are **small** — typically 3–8% for a 20- to 50-piece order — and the quantity threshold varies by model. If you are buying 30 pieces, it is worth asking which specific models have a 20-piece tier, because that can be the difference between paying list and paying volume.
 
-## Pan, tilt and the numbers you should still verify
+## What should I verify about pan and tilt?
 
 Pan and tilt ranges are usually quoted as 540° pan and 270° tilt on a standard head, or 630°/270° on an "unlimited pan" model. What matters in practice:
 
@@ -127,7 +127,7 @@ Pan and tilt ranges are usually quoted as 540° pan and 270° tilt on a standard
 
 Also check **noise** if the fixtures sit above an audience, **CRI** if cameras or skin tones are involved, and **voltage range** if the rig travels.
 
-## Red flags on a moving head spec sheet
+## What are the red flags on a moving head spec sheet?
 
 - **Lux quoted with no distance.** Meaningless. Ask for lux at 5 m or 10 m.
 - **Lumens at maximum output only.** Many LED fixtures drop output when all colour channels are engaged. Ask for the wash-state figure.
@@ -135,7 +135,7 @@ Also check **noise** if the fixtures sit above an audience, **CRI** if cameras o
 - **No DMX channel list.** You cannot plan a patch around "16/24/32 channels" without knowing which function sits on which channel.
 - **A price with no MOQ.** MOQ is half the commercial reality of a quotation.
 
-## What to demand in writing before you order
+## What should I demand in writing before I order?
 
 1. Beam angle and the measured lux at your actual throw distance.
 2. The full DMX channel list, in each mode the fixture supports.

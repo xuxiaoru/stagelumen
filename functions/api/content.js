@@ -160,7 +160,9 @@ export async function onRequest(context) {
     res = await draft(env, request, {
       kind,
       topic,
-      words: Number(body.words) || 700,
+      // 1500 is the GEO floor the house structure assumes; the nightly caller
+      // sends no words value, so this default is what every auto-post gets.
+      words: Number(body.words) || 1500,
       recentImages: ledger.recent.slice(-RECENT_HINT),
     });
   } catch (e) {
