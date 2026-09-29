@@ -100,15 +100,22 @@
 .hv2-plate-foot span { color: #6b7280; font-size: .8rem; }
 .hv2-plate-price { text-align: right; color: #6b7280; font-size: .74rem; white-space: nowrap; }
 .hv2-plate-price b { display: block; color: #d94f00; font-size: 1.15rem; letter-spacing: -.4px; }
-.hv2-float {
-  position: absolute; z-index: 3; padding: 9px 14px; border-radius: 100px;
-  background: rgba(14, 14, 14, .86); border: 1px solid rgba(255, 255, 255, .14);
-  backdrop-filter: blur(8px); color: #fff; font-size: .78rem; font-weight: 500;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, .45);
+/* proof strip under the plate.
+   These three used to be absolutely positioned on top of the plate; at 1366px
+   the middle chip covered the model number and the last one covered the EXW
+   price. A static row cannot overlap anything at any width, and unlike the old
+   floats it stays visible on phones. */
+.hv2-proofs { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.hv2-proofs li {
+  display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px;
+  border-radius: 100px; background: rgba(255, 255, 255, .045);
+  border: 1px solid rgba(255, 255, 255, .12); color: var(--text-2);
+  font-size: .78rem; line-height: 1.25;
 }
-.hv2-float-1 { top: 6px; right: -14px; }
-.hv2-float-2 { bottom: 64px; left: -22px; }
-.hv2-float-3 { bottom: -6px; right: 34px; }
+.hv2-proofs li::before {
+  content: ''; flex: none; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--primary); box-shadow: 0 0 0 3px rgba(255, 107, 0, .16);
+}
 
 /* hero footer: stats + certification chips */
 .hv2-hero-foot { position: relative; z-index: 2; margin-top: 64px; border-top: 1px solid var(--border); }
@@ -290,6 +297,7 @@
   .hv2-flow { grid-template-columns: 1fr; border-top: 0; }
   .hv2-step { border-right: 0; border-top: 1px solid var(--border); padding: 30px 0 0; }
   .hv2-facts, .hv2-apps { grid-template-columns: 1fr; }
-  .hv2-float-1, .hv2-float-2, .hv2-float-3 { display: none; }
+  .hv2-proofs { gap: 8px; margin-top: 14px; }
+  .hv2-proofs li { padding: 7px 12px; font-size: .74rem; }
   .hv2-contact { padding: 26px 20px; }
 }
