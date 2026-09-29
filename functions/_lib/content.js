@@ -29,8 +29,14 @@ const MODEL = MODELS.heavy;
  *
  * Matches GEO.minWords in build/verify-blog.js. Kept as a named constant so the
  * prompt, the gate and the offline checker cannot drift apart.
+ *
+ * 900 rather than 1000: the counter here (and in verify-blog) only counts
+ * alphabetic tokens, so prices, wattages and model numbers - the very data the
+ * GEO structure asks for - do not count toward it. A table-heavy article that
+ * renders at 1100 words can measure 900. The drafting target below is set well
+ * above this floor so a normal draft clears it without padding.
  */
-const GEO_MIN_WORDS = 1000;
+const GEO_MIN_WORDS = 900;
 
 const CATEGORIES = ['How-To', 'Application', 'Customer Story', 'Product News', 'Industry'];
 
@@ -43,46 +49,86 @@ const KIND_BRIEF = {
     'a head-to-head comparison of two fixture approaches, honest about where each one wins and loses',
   faq:
     'an FAQ page answering the questions a buyer actually asks before ordering, each answer short and concrete',
+  application:
+    'an application-led guide that walks through how one venue type gets lit - positions, fixture ' +
+    'choices, brightness and the practical constraints of that room - and names the fixtures that fit',
 };
 
 /**
- * Editorial calendar the nightly agent draws from. The agent picks one entry
- * per run (rotating by day index) so no human ever has to choose a topic — but
- * the pool is curated, not free-form, so the model cannot drift onto a subject
- * with no catalogue backing. Every angle is grounded in the Moving-Head range
- * that is the only real inventory on the site.
+ * Editorial calendar the nightly agent draws from.
  *
- * Entries that already exist as hand-written posts (beam-vs-wash, IP65 buyer
- * guide, OEM guide, DMX setup) are deliberately excluded to avoid near-dupes.
+ * The agent walks this list one entry per slot, three slots a day, so no human
+ * ever has to choose a topic. The pool is curated rather than free-form: every
+ * angle has to be answerable from the catalogue, or the model drifts onto a
+ * subject with no real facts behind it.
+ *
+ * The fifteen original entries were removed on 2026-09-30 because all fifteen
+ * had shipped as articles by then, and re-covering a topic publishes a
+ * near-duplicate. Keep it that way: when the walk reaches the end of this list,
+ * EXTEND it with fresh angles rather than letting the agent loop back over its
+ * own back catalogue. At three slots a day this pool is about eleven days.
  */
 const EDITORIAL_POOL = [
-  { kind: 'buyer-guide', topic: 'How to choose a moving head for a small club: beam angle, output and noise floor' },
-  { kind: 'how-to', topic: 'Step-by-step: rigging and aiming moving heads safely for a one-night event' },
-  { kind: 'comparison', topic: 'DMX vs Art-Net vs sACN: which control protocol to specify for a touring rig' },
-  { kind: 'how-to', topic: 'Reading a moving head spec sheet: pan/tilt, zoom, CRI and what the numbers actually mean' },
-  { kind: 'application', topic: 'Designing moving-head looks for a church sanctuary without blinding the congregation' },
   { kind: 'how-to', topic: 'Colour mixing in moving heads: CMY vs RGB, and why a clean white still matters' },
-  { kind: 'application', topic: 'Building a rental-house moving head inventory that covers 90% of gig requests' },
-  { kind: 'how-to', topic: 'Gobo and prism effects in moving heads: practical creative uses, not gimmicks' },
-  { kind: 'how-to', topic: 'RDM and remote fixture management: less ladder time, fewer surprises on show day' },
-  { kind: 'application', topic: 'Moving heads for theatre: smooth cues, low noise and warm whites' },
-  { kind: 'buyer-guide', topic: 'Power, cabling and daisy-chaining moving heads: avoiding the field-day disasters' },
-  { kind: 'how-to', topic: 'Preparing moving heads for shipping: flight cases, clamps and the pre-tour checklist' },
-  { kind: 'faq', topic: 'Moving head FAQ: lifespan, service, spare parts and what to ask your supplier' },
-  { kind: 'how-to', topic: 'Zoom range in moving heads: tight spots vs wide washes, and how to use both' },
-  { kind: 'application', topic: 'Pan/tilt speed and accuracy in moving heads: why it matters for broadcast and capture' },
-  { kind: 'buyer-guide', topic: 'What to verify before buying IP-rated moving heads for permanent outdoor installs' },
+  // lasers and beam effects
+  { kind: 'buyer-guide', topic: 'Laser safety for live events: class 3B vs class 4, beam shows and what a venue needs on paper' },
+  { kind: 'how-to', topic: 'Choosing an RGB laser for a nightclub: output, scanning angle and ILDA control' },
+  { kind: 'comparison', topic: 'Laser vs moving head beam effects: where each one earns its place on a rig' },
+  // pixel, effect and atmosphere
+  { kind: 'buyer-guide', topic: 'Pixel bars vs LED matrix panels: choosing effect fixtures for a streamed set' },
+  { kind: 'how-to', topic: 'Pixel mapping a wall of LED fixtures without a media server' },
+  { kind: 'buyer-guide', topic: 'LED strobes and audience blinders: picking output and flash rate for live music' },
+  { kind: 'how-to', topic: 'Haze, fog and spark effects: which atmospheric machine suits which room' },
+  // par, wash and uplighting
+  { kind: 'buyer-guide', topic: 'Battery uplights for weddings and corporate events: runtime, wireless DMX and charging logistics' },
+  { kind: 'how-to', topic: 'LED wall washers for facades and ballrooms: beam angle, throw distance and evenness' },
+  { kind: 'comparison', topic: 'RGBW vs RGBA vs RGBAL: what the extra emitter actually buys you' },
+  // profile, spot and gobo projection
+  { kind: 'buyer-guide', topic: 'Gobo projectors for retail and brand logos: throw distance, image size and print resolution' },
+  { kind: 'comparison', topic: 'Profile spot vs fresnel: which lens a small theatre should buy' },
+  // moving heads
+  { kind: 'how-to', topic: 'Beam angle vs output: why a 230 W beam can read brighter than a 400 W wash' },
+  { kind: 'how-to', topic: 'Movement macros on a moving head: circles, ballyhoo and figure-8 cues that look intentional' },
+  { kind: 'how-to', topic: 'Moving head service intervals: what to clean, when to replace a belt, how to store fixtures between tours' },
+  { kind: 'how-to', topic: 'Cold-start behaviour: why LED fixtures derate in winter and how to plan a show around it' },
+  { kind: 'buyer-guide', topic: 'Renting vs buying moving heads: the crossover point for a working rental house' },
+  { kind: 'how-to', topic: 'Fan noise in LED fixtures: which rooms need silent running and how to measure it' },
+  // floor and kinetic
+  { kind: 'how-to', topic: 'Kinetic winches and lifting balls: load limits, control and rigging basics' },
+  { kind: 'buyer-guide', topic: 'LED dance floors: panel pitch, weight loading and how the DMX is mapped' },
+  // control
+  { kind: 'how-to', topic: 'DMX splitters and opto-isolation: when one universe needs four cable runs' },
+  { kind: 'buyer-guide', topic: 'Wireless DMX: latency, dropouts and when to run cable anyway' },
+  { kind: 'buyer-guide', topic: 'Choosing a console for a rental house: channel count, universe count and operator familiarity' },
+  { kind: 'how-to', topic: 'Backup and failover: what happens when the console dies mid-show' },
+  { kind: 'how-to', topic: 'Planning power and phase balance for a stage full of LED fixtures' },
+  // truss and rigging
+  { kind: 'buyer-guide', topic: 'Choosing truss: box vs ladder vs triangle, and how to size a span' },
+  { kind: 'how-to', topic: 'Rigging hardware basics: clamps, couplers and safety bonds, and what to inspect before every show' },
+  { kind: 'buyer-guide', topic: 'Ground support and stage platforms: what to confirm before load-in' },
+  // applications
+  { kind: 'application', topic: 'Lighting a live-streamed set: colour temperature, flicker and camera-safe dimming' },
+  { kind: 'application', topic: 'Lighting a corporate conference: front light, screen wash and keeping spill off the presenter' },
+  { kind: 'application', topic: 'Lighting a school or community theatre on a fixed budget' },
+  { kind: 'application', topic: 'Sound-activated vs DMX control: what a small venue should run' },
+  { kind: 'buyer-guide', topic: 'Touring a small show: what fits in a van and what is cheaper to hire at the other end' },
+  { kind: 'comparison', topic: 'EXW vs FOB vs CIF vs DDP: what each shipping term does to your invoice and your risk' },
 ];
 
 /**
- * @param {number} dayIndex  e.g. Math.floor(Date.now()/86400000)
+ * @param {number} slotIndex  e.g. day * slotsPerDay + slot, where day is
+ *   Math.floor(Date.now()/86400000) and slot counts runs inside that day.
+ *   With slotsPerDay = 1 this is exactly the old day-index behaviour.
  * @returns {{kind:string, topic:string}}
  */
-export function pickTopic(dayIndex) {
+export function pickTopic(slotIndex) {
   const n = EDITORIAL_POOL.length;
-  const i = ((dayIndex % n) + n) % n;
+  const i = ((slotIndex % n) + n) % n;
   return EDITORIAL_POOL[i];
 }
+
+/** How many slots the nightly scheduler asks for. Kept next to the pool. */
+export const SLOTS_PER_DAY = 3;
 
 const SYSTEM =
   'You are a senior content writer for RiGeBa Lighting, a stage lighting manufacturer in Guangzhou, China. ' +
@@ -167,7 +213,11 @@ function buildPrompt(kind, topic, facts, words, lang, images, recentImages) {
     // fixture as an example inside the beam section.
     '9. CRITICAL: a model may only be cited in a section whose subject matches that model\'s own type in FACTS. ' +
       'Before naming a model, check its name and beam angle in FACTS. If you are not certain, name no model.',
-    '10. Length is a requirement, not a target: the body must be at least ' + Math.round(words * 0.85) +
+    // The floor quoted to the model has to stay above GEO_MIN_WORDS itself:
+    // the checker counts only alphabetic tokens, so tables and prices - which
+    // the structure demands - do not count toward the number it measures.
+    '10. Length is a requirement, not a target: the body must be at least ' +
+      Math.max(GEO_MIN_WORDS + 100, Math.round(words * 0.8)) +
       ' words. Cover each section properly instead of writing a short summary of it.',
     // Without an explicit list the model reliably improvises a path like
     // /assets/images/blog/beam-guide.jpg, which 404s on publish.
@@ -450,10 +500,12 @@ function resolveImage(picked, products, allowedImages, recentImages) {
 export async function draft(env, request, opts) {
   const kind = KIND_BRIEF[opts.kind] ? opts.kind : 'buyer-guide';
   const topic = String(opts.topic || '').slice(0, 300);
-  // 1500 is the house floor now: the 2026-09 audit found the back catalogue
-  // averaged 780 words and none of it was being cited. 2000 is the cap because
-  // past that the heavy model truncates mid-JSON more often than it helps.
-  const words = Math.min(Math.max(Number(opts.words) || 1500, 300), 2000);
+  // 1700 is the working target: the 2026-09 audit found the back catalogue
+  // averaged 780 words and none of it was being cited, and the GEO gate below
+  // only counts alphabetic tokens, so tables cost length. 2000 is the cap
+  // because past that the heavy model truncates mid-JSON more often than it
+  // helps build a longer article.
+  const words = Math.min(Math.max(Number(opts.words) || 1700, 300), 2000);
   const lang = /[\u4e00-\u9fff]/.test(topic) ? 'zh' : 'en';
   const recentImages = Array.isArray(opts.recentImages)
     ? opts.recentImages.filter((s) => typeof s === 'string' && s).slice(0, 12)

@@ -135,7 +135,10 @@ const GEO = {
   // back-catalogue average. Chosen over 1,500 because every article that clears
   // this bar already carries three or four real catalogue tables, and padded
   // word count does not earn citations; sourced tables do.
-  minWords: 1000,
+  // Mirrors GEO_MIN_WORDS in functions/_lib/content.js — see the comment there
+  // for why the floor is 900 and not 1000 (the counter skips every digit, so
+  // prices and wattages in the tables do not count toward it).
+  minWords: 900,
   minQuestions: 4,
   minTables: 2,
   minFaq: 4,

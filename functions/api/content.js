@@ -7,9 +7,11 @@
  *   - Manual (default):  draft -> open a pull request, wait for a human merge.
  *     This is the "AI proposes, human disposes" guarantee for day-to-day use.
  *
- *   - Auto (body.auto = true):  the agent picks today's topic from its
- *     editorial pool, drafts, runs the fact-check, then AUTO-MERGES the PR so
- *     the post reaches production with no human in the loop. If the fact-check
+ *   - Auto (body.auto = true):  the agent picks a topic from its editorial
+ *     pool, drafts it, runs the fact-check, then AUTO-MERGES the PR so the post
+ *     reaches production with no human in the loop. The scheduler runs three
+ *     slots a night and passes {"slots":3,"slot":N} so the three posts are
+ *     three different subjects rather than three takes on one. If the fact-check
  *     flags a hard error (invented model, IP20-outdoor howler, ...) it refuses
  *     to auto-publish and instead opens a "NEEDS REVIEW" PR — the one case
  *     where a person is still required, so a wrong claim never goes live on
@@ -30,8 +32,10 @@ import { ghConfigured, proposeFiles, mergePr, deleteBranch, getFile } from '../_
 // heroes day after day. Kept small (last 40) and committed in the same PR as
 // the post, so it only advances when the post actually ships.
 const IMAGE_LEDGER = 'content/blog/.used-images.json';
-const LEDGER_KEEP = 40;
-const RECENT_HINT = 12;
+// Three posts a day means the recent window has to cover more posts to still
+// mean "last few days" — 18 images is roughly six days at this rate.
+const LEDGER_KEEP = 60;
+const RECENT_HINT = 18;
 
 async function readImageLedger(env) {
   try {
@@ -134,10 +138,14 @@ export async function onRequest(context) {
   let topic = str(body.topic, 300);
   let kind = str(body.kind, 24) || 'buyer-guide';
 
-  // Auto mode with no topic: let the agent choose from its editorial pool,
-  // rotating by day so the same subject is not repeated inside a fortnight.
+  // Auto mode with no topic: let the agent choose from its editorial pool.
+  // The index is day * slots + slot, so a single nightly run asking for three
+  // slots gets three different subjects instead of three drafts of the same
+  // one. Callers that send nothing keep the old one-post-a-day behaviour.
   if (auto && !topic) {
-    const pick = pickTopic(Math.floor(Date.now() / 86400000));
+    const slots = Math.min(6, Math.max(1, Math.round(Number(body.slots) || 1)));
+    const slot = Math.min(slots - 1, Math.max(0, Math.round(Number(body.slot) || 0)));
+    const pick = pickTopic(Math.floor(Date.now() / 86400000) * slots + slot);
     topic = pick.topic;
     kind = pick.kind;
   }
@@ -160,9 +168,11 @@ export async function onRequest(context) {
     res = await draft(env, request, {
       kind,
       topic,
-      // 1500 is the GEO floor the house structure assumes; the nightly caller
-      // sends no words value, so this default is what every auto-post gets.
-      words: Number(body.words) || 1500,
+      // 1700 is the working target the house structure assumes; the nightly
+      // caller sends no words value, so this default is what every auto-post
+      // gets. The gate itself sits far lower (GEO_MIN_WORDS in _lib/content.js)
+      // because the word counter ignores every digit in the tables.
+      words: Number(body.words) || 1700,
       recentImages: ledger.recent.slice(-RECENT_HINT),
     });
   } catch (e) {

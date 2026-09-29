@@ -1,9 +1,17 @@
 name: Daily AI Blog Post
 
-# Publishes one AI-written article every night at 23:30 Beijing time (15:30 UTC).
-# The content agent picks the topic, drafts it, fact-checks it, and
-# auto-merges the pull request — no human in the loop. If the fact-check flags
-# a hard error the run opens a "NEEDS REVIEW" PR instead of publishing.
+# Publishes three AI-written articles a night in one run: slots 0, 1 and 2 of
+# the day's three topic slots, so the three posts are three different subjects.
+#
+# The content agent picks the topic, drafts it, fact-checks it, and auto-merges
+# the pull request — no human in the loop. If the fact-check flags a hard error
+# (an invented model, a missing GEO element, a "DMX output" howler) that slot
+# opens a "NEEDS REVIEW" PR instead of publishing, and the remaining slots still
+# run, so one unusable draft never costs the whole night's batch.
+#
+# The cron nominally fires at 15:30 UTC (23:30 Beijing). GitHub routinely starts
+# scheduled workflows three to six hours late, so in practice the batch lands
+# between 03:00 and 05:30 Beijing time.
 on:
   schedule:
     - cron: '30 15 * * *'
@@ -15,68 +23,81 @@ permissions:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # three drafts + three merges + the IndexNow settle window
+    timeout-minutes: 35
+    env:
+      ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+      CONTENT_API: https://stagelumen.pages.dev/api/content
+      SLOTS: '3'
     steps:
-      - name: Trigger content agent (auto-publish)
-        env:
-          ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+      - name: Draft and publish the night's posts
         run: |
           if [ -z "$ADMIN_TOKEN" ]; then
             echo "::error::ADMIN_TOKEN secret is not set. Add it in repo Settings > Secrets > Actions."
             exit 1
           fi
-          echo "Calling content agent at $(date -u)…"
-          curl -sS -X POST \
-            "https://stagelumen.pages.dev/api/content" \
-            -H "authorization: Bearer ${ADMIN_TOKEN}" \
-            -H "content-type: application/json" \
-            -d '{"auto":true}' \
-            -o /tmp/content-resp.json
-          echo "---- response ----"
-          cat /tmp/content-resp.json
-          echo
-          # Surface the outcome in the run log.
-          node -e '
-            const r = JSON.parse(require("fs").readFileSync("/tmp/content-resp.json","utf8"));
-            if (r.merged) console.log("PUBLISHED:", r.published);
-            else if (r.needsReview) console.log("NEEDS REVIEW (fact-check failed):", r.pr && r.pr.url);
-            else if (r.pr) console.log("PR opened:", r.pr.url);
-            else console.log("No publish. autoSkipped:", r.autoSkipped || "unknown");
-          '
+          : > /tmp/published.txt
+          for SLOT in 0 1 2; do
+            echo "::group::slot ${SLOT} of ${SLOTS} — $(date -u)"
+            curl -sS -X POST "${CONTENT_API}" \
+              -H "authorization: Bearer ${ADMIN_TOKEN}" \
+              -H "content-type: application/json" \
+              -d "{\"auto\":true,\"slots\":${SLOTS},\"slot\":${SLOT}}" \
+              -o "/tmp/content-resp-${SLOT}.json"
+            echo "---- slot ${SLOT} response ----"
+            cat "/tmp/content-resp-${SLOT}.json"
+            echo
+            # Surface the outcome in the run log and collect what actually
+            # shipped, for the IndexNow step below.
+            node -e '
+              const fs = require("fs");
+              const slot = process.argv[1];
+              let r = {};
+              try { r = JSON.parse(fs.readFileSync("/tmp/content-resp-" + slot + ".json", "utf8")); } catch (e) {}
+              if (r.merged) {
+                console.log("PUBLISHED:", r.published);
+                fs.appendFileSync("/tmp/published.txt", r.published + "\n");
+              } else if (r.needsReview) console.log("NEEDS REVIEW (fact-check failed):", r.pr && r.pr.url);
+              else if (r.pr) console.log("PR opened:", r.pr.url);
+              else if (r.prError) console.log("PR error:", r.prError);
+              else console.log("No publish. autoSkipped:", r.autoSkipped || "unknown");
+            ' "${SLOT}"
+            echo "::endgroup::"
+            # Space the runs out so each one reads the image ledger the previous
+            # merge just wrote, instead of racing it.
+            if [ "${SLOT}" != "2" ]; then sleep 20; fi
+          done
+          echo "---- published this run ----"
+          cat /tmp/published.txt
 
-      # Tell Bing about the new post instead of waiting for the crawler to find
-      # it. Only runs when this scheduled run actually published something
-      # (auto-merge clean); the key file is permanently live, so the only wait
-      # needed is for Cloudflare Pages to finish building the commit.
-      - name: Ping IndexNow for the new post
+      # Tell Bing about the new posts instead of waiting for the crawler to find
+      # them. Runs once for the whole batch: the key file is permanently live, so
+      # the only wait needed is for Cloudflare Pages to finish building the last
+      # merge.
+      - name: Ping IndexNow for the new posts
         if: always()
-        env:
-          ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
         run: |
-          if [ ! -f /tmp/content-resp.json ]; then
-            echo "no content response — nothing to submit"
-            exit 0
-          fi
-          URL=$(node -e '
-            const fs = require("fs");
-            try {
-              const r = JSON.parse(fs.readFileSync("/tmp/content-resp.json","utf8"));
-              if (r.published) console.log(r.published);
-            } catch (e) {}
-          ')
-          if [ -z "$URL" ]; then
+          if [ ! -s /tmp/published.txt ]; then
             echo "nothing published this run — IndexNow not called"
             exit 0
           fi
-          echo "published: $URL"
-          echo "waiting 180s for the Pages deployment to go live…"
+          echo "published this run:"
+          cat /tmp/published.txt
+          echo "waiting 180s for the Pages deployments to go live…"
           sleep 180
+          URLS=$(node -e '
+            const fs = require("fs");
+            const u = fs.readFileSync("/tmp/published.txt", "utf8")
+              .split("\n").map(s => s.trim()).filter(Boolean);
+            console.log(JSON.stringify([...new Set(u)]));
+          ')
+          echo "submitting: ${URLS}"
           curl -sS -X POST "https://www.rigebalighting.com/api/indexnow" \
             -H "authorization: Bearer ${ADMIN_TOKEN}" \
             -H "content-type: application/json" \
-            -d "{\"urls\":[\"${URL}\"]}" \
+            -d "{\"urls\":${URLS}}" \
             -o /tmp/indexnow-resp.json \
-            || echo "::warning::IndexNow request failed (non-fatal — the post is already live)"
+            || echo "::warning::IndexNow request failed (non-fatal — the posts are already live)"
           echo "---- indexnow response ----"
           cat /tmp/indexnow-resp.json 2>/dev/null || true
           echo
