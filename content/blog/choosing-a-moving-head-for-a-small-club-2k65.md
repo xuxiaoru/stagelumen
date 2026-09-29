@@ -4,58 +4,107 @@ slug: "choosing-a-moving-head-for-a-small-club-2k65"
 date: "2026-09-24T19:22:28.219Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Selecting a moving head for a small club requires careful consideration of beam angle, output, and noise floor."
 image: "assets/images/products/rg-ml250br-kn1h18.jpg"
 imageAlt: "250W LED zoom moving head with 3-in-1 beam, spot and wash modes"
+excerpt: "A 3.5 m ceiling changes everything. What to buy for a small club, what to skip, and the four fixtures that cover a 40 m² room."
 tags:
-  - moving head
-  - small club
-  - beam angle
-  - output
-  - noise floor
+  - Moving Head
+  - Club
+  - Small Venue
+  - Buyer's Guide
+faq:
+  - "Do beams work in a small club?::Only if the ceiling is above about 5 m and you run haze. Below that, a narrow beam lands as a hot dot on the back wall and does nothing for the room. A wide wash or a multi-beam bar gives you far more visible effect per dollar at 3 to 4 m."
+  - "How many moving heads does a 40 m² club need?::Four to six for movement, on top of a fixed wash. Two overhead on the dance floor, two on the booth or back wall, and two for the stage area. Movement is an accent; the coverage comes from cheaper fixed fixtures."
+  - "Is a cheap moving head reliable enough for a club that runs six nights a week?::The sub-US$100 units are built for light duty. For a room running nightly, budget US$150 to US$220 per fixture and keep two spares. The saving on the cheap units disappears the first time you lose a fixture on a Friday."
+  - "What matters more in a club: brightness or speed?::Speed. At club distances every modern LED unit is bright enough, so what the room notices is how fast the fixture moves and how quickly it changes colour. Pan and tilt speed is the specification that reads on a dance floor."
+  - "Should a club buy a hybrid 3-in-1 fixture?::Yes, if the rig is small. One fixture that can wash the floor and throw a pattern covers two looks from one rigging point, which matters when the ceiling only has four places to hang anything."
 ---
 
-# Choosing a Moving Head for a Small Club
+A small club is not a small version of a festival stage. The ceiling is 3 to 4 m, the throw distance is short, the room runs six nights a week, and nobody is looking up. Most moving-head advice assumes a 10 m trim and a haze machine, and following it produces a rig of narrow beams doing nothing in a low room.
 
-## Understanding the Requirements
+## The short answer
 
-When selecting a moving head for a small club, several factors come into play. The primary considerations are beam angle, output, and noise floor. A small club typically has a limited stage area and a smaller audience, which means the moving head needs to be versatile and efficient.
+Buy washes and multi-beam bars, not narrow beams. At a 3.5 m trim a narrow beam has no distance to become a visible shaft, so the money is better spent on wide coverage, fast movement and colour. Four to six moving fixtures plus a fixed wash covers a 40 m² room, and the fixture budget lands between US$600 and US$1,300 at factory prices.
 
-## Beam Angle
+## Why does ceiling height decide the fixture type?
 
-The beam angle of a moving head determines the width of the beam it produces. A wider beam angle is suitable for larger stages or venues, while a narrower beam angle is better for smaller spaces. For a small club, a beam angle between 10° and 30° is typically sufficient.
+A beam effect needs air. The shaft becomes visible because haze scatters light along a long path, and at 3 m of throw there is not enough path for that to happen. What you get instead is a small, very bright pool on the wall or floor.
 
-## Output
+| Ceiling / trim height | What works | What wastes money |
+|---|---|---|
+| Under 3 m | Wide washes, LED bars, static colour | Any beam fixture, any long-throw spot |
+| 3–4.5 m | Zoom washes, multi-head beam bars, pixel bars | Dedicated 1°–3° beams |
+| 4.5–6 m | Wash plus a few beams for aerial fans | Very narrow beams still marginal |
+| Above 6 m | Beams earn their place | — |
 
-The output of a moving head refers to its luminous intensity, measured in lumens. A higher output means a brighter beam, but it also increases the noise floor and power consumption. For a small club, a moderate output of around 10,000 to 20,000 lumens is usually sufficient.
+The useful move at 3 to 4 m is a multi-head bar. Eight small beams sweeping across a dance floor from one rigging point reads as far more activity than one powerful beam, and it hangs from a single clamp.
 
-## Noise Floor
+| Model | Configuration | EXW, 1 unit |
+|---|---|---|
+| RG-ML70WS-KNNe7AH8 | Compact LED moving head | US$45 |
+| RG-ML54WS-KEDf18AH12 | Compact LED moving head | US$49 |
+| RG-ML100BD-KCRe5AH21 | LED beam, RGBW 4-in-1 | US$78 |
+| RG-ML90WS-KCRe6AH11 | 6 × 15W beam | US$95 |
+| RG-ML150BR-KNNW1H13 | Mini 150W | US$96 |
+| RG-ML100BP-KNNW1H13 | 100W LED beam | US$105 |
+| RG-ML80WN-KLEW8H12 | 8-head LED spider, CREE | US$115 |
+| RG-ML80B-KCRe8AH38 | 8-head LED beam bar | US$134 |
 
-The noise floor of a moving head refers to the level of noise it produces, measured in decibels. A lower noise floor is desirable for a small club, as it allows for a more immersive experience without distracting the audience. Look for moving heads with a noise floor of around 20 dB or lower.
+The two 8-head units are the ones that make sense low. [RG-ML80WN-KLEW8H12](/products/moving/rg-ml80wn-klew8h12) gives eight individually aimable heads from one hanging point, and [RG-ML80B-KCRe8AH38](/products/moving/rg-ml80b-kcre8ah38) is the beam-bar version of the same idea — eight narrow beams that sweep as a group.
 
-## Control Protocol
+## How much should a club spend per fixture?
 
-The control protocol of a moving head determines how it receives and responds to commands. DMX 512 is a popular control protocol used in the entertainment industry. When selecting a moving head, ensure it supports DMX 512 or other protocols your club's lighting system uses.
+There is a floor below which a fixture will not survive nightly use. The sub-US$100 units in our range are honest, well-built small fixtures, but they are built for occasional work. A room running six nights a week should buy in the US$150 to US$220 band and hold two spares.
 
-## Wattage
+| Budget per fixture | What you get | Right for |
+|---|---|---|
+| Under US$100 | Compact LED moving heads, low output | Background accents, occasional use |
+| US$100–US$180 | Mini beams, 8-head bars, 72 × 3W washes | Clubs running two or three nights a week |
+| US$180–US$260 | Zoom washes, pixel washes, 200W+ beams | Clubs running nightly |
+| US$260+ | CMY hybrids, IP65 units | Not usually justified in a small club |
 
-The wattage of a moving head determines its power consumption and heat generation. A higher wattage means more power consumption and heat generation, which can affect the moving head's lifespan and reliability. For a small club, a wattage of around 200-400W is usually sufficient.
+| Model | Configuration | EXW, 1 unit |
+|---|---|---|
+| RG-ML216WD-KTXf72AH12 | 72 × 3W RGB wash | US$149 |
+| RG-ML360WD-KTXe36AH12 | 36 × 10W 4-in-1 wash | US$139 |
+| RG-ML285WD-KOSe19AH25 | 19 × 15W wash | US$159 |
+| RG-ML125BL-KCRe38AH274 | 38 × 3W, infinite rotation | US$155 |
+| RG-ML340WC-KCH37 | 6 × 40W RGBW pixel | US$185 |
+| RG-ML350WR-KOSe4H58 | 7 × 40W zoom wash | US$186 |
+| RG-ML108BR-KCRe9AH43 | 9 × 12W triangle spider | US$188 |
+| RG-ML400BR-KCRe10AH49 | 10 × 40W RGBW pixel | US$199 |
 
-## IP Rating
+For most clubs the sweet spot is the second and third rows. [RG-ML350WR-KOSe4H58](/products/moving/rg-ml350wr-kose4h58) is the one we recommend most often, because zoom means the same fixture works on the dance floor and on a small stage without refocusing.
 
-The IP rating of a moving head determines its level of protection against solid particles and water. For a small club, an IP rating of IP20 or higher is usually sufficient.
+## What actually matters in a club specification?
 
-## Practical Trade-Offs
+Speed, colour change and noise — not raw output. At club distances every modern LED fixture is bright enough, so the specifications that change how the room feels are the ones buyers rarely compare.
 
-When selecting a moving head for a small club, there are several practical trade-offs to consider. For example, a moving head with a wider beam angle may require more power and produce a higher noise floor. On the other hand, a moving head with a narrower beam angle may be more efficient and produce less noise.
+| Specification | Why it matters in a club | What to look for |
+|---|---|---|
+| Pan/tilt speed | Fast movement is what reads as energy | Fastest available in budget; check the spec, not the brochure |
+| Colour change speed | Slow colour wheels look sluggish on beat | LED RGBW over a mechanical wheel |
+| Fan noise | A loud fixture is audible in a quiet bar | Ask for the dB figure at 1 m |
+| Beam angle | Short throw needs wide coverage | 25°–60°, or a zoom |
+| Dimming curve | Poor low-end dimming looks steppy | 16-bit dimming where offered |
 
-## Model Selection
+## How do you lay out four to six fixtures?
 
-Based on the requirements and trade-offs discussed above, the following models from RiGeBa Lighting may be suitable for a small club:
+Put coverage first and movement second. Two fixtures overhead on the dance floor doing wide colour washes, two on the booth wall doing sweeps and effects, and two angled at the stage or DJ position for front light and specials.
 
-* RG-ML108BR-KCRe9AH43: This 9x12W 4in1 Triangle spider Beam LED Moving Head has a beam angle of around 10° and a noise floor of around 20 dB. It also supports DMX 512 and has an IP rating of IP20.
-* RG-ML125BL-KCRe38AH274: This New Arrival Infinite rotation 38leds 3W RGBW 4-in-1 Pixel LED Moving Head Beam Bar has a beam angle of around 20° and a noise floor of around 25 dB. It also supports DMX 512 and has an IP rating of IP20.
+| Position | Fixture type | Count | Job |
+|---|---|---|---|
+| Overhead, dance floor | Zoom wash | 2 | Colour coverage across the floor |
+| Booth / back wall | 8-head bar or spider | 2 | Sweeping movement behind the DJ |
+| Stage or DJ position | Wash or mini beam | 2 | Front light and occasional specials |
+| Fixed, ceiling | LED PAR | 6–8 | Base colour wash that never moves |
 
-## Conclusion
+The last row is the one that gets skipped. Movement is expensive per lumen; a fixed [LED PAR](/products/par/rg-p47ic8-ke12a) delivers far more light per dollar and never needs focusing. A club with eight fixed PARs and six moving heads looks considerably better than one with twelve moving heads alone.
 
-Choosing a moving head for a small club requires careful consideration of beam angle, output, and noise floor. By understanding the requirements and trade-offs, you can select a moving head that meets your club's needs and provides an immersive experience for your audience. Next steps include researching and comparing different models, consulting with a lighting expert, and testing the moving head in your club's environment.
+## What should a club skip?
+
+Narrow beams, IP65 fixtures, CMY colour mixing and anything above about 260W. All four are built for a job a small club does not have: long throw, weather, precise colour rendering, or a large stage. Indoor units are roughly half the price of their IP65 equivalents, and CMY adds cost that only pays off when you need to match a specific colour on camera.
+
+If the room does have one beam-friendly position — a high corner with a long diagonal throw — one 200W beam is worth having for the moments when the room fills with haze. Otherwise spend the money on a wider wash.
+
+Send us your room dimensions and ceiling height and we will put together a fixture count and a budget.

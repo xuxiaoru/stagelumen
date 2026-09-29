@@ -24,17 +24,37 @@ Importing stage lighting from China is a mature, well-served trade — and also 
 
 This guide is the due-diligence framework we would hand a friend starting an import brand or upgrading a rental fleet. We run our own factory here (RiGeBa Lighting / GuangZhou GeLiang Lighting Technology Co., Ltd., Huadu District), so unlike most advice on this topic, every example in it is drawn from the inside of the process.
 
-## First signal: catalogue depth is a proxy for engineering
+## The short answer
+
+Judge a supplier on three things: whether they control a production line, whether their pricing is published with real breakpoints, and whether they can name a spares list for the model five years out. Catalogue depth is the fastest proxy for the first — a factory reuses power supplies and LED platforms across families, so its catalogue has internal structure. Certificates are the weakest signal, because they can be borrowed. Ask for something slightly inconvenient and watch how quickly it arrives.
+
+## Is catalogue depth a fair proxy for engineering?
 
 Ask any supplier for their full catalogue and look at its *structure*, not its size.
 
 A real manufacturer's catalogue has internal logic: shared components across model families, coherent sub-categories (outdoor vs indoor lines, beam vs wash vs hybrid within moving heads), and consistent spec-sheet formats across hundreds of models. Ours, for example, spans [12 product categories and 632 SKUs](../../products.html) — moving heads, pixel bars, controllers, PARs, lasers, profiles, theatre fixtures, effect machines, kinetic lighting, gobo projectors, dance floors and trussing — and the reason is engineering reuse: the same power supply and LED engine platforms serve multiple families, the way any real factory's do.
 
+| Category | SKUs |
+|---|---|
+| Truss | 128 |
+| Pixel | 81 |
+| Controller | 67 |
+| Moving head | 64 |
+| PAR | 62 |
+| Effect | 59 |
+| Gobo projector | 37 |
+| Laser | 37 |
+| Profile | 33 |
+| Floor | 28 |
+| Kinetic | 19 |
+| Theatre | 17 |
+| **Total** | **632** |
+
 A trading company's catalogue, by contrast, tends to be a flat collage: inconsistent photo styles, spec formats that change between models, and categories that jump around because they mirror whatever different upstream factories happened to offer this quarter.
 
 Neither is automatically disqualifying — traders solve real problems for small buyers — but you should know which one you are talking to, because it changes what happens when something goes wrong.
 
-## The pricing conversation: terms, tiers and honesty
+## What should the pricing conversation reveal?
 
 Three questions sort professional suppliers from improvised ones within ten minutes:
 
@@ -42,12 +62,23 @@ Three questions sort professional suppliers from improvised ones within ten minu
 Our entire catalogue is quoted **EXW Guangzhou** — the goods at the factory gate, freight and duties on you. That is the industry norm for factory-direct trade because it lets the buyer's forwarder control logistics. Whatever a supplier quotes, make sure every line item is on the same term; quotes that mix EXW and FOB are hiding margin somewhere.
 
 **2. What are the volume tiers, really?**
-A real factory publishes tiered pricing and the breakpoints are structural. Examples from our current price list: the [RG-W35TB10-Ke18](../../products/par/rg-w35tb10-ke18.html) wall washer is US$58 at 50 pieces and US$56 above that; the [RG-MINI1024](../../products/controller/rg-mini1024.html) console is US$300 with a one-piece minimum because a console is a single-value item, while the [RG-M230BN-KMH16](../../products/moving/rg-m230bn-kmh16.html) 230W beam carries a 100-piece MOQ at US$179 because its tooling amortises over production runs. **Ask *why* a MOQ is what it is.** Factories can explain the tooling or line-setup logic; intermediaries usually cannot.
+A real factory publishes tiered pricing and the breakpoints are structural. Examples from our current price list: the [RG-W35TB10-Ke18](/products/par/rg-w35tb10-ke18) wall washer is US$58 at 50 pieces and US$56 above that; the [RG-MINI1024](/products/controller/rg-mini1024) console is US$300 with a one-piece minimum because a console is a single-value item, while the [RG-M230BN-KMH16](/products/moving/rg-m230bn-kmh16) 230W beam carries a 100-piece MOQ at US$179 because its tooling amortises over production runs. **Ask *why* a MOQ is what it is.** Factories can explain the tooling or line-setup logic; intermediaries usually cannot.
+
+| Model | 1 unit | Volume price | Threshold | MOQ |
+|---|---|---|---|---|
+| RG-W35TB10-Ke18 | US$58 | US$56 | Over 50 pcs | 50 |
+| RG-W39TB12-Kg18 | US$78 | US$74 | Over 100 pcs | 100 |
+| RG-M230BN-KMH16 | US$179 | US$159 | Over 100 pcs | 100 |
+| RG-ML240WD-KTXe6AH3 | US$192 | US$162 | Over 30 pcs | 30 |
+| RG-ML80B-KCRe8AH38 | US$134 | — | — | 1 |
+| RG-MINI1024 | US$300 | — | — | 1 |
+
+The spread is the point: a console has a one-piece minimum because it is a single-value item, while [the 230W beam](/products/moving/rg-m230bn-kmh16) carries a 100-piece MOQ because its tooling amortises over production runs. A supplier who can explain that difference is describing a factory.
 
 **3. What happens after the invoice?**
 Payment terms in this trade settle quickly: T/T (bank transfer) with a deposit against production and balance before shipment is standard. What distinguishes suppliers is what surrounds the payment: whether they provide a pre-shipment inspection gate, whether aging-test data ships with the goods, and whether they can name the spares that will be available for the model five years from now.
 
-## OEM and ODM: what each word actually costs
+## What do OEM and ODM actually cost?
 
 The terms get used loosely, so pin them down:
 
@@ -57,7 +88,7 @@ The terms get used loosely, so pin them down:
 
 A practical test we recommend to every buyer: ask for something *slightly inconvenient* — a fixture with a non-standard connector, a spec sheet in your format, a video of the aging test with your order number visible in frame. The response tells you more about the operation than any certificate.
 
-## Quality control: the three gates that matter
+## Which quality-control gates matter?
 
 Stage lighting is a harsh product category — high current, heat, motion, and rental abuse — so QC structure matters more here than in most consumer goods. Three gates separate adequate shipments from disappointing ones:
 
@@ -67,7 +98,7 @@ Stage lighting is a harsh product category — high current, heat, motion, and r
 
 **Gate 3 — pre-shipment inspection.** Either your own third-party inspector or a structured factory self-inspection: sample units run through DMX addressing on a real console, zoom/gobo/focus exercised, IP-sealed units water-tested. We cover the rig-preparation side of this in [our guide to preparing moving heads for shipping](preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kzdj.html) — packaging design is part of QC, not logistics.
 
-## Red flags worth walking away from
+## Which red flags are worth walking away from?
 
 Most sourcing advice lists certifications to demand; fewer articles list the behaviour patterns that predict a bad relationship regardless of paperwork. From the inside of the trade, these are the tells:
 
@@ -79,13 +110,13 @@ Most sourcing advice lists certifications to demand; fewer articles list the beh
 
 None of these red flags involves certificates. That is deliberate: certificates can be borrowed, bought or photo-shopped, but operational habits have to be lived.
 
-## Logistics reality check
+## What does the logistics reality check cover?
 
 From Guangzhou, sea freight to major ports is routine and well-understood; what importers underplan is the last mile of specification: **voltage and plug type**. Every fixture we ship runs AC100–240V 50/60 Hz, but the plug that leaves the factory matches the destination market only if someone asks. It is a five-second question at order time and a two-week retrofit after delivery — add it to your PO template.
 
 Also plan for the accessories line on your first order: flight cases, clamps, safety cables, spare connectors and a spares kit for each model. A container of fixtures without a spares strategy turns every warranty case into a production-stop. When you receive your first quote, expect the accessories to be itemised separately — that itemisation is itself a good-factory signal.
 
-## The visit test
+## Does the factory visit still matter?
 
 If the relationship is meant to be a long one, visit the factory — or send someone whose judgment you trust. An hour on the floor answers questions no email can: whether the assembly line is busy, whether the aging racks are full, whether engineering staff sit in the building or exist only in a WeChat group. Huadu District is an hour from Guangzhou's international airport; a one-day visit slots into any sourcing trip to Canton Fair.
 

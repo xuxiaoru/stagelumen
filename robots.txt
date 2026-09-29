@@ -67,4 +67,4 @@ User-agent: Bytespider
 Allow: /
 
 Sitemap: https://www.rigebalighting.com/sitemap.xml
-# Sitemap: https://www.rigebalighting.com/sitemap-products.xml  (enable after product pages are prerendered)
+Sitemap: https://www.rigebalighting.com/sitemap-products.xml

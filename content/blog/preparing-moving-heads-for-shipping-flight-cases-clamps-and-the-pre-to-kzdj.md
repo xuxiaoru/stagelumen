@@ -4,275 +4,138 @@ slug: "preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kz
 date: "2026-09-19T18:09:22.331Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Flight cases, clamps and the pre-tour checklist: how to pack, protect and verify moving heads before they leave the warehouse."
 image: "assets/images/products/rg-m250s-knh20.jpg"
 imageAlt: "250W 8R moving head spot light"
+excerpt: "Most tour damage happens in the case, not on the road. How to prep, pack and document a moving head so it arrives working."
 tags:
-  - Moving Heads
+  - Moving Head
   - Shipping
-  - Pre-Tour Checklist
+  - Flight Case
+  - Touring
+faq:
+  - "Should fixtures ship with the clamps attached?::No. Remove the clamp and the safety bond and pack them separately. A clamp left on a yoke becomes a lever in transit and is the most common cause of a bent yoke or a cracked housing on arrival."
+  - "What pan/tilt position should a moving head ship in?::Park it, then lock it. Most fixtures have a pan/tilt lock or a transport position; use it. If there is no lock, park at a position where the head is tucked into the yoke rather than extended, so an impact cannot drive the head into its own stops."
+  - "How much foam is enough in a case?::Enough that the fixture cannot move when the case is closed and shaken. The fixture should be supported at the yoke and the base, not floating on its lens, and nothing should press on the lens or the display."
+  - "What should be photographed before a shipment?::Every fixture: serial number, the condition of the housing and lens, and the packed case with the lid off. That set of photographs is what turns a freight claim from an argument into a form."
+  - "How should fixtures be tested on arrival?::Power each one before it is rigged, on the ground, and run it through its full pan and tilt range plus every wheel and the dimmer. Finding a fault on the floor takes five minutes; finding it at trim height takes an hour."
 ---
 
-## Preparing Moving Heads for Shipping: Flight Cases, Clamps, and the Pre-Tour Checklist
+Tour damage rarely happens on the road. It happens in the case: a clamp left on a yoke, a head parked where an impact drives it into its own stop, or a fixture packed with no support so it arrives with a cracked housing and a freight claim nobody can win.
 
-### 1. Flight Case Preparation
+## The short answer
 
-Before shipping moving heads, ensure the flight cases are properly prepared. This includes:
+Remove the clamp and the safety bond, park and lock the head, support the fixture at the yoke and the base rather than on its lens, and photograph every unit before the lid closes. On arrival, power and run each fixture on the ground before it goes up. Most of this is ten minutes per fixture, and it is the difference between a load-in and an insurance claim.
 
-- Checking the case's size and material to ensure it can accommodate the moving head.
-- Verifying the case's weight capacity to prevent damage during transportation.
-- Ensuring the case's handles are securely attached and can support the weight of the moving head.
+## What comes off the fixture before it is packed?
 
-For example, the RG-ML80B-KCRe8AH38 moving head bar is 1090Lx77Wx135Lmm in size. When choosing a flight case, consider a case that can accommodate this size to prevent damage.
+Everything that can act as a lever.
 
-### 2. Clamp Installation
+| Item | Action | Why |
+|---|---|---|
+| Clamp | Remove and pack separately | A clamp on the yoke is a lever in transit |
+| Safety bond | Remove and pack separately | Same reason, plus it snags on other fixtures |
+| Power and data cables | Coil and secure, do not wrap around the head | Pressure on the housing cracks it |
+| Gobos and irises | Remove custom glass, pack in a labelled sleeve | Glass gobos break under vibration |
+| Lens and display | Cover, never press | The two parts that cannot be repaired cheaply |
+| Pan/tilt lock | Engage it | Stops the head driving into its own stops |
 
-Clamps are essential for securing the moving head within the flight case. Follow these steps to install clamps:
+Our [single hook clamp](/products/truss/dg-ls52f-200) and [rated safety belt](/products/truss/dd-se2l200-y) are cheap enough that a spare set per case is worth carrying, so nothing has to be borrowed off another fixture at load-in.
 
-- Choose the correct clamp size for the moving head's diameter.
-- Attach the clamp to the moving head's base, ensuring it is securely fastened.
-- Verify the clamp is not obstructing any moving parts or optical lenses.
+## What should the case do?
 
-For instance, the 6 heads full-color swinging laser arrows moving head laser has a laser module power of 3000mW. When installing clamps, ensure they do not obstruct the laser's beam path.
+Hold the fixture still. That is the whole specification, and most case problems are a fixture that can move inside its own foam.
 
-### 3. Pre-Tour Checklist
+| Check | Pass | Fail |
+|---|---|---|
+| Shake test | No movement with the lid closed | Any rattle |
+| Support points | Yoke and base | Lens, display or the head itself |
+| Lid clearance | Nothing presses when closed | Foam compressed against the lens |
+| Weight distribution | Heavy end identifiable and marked | Case that tips unpredictably |
+| Casters and handles | Rated for the loaded weight | Handles that flex under the load |
 
-Before shipping moving heads, perform a thorough pre-tour checklist to ensure they are in working condition:
+A case that passes the shake test survives normal freight. One that fails it will eventually produce a fixture with a cracked housing, and the crack will be blamed on the carrier.
 
-- Verify the moving head's power supply and connections are secure.
-- Check the moving head's firmware and software are up-to-date.
-- Test the moving head's movement, focusing, and color accuracy.
-- Verify the moving head's IP rating and ensure it can withstand the environment it will be used in.
+## What goes in the case besides the fixture?
 
-For example, the New 295W 10R beam moving head light has a lifespan of 2200 hours. Before shipping, verify the moving head has not exceeded this lifespan.
+A short, boring list that saves an hour at every load-in.
 
-### 4. Shipping and Handling
+| Item | Why |
+|---|---|
+| Clamp, correctly sized | One per fixture, in the case |
+| Safety bond | One per fixture |
+| Power cable, correct plug type | The most common missing item on site |
+| Spare fuse and a spare fan | The two parts that fail |
+| Laminated patch card | Mode, footprint, addressing steps |
+| Photograph of the packed case | Freight claim evidence |
 
-When shipping moving heads, follow these guidelines:
+## What is the pre-tour checklist?
 
-- Use a sturdy flight case that can withstand the weight and size of the moving head.
-- Secure the moving head within the case using clamps and padding.
-- Label the case with the moving head's model number and any relevant handling instructions.
-- Verify the shipping company's insurance coverage and liability.
+Run it in one order, and write it down. The value of a checklist is that it is the same every time.
 
-For instance, the RG-ML760WC-KCH99 moving head light is IP65 rated and can withstand outdoor environments. When shipping, ensure the case is properly sealed to prevent water ingress.
+| Stage | Checks |
+|---|---|
+| Bench | Power up, home the fixture, run pan/tilt full range, exercise every wheel, check the dimmer at low level |
+| Prep | Record the serial number, set the mode and start address, label the fixture and the case to match |
+| Pack | Remove clamp and bond, lock pan/tilt, photograph, close and shake |
+| Load | Cases stacked by weight, heavy at the bottom, nothing stacked on a lid |
+| Ship | Documentation packed with the load, not sent separately |
+| Receive | Photograph any damage before unpacking, then inspect |
+| Test | Power every fixture on the ground, full range, before rigging |
 
-### 5. Final Inspection
+The last row is the one everyone skips. A fixture tested at trim height costs an hour of crew time and a ladder; the same fixture tested on the floor costs five minutes and a mains lead.
 
-Before shipping moving heads, perform a final inspection to ensure they are properly prepared:
+## How should the load be documented?
 
-- Verify the flight case is securely closed and the moving head is properly clamped.
-- Check the moving head's power supply and connections are secure.
-- Test the moving head's movement and focusing to ensure it is in working condition.
+Three documents, and they should travel with the load rather than in an email.
 
-For example, the 6W Moving head full color laser light has a beam range of 540 degrees. Before shipping, verify the moving head's beam is properly aligned and focused.
+| Document | Contents |
+|---|---|
+| Packing list | Case number, fixture model, serial number, quantity |
+| Photographic record | Serial number plate, housing condition, packed case |
+| Declaration of value | Per-fixture value, for insurance and customs |
 
-### 6. Documenting the Pre-Tour Checklist
+The declaration of value is where the catalogue pricing matters. Fixture value spans an order of magnitude, and a claim that says "lighting equipment" is settled at whatever the carrier decides.
 
-Document the pre-tour checklist to ensure the moving heads are properly prepared for shipping:
+| Model | Type | EXW, 1 unit |
+|---|---|---|
+| RG-ML70WS-KNNe7AH8 | Compact LED moving head | US$45 |
+| RG-ML150BR-KNNW1H13 | Mini 150W beam | US$96 |
+| RG-ML80B-KCRe8AH38 | 8-head beam bar | US$134 |
+| RG-ML360WD-KTXe36AH12 | 36 × 10W wash | US$139 |
+| RG-M300BH-KYH16 | 300W beam | US$285 |
+| RG-ML400RS-KNNW1H21 | 400W CMY 3-in-1 BSW | US$459 |
+| RG-ML500RS-KNNW1H20 | 500W CMY 3-in-1 BSW | US$569 |
+| RG-M420BN-KH24 | 420W IP65 beam | US$757 |
 
-- Create a checklist of the moving head's specifications and requirements.
-- Verify the moving head's firmware and software are up-to-date.
-- Test the moving head's movement, focusing, and color accuracy.
-- Document any issues or concerns with the moving head.
+## What about the fixtures that go by air?
 
-For instance, the RG-ML500BL-KCRe12AH194 moving head light has a 40W zoom capability. When documenting the pre-tour checklist, ensure the moving head's zoom function is properly tested and documented.
+Tighter, because the handling is rougher and the weight limit is real.
 
-### 7. Shipping and Delivery
+| Consideration | Detail |
+|---|---|
+| Case weight | Air freight is charged on volume as well as weight |
+| Battery and hazmat rules | Declare anything with a battery or a lithium cell |
+| Lithium cells in fixtures | Some fixtures have a backup cell — check before booking |
+| Time on the ground | Test on arrival, not at the venue |
+| Spares in the same shipment | A spare fixture that arrives with the rig is worth two that arrive later |
 
-Once the moving heads are properly prepared, ship them to the rental house or touring production:
+## What should be carried as spares?
 
-- Use a reputable shipping company that can provide tracking and insurance coverage.
-- Verify the shipping company's liability and insurance coverage.
-- Ensure the moving heads are properly packaged and labeled.
+One spare fixture per ten, plus the consumables that fail most often.
 
-For example, the 12LEDS 40W Zoom with led strip led moving head light has a voltage range of 100-240V. When shipping, ensure the moving heads are properly packaged to prevent electrical shock.
+| Spare | Per 10 fixtures | Notes |
+|---|---|---|
+| Complete fixture | 1 | The only spare that fixes anything instantly |
+| Fan | 2 | The most common failure |
+| Belt set | 1 | Pan/tilt drive on nightly fixtures |
+| Power supply | 1 | The failure that takes a fixture out at once |
+| Clamp and bond | 1 each | Cheap, and always lost |
+| Gobos | Per design | Glass breaks |
 
-### 8. Receiving and Inspection
+Our [spares and service guide](moving-head-faq-lifespan-service-spare-parts-and-what-to-ask-your-supp-3oz3.html) covers which components fail and in what order, and the [rental-house inventory guide](building-a-rental-house-moving-head-inventory-1mrl.html) covers the spare ratio at fleet scale.
 
-When receiving the moving heads, perform a thorough inspection to ensure they are in working condition:
+## What is the one thing worth doing first?
 
-- Verify the moving heads are properly packaged and labeled.
-- Check the moving heads' power supply and connections are secure.
-- Test the moving heads' movement, focusing, and color accuracy.
-- Verify the moving heads' firmware and software are up-to-date.
+Photograph every fixture with its serial number, once, and keep the set. It takes twenty minutes for a twenty-fixture load, and it is the only piece of evidence that survives a freight claim intact.
 
-For instance, the 8heads led beam moving head bar has a 10W LED configuration. When receiving, ensure the moving heads' LEDs are properly aligned and focused.
-
-### 9. Final Testing
-
-Once the moving heads are properly inspected, perform a final test to ensure they are in working condition:
-
-- Test the moving heads' movement, focusing, and color accuracy.
-- Verify the moving heads' firmware and software are up-to-date.
-- Check the moving heads' power supply and connections are secure.
-
-For example, the 6 heads full-color swinging laser arrows moving head laser has a laser module power of 3000mW. When performing the final test, ensure the moving head's laser is properly aligned and focused.
-
-### 10. Documenting the Pre-Tour Checklist
-
-Document the pre-tour checklist to ensure the moving heads are properly prepared for shipping:
-
-- Create a checklist of the moving head's specifications and requirements.
-- Verify the moving head's firmware and software are up-to-date.
-- Test the moving head's movement, focusing, and color accuracy.
-- Document any issues or concerns with the moving head.
-
-For instance, the New 295W 10R beam moving head light has a lifespan of 2200 hours. When documenting the pre-tour checklist, ensure the moving head's lifespan is properly documented.
-
-### 11. Shipping and Delivery
-
-Once the moving heads are properly prepared, ship them to the rental house or touring production:
-
-- Use a reputable shipping company that can provide tracking and insurance coverage.
-- Verify the shipping company's liability and insurance coverage.
-- Ensure the moving heads are properly packaged and labeled.
-
-For example, the RG-ML760WC-KCH99 moving head light is IP65 rated and can withstand outdoor environments. When shipping, ensure the case is properly sealed to prevent water ingress.
-
-### 12. Receiving and Inspection
-
-When receiving the moving heads, perform a thorough inspection to ensure they are in working condition:
-
-- Verify the moving heads are properly packaged and labeled.
-- Check the moving heads' power supply and connections are secure.
-- Test the moving heads' movement, focusing, and color accuracy.
-- Verify the moving heads' firmware and software are up-to-date.
-
-For instance, the 6W Moving head full color laser light has a beam range of 540 degrees. When receiving, ensure the moving head's beam is properly aligned and focused.
-
-### 13. Final Testing
-
-Once the moving heads are properly inspected, perform a final test to ensure they are in working condition:
-
-- Test the moving heads' movement, focusing, and color accuracy.
-- Verify the moving heads' firmware and software are up-to-date.
-- Check the moving heads' power supply and connections are secure.
-
-For example, the 12LEDS 40W Zoom with led strip led moving head light has a voltage range of 100-240V. When performing the final test, ensure the moving head's voltage is properly set.
-
-### 14. Documenting the Pre-Tour Checklist
-
-Document the pre-tour checklist to ensure the moving heads are properly prepared for shipping:
-
-- Create a checklist of the moving head's specifications and requirements.
-- Verify the moving head's firmware and software are up-to-date.
-- Test the moving head's movement, focusing, and color accuracy.
-- Document any issues or concerns with the moving head.
-
-For instance, the 8heads led beam moving head bar has a 10W LED configuration. When documenting the pre-tour checklist, ensure the moving head's LEDs are properly aligned and focused.
-
-### 15. Shipping and Delivery
-
-Once the moving heads are properly prepared, ship them to the rental house or touring production:
-
-- Use a reputable shipping company that can provide tracking and insurance coverage.
-- Verify the shipping company's liability and insurance coverage.
-- Ensure the moving heads are properly packaged and labeled.
-
-For example, the New 295W 10R beam moving head light has a lifespan of 2200 hours. When shipping, ensure the moving head's lifespan is properly documented.
-
-### 16. Receiving and Inspection
-
-When receiving the moving heads, perform a thorough inspection to ensure they are in working condition:
-
-- Verify the moving heads are properly packaged and labeled.
-- Check the moving heads' power supply and connections are secure.
-- Test the moving heads' movement, focusing, and color accuracy.
-- Verify the moving heads' firmware and software are up-to-date.
-
-For instance, the 6 heads full-color swinging laser arrows moving head laser has a laser module power of 3000mW. When receiving, ensure the moving head's laser is properly aligned and focused.
-
-### 17. Final Testing
-
-Once the moving heads are properly inspected, perform a final test to ensure they are in working condition:
-
-- Test the moving heads' movement, focusing, and color accuracy.
-- Verify the moving heads' firmware and software are up-to-date.
-- Check the moving heads' power supply and connections are secure.
-
-For example, the 12LEDS 40W Zoom with led strip led moving head light has a voltage range of 100-240V. When performing the final test, ensure the moving head's voltage is properly set.
-
-### 18. Documenting the Pre-Tour Checklist
-
-Document the pre-tour checklist to ensure the moving heads are properly prepared for shipping:
-
-- Create a checklist of the moving head's specifications and requirements.
-- Verify the moving head's firmware and software are up-to-date.
-- Test the moving head's movement, focusing, and color accuracy.
-- Document any issues or concerns with the moving head.
-
-For instance, the 8heads led beam moving head bar has a 10W LED configuration. When documenting the pre-tour checklist, ensure the moving head's LEDs are properly aligned and focused.
-
-### 19. Shipping and Delivery
-
-Once the moving heads are properly prepared, ship them to the rental house or touring production:
-
-- Use a reputable shipping company that can provide tracking and insurance coverage.
-- Verify the shipping company's liability and insurance coverage.
-- Ensure the moving heads are properly packaged and labeled.
-
-For example, the New 295W 10R beam moving head light has a lifespan of 2200 hours. When shipping, ensure the moving head's lifespan is properly documented.
-
-### 20. Receiving and Inspection
-
-When receiving the moving heads, perform a thorough inspection to ensure they are in working condition:
-
-- Verify the moving heads are properly packaged and labeled.
-- Check the moving heads' power supply and connections are secure.
-- Test the moving heads' movement, focusing, and color accuracy.
-- Verify the moving heads' firmware and software are up-to-date.
-
-For instance, the 6W Moving head full color laser light has a beam range of 540 degrees. When receiving, ensure the moving head's beam is properly aligned and focused.
-
-### 21. Final Testing
-
-Once the moving heads are properly inspected, perform a final test to ensure they are in working condition:
-
-- Test the moving heads' movement, focusing, and color accuracy.
-- Verify the moving heads' firmware and software are up-to-date.
-- Check the moving heads' power supply and connections are secure.
-
-For example, the 12LEDS 40W Zoom with led strip led moving head light has a voltage range of 100-240V. When performing the final test, ensure the moving head's voltage is properly set.
-
-### 22. Documenting the Pre-Tour Checklist
-
-Document the pre-tour checklist to ensure the moving heads are properly prepared for shipping:
-
-- Create a checklist of the moving head's specifications and requirements.
-- Verify the moving head's firmware and software are up-to-date.
-- Test the moving head's movement, focusing, and color accuracy.
-- Document any issues or concerns with the moving head.
-
-For instance, the 8heads led beam moving head bar has a 10W LED configuration. When documenting the pre-tour checklist, ensure the moving head's LEDs are properly aligned and focused.
-
-### 23. Shipping and Delivery
-
-Once the moving heads are properly prepared, ship them to the rental house or touring production:
-
-- Use a reputable shipping company that can provide tracking and insurance coverage.
-- Verify the shipping company's liability and insurance coverage.
-- Ensure the moving heads are properly packaged and labeled.
-
-For example, the New 295W 10R beam moving head light has a lifespan of 2200 hours. When shipping, ensure the moving head's lifespan is properly documented.
-
-### 24. Receiving and Inspection
-
-When receiving the moving heads, perform a thorough inspection to ensure they are in working condition:
-
-- Verify the moving heads are properly packaged and labeled.
-- Check the moving heads' power supply and connections are secure.
-- Test the moving heads' movement, focusing, and color accuracy.
-- Verify the moving heads' firmware and software are up-to-date.
-
-For instance, the 6 heads full-color swinging laser arrows moving head laser has a laser module power of 3000mW. When receiving, ensure the moving head's laser is properly aligned and focused.
-
-### 25. Final Testing
-
-Once the moving heads are properly inspected, perform a final test to ensure they are in working condition:
-
-- Test the moving heads' movement, focusing, and color accuracy.
-- Verify the moving heads' firmware and software are up-to-date.
-- Check the moving heads' power supply and connections are secure.
-
-For example, the 12LEDS 40W Zoom with led strip led moving head light has a voltage range of 100-240V. When performing the final test, ensure the moving head's voltage is
+Send us the fixture list and the shipment route, and we will quote the spares kit and the hardware that should travel with each case.

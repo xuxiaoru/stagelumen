@@ -6,100 +6,128 @@ author: "RiGeBa Lighting Team"
 category: "Buyer's Guide"
 image: "assets/images/products/rg-p47tc10-we7a.jpg"
 imageAlt: "IP65 outdoor high power LED par light"
-excerpt: "A practical checklist for specifying weatherproof moving heads and washes — IP ratings, beam angle, control protocol, salt-spray resistance and power, with real fixture data."
+excerpt: "Festivals and coastal venues fail fixtures two different ways. What to specify for each, with real outdoor models and prices."
 tags:
   - IP65
   - Outdoor
   - Moving Head
   - Weatherproof
   - Buyer's Guide
+faq:
+  - "Is IP65 enough for a seaside venue?::For rain and wash-down, yes. For salt air, the rating is not the issue — corrosion is. At the coast specify a marine-grade finish on the housing and stainless hardware on every clamp and bolt, and rinse the fixtures with fresh water after a run. The IP rating covers water ingress, not what the water leaves behind."
+  - "What is the difference between IP65 and IP66?::IP65 is protected against low-pressure water jets from any direction; IP66 is protected against powerful jets. For a festival stage that gets rained on, IP65 is the practical standard. IP66 matters where a fixture is hosed down regularly or sits in a wash-down area."
+  - "Why do outdoor moving heads cost about twice as much?::Sealing, connectors and materials. A moving head has a rotating yoke, which means a dynamic seal that has to stay watertight through millions of cycles, plus gasketed power and data connectors, a drainage path and a corrosion-resistant finish. That is real hardware cost, not a marketing premium."
+  - "What fails first on an outdoor fixture?::The connectors and the cables, not the housing. Water wicks along a cable into a connector that is otherwise sealed, and corrosion forms on the pins. Specify IP-rated connectors on both ends and drip-loop every run so water drips off the lowest point instead of into the plug."
+  - "Can an indoor fixture be used under a covered stage?::Only if the cover is genuinely weatherproof on all four sides. Wind-driven rain reaches under most roofs, and condensation forms inside a fixture that gets cold overnight and warm in the sun. If the rig is outside the building envelope, buy the IP65 unit."
+  - "How should outdoor fixtures be stored between festivals?::Dry, vented and out of the sun. The common mistake is sealing a damp fixture into a flight case, which turns the case into a humidity chamber. Dry the fixture, leave the case lid cracked in a dry store, and check the desiccant."
 ---
 
-Outdoor rigs fail for boring reasons. Not because the beam was too wide or the colour mixing was wrong — but because water got in, connectors corroded, or the fixture had no way to report a fault until it went dark in front of an audience.
+Festival work and seaside work are both "outdoor", and they kill fixtures differently. A festival rig fails from water getting in during a rain event and from being struck and re-rigged every weekend. A coastal rig fails slowly, from salt. Specifying one as if it were the other is the most expensive mistake in outdoor lighting.
 
-This guide walks through what actually matters when you specify weatherproof fixtures, using real specifications from our outdoor range rather than marketing adjectives.
+## The short answer
 
-## What IP65 Actually Promises
+For a festival stage, buy IP65 with gasketed connectors and budget for ruggedness — the fixture will be cased, trucked and re-hung dozens of times a season. For a seaside venue, buy IP65 with a corrosion-resistant finish and stainless hardware, and commit to rinsing the rig with fresh water. Expect outdoor moving heads to cost roughly twice the indoor equivalent: our IP65 beams start at US$409 against US$180 indoors.
 
-An IP rating is two digits, and buyers routinely over-read the second one.
+## What does IP65 actually promise, and what does it not?
 
-| Digit | Position | What it covers |
-| --- | --- | --- |
-| 6 | First (solid) | Dust-tight — no ingress of dust, complete protection against contact |
-| 5 | Second (liquid) | Protected against low-pressure water jets from any direction |
+An IP rating is two digits and buyers over-read both of them.
 
-IP65 means the enclosure is sealed against dust and will survive rain and hose-down. It does **not** mean the fixture can be submerged — that requires IP67 or IP68. For a festival stage that gets rained on, or a permanent install on a seafront, IP65 is the standard working rating.
+| Rating | First digit (solids) | Second digit (liquids) | Practical meaning |
+|---|---|---|---|
+| IP20 | No protection against dust | No protection against water | Indoor only, dry rooms |
+| IP44 | Protected against 1 mm objects | Splash from any direction | Covered outdoor positions |
+| IP65 | Dust-tight | Low-pressure jets from any direction | Open outdoor stages, rain |
+| IP66 | Dust-tight | Powerful jets | Wash-down areas, exposed facades |
 
-One thing the rating does not cover: **corrosion**. A fixture can be perfectly sealed and still fail because the housing pitted through. That is a separate specification, and we come back to it below.
+Neither digit covers the two things that actually end an outdoor fixture's life: corrosion from salt, and water that enters through a cable rather than through the housing. Salt is chemistry, not ingress, and no rating addresses it.
 
-## The Five Things Worth Checking
+## What is different about a seaside venue?
 
-### 1. Beam angle and zoom range
+Everything downstream of the rating. Salt-laden air settles on the housing, and when humidity rises it forms an electrolyte that attacks any exposed metal — clamp bolts, yoke hardware, connector shells, and eventually the heatsink fins.
 
-This decides what the fixture is for, and it is the single most common mismatch we see in enquiries.
+| Coastal risk | What it attacks | What to specify |
+|---|---|---|
+| Salt deposition | Heatsink fins, housing finish | Marine-grade powder coat, rinsed regularly |
+| Galvanic corrosion | Mixed-metal fixings | Stainless clamps and bolts throughout |
+| Humidity cycling | Internal electronics, optics | Sealed optics block, desiccant in the housing |
+| Condensation | Lens interior, driver board | Vented design with a drainage path, not a sealed box |
 
-- **2°–5°** — a true beam look, tight aerial shafts. This is the tight-beam range.
-- **5°–55°** — a wash that can also punch. Wide zoom ratio, one fixture covers both front wash and mid-air work.
-- **2°–45°** — hybrid territory. Broad enough to be useful, tight enough to be dramatic.
+The countermeasure is unglamorous and free: rinse the rig with fresh water after a coastal run and let it dry before casing it. Fixtures that get rinsed last years longer than identical fixtures that do not, and the difference has nothing to do with the IP rating.
 
-If your design needs both hard beams and even stage wash, one hybrid fixture often beats two specialised ones once you count rigging time and cabling.
+## Which outdoor fixtures are actually available?
 
-### 2. Control protocol
+Thirty-five SKUs across our catalogue carry an IP65 rating, and they are not all moving heads.
 
-DMX512 is the baseline. The upgrade worth paying for is **RDM** (Remote Device Management), which lets the console discover fixtures, set addresses and read fault status remotely — instead of sending someone up a truss with a ladder.
+| Category | Outdoor SKUs | Entry price | Typical outdoor job |
+|---|---|---|---|
+| Moving head | 8 | US$409 | Beams and washes on an open stage |
+| PAR | 6 | US$59 | Colour wash on facades and structures |
+| Gobo projector | 10 | US$58 | Logo and pattern projection |
+| Pixel / tube | 2 | US$105 | Vertical effects, outline lighting |
+| Floor | 1 | US$45 | Interactive dance floor under cover |
 
-| Fixture type | Control protocols |
-| --- | --- |
-| Beam fixtures | DMX512 / RDM |
-| Wash fixtures | DMX512 / RDM |
-| Hybrid fixtures | DMX512 / RDM / Art-Net |
-| Battery uplighters | DMX512 / Wireless DMX |
-| City-colour units | DMX512 / RDM / Auto / Master-Slave |
+| Model | Type | EXW, 1 unit |
+|---|---|---|
+| RG-M230B-KOH20 | 230W IP65 beam moving head | US$409 |
+| RG-ML760WC-KCH99 | IP65 19 × 40W zoom wash | US$560 |
+| RG-M480SN-KNH16 | 480W IP65 beam | US$579 |
+| 350W Hot Selling Waterproof | 350W IP65 beam | US$583 |
+| RG-ML420WC-KCH93 | IP65 7 × 60W wash | US$590 |
+| RG-M380B-KOH20 | 380W IP65 beam | US$659 |
+| RG-M380B-KOH16 | 380W IP65 beam-spot-wash | US$715 |
+| RG-M420BN-KH24 | 420W IP65 beam | US$757 |
 
-Art-Net on the hybrid fixtures matters if you are running pixel-mapped or large-channel-count rigs over network infrastructure rather than copper DMX runs.
+The two that do most of the work on a festival stage are [the 230W outdoor beam](/products/moving/rg-m230b-koh20), which is the cheapest way to get an aerial effect that survives rain, and [the IP65 zoom wash](/products/moving/rg-ml760wc-kch99), which covers a wide stage from a single hanging point.
 
-### 3. Colour system
+## Does a festival rig need moving heads at all?
 
-- **Colour wheel** (beam fixtures) — fast, punchy, saturated. Good for beam work where you want instant hard colour changes.
-- **RGBW / CTO** (wash fixtures) — smooth mixing plus tungsten correction. The practical choice for washing skin tones on camera.
-- **CMY / CTO** (hybrid fixtures) — subtractive mixing, the widest usable colour gamut, and the standard for broadcast and theatre.
+Less than an indoor rig does. Fixed fixtures are cheaper per lumen, they have no moving seal to fail, and a festival audience is looking at a stage, not at a ceiling.
 
-### 4. Weight and rigging
+| Position | Fixture | Why fixed is often enough |
+|---|---|---|
+| Stage wash | IP65 PAR | Colour on the stage; nothing needs to move |
+| Facade and structure | IP65 wall washer | A static surface, lit statically |
+| Architectural projection | IP65 gobo projector | The image does not move |
+| Audience beams | IP65 beam moving head | Needs movement to sweep |
+| Specials | IP65 spot or hybrid | Follows a performer |
 
-Our outdoor moving heads sit in the **15–24 kg** band depending on configuration. That is relevant twice: when you calculate truss loading, and when you calculate how many fixtures two crew can hang in an hour. A city-colour unit is heavier at 18.5 kg.
+| Model | Type | EXW, 1 unit |
+|---|---|---|
+| RG-P47TC10-We7A | IP65 high-power LED PAR | US$59 |
+| RG-P57TC10-Ke18AE | IP65 high-power LED PAR | US$75 |
+| RG-P61TC10-Ke18A | IP65 LED PAR | US$115 |
+| RG-W19TB8-Ke36A | IP65 36 × 8W RGBW wall washer | US$212 |
+| RG-TB120S28D-f60 | IP65 360° pixel tube | US$105 |
+| RG-GB300L4C0-WK | IP65 300W gobo and water projector | US$250 |
 
-Every moving head in the range gives you **540° pan / 270° tilt at 16-bit** resolution, with **0–100% linear 16-bit dimming** — so slow fades stay smooth instead of stepping at the bottom of the curve.
+An outdoor PAR at US$59 against an outdoor moving head at US$409 is a ratio worth respecting. A festival rig built from [IP65 PARs](/products/par/rg-p47tc10-we7a) for coverage plus four or six moving heads for movement costs a fraction of an all-moving rig and looks better, because coverage is what the audience sees.
 
-### 5. Coastal and seaside installations
+## What should be checked on delivery?
 
-This is where most weatherproof specifications fall short, and it is worth being blunt about it: an IP rating tells you nothing about salt.
+Outdoor fixtures fail at the margins, and the margins are visible on arrival.
 
-Salt-laden air attacks aluminium housings and connectors. If your venue is within a few hundred metres of the sea, ask specifically about salt-spray testing rather than relying on the IP number. Our **city-colour units** use a die-cast aluminium housing that is **salt-spray tested**, which is why it is specified for permanent architectural and seafront work rather than touring.
+| Check | What to look for | Why it matters |
+|---|---|---|
+| Connector shells | IP-rated on both ends, gasket seated | Water wicks along the cable |
+| Cable entry | Gland tight, strain relief present | The most common leak path |
+| Drainage | A path out of the housing, not a sealed box | Condensation has to leave |
+| Hardware | Stainless bolts, not zinc-plated | Coastal corrosion starts here |
+| Finish | Even powder coat, no bare metal at the seams | Salt attacks exposed edges first |
+| Optics | Sealed block, desiccant present | Internal fogging is unfixable in the field |
 
-For touring fixtures that will only occasionally see coastal air, the practical mitigations are rinse-downs with fresh water after exposure and dielectric grease on connectors.
+Run the fixture for an hour before it goes on a truck, then open it and look for moisture. That single step catches most of the units that will otherwise fail in week three.
 
-## Power and Logistics
+## How should an outdoor rig be powered and cabled?
 
-Every fixture in the outdoor range runs on **AC 100–240V, 50/60Hz** — so the same inventory ships to Europe, North America and Asia without transformer planning. Worth confirming your distribution is rated for the draw: a city-colour unit pulls up to **960 W** at full output.
+Water enters through cables more often than through housings. Every run should have a drip loop — a low point below the connector so water drips off instead of running along the cable into the plug — and every connection should be off the ground.
 
-Warranty is **3 years (limited)** across the moving head range, and **2 years (limited)** on city-colour units.
+| Practice | Yes | No |
+|---|---|---|
+| Drip loop on every run | Lowest point below the connector | Cable running straight up into a plug |
+| Connectors off the deck | On a stand, a bar or a weather-rated box | Lying in standing water |
+| Cables rated for outdoor use | Rubber or PUR jacket | Indoor PVC jacket that cracks in UV |
+| Distribution | IP-rated distro with RCD protection | Domestic extension leads |
 
-## What Ships in the Box
+## What to do next
 
-Each unit goes through a **48-hour burn-in** before it leaves the factory, and ships with an individual QC report, IES/LDT photometric files and a DMX channel chart. The photometric files are the part worth planning around — your team can pre-visualise the rig before the truck arrives, instead of discovering coverage problems during load-in.
-
-## Quick Selection Guide
-
-| If you need | Look at |
-| --- | --- |
-| Tight aerial beams, festival main stage | 400W beam fixture, 2°–5°, IP65 |
-| One fixture for wash and mid-air work | 400W wash fixture, 5°–55° zoom, RGBW/CTO |
-| Maximum flexibility, network control | 600W hybrid fixture, 2°–45°, CMY, Art-Net |
-| Cable-free uplighting, fast setup | 100W battery uplighter, wireless DMX, IP65 |
-| Permanent architectural / seafront | 96×10W RGBW city-colour unit, salt-spray tested |
-
-## Next Step
-
-The fastest way to a usable specification is to tell us the venue type, throw distance and whether the install is touring or permanent. We will come back with a fixture count, photometric files and a quote — no obligation.
-
-[Request a quote](/rfq.html) with your venue details, or ask our assistant on any product page for specification details.
+Send us the venue, whether it is coastal, and how many weeks a year the rig is deployed. We will spec the mix — how much of the budget goes on moving heads versus fixed outdoor fixtures — and quote the whole thing at the volume tier that applies.

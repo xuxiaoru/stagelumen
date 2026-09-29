@@ -22,7 +22,11 @@ faq:
 
 Every rental tech eventually inherits the same 11 p.m. problem: a fixture that "doesn't work," which turns out to be two heads patched to the same start address, or a footprint the patch sheet never accounted for. DMX addressing is not difficult, but it is unforgiving of vagueness. This guide is the version of the explanation we give rental partners — the working math, the paperwork, and the hardware that makes a dry hire inventory behave identically every time it leaves the shelf.
 
-## The 30-second refresher
+## The short answer
+
+A DMX start address is the first channel a fixture listens to, and its footprint is the number of channels it claims from there. One universe carries 512 channels, so the fixture count per universe is 512 divided by the footprint. Most "dead fixture" calls are not dead fixtures — they are two fixtures sharing an address, a footprint the patch sheet never accounted for, or a missing terminator. Patch in blocks by fixture type so a late addition has a numbered gap to land in.
+
+## What is a DMX start address, in one paragraph?
 
 DMX512 is a one-way serial protocol: one transmitter (the console), up to 512 channels per universe, fixtures listening in sequence. Each fixture is told a **start address** — the first channel it listens to — and it claims a consecutive block of channels after that, called its **footprint**. A fixture with a 16-channel footprint set to start address 1 listens to channels 1–16. The next fixture on the line must start at 17 or later.
 
@@ -31,7 +35,7 @@ Two rules do most of the work:
 1. **No overlaps.** Two fixtures sharing channels will mirror each other's behaviour. (Symmetrical rigs sometimes exploit this deliberately — but deliberately, on paper, not by accident at load-in.)
 2. **Order does not matter electrically — but patch sheets do.** DMX does not care which physical fixture sits first on the cable; the console's patch defines which address drives which head. Write the paper to match the room, not the cable.
 
-## Footprints and channel modes
+## What is a footprint, and why does the channel mode change it?
 
 A fixture's footprint depends on its **channel mode**. Most moving heads ship with several: a full mode with fine pan/tilt (16+ channels), a basic mode (8–14), and sometimes a minimal mode (4–6). Rental practice worth adopting:
 
@@ -39,7 +43,7 @@ A fixture's footprint depends on its **channel mode**. Most moving heads ship wi
 - **Prefer basic modes for pars and simple washes** — you buy channel headroom for the fixtures that need fine control.
 - **Spend channels on heads, save them on colour.** A head consuming 20 channels of a 512-channel universe is 4% of your universe; a PAR consuming 6 is barely 1%. Budget universes like money.
 
-## Worked patch: a 20-fixture one-universe rig
+## What does a worked 20-fixture one-universe patch look like?
 
 A standard corporate-gig package: 8 moving heads, 8 LED PARs, 4 wall washers, on one universe.
 
@@ -51,15 +55,15 @@ A standard corporate-gig package: 8 moving heads, 8 LED PARs, 4 wall washers, on
 
 Total: 208 of 512 channels used, with 304 channels of headroom for a future expansion — extra PARs, a hazer channel, or second fixtures patched into reserved space. The discipline that makes this scale: **allocate fixture groups into blocks** (heads block, PAR block, décor block) rather than one continuous chain of addresses. When the client adds four heads on show day, you have a numbered gap waiting instead of a re-patch.
 
-## Console-side: what your desk must swallow
+## What does the console need to handle?
 
 The addressing math above is only comfortable if the console can actually manage the patch. Three controllers in our catalogue cover the rental spectrum:
 
-- **[RG-MINI1024](../../products/controller/rg-mini1024.html)** — US$300 EXW. 1,024 channels (two universes), 96 fixtures, 40 primary + 40 fine-tune patches, and crucially the Avolites Pearl R20 fixture library — meaning show files written on rental-fleet Pearl desks load onto it directly. For a small rental house this is the point where "we can patch anything a client brings" becomes true.
-- **[RG-CTD1024S16F-K](../../products/controller/rg-ctd1024s16f-k.html)** — US$298 EXW. 1,024 channels on the DMX512 standard, 96 fixtures with the Pearl lamp library, plus a built-in graphics trajectory generator with 135 built-in effects for clients who want movement looks without an operator programming every step.
-- **[RG-CTD2048-MA](../../products/controller/rg-ctd2048-ma.html)** — US$495 EXW. MA2-style operation for houses whose freelance operators live on MA consoles, with two DMX outputs, an input port, and MIDI timecode for synced show playback. When your client list starts including bands with their own timecoded playback, this is the desk that stops the arguments.
+- **[RG-MINI1024](/products/controller/rg-mini1024)** — US$300 EXW. 1,024 channels (two universes), 96 fixtures, 40 primary + 40 fine-tune patches, and crucially the Avolites Pearl R20 fixture library — meaning show files written on rental-fleet Pearl desks load onto it directly. For a small rental house this is the point where "we can patch anything a client brings" becomes true.
+- **[RG-CTD1024S16F-K](/products/controller/rg-ctd1024s16f-k)** — US$298 EXW. 1,024 channels on the DMX512 standard, 96 fixtures with the Pearl lamp library, plus a built-in graphics trajectory generator with 135 built-in effects for clients who want movement looks without an operator programming every step.
+- **[RG-CTD2048-MA](/products/controller/rg-ctd2048-ma)** — US$495 EXW. MA2-style operation for houses whose freelance operators live on MA consoles, with two DMX outputs, an input port, and MIDI timecode for synced show control. When your client list starts including bands running their own timecode, this is the desk that stops the arguments.
 
-## Distribution: where most "dead fixture" calls originate
+## Where do most "dead fixture" calls originate?
 
 The console's output port is a precision receiver at the end of a long chain of abused XLR connectors. Every professional rig protects it and the signal with **optically isolated splitting** — one input, multiple electrically isolated outputs, each feeding its own daisy chain.
 
@@ -67,14 +71,14 @@ The three formats that cover rental reality:
 
 | Unit | Format | Key spec | EXW |
 |---|---|---|---|
-| [RG-CA8402MINI](../../products/controller/rg-ca8402mini.html) | 1-in / 4-out compact | Transformer-isolated in and out; fits in a accessory pocket | US$51 |
-| [RG-CA8802](../../products/controller/rg-ca8802.html) | 19-inch 1U rack | 4 or 8 independent isolated outputs; amplifies and extends runs | US$51 |
-| [RG-CA8402A](../../products/controller/rg-ca8402a.html) | RDM + IP65 waterproof | DMX512/**RDM** amplifier-distributor for outdoor and bidirectional rigs | US$98 |
-| [RG-CA8402C](../../products/controller/rg-ca8402c.html) | IP65 waterproof | 4-way isolated output, 3-pin waterproof connectors | US$72 |
+| [RG-CA8402MINI](/products/controller/rg-ca8402mini) | 1-in / 4-out compact | Transformer-isolated in and out; fits in a accessory pocket | US$51 |
+| [RG-CA8802](/products/controller/rg-ca8802) | 19-inch 1U rack | 4 or 8 independent isolated outputs; amplifies and extends runs | US$51 |
+| [RG-CA8402A](/products/controller/rg-ca8402a) | RDM + IP65 waterproof | DMX512/**RDM** amplifier-distributor for outdoor and bidirectional rigs | US$98 |
+| [RG-CA8402C](/products/controller/rg-ca8402c) | IP65 waterproof | 4-way isolated output, 3-pin waterproof connectors | US$72 |
 
-Two of these justify their price in ways that are not obvious until you have needed them once. **Isolation** breaks the ground loops that cause the classic "every fixture flickers when the audio rig powers up" complaint — the isolation transformer in the CA8402MINI is doing real work there. And **RDM pass-through** is the future-proofing line: RDM lets the console read and set fixture start addresses remotely, which converts your worst ladder-and-flashlight moments into a menu operation. Put RDM-capable amplifiers ([RG-CA8402A](../../products/controller/rg-ca8402a.html)) in the outdoor rigs now and the inventory upgrades itself as you replace fixtures.
+Two of these justify their price in ways that are not obvious until you have needed them once. **Isolation** breaks the ground loops that cause the classic "every fixture flickers when the audio rig powers up" complaint — the isolation transformer in the CA8402MINI is doing real work there. And **RDM pass-through** is the future-proofing line: RDM lets the console read and set fixture start addresses remotely, which converts your worst ladder-and-flashlight moments into a menu operation. Put RDM-capable amplifiers ([RG-CA8402A](/products/controller/rg-ca8402a)) in the outdoor rigs now and the inventory upgrades itself as you replace fixtures.
 
-## The physical layer: rules the math assumes
+## Which physical-layer rules does the addressing math assume?
 
 Addressing fails silently when the cabling underneath it is wrong, so the chain rules bear repeating — they are short, and they are absolute:
 
@@ -86,7 +90,7 @@ Addressing fails silently when the cabling underneath it is wrong, so the chain 
 
 Older inventory note: fixtures with dip-switch addressing still walk through rental doors. The math does not change — dip switches are simply the binary representation of the start address minus one, so address 17 is switches 1 and 5 up (16 + 1). Print the binary table on the model's patch card and the newest tech preps it correctly.
 
-## Rental-house paperwork that actually gets used
+## Which paperwork actually gets used?
 
 The hardware is half the battle; the other half is two documents that travel with the case:
 
@@ -96,7 +100,7 @@ The hardware is half the battle; the other half is two documents that travel wit
 
 If you are building the block system from scratch, our [step-by-step DMX setup guide](how-to-set-up-dmx-lighting.html) covers the physical layer — cabling order, termination, and the daisy-chain rules the addressing above assumes.
 
-## The pre-show checklist
+## What should the pre-show checklist cover?
 
 Five checks that catch 95% of addressing faults before doors:
 

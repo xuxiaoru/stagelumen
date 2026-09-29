@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-29T15:29:58.887Z",
+  "generated": "2026-09-29T15:57:27.802Z",
   "count": 27,
   "posts": [
     {
@@ -8,11 +8,12 @@
       "date": "2026-09-28T21:18:53.087Z",
       "datePretty": "September 28, 2026",
       "category": "How-To",
-      "excerpt": "Select a moving-head fixture with a beam angle of 10 degrees or less to avoid direct glare on the congregation.",
+      "excerpt": "A sanctuary is a room where light has to fall on faces, not in eyes. How to aim, what to buy, and where movement belongs.",
       "tags": [
-        "Church Lighting",
-        "Moving-Head Fixtures",
-        "Glare Control"
+        "Church",
+        "Sanctuary",
+        "Lighting Design",
+        "Moving Head"
       ],
       "url": "content/blog/designing-moving-head-looks-for-a-church-sanctuary-without-blinding-th-4y4b.html",
       "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
@@ -109,13 +110,13 @@
       "date": "2026-09-26T18:40:22.871Z",
       "datePretty": "September 26, 2026",
       "category": "How-To",
-      "excerpt": "Specify DMX for a 10-head moving head with a 10,000 lumen output",
+      "excerpt": "DMX512, Art-Net and sACN are not three competing products. Which layer each one owns, and what a touring rig should actually specify.",
       "tags": [
-        "DMX",
+        "DMX512",
         "Art-Net",
         "sACN",
-        "touring rig",
-        "lighting control"
+        "Control",
+        "Touring"
       ],
       "url": "content/blog/dmx-vs-art-net-vs-sacn-which-control-protocol-to-specify-for-a-touring-ayt8.html",
       "image": "assets/images/products/5kg-dmx-control-winch-lifting-machine.jpg"
@@ -126,11 +127,12 @@
       "date": "2026-09-25T19:23:27.132Z",
       "datePretty": "September 25, 2026",
       "category": "How-To",
-      "excerpt": "A step-by-step rigging and aiming routine: safe hanging, secure clamping, accurate focus and the checks that keep fixtures on the truss.",
+      "excerpt": "The order that keeps a rig safe: structure, primary fixing, secondary, power, address, aim. Plus the hardware that does each job.",
       "tags": [
-        "stage lighting",
-        "event setup",
-        "safety protocols"
+        "Rigging",
+        "Safety",
+        "Moving Head",
+        "Installation"
       ],
       "url": "content/blog/step-by-step-guide-to-rigging-and-aiming-moving-heads-safely-5p0x.html",
       "image": "assets/images/products/rg-m300bh-kyh16.jpg"
@@ -141,13 +143,12 @@
       "date": "2026-09-24T19:22:28.219Z",
       "datePretty": "September 24, 2026",
       "category": "How-To",
-      "excerpt": "Selecting a moving head for a small club requires careful consideration of beam angle, output, and noise floor.",
+      "excerpt": "A 3.5 m ceiling changes everything. What to buy for a small club, what to skip, and the four fixtures that cover a 40 m² room.",
       "tags": [
-        "moving head",
-        "small club",
-        "beam angle",
-        "output",
-        "noise floor"
+        "Moving Head",
+        "Club",
+        "Small Venue",
+        "Buyer's Guide"
       ],
       "url": "content/blog/choosing-a-moving-head-for-a-small-club-2k65.html",
       "image": "assets/images/products/rg-ml250br-kn1h18.jpg"
@@ -174,13 +175,12 @@
       "date": "2026-09-22T19:01:29.199Z",
       "datePretty": "September 22, 2026",
       "category": "How-To",
-      "excerpt": "A 240-degree pan and 540-degree tilt range is essential for capturing dynamic performances.",
+      "excerpt": "A camera sees a fixture differently than a room does. What pan/tilt speed, repeatability and PWM frequency mean on screen.",
       "tags": [
-        "moving heads",
-        "pan/tilt speed",
-        "accuracy",
-        "broadcast",
-        "capture"
+        "Moving Head",
+        "Broadcast",
+        "Pan Tilt",
+        "Camera"
       ],
       "url": "content/blog/pantilt-speed-and-accuracy-in-moving-heads-why-it-matters-for-broadcas-z5qa.html",
       "image": "assets/images/products/rg-ml500rs-knnw1h20.jpg"
@@ -207,12 +207,12 @@
       "date": "2026-09-20T18:15:08.690Z",
       "datePretty": "September 20, 2026",
       "category": "How-To",
-      "excerpt": "Get the most out of your moving head with our expert advice on lifespan, service, spare parts and what to ask your supplier.",
+      "excerpt": "The LED is rarely what fails. What actually ends a moving head's life, which spares to stock, and the questions to put to a supplier.",
       "tags": [
         "Moving Head",
-        "Lifespan",
         "Service",
-        "Spare Parts"
+        "Spare Parts",
+        "Lifespan"
       ],
       "url": "content/blog/moving-head-faq-lifespan-service-spare-parts-and-what-to-ask-your-supp-3oz3.html",
       "image": "assets/images/products/rg-m230bn-kmh16.jpg"
@@ -223,11 +223,12 @@
       "date": "2026-09-19T18:09:22.331Z",
       "datePretty": "September 19, 2026",
       "category": "How-To",
-      "excerpt": "Flight cases, clamps and the pre-tour checklist: how to pack, protect and verify moving heads before they leave the warehouse.",
+      "excerpt": "Most tour damage happens in the case, not on the road. How to prep, pack and document a moving head so it arrives working.",
       "tags": [
-        "Moving Heads",
+        "Moving Head",
         "Shipping",
-        "Pre-Tour Checklist"
+        "Flight Case",
+        "Touring"
       ],
       "url": "content/blog/preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kzdj.html",
       "image": "assets/images/products/rg-m250s-knh20.jpg"
@@ -286,26 +287,28 @@
       "date": "2026-09-15T19:08:26.406Z",
       "datePretty": "September 15, 2026",
       "category": "How-To",
-      "excerpt": "How gobo wheels and prisms shape a moving head's look: breakups, rotating patterns, beam splitting and the effects worth specifying.",
+      "excerpt": "Gobos put a pattern where you point; prisms split one beam into several. Which jobs each one actually solves, and what they cost.",
       "tags": [
-        "moving heads",
-        "gobo effects",
-        "prism effects"
+        "Moving Head",
+        "Gobo",
+        "Prism",
+        "Effects"
       ],
       "url": "content/blog/practical-uses-of-gobo-and-prism-effects-in-moving-heads-8wan.html",
       "image": "assets/images/products/rg-gb750l4c0-bk.jpg"
     },
     {
-      "title": "Building a Rental-House Moving Head Inventory",
+      "title": "Building a Rental-House Moving Head Inventory: Scaling from 10 to 60 Fixtures",
       "slug": "building-a-rental-house-moving-head-inventory-1mrl",
       "date": "2026-09-14T19:54:22.039Z",
       "datePretty": "September 14, 2026",
       "category": "How-To",
-      "excerpt": "Cover 90% of gig requests with a strategic selection of moving head fixtures.",
+      "excerpt": "Past ten fixtures, a rental fleet stops being a shopping list and becomes a utilisation problem. How to tier it, spare it and buy it in quantity.",
       "tags": [
-        "Moving Heads",
+        "Moving Head",
+        "Rental House",
         "Inventory",
-        "Rental Houses"
+        "Fleet"
       ],
       "url": "content/blog/building-a-rental-house-moving-head-inventory-1mrl.html",
       "image": "assets/images/products/rg-ml500bl-kcre12ah194.jpg"
@@ -380,7 +383,7 @@
       "date": "2026-09-11T14:20:00.000Z",
       "datePretty": "September 11, 2026",
       "category": "Buyer's Guide",
-      "excerpt": "Beam, wash and hybrid moving heads compared on the only numbers that matter — beam angle, colour system and what each type costs you in practice.",
+      "excerpt": "Beam, wash and hybrid moving heads do three different jobs. Here is what each one buys you, what it costs, and how many of each a working rig needs.",
       "tags": [
         "Moving Head",
         "Beam",
@@ -397,11 +400,12 @@
       "date": "2026-09-11T13:52:30.739Z",
       "datePretty": "September 11, 2026",
       "category": "How-To",
-      "excerpt": "Choose the right fixture type with our selection criteria",
+      "excerpt": "What OEM actually buys you, what it costs in MOQ, and the six terms that decide whether a private-label order goes well.",
       "tags": [
-        "stage lighting",
         "OEM",
-        "lighting control"
+        "ODM",
+        "Manufacturing",
+        "Sourcing"
       ],
       "url": "content/blog/oem-stage-lighting-a-buyers-guide-ptfr.html",
       "image": "assets/images/factory/assembly.jpg"
@@ -412,7 +416,7 @@
       "date": "2026-09-11T09:00:00.000Z",
       "datePretty": "September 11, 2026",
       "category": "Buyer's Guide",
-      "excerpt": "A practical checklist for specifying weatherproof moving heads and washes — IP ratings, beam angle, control protocol, salt-spray resistance and power, with real fixture data.",
+      "excerpt": "Festivals and coastal venues fail fixtures two different ways. What to specify for each, with real outdoor models and prices.",
       "tags": [
         "IP65",
         "Outdoor",

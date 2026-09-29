@@ -24,22 +24,24 @@ Walk into any lighting showroom — or any rental warehouse — and the inventor
 
 This guide compares the three on the things that actually decide purchases: the physics of what each does, the control data each consumes, the price bands in the current market, and where each one earns its position on a rigging plot. All prices are real EXW figures from our own 2026 catalogue — we manufacture in Guangzhou, so we can show the numbers most resellers hide.
 
-## The one-sentence version
+## The short answer
+
+A moving head puts light somewhere specific, in motion. An LED PAR covers a fixed area with colour. A wall washer turns a surface into a feature. Most rigs need all three, and the usual mistake is buying the first to do the second's job: coverage is far cheaper per lumen from a fixture that does not move. Budget in layers — movement, coverage, architecture — and spend roughly half on the static layer.
 
 A **moving head** is a precision instrument that puts light *somewhere specific, in motion*. An **LED PAR** is a reliable paintbrush that covers *a static area with colour*. A **wall washer** is a brick of colour that turns *a surface into a feature*. Rigs fail when buyers use one of these to do another's job.
 
-## Moving heads: paying for direction and motion
+## What are you paying for in a moving head?
 
 A moving head combines a light engine, colour and gobo wheels, and two motorised axes (pan and tilt). You are buying mobility, and that shows in every metric:
 
-- **Price.** Our current moving head catalogue runs from US$96 for a mini 150W beam ([RG-ML150BR-KNNW1H13](../../products/moving/rg-ml150br-knnw1h13.html)) to US$757 for full-featured units, with outdoor IP65 wash heads like the [RG-ML420WC-KCH93](../../products/moving/rg-ml420wc-kch93.html) (7×60W) at US$590.
+- **Price.** Our current moving head catalogue runs from US$96 for a mini 150W beam ([RG-ML150BR-KNNW1H13](/products/moving/rg-ml150br-knnw1h13)) to US$757 for full-featured units, with outdoor IP65 wash heads like the [RG-ML420WC-KCH93](/products/moving/rg-ml420wc-kch93) (7×60W) at US$590.
 - **Control data.** Expect 14–20+ DMX channels per head. Twenty heads can consume an entire universe if you use fine channels and extended modes.
 - **Maintenance.** Moving parts mean moving parts. Yokes, motors and belts are service items; a factory that publishes spare-parts pricing is the only kind worth buying from.
 - **What you get.** Effects no static fixture can produce: mid-air beam shafts in haze, colour changes that *travel*, gobo textures that sweep a wall.
 
 Buy moving heads when the show needs dynamism — concerts, clubs, television, any event where the lighting itself is part of the entertainment. Do not buy them to simply keep a lobby lit; you would be paying motor prices for a job a static fixture does better.
 
-## LED PARs: the reliability layer
+## Why is the LED PAR the reliability layer?
 
 The PAR can descends from the PAR-can — a sealed-beam lamp in a cylinder — but the modern LED version is a different animal: a bar or cylinder of high-power RGBW/RGBA LEDs, no lamp changes, modest current draw, near-zero maintenance.
 
@@ -54,23 +56,23 @@ The economics are the story. In our current catalogue of 62 PAR models:
 
 Nearly three-quarters of the PAR market sits under US$100 per unit. That is why the PAR remains the default answer for stage colour: you can afford *layers* of it. Six PARs cross-lighting a stage from two positions produce a quality of illumination that no single fixture at any price can match, because good key light is about coverage geometry, not fixture intelligence.
 
-What a PAR cannot do is move, and what it mostly cannot do is shape. There are no gobos, no beam looks, no aerial effects. It is colour coverage, full stop. The modern exception is the pixel-controlled PAR and wash bar — fixtures like the [RG-ML240WD-KTXE6AH3](../../products/moving/rg-ml240wd-ktxe6ah3.html) (6×40W zoom, pixel-addressable) blur the line by behaving like a wash fixture that can also run video-style effects up and down the bar.
+What a PAR cannot do is move, and what it mostly cannot do is shape. There are no gobos, no beam looks, no aerial effects. It is colour coverage, full stop. The modern exception is the pixel-controlled PAR and wash bar — fixtures like the [RG-ML240WD-KTXE6AH3](/products/moving/rg-ml240wd-ktxe6ah3) (6×40W zoom, pixel-addressable) blur the line by behaving like a wash fixture that can also run video-style effects up and down the bar.
 
-## Wall washers: architecture's favourite fixture
+## When is a wall washer the right fixture?
 
 A wall washer is usually a linear IP65 bar — 18 LEDs in a metre-long housing is the classic format — designed to sit at the base of a wall or on structure and throw even colour up (or down) a surface. Where PARs light *things in a room*, washers turn the *room itself* into the light.
 
 Current pricing shows the format's efficiency:
 
-- [RG-W35TB10-Ke18](../../products/par/rg-w35tb10-ke18.html) — 18×10W RGBW, outdoor — **US$58 EXW**
-- [RG-W39TB12-Kg18](../../products/par/rg-w39tb12-kg18.html) — 18×12W 6-in-1 full colour — **US$78 EXW**
-- [RG-W38TB30-Ke14](../../products/par/rg-w38tb30-ke14.html) — 14×30W 4-in-1, 1.06-metre body — **US$166 EXW**
+- [RG-W35TB10-Ke18](/products/par/rg-w35tb10-ke18) — 18×10W RGBW, outdoor — **US$58 EXW**
+- [RG-W39TB12-Kg18](/products/par/rg-w39tb12-kg18) — 18×12W 6-in-1 full colour — **US$78 EXW**
+- [RG-W38TB30-Ke14](/products/par/rg-w38tb30-ke14) — 14×30W 4-in-1, 1.06-metre body — **US$166 EXW**
 
 Three things make washers the right tool when they are the right tool. First, **weatherproofing is standard**: the format lives outdoors permanently, so IP65 is the norm rather than a premium option. Second, **coverage per dollar**: a US$58 washer paints an entire wall section that would take several PARs to cover evenly. Third, **control simplicity**: 3–8 DMX channels each in basic mode; a whole façade fits in one universe with room to spare.
 
 The trade-offs are equally clear: fixed aim, no movement, and a look that is entirely about surfaces. Washers light the stage backdrop beautifully; they will never follow a performer.
 
-## The comparison table
+## How do the three compare side by side?
 
 | | Moving head | LED PAR | Wall washer |
 |---|---|---|---|
@@ -81,27 +83,27 @@ The trade-offs are equally clear: fixed aim, no movement, and a look that is ent
 | Outdoor suitability | Model-dependent (IP65 lines exist) | Indoor typical; outdoor models exist | IP65 standard |
 | Best density per rig | 30–50% of the budget | The base layer | Décor and architecture |
 
-## A worked example: one ballroom, all three
+## What does a worked ballroom rig look like?
 
 A 400-guest hotel ballroom, corporate events and weddings, permanent install. The spec that survives ten years of use:
 
-- **8 × moving wash heads** ([RG-ML760WC-KCH99](../../products/moving/rg-ml760wc-kch99.html), 19×40W zoom, IP65, US$560) on the front truss — key light with zoom range to work from any throw, and outdoor-grade sealing because hotel air handling is hostile electronics weather.
+- **8 × moving wash heads** ([RG-ML760WC-KCH99](/products/moving/rg-ml760wc-kch99), 19×40W zoom, IP65, US$560) on the front truss — key light with zoom range to work from any throw, and outdoor-grade sealing because hotel air handling is hostile electronics weather.
 - **12 × LED PARs** on stage sides and floor pockets — the static colour layer that never needs attention during an event.
-- **6 × wall washers** ([RG-W39TB12-Kg18](../../products/par/rg-w39tb12-kg18.html), US$78) at the room's perimeter columns — the venue sells the room itself as part of every event photo.
+- **6 × wall washers** ([RG-W39TB12-Kg18](/products/par/rg-w39tb12-kg18), US$78) at the room's perimeter columns — the venue sells the room itself as part of every event photo.
 
 Total fixture spend lands around US$6,300 EXW before dimming and distribution. The mix is roughly 90% of the visual result from the correct 50/30/20 split of budget across the three families. Invert the split — all moving heads, no static layer — and you get a rig that dazzles for 90 seconds of the entrance and looks under-lit for the rest of the evening.
 
-## The fourth layer: where the line is blurring
+## Where is the line between the three blurring?
 
 Purists will note that the three-family model is under pressure from both directions, and it is worth knowing where the boundaries actually sit in 2026.
 
-**Pixel bars and wash bars** behave like PARs physically — static, bar-shaped, truss-mounted — but control like moving heads electrically. A fixture such as the [RG-ML240WD-KTXE6AH3](../../products/moving/rg-ml240wd-ktxe6ah3.html) (6×40W zoom, per-LED pixel control) consumes channels like an intelligent fixture because it is one: each LED can fire independently, run building effects across the bar, and respond to pixel-mapped content. If your design vocabulary includes "video looks without a video wall," this is the category.
+**Pixel bars and wash bars** behave like PARs physically — static, bar-shaped, truss-mounted — but control like moving heads electrically. A fixture such as the [RG-ML240WD-KTXE6AH3](/products/moving/rg-ml240wd-ktxe6ah3) (6×40W zoom, per-LED pixel control) consumes channels like an intelligent fixture because it is one: each LED can fire independently, run building effects across the bar, and respond to pixel-mapped content. If your design vocabulary includes "video looks without a video wall," this is the category.
 
 **Kinetic lighting** removes the motorised head and moves the *fixture itself* — winch-driven LED balls and tubes that fly in choreographed 3D patterns. It is neither a PAR nor a moving head in any traditional sense, but it earns a mention because buyers who outgrow the three-family model usually outgrow it in this direction first.
 
 The practical advice: treat the three-family model as your budget's skeleton and let these hybrid categories be the accent spend. A rig that is 70% workhorse fixtures and 30% effect fixtures photographs like a rig that cost twice as much; the reverse ratio photographs like a trade show demo.
 
-## The decision framework
+## What order should the decision run in?
 
 When specifying, run these four questions in order:
 
