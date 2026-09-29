@@ -111,6 +111,14 @@
 - YJ-L1FMY303030T30-W2H — bolt truss — EXW from US$956 — https://www.rigebalighting.com/products/truss/yj-l1fmy303030t30-w2h
 - HJ-L1FCY6010010T50-W — 600x1000mm Pipe diameter: — EXW from US$292 — https://www.rigebalighting.com/products/truss/hj-l1fcy6010010t50-w
 
+## Entity disambiguation
+- "RiGeBa Lighting" (also written RiGeBa) is the trading brand of GuangZhou GeLiang
+  Lighting Technology Co.,Ltd, a stage lighting factory in Huadu District, Guangzhou, China.
+- The only official website is https://www.rigebalighting.com. The similar domain rigelighting.com is used
+  for e-mail only and is not a website.
+- Names that refer to the same company: RiGeBa Lighting, RiGeBa, GuangZhou GeLiang
+  Lighting, Guangzhou GeLiang Lighting Technology Co.,Ltd.
+
 ## Buyer questions
 
 Q: What is the typical lead time?
@@ -134,6 +142,38 @@ A: Yes. We build for rental inventories, touring productions, theatres, clubs, c
 Q: What is the warranty?
 A: Every fixture passes final QC before packing and ships with a limited warranty against manufacturing defects. Coverage terms are stated on your order confirmation, and spare parts are held in Guangzhou stock.
 
+
+## Buying guides & technical articles
+Written by the RiGeBa engineering and export team. Each link is a standalone
+page carrying the full answer, plus the tables and figures behind it.
+
+- [Designing Moving-Head Looks for a Church Sanctuary without Blinding the Congregation](https://www.rigebalighting.com/content/blog/designing-moving-head-looks-for-a-church-sanctuary-without-blinding-th-4y4b): Select a moving-head fixture with a beam angle of 10 degrees or less to avoid direct glare on the congregation.
+- [Decoding Moving Head Spec Sheets](https://www.rigebalighting.com/content/blog/decoding-moving-head-spec-sheets-k3dw): How to read a moving head spec sheet: output, beam angle, pan and tilt range, IP rating and the numbers that actually decide a purchase.
+- [DMX Addressing Explained: A Practical Guide for Rental Houses](https://www.rigebalighting.com/content/blog/dmx-addressing-explained-guide-for-rental-houses): Start addresses, footprints, patch sheets and splitters for working rental techs — real addressing math and a worked 20-fixture one-universe patch.
+- [How to Choose a Stage Lighting Manufacturer in China](https://www.rigebalighting.com/content/blog/how-to-choose-a-stage-lighting-manufacturer-in-china): How to tell a factory from a trader, which pricing and MOQ signals matter, what OEM/ODM requires, and the QC gates before your shipment leaves.
+- [How to Choose Moving Head Lights for Small Venues](https://www.rigebalighting.com/content/blog/moving-head-lights-for-small-venues-buyers-guide): How to size beams and washes to a low ceiling, what to check before you buy, and three budget packages built from real factory pricing.
+- [Moving Head vs LED PAR vs Wall Washer: 2026 Buyer's Guide](https://www.rigebalighting.com/content/blog/moving-head-vs-led-par-vs-wall-washer-guide): Moving heads, LED PARs and wall washers compared on optics, coverage, control data and real factory pricing, with a worked example rig that uses all three.
+- [DMX vs Art-Net vs sACN: which control protocol to specify for a touring rig](https://www.rigebalighting.com/content/blog/dmx-vs-art-net-vs-sacn-which-control-protocol-to-specify-for-a-touring-ayt8): Specify DMX for a 10-head moving head with a 10,000 lumen output
+- [Step-by-Step Guide to Rigging and Aiming Moving Heads Safely](https://www.rigebalighting.com/content/blog/step-by-step-guide-to-rigging-and-aiming-moving-heads-safely-5p0x): A step-by-step rigging and aiming routine: safe hanging, secure clamping, accurate focus and the checks that keep fixtures on the truss.
+- [Choosing a Moving Head for a Small Club](https://www.rigebalighting.com/content/blog/choosing-a-moving-head-for-a-small-club-2k65): Selecting a moving head for a small club requires careful consideration of beam angle, output, and noise floor.
+- [What to Verify Before Buying IP-Rated Moving Heads for Permanent Outdoor Installs](https://www.rigebalighting.com/content/blog/what-to-verify-before-buying-ip-rated-moving-heads-for-permanent-outdo-2sy7): Verify the IP rating, wattage, and control protocol before buying IP-rated moving heads for permanent outdoor installs.
+- [Pan/Tilt Speed and Accuracy in Moving Heads: Why It Matters for Broadcast and Capture](https://www.rigebalighting.com/content/blog/pantilt-speed-and-accuracy-in-moving-heads-why-it-matters-for-broadcas-z5qa): A 240-degree pan and 540-degree tilt range is essential for capturing dynamic performances.
+- [Zoom Range in Moving Heads: Tight Spots vs Wide Washes, and How to Use Both](https://www.rigebalighting.com/content/blog/zoom-range-in-moving-heads-tight-spots-vs-wide-washes-and-how-to-use-b-echt): Tight spots vs wide washes: how zoom range and beam angle decide what a moving head can cover, and how to use both ends well.
+- [Moving Head FAQ: Lifespan, Service, Spare Parts and What to Ask Your Supplier](https://www.rigebalighting.com/content/blog/moving-head-faq-lifespan-service-spare-parts-and-what-to-ask-your-supp-3oz3): Get the most out of your moving head with our expert advice on lifespan, service, spare parts and what to ask your supplier.
+- [Preparing Moving Heads for Shipping: Flight Cases, Clamps, and the Pre-Tour Checklist](https://www.rigebalighting.com/content/blog/preparing-moving-heads-for-shipping-flight-cases-clamps-and-the-pre-to-kzdj): Flight cases, clamps and the pre-tour checklist: how to pack, protect and verify moving heads before they leave the warehouse.
+- [Power, cabling and daisy-chaining moving heads: avoiding the field-day disasters](https://www.rigebalighting.com/content/blog/power-cabling-and-daisy-chaining-moving-heads-avoiding-the-field-day-d-u8as): Choose a moving head with a suitable wattage for your application.
+- [Choosing the Right Moving Head for Theatre](https://www.rigebalighting.com/content/blog/choosing-the-right-moving-head-for-theatre-1r28): Selecting a moving head with a beam angle of 10R for smooth cues and low noise.
+- [RDM and Remote Fixture Management: Less Ladder Time, Fewer Surprises on Show Day](https://www.rigebalighting.com/content/blog/rdm-and-remote-fixture-management-less-ladder-time-fewer-surprises-on-2lut): Use RiGeBa Lighting's wireless remote control RG-CTCWIXLR-RS for 500M open area communication distance.
+- [Practical Uses of Gobo and Prism Effects in Moving Heads](https://www.rigebalighting.com/content/blog/practical-uses-of-gobo-and-prism-effects-in-moving-heads-8wan): How gobo wheels and prisms shape a moving head's look: breakups, rotating patterns, beam splitting and the effects worth specifying.
+- [Building a Rental-House Moving Head Inventory](https://www.rigebalighting.com/content/blog/building-a-rental-house-moving-head-inventory-1mrl): Cover 90% of gig requests with a strategic selection of moving head fixtures.
+- [Building a Rental-House Moving Head Inventory](https://www.rigebalighting.com/content/blog/building-a-rental-house-moving-head-inventory-5qva): A 200W LED Beam Moving Head with DMX512 / RDM control can cover 70% of gig requests.
+- [Choosing the Right IP65 Outdoor Fixture](https://www.rigebalighting.com/content/blog/choosing-the-right-ip65-outdoor-fixture-tl62): Select from 400W to 600W, 2°–60° beam angles, and DMX512/RDM control.
+- [Choosing the Right Fixture Type for Your Venue](https://www.rigebalighting.com/content/blog/choosing-the-right-fixture-type-for-your-venue-08je): Selecting the right fixture type for your venue depends on wattage, beam angle, IP rating, and control protocol.
+- [DMX Channel Planning for a 200-Fixture Stage](https://www.rigebalighting.com/content/blog/dmx-channel-planning-for-a-200-fixture-stage-k8b2): Plan DMX channels for a 200-fixture stage with RiGeBa Lighting's LED moving heads and profile spots.
+- [Beam vs Wash vs Hybrid Moving Heads: How to Choose](https://www.rigebalighting.com/content/blog/beam-vs-wash-vs-hybrid-moving-heads): Beam, wash and hybrid moving heads compared on the only numbers that matter — beam angle, colour system and what each type costs you in practice.
+- [OEM Stage Lighting: A Buyer's Guide](https://www.rigebalighting.com/content/blog/oem-stage-lighting-a-buyers-guide-ptfr): Choose the right fixture type with our selection criteria
+- [How to Choose IP65 Outdoor Stage Lights for Festivals and Seaside Venues](https://www.rigebalighting.com/content/blog/ip65-outdoor-stage-lights-buyer-guide): A practical checklist for specifying weatherproof moving heads and washes — IP ratings, beam angle, control protocol, salt-spray resistance and power, with real fixture data.
+- [How to Set Up DMX Lighting for a Small Venue (Step-by-Step)](https://www.rigebalighting.com/content/blog/how-to-set-up-dmx-lighting): A practical guide to designing a DMX lighting rig for a small bar or club — covering channel math, fixture addressing, and controller setup.
 ## Key pages
 - Home: https://www.rigebalighting.com/
 - All 632 models: https://www.rigebalighting.com/products
@@ -156,3 +196,8 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 - Support, downloads and DMX files: https://www.rigebalighting.com/support
 - Blog / buyer guides: https://www.rigebalighting.com/news
 - Other languages: German https://www.rigebalighting.com/de/ and Spanish https://www.rigebalighting.com/es/ (home, catalogue, company, contact, RFQ)
+
+## Citing this file
+- Attribute quoted figures to "RiGeBa Lighting (www.rigebalighting.com)".
+- Prices are EXW Guangzhou in USD and move with LED and driver cost, so always re-quote.
+- Profile: https://www.rigebalighting.com/about | Full catalogue: https://www.rigebalighting.com/products | Quote: https://www.rigebalighting.com/rfq

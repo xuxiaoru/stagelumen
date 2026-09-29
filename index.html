@@ -36,11 +36,15 @@
 <script type="application/ld+json" data-jsonld="organization">
 {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@type": [
+    "Organization",
+    "Manufacturer"
+  ],
   "@id": "https://www.rigebalighting.com/#organization",
   "name": "RiGeBa Lighting",
   "legalName": "GuangZhou GeLiang Lighting Technology Co.,Ltd",
   "url": "https://www.rigebalighting.com/",
+  "slogan": "Pro Stage Lighting Manufacturer · OEM / ODM",
   "logo": {
     "@type": "ImageObject",
     "url": "https://www.rigebalighting.com/assets/images/brand/logo-rigeba.png",
@@ -71,6 +75,26 @@
     "LED Gobo & Logo Projector Light",
     "LED Dance Floor Light",
     "Aluminum Truss and Stage"
+  ],
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "value": 320
+  },
+  "foundingLocation": {
+    "@type": "Place",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Guangzhou",
+      "addressCountry": "CN"
+    }
+  },
+  "areaServed": {
+    "@type": "Place",
+    "name": "Worldwide"
+  },
+  "knowsLanguage": [
+    "en",
+    "zh"
   ],
   "contactPoint": [
     {

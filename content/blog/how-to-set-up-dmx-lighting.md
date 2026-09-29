@@ -29,7 +29,7 @@ Before you buy anything, calculate total channels:
 | Laser (10 CH) | 10 | 1 | 10 |
 | **Total** | — | **13** | **138** |
 
-A 192-channel console (like the **SL-Mini192**) covers this with room to grow.
+A 192-channel console such as the [RG-CTD192S16-K](/products/controller/rg-ctd192s16-k) covers this with room to grow.
 
 ## 2. Choose a Controller
 

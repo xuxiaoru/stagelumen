@@ -5,8 +5,8 @@ date: "2026-09-24T19:22:28.219Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
 excerpt: "Selecting a moving head for a small club requires careful consideration of beam angle, output, and noise floor."
-image: "assets/images/products/new-295w-10r-beam-moving.jpg"
-imageAlt: "New 295W 10R beam moving head light"
+image: "assets/images/products/rg-ml250br-kn1h18.jpg"
+imageAlt: "250W LED zoom moving head with 3-in-1 beam, spot and wash modes"
 tags:
   - moving head
   - small club

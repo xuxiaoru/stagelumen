@@ -49,6 +49,40 @@ function parseFlatYaml(text) {
   return out;
 }
 
+/**
+ * Reads one nested block out of settings.yml, e.g.
+ *   social:
+ *     youtube: "https://www.youtube.com/@rigebalighting"
+ *     linkedin: ""
+ * Empty values are dropped, so an unfilled block contributes nothing instead of
+ * emitting a broken sameAs.
+ */
+function parseNestedYaml(text, blockKey) {
+  const out = {};
+  let inside = false;
+  for (const raw of String(text).split(/\r?\n/)) {
+    const line = raw.replace(/\s+#.*$/, '');
+    if (!line.trim()) continue;
+    if (!/^\s/.test(line)) {
+      inside = line.slice(0, line.indexOf(':')).trim() === blockKey;
+      continue;
+    }
+    if (!inside) continue;
+    const i = line.indexOf(':');
+    if (i < 1) continue;
+    let val = line.slice(i + 1).trim();
+    if (/^".*"$/.test(val) || /^'.*'$/.test(val)) val = val.slice(1, -1);
+    if (val) out[line.slice(0, i).trim()] = val;
+  }
+  return out;
+}
+
+/** "320+" -> 320. Returns null when the value is not numeric. */
+function toCount(v) {
+  const n = parseInt(String(v || '').replace(/[^\d]/g, ''), 10);
+  return Number.isFinite(n) && n > 0 ? n : null;
+}
+
 const ENTITIES = {
   amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ',
   mdash: '\u2014', ndash: '\u2013', hellip: '\u2026', lsquo: '\u2018',
@@ -151,8 +185,10 @@ function extractFaq(src) {
 
 function main() {
   let settings;
+  let settingsRaw = '';
   try {
-    settings = parseFlatYaml(fs.readFileSync(SRC, 'utf8'));
+    settingsRaw = fs.readFileSync(SRC, 'utf8');
+    settings = parseFlatYaml(settingsRaw);
   } catch (e) {
     console.log('[jsonld] settings.yml unreadable — aborting, HTML untouched');
     return 0;
@@ -169,13 +205,26 @@ function main() {
   } catch (e) { /* optional */ }
 
   const address = toAddress(settings.address);
+
+  // Entity anchors. Generative engines decide whether a brand is real by looking
+  // for the same organisation on domains they already trust. A domain with no
+  // sameAs is, to them, an unattributed claim — which is why a page can rank in
+  // Google and still never be quoted by ChatGPT.
+  const social = parseNestedYaml(settingsRaw, 'social');
+  const sameAs = Object.values(social).filter((u) => /^https?:\/\//i.test(u));
+
+  const employees = toCount(settings.teamSize);
+
   const organization = {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    // Manufacturer is a schema.org Organisation subtype: it tells the parser this
+    // is a producer, not a shop, agency or directory.
+    '@type': ['Organization', 'Manufacturer'],
     '@id': orgId,
     name: brand,
     legalName: settings.companyLegalName || brand,
     url: SITE + '/',
+    ...(settings.tagline ? { slogan: settings.tagline } : {}),
     // Google and Bing use `logo` as the brand mark in knowledge panels and
     // entity cards; `image` is the generic fallback. Both must be absolute.
     logo: {
@@ -193,6 +242,18 @@ function main() {
     ...(settings.email ? { email: settings.email } : {}),
     ...(settings.phone ? { telephone: e164(settings.phone) } : {}),
     ...(knowsAbout.length ? { knowsAbout } : {}),
+    ...(sameAs.length ? { sameAs } : {}),
+    ...(employees ? { numberOfEmployees: { '@type': 'QuantitativeValue', value: employees } } : {}),
+    ...(settings.founded
+      ? {
+          foundingLocation: {
+            '@type': 'Place',
+            address: { '@type': 'PostalAddress', addressLocality: 'Guangzhou', addressCountry: 'CN' },
+          },
+        }
+      : {}),
+    areaServed: { '@type': 'Place', name: 'Worldwide' },
+    knowsLanguage: ['en', 'zh'],
     contactPoint: [
       {
         '@type': 'ContactPoint',

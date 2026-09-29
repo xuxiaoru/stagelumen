@@ -1,7 +1,22 @@
 {
-  "generated": "2026-09-28T16:59:11.330Z",
-  "count": 26,
+  "generated": "2026-09-29T14:46:38.514Z",
+  "count": 27,
   "posts": [
+    {
+      "title": "Designing Moving-Head Looks for a Church Sanctuary without Blinding the Congregation",
+      "slug": "designing-moving-head-looks-for-a-church-sanctuary-without-blinding-th-4y4b",
+      "date": "2026-09-28T21:18:53.087Z",
+      "datePretty": "September 28, 2026",
+      "category": "How-To",
+      "excerpt": "Select a moving-head fixture with a beam angle of 10 degrees or less to avoid direct glare on the congregation.",
+      "tags": [
+        "Church Lighting",
+        "Moving-Head Fixtures",
+        "Glare Control"
+      ],
+      "url": "content/blog/designing-moving-head-looks-for-a-church-sanctuary-without-blinding-th-4y4b.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+    },
     {
       "title": "Decoding Moving Head Spec Sheets",
       "slug": "decoding-moving-head-spec-sheets-k3dw",
@@ -132,7 +147,7 @@
         "noise floor"
       ],
       "url": "content/blog/choosing-a-moving-head-for-a-small-club-2k65.html",
-      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+      "image": "assets/images/products/rg-ml250br-kn1h18.jpg"
     },
     {
       "title": "What to Verify Before Buying IP-Rated Moving Heads for Permanent Outdoor Installs",

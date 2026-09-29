@@ -267,6 +267,70 @@ function faqJsonLd(p) {
   return '  <script type="application/ld+json">' + JSON.stringify(data) + '</script>\n';
 }
 
+/** JSON-LD lives inside <script>, so a literal "</" would close the tag early. */
+function ld(obj) {
+  return JSON.stringify(obj).replace(/</g, '\\u003c');
+}
+
+/** Absolute URL of the article — og:, canonical and JSON-LD must all agree. */
+function canonicalFor(p) {
+  return SITE + '/content/blog/' + encodeURIComponent(p.slug);
+}
+
+/**
+ * BlogPosting for the article itself.
+ *
+ * Why this matters more than the meta tags already present: generative engines
+ * (ChatGPT search, Perplexity, Gemini) parse the page to decide *what kind of
+ * document* it is and *whether it is trustworthy enough to quote*. Without a
+ * datePublished / author / publisher the page is an anonymous blob of text and
+ * loses to a competitor whose markup states these facts explicitly.
+ */
+function articleJsonLd(p) {
+  const canonical = canonicalFor(p);
+  // Google truncates headlines past ~110 characters in some surfaces.
+  const headline = p.title.length > 110 ? p.title.slice(0, 107).trimEnd() + '...' : p.title;
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'BlogPosting',
+    '@id': canonical + '#article',
+    mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+    headline,
+    description: p.excerpt || p.title,
+    image: [p.shareImage],
+    inLanguage: 'en',
+    isAccessibleForFree: true,
+    datePublished: p.date,
+    dateModified: p.dateModified || p.date,
+    author: { '@type': 'Organization', name: 'RiGeBa Lighting', url: SITE + '/' },
+    publisher: { '@id': SITE + '/#organization' },
+    isPartOf: { '@id': SITE + '/#website' },
+    articleSection: p.category,
+    ...(p.tags.length
+      ? {
+          keywords: p.tags.join(', '),
+          about: p.tags.map((t) => ({ '@type': 'Thing', name: t })),
+        }
+      : {}),
+    ...(p.wordCount ? { wordCount: p.wordCount } : {}),
+  };
+  return '  <script type="application/ld+json" data-jsonld="article">' + ld(data) + '</script>\n';
+}
+
+/** Home > News > article, so a result can render a breadcrumb trail. */
+function breadcrumbJsonLd(p) {
+  const data = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE + '/' },
+      { '@type': 'ListItem', position: 2, name: 'News', item: SITE + '/news' },
+      { '@type': 'ListItem', position: 3, name: p.title, item: canonicalFor(p) },
+    ],
+  };
+  return '  <script type="application/ld+json" data-jsonld="breadcrumb">' + ld(data) + '</script>\n';
+}
+
 function articlePage(p) {
   const title = escHtml(p.title);
   const desc = escAttr(p.excerpt || p.title);
@@ -280,7 +344,9 @@ function articlePage(p) {
   const shareAlt = escAttr(
     p.imageAlt || (p.image ? p.title : 'RiGeBa Lighting — professional stage lighting manufacturer in Guangzhou, China')
   );
-  const canonical = SITE + '/content/blog/' + encodeURIComponent(p.slug);
+  const canonical = canonicalFor(p);
+  // Reused by articleJsonLd() so og: and the structured data can never disagree.
+  p.shareImage = shareImage;
   return `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -288,7 +354,14 @@ function articlePage(p) {
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${title} | RiGeBa Lighting</title>
   <meta name="description" content="${desc}" />
+  <meta name="author" content="${escAttr(p.author)}" />
+  <!-- max-snippet:-1 lets answer engines quote the paragraph that actually answers the query -->
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large" />
   <meta property="og:type" content="article" />
+  <meta property="article:published_time" content="${escAttr(p.date)}" />
+  <meta property="article:modified_time" content="${escAttr(p.dateModified || p.date)}" />
+  <meta property="article:section" content="${escAttr(p.category)}" />
+${p.tags.map((t) => '  <meta property="article:tag" content="' + escAttr(t) + '" />').join('\n')}
   <meta property="og:site_name" content="RiGeBa Lighting" />
   <meta property="og:title" content="${title}" />
   <meta property="og:description" content="${desc}" />
@@ -304,7 +377,7 @@ function articlePage(p) {
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/brand/favicon-32.png" />
   <!-- ${GENERATED} -->
-${faqJsonLd(p)}  <style>
+${articleJsonLd(p)}${breadcrumbJsonLd(p)}${faqJsonLd(p)}  <style>
     .blog-article { max-width: 760px; margin: 0 auto; }
     .blog-article h1 { font-size: 2.2rem; margin-bottom: 16px; }
     .blog-article h2 { font-size: 1.4rem; margin: 40px 0 16px; color: var(--text); }
@@ -480,10 +553,21 @@ function main() {
       continue;
     }
 
+    // Word count is a genuine retrieval signal for answer engines: a 300-word
+    // page loses to a 2,000-word page covering the same question end to end.
+    const html = mdToHtml(body);
+    const wordCount = (
+      html.replace(/<[^>]*>/g, ' ').replace(/&[a-z#0-9]+;/gi, ' ').match(/[A-Za-z][A-Za-z'-]*/g) || []
+    ).length;
+
     const post = {
       title: String(data.title).trim(),
       slug: String(data.slug || fallbackSlug).trim(),
       date: String(data.date || ''),
+      // `updated:` in front matter turns on a real dateModified. Left unset, the
+      // article reports its publish date — never a date invented at build time.
+      dateModified: String(data.updated || data.date || ''),
+      wordCount,
       datePretty: prettyDate(data.date) || 'Undated',
       author: String(data.author || 'RiGeBa Lighting Team'),
       category: String(data.category || 'Article'),
@@ -498,7 +582,7 @@ function main() {
           return { q: String(item).slice(0, i).trim(), a: String(item).slice(i + 2).trim() };
         })
         .filter(Boolean),
-      html: mdToHtml(body),
+      html,
       url: 'content/blog/' + String(data.slug || fallbackSlug).trim() + '.html',
     };
 
