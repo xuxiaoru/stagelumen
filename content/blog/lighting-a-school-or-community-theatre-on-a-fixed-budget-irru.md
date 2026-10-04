@@ -51,3 +51,21 @@ Choosing the right lighting fixtures for your community theatre can be a dauntin
 To learn more about the RG-M300BH-KYH16M, visit the [RG-M300BH-KYH16M](/products/moving/rg-m300bh-kyh16m) product page. To learn more about the RG-CTD40S4F-K, visit the [RG-CTD40S4F-K](/products/controller/rg-ctd40s4f-k) product page. To learn more about the RG-CA8802PRO-A, visit the [RG-CA8802PRO-A](/products/controller/rg-ca8802pro-a) product page.
 
 Next, consider consulting with a lighting professional to determine the best configuration for your specific needs and to get a quote for the lighting fixtures and controllers that you need.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$84 |
+| RG-CA8802PRO-A | 4 outputs | US$84 |
+| RG-CA8802PRO-A | 8 outputs | US$84 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CTD40S4F-K | 4 channels | US$28 |
+| RG-CTD40S6F-K | 6 channels | US$49 |
+| RG-CTD40S6F-K | 6 channels | US$49 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-M300BH-KYH16M](/products/moving/rg-m300bh-kyh16m) and [RG-CA8802PRO-A](/products/controller/rg-ca8802pro-a). Open each one for the full spec list, the volume tiers and the current EXW price.
