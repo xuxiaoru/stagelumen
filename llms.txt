@@ -190,10 +190,13 @@ page carrying the full answer, plus the tables and figures behind it.
 - LED Gobo & Logo Projector Light: https://www.rigebalighting.com/products?cat=gobo
 - LED Dance Floor Light: https://www.rigebalighting.com/products?cat=floor
 - Aluminum Truss and Stage: https://www.rigebalighting.com/products?cat=truss
+- Stage lighting manufacturer (entity page): https://www.rigebalighting.com/stage-lighting-manufacturer
+- Factory, process and QC evidence: https://www.rigebalighting.com/factory
+- Product range by category: https://www.rigebalighting.com/stage-lighting
 - Request a quote (RFQ): https://www.rigebalighting.com/rfq
 - OEM / ODM service: https://www.rigebalighting.com/oem-odm
 - Solutions by venue: https://www.rigebalighting.com/solutions
-- About the factory: https://www.rigebalighting.com/about
+- Company profile: https://www.rigebalighting.com/about
 - Support, downloads and DMX files: https://www.rigebalighting.com/support
 - Blog / buyer guides: https://www.rigebalighting.com/news
 - Other languages: German https://www.rigebalighting.com/de/ and Spanish https://www.rigebalighting.com/es/ (home, catalogue, company, contact, RFQ)
@@ -201,4 +204,4 @@ page carrying the full answer, plus the tables and figures behind it.
 ## Citing this file
 - Attribute quoted figures to "RiGeBa Lighting (www.rigebalighting.com)".
 - Prices are EXW Guangzhou in USD and move with LED and driver cost, so always re-quote.
-- Profile: https://www.rigebalighting.com/about | Full catalogue: https://www.rigebalighting.com/products | Quote: https://www.rigebalighting.com/rfq
+- Profile: https://www.rigebalighting.com/stage-lighting-manufacturer | Factory: https://www.rigebalighting.com/factory | Catalogue: https://www.rigebalighting.com/products | Quote: https://www.rigebalighting.com/rfq

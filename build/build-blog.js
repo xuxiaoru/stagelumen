@@ -411,6 +411,7 @@ ${articleJsonLd(p)}${breadcrumbJsonLd(p)}${faqJsonLd(p)}  <style>
       <a href="../../oem-odm.html">OEM / ODM</a>
       <a href="../../projects.html">Projects</a>
       <a href="../../news.html">News</a>
+      <a href="../../stage-lighting-manufacturer.html">Manufacturer</a>
       <a href="../../about.html">About</a>
       <a href="../../support.html">Support</a>
     </nav>
@@ -465,7 +466,9 @@ ${p.tags.length ? '      <div class="blog-tags">' + p.tags.map((t) => '<span>' +
       <div class="footer-col">
         <h4>Company</h4>
         <ul>
+          <li><a href="../../stage-lighting-manufacturer.html">Stage Lighting Manufacturer</a></li>
           <li><a href="../../about.html">About</a></li>
+          <li><a href="../../factory.html">Factory</a></li>
           <li><a href="../../contact.html">Contact</a></li>
         </ul>
       </div>

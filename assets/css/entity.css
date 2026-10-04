@@ -1,0 +1,159 @@
+/* Entity pages: /stage-lighting-manufacturer/, /factory/, /stage-lighting/.
+ *
+ * Kept in its own file with an `ent-` prefix, for two reasons. The house rule is
+ * that a new page never edits style.css, because style.css is cached immutably
+ * for a year and every change to it forces a version bump across all ~690 pages
+ * that hard-code style.css?v=N. And these three pages are the only consumers, so
+ * nothing here can leak into the rest of the site.
+ *
+ * Reused from style.css on purpose: .page-hero, .section, .section-head,
+ * .section-eyebrow, .section-title, .section-sub, .container, .btn variants,
+ * .cap-grid/.cap-item, .process-list, .faq-list/.faq-item, .factory-* gallery.
+ */
+
+.ent-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* ---- company fact table: the block AI engines quote verbatim ---- */
+.ent-fact-band {
+  padding: 56px 0;
+  border-bottom: 1px solid var(--border);
+}
+.ent-fact-table {
+  width: 100%;
+  border-collapse: collapse;
+  max-width: 860px;
+  margin: 0 auto;
+  font-size: 0.95rem;
+}
+.ent-fact-table caption {
+  text-align: left;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  color: var(--text-3);
+  padding-bottom: 14px;
+}
+.ent-fact-table th,
+.ent-fact-table td {
+  padding: 13px 16px;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+}
+.ent-fact-table th {
+  width: 210px;
+  font-weight: 600;
+  color: var(--text-1);
+  background: var(--surface);
+}
+.ent-fact-table td {
+  color: var(--text-2);
+}
+
+/* ---- category / model cards ---- */
+.ent-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(268px, 1fr));
+  gap: 18px;
+}
+.ent-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 22px 20px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-decoration: none;
+  transition: var(--transition);
+}
+.ent-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-3px);
+}
+.ent-card-name {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--text-1);
+}
+.ent-card-count {
+  font-size: 0.8rem;
+  color: var(--primary);
+  font-weight: 600;
+}
+.ent-card-blurb {
+  font-size: 0.9rem;
+  color: var(--text-2);
+  line-height: 1.55;
+}
+
+/* ---- application chips ---- */
+.ent-apps {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.ent-chip {
+  padding: 10px 20px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--text-2);
+  text-decoration: none;
+  font-size: 0.92rem;
+  transition: var(--transition);
+}
+.ent-chip:hover {
+  border-color: var(--primary);
+  color: var(--text-1);
+}
+
+/* ---- alternating section band ---- */
+.ent-alt {
+  background: var(--bg-2);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+/* ---- closing call to action ---- */
+.ent-cta {
+  padding: 72px 0;
+  background:
+    radial-gradient(ellipse at 50% 100%, rgba(255, 107, 0, 0.12) 0%, transparent 60%),
+    var(--bg-2);
+  border-top: 1px solid var(--border);
+  text-align: center;
+}
+.ent-cta h2 {
+  font-size: clamp(1.5rem, 2.6vw, 2rem);
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+.ent-cta p {
+  color: var(--text-2);
+  max-width: 620px;
+  margin: 0 auto 26px;
+}
+
+.ent-link {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}
+.ent-link:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 700px) {
+  .ent-fact-table th {
+    width: auto;
+  }
+  .ent-grid {
+    grid-template-columns: 1fr;
+  }
+}

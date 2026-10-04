@@ -28,6 +28,9 @@ STATIC_PAGES = [
     ("/products",       "daily",   "0.9"),
     ("/solutions",      "weekly",  "0.85"),
     ("/oem-odm",        "monthly", "0.8"),
+    ("/stage-lighting-manufacturer", "monthly", "0.85"),
+    ("/factory",        "monthly", "0.8"),
+    ("/stage-lighting", "weekly",  "0.8"),
     ("/rfq",            "monthly", "0.8"),
     ("/about",          "monthly", "0.7"),
     ("/contact",        "monthly", "0.7"),
@@ -274,10 +277,13 @@ def main():
           "- All %d models: %s/products" % (len(products), SITE)]
     for c in CATS:
         L.append("- %s: %s/products?cat=%s" % (cats.get(c, {}).get("label", c), SITE, c))
-    L += ["- Request a quote (RFQ): %s/rfq" % SITE,
+    L += ["- Stage lighting manufacturer (entity page): %s/stage-lighting-manufacturer" % SITE,
+          "- Factory, process and QC evidence: %s/factory" % SITE,
+          "- Product range by category: %s/stage-lighting" % SITE,
+          "- Request a quote (RFQ): %s/rfq" % SITE,
           "- OEM / ODM service: %s/oem-odm" % SITE,
           "- Solutions by venue: %s/solutions" % SITE,
-          "- About the factory: %s/about" % SITE,
+          "- Company profile: %s/about" % SITE,
           "- Support, downloads and DMX files: %s/support" % SITE,
           "- Blog / buyer guides: %s/news" % SITE,
           "- Other languages: German %s/de/ and Spanish %s/es/ (home, catalogue, company, contact, RFQ)" % (SITE, SITE),
@@ -285,7 +291,7 @@ def main():
     L += ["## Citing this file",
           "- Attribute quoted figures to \"RiGeBa Lighting (%s)\"." % SITE.replace("https://", ""),
           "- Prices are EXW Guangzhou in USD and move with LED and driver cost, so always re-quote.",
-          "- Profile: %s/about | Full catalogue: %s/products | Quote: %s/rfq" % (SITE, SITE, SITE),
+          "- Profile: %s/stage-lighting-manufacturer | Factory: %s/factory | Catalogue: %s/products | Quote: %s/rfq" % (SITE, SITE, SITE, SITE),
           ""]
     write("llms.txt", "\n".join(L))
 
