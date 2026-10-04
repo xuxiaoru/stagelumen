@@ -303,19 +303,28 @@ export async function expandDraft(env, request, opts) {
     h.replace(/^##\s+/i, '').trim()
   );
 
-  const r = await callAI(
-    env,
-    buildExpandPrompt(
+  // Walk the model chain on a parse failure, the way draft() does. Measured: the
+  // 70B expansion often returns prose or half-closed JSON, and returning that as
+  // a hard 422 wasted two whole nightly slots. The 8B answers this narrow,
+  // heavily-specified request correctly and about five times faster, so it goes
+  // first; the 70B is only reached if the 8B produces nothing at all.
+  const chain = [...MODELS.chat, ...MODELS.heavy.filter((m) => MODELS.chat.indexOf(m) === -1)];
+  const prompt = buildExpandPrompt(
       kind, topic, facts,
       { title: fm.title, excerpt: fm.excerpt, category: fm.category, tags: fm.tags,
         image: fm.image, imageAlt: fm.imageAlt, faq: fm.faq, body },
       GEO_MIN_WORDS + 150, lang,
       existingHeadings
-    ),
-    MODEL,
-    3000
   );
-  const next = r && r.text ? extractJson(r.text) : null;
+  let r = null;
+  let next = null;
+  for (const m of chain) {
+    const attempt = await callAI(env, prompt, m, 3000);
+    if (!attempt || !attempt.text) continue;
+    r = attempt;
+    next = extractJson(attempt.text);
+    if (next) break;
+  }
   if (!next) {
     // Say what actually came back. Two wrong guesses about this failure (a
     // markdown table in a JSON string, then the array shape) were both made
