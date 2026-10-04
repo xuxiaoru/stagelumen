@@ -59,3 +59,23 @@ When using DMX control in a small venue, practical constraints such as cable man
 To configure your DMX system for optimal performance, refer to the manufacturer's guidelines and consult with a professional if necessary. It's also important to test the system thoroughly to ensure that it is working as intended. The [RG-PS20A19-W](/products/profile/rg-ps20a19-w) LED profile light, for example, can be configured to work with a variety of DMX controllers, including the RG-CTD192S8F5-K.
 
 To get started with configuring your DMX system, contact us with your console model and we will send the matching format for our DMX charts and fixture personality files.
+
+## How do I ensure that my DMX system is properly configured for optimal performance?
+
+To ensure that your DMX system is properly configured for optimal performance, it's essential to carefully plan and design the system before installation. This includes selecting the right lighting fixtures and DMX controller, configuring the system to meet the specific needs of your venue, and testing the system thoroughly before putting it into use. Additionally, it's a good idea to consult with a professional lighting designer or technician to ensure that the system is properly configured and functioning as intended.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500x500 Prismatic Light LED Guide Column | US$75 |
+| RG-PS20A19-W | 20W Mini LED Profile Light | US$119 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| HJ-L1FMY202010T30-W | Small screw-type Square tube truss 200x200mm | US$33 |
+| RG-PS200A110-W | 200W LED tricolor soft light/surface light/fill light/flat light | US$115 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-PS20A19-W](/products/profile/rg-ps20a19-w). Open each one for the full spec list, the volume tiers and the current EXW price.
