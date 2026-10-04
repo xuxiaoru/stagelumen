@@ -10,8 +10,14 @@ Decap CMS uses GitHub OAuth to let editors log in. On Netlify this is built-in; 
 2. Click **"OAuth Apps"** → **"New OAuth App"**
 3. Fill in:
    - **Application name**: `RiGeBa Lighting CMS` (or your brand)
-   - **Homepage URL**: `https://stagelumen.pages.dev`
-   - **Authorization callback URL**: `https://stagelumen.pages.dev/admin/api/callback`
+   - **Homepage URL**: `https://www.rigebalighting.com`
+   - **Authorization callback URL**: `https://www.rigebalighting.com/admin/api/callback`
+
+   > The callback must match the domain that actually serves `/admin/api/auth`, and a
+   > GitHub OAuth App accepts exactly ONE callback URL. `admin/config.yml` sets
+   > `base_url: https://www.rigebalighting.com`, and Decap resolves the auth endpoint
+   > against `base_url` — not against the domain the browser happens to be on. So the
+   > registered callback has to be the production domain.
    - **Enable Device Flow**: leave unchecked
 4. Click **"Register application"**
 5. On the next page click **"Generate a new client secret"**
@@ -36,7 +42,7 @@ Decap CMS uses GitHub OAuth to let editors log in. On Netlify this is built-in; 
 
 ## Step 3: Test login
 
-1. Open https://stagelumen.pages.dev/admin/
+1. Open **https://www.rigebalighting.com/admin/** (not the preview domain — see the note in step 1)
 2. Click **"Login with GitHub"**
 3. Authorize the app
 4. You should see the Decap CMS dashboard with Products / Blog Posts / Testimonials / Site Settings
@@ -52,11 +58,34 @@ Decap CMS uses GitHub OAuth to let editors log in. On Netlify this is built-in; 
 
 ### "Invalid or expired OAuth state"
 - Usually caused by pop-up blockers or third-party cookies being blocked.
-- Allow pop-ups for `stagelumen.pages.dev` and try again.
+- Allow pop-ups for `https://www.rigebalighting.com` and try again.
 
-### Callback mismatch error from GitHub
-- The **Authorization callback URL** in the GitHub OAuth App must exactly match `https://stagelumen.pages.dev/admin/api/callback`.
-- If you later add a custom domain, create a second OAuth App (or update the callback URL) for that domain.
+### "Be careful! The redirect_uri is not associated with this application"
+
+This is the callback mismatch, and it is the single most common failure here. The
+GitHub OAuth App rejects any `redirect_uri` that is not the one registered, and it
+only accepts one.
+
+The redirect that is actually sent is built in `functions/admin/api/auth.js`:
+
+    const redirectUri = `${url.origin}/admin/api/callback`;
+
+`url.origin` is the host serving `/admin/api/auth`. Because `config.yml` points
+`base_url` at the production domain, Decap calls the proxy there even when the
+browser is on the preview domain — so the redirect that matters is always
+`https://www.rigebalighting.com/admin/api/callback`.
+
+**Fix:** GitHub → Settings → Developer settings → OAuth Apps → *RiGeBa Lighting CMS*
+→ *Authorization callback URL* → set it to exactly:
+
+    https://www.rigebalighting.com/admin/api/callback
+
+The one-line trap: `https://www.rigebalighting.com/admin/api/callback` and the same
+URL with a trailing slash are treated as different, and the path is case-sensitive.
+Copy it from the address bar of a real `/admin/api/callback` request.
+
+If you need the callback to work on both domains, a GitHub OAuth App cannot do it —
+create a second OAuth App with the other callback and point Decap at it.
 
 ## Custom domain
 
