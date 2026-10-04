@@ -32,6 +32,15 @@ const SKIP_DIRS = new Set(['node_modules', '.git', '.github', 'functions', 'buil
 /** Draft copies that exist locally but are not deployed (verified: /home-v2 is 404 live). */
 const SKIP_FILES = new Set(['home-v2.html']);
 
+// Pages that need structured data beyond the FAQ every page can carry. The
+// manufacturer page has to define the manufacturer entity itself, and all three
+// need breadcrumbs so they are not orphaned in the graph.
+const ENTITY_PAGES = {
+  'stage-lighting-manufacturer.html': { manufacturer: true, crumb: 'Stage Lighting Manufacturer' },
+  'factory.html': { crumb: 'Factory' },
+  'stage-lighting.html': { crumb: 'Stage Lighting' },
+};
+
 /* ------------------------------------------------------------------ helpers */
 
 function parseFlatYaml(text) {
@@ -288,6 +297,27 @@ function main() {
     if (rel === 'index.html') {
       blocks.push({ id: 'organization', data: organization });
       blocks.push({ id: 'website', data: website });
+    }
+
+    const extra = ENTITY_PAGES[rel];
+    if (extra && extra.manufacturer) {
+      // Same object as the homepage, re-anchored to this page: the page that
+      // targets "stage lighting manufacturer" should be the page that defines
+      // the manufacturer, not a page that merely mentions it.
+      blocks.push({ id: 'manufacturer', data: { ...organization, '@id': pageUrl(rel), mainEntityOfPage: { '@id': orgId } } });
+    }
+    if (extra && extra.crumb) {
+      blocks.push({
+        id: 'breadcrumb',
+        data: {
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: SITE + '/' },
+            { '@type': 'ListItem', position: 2, name: extra.crumb, item: pageUrl(rel) },
+          ],
+        },
+      });
     }
 
     const faq = extractFaq(src);
