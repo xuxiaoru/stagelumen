@@ -288,26 +288,73 @@ export async function expandDraft(env, request, opts) {
   const facts = renderFacts(result, { images: true });
   const allowedImages = factImages(result);
 
+  const body = raw.slice(fm.end).trim();
+  const existingHeadings = (body.match(/^##\s+(.+)$/gim) || []).map((h) =>
+    h.replace(/^##\s+/i, '').trim()
+  );
+
   const r = await callAI(
     env,
-    buildExpandPrompt(kind, topic, facts, {
-      title: fm.title,
-      excerpt: fm.excerpt,
-      category: fm.category,
-      tags: fm.tags,
-      image: fm.image,
-      imageAlt: fm.imageAlt,
-      faq: fm.faq,
-      body: raw.slice(fm.end).trim(),
-    }, GEO_MIN_WORDS + 150, lang),
+    buildExpandPrompt(
+      kind, topic, facts,
+      { title: fm.title, excerpt: fm.excerpt, category: fm.category, tags: fm.tags,
+        image: fm.image, imageAlt: fm.imageAlt, faq: fm.faq, body },
+      GEO_MIN_WORDS + 150, lang,
+      existingHeadings
+    ),
     MODEL,
     3000
   );
   const next = r && r.text ? extractJson(r.text) : null;
-  if (!next || !next.body) {
+  if (!next) {
     return { ok: false, model: (r && r.model) || MODEL, error: 'expansion returned nothing usable' };
   }
-  const after = countWords(next.body);
+
+  // Keep the model's prose, drop anything that would re-introduce the template.
+  const seenShapes = new Set(existingHeadings.map(headingShape));
+  const sections = [];
+  for (const sec of (Array.isArray(next.sections) ? next.sections : []).slice(0, 4)) {
+    const h = String((sec && sec.h) || '').trim();
+    const b = String((sec && sec.b) || '').trim();
+    if (!h || !b || !/\?\s*$/.test(h)) continue;
+    const shape = headingShape(h);
+    if (!shape || seenShapes.has(shape)) continue; // duplicate template
+    seenShapes.add(shape);
+    sections.push('## ' + h.replace(/^#+\s*/, '') + '\n\n' + b);
+    if (sections.length === 2) break;
+  }
+
+  const tables = (Array.isArray(next.tables) ? next.tables : [])
+    .map((t) => String(t || '').trim())
+    .filter(looksLikeTable)
+    .slice(0, 2);
+  if (!tables.length) {
+    return {
+      ok: false, model: (r && r.model) || MODEL,
+      error: 'expansion returned no usable markdown table — a draft cannot pass the GEO gate without one',
+    };
+  }
+
+  // Product links come from the products this run retrieved, never from the
+  // model: a wrong path is worse than no link, and the gate checks every one.
+  const links = (result.products || [])
+    .slice(0, 2)
+    .map((x) => '[' + x.model + '](/products/' + x.category + '/' + x.id + ')')
+    .join(' and ');
+
+  const tail = [];
+  if (sections.length) tail.push(sections.join('\n\n'));
+  tail.push('## What the catalogue actually charges for these\n\n' + tables.join('\n\n'));
+  if (links) {
+    tail.push(
+      '## Where to compare the models mentioned above\n\n' +
+      'The two catalogue pages that carry the configurations in these tables are ' + links +
+      '. Open each one for the full spec list, the volume tiers and the current EXW price.'
+    );
+  }
+
+  const grown = body + '\n\n' + tail.join('\n\n');
+  const after = countWords(grown);
   if (after <= before) {
     return {
       ok: false, model: (r && r.model) || MODEL,
@@ -315,45 +362,40 @@ export async function expandDraft(env, request, opts) {
     };
   }
 
-  const faq = (Array.isArray(next.faq) ? next.faq : [])
-    .map((x) => {
-      if (x && typeof x === 'object') return { q: String(x.q || '').trim(), a: String(x.a || '').trim() };
-      const s2 = String(x || '');
-      const i = s2.indexOf('::');
-      return i > 0 ? { q: s2.slice(0, i).trim(), a: s2.slice(i + 2).trim() } : null;
-    })
-    .filter((x) => x && x.q && x.a)
-    .slice(0, 6);
-  // Keep the existing hero unless the rewrite proposed one of the real photos
-  // this run actually retrieved — never accept an invented path.
-  const image = next.image && allowedImages.indexOf(next.image) !== -1 ? next.image : fm.image;
-  const imageAlt = image === fm.image ? fm.imageAlt : String(next.imageAlt || '').trim().slice(0, 120);
+  // The expansion only ever adds prose, tables and links, so the front matter
+  // is carried over untouched: hero, FAQ, excerpt and tags stay exactly as the
+  // first draft set them.
+  const image = fm.image;
+  const imageAlt = fm.imageAlt;
+  const faq = fm.faq;
 
-  const checks = factCheck(next.body, facts, result.products || [], image, allowedImages, {
+  const checks = factCheck(grown, facts, result.products || [], image, allowedImages, {
     minWords: GEO_MIN_WORDS,
     faqCount: faq.length,
   });
 
   const front = yamlFrontMatter({
-    title: String(next.title || fm.title).trim().slice(0, 120),
+    title: fm.title.slice(0, 120),
     slug: fm.slug,
     date: fm.date || new Date().toISOString(),
-    category: CATEGORIES.indexOf(next.category) !== -1 ? next.category : fm.category,
-    excerpt: String(next.excerpt || fm.excerpt || '').trim().slice(0, 155),
-    tags: Array.isArray(next.tags) && next.tags.length ? next.tags.slice(0, 5) : fm.tags,
+    category: fm.category,
+    excerpt: String(fm.excerpt || '').trim().slice(0, 155),
+    tags: fm.tags,
     image,
     imageAlt,
-    faq: faq.length ? faq : fm.faq,
+    faq,
   });
 
   return {
     ok: true,
     short: false,
     slug: fm.slug,
-    title: String(next.title || fm.title).trim(),
+    title: fm.title,
+    sections_added: sections.length,
+    tables_added: tables.length,
     category: front.match(/category: "([^"]*)"/) ? front.match(/category: "([^"]*)"/)[1] : fm.category,
     path,
-    markdown: front + '\n' + String(next.body).trim() + '\n',
+    markdown: front + '\n' + grown.trim() + '\n',
     image,
     imageAlt,
     model: (r && r.model) || MODEL,
@@ -392,50 +434,67 @@ export async function hasCatalogueBacking(request, topic, min) {
 }
 
 /**
- * Second-pass prompt. The model undershoots a long-body request in one shot, so
- * rather than accept a thin article we hand the draft back with the same facts
- * and ask for the same article, longer. It must return the whole body, not a
- * diff: assembling fragments from two generations is exactly how headings and
- * tables end up duplicated.
+ * Second-pass prompt. Deliberately NOT "return the same article, expanded".
+ *
+ * Measured on a real run: asked to rewrite, the model regenerated the body from
+ * memory and lost the one real data table, every product link, and then added
+ * two more copies of the per-product heading template. Length went up, quality
+ * went down. So the model is asked only for the pieces that are missing and the
+ * code splices them in — structure is then guaranteed by code, not recalled by
+ * the model.
  */
-function buildExpandPrompt(kind, topic, facts, parsed, need, lang) {
+function buildExpandPrompt(kind, topic, facts, parsed, need, lang, headings) {
   return [
     SYSTEM,
     '',
     'FACTS - the only permitted source of specifications, prices and model numbers:',
     facts || '(no catalogue facts retrieved - write about general practice only, never name a model)',
     '',
-    'TASK: lengthen an existing draft so it clears the house length floor.',
+    'TASK: supply the extra material a draft is missing. Do NOT rewrite the draft.',
     'Topic: ' + topic,
     'Language: ' + (lang === 'zh' ? 'Chinese' : 'English'),
     '',
-    'CURRENT DRAFT (JSON):',
-    JSON.stringify({
-      title: parsed.title,
-      excerpt: parsed.excerpt,
-      category: parsed.category,
-      tags: parsed.tags,
-      image: parsed.image,
-      imageAlt: parsed.imageAlt,
-      faq: parsed.faq,
-      body: parsed.body,
-    }),
-    '',
-    'The body is ' + countWords(parsed.body) + ' words. It must be at least ' + need + ' words.',
+    'The draft is ' + countWords(parsed.body) + ' words and needs at least ' + need + '.',
+    'Headings it already has (do not repeat any of them, and the first four words of your new',
+    'headings must not match the first four words of any of these):',
+    headings.map((h) => '  - ' + h).join('\n'),
     '',
     'RULES:',
-    '1. Return the SAME article, expanded. Keep the title, category, tags, image, imageAlt and every existing section.',
-    '2. Add substance, not padding: another ## question section, a second and third real data table built ' +
-      'ONLY from FACTS, a worked example, or a step-by-step checklist. Never restate a paragraph in different words.',
-    '3. Never invent a specification, price, certification or model number. Anything not in FACTS must be omitted.',
-    '4. Cite at least three model numbers from FACTS, each in a section whose subject matches that model\'s own type.',
-    '5. Keep the "## The short answer" block, every question-form ## heading, every table and every FAQ entry.',
-    '6. No conclusion or summary paragraph. End on a concrete next step.',
+    '1. "tables": exactly TWO markdown tables built ONLY from FACTS. Each needs a header row,',
+    '   two to five data rows, and real figures (model, configuration, EXW price, MOQ, volume tier).',
+    '   Never invent a row to fill a table - a missing column is better than an invented one.',
+    '2. "sections": exactly TWO new sections. "h" is a question-form heading ending in "?".',
+    '   The first four words of each "h" must differ from every heading listed above AND from each',
+    '   other. "b" is 120 to 180 words of concrete prose.',
+    '3. NEVER write one section per product. Compare two products, explain a mechanism, work',
+    '   through a number, or describe the failure mode of a wrong choice. Two sections, not six.',
+    '4. Never invent a specification, price, certification or model number. Anything not in FACTS',
+    '   must be left out.',
+    '5. No conclusion, no summary paragraph, no marketing filler.',
     '',
-    'Respond with STRICT JSON only, no markdown fence, same keys as above:',
-    '{"title": "...", "excerpt": "...", "category": "...", "tags": ["..."], ' +
-      '"image": "...", "imageAlt": "...", "faq": [{"q": "...", "a": "..."}], "body": "<full expanded markdown>"}',
+    'Respond with STRICT JSON only, no markdown fence:',
+    '{"tables": ["<markdown table>", "<markdown table>"], ' +
+      '"sections": [{"h": "<question heading>", "b": "<120-180 words of prose>"}, ' +
+      '{"h": "<a different question>", "b": "<prose>"}]}',
   ].join('\n');
+}
+
+/** First four words, lowercased - the shape a reader notices when a template repeats. */
+function headingShape(h) {
+  return String(h || '')
+    .replace(/^##\s+/i, '')
+    .replace(/[?:,.!]+$/, '')
+    .trim()
+    .toLowerCase()
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 4)
+    .join(' ');
+}
+
+function looksLikeTable(s) {
+  const rows = String(s || '').trim().split('\n').filter((l) => l.trim().startsWith('|'));
+  return rows.length >= 3;
 }
 
 function buildPrompt(kind, topic, facts, words, lang, images, recentImages) {
