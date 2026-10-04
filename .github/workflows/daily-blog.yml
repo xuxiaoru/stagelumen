@@ -62,6 +62,38 @@ jobs:
               else if (r.prError) console.log("PR error:", r.prError);
               else console.log("No publish. autoSkipped:", r.autoSkipped || "unknown");
             ' "${SLOT}"
+            # A draft under the length floor is fixed by a SECOND request.
+            # It cannot happen inside the first one: a single /api/content call
+            # gets a single AI call, and the 70B model already needs 30-55s for
+            # the draft itself. Two calls in one request never returns.
+            REVISE=$(node -e '
+              const fs = require("fs");
+              let r = {};
+              try { r = JSON.parse(fs.readFileSync("/tmp/content-resp-" + process.argv[1] + ".json", "utf8")); } catch (e) {}
+              console.log((r.short && r.slug) ? r.slug : "");
+            ' "${SLOT}")
+            if [ -n "${REVISE}" ]; then
+              echo "---- expanding draft: ${REVISE} ----"
+              curl -sS -X POST "${CONTENT_API}" \
+                -H "authorization: Bearer ${ADMIN_TOKEN}" \
+                -H "content-type: application/json" \
+                -d "{\"auto\":true,\"revise\":\"${REVISE}\"}" \
+                -o "/tmp/revise-resp-${SLOT}.json"
+              cat "/tmp/revise-resp-${SLOT}.json"
+              echo
+              node -e '
+                const fs = require("fs");
+                const slot = process.argv[1];
+                let r = {};
+                try { r = JSON.parse(fs.readFileSync("/tmp/revise-resp-" + slot + ".json", "utf8")); } catch (e) {}
+                if (r.merged) {
+                  console.log("PUBLISHED after expansion:", r.published);
+                  fs.appendFileSync("/tmp/published.txt", r.published + "\n");
+                } else if (r.unchanged) console.log("already long enough; nothing to do");
+                else if (r.needsReview) console.log("still short after expansion, held for review:", r.pr && r.pr.url);
+                else console.log("expansion did not run:", r.error || "unknown");
+              ' "${SLOT}"
+            fi
             echo "::endgroup::"
             # Space the runs out so each one reads the image ledger the previous
             # merge just wrote, instead of racing it.

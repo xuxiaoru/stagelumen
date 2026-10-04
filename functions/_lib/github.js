@@ -177,6 +177,24 @@ export async function mergePr(env, number, squash = true) {
 }
 
 /** Best-effort cleanup of the source branch after an auto-merge. */
+/**
+ * The open PR whose head is `branch`, or null. The revise flow needs the PR
+ * number to push an expanded draft through, and the branch name is all the
+ * caller has.
+ */
+export async function findPrByBranch(env, branch) {
+  try {
+    const owner = String(repo(env)).split('/')[0];
+    const list = await gh(
+      env,
+      `/repos/${repo(env)}/pulls?state=open&head=${encodeURIComponent(owner + ':' + branch)}`
+    );
+    return Array.isArray(list) && list.length ? list[0] : null;
+  } catch (e) {
+    return null;
+  }
+}
+
 export async function deleteBranch(env, name) {
   try {
     await gh(env, `/repos/${repo(env)}/git/refs/heads/${encodeURIComponent(name)}`, {

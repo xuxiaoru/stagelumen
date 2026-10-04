@@ -47,9 +47,15 @@ const GEO_MIN_WORDS = 800;
 // never produce the two real data tables the GEO gate requires, so drafting it
 // only burns a nightly slot on a pull request nobody can merge.
 const MIN_FACT_PRODUCTS = 3;
-// How many times draft() asks the model to lengthen a too-short body. Two is
-// enough in practice: the first expansion usually adds 300-500 words.
-const EXPAND_ATTEMPTS = 2;
+// How many extra AI calls draft() may spend lengthening its own body.
+//
+// Zero by default, and that is not a quality choice: one HTTP request gets one
+// AI call. The 70B model needs 30-55s for a draft, and two expansions on top of
+// that overrun the platform limit — a live trial POST hung for 7.5 minutes and
+// produced nothing at all. Length is therefore fixed by a SECOND request
+// (POST {"revise":"<slug>"}), which runs expandDraft() below. Raise this only
+// if you have measured the total wall time and it fits.
+const EXPAND_ATTEMPTS = 0;
 
 const CATEGORIES = ['How-To', 'Application', 'Customer Story', 'Product News', 'Industry'];
 
@@ -190,6 +196,169 @@ const GEO_STRUCTURE = [
     'the reader can take with you.',
   '',
 ].join('\n');
+
+/**
+ * Reader for the front matter this module writes. Only the keys the agent
+ * itself emits are understood — the revise flow re-reads its own drafts, it is
+ * not a general YAML parser.
+ */
+function parseFrontMatter(raw) {
+  const m = String(raw).match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n?/);
+  const empty = { end: 0, title: '', slug: '', category: '', excerpt: '', image: '', imageAlt: '', date: '', tags: [], faq: [] };
+  if (!m) return empty;
+  const block = m[1];
+  const get = (k) => {
+    const mm = block.match(new RegExp('^' + k + ':[ \t]*(.*)$', 'm'));
+    if (!mm) return '';
+    return mm[1].trim().replace(/^"(.*)"$/s, '$1').replace(/\\"/g, '"');
+  };
+  const listOf = (k) => {
+    const out = [];
+    let on = false;
+    for (const ln of block.split(/\r?\n/)) {
+      if (new RegExp('^' + k + ':[ \t]*$').test(ln)) { on = true; continue; }
+      if (!on) continue;
+      const t = ln.match(/^\s+-\s+(.*)$/);
+      if (t) { out.push(t[1].trim().replace(/^"(.*)"$/s, '$1')); continue; }
+      if (ln.trim()) break; // a new key ends the list
+    }
+    return out;
+  };
+  const faq = listOf('faq')
+    .map((s2) => {
+      const i = s2.indexOf('::');
+      return i > 0 ? { q: s2.slice(0, i), a: s2.slice(i + 2) } : null;
+    })
+    .filter(Boolean);
+  return {
+    end: m[0].length,
+    title: get('title'),
+    slug: get('slug'),
+    category: get('category'),
+    excerpt: get('excerpt'),
+    image: get('image'),
+    imageAlt: get('imageAlt'),
+    date: get('date'),
+    tags: listOf('tags'),
+    faq,
+  };
+}
+
+/**
+ * Lengthen a draft that already exists on a pull-request branch. This is the
+ * second half of the two-request flow: one AI call, so it always fits the
+ * request budget. The article is re-emitted whole rather than patched, because
+ * splicing two generations together is how duplicated headings and tables
+ * happen.
+ *
+ * @returns {Promise<{ok:boolean, error?:string, path?:string, markdown?:string,
+ *                    slug?:string, title?:string, words?:number, short?:boolean,
+ *                    unchanged?:boolean, checks?:Array}>}
+ */
+export async function expandDraft(env, request, opts) {
+  const raw = String((opts && opts.markdown) || '');
+  if (!raw) return { ok: false, error: 'markdown is required' };
+
+  const fm = parseFrontMatter(raw);
+  if (!fm.slug) return { ok: false, error: 'draft has no slug in its front matter' };
+  const path = 'content/blog/' + fm.slug + '.md';
+  const before = countWords(raw.slice(fm.end));
+
+  // Already long enough: report success without spending a token, so a retry of
+  // the revise step is harmless.
+  if (before >= GEO_MIN_WORDS) {
+    return {
+      ok: true, unchanged: true, short: false, slug: fm.slug, title: fm.title,
+      category: fm.category, path, markdown: raw, words: before,
+      image: fm.image, imageAlt: fm.imageAlt, model: MODEL, sources: [], checks: [],
+    };
+  }
+
+  const topic = String((opts && opts.topic) || fm.title || '').slice(0, 300);
+  const kind = KIND_BRIEF[opts && opts.kind] ? opts.kind : 'buyer-guide';
+  const lang = /[\u4e00-\u9fff]/.test(topic) ? 'zh' : 'en';
+  const result = await search(request, topic, { topK: 6 });
+  const facts = renderFacts(result, { images: true });
+  const allowedImages = factImages(result);
+
+  const r = await callAI(
+    env,
+    buildExpandPrompt(kind, topic, facts, {
+      title: fm.title,
+      excerpt: fm.excerpt,
+      category: fm.category,
+      tags: fm.tags,
+      image: fm.image,
+      imageAlt: fm.imageAlt,
+      faq: fm.faq,
+      body: raw.slice(fm.end).trim(),
+    }, GEO_MIN_WORDS + 150, lang),
+    MODEL,
+    3000
+  );
+  const next = r && r.text ? extractJson(r.text) : null;
+  if (!next || !next.body) {
+    return { ok: false, model: (r && r.model) || MODEL, error: 'expansion returned nothing usable' };
+  }
+  const after = countWords(next.body);
+  if (after <= before) {
+    return {
+      ok: false, model: (r && r.model) || MODEL,
+      error: 'expansion did not lengthen the draft (' + before + ' -> ' + after + ' words)',
+    };
+  }
+
+  const faq = (Array.isArray(next.faq) ? next.faq : [])
+    .map((x) => {
+      if (x && typeof x === 'object') return { q: String(x.q || '').trim(), a: String(x.a || '').trim() };
+      const s2 = String(x || '');
+      const i = s2.indexOf('::');
+      return i > 0 ? { q: s2.slice(0, i).trim(), a: s2.slice(i + 2).trim() } : null;
+    })
+    .filter((x) => x && x.q && x.a)
+    .slice(0, 6);
+  // Keep the existing hero unless the rewrite proposed one of the real photos
+  // this run actually retrieved — never accept an invented path.
+  const image = next.image && allowedImages.indexOf(next.image) !== -1 ? next.image : fm.image;
+  const imageAlt = image === fm.image ? fm.imageAlt : String(next.imageAlt || '').trim().slice(0, 120);
+
+  const checks = factCheck(next.body, facts, result.products || [], image, allowedImages, {
+    minWords: GEO_MIN_WORDS,
+    faqCount: faq.length,
+  });
+
+  const front = yamlFrontMatter({
+    title: String(next.title || fm.title).trim().slice(0, 120),
+    slug: fm.slug,
+    date: fm.date || new Date().toISOString(),
+    category: CATEGORIES.indexOf(next.category) !== -1 ? next.category : fm.category,
+    excerpt: String(next.excerpt || fm.excerpt || '').trim().slice(0, 155),
+    tags: Array.isArray(next.tags) && next.tags.length ? next.tags.slice(0, 5) : fm.tags,
+    image,
+    imageAlt,
+    faq: faq.length ? faq : fm.faq,
+  });
+
+  return {
+    ok: true,
+    short: false,
+    slug: fm.slug,
+    title: String(next.title || fm.title).trim(),
+    category: front.match(/category: "([^"]*)"/) ? front.match(/category: "([^"]*)"/)[1] : fm.category,
+    path,
+    markdown: front + '\n' + String(next.body).trim() + '\n',
+    image,
+    imageAlt,
+    model: (r && r.model) || MODEL,
+    sources: [
+      ...result.entries.map((e) => ({ type: 'kb', id: e.id })),
+      ...result.products.slice(0, 5).map((x) => ({ type: 'product', model: x.model })),
+    ],
+    words: after,
+    grew_from: before,
+    checks,
+  };
+}
 
 /**
  * Word count used by the GEO gate. Shared with the drafting loop so the two can
@@ -726,6 +895,10 @@ export async function draft(env, request, opts) {
       ...result.products.slice(0, 5).map((p) => ({ type: 'product', model: p.model })),
     ],
     words: countWords(parsed.body),
+    // The scheduler reads this to decide whether to spend a second request on
+    // an expansion pass. A short draft still opens a pull request, it just
+    // does not merge.
+    short: countWords(parsed.body) < GEO_MIN_WORDS,
     expanded,
     checks,
   };

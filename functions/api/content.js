@@ -22,8 +22,16 @@
 
 import { ok, fail, handleOptions, adminAuthorized, readBody, str, uid, nowIso } from '../_lib/util.js';
 import { hitRate, logAgentRun, hasDb } from '../_lib/db.js';
-import { draft, pickTopic, hasCatalogueBacking } from '../_lib/content.js';
-import { ghConfigured, proposeFiles, mergePr, deleteBranch, getFile } from '../_lib/github.js';
+import { draft, expandDraft, pickTopic, hasCatalogueBacking } from '../_lib/content.js';
+import {
+  ghConfigured,
+  proposeFiles,
+  mergePr,
+  deleteBranch,
+  getFile,
+  putFile,
+  findPrByBranch,
+} from '../_lib/github.js';
 
 // Rolling record of hero images used by published posts. The nightly agent
 // reads it to avoid repeating the same product photo on consecutive articles —
@@ -142,6 +150,75 @@ export async function onRequest(context) {
   let topic = str(body.topic, 300);
   let kind = str(body.kind, 24) || 'buyer-guide';
 
+  // Revise mode. A draft that landed under the length floor is lengthened by a
+  // SECOND request rather than inside the drafting one: one HTTP request gets
+  // one AI call, and two 70B calls in a single request overrun the platform
+  // limit and never return. The caller passes the slug from the first response.
+  const reviseSlug = str(body.revise, 140);
+  if (reviseSlug) {
+    if (!ghConfigured(env)) return fail('GITHUB_PAT is not configured; cannot revise a draft', 503);
+    const branch = 'ai/blog-' + reviseSlug;
+    const file = await getFile(env, 'content/blog/' + reviseSlug + '.md', branch);
+    if (!file) return fail('No draft found on branch ' + branch, 404);
+
+    let rev;
+    try {
+      rev = await expandDraft(env, request, {
+        markdown: file.text,
+        topic: str(body.topic, 300),
+        kind: str(body.kind, 24) || 'buyer-guide',
+      });
+    } catch (e) {
+      console.error('[content] revise: ' + (e && e.message ? e.message : String(e)));
+      return fail('Expansion failed: ' + (e && e.message ? e.message : 'unknown'), 503);
+    }
+    if (!rev.ok) return fail(rev.error || 'expansion failed', 422);
+
+    try {
+      await putFile(
+        env,
+        rev.path,
+        rev.markdown,
+        branch,
+        'content(blog): expand draft to clear the length floor',
+        file.sha
+      );
+    } catch (e) {
+      return fail('Could not update ' + branch + ': ' + ((e && e.message) || e), 502);
+    }
+
+    const clean = !(rev.checks || []).some((c) => c.level === 'error');
+    const out = {
+      revised: true,
+      slug: rev.slug,
+      title: rev.title,
+      words: rev.words,
+      grew_from: rev.grew_from == null ? null : rev.grew_from,
+      unchanged: !!rev.unchanged,
+      model: rev.model,
+      sources: rev.sources || [],
+      auto,
+      pr: null,
+      merged: false,
+      checks: rev.checks || [],
+    };
+    if (auto && clean) {
+      const pr = await findPrByBranch(env, branch);
+      if (pr) {
+        await mergePr(env, pr.number);
+        await deleteBranch(env, branch);
+        out.pr = { number: pr.number, url: pr.html_url };
+        out.merged = true;
+        out.published = 'https://www.rigebalighting.com/content/blog/' + rev.slug;
+      } else {
+        out.needsReview = 'Draft expanded, but no open PR was found on ' + branch + '.';
+      }
+    } else if (auto) {
+      out.needsReview = true;
+    }
+    return ok(out);
+  }
+
   // Auto mode with no topic: let the agent choose from its editorial pool.
   // The index is day * slots + slot, so a single nightly run asking for three
   // slots gets three different subjects instead of three drafts of the same
@@ -204,6 +281,8 @@ export async function onRequest(context) {
   const out = {
     title: res.title,
     slug: res.slug,
+    // The scheduler spends a second request on this when it is true.
+    short: !!res.short,
     category: res.category,
     words: res.words,
     path: res.path,
