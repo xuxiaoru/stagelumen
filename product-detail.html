@@ -146,7 +146,7 @@
 
         <div style="display:flex; gap:12px; flex-wrap:wrap;">
           <a href="rfq.html" class="btn btn-primary">Get Bulk Quote</a>
-          <a href="#" class="btn btn-ghost">Download Spec Sheet (PDF)</a>
+          <a href="#" class="btn btn-ghost" id="specPdf" data-role="spec-pdf">Download Spec Sheet (PDF)</a>
         </div>
       </div>
     </div>
@@ -291,6 +291,11 @@
   (async () => {
     const params = new URLSearchParams(window.location.search);
     let productId = window.__PRODUCT_ID__ || params.get('id');
+
+    // The spec sheet is a real generated PDF per product. The static pages have
+    // the path baked in; here the id is only known at runtime.
+    const specLink = document.getElementById('specPdf');
+    if (specLink && productId) specLink.href = '/assets/specs/' + productId + '.pdf';
     if (!productId) productId = 'sl-b230'; // fallback 默认展示 SL-B230
 
     const p = await StageLumenProducts.get(productId);

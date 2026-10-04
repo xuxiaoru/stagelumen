@@ -87,6 +87,70 @@ export async function getFile(env, path, branch = 'main') {
   }
 }
 
+/**
+ * Read a file of any size.
+ *
+ * The Contents API caps the body it will return at 1 MB; past that it answers
+ * `encoding: "none"` with no content at all, which is why getFile() returns null
+ * for data/products.json (1.19 MB). The sha is still in that response, so the
+ * blob is fetched separately — git/blobs serves up to 100 MB.
+ */
+export async function getLargeFile(env, path, branch = 'main') {
+  const r = await gh(env, `/repos/${repo(env)}/contents/${path}?ref=${encodeURIComponent(branch)}`);
+  if (!r || r.type !== 'file') return null;
+  if (r.content && r.encoding === 'base64') {
+    const bin = atob(String(r.content).replace(/\s/g, ''));
+    return { text: new TextDecoder().decode(Uint8Array.from(bin, (c) => c.charCodeAt(0))), sha: r.sha };
+  }
+  const blob = await gh(env, `/repos/${repo(env)}/git/blobs/${r.sha}`);
+  const bin = atob(String(blob.content || '').replace(/\s/g, ''));
+  return { text: new TextDecoder().decode(Uint8Array.from(bin, (c) => c.charCodeAt(0))), sha: r.sha };
+}
+
+/**
+ * Commit a file straight to a branch, sized however large it is.
+ *
+ * blob -> tree -> commit -> ref, which is what push_batch.py does locally. Used
+ * for single-field edits to the catalogue, where opening a 632-item pull request
+ * for one price change is not useful. The ref is moved with force:false, so a
+ * non-fast-forward is rejected rather than overwriting history; that is the
+ * signal to re-read and retry.
+ */
+export async function commitBlob(env, path, content, message, branch = 'main') {
+  const owner = repo(env);
+  const blob = await gh(env, `/repos/${owner}/git/blobs`, {
+    method: 'POST',
+    body: JSON.stringify({ content: b64(content), encoding: 'base64' }),
+  });
+  for (let attempt = 0; attempt < 3; attempt++) {
+    const baseCommit = await mainSha(env, branch);
+    const base = await gh(env, `/repos/${owner}/git/commits/${baseCommit}`);
+    const tree = await gh(env, `/repos/${owner}/git/trees`, {
+      method: 'POST',
+      body: JSON.stringify({
+        base_tree: base.tree.sha,
+        tree: [{ path, mode: '100644', type: 'blob', sha: blob.sha }],
+      }),
+    });
+    const commit = await gh(env, `/repos/${owner}/git/commits`, {
+      method: 'POST',
+      body: JSON.stringify({ message, tree: tree.sha, parents: [baseCommit] }),
+    });
+    try {
+      await gh(env, `/repos/${owner}/git/refs/heads/${branch}`, {
+        method: 'PATCH',
+        body: JSON.stringify({ sha: commit.sha, force: false }),
+      });
+      return commit.sha;
+    } catch (e) {
+      // Someone else moved the branch between our read and our write. The blob
+      // is unchanged, so rebuilding the tree on the new head is all it takes.
+      if (attempt === 2) throw e;
+    }
+  }
+  throw new Error('commitBlob: could not advance ' + branch);
+}
+
 export async function mainSha(env, branch = 'main') {
   const ref = await gh(env, `/repos/${repo(env)}/git/ref/heads/${branch}`);
   return ref.object && ref.object.sha;

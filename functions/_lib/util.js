@@ -123,6 +123,34 @@ export function safeEqual(a, b) {
   return diff === 0 && sa.length > 0;
 }
 
+/**
+ * Who is calling, for the product editor.
+ *
+ * Returns { ok, name } rather than a bare boolean, because the caller's name goes
+ * into the commit message — that is the whole point of per-person tokens.
+ * EDITOR_TOKENS is a JSON object of token -> name; ADMIN_TOKEN still works so the
+ * repository owner cannot lock themselves out.
+ */
+export function editorWho(request, env) {
+  const auth = request.headers.get('authorization') || '';
+  const bearer = auth.startsWith('Bearer ') ? auth.slice(7) : '';
+  const query = new URL(request.url).searchParams.get('token') || '';
+  const presented = bearer || query;
+  if (!presented) return { ok: false, name: '' };
+
+  let map = {};
+  try {
+    map = JSON.parse(env.EDITOR_TOKENS || '{}') || {};
+  } catch (e) {
+    map = {};
+  }
+  for (const tok of Object.keys(map)) {
+    if (safeEqual(presented, tok)) return { ok: true, name: String(map[tok] || 'editor') };
+  }
+  if (env.ADMIN_TOKEN && safeEqual(presented, env.ADMIN_TOKEN)) return { ok: true, name: 'admin' };
+  return { ok: false, name: '' };
+}
+
 export function adminAuthorized(request, env) {
   const token = env.ADMIN_TOKEN;
   if (!token) return false;
