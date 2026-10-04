@@ -147,6 +147,7 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 Written by the RiGeBa engineering and export team. Each link is a standalone
 page carrying the full answer, plus the tables and figures behind it.
 
+- [Choosing the Right DMX Splitter and Opto-Isolator for Your Touring Rig](https://www.rigebalighting.com/content/blog/choosing-the-right-dmx-splitter-and-opto-isolator-for-your-touring-rig-64hj): Select a DMX splitter like the RG-CA8802
 - [Designing Moving-Head Looks for a Church Sanctuary without Blinding the Congregation](https://www.rigebalighting.com/content/blog/designing-moving-head-looks-for-a-church-sanctuary-without-blinding-th-4y4b): A sanctuary is a room where light has to fall on faces, not in eyes. How to aim, what to buy, and where movement belongs.
 - [Decoding Moving Head Spec Sheets](https://www.rigebalighting.com/content/blog/decoding-moving-head-spec-sheets-k3dw): Compare moving heads on beam angle, lux at a stated distance, LED configuration and IP rating — not wattage. Real EXW prices from US$96 to US$757.
 - [DMX Addressing Explained: A Practical Guide for Rental Houses](https://www.rigebalighting.com/content/blog/dmx-addressing-explained-guide-for-rental-houses): Start addresses, footprints, patch sheets and splitters for working rental techs — real addressing math and a worked 20-fixture one-universe patch.
