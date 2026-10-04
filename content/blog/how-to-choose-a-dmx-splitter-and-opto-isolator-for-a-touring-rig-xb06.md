@@ -61,3 +61,21 @@ To configure your DMX splitter for use in a touring rig, you should start by det
 Using a modular DMX splitter, such as the RG-CA8802 MOD Modular DMX Splitter, can provide several benefits, including improved flexibility and scalability. The modular design allows you to easily add or remove outputs as needed, making it easy to adapt to changing conditions. You can find more information on the RG-CA8802 MOD Modular DMX Splitter on the [RG-CA8802 MOD](/products/controller/rg-ca8802-2) product page.
 
 To get started with choosing the right DMX splitter and opto-isolator for your touring rig, contact us to discuss your specific needs and determine the best solution for your application.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8802 | 4 outputs | US$51 |
+| RG-CA8802 | Two work modes | US$91 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-CA8402MINI | Two work modes | US$51 |
+| RG-CA8402C | IP65 | US$72 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-CA8802](/products/controller/rg-ca8802) and [RG-CA8402C](/products/controller/rg-ca8402c). Open each one for the full spec list, the volume tiers and the current EXW price.
