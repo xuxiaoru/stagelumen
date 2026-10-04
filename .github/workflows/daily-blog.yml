@@ -57,7 +57,8 @@ jobs:
               if (r.merged) {
                 console.log("PUBLISHED:", r.published);
                 fs.appendFileSync("/tmp/published.txt", r.published + "\n");
-              } else if (r.needsReview) console.log("NEEDS REVIEW (fact-check failed):", r.pr && r.pr.url);
+              } else if (r.mergeError) console.log("MERGE REJECTED:", r.mergeError, r.pr && r.pr.url);
+              else if (r.needsReview) console.log("NEEDS REVIEW (fact-check failed):", r.pr && r.pr.url);
               else if (r.pr) console.log("PR opened:", r.pr.url);
               else if (r.prError) console.log("PR error:", r.prError);
               else console.log("No publish. autoSkipped:", r.autoSkipped || "unknown");
@@ -89,7 +90,8 @@ jobs:
                 if (r.merged) {
                   console.log("PUBLISHED after expansion:", r.published);
                   fs.appendFileSync("/tmp/published.txt", r.published + "\n");
-                } else if (r.unchanged) console.log("already long enough; nothing to do");
+                } else if (r.mergeError) console.log("MERGE REJECTED:", r.mergeError, r.pr && r.pr.url);
+                else if (r.unchanged) console.log("already long enough; nothing to do");
                 else if (r.needsReview) console.log("still short after expansion, held for review:", r.pr && r.pr.url);
                 else console.log("expansion did not run:", r.error || "unknown");
               ' "${SLOT}"

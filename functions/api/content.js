@@ -109,6 +109,29 @@ function prBody({ kind, model, sources, checks, auto, merged }) {
   return lines.join('\n');
 }
 
+/**
+ * Merge a draft's pull request without ever letting the failure escape.
+ *
+ * A rejected merge is an ordinary outcome — a conflict, a secondary rate limit,
+ * a repository rule — not a bug in the request. Letting it throw used to abort
+ * the whole endpoint as Cloudflare 1101 with an empty body, which told the
+ * nightly log nothing. One retry, then report through the JSON response so the
+ * PR number survives for whoever picks it up.
+ */
+async function tryMerge(env, number) {
+  let last = '';
+  for (let attempt = 0; attempt < 2; attempt++) {
+    try {
+      await mergePr(env, number);
+      return { ok: true };
+    } catch (e) {
+      last = String((e && e.message) || e).slice(0, 200);
+      console.error('[content] merge ' + number + ' failed (attempt ' + (attempt + 1) + '): ' + last);
+    }
+  }
+  return { ok: false, error: last };
+}
+
 export async function onRequest(context) {
   const { request, env } = context;
 
@@ -205,11 +228,15 @@ export async function onRequest(context) {
     if (auto && clean) {
       const pr = await findPrByBranch(env, branch);
       if (pr) {
-        await mergePr(env, pr.number);
-        await deleteBranch(env, branch);
         out.pr = { number: pr.number, url: pr.html_url };
-        out.merged = true;
-        out.published = 'https://www.rigebalighting.com/content/blog/' + rev.slug;
+        const merged = await tryMerge(env, pr.number);
+        if (merged.ok) {
+          await deleteBranch(env, branch);
+          out.merged = true;
+          out.published = 'https://www.rigebalighting.com/content/blog/' + rev.slug;
+        } else {
+          out.mergeError = 'draft expanded and pushed, but the merge was rejected: ' + merged.error;
+        }
       } else {
         out.needsReview = 'Draft expanded, but no open PR was found on ' + branch + '.';
       }
@@ -323,10 +350,14 @@ export async function onRequest(context) {
       out.branch = r.branch;
 
       if (auto && !hasError) {
-        await mergePr(env, r.pr.number);
-        await deleteBranch(env, branch);
-        out.merged = true;
-        out.published = 'https://www.rigebalighting.com/content/blog/' + res.slug;
+        const merged = await tryMerge(env, r.pr.number);
+        if (merged.ok) {
+          await deleteBranch(env, branch);
+          out.merged = true;
+          out.published = 'https://www.rigebalighting.com/content/blog/' + res.slug;
+        } else {
+          out.mergeError = 'merge was rejected: ' + merged.error;
+        }
       } else if (auto && hasError) {
         out.needsReview = true;
       }
