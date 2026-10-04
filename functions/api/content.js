@@ -308,8 +308,13 @@ export async function onRequest(context) {
   const out = {
     title: res.title,
     slug: res.slug,
-    // The scheduler spends a second request on this when it is true.
+    // The scheduler spends a second request on either of these. "short" means the
+    // body is under the length floor; "needsExpand" means the fact-check found
+    // any hard error at all — a missing table, one product link instead of two.
+    // The expansion appends whatever is missing, so it is the right repair for
+    // all of them, not just for a thin draft.
     short: !!res.short,
+    needsExpand: (res.checks || []).some((c) => c.level === 'error'),
     category: res.category,
     words: res.words,
     path: res.path,

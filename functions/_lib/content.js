@@ -271,11 +271,21 @@ export async function expandDraft(env, request, opts) {
   const path = 'content/blog/' + fm.slug + '.md';
   const before = countWords(raw.slice(fm.end));
 
-  // Already long enough: report success without spending a token, so a retry of
-  // the revise step is harmless.
-  if (before >= GEO_MIN_WORDS) {
+  // Nothing to do only when the draft already satisfies the length floor AND
+  // has the two real tables and two product links the gate demands. Testing
+  // length alone used to skip the repair for a long draft that was missing a
+  // table — the exact case that blocked the first end-to-end publish.
+  const current = raw.slice(fm.end);
+  const tableRows = (current.match(/^\|.*\|\s*$/gm) || []).length;
+  const linkSet = new Set(
+    (current.match(/\]\(\/products\/[a-z0-9-]+\/[a-z0-9-]+\)/gi) || []).map((x) => x.toLowerCase())
+  );
+  const alreadyComplete =
+    before >= GEO_MIN_WORDS && tableRows >= 6 && linkSet.size >= 2;
+  if (alreadyComplete) {
     return {
       ok: true, unchanged: true, short: false, slug: fm.slug, title: fm.title,
+    sections_added: 0, tables_added: 0,
       category: fm.category, path, markdown: raw, words: before,
       image: fm.image, imageAlt: fm.imageAlt, model: MODEL, sources: [], checks: [],
     };

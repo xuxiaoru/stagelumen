@@ -63,7 +63,9 @@ jobs:
               else if (r.prError) console.log("PR error:", r.prError);
               else console.log("No publish. autoSkipped:", r.autoSkipped || "unknown");
             ' "${SLOT}"
-            # A draft under the length floor is fixed by a SECOND request.
+            # A draft that failed the fact-check for any reason — too short, one
+            # data table instead of two, a single product link — is repaired by a
+            # SECOND request.
             # It cannot happen inside the first one: a single /api/content call
             # gets a single AI call, and the 70B model already needs 30-55s for
             # the draft itself. Two calls in one request never returns.
@@ -71,7 +73,7 @@ jobs:
               const fs = require("fs");
               let r = {};
               try { r = JSON.parse(fs.readFileSync("/tmp/content-resp-" + process.argv[1] + ".json", "utf8")); } catch (e) {}
-              console.log((r.short && r.slug) ? r.slug : "");
+              console.log(((r.short || r.needsExpand) && r.slug) ? r.slug : "");
             ' "${SLOT}")
             if [ -n "${REVISE}" ]; then
               echo "---- expanding draft: ${REVISE} ----"
