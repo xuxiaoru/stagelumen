@@ -53,9 +53,9 @@ Controllers differ far less in channel count than in how quickly you can build a
 | RG-CTD192S6I-K | 192 | 6 faders, Pilot 2000 | US$135 | US$129 over 10 pcs |
 | Daslight 4 controller | software-defined | laptop plus interface | US$176 | US$150 over 20 pcs |
 | RG-CTD1024S16F-K | 1024 | 16 faders | US$298 | US$275 over 10 pcs |
-| QUARTZ (Mini Tiger Touch) | console | touchscreen, playback faders | US$858 | — |
+| QUARTZ (Mini Tiger Touch) | console | touchscreen, cue faders | US$858 | — |
 
-For one universe of bar fixtures, a 408-channel fader board at US$123 covers the rig and leaves room to grow. The 1024-channel 16-fader desk at US$298 becomes the sensible buy the moment you add a second universe or pixel-mapped fixtures, because fader count — not channel count — is what you run out of when building looks live.
+For one universe of bar fixtures, a 408-channel fader board at US$123 covers the rig and leaves room to grow. The [1024-channel 16-fader desk](/products/controller/rg-ctd1024s16f-k) at US$298 becomes the sensible buy the moment you add a second universe or pixel-mapped fixtures, because fader count — not channel count — is what you run out of when building looks live.
 
 ## How should the fixtures be addressed?
 
@@ -95,7 +95,7 @@ If the rig flickers only when the bar's fridge compressor starts, you have a pow
 
 ## What should the first show file contain?
 
-Build four things before doors open, in this order: a warm wash, a blue wash, a blackout, and a chase. Add a grand master fader that kills everything in one movement, and label every playback so a relief operator can run the room without you.
+Build four things before doors open, in this order: a warm wash, a blue wash, a blackout, and a chase. Add a grand master fader that kills everything in one movement, and label every fader so a relief operator can run the room without you.
 
 Everything else — haze, wireless DMX, a second universe — is a second-phase purchase. None of it fixes a rig whose channel budget was never counted.
 

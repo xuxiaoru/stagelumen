@@ -235,8 +235,13 @@ export function renderFacts(result, opts) {
     lines.push(`Q: ${e.q}\nA: ${e.a}`);
   }
   for (const p of result.products) {
+    // The path is printed because the prompt asks for
+    // "[model](/products/<category>/<id>) where category and id come from FACTS".
+    // Without this line the model invents both, and a link to a category that
+    // does not exist is exactly what it invented.
     lines.push(
       `PRODUCT ${p.model} — ${p.name}\n` +
+        `URL: /products/${p.category}/${p.id}\n` +
         `Price: ${p.price != null ? 'USD ' + p.price : 'on request'}\n` +
         (withImages && p.image ? `Image: ${p.image}\n` : '') +
         `${p.shortDesc || ''}\n` +

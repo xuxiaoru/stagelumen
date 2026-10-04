@@ -142,8 +142,12 @@ const GEO = {
   minQuestions: 4,
   minTables: 2,
   minFaq: 4,
+  minProductLinks: 2,
+  maxHeadingRepeats: 2,
   maxFaq: 6,
 };
+
+let realProductPaths = null;
 
 function geoChecks(body, data) {
   const problems = [];
@@ -167,8 +171,52 @@ function geoChecks(body, data) {
   if (faq.length > GEO.maxFaq) {
     problems.push(['WARN', 'GEO: ' + faq.length + ' FAQ pairs — trim to ' + GEO.maxFaq]);
   }
-  if (!/\]\(\/products\//.test(body)) {
-    problems.push(['WARN', 'GEO: no internal link to a product page']);
+  const productLinks = (body.match(/\]\(\/products\/[a-z0-9-]+\/[a-z0-9-]+\)/gi) || []);
+  const distinctProducts = new Set(productLinks.map((x) => x.toLowerCase()));
+  // Resolve every link against the catalogue. A count of two links to two
+  // invented paths is worth nothing to a reader and nothing to a crawler.
+  if (productLinks.length) {
+    if (!realProductPaths) {
+      const db = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'products.json'), 'utf8'));
+      realProductPaths = new Set(
+        (db.products || []).map((x) => ('/products/' + x.category + '/' + x.id).toLowerCase())
+      );
+    }
+    for (const raw of productLinks) {
+      const linkPath = raw.replace(/^\]\(|\)$/g, '').toLowerCase();
+      if (!realProductPaths.has(linkPath)) {
+        problems.push(['ERROR', 'GEO: product link ' + linkPath + ' does not resolve to a catalogue page']);
+      }
+    }
+  }
+  if (distinctProducts.size < GEO.minProductLinks) {
+    problems.push([
+      'ERROR',
+      'GEO: only ' + distinctProducts.size + ' distinct /products/ link(s), need ' + GEO.minProductLinks,
+    ]);
+  }
+  // Same failure as the gate in _lib/content.js: one heading template applied
+  // per product, visible only in the opening words of each heading.
+  const groups = new Map();
+  for (const h of (body.match(/^##\s+(.+)$/gim) || [])) {
+    const words = h
+      .replace(/^##\s+/i, '')
+      .replace(/[?:,.!]+$/, '')
+      .trim()
+      .toLowerCase()
+      .split(/\s+/)
+      .filter(Boolean);
+    if (words.length < 4) continue;
+    const key = words.slice(0, 4).join(' ');
+    groups.set(key, (groups.get(key) || 0) + 1);
+  }
+  let worst = null;
+  for (const [key, n] of groups) if (n > GEO.maxHeadingRepeats && (!worst || n > worst[1])) worst = [key, n];
+  if (worst) {
+    problems.push([
+      'ERROR',
+      'GEO: heading pattern "' + worst[0] + ' …" used in ' + worst[1] + ' sections — vary the question',
+    ]);
   }
   for (const f of faq) {
     const s = String(f);

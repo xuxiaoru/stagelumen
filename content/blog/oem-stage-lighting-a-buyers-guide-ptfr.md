@@ -131,7 +131,7 @@ The ones with the widest market and the simplest brand work: a zoom wash, a beam
 | RG-ML240WD-KTXe6AH3 | One fixture doing wash, beam and pixel | US$192 |
 | RG-ML300BR-KN1H17 | 3-in-1 BSW with a gobo wheel | US$315 |
 
-[The zoom wash](/products/moving/rg-ml350wr-kose4h58) is the single most common first OEM choice, because zoom removes the need to stock two wash angles and the price point works in most markets.
+[The zoom wash](/products/moving/rg-ml350wr-kose4h58) is the single most common first OEM choice, because zoom removes the need to stock two wash angles and the price point works in most markets. The [beam at US$180](/products/moving/rg-m200bn-kph16) is the one distributors add when their customers ask for a single tight look per fixture rather than a wash.
 
 ## What to send us
 

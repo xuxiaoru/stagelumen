@@ -62,15 +62,18 @@ ul { list-style: none; }
   gap: 8px;
 }
 .logo-mark {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, var(--primary), var(--accent-2));
+  /* The real company logo, not a drawn tile. The artwork is a white-background
+     PNG with black lettering and no alpha channel, so it cannot simply sit on
+     the dark header and footer — the white plate is what keeps it legible.
+     Styled here rather than in markup so all 686 pages pick it up from this one
+     file, generated product pages included; the same class serves the header
+     and the footer. The placeholder "R" stays in the DOM for screen readers. */
+  width: 50px;
+  height: 44px;
+  background: #fff url("/assets/images/brand/logo-rigeba.png") center / contain no-repeat;
   border-radius: 8px;
-  display: inline-grid;
-  place-items: center;
-  font-weight: 800;
-  font-size: 18px;
-  color: #fff;
+  font-size: 0;
+  flex: 0 0 auto;
 }
 /* .nav 与 .nav-dropdown 撑满 header 的 72px 高度 —— 这是下拉不中断的几何基础：
    鼠标从主菜单往下移到下拉的整段路径都落在 .nav-dropdown 内部，hover 不会断。

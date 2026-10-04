@@ -182,8 +182,15 @@ const GEO_STRUCTURE = [
   '4. AT LEAST TWO markdown tables built only from FACTS — model, configuration, EXW price, volume ' +
     'tier, MOQ, and whatever real spec fields FACTS provides. Never fabricate a row to fill a table; ' +
     'a missing column is better than an invented one.',
-  '5. AT LEAST ONE internal link to a real product page, written as ' +
-    '[model name](/products/<category>/<id>) where <category> and <id> come from FACTS.',
+  '5. AT LEAST TWO internal links to real product pages, written as ' +
+    '[model name](/products/<category>/<id>) where <category> and <id> come from FACTS. ' +
+    'Two different models in two different sections — not two links to the same page.',
+  '   ANTI-REPETITION: every "## " heading must be a genuinely different question. Never ' +
+    'reuse one wording pattern per product. "What are the key considerations when choosing a X?" ' +
+    'and "How do I determine the right size and configuration for my X?" repeated for six products ' +
+    'is six copies of one section and reads as machine output. If two headings would fit the same ' +
+    'product, merge them and ask about something else instead — the mechanism, the failure mode, ' +
+    'the number, the comparison.',
   '6. "faq" — four to six question/answer pairs in the JSON, each answer 2-3 sentences and each ' +
     'question one a buyer would actually type into a search box. These become FAQPage markup, so ' +
     'keep them factual and never repeat an answer already given verbatim above.',
@@ -605,6 +612,32 @@ function extractJson(text) {
  * howlers (IP20 outdoors, fixtures "outputting" DMX), and banned filler.
  * The same traps live in build/verify-blog.js — keep the two in sync.
  */
+/**
+ * Headings that share their first four words are one template applied again.
+ * Comparing whole headings does not work here: the repeated pattern differs only
+ * in the product name, so "...when choosing a DMX winch?" and "...when choosing
+ * an LED par light?" look different while reading exactly the same. The opening
+ * words are what the eye actually notices.
+ */
+function repeatedHeadingShape(headings) {
+  const groups = new Map();
+  for (const h of headings) {
+    const words = String(h)
+      .replace(/^##\s+/i, '')
+      .replace(/[?:,.!]+$/, '')
+      .trim()
+      .toLowerCase()
+      .split(/\s+/)
+      .filter(Boolean);
+    if (words.length < 4) continue;
+    const key = words.slice(0, 4).join(' ');
+    groups.set(key, (groups.get(key) || 0) + 1);
+  }
+  let worst = null;
+  for (const [key, n] of groups) if (n >= 3 && (!worst || n > worst[1])) worst = [key, n];
+  return worst;
+}
+
 function factCheck(body, facts, products, image, allowedImages, opts) {
   const problems = [];
   const allowed = new Set();
@@ -694,8 +727,41 @@ function factCheck(body, facts, products, image, allowedImages, opts) {
   }  if (o.faqCount != null && o.faqCount < 4) {
     problems.push({ level: 'error', msg: 'Only ' + o.faqCount + ' FAQ pair(s); 4 to 6 are required.' });
   }
-  if (!/\]\(\/products\//.test(src)) {
-    problems.push({ level: 'warn', msg: 'No internal product link — add at least one link to a real product page.' });
+  // Two DISTINCT product pages, not two links to one. A single link (or two links
+  // to the same model) is what the first live agent article shipped with: it
+  // passed every other check and still could not lead a reader to anything.
+  const productLinks = (src.match(/\]\(\/products\/[a-z0-9-]+\/[a-z0-9-]+\)/gi) || []);
+  const distinctProducts = new Set(productLinks.map((x) => x.toLowerCase()));
+  // A link is only worth having if it lands on a real page. The catalogue is
+  // the only source of truth here, so anything not in the products this run was
+  // given is an invented path and must not publish.
+  const realPaths = new Set(
+    (products || []).map((x) => ('/products/' + x.category + '/' + x.id).toLowerCase())
+  );
+  for (const raw of productLinks) {
+    const path = raw.replace(/^\]\(|\)$/g, '').toLowerCase();
+    if (realPaths.size && !realPaths.has(path)) {
+      problems.push({
+        level: 'error',
+        msg: 'Product link ' + path + ' is not a page on this site. Copy the URL line from FACTS verbatim.',
+      });
+    }
+  }
+  if (distinctProducts.size < 2) {
+    problems.push({
+      level: 'error',
+      msg: 'Only ' + distinctProducts.size + ' distinct internal product link(s); at least 2 different product pages are required.',
+    });
+  }
+  // The same failure as above, caught before it is written: a heading template
+  // applied once per product is the clearest possible sign of machine output.
+  const headings = (src.match(/^##\s+(.+)$/gim) || []).map((h) => h.replace(/^##\s+/i, ''));
+  const shape = repeatedHeadingShape(headings);
+  if (shape) {
+    problems.push({
+      level: 'error',
+      msg: 'Heading pattern "' + shape[0] + ' …" used in ' + shape[1] + ' sections — one template per product reads as machine output; ask something different each time.',
+    });
   }
   for (const bad of [/^##\s+(conclusion|summary|final thoughts|wrap[- ]?up)\b/im]) {
     if (bad.test(src)) problems.push({ level: 'warn', msg: 'Closing summary section — end on a concrete next step instead.' });
