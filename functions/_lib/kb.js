@@ -112,11 +112,66 @@ export async function loadKb(request) {
   return inflight;
 }
 
-function scoreProduct(item, tokens, raw) {
+/**
+ * Generic vs specific terms, measured against this catalogue rather than a
+ * word list.
+ *
+ * A term that appears in more than a quarter of the products identifies
+ * nothing on its own — dmx, led, light, moving, head all do, and scoring them
+ * like they matter is what dragged every DMX-controlled effect machine into a
+ * splitter article. A term that appears in a small slice identifies exactly one
+ * family: splitter, truss, gobo, prism, zoom. Zoom is in ~13% of the catalogue
+ * and is absolutely a useful discriminator; IDF alone said otherwise and cost us
+ * the whole topic.
+ *
+ * @returns {{weights:Map<string,number>, generic:Set<string>}}
+ */
+/**
+ * The forms of a term to look for. English plurals are the same term, and
+ * treating them as different words is how "heads" came to look like a rare
+ * discriminator: only a laser and an 8-head bar contain the literal string.
+ */
+function termForms(t) {
+  const out = [t];
+  if (t.length > 4 && /(?:ch|sh|s|x|z)es$/.test(t)) out.push(t.slice(0, -2));
+  else if (t.length > 3 && t.endsWith('s') && !t.endsWith('ss') && !t.endsWith('us')) out.push(t.slice(0, -1));
+  return out;
+}
+
+function termStats(tokens, products) {
+  const weights = new Map();
+  const generic = new Set();
+  const n = Math.max(1, products.length);
+  for (const t of tokens) {
+    if (!t || t.length < 2) {
+      weights.set(t, 0.2);
+      generic.add(t);
+      continue;
+    }
+    const forms = termForms(String(t).toLowerCase());
+    let df = 0;
+    for (const p of products) {
+      const hay = String(p.hay || '').toLowerCase();
+      const model = String(p.model || '').toLowerCase();
+      const name = String(p.name || '').toLowerCase();
+      if (forms.some((f) => hay.includes(f) || model.includes(f) || name.includes(f))) df++;
+    }
+    // Ordering weight: rare terms rank higher, never lower than a third.
+    weights.set(t, Math.max(0.33, Math.log(n / (1 + df)) / Math.log(n)));
+    if (df / n > 0.25) generic.add(t);
+  }
+  return { weights, generic };
+}
+
+function scoreProduct(item, tokens, raw, stats) {
   const hay = item.hay || '';
   const model = String(item.model || '').toLowerCase();
   const name = String(item.name || '').toLowerCase();
+  const weights = (stats && stats.weights) || null;
+  const generic = (stats && stats.generic) || new Set();
+  const weightOf = (t) => (weights && weights.has(t) ? weights.get(t) : 1);
   let score = 0;
+  let specific = 0;
 
   if (raw) {
     if (model && model.replace(/[- ]/g, '') === raw.replace(/[- ]/g, '')) score += 120;
@@ -124,11 +179,19 @@ function scoreProduct(item, tokens, raw) {
     if (name.includes(raw)) score += 30;
   }
   for (const t of tokens) {
-    if (model && model.replace(/[- ]/g, '').includes(t.replace(/[- ]/g, ''))) score += 25;
-    else if (name.includes(t)) score += 12;
-    else if (hay.includes(t)) score += 6;
+    const forms = termForms(String(t).toLowerCase());
+    const flat = forms.map((f) => f.replace(/[- ]/g, ''));
+    let hit = 0;
+    if (model && flat.some((f) => model.replace(/[- ]/g, '').includes(f))) hit = 25;
+    else if (forms.some((f) => name.includes(f))) hit = 12;
+    else if (forms.some((f) => hay.includes(f))) hit = 6;
+    if (!hit) continue;
+    score += hit * weightOf(t);
+    if (!generic.has(t)) specific = Math.max(specific, hit);
   }
-  return score;
+  // Only terms that narrow the catalogue make a product a result. What survives
+  // is then ordered by score, so the rarest match still wins.
+  return { score, specific };
 }
 
 function scoreEntry(e, tokens, raw) {
@@ -186,9 +249,15 @@ export async function search(request, query, opts = {}) {
   // unrelated entry. Requiring 12 means at least a question-text hit, a tag
   // hit, or three body hits — otherwise we admit we don't know, which is
   // always better than a confident wrong answer.
+  const stats = termStats(tokens, kb.products);
   const prodScored = kb.products
-    .map((p) => ({ p, s: scoreProduct(p, tokens, raw) }))
-    .filter((x) => x.s >= 10)
+    .map((p) => {
+      const r = scoreProduct(p, tokens, raw, stats);
+      return { p, s: r.score, specific: r.specific };
+    })
+    // A buyer naming a model must still get that model back, so an exact model
+    // hit bypasses the generic-term bar.
+    .filter((x) => (x.specific > 0 || modelHit) && x.s >= 8)
     .sort((a, b) => b.s - a.s);
 
   const prods = prodScored.slice(0, topK).map((x) => x.p);
