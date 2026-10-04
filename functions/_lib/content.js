@@ -327,16 +327,18 @@ export async function expandDraft(env, request, opts) {
     const h = String((sec && sec.h) || '').trim();
     const b = String((sec && sec.b) || '').trim();
     if (!h || !b || !/\?\s*$/.test(h)) continue;
+    const prose = b.replace(/[\r\n]+/g, ' ').trim();
+    if (countWords(prose) < 40) continue;
     const shape = headingShape(h);
     if (!shape || seenShapes.has(shape)) continue; // duplicate template
     seenShapes.add(shape);
-    sections.push('## ' + h.replace(/^#+\s*/, '') + '\n\n' + b);
+    sections.push('## ' + h.replace(/^#+\s*/, '') + '\n\n' + prose);
     if (sections.length === 2) break;
   }
 
   const tables = (Array.isArray(next.tables) ? next.tables : [])
-    .map((t) => String(t || '').trim())
-    .filter(looksLikeTable)
+    .map(renderTable)
+    .filter(Boolean)
     .slice(0, 2);
   if (!tables.length) {
     return {
@@ -470,22 +472,28 @@ function buildExpandPrompt(kind, topic, facts, parsed, need, lang, headings) {
     headings.map((h) => '  - ' + h).join('\n'),
     '',
     'RULES:',
-    '1. "tables": exactly TWO markdown tables built ONLY from FACTS. Each needs a header row,',
-    '   two to five data rows, and real figures (model, configuration, EXW price, MOQ, volume tier).',
-    '   Never invent a row to fill a table - a missing column is better than an invented one.',
+    '1. "tables": exactly TWO tables built ONLY from FACTS. Give each one as',
+    '   {"head": ["Model", "Configuration", "EXW"], "rows": [["RG-CA8802", "8 outputs", "US$51"]]}.',
+    '   Two to five rows each, and every cell a real figure from FACTS. Never invent a row to fill',
+    '   a table - a missing column is better than an invented one. The rows are rendered to markdown',
+    '   for you, so do NOT write pipes, dashes or any table syntax yourself.',
     '2. "sections": exactly TWO new sections. "h" is a question-form heading ending in "?".',
     '   The first four words of each "h" must differ from every heading listed above AND from each',
-    '   other. "b" is 120 to 180 words of concrete prose.',
+    '   other. "b" is 120 to 180 words of concrete prose written as ONE paragraph with no line',
+    '   breaks inside it.',
     '3. NEVER write one section per product. Compare two products, explain a mechanism, work',
     '   through a number, or describe the failure mode of a wrong choice. Two sections, not six.',
     '4. Never invent a specification, price, certification or model number. Anything not in FACTS',
     '   must be left out.',
     '5. No conclusion, no summary paragraph, no marketing filler.',
+    '6. NO value you return may contain a literal newline or an unescaped double quote. Tables are',
+    '   arrays of short cells precisely so this stays easy.',
     '',
     'Respond with STRICT JSON only, no markdown fence:',
-    '{"tables": ["<markdown table>", "<markdown table>"], ' +
-      '"sections": [{"h": "<question heading>", "b": "<120-180 words of prose>"}, ' +
-      '{"h": "<a different question>", "b": "<prose>"}]}',
+    '{"tables": [{"head": ["Model", "Configuration", "EXW"], "rows": [["RG-CA8802", "8 outputs", "US$51"]]}, ' +
+      '{"head": ["Model", "Configuration", "EXW"], "rows": [["RG-CA8402MINI", "4 outputs", "US$51"]]}], ' +
+      '"sections": [{"h": "<question heading>", "b": "<one paragraph, 120-180 words>"}, ' +
+      '{"h": "<a different question>", "b": "<one paragraph>"}]}',
   ].join('\n');
 }
 
@@ -502,9 +510,25 @@ function headingShape(h) {
     .join(' ');
 }
 
-function looksLikeTable(s) {
-  const rows = String(s || '').trim().split('\n').filter((l) => l.trim().startsWith('|'));
-  return rows.length >= 3;
+/**
+ * Render the table the model described as arrays. Formatting is decided here so
+ * it is identical across every article, and a malformed table is dropped rather
+ * than published: a table with a ragged row is worse than one fewer table.
+ */
+function renderTable(spec) {
+  const head = (spec && Array.isArray(spec.head) ? spec.head : []).map((x) => String(x == null ? '' : x).trim());
+  const rows = Array.isArray(spec && spec.rows) ? spec.rows : [];
+  if (head.length < 2) return '';
+  const clean = rows
+    .filter((r) => Array.isArray(r) && r.length === head.length)
+    .map((r) => r.map((c) => String(c == null ? '' : c).replace(/[\r\n]+/g, ' ').trim()));
+  if (!clean.length) return '';
+  return [
+    '| ' + head.join(' | ') + ' |',
+    '|' + head.map(() => '---').join('|') + '|',
+  ]
+    .concat(clean.map((r) => '| ' + r.join(' | ') + ' |'))
+    .join('\n');
 }
 
 function buildPrompt(kind, topic, facts, words, lang, images, recentImages) {
