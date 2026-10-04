@@ -19,7 +19,11 @@ skus: 500+
 primaryColor: "#ff6b00"
 accentColor: "#00d4ff"
 social:
-  youtube: ""
+  # Canonical channel-id URL, not the handle: it survives a handle rename, and
+  # this value is what becomes sameAs in the Organization entity.
+  youtube: "https://www.youtube.com/channel/UCArxB5BVihHp1RtcS9vqpyQ"
+  # The handle is kept for display links and stays readable to a human.
+  youtubeHandle: "https://www.youtube.com/@RiGeBalighting"
   instagram: ""
   facebook: ""
   linkedin: ""

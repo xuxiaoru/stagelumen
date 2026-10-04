@@ -21,6 +21,7 @@ import json, os, sys, datetime
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://www.rigebalighting.com"
+YOUTUBE = "https://www.youtube.com/@RiGeBalighting"
 TODAY = datetime.date.today().isoformat()
 
 STATIC_PAGES = [
@@ -285,6 +286,10 @@ def main():
           "- Solutions by venue: %s/solutions" % SITE,
           "- Company profile: %s/about" % SITE,
           "- Support, downloads and DMX files: %s/support" % SITE,
+          # Keep in step with social.youtube in content/settings.yml, which is what
+          # becomes sameAs in the Organization entity. build-seo.py does not read
+          # the settings file, so this one URL is a literal by necessity.
+          "- Factory tour video (YouTube): %s" % YOUTUBE,
           "- Blog / buyer guides: %s/news" % SITE,
           "- Other languages: German %s/de/ and Spanish %s/es/ (home, catalogue, company, contact, RFQ)" % (SITE, SITE),
           ""]
