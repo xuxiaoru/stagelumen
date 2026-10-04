@@ -22,7 +22,7 @@
 
 import { ok, fail, handleOptions, adminAuthorized, readBody, str, uid, nowIso } from '../_lib/util.js';
 import { hitRate, logAgentRun, hasDb } from '../_lib/db.js';
-import { draft, pickTopic } from '../_lib/content.js';
+import { draft, pickTopic, hasCatalogueBacking } from '../_lib/content.js';
 import { ghConfigured, proposeFiles, mergePr, deleteBranch, getFile } from '../_lib/github.js';
 
 // Rolling record of hero images used by published posts. The nightly agent
@@ -36,6 +36,10 @@ const IMAGE_LEDGER = 'content/blog/.used-images.json';
 // mean "last few days" — 18 images is roughly six days at this rate.
 const LEDGER_KEEP = 60;
 const RECENT_HINT = 18;
+// How many pool subjects to try before settling. Advancing by `slots` keeps a
+// skipped topic on the same slot of a later night rather than stealing the next
+// slot's subject.
+const TOPIC_TRIES = 4;
 
 async function readImageLedger(env) {
   try {
@@ -145,9 +149,24 @@ export async function onRequest(context) {
   if (auto && !topic) {
     const slots = Math.min(6, Math.max(1, Math.round(Number(body.slots) || 1)));
     const slot = Math.min(slots - 1, Math.max(0, Math.round(Number(body.slot) || 0)));
-    const pick = pickTopic(Math.floor(Date.now() / 86400000) * slots + slot);
-    topic = pick.topic;
-    kind = pick.kind;
+    const base = Math.floor(Date.now() / 86400000) * slots + slot;
+    // Walk forward until a topic the catalogue can actually support turns up.
+    // A subject with no products behind it cannot produce the two real data
+    // tables the GEO gate requires, so it would only ever become a NEEDS REVIEW
+    // PR. This is what stops three slots from turning into zero published posts.
+    let chosen = null;
+    for (let i = 0; i < TOPIC_TRIES; i++) {
+      const pick = pickTopic(base + i * slots);
+      const backing = await hasCatalogueBacking(request, pick.topic);
+      if (backing.ok) {
+        chosen = pick;
+        break;
+      }
+      console.error('[content] no catalogue backing, skipping topic: ' + pick.topic);
+    }
+    if (!chosen) chosen = pickTopic(base);
+    topic = chosen.topic;
+    kind = chosen.kind;
   }
   if (!topic) {
     return fail('topic is required, or set auto:true to let the agent choose', 422);

@@ -30,13 +30,26 @@ const MODEL = MODELS.heavy;
  * Matches GEO.minWords in build/verify-blog.js. Kept as a named constant so the
  * prompt, the gate and the offline checker cannot drift apart.
  *
- * 900 rather than 1000: the counter here (and in verify-blog) only counts
+ * 800 rather than 1000: the counter here (and in verify-blog) only counts
  * alphabetic tokens, so prices, wattages and model numbers - the very data the
  * GEO structure asks for - do not count toward it. A table-heavy article that
- * renders at 1100 words can measure 900. The drafting target below is set well
- * above this floor so a normal draft clears it without padding.
+ * renders at 1100 words can measure 900. Lowered from 900 on 2026-10-04: the
+ * nightly agent was landing at 600-700 words and every draft was being held for
+ * review, so the site stopped publishing altogether. A clean 800-word page with
+ * two real catalogue tables beats no page at all. The drafting target below
+ * stays far above this floor, and draft() now re-prompts for a longer body
+ * whenever the first attempt lands under it.
  */
-const GEO_MIN_WORDS = 900;
+const GEO_MIN_WORDS = 800;
+
+// Minimum catalogue products a topic must retrieve before it is worth drafting.
+// A subject with nothing behind it ("backup and failover", "wireless DMX") can
+// never produce the two real data tables the GEO gate requires, so drafting it
+// only burns a nightly slot on a pull request nobody can merge.
+const MIN_FACT_PRODUCTS = 3;
+// How many times draft() asks the model to lengthen a too-short body. Two is
+// enough in practice: the first expansion usually adds 300-500 words.
+const EXPAND_ATTEMPTS = 2;
 
 const CATEGORIES = ['How-To', 'Application', 'Customer Story', 'Product News', 'Industry'];
 
@@ -177,6 +190,77 @@ const GEO_STRUCTURE = [
     'the reader can take with you.',
   '',
 ].join('\n');
+
+/**
+ * Word count used by the GEO gate. Shared with the drafting loop so the two can
+ * never disagree about whether a draft is long enough.
+ */
+export function countWords(src) {
+  return (String(src || '').match(/[A-Za-z][A-Za-z'-]*/g) || []).length;
+}
+
+/**
+ * A topic the catalogue cannot back is a topic the gate will always reject: with
+ * no products there are no model numbers to cite and no real rows for the two
+ * required tables. Checking before drafting lets the nightly scheduler skip to
+ * the next subject instead of opening a PR that can never be merged.
+ */
+export async function hasCatalogueBacking(request, topic, min) {
+  const need = Number(min) || MIN_FACT_PRODUCTS;
+  try {
+    const r = await search(request, String(topic || ''), { topK: 6 });
+    return { ok: ((r && r.products) || []).length >= need, products: ((r && r.products) || []).length };
+  } catch (e) {
+    return { ok: false, products: 0, error: String((e && e.message) || e) };
+  }
+}
+
+/**
+ * Second-pass prompt. The model undershoots a long-body request in one shot, so
+ * rather than accept a thin article we hand the draft back with the same facts
+ * and ask for the same article, longer. It must return the whole body, not a
+ * diff: assembling fragments from two generations is exactly how headings and
+ * tables end up duplicated.
+ */
+function buildExpandPrompt(kind, topic, facts, parsed, need, lang) {
+  return [
+    SYSTEM,
+    '',
+    'FACTS - the only permitted source of specifications, prices and model numbers:',
+    facts || '(no catalogue facts retrieved - write about general practice only, never name a model)',
+    '',
+    'TASK: lengthen an existing draft so it clears the house length floor.',
+    'Topic: ' + topic,
+    'Language: ' + (lang === 'zh' ? 'Chinese' : 'English'),
+    '',
+    'CURRENT DRAFT (JSON):',
+    JSON.stringify({
+      title: parsed.title,
+      excerpt: parsed.excerpt,
+      category: parsed.category,
+      tags: parsed.tags,
+      image: parsed.image,
+      imageAlt: parsed.imageAlt,
+      faq: parsed.faq,
+      body: parsed.body,
+    }),
+    '',
+    'The body is ' + countWords(parsed.body) + ' words. It must be at least ' + need + ' words.',
+    '',
+    'RULES:',
+    '1. Return the SAME article, expanded. Keep the title, category, tags, image, imageAlt and every existing section.',
+    '2. Add substance, not padding: another ## question section, a second and third real data table built ' +
+      'ONLY from FACTS, a worked example, or a step-by-step checklist. Never restate a paragraph in different words.',
+    '3. Never invent a specification, price, certification or model number. Anything not in FACTS must be omitted.',
+    '4. Cite at least three model numbers from FACTS, each in a section whose subject matches that model\'s own type.',
+    '5. Keep the "## The short answer" block, every question-form ## heading, every table and every FAQ entry.',
+    '6. No conclusion or summary paragraph. End on a concrete next step.',
+    '',
+    'Respond with STRICT JSON only, no markdown fence, same keys as above:',
+    '{"title": "...", "excerpt": "...", "category": "...", "tags": ["..."], ' +
+      '"image": "...", "imageAlt": "...", "faq": [{"q": "...", "a": "..."}], "body": "<full expanded markdown>"}',
+  ].join('\n');
+}
 
 function buildPrompt(kind, topic, facts, words, lang, images, recentImages) {
   return [
@@ -562,6 +646,35 @@ export async function draft(env, request, opts) {
     };
   }
 
+  // One shot is not enough: llama-3.3 settles around 650-700 words however the
+  // length is phrased, and every undersized draft used to be held for review.
+  // Re-prompt with the draft itself and ask for the same article, longer.
+  let expanded = 0;
+  for (let i = 0; i < EXPAND_ATTEMPTS && countWords(parsed.body) < GEO_MIN_WORDS; i++) {
+    const r = await callAI(
+      env,
+      buildExpandPrompt(kind, topic, facts, parsed, GEO_MIN_WORDS + 150, lang),
+      MODEL,
+      3000
+    );
+    const next = r && r.text ? extractJson(r.text) : null;
+    if (!next || !next.body) continue;
+    // Only accept when it actually grew. A rewrite that comes back shorter, or
+    // truncated mid-JSON, would replace a usable draft with a worse one.
+    if (countWords(next.body) <= countWords(parsed.body)) continue;
+    parsed = {
+      title: next.title || parsed.title,
+      body: next.body,
+      excerpt: next.excerpt || parsed.excerpt,
+      category: next.category || parsed.category,
+      tags: Array.isArray(next.tags) && next.tags.length ? next.tags : parsed.tags,
+      image: next.image != null ? next.image : parsed.image,
+      imageAlt: next.imageAlt != null ? next.imageAlt : parsed.imageAlt,
+      faq: Array.isArray(next.faq) && next.faq.length ? next.faq : parsed.faq,
+    };
+    expanded++;
+  }
+
   const productImage = resolveImage(parsed.image, result.products, allowedImages, recentImages);
   const imageAlt = productImage ? String(parsed.imageAlt || '').trim().slice(0, 120) : '';
   // Accept either {"q":..,"a":..} pairs or a "Question::Answer" string, because
@@ -612,7 +725,8 @@ export async function draft(env, request, opts) {
       ...result.entries.map((e) => ({ type: 'kb', id: e.id })),
       ...result.products.slice(0, 5).map((p) => ({ type: 'product', model: p.model })),
     ],
-    words: String(parsed.body).split(/\s+/).length,
+    words: countWords(parsed.body),
+    expanded,
     checks,
   };
 }

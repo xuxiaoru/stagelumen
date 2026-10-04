@@ -138,7 +138,7 @@ const GEO = {
   // Mirrors GEO_MIN_WORDS in functions/_lib/content.js — see the comment there
   // for why the floor is 900 and not 1000 (the counter skips every digit, so
   // prices and wattages in the tables do not count toward it).
-  minWords: 900,
+  minWords: 800,
   minQuestions: 4,
   minTables: 2,
   minFaq: 4,
