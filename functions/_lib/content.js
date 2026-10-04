@@ -317,7 +317,19 @@ export async function expandDraft(env, request, opts) {
   );
   const next = r && r.text ? extractJson(r.text) : null;
   if (!next) {
-    return { ok: false, model: (r && r.model) || MODEL, error: 'expansion returned nothing usable' };
+    // Say what actually came back. Two wrong guesses about this failure (a
+    // markdown table in a JSON string, then the array shape) were both made
+    // without ever looking at the raw text, which the draft() path has always
+    // returned for exactly this reason.
+    const flat = String((r && r.text) || '').replace(/\s+/g, ' ');
+    return {
+      ok: false,
+      model: (r && r.model) || MODEL,
+      error: 'expansion returned nothing usable',
+      raw_len: flat.length,
+      raw_head: flat.slice(0, 300),
+      raw_tail: flat.slice(-200),
+    };
   }
 
   // Keep the model's prose, drop anything that would re-introduce the template.

@@ -195,7 +195,9 @@ export async function onRequest(context) {
       console.error('[content] revise: ' + (e && e.message ? e.message : String(e)));
       return fail('Expansion failed: ' + (e && e.message ? e.message : 'unknown'), 503);
     }
-    if (!rev.ok) return fail(rev.error || 'expansion failed', 422);
+    if (!rev.ok) {
+      return fail(JSON.stringify({ error: rev.error, raw_len: rev.raw_len, raw_head: rev.raw_head, raw_tail: rev.raw_tail }), 422);
+    }
 
     try {
       await putFile(
