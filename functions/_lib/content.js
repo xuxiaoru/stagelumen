@@ -695,6 +695,46 @@ function repairJson(s) {
   return out;
 }
 
+/**
+ * Close a JSON object the model stopped writing half way through.
+ *
+ * Measured 2026-10-05: the expansion for one draft came back 1851 characters of
+ * perfectly good JSON that ended `...for your corporate conference."}}` — the
+ * sections array and the outer object were never closed. Two runs produced 1851
+ * and 2160 characters, so this is the model stopping early, not a token ceiling,
+ * and repairJson() cannot help because it cannot know what was meant to follow.
+ *
+ * So walk the text tracking string state, note every bracket left open, and
+ * append the closers in reverse. A string left unterminated is closed first. The
+ * result is a parseable object whose last value may be short; callers validate
+ * the shape anyway, and a truncated table row is dropped rather than published.
+ */
+function closeTruncatedJson(text) {
+  const s = String(text || '');
+  const stack = [];
+  let inString = false;
+  let escaped = false;
+  for (let i = 0; i < s.length; i++) {
+    const c = s[i];
+    if (inString) {
+      if (escaped) escaped = false;
+      else if (c === '\\') escaped = true;
+      else if (c === '"') inString = false;
+      continue;
+    }
+    if (c === '"') inString = true;
+    else if (c === '{' || c === '[') stack.push(c);
+    else if (c === '}' || c === ']') stack.pop();
+  }
+  if (!stack.length && !inString) return s;
+  let out = s;
+  if (inString) out += '"';
+  // A trailing comma or a half-written key would still break the parse.
+  out = out.replace(/[\s,]+$/, '');
+  for (let i = stack.length - 1; i >= 0; i--) out += stack[i] === '{' ? '}' : ']';
+  return out;
+}
+
 function extractJson(text) {
   if (!text) return null;
   let t = String(text).trim();
@@ -713,6 +753,10 @@ function extractJson(text) {
   }
   attempts.push(repairJson(t.slice(s, e > s ? e + 1 : undefined)));
   attempts.push(repairJson(t.slice(s)));
+  // Last resort: the model stopped writing and left brackets open. Closing them
+  // recovers a usable object where no amount of string repair could.
+  if (e > s) attempts.push(closeTruncatedJson(t.slice(s, e + 1)));
+  attempts.push(closeTruncatedJson(t.slice(s)));
 
   for (const cand of attempts) {
     try {
