@@ -57,3 +57,15 @@ A regular splitter simply splits the DMX signal, while a DMX Smart Splitter, suc
 | RG-CTD40S6F-K | LED Operator 3 Lighting Controller | $49 | - | - |
 
 To learn more about the 300W LED Panel light, visit [300W LED Panel light](/products/profile/300w-led-panel-light-warm). For more information on the RG-CA8802PRO-A DMX Smart Splitter, visit [RG-CA8802PRO-A](/products/controller/rg-ca8802pro-a). Contact us to discuss your corporate conference lighting needs and determine the best solution for your event.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8802 | 16 outputs | US$84 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm). Open each one for the full spec list, the volume tiers and the current EXW price.
