@@ -25,6 +25,12 @@ social:
   # The handle is kept for display links and stays readable to a human.
   youtubeHandle: "https://www.youtube.com/@RiGeBalighting"
   instagram: ""
-  facebook: ""
+  # NOT a company page. This is the personal profile of Vivian Chen, the
+  # export sales contact, resolved from a facebook.com/share/ link on
+  # 2026-10-05. The profile contains no company information. It is in
+  # sameAs by the owner's decision, knowing that sameAs asserts the brand
+  # and this URL are one entity. Replace it with a real Facebook Page for
+  # the company as soon as one exists; do not delete this note alone.
+  facebook: "https://www.facebook.com/p/Vivian-Chen-100065041354/"
   linkedin: ""
   tiktok: ""
