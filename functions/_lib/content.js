@@ -405,6 +405,7 @@ export async function expandDraft(env, request, opts) {
   const checks = factCheck(grown, facts, result.products || [], image, allowedImages, {
     minWords: GEO_MIN_WORDS,
     faqCount: faq.length,
+    cataloguePaths: (opts && opts.cataloguePaths) || null,
   });
 
   const front = yamlFrontMatter({
@@ -846,18 +847,23 @@ function factCheck(body, facts, products, image, allowedImages, opts) {
   // passed every other check and still could not lead a reader to anything.
   const productLinks = (src.match(/\]\(\/products\/[a-z0-9-]+\/[a-z0-9-]+\)/gi) || []);
   const distinctProducts = new Set(productLinks.map((x) => x.toLowerCase()));
-  // A link is only worth having if it lands on a real page. The catalogue is
-  // the only source of truth here, so anything not in the products this run was
-  // given is an invented path and must not publish.
-  const realPaths = new Set(
-    (products || []).map((x) => ('/products/' + x.category + '/' + x.id).toLowerCase())
-  );
+  // A link is only worth having if it lands on a real page. When the caller can
+  // pass the whole catalogue it does; falling back to the products this run was
+  // given is an approximation, and it produced a false positive once by calling
+  // a real product "not a page on this site". Say which one is in force.
+  const exact = !!(opts && opts.cataloguePaths);
+  const realPaths = exact
+    ? opts.cataloguePaths
+    : new Set((products || []).map((x) => ('/products/' + x.category + '/' + x.id).toLowerCase()));
   for (const raw of productLinks) {
     const path = raw.replace(/^\]\(|\)$/g, '').toLowerCase();
     if (realPaths.size && !realPaths.has(path)) {
       problems.push({
         level: 'error',
-        msg: 'Product link ' + path + ' is not a page on this site. Copy the URL line from FACTS verbatim.',
+        msg: exact
+          ? 'Product link ' + path + ' is not a page on this site. Copy the URL line from FACTS verbatim.'
+          : 'Product link ' + path + ' was not among the products retrieved for this post. ' +
+            'If the model assembled it by pattern it is invented — copy a real URL line instead.',
       });
     }
   }

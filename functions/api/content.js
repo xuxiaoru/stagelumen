@@ -29,6 +29,7 @@ import {
   mergePr,
   deleteBranch,
   getFile,
+  getLargeFile,
   putFile,
   findPrByBranch,
 } from '../_lib/github.js';
@@ -186,8 +187,25 @@ export async function onRequest(context) {
 
     let rev;
     try {
+      // The real set of product page paths. getLargeFile, not getFile: the
+      // catalogue is over GitHub's 1 MB Contents API ceiling, so getFile returns
+      // null for it and the link check would fall back to guessing.
+      let cataloguePaths = null;
+      try {
+        const cat = await getLargeFile(env, 'data/products.json', branch);
+        if (cat) {
+          const parsed = JSON.parse(cat.text);
+          cataloguePaths = new Set(
+            (parsed.products || []).map((x) => ('/products/' + x.category + '/' + x.id).toLowerCase())
+          );
+        }
+      } catch (e) {
+        cataloguePaths = null;
+      }
+
       rev = await expandDraft(env, request, {
         markdown: file.text,
+        cataloguePaths,
         topic: str(body.topic, 300),
         kind: str(body.kind, 24) || 'buyer-guide',
       });
