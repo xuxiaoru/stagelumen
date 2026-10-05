@@ -147,6 +147,9 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 Written by the RiGeBa engineering and export team. Each link is a standalone
 page carrying the full answer, plus the tables and figures behind it.
 
+- [Sound-Activated vs DMX Control for Small Venues: A Guide](https://www.rigebalighting.com/content/blog/sound-activated-vs-dmx-control-for-small-venues-a-guide-htgs): RG-CTD192S8F5-K for $50
+- [Lighting a School or Community Theatre on a Fixed Budget](https://www.rigebalighting.com/content/blog/lighting-a-school-or-community-theatre-on-a-fixed-budget-irru): RG-M300BH-KYH16M for $205
+- [Lighting a Corporate Conference: A Guide to Front Light, Screen Wash, and Presenter Isolation](https://www.rigebalighting.com/content/blog/lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-9v45): Use 300W LED Panel light for front light
 - [How to Choose a DMX Splitter and Opto-Isolator for a Touring Rig](https://www.rigebalighting.com/content/blog/how-to-choose-a-dmx-splitter-and-opto-isolator-for-a-touring-rig-xb06): Choose a DMX splitter with IP65 rating
 - [Designing Moving-Head Looks for a Church Sanctuary without Blinding the Congregation](https://www.rigebalighting.com/content/blog/designing-moving-head-looks-for-a-church-sanctuary-without-blinding-th-4y4b): A sanctuary is a room where light has to fall on faces, not in eyes. How to aim, what to buy, and where movement belongs.
 - [Decoding Moving Head Spec Sheets](https://www.rigebalighting.com/content/blog/decoding-moving-head-spec-sheets-k3dw): Compare moving heads on beam angle, lux at a stated distance, LED configuration and IP rating — not wattage. Real EXW prices from US$96 to US$757.

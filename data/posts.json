@@ -1,7 +1,52 @@
 {
-  "generated": "2026-10-05T02:52:05.414Z",
-  "count": 28,
+  "generated": "2026-10-05T02:53:33.654Z",
+  "count": 31,
   "posts": [
+    {
+      "title": "Sound-Activated vs DMX Control for Small Venues: A Guide",
+      "slug": "sound-activated-vs-dmx-control-for-small-venues-a-guide-htgs",
+      "date": "2026-10-04T18:44:57.958Z",
+      "datePretty": "October 4, 2026",
+      "category": "Application",
+      "excerpt": "RG-CTD192S8F5-K for $50",
+      "tags": [
+        "sound-activated",
+        "DMX control",
+        "small venues"
+      ],
+      "url": "content/blog/sound-activated-vs-dmx-control-for-small-venues-a-guide-htgs.html",
+      "image": "assets/images/products/rg-ctd192s8f5-k.jpg"
+    },
+    {
+      "title": "Lighting a School or Community Theatre on a Fixed Budget",
+      "slug": "lighting-a-school-or-community-theatre-on-a-fixed-budget-irru",
+      "date": "2026-10-04T18:43:55.476Z",
+      "datePretty": "October 4, 2026",
+      "category": "Application",
+      "excerpt": "RG-M300BH-KYH16M for $205",
+      "tags": [
+        "theatre lighting",
+        "budget lighting",
+        "stage lighting"
+      ],
+      "url": "content/blog/lighting-a-school-or-community-theatre-on-a-fixed-budget-irru.html",
+      "image": "assets/images/products/rg-m300bh-kyh16m.jpg"
+    },
+    {
+      "title": "Lighting a Corporate Conference: A Guide to Front Light, Screen Wash, and Presenter Isolation",
+      "slug": "lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-9v45",
+      "date": "2026-10-04T18:42:51.334Z",
+      "datePretty": "October 4, 2026",
+      "category": "Application",
+      "excerpt": "Use 300W LED Panel light for front light",
+      "tags": [
+        "corporate conference",
+        "lighting design",
+        "stage lighting"
+      ],
+      "url": "content/blog/lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-9v45.html",
+      "image": "assets/images/products/300w-led-panel-light-warm.jpg"
+    },
     {
       "title": "How to Choose a DMX Splitter and Opto-Isolator for a Touring Rig",
       "slug": "how-to-choose-a-dmx-splitter-and-opto-isolator-for-a-touring-rig-xb06",
