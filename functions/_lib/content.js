@@ -712,31 +712,48 @@ function repairJson(s) {
 function closeTruncatedJson(text) {
   const s = String(text || '');
   const stack = [];
+  let out = '';
   let inString = false;
   let escaped = false;
+  let dropped = 0;
   for (let i = 0; i < s.length; i++) {
     const c = s[i];
     if (inString) {
+      out += c;
       if (escaped) escaped = false;
       else if (c === '\\') escaped = true;
       else if (c === '"') inString = false;
       continue;
     }
-    if (c === '"') inString = true;
-    else if (c === '{' || c === '[') stack.push(c);
-    else if (c === '}' || c === ']') {
-      // Type-aware on purpose. These models routinely close an ARRAY with a
-      // brace — the expansion whose text ends `..."}}` was missing only the `]`
-      // and the final `}`. Popping on any closer would let that stray `}` eat
-      // the array's `[`, leave the stack empty, and return the text unchanged:
-      // the repair would be a no-op in exactly the case it was written for.
-      if (stack.length && stack[stack.length - 1] === (c === '}' ? '{' : '[')) stack.pop();
+    if (c === '"') {
+      inString = true;
+      out += c;
+      continue;
     }
+    if (c === '{' || c === '[') {
+      stack.push(c);
+      out += c;
+      continue;
+    }
+    if (c === '}' || c === ']') {
+      // These models routinely close an ARRAY with a brace. Measured output ends
+      // `...conference."}}` where `]}` was needed: one `}` closes the section,
+      // the second is a stray. Appending the missing closers without removing
+      // the stray produces `..."}}]}` , which still does not parse — the parser
+      // meets `}` where it expects `]`. So unmatched closers are dropped here
+      // and the needed ones are appended at the end.
+      if (stack.length && stack[stack.length - 1] === (c === '}' ? '{' : '[')) {
+        stack.pop();
+        out += c;
+      } else {
+        dropped++;
+      }
+      continue;
+    }
+    out += c;
   }
-  if (!stack.length && !inString) return s;
-  let out = s;
+  if (!stack.length && !inString && !dropped) return s;
   if (inString) out += '"';
-  // A trailing comma or a half-written key would still break the parse.
   out = out.replace(/[\s,]+$/, '');
   for (let i = stack.length - 1; i >= 0; i--) out += stack[i] === '{' ? '}' : ']';
   return out;
