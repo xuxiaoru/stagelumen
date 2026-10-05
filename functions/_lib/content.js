@@ -966,7 +966,12 @@ export async function draft(env, request, opts) {
   let raw = '';
 
   for (const m of chain) {
-    const r = await callAI(env, prompt, m, 3000);
+    // 4500, not 3000. The prompt asks for 1700 words and 3000 tokens caps a
+    // JSON-wrapped article at roughly 2100 words of prose once the front matter,
+    // two data tables and five FAQ pairs are paid for — close enough to the ask
+    // that the model hedges below it. Every measured first draft came back at
+    // 600-710 words, which is the ceiling effect, not the model's preference.
+    const r = await callAI(env, prompt, m, 4500);
     if (!r.text) continue;
     raw = r.text;
     ai = r;

@@ -119,15 +119,30 @@ function prBody({ kind, model, sources, checks, auto, merged }) {
  * nightly log nothing. One retry, then report through the JSON response so the
  * PR number survives for whoever picks it up.
  */
+/**
+ * Merge, with a real wait between attempts.
+ *
+ * GitHub answers the pull request with mergeable: null for a few seconds after
+ * its branch is updated, and the merge endpoint then refuses with "Pull Request
+ * is not mergeable". Retrying immediately therefore never succeeds — measured on
+ * 2026-10-05: the first check returned null, and four seconds later the same pull
+ * request merged cleanly. The delays grow because the third attempt is usually
+ * the last one before the nightly job's own timeout starts to matter.
+ */
 async function tryMerge(env, number) {
+  const WAIT_MS = [3500, 9000];
   let last = '';
-  for (let attempt = 0; attempt < 2; attempt++) {
+  for (let attempt = 0; attempt <= WAIT_MS.length; attempt++) {
+    if (attempt > 0) {
+      await new Promise((r) => setTimeout(r, WAIT_MS[attempt - 1]));
+      console.log('[content] merge ' + number + ': waited ' + WAIT_MS[attempt - 1] + 'ms, retrying');
+    }
     try {
       await mergePr(env, number);
       return { ok: true };
     } catch (e) {
       last = String((e && e.message) || e).slice(0, 200);
-      console.error('[content] merge ' + number + ' failed (attempt ' + (attempt + 1) + '): ' + last);
+      console.error('[content] merge ' + number + ' failed (attempt ' + (attempt + 1) + '/' + (WAIT_MS.length + 1) + '): ' + last);
     }
   }
   return { ok: false, error: last };
