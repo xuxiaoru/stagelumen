@@ -176,9 +176,13 @@ const GEO_STRUCTURE = [
   '2. "## The short answer" — 40 to 70 words that answer the topic outright, containing at least one ' +
     'real figure or named criterion from FACTS. This paragraph is what an AI quotes; it must stand ' +
     'alone without the rest of the page.',
-  '3. Five or more "## " sections. AT LEAST FOUR of their headings must be phrased as a question ' +
+  '3. EIGHT or more "## " sections. AT LEAST SIX of their headings must be phrased as a question ' +
     'ending in "?" (for example "## What beam angle do I need for a 12 m throw?"). A question heading ' +
-    'is what makes a retrieval engine treat the section as an answer.',
+    'is what makes a retrieval engine treat the section as an answer. ' +
+    '   The section count, not the word count, is what makes the body long: the 70B model writes ' +
+    'about 110 words per section, so five sections came back at 630-710 words every time and ' +
+    'never reached the 800 floor. Eight sections clears it on the first request, which also means ' +
+    'one AI call per article instead of two. Give each section a genuinely different subject.',
   '4. AT LEAST TWO markdown tables built only from FACTS — model, configuration, EXW price, volume ' +
     'tier, MOQ, and whatever real spec fields FACTS provides. Never fabricate a row to fill a table; ' +
     'a missing column is better than an invented one.',
