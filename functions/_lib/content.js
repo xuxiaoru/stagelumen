@@ -724,7 +724,14 @@ function closeTruncatedJson(text) {
     }
     if (c === '"') inString = true;
     else if (c === '{' || c === '[') stack.push(c);
-    else if (c === '}' || c === ']') stack.pop();
+    else if (c === '}' || c === ']') {
+      // Type-aware on purpose. These models routinely close an ARRAY with a
+      // brace — the expansion whose text ends `..."}}` was missing only the `]`
+      // and the final `}`. Popping on any closer would let that stray `}` eat
+      // the array's `[`, leave the stack empty, and return the text unchanged:
+      // the repair would be a no-op in exactly the case it was written for.
+      if (stack.length && stack[stack.length - 1] === (c === '}' ? '{' : '[')) stack.pop();
+    }
   }
   if (!stack.length && !inString) return s;
   let out = s;
