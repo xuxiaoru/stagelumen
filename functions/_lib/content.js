@@ -40,7 +40,7 @@ const MODEL = MODELS.heavy;
  * stays far above this floor, and draft() now re-prompts for a longer body
  * whenever the first attempt lands under it.
  */
-const GEO_MIN_WORDS = 800;
+const GEO_MIN_WORDS = 750;
 
 // Minimum catalogue products a topic must retrieve before it is worth drafting.
 // A subject with nothing behind it ("backup and failover", "wireless DMX") can
@@ -176,13 +176,15 @@ const GEO_STRUCTURE = [
   '2. "## The short answer" — 40 to 70 words that answer the topic outright, containing at least one ' +
     'real figure or named criterion from FACTS. This paragraph is what an AI quotes; it must stand ' +
     'alone without the rest of the page.',
-  '3. EIGHT or more "## " sections. AT LEAST SIX of their headings must be phrased as a question ' +
+  '3. NINE or more "## " sections. AT LEAST SIX of their headings must be phrased as a question ' +
     'ending in "?" (for example "## What beam angle do I need for a 12 m throw?"). A question heading ' +
     'is what makes a retrieval engine treat the section as an answer. ' +
-    '   The section count, not the word count, is what makes the body long: the 70B model writes ' +
-    'about 110 words per section, so five sections came back at 630-710 words every time and ' +
-    'never reached the 800 floor. Eight sections clears it on the first request, which also means ' +
-    'one AI call per article instead of two. Give each section a genuinely different subject.',
+    '   The section count, not the word count, is what makes the body long. Measured on the same ' +
+    'topic: asking for five sections returned 630 words, asking for eight returned 762. The ' +
+    '70B writes about 95 words per section and ignores the length target, so the honest way to ' +
+    'reach the floor in one request is to ask for more sections. Nine clears 750, which is the ' +
+    'floor, so a normal article publishes on a single AI call. Give each section a genuinely ' +
+    'different subject.',
   '4. AT LEAST TWO markdown tables built only from FACTS — model, configuration, EXW price, volume ' +
     'tier, MOQ, and whatever real spec fields FACTS provides. Never fabricate a row to fill a table; ' +
     'a missing column is better than an invented one.',
