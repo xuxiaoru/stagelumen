@@ -147,6 +147,8 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 Written by the RiGeBa engineering and export team. Each link is a standalone
 page carrying the full answer, plus the tables and figures behind it.
 
+- [Choosing an RGB Laser for a Nightclub: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-0w1g): Check 10W output
+- [Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre](https://www.rigebalighting.com/content/blog/profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv): RG-PS200A20T50-W costs $95
 - [Sound-Activated vs DMX Control for Small Venues: A Guide](https://www.rigebalighting.com/content/blog/sound-activated-vs-dmx-control-for-small-venues-a-guide-htgs): RG-CTD192S8F5-K for $50
 - [Lighting a School or Community Theatre on a Fixed Budget](https://www.rigebalighting.com/content/blog/lighting-a-school-or-community-theatre-on-a-fixed-budget-irru): RG-M300BH-KYH16M for $205
 - [Lighting a Corporate Conference: A Guide to Front Light, Screen Wash, and Presenter Isolation](https://www.rigebalighting.com/content/blog/lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-9v45): Use 300W LED Panel light for front light

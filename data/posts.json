@@ -1,7 +1,37 @@
 {
-  "generated": "2026-10-05T02:53:33.654Z",
-  "count": 31,
+  "generated": "2026-10-06T03:08:32.618Z",
+  "count": 33,
   "posts": [
+    {
+      "title": "Choosing an RGB Laser for a Nightclub: A Step-by-Step Guide",
+      "slug": "choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-0w1g",
+      "date": "2026-10-06T03:07:08.392Z",
+      "datePretty": "October 6, 2026",
+      "category": "How-To",
+      "excerpt": "Check 10W output",
+      "tags": [
+        "laser lighting",
+        "nightclub lighting",
+        "ILDA control"
+      ],
+      "url": "content/blog/choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-0w1g.html",
+      "image": "assets/images/products/rg-ll10000f1lm.jpg"
+    },
+    {
+      "title": "Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre",
+      "slug": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv",
+      "date": "2026-10-06T03:02:24.388Z",
+      "datePretty": "October 6, 2026",
+      "category": "Application",
+      "excerpt": "RG-PS200A20T50-W costs $95",
+      "tags": [
+        "stage lighting",
+        "theatre lighting",
+        "lens selection"
+      ],
+      "url": "content/blog/profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv.html",
+      "image": "assets/images/products/rg-ps200a20t50-w.jpg"
+    },
     {
       "title": "Sound-Activated vs DMX Control for Small Venues: A Guide",
       "slug": "sound-activated-vs-dmx-control-for-small-venues-a-guide-htgs",
