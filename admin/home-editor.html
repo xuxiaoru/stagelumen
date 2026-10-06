@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
+<title>Homepage Editor — RiGeBa Lighting</title>
+<style>
+  :root{
+    --bg:#0b0e14; --panel:#121722; --panel2:#171d2b; --line:#232b3d;
+    --txt:#e6ebf5; --dim:#8b96ad; --brand:#ff6b00; --cyan:#00d4ff;
+    --green:#16a34a; --red:#e5484d;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--txt);
+       font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"PingFang SC","Microsoft YaHei",sans-serif}
+  a{color:var(--cyan);text-decoration:none}
+  .wrap{max-width:960px;margin:0 auto;padding:24px}
+  .anav{display:flex;gap:6px;align-items:center;flex-wrap:wrap;margin-bottom:18px;
+        padding:8px;background:var(--panel);border:1px solid var(--line);border-radius:10px}
+  .anav a{padding:6px 11px;border-radius:7px;background:#1c2536;border:1px solid var(--line);
+          color:var(--dim);font-size:13px}
+  .anav a:hover{border-color:var(--brand);color:var(--txt)}
+  .anav a.on{background:rgba(255,107,0,.15);border-color:var(--brand);color:var(--brand);font-weight:600}
+  .anav .spacer{flex:1}
+  .who{color:var(--brand);font-weight:600}
+  h1{font-size:20px;margin:0 0 4px}
+  .sub{color:var(--dim);font-size:12.5px;margin:0 0 18px;line-height:1.6}
+  button,select,input,textarea{font:inherit;color:var(--txt);background:var(--panel2);
+       border:1px solid var(--line);border-radius:8px;padding:8px 10px}
+  button{cursor:pointer;background:#1c2536}
+  button:hover{border-color:var(--brand)}
+  button.primary{background:var(--brand);border-color:var(--brand);color:#fff;font-weight:600}
+  button.primary:disabled{opacity:.5;cursor:not-allowed}
+  .panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:18px;margin-bottom:18px}
+  .panel h2{font-size:14px;margin:0 0 4px}
+  .hint{color:var(--dim);font-size:12.5px;margin:0 0 14px;line-height:1.6}
+  .row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+  .grow{flex:1;min-width:200px}
+  .field{margin-bottom:14px}
+  .field.changed label{color:var(--brand);font-weight:600}
+  label{display:block;font-size:11.5px;color:var(--dim);margin:0 0 4px;
+        text-transform:uppercase;letter-spacing:.04em}
+  .field input,.field textarea,.field select{width:100%}
+  .field textarea{min-height:64px;resize:vertical;line-height:1.55}
+  .msg{padding:9px 12px;border-radius:8px;font-size:12.5px;margin:12px 0 0;display:none}
+  .msg.ok{display:block;background:rgba(22,163,74,.12);border:1px solid var(--green);color:#86efac}
+  .msg.err{display:block;background:rgba(229,72,77,.12);border:1px solid var(--red);color:#fca5a5}
+  .msg.busy{display:block;background:rgba(255,107,0,.10);border:1px solid var(--brand);color:#fdba74}
+  .sticky{position:sticky;bottom:0;background:linear-gradient(transparent,var(--bg) 26%);
+          padding:14px 0 4px;margin-top:6px}
+  .count{color:var(--dim);font-size:12px}
+  .count b{color:var(--brand)}
+  code{background:var(--panel2);padding:1px 5px;border-radius:4px;font-size:12px}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <nav class="anav">
+    <a class="home" href="/admin/">← Dashboard</a>
+    <a href="/admin/home-editor.html" class="on">Homepage Editor</a>
+    <a href="/admin/products-editor.html">Product Editor</a>
+    <a href="/admin/leads.html">Leads</a>
+    <a href="/admin/content.html">Content Factory</a>
+    <span class="spacer"></span>
+    <span class="who" id="who"></span>
+  </nav>
+
+  <h1>Homepage Editor</h1>
+  <p class="sub">
+    Changes go live after the site rebuilds, about two minutes. Only the fields you
+    change are sent. The page keeps its own copy of every value, so a rejected
+    change leaves the live text untouched.
+  </p>
+
+  <div class="panel">
+    <label for="tok">Your editor token</label>
+    <div class="row">
+      <input id="tok" class="grow mono" type="password" placeholder="paste the token from your link" />
+      <button id="saveTok">Save</button>
+      <button id="signIn" class="primary">Sign in</button>
+    </div>
+    <div class="msg" id="authMsg"></div>
+  </div>
+
+  <div id="form" style="display:none">
+    <div class="panel">
+      <h2>Hero</h2>
+      <p class="hint">The first thing a visitor reads. Keep the headline concrete — it is also the page's <code>&lt;h1&gt;</code>, which is what search engines quote.</p>
+      <div class="grid" id="g-hero"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Section headings</h2>
+      <p class="hint">Eyebrow is the small grey line above each heading. The first three headline fields are the emphasised phrase in the hero — keep them in that order, the sentence is assembled from them.</p>
+      <div class="grid" id="g-sections"></div>
+    </div>
+
+    <div class="panel">
+      <h2>Applications</h2>
+      <p class="hint">The six scenario tiles. These link to <code>solutions.html</code> anchors, so only the wording changes here.</p>
+      <div class="grid" id="g-apps"></div>
+    </div>
+
+    <div class="sticky">
+      <div class="row">
+        <button id="save" class="primary" disabled>Save changes</button>
+        <button id="revert">Discard</button>
+        <span class="count" id="count">no changes</span>
+        <span class="count" style="margin-left:auto"><a href="/" target="_blank">view homepage ↗</a></span>
+      </div>
+      <div class="msg" id="saveMsg"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+const API = '/api/admin/home';
+const $ = (id) => document.getElementById(id);
+let original = {};
+let inputs = {};
+
+function token() { return localStorage.getItem('sl_editor_token') || ''; }
+function say(el, text, kind) { el.className = 'msg' + (kind ? ' ' + kind : ''); el.textContent = text; }
+
+/** Group the flat home* keys into the three panels, with human labels. */
+const GROUPS = [
+  ['g-hero', (k) => /^homeHero/.test(k), (k) => {
+    const names = {
+      homeHeroTitleLead: 'Headline — opening words',
+      homeHeroTitleAccent: 'Headline — emphasised words (shown in orange)',
+      homeHeroTitleTail: 'Headline — closing words',
+      homeHeroLead: 'Sub-paragraph under the headline',
+      homeHeroCheck1: 'Selling point 1', homeHeroCheck2: 'Selling point 2',
+      homeHeroCheck3: 'Selling point 3', homeHeroCheck4: 'Selling point 4',
+      homeHeroProof1: 'Proof strip 1', homeHeroProof2: 'Proof strip 2', homeHeroProof3: 'Proof strip 3',
+      homeHeroCtaQuoteLabel: 'Primary button — text',
+      homeHeroCtaQuoteHref: 'Primary button — link',
+      homeHeroCtaBrowseLabel: 'Secondary button — text',
+      homeHeroCtaBrowseHref: 'Secondary button — link',
+      homeHeroCtaNote: 'Small note under the buttons',
+      homeHeroPlate: 'Hero product image',
+    };
+    return names[k] || k;
+  }],
+  ['g-sections', (k) => /^homeSec/.test(k), (k) => {
+    if (/Eyebrow$/.test(k)) return k.replace('homeSec', '').replace('Eyebrow', '') + ' — small grey line';
+    return k.replace('homeSec', '').replace('Title', '') + ' — heading';
+  }],
+  ['g-apps', (k) => /^homeApp/.test(k), (k) => 'Tile ' + (k.match(/\d+/) || ['?'])[0]],
+];
+
+const isLong = (k) => /Lead$|Note$|Check\d$/.test(k);
+const isImage = (k) => /Plate$/.test(k);
+const isHref = (k) => /Href$/.test(k);
+
+async function api(path, opts) {
+  const res = await fetch(API + (path || ''), Object.assign({
+    headers: { authorization: 'Bearer ' + token() },
+  }, opts || {}));
+  const data = await res.json().catch(() => ({ ok: false, error: 'bad response (' + res.status + ')' }));
+  if (!res.ok || !data.ok) throw new Error(data.error || ('HTTP ' + res.status));
+  return data;
+}
+
+function build(values) {
+  for (const [host, match, label] of GROUPS) {
+    const keys = Object.keys(values).filter(match).sort();
+    $(host).innerHTML = keys
+      .map((k) => {
+        const long = isLong(k);
+        const control = isImage(k)
+          ? '<input type="text" placeholder="assets/images/products/…" />'
+          : isHref(k)
+            ? '<input type="text" placeholder="rfq.html" />'
+            : long
+              ? '<textarea></textarea>'
+              : '<input type="text" />';
+        return '<div class="field" data-key="' + k + '"><label>' + label(k) + '</label>' + control + '</div>';
+      })
+      .join('');
+    for (const k of keys) {
+      const box = $(host).querySelector('[data-key="' + k + '"]').querySelector('input,textarea');
+      box.value = values[k] == null ? '' : values[k];
+      inputs[k] = box;
+      box.addEventListener('input', refresh);
+    }
+  }
+  refresh();
+}
+
+function refresh() {
+  const changed = Object.keys(inputs).filter((k) => inputs[k].value !== (original[k] == null ? '' : original[k]));
+  for (const k of Object.keys(inputs)) {
+    inputs[k].parentElement.classList.toggle('changed', changed.includes(k));
+  }
+  $('save').disabled = !changed.length;
+  $('count').innerHTML = changed.length ? '<b>' + changed.length + '</b> field' + (changed.length > 1 ? 's' : '') + ' changed' : 'no changes';
+}
+
+async function signIn() {
+  const t = $('tok').value.trim();
+  if (t) localStorage.setItem('sl_editor_token', t);
+  if (!token()) { say($('authMsg'), 'Enter the token from your link first.', 'err'); return; }
+  say($('authMsg'), 'Loading…', 'busy');
+  try {
+    const d = await api('');
+    $('who').textContent = d.editor;
+    original = d.values || {};
+    inputs = {};
+    build(original);
+    $('form').style.display = '';
+    say($('authMsg'), 'Signed in as ' + d.editor + '.', 'ok');
+  } catch (e) {
+    say($('authMsg'), e.message, 'err');
+  }
+}
+
+async function save() {
+  const values = {};
+  for (const k of Object.keys(inputs)) {
+    if (inputs[k].value !== (original[k] == null ? '' : original[k])) values[k] = inputs[k].value;
+  }
+  if (!Object.keys(values).length) return;
+  $('save').disabled = true;
+  say($('saveMsg'), 'Saving ' + Object.keys(values).length + ' field(s)…', 'busy');
+  try {
+    const d = await api('', {
+      method: 'PUT',
+      headers: { authorization: 'Bearer ' + token(), 'content-type': 'application/json' },
+      body: JSON.stringify({ values }),
+    });
+    const extra = d.rejected && d.rejected.length ? ' Rejected: ' + d.rejected.join('; ') : '';
+    say($('saveMsg'), 'Saved ' + d.changed.join(', ') + ' as ' + d.editor + '. Live in about two minutes.' + extra, 'ok');
+    original = Object.assign({}, original, d.values || {});
+    refresh();
+  } catch (e) {
+    say($('saveMsg'), e.message, 'err');
+    $('save').disabled = false;
+  }
+}
+
+$('saveTok').addEventListener('click', () => {
+  const t = $('tok').value.trim();
+  if (t) localStorage.setItem('sl_editor_token', t);
+  $('tok').value = '';
+  signIn();
+});
+$('signIn').addEventListener('click', signIn);
+$('save').addEventListener('click', save);
+$('revert').addEventListener('click', () => {
+  for (const k of Object.keys(inputs)) inputs[k].value = original[k] == null ? '' : original[k];
+  refresh();
+  say($('saveMsg'), '', null);
+});
+$('tok').addEventListener('keydown', (e) => { if (e.key === 'Enter') signIn(); });
+
+if (token()) { $('tok').value = token(); signIn(); }
+</script>
+</body>
+</html>

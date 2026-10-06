@@ -8,6 +8,12 @@ wechat: +86 134 3026 2182
 ims: +86 134 3026 2182
 facebook: +86 134 3026 2182
 whatsapp: +86 134 3026 2182
+# The label of the WhatsApp call-to-action, kept apart from the number above.
+# One key cannot serve both: data-set writes the same value into the text and
+# the href, so the button used to read "+86 134 3026 2182" instead of
+# "WhatsApp us". Buttons now carry data-set for the label and
+# data-target="href:whatsapp" for the destination.
+whatsappLabel: WhatsApp us
 salesRep: Vivian
 salesRepTitle: Export Sales
 address: No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China
@@ -34,3 +40,91 @@ social:
   facebook: "https://www.facebook.com/p/Vivian-Chen-100065041354/"
   linkedin: ""
   tiktok: ""
+
+
+# ---------------------------------------------------------------- homepage
+
+# Written by the homepage editor. Each value is copied from index.html, and
+
+# index.html keeps the same text hardcoded as its fallback, so adding a key
+
+# here never changes how the page looks. Values are single-line by design:
+
+# the build's YAML reader only understands top-level `key: value`.
+
+# Images must be paths that exist under assets/. Links must be on-site
+
+# relative paths or https. The editor enforces both.
+
+
+
+homeHeroLead: "We manufacture LED moving heads, pixel and effect fixtures, outdoor IP65 units, profile spots, lasers and DMX control — for rental houses, distributors, integrators and venues in 60+ countries."
+
+homeHeroCheck1: "Factory-direct EXW pricing, no middleman margin"
+
+homeHeroCheck2: "Aging-tested and QC-checked before packing"
+
+homeHeroCheck3: "CE / RoHS, export documentation ready"
+
+homeHeroCheck4: "OEM / ODM: housing, logo, packaging, firmware"
+
+homeHeroProof1: "ISO 9001:2015 · CE · RoHS"
+
+homeHeroProof2: "In-house SMT & aging line"
+
+homeHeroProof3: "60+ countries shipped"
+
+homeHeroCtaQuoteLabel: "Get a quote in 24 hours"
+
+homeHeroCtaQuoteHref: "rfq.html"
+
+homeHeroCtaBrowseLabel: "Browse 632 SKUs →"
+
+homeHeroCtaBrowseHref: "products.html"
+
+homeHeroCtaNote: "Send a model list or just describe the venue — you get pricing, lead time and a freight option back."
+
+homeHeroPlate: "assets/images/products/rg-ml300b-kcre5ah105.jpg"
+
+homeSecFamiliesEyebrow: "Product families"
+
+homeSecFamiliesTitle: "Browse the catalogue by family"
+
+homeSecBestsellersEyebrow: "Best sellers"
+
+homeSecBestsellersTitle: "What buyers are ordering right now"
+
+homeSecFactoryEyebrow: "Factory & quality"
+
+homeSecFactoryTitle: "You are buying from the factory, not a trading desk."
+
+homeSecHowtoorderEyebrow: "How to order"
+
+homeSecHowtoorderTitle: "From enquiry to container in five steps"
+
+homeSecOemEyebrow: "OEM / ODM"
+
+homeSecOemTitle: "Your brand, our production line."
+
+homeSecAppsEyebrow: "Applications"
+
+homeSecAppsTitle: "Where our fixtures work"
+
+homeSecFaqbandEyebrow: "Buyer questions"
+
+homeSecFaqbandTitle: "The answers buyers ask for first"
+
+homeSecContactbandEyebrow: "Talk to sales"
+
+homeApp1Name: "Concert & Festival"
+
+homeApp2Name: "Rental & Touring"
+
+homeApp3Name: "Theatre & Performance"
+
+homeApp4Name: "Club & DJ"
+
+homeApp5Name: "Event & Wedding"
+
+homeApp6Name: "Outdoor & Architectural"
+

@@ -58,6 +58,18 @@ function collectHtml(dir, acc = []) {
 /** <tag ...data-set="key"...>inner</tag> — inner is plain text in this codebase. */
 const MARKED = /<(\w+)([^>]*\sdata-set="(\w+)"[^>]*)>([\s\S]*?)<\/\1>/g;
 
+/**
+ * Attributes whose value is a *target* rather than a label, for elements that
+ * need a different value in the attribute than in the text — a link whose label
+ * is "Get a quote" but whose href is "rfq.html", or an <img> whose src is a file
+ * path. Written as data-target="href:key" or data-target="src:key".
+ *
+ * This exists because the original form writes the same settings value into both
+ * the text and href/content, which is unusable the moment label and URL differ.
+ */
+/** <tag ...data-target="attr:key"...> — rewritten whether or not data-set is present. */
+const TARGET_ONLY = /<(\w+)([^>]*\sdata-target="(\w+):(\w+)"[^>]*)>/g;
+
 function main() {
   let settings;
   try {
@@ -77,20 +89,39 @@ function main() {
     const src = fs.readFileSync(file, 'utf8');
     let n = 0;
 
-    const out = src.replace(MARKED, (m, tag, attrs, key, inner) => {
-      const val = settings[key];
-      if (val == null) return m;
-      n++;
-      const scheme = SCHEME[key] || '';
-      let v = val;
-      if (key === 'whatsapp') v = String(val).replace(/[^\d]/g, '');
+    const out = src
+      // Targets first: rewriting href/content here must not be undone by the
+      // data-set pass below, which fills those same attributes.
+      .replace(TARGET_ONLY, (m, tag, attrs, attr, key) => {
+        const val = settings[key];
+        if (val == null) return m;
+        const scheme = SCHEME[key] || '';
+        const rewritten = attrs.replace(
+          new RegExp('\\b' + attr + '="[^"]*"'),
+          attr + '="' + escAttr(scheme + val) + '"'
+        );
+        return '<' + tag + rewritten + '>';
+      })
+      .replace(MARKED, (m, tag, attrs, key, inner) => {
+        const val = settings[key];
+        if (val == null) return m;
+        n++;
+        const scheme = SCHEME[key] || '';
+        let v = val;
+        if (key === 'whatsapp') v = String(val).replace(/[^\d]/g, '');
 
-      const newAttrs = attrs.replace(/\b(href|content)="[^"]*"/g, (mm, attr) => {
-        return attr + '="' + escAttr(scheme + v) + '"';
+        // Elements carrying a data-target keep their own href/src; only the
+        // text is filled in, so a button label and its destination stay
+        // independent.
+        const hasTarget = /\sdata-target="/.test(attrs);
+        const newAttrs = hasTarget
+          ? attrs
+          : attrs.replace(/\b(href|content)="[^"]*"/g, (mm, attr) => {
+              return attr + '="' + escAttr(scheme + v) + '"';
+            });
+
+        return '<' + tag + newAttrs + '>' + escHtml(val) + '</' + tag + '>';
       });
-
-      return '<' + tag + newAttrs + '>' + escHtml(val) + '</' + tag + '>';
-    });
 
     if (n && out !== src) {
       fs.writeFileSync(file, out);
