@@ -39,9 +39,70 @@ const ENTITY_PAGES = {
   'stage-lighting-manufacturer.html': { manufacturer: true, crumb: 'Stage Lighting Manufacturer' },
   'factory.html': { crumb: 'Factory' },
   'stage-lighting.html': { crumb: 'Stage Lighting' },
+  // Added 2026-10-06: these four carried no structured data at all, /products
+  // being the one a buyer actually lands on. `itemList` names which block reads
+  // the catalogue or the post index and how many entries to publish.
+  'products.html': { crumb: 'Products', kind: 'collection', itemList: 'products' },
+  'news.html': { crumb: 'News', kind: 'blogIndex' },
+  'contact.html': { crumb: 'Contact', kind: 'contact' },
+  'about.html': { crumb: 'About', kind: 'about' },
 };
 
-/* ------------------------------------------------------------------ helpers */
+/**
+ * Take N products spread across the categories, round by round.
+ *
+ * The catalogue is grouped by category, so the first N entries are all moving
+ * heads and a laser page's ItemList would claim the catalogue is about moving
+ * heads. One per category first, then a second pass, until the quota is met.
+ */
+function spreadByCategory(list, quota) {
+  const byCat = new Map();
+  for (const p of list) {
+    const c = p.category || 'other';
+    if (!byCat.has(c)) byCat.set(c, []);
+    byCat.get(c).push(p);
+  }
+  const out = [];
+  for (let round = 0; out.length < quota; round++) {
+    let added = false;
+    for (const [, items] of byCat) {
+      if (items.length > round) {
+        out.push(items[round]);
+        added = true;
+        if (out.length >= quota) break;
+      }
+    }
+    if (!added) break;
+  }
+  return out;
+}
+
+/** How many entries an ItemList publishes. Partial by design; see the note above. */
+const ITEM_LIST_LIMIT = { products: 24, posts: 30 };
+
+/**
+ * Read the two generated JSON indexes, once, and only if a page needs them.
+ * A missing or unreadable file must not break the build, so both return [].
+ */
+let _dataCache = null;
+function siteData() {
+  if (_dataCache) return _dataCache;
+  const read = (rel) => {
+    try {
+      return JSON.parse(fs.readFileSync(path.join(ROOT, rel), 'utf8'));
+    } catch (e) {
+      return null;
+    }
+  };
+  const prod = read(path.join('data', 'products.json'));
+  const posts = read(path.join('data', 'posts.json'));
+  _dataCache = {
+    products: (prod && Array.isArray(prod.products) ? prod.products : []),
+    posts: (posts && Array.isArray(posts.posts) ? posts.posts : []),
+  };
+  return _dataCache;
+}
+
 
 function parseFlatYaml(text) {
   const out = {};
@@ -99,6 +160,15 @@ const ENTITIES = {
   times: '\u00D7', copy: '\u00A9', reg: '\u00AE', trade: '\u2122',
 };
 /** Decode HTML entities and strip inline tags -> plain text for JSON-LD. */
+/** The <title> as plain text, for CollectionPage / ContactPage names. */
+function pageTitle(html) {
+  const m = String(html || '').match(/<title[^>]*>([\s\S]*?)<\/title>/i);
+  if (!m) return '';
+  // Drop the "| RiGeBa Lighting" suffix: a CollectionPage name is the page's own
+  // name, not a title tag, and the brand is already carried by the Organization.
+  return text(m[1]).replace(/\s*\|\s*[^|]{1,40}$/, '').trim();
+}
+
 function text(html) {
   return String(html)
     .replace(/<[^>]*>/g, '')
@@ -316,6 +386,88 @@ function main() {
             { '@type': 'ListItem', position: 1, name: 'Home', item: SITE + '/' },
             { '@type': 'ListItem', position: 2, name: extra.crumb, item: pageUrl(rel) },
           ],
+        },
+      });
+    }
+
+    if (extra && extra.kind === 'collection') {
+      const items = spreadByCategory(siteData().products, ITEM_LIST_LIMIT.products);
+      const list = {
+        '@type': 'ItemList',
+        numberOfItems: items.length,
+        itemListElement: items.map((p, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          name: p.model || p.name || p.id,
+          url: SITE + '/products/' + p.category + '/' + p.id,
+        })),
+      };
+      blocks.push({
+        id: 'collection',
+        data: {
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          '@id': pageUrl(rel) + '#collection',
+          url: pageUrl(rel),
+          name: pageTitle(src) || 'All Stage Lighting Products',
+          isPartOf: { '@id': SITE + '/#website' },
+          mainEntity: list,
+        },
+      });
+      blocks.push({ id: 'itemlist', data: { '@context': 'https://schema.org', ...list, '@id': pageUrl(rel) + '#itemlist' } });
+    }
+
+    if (extra && extra.kind === 'blogIndex') {
+      const items = siteData().posts.slice(0, ITEM_LIST_LIMIT.posts);
+      blocks.push({
+        id: 'collection',
+        data: {
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          '@id': pageUrl(rel) + '#collection',
+          url: pageUrl(rel),
+          name: pageTitle(src) || 'News',
+          isPartOf: { '@id': SITE + '/#website' },
+          mainEntity: {
+            '@type': 'ItemList',
+            numberOfItems: items.length,
+            itemListElement: items.map((p, i) => ({
+              '@type': 'ListItem',
+              position: i + 1,
+              name: p.title,
+              url: SITE + '/content/blog/' + p.slug,
+            })),
+          },
+        },
+      });
+    }
+
+    if (extra && extra.kind === 'contact') {
+      blocks.push({
+        id: 'contact',
+        data: {
+          '@context': 'https://schema.org',
+          '@type': 'ContactPage',
+          '@id': pageUrl(rel) + '#contact',
+          url: pageUrl(rel),
+          name: pageTitle(src) || 'Contact',
+          isPartOf: { '@id': SITE + '/#website' },
+          mainEntity: { '@id': orgId },
+        },
+      });
+    }
+
+    if (extra && extra.kind === 'about') {
+      blocks.push({
+        id: 'about',
+        data: {
+          '@context': 'https://schema.org',
+          '@type': 'AboutPage',
+          '@id': pageUrl(rel) + '#about',
+          url: pageUrl(rel),
+          name: pageTitle(src) || 'About',
+          isPartOf: { '@id': SITE + '/#website' },
+          mainEntity: { '@id': orgId },
         },
       });
     }

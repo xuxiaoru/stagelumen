@@ -331,7 +331,62 @@ function breadcrumbJsonLd(p) {
   return '  <script type="application/ld+json" data-jsonld="breadcrumb">' + ld(data) + '</script>\n';
 }
 
-function articlePage(p) {
+/**
+ * Pick the posts most worth reading next, and render them as a block.
+ *
+ * Scoring is deliberately simple and explainable: two points for every product
+ * model both articles cite, one for a shared tag, one for the same category. A
+ * model in common is the strongest signal that two pages answer adjacent
+ * questions, and it is the signal that stays right as the catalogue changes.
+ */
+const RELATED_LIMIT = 4;
+
+function relatedScore(a, b) {
+  if (a.slug === b.slug) return -1;
+  const models = (p) => new Set((p.body || '').match(/\b[A-Z]{2,4}-[A-Za-z0-9-]{3,}\b/g) || []);
+  const am = models(a);
+  const bm = models(b);
+  let shared = 0;
+  for (const m of am) if (bm.has(m)) shared++;
+  const at = new Set((a.tags || []).map((t) => String(t).toLowerCase()));
+  const bt = new Set((b.tags || []).map((t) => String(t).toLowerCase()));
+  let tags = 0;
+  for (const t of at) if (bt.has(t)) tags++;
+  const sameCat = a.category === b.category ? 1 : 0;
+  return shared * 2 + tags + sameCat;
+}
+
+function relatedHtml(current, all) {
+  if (!all || all.length < 2) return '';
+  const ranked = all
+    .map((p) => ({ p, score: relatedScore(current, p) }))
+    .filter((x) => x.score > 0)
+    .sort((a, b) => b.score - a.score || String(a.p.date).localeCompare(String(b.p.date)))
+    .slice(0, RELATED_LIMIT);
+  if (!ranked.length) return '';
+  const items = ranked
+    .map((x) => {
+      // Absolute, matching the links inside the article bodies, so the block
+      // does not depend on the page's depth in the tree.
+      const href = 'https://www.rigebalighting.com/content/blog/' + x.p.slug;
+      return [
+        '        <li><a href="' + href + '">' + escHtml(x.p.title) + '</a>',
+        '          <span>' + escHtml(x.p.category) + ' &middot; ' + escHtml(x.p.datePretty || x.p.date) + '</span></li>',
+      ].join('\n');
+    })
+    .join('\n');
+  return [
+    '',
+    '      <nav class="blog-related" aria-labelledby="related-h">',
+    '        <h2 id="related-h">Related reading</h2>',
+    '        <ul>',
+    items,
+    '        </ul>',
+    '      </nav>',
+  ].join('\n');
+}
+
+function articlePage(p, posts) {
   const title = escHtml(p.title);
   const desc = escAttr(p.excerpt || p.title);
   // Social cards need an absolute URL; a relative path is silently ignored by
@@ -383,6 +438,14 @@ ${articleJsonLd(p)}${breadcrumbJsonLd(p)}${faqJsonLd(p)}  <style>
     .blog-article h2 { font-size: 1.4rem; margin: 40px 0 16px; color: var(--text); }
     .blog-article h3 { font-size: 1.15rem; margin: 28px 0 12px; color: var(--text); }
     .blog-article p { color: var(--text-2); margin-bottom: 16px; }
+    .blog-related { margin: 40px 0 8px; padding: 22px 24px; border: 1px solid var(--border); border-radius: 12px; background: var(--surface-2, rgba(127,127,127,.05)); }
+    .blog-related h2 { font-size: 1.05rem; margin: 0 0 12px; color: var(--text); }
+    .blog-related ul { list-style: none; padding: 0; margin: 0; }
+    .blog-related li { margin: 0 0 12px; padding: 0 0 12px; border-bottom: 1px solid var(--border); }
+    .blog-related li:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: 0; }
+    .blog-related a { font-weight: 600; color: var(--text); text-decoration: none; }
+    .blog-related a:hover { color: var(--brand, #ff6b00); }
+    .blog-related span { display: block; font-size: .82rem; color: var(--text-2); margin-top: 3px; }
     .blog-article ul { list-style: disc; padding-left: 24px; color: var(--text-2); margin-bottom: 20px; }
     .blog-article ol { padding-left: 24px; color: var(--text-2); margin-bottom: 20px; }
     .blog-article li { margin-bottom: 8px; }
@@ -440,6 +503,7 @@ ${p.image ? '      <div class="blog-hero"><img class="blog-hero-img" src="' + es
 
       ${p.html}
 ${faqHtml(p)}
+${relatedHtml(p, posts)}
 ${p.tags.length ? '      <div class="blog-tags">' + p.tags.map((t) => '<span>' + escHtml(t) + '</span>').join('') + '</div>\n' : ''}
       <p style="margin-top:32px">Need help choosing fixtures for your project? Tell us the venue type and room size — we'll spec it for free.</p>
       <a href="../../rfq.html" class="btn btn-primary btn-lg">Request a Free Rig Spec →</a>
@@ -590,11 +654,18 @@ function main() {
     };
 
     posts.push(post);
-    fs.writeFileSync(path.join(BLOG_DIR, post.slug + '.html'), articlePage(post));
-    console.log('[blog] wrote content/blog/' + post.slug + '.html');
   }
 
+  // Newest first, before any page is written. The related-reading block scores
+  // against every post, including ones parsed later, and breaks ties on this
+  // order — writing inside the parse loop would link backwards through the
+  // archive only, and the newest articles would get nothing at all.
   posts.sort((a, b) => String(b.date).localeCompare(String(a.date)));
+
+  for (const post of posts) {
+    fs.writeFileSync(path.join(BLOG_DIR, post.slug + '.html'), articlePage(post, posts));
+  }
+  console.log('[blog] wrote ' + posts.length + ' article page(s)');
 
   // Index for future JS consumers (search, related posts, sitemap).
   if (!fs.existsSync(DATA_DIR)) fs.mkdirSync(DATA_DIR, { recursive: true });
