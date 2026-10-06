@@ -60,3 +60,21 @@ To choose the right laser for your nightclub's specific needs, consider the size
 The benefits of using a laser with ILDA control in a nightclub include precise control over the laser's movements and patterns, and the ability to create complex effects. ILDA control is commonly used in professional lighting applications and is a suitable choice for nightclubs that require high-quality lighting. The RG-LL10000f1LM supports ILDA control, making it a suitable choice for nightclubs that require precise control over their lighting.
 
 Next, visit the RiGeBa Lighting website to explore the different laser models available and determine which one is best for your nightclub's specific needs.
+
+## What is the minimum required output for a nightclub laser?
+
+When it comes to choosing the right RGB laser for a nightclub, one of the most important factors to consider is the output. The ideal output for a nightclub laser depends on the size of the venue and the desired level of illumination. A general rule of thumb is to choose a laser with an output that is at least 1-2 times the size of the venue. For example, if the venue is 1000 square feet, a laser with an output of 1000-2000 lumens would be a good choice. However, this can vary depending on the specific needs of the venue and the desired level of illumination.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-LLRGB4000G1LLM | R 1W/638nm G 1W/520nm B 2W/445nm | US$1154 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-LLRGB6000G1LLM | R 2W/638nm G 2W/520nm B 2W/445nm | US$1500 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-LLRGB4000G1LLM](/products/laser/rg-llrgb4000g1llm) and [RG-LLRGB6000G1LLM](/products/laser/rg-llrgb6000g1llm). Open each one for the full spec list, the volume tiers and the current EXW price.
