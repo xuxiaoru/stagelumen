@@ -76,3 +76,23 @@ To integrate LED strobes and audience blinders into your lighting setup, conside
 The benefits of using LED strobes and audience blinders in live music include creating a dynamic and engaging atmosphere, enhancing the overall visual experience, and adding an extra layer of excitement and energy to the performance.
 
 To learn more about the RG-TH8B600S and other LED strobes and audience blinders, visit [RG-TH8B600S](/products/theatre/rg-th8b600s) and [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4). Contact us to discuss your specific needs and to determine the best fixtures for your live music events.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-TH4B400-W4 | 4*100W Cool white+Warm white high power led | US$196 |
+| RG-TH4B400-W4 | 4*100W Cool white+Warm white high power led | US$199 |
+| RG-TH2B250 | 2*100W Cool white+Warm white high power led | US$64 |
+| RG-TH4B450 | 4*100W Cool white+Warm white high power led | US$95 |
+| RG-TH4B450S | 4*100W Cool white+Warm white high power led | US$98 |
+| RG-TH8B600S | 8 LEDs | US$194 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-TH4B400-W4 | 4*100W Cool white+Warm white high power led | US$196 |
+| RG-TH4B400-W4 | 4*100W Cool white+Warm white high power led | US$199 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4) and [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4-2). Open each one for the full spec list, the volume tiers and the current EXW price.
