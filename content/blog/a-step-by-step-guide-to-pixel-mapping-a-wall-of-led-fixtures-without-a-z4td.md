@@ -63,3 +63,21 @@ If you are experiencing issues with pixel mapping, you should first check the co
 You can find more information about the [24pcs 1.5W RGB Outdoor LED bar](/products/par/24pcs-1-5w-rgb-outdoor-led) and the [RG-CTCLEDPEIN-1](/products/controller/rg-ctcledpein-1) on our website.
 
 Next, you should test the LED fixtures and the controller to ensure that they are working correctly. If you are still experiencing issues, you may want to consider consulting the manufacturer's instructions or contacting a professional for assistance.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 6pcs 5050 RGB | US$75 |
+| DMX Control Pixel LED Lifting | point control | US$18.5 |
+| RG-CTCLEDPEIN-1 | 40 LEDs | US$135 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-EL004FL-3e42 | 729/720/480/489 | US$76 |
+| 24pcs 1.5W RGB Outdoor LED bar | 24*1.5w RGB 3 IN 1 | US$49 |
+| RG-PDS56S125IA-V0 | 64 pixels | US$179 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [DMX Control Pixel LED Lifting](/products/kinetic/dmx-control-pixel-led-lifting). Open each one for the full spec list, the volume tiers and the current EXW price.
