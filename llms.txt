@@ -147,6 +147,9 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 Written by the RiGeBa engineering and export team. Each link is a standalone
 page carrying the full answer, plus the tables and figures behind it.
 
+- [Choosing the Right Atmospheric Machine for Your Venue](https://www.rigebalighting.com/content/blog/choosing-the-right-atmospheric-machine-for-your-venue-ko84): RG-FO600V17DW hazer machine costs $175
+- [LED Strobes and Audience Blinders for Live Music: A Buyer's Guide](https://www.rigebalighting.com/content/blog/led-strobes-and-audience-blinders-for-live-music-a-buyers-guide-f4co): Choose 600W strobes like RG-TH8B600S
+- [A Step-by-Step Guide to Pixel Mapping a Wall of LED Fixtures Without a Media Server](https://www.rigebalighting.com/content/blog/a-step-by-step-guide-to-pixel-mapping-a-wall-of-led-fixtures-without-a-z4td): Use 24pcs 1.5W RGB Outdoor LED bar
 - [Choosing an RGB Laser for a Nightclub: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-0w1g): Check 10W output
 - [Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre](https://www.rigebalighting.com/content/blog/profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv): RG-PS200A20T50-W costs $95
 - [Sound-Activated vs DMX Control for Small Venues: A Guide](https://www.rigebalighting.com/content/blog/sound-activated-vs-dmx-control-for-small-venues-a-guide-htgs): RG-CTD192S8F5-K for $50

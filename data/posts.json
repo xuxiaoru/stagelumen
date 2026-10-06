@@ -1,7 +1,52 @@
 {
-  "generated": "2026-10-06T03:08:32.618Z",
-  "count": 33,
+  "generated": "2026-10-06T13:55:00.706Z",
+  "count": 36,
   "posts": [
+    {
+      "title": "Choosing the Right Atmospheric Machine for Your Venue",
+      "slug": "choosing-the-right-atmospheric-machine-for-your-venue-ko84",
+      "date": "2026-10-06T13:54:24.254Z",
+      "datePretty": "October 6, 2026",
+      "category": "How-To",
+      "excerpt": "RG-FO600V17DW hazer machine costs $175",
+      "tags": [
+        "haze",
+        "fog",
+        "spark effects"
+      ],
+      "url": "content/blog/choosing-the-right-atmospheric-machine-for-your-venue-ko84.html",
+      "image": "assets/images/products/rg-fo600v17dw.jpg"
+    },
+    {
+      "title": "LED Strobes and Audience Blinders for Live Music: A Buyer's Guide",
+      "slug": "led-strobes-and-audience-blinders-for-live-music-a-buyers-guide-f4co",
+      "date": "2026-10-06T13:53:29.564Z",
+      "datePretty": "October 6, 2026",
+      "category": "How-To",
+      "excerpt": "Choose 600W strobes like RG-TH8B600S",
+      "tags": [
+        "live music",
+        "LED strobes",
+        "audience blinders"
+      ],
+      "url": "content/blog/led-strobes-and-audience-blinders-for-live-music-a-buyers-guide-f4co.html",
+      "image": "assets/images/products/rg-th8b600s.jpg"
+    },
+    {
+      "title": "A Step-by-Step Guide to Pixel Mapping a Wall of LED Fixtures Without a Media Server",
+      "slug": "a-step-by-step-guide-to-pixel-mapping-a-wall-of-led-fixtures-without-a-z4td",
+      "date": "2026-10-06T13:52:34.427Z",
+      "datePretty": "October 6, 2026",
+      "category": "How-To",
+      "excerpt": "Use 24pcs 1.5W RGB Outdoor LED bar",
+      "tags": [
+        "pixel mapping",
+        "LED fixtures",
+        "media server"
+      ],
+      "url": "content/blog/a-step-by-step-guide-to-pixel-mapping-a-wall-of-led-fixtures-without-a-z4td.html",
+      "image": "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg"
+    },
     {
       "title": "Choosing an RGB Laser for a Nightclub: A Step-by-Step Guide",
       "slug": "choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-0w1g",
