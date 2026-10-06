@@ -76,3 +76,17 @@ To decide which lens to buy for your small theatre, consider your specific needs
 The different configurations available for profile spots and fresnel lenses vary widely, depending on the brand, model, and features. For example, the RG-PS200A20T50-W has a configuration that includes a 200W LED light source, a zoomable beam angle, and a net weight of 5.3kg. You can also visit our website to learn more about our products and to [view the specifications](/products/truss/hj-l1fmy202010t30-w) of our different models.
 
 Next, visit our website to learn more about our products and to contact us for more information about choosing the right lens for your small theatre.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS200A20T50-W | 2IN1 COB Led Profile Spot Light | US$95 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS200A20T50-K | 2in 1 optional | US$168 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PS200A20T50-W](/products/profile/rg-ps200a20t50-w) and [RG-PS200A20T50-K](/products/profile/rg-ps200a20t50-k). Open each one for the full spec list, the volume tiers and the current EXW price.
