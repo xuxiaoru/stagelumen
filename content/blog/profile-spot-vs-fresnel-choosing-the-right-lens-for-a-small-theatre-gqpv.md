@@ -71,3 +71,21 @@ For more information about RiGeBa Lighting's products, including the RG-PS200A20
 
 ## What is the next step in choosing a lighting fixture for my small theatre?
 The next step in choosing a lighting fixture for your small theatre is to contact a lighting professional or visit our website to learn more about our products and services. We offer a range of lighting fixtures and accessories, including profile spots and fresnel lenses, and our team of experts can help you to choose the right solution for your needs. Whether you are looking for a versatile and affordable lighting system or a high-end solution with advanced features and benefits, we have the products and expertise to help you achieve your goals.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS200A20T50-W | 2IN1 COB Led Profile Spot Light | US$95 |
+| RG-PS200A20T50-K | 2IN1 COB Led Profile Spot Light | US$168 |
+| RG-PS200A15T65M-W | Manual Zoom 15-65 degree | US$277 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS20A19-W | Fixed Lens: 19°/26°/36°/50° | US$119 |
+| HJ-L1FMY202010T30-W | Square tube truss 200x200mm | US$33 |
+| RG-PS200A14S-W | 3 DMX channels | US$202 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PS200A20T50-W](/products/profile/rg-ps200a20t50-w) and [RG-PS200A20T50-K](/products/profile/rg-ps200a20t50-k). Open each one for the full spec list, the volume tiers and the current EXW price.
