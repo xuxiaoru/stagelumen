@@ -64,3 +64,25 @@ You can ensure that your laser equipment is properly maintained and serviced by 
 | 6 heads full-color swinging laser | 6 heads full-color swinging laser arrows, laser wavelength 638nm, laser power 3000mW | $358 |
 
 To learn more about our laser products, visit our website at [RiGeBa Lighting](/products/laser) or contact us at [info@rigeabalighting.com](mailto:info@rigeabalighting.com). We would be happy to help you choose the right laser for your live event and ensure that it is properly installed and maintained.
+
+## What are the differences in beam angles between various laser products?
+
+When choosing a laser for a live event, it is essential to consider the beam angle. Different lasers have varying beam angles, which can affect the overall performance and safety of the event. For instance, the RG-ML100BD-KC6AH40 has a beam angle of 540 degrees, while the 6W Moving head full color laser has a beam angle of 270 degrees. The RG-PDS28S10IA-V25 has a beam angle of 360 degrees. Understanding the beam angle of each laser product is crucial to ensure that the beam is properly aligned and does not pose a risk to the audience or performers.
+
+## How do the power consumption and energy efficiency of lasers compare to other lighting sources?
+
+Lasers are known for their high energy efficiency and low power consumption compared to other lighting sources. The 6W Moving head full color laser, for example, consumes only 6W of power, while the RG-ML100BD-KC6AH40 consumes 100W of power. This makes lasers an attractive option for live events where energy efficiency is a concern. Additionally, lasers can be designed to be energy-efficient, reducing the overall energy consumption of the event.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML100BD-KC6AH40 | 6头10瓦光束LED摇头+RGB激光灯6*10w led moving head beam+RGB laser light | US$219 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
