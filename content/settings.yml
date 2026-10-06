@@ -58,6 +58,11 @@ social:
 
 
 
+# The h1 is three marked spans so the <em> emphasis survives; one key would
+# be escaped flat. The editor presents them as one headline in three parts.
+homeHeroTitleLead: "Stage lighting"
+homeHeroTitleAccent: "built for real shows"
+homeHeroTitleTail: ", priced from the factory floor."
 homeHeroLead: "We manufacture LED moving heads, pixel and effect fixtures, outdoor IP65 units, profile spots, lasers and DMX control — for rental houses, distributors, integrators and venues in 60+ countries."
 
 homeHeroCheck1: "Factory-direct EXW pricing, no middleman margin"
