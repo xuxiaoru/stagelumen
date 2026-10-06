@@ -85,3 +85,23 @@ The cost of combination effects varies depending on the specific model and featu
 | RG-ML100BD-KC6AH40 | 6*10w led moving head beam+RGB laser light | $219 |
 
 To learn more about the [6W Moving head full color laser](/products/laser/6w-moving-head-full-color) and the [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving), visit our website. Contact us at sales20@rigelighting.com or submit the RFQ form on our site to inquire about pricing and availability. Our sales contact, Vivian, is available to answer your questions and provide more information about our products.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML100BD-KC6AH40 | 6*10w led moving head beam+RGB laser light | US$219 |
+| RG-LL120WF8D | Single Red 300mw/638nm X8 | US$263 |
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| 6W Moving head full color laser | led circle | US$375 |
+| New 295W 10R beam moving head | 10R beam moving head light | US$332 |
+| 6 heads full-color swinging laser | 6 heads full-color swinging laser arrows moving head laser | US$358 |
+| Green laser handby | G 100MW one head | US$230 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [6W Moving head full color laser](/products/laser/6w-moving-head-full-color) and [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving). Open each one for the full spec list, the volume tiers and the current EXW price.
