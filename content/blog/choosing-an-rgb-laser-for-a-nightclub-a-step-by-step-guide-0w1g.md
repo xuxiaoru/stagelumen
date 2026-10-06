@@ -63,3 +63,25 @@ To maintain and troubleshoot your RGB laser, refer to the user manual and follow
 To learn more about the RG-LL10000f1LM, visit [RG-LL10000f1LM](/products/laser/rg-ll10000f1lm). For more information on the 6W Moving head full color laser, visit [6W Moving head full color laser](/products/laser/6w-moving-head-full-color).
 
 Next, review the specifications of the RG-LL10000f1LM and the 6W Moving head full color laser to determine which model best meets your needs.
+
+## How do I ensure the safety of my patrons when using RGB lasers in a nightclub?
+
+To ensure the safety of patrons when using RGB lasers in a nightclub, several precautions must be taken. First, the laser beam should be directed away from the audience and any reflective surfaces to prevent eye damage. The laser system should also be equipped with safety features such as beam shutters and interlocks to prevent accidental exposure. Additionally, the nightclub should have a clear emergency procedure in place in case of a laser-related incident. Furthermore, the laser system should be regularly maintained and inspected to ensure that it is functioning properly and safely. By taking these precautions, nightclub owners can minimize the risk of injury and create a safe and enjoyable environment for their patrons.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-LLRGB4000G1LLM | Laser Module Power: R 1W/638nm G 1W/520nm B 2W/445nm | US$1154 |
+| RG-LLRGB6000G1LLM | Laser Module Power: R 2W/638nm G 2W/520nm B 2W/445nm | US$1500 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [6 heads full-color swinging](/products/laser/6-heads-full-color-swinging-laser). Open each one for the full spec list, the volume tiers and the current EXW price.
