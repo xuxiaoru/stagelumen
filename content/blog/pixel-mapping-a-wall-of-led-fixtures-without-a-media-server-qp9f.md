@@ -66,3 +66,21 @@ To choose the right controller for your project, consider the type of LED fixtur
 | 24pcs 1.5W RGB Outdoor LED bar | 24pcs 1.5W RGB Outdoor LED bar Wall Washer | USD 49 | over 100 pcs |
 
 You can visit our website to learn more about our products, including the [RG-CTCLEDPEIN-1](/products/controller/rg-ctcledpein-1) and the [24pcs 1.5W RGB Outdoor LED bar](/products/par/24pcs-1-5w-rgb-outdoor-led). Contact us to discuss your pixel mapping project and determine the best solution for your needs. Next, review the specifications of the RG-CTCLEDPEIN-1 controller and the 24pcs 1.5W RGB Outdoor LED bar to determine if they meet your project requirements.
+
+## What are the key considerations for selecting the right LED fixtures for pixel mapping?
+
+When it comes to pixel mapping, the type and number of LED fixtures used can greatly impact the overall visual effect. The fixtures should be able to produce a high level of brightness, color accuracy, and uniformity. Additionally, they should be able to be controlled and synchronized with a controller to achieve the desired pixel mapping effect. In this article, we will discuss the key considerations for selecting the right LED fixtures for pixel mapping and provide some guidance on how to choose the right fixtures for your specific project.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [DMX Control Pixel LED Lifting](/products/kinetic/dmx-control-pixel-led-lifting) and [24pcs 1.5W RGB Outdoor LED bar](/products/par/24pcs-1-5w-rgb-outdoor-led). Open each one for the full spec list, the volume tiers and the current EXW price.
