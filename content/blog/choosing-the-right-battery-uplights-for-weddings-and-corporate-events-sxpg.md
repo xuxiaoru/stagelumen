@@ -71,3 +71,21 @@ The environmental benefits of using battery uplights include reduced power consu
 | RG-CTCWILDR-RS | 2.4G wireless DMX transceiver | USD 41 | 1-10 units |
 
 To learn more about the RG-W18IB8-Ke8AM, visit [RG-W18IB8-Ke8AM](/products/par/rg-w18ib8-ke8am). For more information on the RG-CTCWILDR-RS, visit [RG-CTCWILDR-RS](/products/controller/rg-ctcwildr-rs). Contact us to discuss your specific needs and determine the best fixture for your event.
+
+## How do battery uplights compare to traditional lighting systems?
+
+Battery uplights offer several advantages over traditional lighting systems. They are more portable, easier to set up, and require less maintenance. They also provide greater flexibility and convenience, as they can be easily moved and rearranged as needed. Additionally, battery uplights are often more energy-efficient and environmentally friendly, making them a popular choice for events and installations.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-LL10000f1L | 10W RGB wedding laser | US$559 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-LL30000m1L | 3W RGB laser light | US$693 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-LL10000f1L](/products/laser/rg-ll10000f1l) and [RG-LL30000m1L](/products/laser/rg-ll30000m1l). Open each one for the full spec list, the volume tiers and the current EXW price.
