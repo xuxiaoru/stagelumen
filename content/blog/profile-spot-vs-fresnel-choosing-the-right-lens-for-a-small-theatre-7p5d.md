@@ -66,3 +66,19 @@ To determine the right size and configuration for your theatre's lighting system
 | RG-PS200A15T65M-W | $277 | 15-65 degrees |
 
 You can find more information about the RG-PS200A20T50-W profile spot on our [product page](/products/profile/rg-ps200a20t50-w). You can also find more information about the RG-PS200A20T50-K fresnel lens on our [product page](/products/profile/rg-ps200a20t50-k). To get a quote for your theatre's lighting system, please contact us at [sales@rigeblighting.com](mailto:sales@rigeblighting.com).
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS200A20T50-W | 200W, 2 in 1, 3200K-5600K | US$95 |
+| RG-PS200A20T50-K | 200W, 2 in 1, 3200K-5600K | US$168 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS200A15T65M-W | 200W, 15-65 degree zoom, 3200K-5600K | US$277 |
+| RG-PS20A19-W | 20W, 19°/26°/36°/50° | US$119 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PS200A20T50-W](/products/profile/rg-ps200a20t50-w) and [RG-PS200A20T50-K](/products/profile/rg-ps200a20t50-k). Open each one for the full spec list, the volume tiers and the current EXW price.
