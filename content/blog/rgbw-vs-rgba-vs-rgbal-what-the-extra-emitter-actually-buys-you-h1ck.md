@@ -63,3 +63,21 @@ The RG-PS180A19-RGBW is a more affordable option than the 300AZ-RGBAL, with a pr
 To learn more about the 300AZ-RGBAL, visit its [product page](/products/profile/300az-rgbal). To learn more about the RG-PS180A19-RGBW, visit its [product page](/products/profile/rg-ps180a19-rgbw). 
 
 Consider the specific requirements of your application and choose the fixture that best meets your needs. Contact us to discuss your options and determine the best course of action for your stage lighting needs.
+
+## How do the different color technologies compare in terms of color accuracy and consistency?
+
+RGBW, RGBA, and RGBAL are the most common color technologies used in LED fixtures. While they share some similarities, each has its own strengths and weaknesses. RGBW offers a wider color gamut and more accurate color representation, while RGBA is limited to a narrower color range. RGBAL, on the other hand, offers a unique combination of color accuracy and consistency, making it an attractive option for applications where precise color control is essential.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS180A19-RGBW | 180W LED Profile Light-RGBW | US$231 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS180A19F-RGBW | 180W LED Profile Light-RGBW | US$227 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [300AZ-RGBAL](/products/profile/300az-rgbal) and [RG-PS180A19-RGBW](/products/profile/rg-ps180a19-rgbw). Open each one for the full spec list, the volume tiers and the current EXW price.
