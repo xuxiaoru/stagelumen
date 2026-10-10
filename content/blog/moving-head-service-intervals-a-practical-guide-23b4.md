@@ -69,3 +69,25 @@ Common mistakes to avoid when maintaining moving heads include using harsh chemi
 To learn more about the New 295W 10R beam moving head, visit the [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) product page. For more information on the RG-ML760WC-KCH99, visit the [RG-ML760WC-KCH99](/products/moving/rg-ml760wc-kch99) product page.
 
 Next, inspect your moving heads and replace any worn-out belts or damaged components. Clean the fixtures and store them properly to ensure they continue to function properly and last for a long time.
+
+## What are the consequences of neglecting regular maintenance?
+
+Neglecting regular maintenance can lead to premature wear and tear on moving head components, resulting in reduced lifespan and increased downtime. This can be particularly problematic for touring productions and rental houses, where the loss of a single moving head can significantly impact the overall performance of the show. Furthermore, neglecting regular maintenance can also lead to increased costs in the long run, as the need for costly repairs and replacements becomes more frequent. By prioritizing regular maintenance, however, it is possible to extend the lifespan of moving heads and minimize the risk of costly downtime.
+
+## How does the type of moving head affect its maintenance requirements?
+
+The type of moving head can significantly impact its maintenance requirements. For example, moving heads with complex optics, such as zoom lenses or beam focusing systems, may require more frequent cleaning and adjustment to ensure optimal performance. On the other hand, moving heads with simpler optics, such as fixed beam or spot lights, may require less maintenance. Additionally, moving heads with advanced features, such as DMX control or color changing capabilities, may require more frequent software updates and calibration to ensure optimal performance. By understanding the specific maintenance requirements of the moving head being used, it is possible to develop an effective maintenance routine that minimizes downtime and maximizes performance.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML420WC-KCH93 | 7leds*60w | US$590 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML760WC-KCH99 | 19leds 40w zoom | US$560 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
