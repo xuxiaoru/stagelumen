@@ -66,3 +66,21 @@ When choosing an LED configuration for a moving head, consider the desired color
 When using movement macros in outdoor events, consider the weather conditions, the size and type of event, and the required features such as IP65 rating and zoom functionality. The RG-ML420WC-KCH93 and the RG-ML760WC-KCH99 are examples of beam moving heads suitable for outdoor events.
 
 To learn more about the [6W Moving head full color laser](/products/laser/6w-moving-head-full-color) and the [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving), visit our website. Next, review the specifications of the moving heads you are interested in and contact our sales team to discuss your lighting design needs.
+
+## How do the different types of moving heads compare in terms of their movement capabilities?
+
+Moving heads can be broadly categorized into two main types: beam moving heads and non-beam moving heads. Beam moving heads, such as the RG-ML420WC-KCH93 and RG-ML760WC-KCH99, are designed to produce a focused beam of light, while non-beam moving heads, such as the RG-ML125BL-KCRe38AH274, produce a more general lighting effect. In terms of movement capabilities, beam moving heads typically offer more precise control over the beam angle and movement speed, making them well-suited for applications that require high levels of precision and accuracy. Non-beam moving heads, on the other hand, are often used for more general lighting effects and may offer more flexibility in terms of movement speed and angle.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML420WC-KCH93 | 7 LEDs*60W | US$590 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML760WC-KCH99 | 19 LEDs*40W | US$560 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
