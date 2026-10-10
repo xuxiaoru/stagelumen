@@ -63,3 +63,27 @@ To compare the prices of different beam lights on the market, consider factors s
 The RG-M230BN-KMH16 and RG-M230B-KOH20 have different features and specifications, including beam angle, output, and color temperature. The RG-M230BN-KMH16 has a beam angle that can make it appear brighter than a wash light with a higher output, while the RG-M230B-KOH20 has a higher output and is suitable for larger stages and longer throws.
 
 You can find more information about the [RG-M230BN-KMH16](/products/moving/rg-m230bn-kmh16) and [RG-M230B-KOH20](/products/moving/rg-m230b-koh20) on our website. Next, review the specifications and features of each light to determine which one is best suited for your stage lighting needs.
+
+## What is the relationship between beam angle and output in stage lighting?
+
+When choosing a beam light for your stage lighting needs, it's essential to consider the relationship between beam angle and output. A beam light with a narrow beam angle will produce a concentrated beam of light, but it may not be as bright as a light with a wider beam angle. On the other hand, a light with a wider beam angle will produce a more even and broader beam of light, but it may not be as focused as a light with a narrower beam angle. The key is to find a balance between the two, depending on your specific lighting needs. For example, if you're lighting a small stage, a light with a narrow beam angle may be sufficient, but if you're lighting a large stage, a light with a wider beam angle may be more effective. Additionally, the output of a beam light can also be affected by the type of LED used, the power consumption, and the overall design of the light. By considering these factors, you can choose a beam light that meets your specific needs and provides the desired output.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$84 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-CA8802PRO-A | 8 outputs | US$84 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML108BR-KCRe9AH43 | 9*12W 4in1 | US$188 |
+| RG-PDS56S36TB-V0 | 36 x15W 4in1 | US$125 |
+| RG-M300BH-KYH16M | 16CH Beam moving head | US$205 |
+| RG-CTD40S6F-K | LED Operator 3 Lighting Controller | US$49 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-M300BH-KYH16M](/products/moving/rg-m300bh-kyh16m) and [RG-CA8802PRO-A](/products/controller/rg-ca8802pro-a). Open each one for the full spec list, the volume tiers and the current EXW price.
