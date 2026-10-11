@@ -59,3 +59,17 @@ When selecting an LED fixture for outdoor use, consider the IP rating, power con
 To determine the right size and configuration for your LED fixture, consider the power consumption, beam angle, and noise level. Also, check the specifications for the fixture's size, weight, and heat dissipation capabilities. The [RG-EL0001FL-3e504](/products/pixel/rg-el0001fl-3e504) Infinite whirlwind LED fan light, for example, has a size of 490*450*230mm and a power consumption of 200W.
 
 Next, review the specifications of the RG-PS200A110-W 200W LED tricolor soft light and the RG-EL0001FL-3e260 LED background stage fan light to determine which model meets your requirements for silent running and power consumption.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-EL0001FL-3e260 | LED background stage fan light | US$190 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-EL0001FL-3e260](/products/pixel/rg-el0001fl-3e260). Open each one for the full spec list, the volume tiers and the current EXW price.
