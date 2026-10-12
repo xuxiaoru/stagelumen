@@ -61,3 +61,21 @@ Volume discounts are available for kinetic winch purchases, and the prices vary 
 To determine the right kinetic winch model for your application, consider the weight and size of the load, the lifting range and speed required, and the control mode needed. You can also refer to the specifications of different models, such as the 5KG DMX Control winch/lifting machine or the EP-LFBA067L-DhWf 3KG DMX winch/lifting football light. Contact the manufacturer or a authorized dealer for more information and to discuss your specific requirements.
 
 Next, review the specifications of the kinetic winch models that match your requirements and compare their features, load limits, and control modes to ensure you choose the right model for your application.
+
+## How do the different control modes of kinetic winches impact their performance and functionality?
+
+The control modes of kinetic winches play a crucial role in determining their performance and functionality. DMX control mode, for example, allows for precise control over the winch's movement and speed, making it ideal for applications that require high accuracy and precision. On the other hand, voice control mode provides a more intuitive and user-friendly interface, making it suitable for applications where ease of use is a top priority. Self-propelled mode, meanwhile, allows the winch to move on its own, making it ideal for applications where manual control is not feasible. By understanding the different control modes and their respective benefits, users can choose a kinetic winch that meets their specific needs and ensures optimal performance.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| 5KG Dmx Control winch/lifting machine | 0-2M | US$138 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| EP-LFBA067L-DhWf | 0-4m | US$135 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [5KG Dmx Control winch/lifting](/products/kinetic/5kg-dmx-control-winch-lifting-machine) and [EP-LFBA067L-DhWf](/products/kinetic/ep-lfba067l-dhwf). Open each one for the full spec list, the volume tiers and the current EXW price.
