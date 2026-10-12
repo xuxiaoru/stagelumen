@@ -69,3 +69,17 @@ There are several types of DMX splitters available, including 1-in, 4-out and 1-
 To learn more about the RG-CA8402C DMX splitter, visit the [RG-CA8402C](/products/controller/rg-ca8402c) product page. For more information on the RG-CA8402MINI DMX mini splitter, visit the [RG-CA8402MINI](/products/controller/rg-ca8402mini) product page.
 
 Next, review the specifications of the DMX splitters and determine which one is best suited for your lighting installation. Consider the number of outputs required, the distance of the cable runs, and the type of devices being connected. Then, contact a RiGeBa Lighting representative to discuss your specific needs and determine the best course of action.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-CA8402C](/products/controller/rg-ca8402c). Open each one for the full spec list, the volume tiers and the current EXW price.
