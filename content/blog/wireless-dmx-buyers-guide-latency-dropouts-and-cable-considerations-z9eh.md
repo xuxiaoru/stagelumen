@@ -75,3 +75,25 @@ To choose between the RG-CTCWILDR-RS and the RG-CTCWIXLR-RS wireless remote cont
 You can find more information about the RG-CTCWILDR-RS and the RG-CTCWIXLR-RS wireless remote controls on our website: [RG-CTCWILDR-RS](/products/controller/rg-ctcwildr-rs) and [RG-CTCWIXLR-RS](/products/controller/rg-ctcwixlr-rs).
 
 Next, contact us to discuss your wireless DMX needs and determine the best solution for your application.
+
+## How do I calculate the maximum number of wireless DMX transmitters I can use in my system?
+
+When choosing a wireless DMX system, it's essential to consider the number of transmitters you can use without compromising the system's performance. The maximum number of transmitters depends on the system's frequency band and the distance between the transmitters. For example, the RG-CTCWILDR-RS wireless remote control operates on the 2.4G ISM frequency band, which allows for up to 126 channels. However, if you're using multiple transmitters in the same system, you'll need to consider the potential for interference and channel overlap. A good rule of thumb is to use no more than 10-15 transmitters in a single system to avoid interference and ensure reliable communication. By calculating the maximum number of transmitters you can use, you can ensure that your wireless DMX system operates smoothly and efficiently.
+
+## What are the differences between the RG-CTCWILDR-RS and the FG-W3P7PX1L80H22-KDp signal cable?
+
+The RG-CTCWILDR-RS wireless remote control and the FG-W3P7PX1L80H22-KDp signal cable are two separate products that serve different purposes in a wireless DMX system. The RG-CTCWILDR-RS is a wireless DMX512 transceiver that allows for wireless communication between the controller and the fixtures, while the FG-W3P7PX1L80H22-KDp is a signal cable used to connect the wireless DMX transceiver to the fixtures. The FG-W3P7PX1L80H22-KDp signal cable is designed to transmit the DMX signal from the wireless DMX transceiver to the fixtures, while the RG-CTCWILDR-RS wireless remote control is responsible for transmitting the DMX signal wirelessly. By using the correct signal cable, you can ensure that your wireless DMX system operates correctly and that the DMX signal is transmitted reliably to the fixtures.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CTCWILDR-RS | 2.4G wireless DMX512 transceiver | US$41 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CTCWIXLR-RS | 2.4G wireless DMX512 transceiver | US$26 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-FR650H5S-K](/products/effect/rg-fr650h5s-k). Open each one for the full spec list, the volume tiers and the current EXW price.
