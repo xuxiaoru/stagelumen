@@ -64,3 +64,17 @@ To troubleshoot common issues with your console, consider consulting the user ma
 
 ## What are the next steps in choosing a console for my rental house?
 Now that you have considered the key factors in choosing a console for your rental house, the next step is to research and compare different console models. You can visit the RiGeBa Lighting website to learn more about the RG-CTD40S6F-K and other console models, and contact our sales team to discuss your specific needs and requirements. You can also visit the product pages for the [RG-CTD40S6F-K](/products/controller/rg-ctd40s6f-k) and [RG-CS0302](/products/controller/rg-cs0302) to learn more about these models and their features.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25). Open each one for the full spec list, the volume tiers and the current EXW price.
