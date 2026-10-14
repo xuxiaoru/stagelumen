@@ -63,3 +63,23 @@ Common mistakes to avoid when planning power and phase balance for a stage inclu
 To learn more about the Full Moon Scimitar LED effect light, visit its [product page](/products/pixel/full-moon-scimitar-led-effect). For more information on the 6W Moving head full color laser light with led circle, check its [product page](/products/laser/6w-moving-head-full-color). 
 
 Next, calculate the total power consumption of your LED fixtures and ensure that the power load is balanced across the different phases.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-CA8802 | 8 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [Full moon scimitar led effect](/products/pixel/full-moon-scimitar-led-effect) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
