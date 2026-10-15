@@ -63,3 +63,17 @@ To get a quote for a custom stage platform, contact the manufacturer and provide
 | TS-ST120120BF-R40T60 | 1220x1220mm | $69 |
 
 For more information on stage platforms and ground support systems, visit the [TS-ST100100BFY-K60T100](/products/truss/ts-st100100bfy-k60t100) and [TS-ST120120BF-R40T60](/products/truss/ts-st120120bf-r40t60) product pages. Contact RiGeBa Lighting to discuss your stage platform and ground support system needs, and to get a quote for your next event.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| TS-ST120120BF-R40T60 | 1220x1220mm | US$69 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| TS-ST100100BFY-K60T100 | 1000x1000mm | US$106 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-EL0001FL-3e260](/products/pixel/rg-el0001fl-3e260) and [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25). Open each one for the full spec list, the volume tiers and the current EXW price.
