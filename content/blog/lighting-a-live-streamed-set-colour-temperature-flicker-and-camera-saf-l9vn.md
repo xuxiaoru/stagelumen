@@ -66,3 +66,25 @@ To troubleshoot common lighting issues for live streaming, consider checking the
 To learn more about the 300W LED Panel light -warm white and cold white 2in1, visit the [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm) product page. For more information on the RG-ST112A-S20f336A RGB LED 1008 Colouring Strobe Light, visit the [RG-ST112A-S20f336A](/products/theatre/rg-st112a-s20f336a) product page.
 
 Next, consider visiting the RiGeBa Lighting website to explore the range of lighting options available for live streaming, and contact their sales team to discuss your specific needs and requirements.
+
+## What are the implications of using different LED panel lights on the overall aesthetic of a live-streamed set?
+
+When it comes to live-streaming, the choice of LED panel lights can significantly impact the overall aesthetic of the set. Different colour temperatures can create distinct moods and atmospheres, and the flicker rate can affect the smoothness of the video feed. In this section, we will explore the implications of using different LED panel lights on the overall aesthetic of a live-streamed set.
+
+## How do the different control modes of LED lights impact the overall performance of a live-streaming setup?
+
+LED lights offer a range of control modes that can be used to customize the performance of a live-streaming setup. In this section, we will explore how the different control modes of LED lights impact the overall performance of a live-streaming setup, and provide guidance on how to choose the right control mode for your specific needs.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ST112A-S20f336A | 1008 Colouring Strobe Light | US$58 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ST1000B-S30f1000A | LED RGB 3In1 1000W Colouring Strobe | US$88 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm) and [RG-ST112A-S20f336A](/products/theatre/rg-st112a-s20f336a). Open each one for the full spec list, the volume tiers and the current EXW price.
