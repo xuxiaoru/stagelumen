@@ -64,3 +64,27 @@ To optimize your lighting system for maximum energy efficiency, consider using L
 To learn more about the RG-M300BH-KYH16M, visit the [RG-M300BH-KYH16M](/products/moving/rg-m300bh-kyh16m) product page. For more information on the RG-CA8802PRO-A, visit the [RG-CA8802PRO-A](/products/controller/rg-ca8802pro-a) product page.
 
 Next, contact us to discuss your specific lighting needs and determine the best fixtures and configuration for your school or community theatre.
+
+## How can a DMX smart splitter be used to optimize a lighting system for energy efficiency?
+
+A DMX smart splitter, such as the RG-CA8802PRO-A, can be used to optimize a lighting system for energy efficiency by allowing multiple fixtures to be controlled from a single controller. This can help to reduce the number of controllers needed, which can save energy and reduce costs. Additionally, the RG-CA8802PRO-A can be used to split a single DMX signal into multiple outputs, which can help to reduce the amount of energy needed to power the lighting system. By using a DMX smart splitter, lighting technicians can create a more efficient and cost-effective lighting system that is better suited to the needs of the school or community theatre.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8802 | 4 outputs | US$84 |
+| RG-CA8802 | 2 outputs | US$51 |
+| RG-CA8802 | 1 output | US$84 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CTD40S4F-K | 4 channels | US$28 |
+| RG-CTD40S4F-K | 6 channels | US$28 |
+| RG-CTD40S6F-K | 6 channels | US$49 |
+| RG-CTD40S6F-K | 4 channels | US$49 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-M300BH-KYH16M](/products/moving/rg-m300bh-kyh16m) and [RG-CA8802PRO-A](/products/controller/rg-ca8802pro-a). Open each one for the full spec list, the volume tiers and the current EXW price.
