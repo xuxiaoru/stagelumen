@@ -64,3 +64,17 @@ The volume pricing options for the fixtures vary. The 24pcs 1.5W RGB Outdoor LED
 | RG-EL004FL-3e42 | 500X500X205MM | - | - | 80w |
 
 To learn more about the 24pcs 1.5W RGB Outdoor LED bar, visit [24pcs 1.5W RGB Outdoor LED bar](/products/par/24pcs-1-5w-rgb-outdoor-led). For more information on the RG-EL004FL-3e42, visit [RG-EL004FL-3e42](/products/pixel/rg-el004fl-3e42). Contact us to discuss your specific needs and determine the best fixtures for your streamed set.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| 300W LED Panel light -warm | 2in1 | US$205 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| Full moon scimitar led effect | DMX512 signal/master-slave/self-propelled/sound control | US$85 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm) and [Full moon scimitar led effect](/products/pixel/full-moon-scimitar-led-effect). Open each one for the full spec list, the volume tiers and the current EXW price.
