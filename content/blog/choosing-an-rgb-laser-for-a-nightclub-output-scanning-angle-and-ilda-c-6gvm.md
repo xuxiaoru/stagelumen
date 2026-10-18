@@ -63,3 +63,27 @@ Using a laser light with a full-color palette, such as the RG-LL10000f1LM, can p
 To integrate the laser light into your existing lighting setup, follow the manufacturer's instructions and ensure the laser light is properly connected to your control system. Test the laser light to ensure it is working correctly and make any necessary adjustments to the settings or positioning.
 
 Next, visit the [RG-LL10000f1LM](/products/laser/rg-ll10000f1lm) product page to learn more about its features and specifications. Additionally, check out the [6W Moving head full color laser](/products/laser/6w-moving-head-full-color) product page to compare its features and pricing.
+
+## What are the implications of choosing a laser light with a lower output for a nightclub?
+
+Choosing a laser light with a lower output for a nightclub can result in a less immersive experience for the audience. A lower output may not be able to cut through the ambient light in a crowded nightclub, making it difficult to achieve the desired visual effect. Additionally, a lower output may not be able to create the same level of depth and dimensionality as a higher output laser light. This can be particularly problematic in a nightclub setting where the goal is to create a dynamic and engaging atmosphere. Furthermore, a lower output laser light may not be able to handle the demands of a high-energy performance, such as a concert or dance show, where the lighting needs to be fast-paced and dynamic. In this case, a higher output laser light would be a better choice to ensure that the lighting system can keep up with the demands of the performance.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-LL10000f1LM | 10W RGB Laser | US$459 |
+| RG-LL10000f1L | 10W RGB Laser | US$559 |
+| RG-FLO20WF | 20W RGB Laser | US$193 |
+| 6W Moving head full color laser | 6W Moving head full color laser | US$375 |
+| 6 heads full-color swinging laser | 6 heads full-color swinging laser | US$358 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| 300AZ-RGBAL | 300W RGBAL Profile | US$930 |
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-LL10000f1LM](/products/laser/rg-ll10000f1lm) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
