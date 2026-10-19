@@ -76,3 +76,21 @@ To plan and execute a pixel mapping project, follow these steps:
 To learn more about the RG-CTCLEDPEIN-1, visit [RG-CTCLEDPEIN-1](/products/controller/rg-ctcledpein-1). To learn more about the RG-PDS56S125IA-V0, visit [RG-PDS56S125IA-V0](/products/pixel/rg-pds56s125ia-v0). 
 
 Next, review the specifications of the RG-EL004FL-3e42 and RG-EL006FL-3e42 to determine which one is best suited for your pixel mapping project.
+
+## Can I use a controller to control multiple LED fixtures simultaneously?
+
+A controller can control multiple LED fixtures simultaneously, allowing for more complex and dynamic lighting designs. This is especially useful for large-scale events or installations where multiple fixtures need to be controlled in unison. By using a controller, you can create intricate lighting patterns and effects that would be difficult or impossible to achieve with individual fixtures. Additionally, controllers often come with built-in features such as DMX protocol support, which allows for seamless integration with other lighting systems. When choosing a controller, consider the number of outputs you need to control, as well as any additional features you may require, such as pixel mapping or color changing capabilities.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [DMX Control Pixel LED Lifting](/products/kinetic/dmx-control-pixel-led-lifting) and [24pcs 1.5W RGB Outdoor LED bar](/products/par/24pcs-1-5w-rgb-outdoor-led). Open each one for the full spec list, the volume tiers and the current EXW price.
