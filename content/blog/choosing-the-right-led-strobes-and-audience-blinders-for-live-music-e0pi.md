@@ -74,3 +74,29 @@ The ideal beam angle for audience blinders in live music will depend on the size
 Yes, audience blinders and LED strobes can be used together to create a unique and dynamic effect. They can be programmed to work in tandem to create a variety of effects, such as a flashing effect with the LED strobes and a bright, shining effect with the audience blinders.
 
 To learn more about the different types of LED strobes and audience blinders available, and to determine which models are right for your live music setup, consider visiting the RiGeBa Lighting website and exploring the various product pages, such as the [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4) and [RG-ST1344A-SO](/products/theatre/rg-st1344a-so). Contact RiGeBa Lighting directly to discuss your specific needs and to get a quote for the right LED strobes and audience blinders for your live music setup.
+
+## How do I balance the output of my LED strobes and audience blinders?
+
+When choosing LED strobes and audience blinders for live music, it's essential to balance their output to create a cohesive and visually appealing effect. A good starting point is to consider the size of the venue and the type of performance. For smaller venues, a single LED strobe or a pair of audience blinders may be sufficient, while larger venues may require multiple units. Additionally, the output of the LED strobes and audience blinders should be adjusted to match the intensity of the performance. For example, a high-energy rock concert may require more intense strobe effects, while a more subdued performance may require softer, more subtle lighting. By balancing the output of the LED strobes and audience blinders, you can create a dynamic and engaging visual experience that complements the music and enhances the overall atmosphere of the performance.
+
+## What are the implications of using different color temperatures in LED strobes and audience blinders?
+
+When choosing LED strobes and audience blinders, one of the key considerations is the color temperature of the LEDs. Warm white LEDs, which have a color temperature of around 2800-3000K, produce a cozy and intimate atmosphere, while cool white LEDs, which have a color temperature of around 5000-6500K, produce a bright and energizing effect. By using different color temperatures in LED strobes and audience blinders, you can create a unique and dynamic visual effect that complements the music and enhances the overall atmosphere of the performance. For example, using warm white LEDs for audience blinders and cool white LEDs for LED strobes can create a striking contrast between the two, adding depth and visual interest to the performance.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-TH4B400-W4 | 4*100W Cool white+Warm white high power led | US$196 |
+| RG-TH4B400-W4 | 4*100W Cool white+Warm white high power led | US$199 |
+| RG-TH4B450 | 4*100W Cool white+Warm white high power led | US$95 |
+| RG-TH4B450S | 4*100W Cool white+Warm white high power led | US$98 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-TH2B250 | 2*100W Cool white+Warm white high power led | US$64 |
+| RG-TH8B600S | 8 LEDs | US$194 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4) and [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4-2). Open each one for the full spec list, the volume tiers and the current EXW price.
