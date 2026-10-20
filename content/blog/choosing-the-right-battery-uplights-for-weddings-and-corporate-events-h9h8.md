@@ -66,3 +66,25 @@ When using battery uplights, consider safety factors such as IP rating, weather 
 | RG-TB140S28D-f60 | up to 12 hours | No | Dedicated charging station | $115 |
 
 To learn more about the RG-W18IB8-Ke8AM, visit its [product page](/products/par/rg-w18ib8-ke8am). For more information on the RG-TB140S28D-f60, visit its [product page](/products/pixel/rg-tb140s28d-f60). Contact us to discuss your battery uplight needs and determine the best fixtures for your events.
+
+## What factors influence the choice of battery uplight size?
+
+When choosing battery uplights for weddings and corporate events, the size of the unit is a crucial factor to consider. The size of the battery uplight will depend on the number of outputs required, the power consumption, and the desired beam size. A larger battery uplight with more outputs will require more power and have a larger beam size, while a smaller battery uplight with fewer outputs will be more energy-efficient and have a smaller beam size. For example, the RG-LL10000f1L has 10 outputs and a beam size of 4*5mm, while the RG-LL30000m1L has 3 outputs and a beam size of 4*5mm. The RG-PS200A20T50-W has 200W of power and a beam size of 2-3.5 meters. When choosing a battery uplight, it is essential to consider the number of outputs required, the power consumption, and the desired beam size to ensure that the chosen unit meets the needs of the event.
+
+## How do battery uplights handle different types of lighting scenarios?
+
+Battery uplights are designed to handle a wide range of lighting scenarios, from indoor events to outdoor festivals. They are typically equipped with adjustable brightness and color temperature settings, allowing users to customize the lighting to suit the specific needs of the event. Additionally, many battery uplights come with built-in wireless DMX control, allowing users to control multiple units from a single console. This makes it easy to create complex lighting designs and adjust the lighting in real-time. For example, the RG-LL10000f1L has a built-in ILDA, SD card, DMX, and mic output, making it easy to control and customize the lighting. The RG-PS200A20T50-W has a 2-in-1 COB LED profile spot light, allowing users to create a variety of lighting effects. When choosing a battery uplight, it is essential to consider the specific lighting requirements of the event and select a unit that can handle the demands of the scenario.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-LL10000f1L | 10W RGB | US$559 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-LL30000m1L | 3W RGB | US$693 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-LL10000f1L](/products/laser/rg-ll10000f1l) and [RG-LL30000m1L](/products/laser/rg-ll30000m1l). Open each one for the full spec list, the volume tiers and the current EXW price.
