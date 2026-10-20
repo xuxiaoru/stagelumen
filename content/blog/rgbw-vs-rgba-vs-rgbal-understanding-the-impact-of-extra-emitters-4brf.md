@@ -66,3 +66,25 @@ The key features of the RG-PS180A19-RGBW and RG-PS180A19F-RGBW include their bea
 
 ## How do I get more information about RiGeBa Lighting fixtures?
 To get more information about RiGeBa Lighting fixtures, visit our website or contact our sales team. We offer a range of fixtures, including the [300AZ-RGBAL](/products/profile/300az-rgbal) and [RG-PS180A19-RGBW](/products/profile/rg-ps180a19-rgbw), and can provide guidance on choosing the right fixture for your specific application. Contact us today to discuss your lighting needs and determine the best solution for your project.
+
+## What are the implications of using different color gamuts in lighting fixtures on the final color appearance?
+
+When it comes to lighting fixtures, the color gamut refers to the range of colors that can be produced. RGBW, RGBA, and RGBAL are three common color gamuts used in lighting fixtures. RGBW uses red, green, blue, and white LEDs to produce a wide range of colors, while RGBA uses red, green, and blue LEDs to produce a more limited range of colors. RGBAL, on the other hand, uses red, green, blue, and amber LEDs to produce a unique color temperature. The choice of color gamut can have a significant impact on the final color appearance of a lighting fixture, and it is essential to consider this when selecting a fixture for a specific application.
+
+## How do the different color temperatures produced by RGBAL and RGBA fixtures affect the overall mood and atmosphere of a space?
+
+The color temperature of a lighting fixture can greatly impact the overall mood and atmosphere of a space. RGBAL fixtures produce a warm, amber color temperature, while RGBA fixtures produce a cooler, bluer color temperature. This difference in color temperature can have a significant impact on the overall mood and atmosphere of a space, with RGBAL fixtures often producing a more intimate and cozy atmosphere, while RGBA fixtures often producing a more energizing and stimulating atmosphere. When selecting a lighting fixture, it is essential to consider the desired color temperature and how it will impact the overall mood and atmosphere of the space.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| 300AZ-RGBAL | IP65 PROFILE 300AZ-RGBAL outdoor RGBAL profile 300w | US$930 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS180A19-RGBW | 180W LED Profile Light-RGBW RG-PS180A19-RGBW | US$231 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [300AZ-RGBAL](/products/profile/300az-rgbal) and [RG-PS180A19-RGBW](/products/profile/rg-ps180a19-rgbw). Open each one for the full spec list, the volume tiers and the current EXW price.
