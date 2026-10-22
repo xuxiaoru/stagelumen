@@ -63,3 +63,21 @@ Some common mistakes to avoid when creating movement macros include programming 
 To learn more about the 6W Moving head full color laser, visit its [product page](/products/laser/6w-moving-head-full-color). For more information about the New 295W 10R beam moving head, visit its [product page](/products/moving/new-295w-10r-beam-moving). 
 
 Next, review the specifications of the RG-M230BN-KMH16 and consider how its capabilities can be used to create intentional movement macros in your lighting design.
+
+## How do movement macros differ from traditional lighting cues?
+
+Movement macros differ from traditional lighting cues in several key ways. While traditional cues are typically simple and straightforward, movement macros are more complex and dynamic, allowing for a wide range of effects to be achieved. Movement macros are also typically programmed using a computer or other device, making it easier to create and edit complex lighting effects. Additionally, movement macros can be easily rehearsed and programmed, making it easier to get the lighting just right on the night of the performance. In contrast, traditional cues are often more difficult to program and edit, and may require more manual setup and adjustment. Overall, movement macros offer a more flexible and precise way of controlling lighting, making them a popular choice among lighting designers and technicians.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML420WC-KCH93 | 7leds*60w | US$590 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML760WC-KCH99 | 19leds 40w zoom | US$560 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
