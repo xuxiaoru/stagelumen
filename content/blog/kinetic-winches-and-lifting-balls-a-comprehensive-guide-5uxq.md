@@ -67,3 +67,23 @@ Kinetic winches are commonly used in stage lighting and event production for app
 | DMX Control Pixel LED Lifting | $18.5 | - | 1 |
 
 Next, review the specifications of the kinetic winch models and determine which one is suitable for your specific application. Consider factors such as load limit, lifting range, speed, and control mode to ensure safe and effective use.
+
+## How do I calculate the total power consumption of a kinetic winch?
+
+To calculate the total power consumption of a kinetic winch, users should consider the power consumption of the motor, the LED lights, and any other components that may be connected to the winch. For example, the TS-MG2D1H4LBS14YT1-N1 model has a maximum power consumption of 450W, which includes the power consumption of the motor and the LED lights. Users should also consider the voltage and frequency of the power supply, as well as any potential losses or inefficiencies in the system. By accurately calculating the total power consumption of the winch, users can ensure that it is properly sized and configured for their specific application, and avoid potential issues with overheating or power failure.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| 5KG Dmx Control winch/lifting — 5KG Dmx Control winch/lifting machine | 1 output | US$138 |
+| EP-LFBA067L-DhWf | 4-in-1 lamp bead/auxiliary light 3-in-1 lamp bead | US$135 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| EP-LFBA020L-DhWf | 10W*8pcs RGBW 4in1 LEDs, 96pcs RGB 3in1 LEDs | US$188 |
+| TS-MG2D1H4LBS14YT1-N1 | 3pcs motors and 1pcs led circle ring | US$705 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [5KG Dmx Control winch/lifting](/products/kinetic/5kg-dmx-control-winch-lifting-machine) and [EP-LFBA067L-DhWf](/products/kinetic/ep-lfba067l-dhwf). Open each one for the full spec list, the volume tiers and the current EXW price.
