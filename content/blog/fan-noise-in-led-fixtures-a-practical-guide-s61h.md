@@ -74,3 +74,26 @@ To compare different LED fixtures, consider factors such as lumen output, color 
 | RG-EL0001FL-3e260 | LED background stage fan light | USD 190 |
 
 For more information on the RG-PS200A110-W, visit [RG-PS200A110-W](/products/profile/rg-ps200a110-w). For more information on the RG-EL0001FL-3e260, visit [RG-EL0001FL-3e260](/products/pixel/rg-el0001fl-3e260). Next, contact us to discuss your specific lighting needs and determine the best LED fixtures for your application.
+
+## What are the key factors that influence fan noise in LED fixtures?
+
+Fan noise in LED fixtures is primarily determined by the design of the cooling system, the type of LEDs used, and the power consumption of the fixture. A well-designed cooling system can minimize fan noise, while high-power LEDs can generate more heat and require more powerful fans. Additionally, the power consumption of the fixture can impact fan noise, as higher power consumption can lead to increased heat generation and fan noise. Understanding these factors is crucial for selecting the right LED fixture for a specific application.
+
+## How do different types of LED fixtures affect fan noise levels?
+
+Different types of LED fixtures have varying levels of fan noise due to their unique design and construction. For example, LED fan lights with a high number of LEDs and a large fan diameter tend to produce more fan noise than smaller, more efficient fixtures. On the other hand, LED guide columns with a smaller fan diameter and fewer LEDs tend to produce less fan noise. When selecting an LED fixture, it is essential to consider the fan noise level and choose a fixture that meets the required specifications.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-EL0001FL-3e260](/products/pixel/rg-el0001fl-3e260). Open each one for the full spec list, the volume tiers and the current EXW price.
