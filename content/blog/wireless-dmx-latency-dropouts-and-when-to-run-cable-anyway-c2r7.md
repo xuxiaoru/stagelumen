@@ -65,3 +65,29 @@ You should use a wired DMX connection when you need a reliable and stable connec
 To learn more about the RG-CTCWILDR-RS wireless remote control, visit [RG-CTCWILDR-RS](/products/controller/rg-ctcwildr-rs). For more information on the RG-TB140S28D-f60 Outdoor 360 degree emitting pixel light tube, visit [RG-TB140S28D-f60](/products/pixel/rg-tb140s28d-f60).
 
 Next, contact us to discuss your specific wireless DMX needs and to find the best solution for your application.
+
+## What are the potential pitfalls of using wireless DMX in a high-interference environment?
+
+When using wireless DMX in a high-interference environment, such as a crowded festival or a large conference center, the potential pitfalls include signal dropouts and latency issues. This is because the wireless signal can be easily disrupted by other devices, such as cell phones, microwaves, and other wireless devices. As a result, the DMX signal may be delayed or lost altogether, causing the lights to malfunction or behave erratically. To mitigate this issue, it's essential to choose a wireless DMX system with a high level of interference rejection and to position the transceivers in a way that minimizes interference from other devices. Additionally, using a wired DMX connection for critical lighting systems can help ensure reliable and consistent performance.
+
+## How do I determine the optimal number of wireless DMX transceivers for my application?
+
+To determine the optimal number of wireless DMX transceivers for your application, you'll need to consider the size of the area you're covering, the number of devices you're controlling, and the level of interference you're expecting. A good rule of thumb is to use one transceiver for every 100-200 square feet of coverage area. However, this can vary depending on the specific requirements of your application. For example, if you're using a high-power wireless DMX system, you may be able to cover a larger area with fewer transceivers. On the other hand, if you're using a low-power system in a high-interference environment, you may need to use more transceivers to ensure reliable coverage.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CTCWILDR-RS | 3PIN male plug | US$41 |
+| RG-CTCWIXLR-RS | 3PIN male plug | US$26 |
+| FG-W3PE3L100H13-KDp | 3*2.5㎡ 100CM | US$3 |
+| FG-W3P7PX1L80H22-KDp | 3*0.3㎡ 80CM | US$2 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CTCWILDR-RS | 3PIN male plug | US$41 |
+| RG-CTCWIXLR-RS | 3PIN male plug | US$26 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-FR650H5S-K](/products/effect/rg-fr650h5s-k) and [RG-TB140S28D-f60](/products/pixel/rg-tb140s28d-f60). Open each one for the full spec list, the volume tiers and the current EXW price.
