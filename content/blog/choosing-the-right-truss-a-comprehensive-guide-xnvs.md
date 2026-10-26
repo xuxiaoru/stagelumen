@@ -66,3 +66,21 @@ To maintain your truss, regularly inspect the connections and components for dam
 Volume discounts are available for truss purchases. Refer to our product pages, such as the [HJ-L1TMY303010T50-W](/products/truss/hj-l1tmy303010t50-w) and [HJ-L1SMY303010T50-W](/products/truss/hj-l1smy303010t50-w), for pricing information and to contact our sales team for a quote.
 
 To get started with selecting the right truss for your event or production, visit our product pages, such as the [HJ-L1TMY303010T50-W](/products/truss/hj-l1tmy303010t50-w) and [HJ-L1SMY303010T50-W](/products/truss/hj-l1smy303010t50-w), and contact our sales team for a quote.
+
+## How do truss manufacturers ensure the structural integrity of their products?
+
+Truss manufacturers use a variety of techniques to ensure the structural integrity of their products, including rigorous testing and inspection procedures. For example, truss manufacturers may use finite element analysis to simulate the behavior of their truss under different loads and stresses, and may also conduct physical testing to verify the strength and durability of their products. Additionally, truss manufacturers may also use materials and designs that are specifically engineered for strength and stability, such as high-strength steel and precision-crafted components. By using these techniques, truss manufacturers can ensure that their products meet the highest standards of quality and safety.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25). Open each one for the full spec list, the volume tiers and the current EXW price.
