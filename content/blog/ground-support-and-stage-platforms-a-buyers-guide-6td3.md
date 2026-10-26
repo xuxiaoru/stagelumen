@@ -81,3 +81,21 @@ To contact the manufacturer for technical support, email them with your product 
 The payment options for stage platforms will depend on the manufacturer and the complexity of the order. Some manufacturers may offer payment plans or financing options, while others may require payment in full upfront. Contact the manufacturer to discuss your specific needs and determine the payment options for your order.
 
 To get started with purchasing a stage platform, visit the RiGeBa Lighting website and browse their selection of stage platforms, including the [TS-ST100100BFY-K60T100 Circular Stage 1000x1000mm](/products/truss/ts-st100100bfy-k60t100) and the [TS-ST120120BF-R40T60 Adjustable Stage Platform 1220x1220mm](/products/truss/ts-st120120bf-r40t60). Contact the manufacturer to discuss your specific needs and determine the best stage platform for your event.
+
+## How do stage platforms differ from traditional stage designs?
+
+Stage platforms differ from traditional stage designs in several key ways. Unlike traditional stages, which are typically designed to be self-supporting and do not require additional equipment, stage platforms are designed to be lightweight and portable. They are often made of aluminum or other lightweight materials and are equipped with wheels or other mobility features that allow them to be easily moved around the stage. This makes them ideal for productions that require frequent changes in stage layout or for events that need to be set up and torn down quickly. Additionally, stage platforms can be customized to fit the specific needs of the production, with features such as adjustable height and angle, and built-in lighting and sound systems.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| TS-ST100100BFY-K60T100 | Circular Stage 1000x1000mm | US$106 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| TS-ST120120BF-R40T60 | Adjustable Stage Platform 1220x1220mm | US$69 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-EL0001FL-3e260](/products/pixel/rg-el0001fl-3e260) and [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25). Open each one for the full spec list, the volume tiers and the current EXW price.
