@@ -63,3 +63,23 @@ To configure your lighting system for a corporate conference, start by determini
 | RG-CTD40S6F-K | LED Operator 3 Lighting Controller, DC 9V 300mA min | $49 | - | - |
 
 To get started with designing your corporate conference lighting system, contact us to discuss your specific needs and requirements.
+
+## How can I ensure that my lighting system is optimized for spill control and screen wash?
+
+To ensure that your lighting system is optimized for spill control and screen wash, it's essential to consider the type of lighting fixtures you're using and how they interact with the screen. A good rule of thumb is to use a combination of front lights and screen wash lights to create a seamless and professional-looking effect. You should also consider the level of control you need, as well as the type of lighting control system you're using. By choosing the right fixtures and controls, you can create a lighting system that is optimized for spill control and screen wash, and provides a high-quality presentation.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CTD40S4F-K | 2 outputs | US$28 |
+| RG-CTD40S6F-K | 3 outputs | US$49 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-CTD40S4F-K](/products/controller/rg-ctd40s4f-k). Open each one for the full spec list, the volume tiers and the current EXW price.
