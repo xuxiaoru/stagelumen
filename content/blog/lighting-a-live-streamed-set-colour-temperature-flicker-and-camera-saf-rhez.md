@@ -66,3 +66,19 @@ When troubleshooting common lighting issues in live streaming, consider factors 
 To learn more about the 300W LED Panel light -warm, visit the [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm) product page. For more information on the RG-ST112A-S20f336A, visit the [RG-ST112A-S20f336A](/products/theatre/rg-st112a-s20f336a) product page.
 
 Next, contact us to discuss your live streaming lighting needs and determine the best lighting fixtures for your production.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-ST112A-S20f336A | 3 in1 high brightness LED5050SMD | US$58 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ST1000B-S30f1000A | 3 in1 high brightness LED5054 SMD | US$88 |
+| RG-ST1344A-SO | 1344 5050 three color LED lamp beads | US$178 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm) and [RG-ST112A-S20f336A](/products/theatre/rg-st112a-s20f336a). Open each one for the full spec list, the volume tiers and the current EXW price.
