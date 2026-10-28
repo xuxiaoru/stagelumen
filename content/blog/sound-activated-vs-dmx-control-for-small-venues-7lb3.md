@@ -61,3 +61,25 @@ Common mistakes to avoid when setting up your DMX control system include incorre
 | RG-PS200A110-W | 200W, tricolor | $115 | - |
 
 For more information on RiGeBa Lighting's range of DMX controllers and lighting fixtures, visit our website at [RG-CTD192S8F5-K](/products/controller/rg-ctd192s8f5-k) and [RG-PS20A19-W](/products/profile/rg-ps20a19-w). Contact us to discuss your specific lighting needs and requirements.
+
+## What are the implications of using sound-activated control for small venues?
+
+Sound-activated control systems use audio signals to control lighting fixtures, which can be beneficial for small venues where a simple and intuitive control system is desired. However, this type of control system may not be suitable for all types of events or performances. For example, sound-activated control systems may not be able to handle complex lighting scenes or multiple light sources. Additionally, the audio signal may not be strong enough to control the lighting fixtures, especially in loud environments. Therefore, it is essential to consider the specific needs of the event or performance when deciding between sound-activated control and DMX control.
+
+## How do sound-activated control systems compare to DMX control systems in terms of flexibility and customization?
+
+Sound-activated control systems are generally less flexible and customizable than DMX control systems. DMX control systems use a standardized protocol to control lighting fixtures, which allows for greater flexibility and customization. DMX control systems can be used to control multiple light sources, create complex lighting scenes, and adjust the lighting levels in real-time. In contrast, sound-activated control systems are typically limited to controlling a single light source or a small group of light sources. Therefore, DMX control systems are generally preferred for larger events or performances where greater flexibility and customization are required.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS20A19-W | 20W Mini LED Profile Light | US$119 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| HJ-L1FMY202010T30-W | Small screw-type square tube truss | US$33 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PS20A19-W](/products/profile/rg-ps20a19-w) and [HJ-L1FMY202010T30-W](/products/truss/hj-l1fmy202010t30-w). Open each one for the full spec list, the volume tiers and the current EXW price.
