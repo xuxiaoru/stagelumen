@@ -221,3 +221,23 @@ Using a shipping company that offers delivery services can provide convenience a
 
 ## How do I choose the right delivery option for my business?
 The choice of delivery option depends on the specific needs of your business, including the type of goods being shipped, the distance and mode of transportation, and the level of risk you are willing to assume. It's essential to research and compare different delivery options to find the best option for your business.
+
+## What are the key differences between EXW and FOB shipping terms?
+
+When shipping goods, it's essential to understand the differences between EXW (Ex Works) and FOB (Free on Board) shipping terms. EXW means that the seller is responsible for making the goods available at their premises, and the buyer is responsible for loading and transporting the goods. In contrast, FOB means that the seller is responsible for loading the goods onto a carrier, and the buyer is responsible for the transportation costs. The key difference between the two is that EXW requires the buyer to take on more responsibility for the goods, while FOB shifts some of that responsibility to the seller. For example, if a buyer orders a lighting system from RiGeBa Lighting and chooses EXW, they will be responsible for loading and transporting the system to their premises. However, if they choose FOB, RiGeBa Lighting will be responsible for loading the system onto a carrier, and the buyer will only be responsible for the transportation costs. Understanding these differences is crucial for businesses to make informed decisions about their shipping needs.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8802 | 12 outputs | US$61 |
+| RG-CA8802 | 16 outputs | US$71 |
+| RG-CA8802 | 20 outputs | US$81 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-CA8402MINI | 6 outputs | US$61 |
+| RG-CA8402MINI | 8 outputs | US$71 |
+| RG-CA8402MINI | 10 outputs | US$81 |
