@@ -64,3 +64,17 @@ The safety regulations for using a laser in a live event include ensuring the la
 | RG-ML100BD-KC6AH40 6头10瓦光束LED摇头+RGB激光灯 | 10W LED*6PCS, 10W RGBW, input voltage AC110/220V 50-60Hz | $219 |
 
 To learn more about the 6W Moving head full color laser, visit [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). To learn more about the 6 heads full-color swinging laser arrows moving head laser, visit [6 heads full-color swinging laser arrows moving head laser](/products/laser/6-heads-full-color-swinging-laser). Contact us to discuss your laser needs and determine the right size and configuration for your live event.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML100BD-KC6AH40 | 6头10瓦光束LED摇头+RGB激光灯6*10w led moving head beam+RGB laser light | US$219 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
