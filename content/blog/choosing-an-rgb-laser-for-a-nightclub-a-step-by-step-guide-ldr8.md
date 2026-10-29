@@ -63,3 +63,21 @@ The common applications of RGB lasers in nightclubs include creating a unique an
 To learn more about the RG-LL10000f1LM model, visit [RG-LL10000f1LM](/products/laser/rg-ll10000f1lm). To learn more about the 6W Moving head full color laser, visit [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). 
 
 Next, review the specifications of each model and compare their features and prices to determine which one best meets your needs and budget.
+
+## How do I determine the optimal beam angle for my nightclub?
+
+Determining the optimal beam angle for a nightclub can be a complex task, as it depends on a variety of factors, including the size of the space, the type of beam pattern used, and the desired level of illumination. A general rule of thumb is to use a beam angle of around 30-40 degrees for a typical nightclub. However, this can vary depending on the specific requirements of the space. For example, if the space is particularly large or has a high ceiling, a narrower beam angle may be necessary to avoid overwhelming the space. On the other hand, if the space is small or has a low ceiling, a wider beam angle may be more suitable. It is also essential to consider the type of beam pattern used, as this will impact the overall appearance of the space. For example, a beam pattern with a narrow angle may be more suitable for creating a focused spotlight, while a beam pattern with a wider angle may be more suitable for creating a more diffuse illumination. By carefully considering these factors and using a beam angle of around 30-40 degrees, nightclub owners can create an optimal lighting scheme that enhances the overall ambiance of the space.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-LLRGB6000G1LLM | R 2W/638nm G 2W/520nm B 2W/445nm | US$1500 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [6 heads full-color swinging](/products/laser/6-heads-full-color-swinging-laser). Open each one for the full spec list, the volume tiers and the current EXW price.
