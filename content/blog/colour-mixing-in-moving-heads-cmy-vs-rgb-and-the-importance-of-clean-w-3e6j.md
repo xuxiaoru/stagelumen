@@ -63,3 +63,29 @@ The RG-ST1000B-S30f1000A has a power consumption of 1000W, a lamp quantity of 10
 | RG-ML400RS-KNNW1H21 | 1x400W | $459 | over 20 pcs |
 
 To learn more about the RG-ML500RS-KNNW1H20, visit its [product page](/products/moving/rg-ml500rs-knnw1h20). For more information on the RG-ST112A-S20f336A, visit its [product page](/products/theatre/rg-st112a-s20f336a). Next, review the specifications of the RG-ST1000B-S30f1000A and consider how its features can be used to create the desired lighting effects for your event.
+
+## What are the trade-offs between CMY and RGB colour mixing?
+
+When choosing between CMY and RGB colour mixing, it's essential to consider the trade-offs between the two. CMY colour mixing uses a combination of cyan, magenta, and yellow LEDs to produce a wide range of colours, but it can be more complex to set up and control. RGB colour mixing, on the other hand, uses red, green, and blue LEDs to produce a wide range of colours, but it can be more limited in terms of colour gamut. Additionally, RGB colour mixing can be more prone to colour shifting, which can affect the overall colour accuracy. Ultimately, the choice between CMY and RGB colour mixing will depend on the specific needs and requirements of the application. For example, a moving head with CMY colour mixing may be more suitable for applications that require a wide range of colours, such as concerts and live events, while a moving head with RGB colour mixing may be more suitable for applications that require a more subtle and nuanced colour palette, such as architectural lighting or museum exhibits. By understanding the trade-offs between CMY and RGB colour mixing, lighting designers and technicians can make informed decisions about which type of colour mixing to use in their applications.
+
+## How do I ensure a clean white in my colour mixing?
+
+A clean white is essential for achieving accurate and consistent colour mixing in moving heads. To ensure a clean white, it's crucial to select a moving head with a high-quality white LED or a combination of LEDs that can produce a neutral white colour. Additionally, the moving head should have a high colour rendering index (CRI) to ensure that the white colour is accurate and consistent. It's also essential to calibrate the moving head's colour mixing system to ensure that the white colour is consistent across different brightness levels and colour temperatures. By ensuring a clean white, lighting designers and technicians can achieve accurate and consistent colour mixing in their applications, which is critical for applications such as concerts, live events, and architectural lighting.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ST112A-S20f336A | 1008 PCS | US$58 |
+| RG-ST1000B-S30f1000A | 1000 PCS | US$88 |
+| RG-ML500RS-KNNW1H20 | 1x500W | US$569 |
+| RG-ML400RS-KNNW1H21 | 1x400W | US$459 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| New 295W 10R beam moving head | 10R beam moving head | US$332 |
+| 6W Moving head full color laser | 6W full-color laser | US$375 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-ST112A-S20f336A](/products/theatre/rg-st112a-s20f336a) and [RG-ST1000B-S30f1000A](/products/theatre/rg-st1000b-s30f1000a). Open each one for the full spec list, the volume tiers and the current EXW price.
