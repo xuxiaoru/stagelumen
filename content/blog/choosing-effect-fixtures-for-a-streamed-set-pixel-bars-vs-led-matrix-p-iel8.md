@@ -61,3 +61,21 @@ The key specifications to consider when choosing a fixture include wattage, beam
 | RG-EL004FL-3e42 3D Corn Pixel Matrix light | 729/720/480/489 pixel | $76 | 50+ |
 
 To learn more about the 24pcs 1.5W RGB Outdoor LED bar, visit its [product page](/products/par/24pcs-1-5w-rgb-outdoor-led). For more information on the 300W LED Panel light -warm white and cold white 2in1, visit its [product page](/products/profile/300w-led-panel-light-warm). Consider the set design, the desired visual effect, and the control protocol required, and choose fixtures that meet the required specifications. Contact us to discuss your specific needs and to determine the best fixtures for your streamed set.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-EL004FL-3e42 | 729/720/480/489 | US$76 |
+| RG-EL004FL-4e42 | 729/720/480/489 | US$89 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+| 24pcs 1.5W RGB Outdoor LED bar | 24*1.5w RGB 3 IN 1 | US$49 |
+| 300W LED Panel light -warm | 2in-1 | US$205 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm) and [Full moon scimitar led effect](/products/pixel/full-moon-scimitar-led-effect). Open each one for the full spec list, the volume tiers and the current EXW price.
