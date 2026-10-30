@@ -173,3 +173,23 @@ The key considerations when choosing a laser and a moving head beam for a church
 ## What are the benefits of using a laser and a moving head beam for a nightclub?
 
 The benefits of using a laser and a moving head beam for a nightclub include their ability to create a more dynamic and immersive experience, as well as their ability
+
+## How do I calculate the optimal beam angle for a specific throw distance?
+
+When choosing a beam angle for a moving head beam or laser, it's essential to consider the throw distance and the desired beam size. A general rule of thumb is to use a beam angle that is roughly 1/3 to 1/2 of the throw distance. For example, if you want to project a beam 12 meters away, you would need a beam angle of around 4-6 degrees. However, this calculation can be affected by various factors such as the beam's divergence, the distance to the target, and the desired beam size. It's also worth noting that using a beam angle that is too narrow can result in a beam that is too focused, while a beam angle that is too wide can result in a beam that is too diffuse. In the case of lasers, the beam angle is typically fixed and cannot be adjusted, so it's essential to choose a laser with the correct beam angle for your specific application. In contrast, moving head beams often have adjustable beam angles, allowing you to fine-tune the beam to suit your specific needs. By carefully considering the beam angle and throw distance, you can ensure that your lighting rig produces the desired effect and achieves the desired level of brightness and coverage.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML100BD-KC6AH40 | 6*10w led moving head beam+RGB laser light | US$219 |
+| RG-LL120WF8D | Single Red 300mw/638nm X8 | US$263 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [6W Moving head full color laser](/products/laser/6w-moving-head-full-color) and [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving). Open each one for the full spec list, the volume tiers and the current EXW price.
