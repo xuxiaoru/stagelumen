@@ -64,3 +64,23 @@ The beam angle of an audience blinder will depend on the size of the venue and t
 
 ## What are the key considerations when using LED strobes and audience blinders outdoors?
 When using LED strobes and audience blinders outdoors, there are several key considerations to keep in mind. The first is the weather resistance of the product, which will depend on the IP rating and the materials used in its construction. The second is the voltage and power requirements of the product, which will depend on the size and type of the event. The third is the control mode of the product, which will depend on the desired effect and the type of music being played. For more information on our outdoor LED strobes and audience blinders, visit our product page for the [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4) or the [RG-ST1344A-SO](/products/theatre/rg-st1344a-so).
+
+## How do I ensure that my LED strobe or audience blinder is properly ventilated?
+
+Proper ventilation is crucial when using LED strobes or audience blinders, as they can generate a significant amount of heat during operation. If the device is not properly ventilated, it can lead to overheating, which can cause damage to the LEDs, reduce their lifespan, or even lead to a fire. To ensure proper ventilation, it's essential to follow the manufacturer's instructions and recommendations for installation and maintenance. This may include providing adequate clearance around the device, using a heat sink or fan to dissipate heat, or ensuring that the device is installed in a well-ventilated area. By taking these precautions, you can help to ensure that your LED strobe or audience blinder operates safely and efficiently.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-TH4B400-W4 | White or Warm White and Cool White | US$196 |
+| RG-TH4B400-W4 | RGB | US$199 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-TH2B250 | 2*100W Cool white+Warm white high power led | US$64 |
+| RG-TH4B450 | 4*100W Cool white+Warm white high power led | US$95 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4) and [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4-2). Open each one for the full spec list, the volume tiers and the current EXW price.
