@@ -65,3 +65,21 @@ When looking for a battery uplight, consider the runtime, wireless DMX control, 
 To learn more about the RG-W18IB8-Ke8AM, visit its [product page](/products/par/rg-w18ib8-ke8am). For more information on the RG-TB140S28D-f60, check out its [product page](/products/pixel/rg-tb140s28d-f60).
 
 Contact us to discuss your specific needs and determine the best battery uplight solution for your next event.
+
+## How do battery uplights handle different power sources and voltage fluctuations?
+
+Battery uplights are designed to be portable and versatile, but they can be affected by different power sources and voltage fluctuations. Most battery uplights are designed to operate within a specific voltage range, and they may not perform well outside of this range. For example, the RG-LL10000f1L indoor 10W RGB wedding laser is designed to operate within a 220Vac, 50/60Hz power source, while the RG-LL30000m1L battery portable APP mini 3W RGB laser light is designed to operate within a 220Vac, 50/60Hz power source as well. It's essential to check the specifications of the battery uplight you're considering to ensure it can handle the power source and voltage fluctuations of your event.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-LL10000f1L | 10W RGB wedding laser | US$559 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-LL30000m1L | 3W RGB laser light | US$693 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-LL10000f1L](/products/laser/rg-ll10000f1l) and [RG-LL30000m1L](/products/laser/rg-ll30000m1l). Open each one for the full spec list, the volume tiers and the current EXW price.
