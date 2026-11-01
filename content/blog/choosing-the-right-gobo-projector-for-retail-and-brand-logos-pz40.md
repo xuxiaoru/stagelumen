@@ -67,3 +67,21 @@ The price range for a gobo projector can vary depending on the model and its spe
 | RG-GB400L6C0-ZK | 400W | IP65 | 13 |
 
 To learn more about the RG-GB750L4C0-BK, visit its [product page](/products/gobo/rg-gb750l4c0-bk). For more information on the RG-PJ600BL1S0N1-WK, visit its [product page](/products/gobo/rg-pj600bl1s0n1-wk). Contact us to discuss your gobo projector needs and determine the best solution for your retail or brand logo application.
+
+## How do gobo projectors differ from traditional projectors in terms of their functionality and applications?
+
+Gobo projectors differ from traditional projectors in several ways. Firstly, gobo projectors use a gobo (a metal or plastic template) to project images onto a surface, whereas traditional projectors use a lens to focus light onto a screen. This means that gobo projectors are better suited for applications where a high level of precision and accuracy is required, such as in retail and branding. Additionally, gobo projectors often have a more limited throw distance and beam angle compared to traditional projectors, which can make them more suitable for smaller spaces or applications where a more focused beam is required. Overall, gobo projectors offer a unique set of features and applications that make them an attractive option for certain types of projects.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-GB200L4C0-BK | 200W OSRAM LED IP65 200W outdoor LED Gobo Light | US$286 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PJ60LE4R1Y1-BK | Outdoor 60W IP65 remote logo project light | US$60 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-GB200L4C0-BK](/products/gobo/rg-gb200l4c0-bk) and [RG-PJ60LE4R1Y1-BK](/products/gobo/rg-pj60le4r1y1-bk). Open each one for the full spec list, the volume tiers and the current EXW price.
