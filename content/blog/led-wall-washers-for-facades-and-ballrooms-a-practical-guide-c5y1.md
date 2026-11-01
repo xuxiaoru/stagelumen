@@ -63,3 +63,19 @@ There are several types of LED wall washers available, including linear, rectang
 For more information on the [24pcs 1.5W RGB Outdoor LED bar](/products/par/24pcs-1-5w-rgb-outdoor-led) and the [RG-W38TB30-Ke14](/products/par/rg-w38tb30-ke14), please visit our website.
 
 Next, review the specifications of the LED wall washer models that fit your application and calculate the required number of fixtures for your specific use case.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| 24pcs 1.5W RGB Outdoor LED bar | 24*1.5w RGB 3 IN 1 | US$49 |
+| RG-W38TB30-Ke14 | 14x30w 4in1 | US$166 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-W39TB12-Kg18 | 18leds 6in1 | US$78 |
+| RG-W38TB30-Kf14 | 14x30w 3in1 | US$137 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [24pcs 1.5W RGB Outdoor LED bar](/products/par/24pcs-1-5w-rgb-outdoor-led) and [RG-W38TB30-Ke14](/products/par/rg-w38tb30-ke14). Open each one for the full spec list, the volume tiers and the current EXW price.
