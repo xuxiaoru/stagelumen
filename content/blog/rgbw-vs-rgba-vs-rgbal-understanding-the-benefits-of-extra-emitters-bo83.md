@@ -61,3 +61,21 @@ To determine the right size and configuration for your LED profile light, consid
 | 300AZ-RGBAL | IP65 PROFILE 300AZ-RGBAL outdoor RGBAL profile 300w | $930 |
 
 To learn more about the RG-PS180A19-RGBW and 300AZ-RGBAL fixtures, visit their product pages: [RG-PS180A19-RGBW](/products/profile/rg-ps180a19-rgbw) and [300AZ-RGBAL](/products/profile/300az-rgbal). Contact us to discuss your specific lighting needs and determine the best fixture for your application.
+
+## How do the different color models affect the overall performance of the fixture?
+
+The different color models, RGBW, RGBA, and RGBAL, have distinct differences in terms of their color gamut and performance. RGBW fixtures offer a wider range of colors, making them ideal for applications where a high level of color accuracy is required. RGBA fixtures, on the other hand, are limited to a narrower color gamut, making them less suitable for applications where a wide range of colors is required. RGBAL fixtures, with their additional emitter, offer an even wider color gamut, making them ideal for applications where a high level of color accuracy is required. However, they also increase the power consumption and size of the fixture, making them less suitable for applications where space is limited.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS180A19-RGBW | 180W LED Profile Light-RGBW | US$231 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS180A19F-RGBW | 180W LED Profile Light-RGBW | US$227 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [300AZ-RGBAL](/products/profile/300az-rgbal) and [RG-PS180A19-RGBW](/products/profile/rg-ps180a19-rgbw). Open each one for the full spec list, the volume tiers and the current EXW price.
