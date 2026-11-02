@@ -64,3 +64,25 @@ To troubleshoot common lighting issues, consider the following table:
 | Uneven coverage | Incorrect light placement | Adjust light placement to optimize coverage |
 
 Next, review the specifications of the [RG-FR2400H8S-D](/products/effect/rg-fr2400h8s-d) and consider how its features can be used to enhance your lighting design.
+
+## What are the implications of a beam angle on the overall lighting design?
+
+When designing a lighting system, the beam angle of a light source plays a crucial role in determining the overall aesthetic and functionality of the space. A beam angle that is too narrow may result in a focused, intense light that is not suitable for a particular application, while a beam angle that is too wide may result in a diffuse, washed-out light that lacks definition. The choice of beam angle depends on the specific requirements of the space, including the type of performance, the size and shape of the audience, and the desired level of lighting intensity. By carefully selecting the beam angle, lighting designers can create a balanced and effective lighting system that enhances the overall experience of the space.
+
+## How do beam angles compare to other lighting parameters?
+
+Beam angles are just one of many parameters that can be adjusted in a lighting system to achieve the desired effect. Other parameters, such as light output, color temperature, and beam spread, can also be adjusted to achieve the desired result. For example, a beam light with a narrow beam angle may be used to create a focused spotlight, while a beam light with a wider beam angle may be used to create a more diffuse wash. By understanding the relationships between different lighting parameters, lighting designers can create a more effective and efficient lighting system.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| New 295W 10R beam moving head | 10 outputs | US$332 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| 380W Indoor Beam Light Indoor Without CMY | 1 output | US$740 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) and [380W Indoor Beam Light Indoor](/products/moving/380w-indoor-beam-light-indoor). Open each one for the full spec list, the volume tiers and the current EXW price.
