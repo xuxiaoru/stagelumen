@@ -64,3 +64,21 @@ To integrate movement macros with other lighting elements in your design, consid
 | RG-M230BN-KMH16 | life: 2200 hours | $179 | $159 (over 100 pcs) |
 
 To learn more about the 6W Moving head full color laser, visit [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). To learn more about the New 295W 10R beam moving head, visit [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving). Next, review the specifications of the RG-M230BN-KMH16 and determine if it is suitable for your lighting design.
+
+## How do the different types of movement macros used in lighting design impact the overall aesthetic and functionality of a show?
+
+Movement macros are a crucial aspect of lighting design, allowing designers to create complex and dynamic lighting effects. The different types of movement macros, such as pan-and-tilt, orbit, and zoom, can greatly impact the overall aesthetic and functionality of a show. For example, a pan-and-tilt macro can create a sense of movement and energy, while an orbit macro can add a sense of depth and dimensionality. By carefully selecting and programming movement macros, designers can create a cohesive and engaging lighting design that enhances the overall performance.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML420WC-KCH93 | 7 LEDs*60W | US$590 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML760WC-KCH99 | 19 LEDs*40W | US$560 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
