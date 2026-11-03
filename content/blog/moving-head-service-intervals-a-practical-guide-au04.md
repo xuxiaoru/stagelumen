@@ -70,3 +70,25 @@ Using a moving head with a high IP rating, such as the RG-ML760WC-KCH99, can pro
 | RG-ML500BL-KCRe12AH194 | 12x40W LED | $325 |
 
 To learn more about the [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) and the [RG-ML760WC-KCH99](/products/moving/rg-ml760wc-kch99), visit our product pages. Next, check the product manual for specific maintenance and storage instructions for your moving heads.
+
+## What are the typical service intervals for moving head lights?
+
+Moving head lights are designed to operate for extended periods without maintenance. However, regular cleaning and maintenance can help extend their lifespan. Typically, moving head lights should be serviced every 500-1000 hours, depending on usage and environmental conditions. During this time, the lens and optics should be cleaned, and the moving parts should be lubricated. It is also recommended to check and replace the fuses and bulbs as needed. By following a regular maintenance schedule, moving head lights can continue to perform optimally and provide reliable lighting for events and productions.
+
+## How do moving head lights handle temperature extremes?
+
+Moving head lights are designed to operate in a wide range of temperatures, from -20°C to 40°C. However, extreme temperatures can affect their performance and lifespan. In hot temperatures, moving head lights can overheat, which can cause damage to the electronics and optics. In cold temperatures, moving head lights can freeze, which can cause the moving parts to stick and affect their movement. To mitigate these effects, moving head lights should be stored in a cool, dry place when not in use, and should be protected from direct sunlight and moisture. Additionally, moving head lights with high IP ratings can withstand more extreme temperatures and are better suited for outdoor use.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML760WC-KCH99 | 19x40W | US$560 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML420WC-KCH93 | 7x60W | US$590 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
