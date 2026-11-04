@@ -137,3 +137,34 @@ jobs:
           echo "---- indexnow response ----"
           cat /tmp/indexnow-resp.json 2>/dev/null || true
           echo
+
+      # Share ONE article a day on the company Facebook Page. Gated on a
+      # repository variable so the nightly job stays quiet while the page is
+      # still new. Turn it on under:
+      #   Settings > Secrets and variables > Actions > Variables >
+      #   New repository variable: SOCIAL_AUTO = 1
+      # The IndexNow step above already slept 180s, so the article is live and
+      # its og:title is scrapable by the time this runs.
+      - name: Share one post on the Facebook Page
+        if: always() && vars.SOCIAL_AUTO == '1'
+        run: |
+          if [ ! -s /tmp/published.txt ]; then
+            echo "nothing published this run — Facebook not called"
+            exit 0
+          fi
+          URLS=$(node -e '
+            const fs = require("fs");
+            const u = fs.readFileSync("/tmp/published.txt", "utf8")
+              .split("\n").map(s => s.trim()).filter(Boolean);
+            console.log(JSON.stringify([...new Set(u)]));
+          ')
+          echo "sharing at most one of: ${URLS}"
+          curl -sS -X POST "https://www.rigebalighting.com/api/social" \
+            -H "authorization: Bearer ${ADMIN_TOKEN}" \
+            -H "content-type: application/json" \
+            -d "{\"urls\":${URLS},\"limit\":1}" \
+            -o /tmp/social-resp.json \
+            || echo "::warning::Facebook request failed (non-fatal — the posts are already live)"
+          echo "---- /api/social response ----"
+          cat /tmp/social-resp.json 2>/dev/null || true
+          echo

@@ -1,0 +1,82 @@
+name: Share an article to Facebook Page
+
+# Manual / API-triggered posting. Useful for the first live test, for
+# re-sharing an older article, and for the review-before-publish phase.
+# Trigger from the Actions tab, or:
+#   curl -X POST -H "authorization: Bearer <PAT>" \
+#     https://api.github.com/repos/xuxiaoru/stagelumen/actions/workflows/social-post.yml/dispatches \
+#     -d '{"ref":"main","inputs":{"urls":""}}'
+on:
+  workflow_dispatch:
+    inputs:
+      urls:
+        description: 'Article URLs (comma/space/newline separated). Empty = newest post.'
+        required: false
+        type: string
+        default: ''
+      dry_run:
+        description: 'Preview only — verify the token and the copy, do not post'
+        required: false
+        type: boolean
+        default: false
+      unpublished:
+        description: 'Create an unpublished post (page admins only, for review)'
+        required: false
+        type: boolean
+        default: false
+      force:
+        description: 'Ignore the already-posted guard'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  post:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      ADMIN_TOKEN: ${{ secrets.ADMIN_TOKEN }}
+      INPUT_URLS: ${{ inputs.urls }}
+      INPUT_DRY: ${{ inputs.dry_run }}
+      INPUT_UNPUB: ${{ inputs.unpublished }}
+      INPUT_FORCE: ${{ inputs.force }}
+    steps:
+      - name: Call /api/social
+        run: |
+          PAYLOAD=$(node -e '
+            const raw = (process.env.INPUT_URLS || "").trim();
+            const p = raw
+              ? { urls: raw.split(/[\s,]+/).filter(Boolean), limit: 1 }
+              : { latest: true, limit: 1 };
+            if (process.env.INPUT_DRY === "true") p.dryRun = true;
+            if (process.env.INPUT_UNPUB === "true") p.unpublished = true;
+            if (process.env.INPUT_FORCE === "true") p.force = true;
+            process.stdout.write(JSON.stringify(p));
+          ')
+          echo "payload: ${PAYLOAD}"
+          curl -sS -X POST "https://www.rigebalighting.com/api/social" \
+            -H "authorization: Bearer ${ADMIN_TOKEN}" \
+            -H "content-type: application/json" \
+            -d "${PAYLOAD}" \
+            -o /tmp/social.json
+          echo "---- /api/social response ----"
+          cat /tmp/social.json
+          echo
+          node -e '
+            const fs = require("fs");
+            let r = {};
+            try { r = JSON.parse(fs.readFileSync("/tmp/social.json", "utf8")); } catch (e) {}
+            if (!r.ok) {
+              console.log("::error::Facebook post failed: " + JSON.stringify(r.results || r.error || r));
+              process.exit(1);
+            }
+            for (const x of (r.results || [])) {
+              if (x.postId) console.log("POSTED:", x.permalink_url || x.postId, "|", x.title);
+              else if (x.skipped) console.log("SKIPPED:", x.skipped, "|", x.title);
+              else if (x.dryRun) console.log("DRY-RUN OK:", x.title, "|", JSON.stringify(x.message));
+              else console.log("NO POST ID:", JSON.stringify(x));
+            }
+          '

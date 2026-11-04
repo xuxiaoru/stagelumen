@@ -24,6 +24,7 @@ import { sendEmailVerbose, sendWebhook } from '../_lib/notify.js';
 const WHITELIST = [
   'AI', 'DB', 'ADMIN_TOKEN', 'GITHUB_PAT', 'RESEND_API_KEY',
   'NOTIFY_WEBHOOK', 'VECTORIZE', 'KV', 'R2', 'ASSETS', 'UPLOADS',
+  'FB_PAGE_ID', 'FB_PAGE_TOKEN',
 ];
 
 function diagnose(env) {
@@ -96,6 +97,27 @@ function notifyDiag(env) {
     hot_only: !!env.NOTIFY_HOT_ONLY,
     note: 'An inquiry with no working channel is stored in D1 but nobody is alerted. ' +
           'Set at least one of: RESEND_API_KEY+NOTIFY_EMAIL, NOTIFY_WEBHOOK, GITHUB_PAT.',
+  };
+}
+
+/**
+ * Facebook Page publishing wiring. The Page ID is public (it is in the
+ * page URL), but the token must never appear here. Showing the ID is
+ * deliberate: it catches the classic mistake of pasting the /p/ profile
+ * ID instead of the /me/accounts Page ID.
+ */
+function socialDiag(env) {
+  const id = String((env && env.FB_PAGE_ID) || '').trim();
+  const token = String((env && env.FB_PAGE_TOKEN) || '').trim();
+  return {
+    configured: !!(id && token),
+    page_id: id || null,
+    token_length: token.length,
+    missing: [
+      ...(id ? [] : ['FB_PAGE_ID']),
+      ...(token ? [] : ['FB_PAGE_TOKEN']),
+    ],
+    note: 'GET /api/social (admin) does a live Graph API token check.',
   };
 }
 
@@ -205,6 +227,7 @@ export async function onRequest(context) {
     analytics_events: analyticsCount,
     ready: hasDb(env) && !!env.ADMIN_TOKEN,
     notify: notifyDiag(env),
+    social: socialDiag(env),
     diag: diagnose(env),
     ai_smoke: smoke,
     gh_probe: gh,
