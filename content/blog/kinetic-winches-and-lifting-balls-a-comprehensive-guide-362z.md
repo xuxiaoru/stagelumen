@@ -63,3 +63,21 @@ The pricing options for kinetic winches vary depending on the model and features
 You can find more information about the [5KG DMX Control winch/lifting machine](/products/kinetic/5kg-dmx-control-winch-lifting-machine) and the [EP-LFBA067L-DhWf 3KG DMX winch/lifting football light](/products/kinetic/ep-lfba067l-dhwf) on our website.
 
 Next, check the specifications of the kinetic winch you're using to ensure it can handle the weight and movement of your lifting balls.
+
+## What are the factors that influence the cost of a kinetic winch?
+
+The cost of a kinetic winch can be influenced by several factors, including the weight capacity, lifting range, and configuration of the winch. For example, a 5KG Dmx Control winch/lifting machine with a lifting range of 0-2M and 8 outputs has an EXW price of US$138, while an EP-LFBA067L-DhWf with a lifting range of 0-4m and 18CH has an EXW price of US$135. Additionally, the price of the winch can also be influenced by the brand, quality, and certifications of the product. It is essential to consider these factors when choosing a kinetic winch to ensure that the product meets the specific needs of the application.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| 5KG Dmx Control winch/lifting machine | 0-2M | US$138 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| EP-LFBA067L-DhWf | 0-4m | US$135 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [5KG Dmx Control winch/lifting](/products/kinetic/5kg-dmx-control-winch-lifting-machine) and [EP-LFBA067L-DhWf](/products/kinetic/ep-lfba067l-dhwf). Open each one for the full spec list, the volume tiers and the current EXW price.
