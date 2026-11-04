@@ -30,8 +30,14 @@ import {
 
 function composeMessage(article, override) {
   if (override) return String(override).trim().slice(0, 800);
-  const body = article.description || 'Specs, DMX channel maps and EXW pricing inside.';
-  return (article.title + '\n\n' + body).trim().slice(0, 800);
+  // og:description on our articles is an SEO fact line ("New 295W 10R beam
+  // moving head costs $332"). Copying it verbatim onto a public Facebook page
+  // is awkward AND publishes EXW unit prices to competitors. Default social
+  // copy is therefore the title plus a fixed call to action; pass "message"
+  // in the request body when a hand-written line is wanted.
+  return (article.title + '\n\n' +
+    'Read the full guide — fixture specs, DMX channel maps and EXW pricing.')
+    .trim().slice(0, 800);
 }
 
 export async function onRequest(context) {
