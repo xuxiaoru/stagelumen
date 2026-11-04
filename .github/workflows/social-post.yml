@@ -1,5 +1,7 @@
 name: Share an article to Facebook Page
 
+# Registered via a native git push so Actions picks up the dispatch trigger.
+
 # Manual / API-triggered posting. Useful for the first live test, for
 # re-sharing an older article, and for the review-before-publish phase.
 # Trigger from the Actions tab, or:
