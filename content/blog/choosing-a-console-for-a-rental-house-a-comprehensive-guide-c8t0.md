@@ -64,3 +64,25 @@ A console with a user-friendly interface can significantly improve the efficienc
 The right price point for your console depends on your specific needs and budget. Consider the features and specifications you need, as well as the cost of any additional equipment or support required. For example, the RG-CTD40S4F-K is priced at USD 28, while the RG-CS0302 is priced at USD 148.
 
 To learn more about our console options, visit our product pages, such as the [RG-CTD40S6F-K](/products/controller/rg-ctd40s6f-k) and the [RG-CS0302](/products/controller/rg-cs0302). Contact us to discuss your specific needs and determine the best console for your rental house.
+
+## What factors influence the choice of a console for a rental house?
+
+When selecting a console for a rental house, several factors come into play. The type of productions the rental house will be working on, the size of the venue, and the number of crew members are all important considerations. Additionally, the rental house's budget and the level of support they require from the manufacturer must also be taken into account. For example, a rental house that specializes in large-scale productions may require a console with a higher channel count and more advanced features, while a smaller rental house may be able to get by with a more basic console. By considering these factors, the rental house can choose a console that meets their specific needs and provides the best possible support for their operations.
+
+## How do console manufacturers ensure compatibility with different lighting fixtures?
+
+Console manufacturers take several steps to ensure compatibility with different lighting fixtures. First, they conduct thorough testing of their consoles with a wide range of fixtures to ensure that they can handle the varying power requirements and communication protocols of different fixtures. Second, they provide detailed documentation and technical support to help users troubleshoot any compatibility issues that may arise. Finally, they often work closely with lighting manufacturers to develop custom firmware and software updates that can be used to optimize compatibility with specific fixtures. By taking these steps, console manufacturers can help ensure that their consoles are compatible with a wide range of lighting fixtures, making it easier for users to integrate their consoles into their existing lighting systems.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25). Open each one for the full spec list, the volume tiers and the current EXW price.
