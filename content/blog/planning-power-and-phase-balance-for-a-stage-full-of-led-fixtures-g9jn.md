@@ -58,3 +58,19 @@ To troubleshoot common issues with power and phase balance in stage lighting, it
 To maintain and repair LED fixtures, it is essential to follow the manufacturer's instructions and guidelines. For example, the [RG-EL0001FL-3e576](/products/pixel/rg-el0001fl-3e576) has a recommended maintenance schedule that includes regular cleaning and inspection. Following this schedule helps to ensure that the fixtures are operating safely and efficiently, and reduces the risk of damage or failure.
 
 Next, review the power and phase balance of your stage lighting system and make any necessary adjustments to ensure safe and efficient operation.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-EL0001FL-3e576 | 16-corner windmill | US$185 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-W40IB1-Kf100F | 120° | US$52 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [Full moon scimitar led effect](/products/pixel/full-moon-scimitar-led-effect) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
