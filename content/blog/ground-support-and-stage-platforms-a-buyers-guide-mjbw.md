@@ -67,3 +67,19 @@ To store and transport a stage platform, make sure it is properly disassembled a
 | TS-ST120120BF-R40T60 | - | 1220x1220mm | Aluminum | $69 |
 
 To learn more about RiGeBa Lighting's stage platforms, visit their product pages, such as the [RG-DDF40S45-V32](/products/floor/rg-ddf40s45-v32) and [TS-ST100100BFY-K60T100](/products/truss/ts-st100100bfy-k60t100). Contact their sales team to inquire about customization options and pricing. Next, review the product specifications and compare different models to find the best fit for your needs.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| TS-ST100100BFY-K60T100 | 1000x1000mm | US$106 |
+| TS-ST120120BF-R40T60 | 1220x1220mm | US$69 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS200A110-W | 200W | US$115 |
+| RG-EL0001FL-3e260 | 260w | US$190 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-EL0001FL-3e260](/products/pixel/rg-el0001fl-3e260) and [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25). Open each one for the full spec list, the volume tiers and the current EXW price.
