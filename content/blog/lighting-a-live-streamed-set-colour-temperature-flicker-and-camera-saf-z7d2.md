@@ -62,3 +62,25 @@ Some common mistakes to avoid when lighting a live-streamed set include using li
 To learn more about the 300W LED Panel light -warm, visit the [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm) product page. For more information on the RG-ST112A-S20f336A, visit the [RG-ST112A-S20f336A](/products/theatre/rg-st112a-s20f336a) product page. 
 
 Next, review your lighting plan and consider the specific requirements of your live stream, including the size of the set, the number of cameras, and the desired mood or atmosphere. Contact us to discuss your lighting needs and determine the best fixtures for your production.
+
+## What are the implications of using different lighting fixtures on the overall aesthetic of a live stream?
+
+When it comes to live streaming, the choice of lighting fixtures can greatly impact the overall aesthetic of the stream. Different lighting fixtures can create different moods and atmospheres, and can also affect the way the audience perceives the content. For example, using a single color temperature can create a cohesive look, while using multiple color temperatures can create a more dynamic and interesting visual experience. Additionally, the choice of lighting fixtures can also affect the way the lighting is controlled, with some fixtures offering more advanced features such as DMX control and camera-safe dimming. By choosing the right lighting fixtures for the job, streamers can create a visually appealing and engaging live stream that captures the attention of their audience.
+
+## How can I ensure that my lighting fixtures are compatible with my streaming equipment?
+
+When it comes to live streaming, it's essential to ensure that your lighting fixtures are compatible with your streaming equipment. This includes checking the power requirements of your fixtures, as well as the type of control protocol they use. For example, some lighting fixtures may require a DMX control protocol, while others may use a different protocol such as PWM. By ensuring that your lighting fixtures are compatible with your streaming equipment, you can avoid any technical issues that may arise during the stream. Additionally, some lighting fixtures may also offer features such as camera-safe dimming, which can help to minimize any potential issues with the lighting. By taking the time to research and choose the right lighting fixtures for your streaming equipment, you can create a seamless and high-quality live stream.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ST112A-S20f336A | 1008 Colouring Strobe Light | US$58 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ST1000B-S30f1000A | LED RGB 3In1 1000W Colouring Strobe | US$88 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm) and [RG-ST112A-S20f336A](/products/theatre/rg-st112a-s20f336a). Open each one for the full spec list, the volume tiers and the current EXW price.
