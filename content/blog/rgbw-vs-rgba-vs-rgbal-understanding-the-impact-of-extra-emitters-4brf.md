@@ -4,7 +4,7 @@ slug: "rgbw-vs-rgba-vs-rgbal-understanding-the-impact-of-extra-emitters-4brf"
 date: "2026-10-20T19:30:05.920Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "300AZ-RGBAL costs $930"
+excerpt: "The RG-PS180A19-RGBW and RG-PS180A19F-RGBW offer different beam angles and configurations, making them suitable for different applications."
 image: "assets/images/products/300az-rgbal.jpg"
 imageAlt: "300AZ-RGBAL outdoor RGBAL profile"
 tags:

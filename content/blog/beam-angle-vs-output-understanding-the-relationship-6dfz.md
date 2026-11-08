@@ -4,7 +4,7 @@ slug: "beam-angle-vs-output-understanding-the-relationship-6dfz"
 date: "2026-11-02T23:12:38.015Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "230W beam reads brighter than 400W wash"
+excerpt: "For technicians and lighting professionals, it's not uncommon to encounter situations where a 230W beam appears brighter than a 400W wash."
 image: "assets/images/products/rg-m230b-koh20.jpg"
 imageAlt: "230W beam moving head light"
 tags:

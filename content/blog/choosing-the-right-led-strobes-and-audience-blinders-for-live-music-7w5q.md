@@ -4,7 +4,7 @@ slug: "choosing-the-right-led-strobes-and-audience-blinders-for-live-music-7w5q"
 date: "2026-10-07T20:44:20.588Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "Select RG-TH8B600S for 600W output"
+excerpt: "For live music applications, consider the RG-TH8B600S, which offers 600W of output and a flash rate of up to 25 times per second."
 image: "assets/images/products/rg-th8b600s.jpg"
 imageAlt: "RG-TH8B600S LED strobe"
 tags:

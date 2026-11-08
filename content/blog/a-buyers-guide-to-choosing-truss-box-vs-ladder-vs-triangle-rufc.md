@@ -4,7 +4,7 @@ slug: "a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-rufc"
 date: "2026-10-14T19:34:26.100Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Choose HJ-L1TMY303010T50-W for $29.7"
+excerpt: "For example, HJ-L1SCY303010T50-W has a length of 1000mm and a weight of 6.3425 kg, making it suitable for certain applications."
 image: "assets/images/products/hj-l1tmy303010t50-w.jpg"
 imageAlt: "Ladder truss"
 tags:

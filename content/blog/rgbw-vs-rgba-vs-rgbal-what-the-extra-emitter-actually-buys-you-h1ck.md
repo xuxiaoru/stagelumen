@@ -4,7 +4,7 @@ slug: "rgbw-vs-rgba-vs-rgbal-what-the-extra-emitter-actually-buys-you-h1ck"
 date: "2026-10-09T20:12:42.171Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "300AZ-RGBAL costs $930"
+excerpt: "The RG-PS180A19-RGBW also uses the DMX control protocol, which provides a high level of control and flexibility."
 image: "assets/images/products/300az-rgbal.jpg"
 imageAlt: "300AZ-RGBAL fixture"
 tags:

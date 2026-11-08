@@ -4,7 +4,7 @@ slug: "choosing-a-console-for-a-rental-house-a-comprehensive-guide-18xr"
 date: "2026-10-25T18:31:06.784Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Consider 24 channels"
+excerpt: "The RG-CTD40S6F-K, for example, offers 24 channels, while the RG-CTD40S4F-K offers 16 channels."
 image: "assets/images/products/rg-ctd40s6f-k.jpg"
 imageAlt: "LED Operator 3 Lighting Controller"
 tags:

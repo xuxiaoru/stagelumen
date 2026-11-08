@@ -4,7 +4,7 @@ slug: "colour-mixing-in-moving-heads-cmy-vs-rgb-and-the-importance-of-clean-w-3e
 date: "2026-10-29T20:26:02.687Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check 1000W RGB strobe"
+excerpt: "This system is often used in strobe lights, such as the RG-ST112A-S20f336A, which uses an RGB system to produce a wide range of colours."
 image: "assets/images/products/rg-ml500rs-knnw1h20.jpg"
 imageAlt: "500W LED moving head"
 tags:

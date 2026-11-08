@@ -4,7 +4,7 @@ slug: "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-m6
 date: "2026-10-11T19:38:50.885Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "New 295W 10R beam moving head costs $332"
+excerpt: "For example, the New 295W 10R beam moving head may be more suitable for smaller venues, while the RG-ML420WC-KCH93 may be more suitable for larger venues."
 image: "assets/images/products/new-295w-10r-beam-moving.jpg"
 imageAlt: "New 295W 10R beam moving head"
 tags:

@@ -4,7 +4,7 @@ slug: "dmx-splitters-and-opto-isolation-a-step-by-step-guide-7st3"
 date: "2026-11-05T21:30:54.289Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Use 4 DMX splitters"
+excerpt: "When one universe needs four cable runs, use 4 DMX splitters, such as the RG-CA8402C, to ensure opto-isolation and reliable signal transmission."
 image: "assets/images/products/ep-lfba010b1-dhwf.jpg"
 imageAlt: "DMX splitter"
 tags:

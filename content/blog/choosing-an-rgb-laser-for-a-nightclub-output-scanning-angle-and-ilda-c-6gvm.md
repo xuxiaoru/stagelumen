@@ -4,7 +4,7 @@ slug: "choosing-an-rgb-laser-for-a-nightclub-output-scanning-angle-and-ilda-c-6g
 date: "2026-10-18T18:13:58.183Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check 10W output"
+excerpt: "A 10W output, such as the RG-LL10000f1LM, is a good starting point. This output can provide a sufficient amount of light to cover a moderate-sized venue."
 image: "assets/images/products/rg-ll10000f1lm.jpg"
 imageAlt: "RGB laser light"
 tags:

@@ -4,7 +4,7 @@ slug: "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-c5y1"
 date: "2026-11-01T19:50:53.628Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check 24pcs 1.5W RGB Outdoor LED bar"
+excerpt: "For more information on the 24pcs 1.5W RGB Outdoor LED bar and the RG-W38TB30-Ke14, please visit our website."
 image: "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg"
 imageAlt: "LED wall washer"
 tags:

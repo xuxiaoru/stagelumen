@@ -4,7 +4,7 @@ slug: "lighting-a-school-or-community-theatre-on-a-fixed-budget-irru"
 date: "2026-10-04T18:43:55.476Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "RG-M300BH-KYH16M for $205"
+excerpt: "You can also consider using a DMX smart splitter like the RG-CA8802PRO-A to expand your lighting system and allow for more complex lighting setups."
 image: "assets/images/products/rg-m300bh-kyh16m.jpg"
 imageAlt: "300W 16CH Beam moving head light"
 tags:

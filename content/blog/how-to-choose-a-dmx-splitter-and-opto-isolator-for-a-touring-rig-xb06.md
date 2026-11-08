@@ -4,7 +4,7 @@ slug: "how-to-choose-a-dmx-splitter-and-opto-isolator-for-a-touring-rig-xb06"
 date: "2026-10-04T12:30:04.739Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Choose a DMX splitter with IP65 rating"
+excerpt: "The RG-CA8802 DMX Splitter and the RG-CA8402C Waterproof DMX Splitter are examples of DMX splitters that can be used in a touring rig."
 image: "assets/images/products/rg-ca8802.jpg"
 imageAlt: "DMX Splitter"
 tags:

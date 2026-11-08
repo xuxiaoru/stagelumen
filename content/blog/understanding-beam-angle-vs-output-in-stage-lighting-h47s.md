@@ -4,7 +4,7 @@ slug: "understanding-beam-angle-vs-output-in-stage-lighting-h47s"
 date: "2026-10-10T19:25:30.164Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "230W beam reads brighter than 400W wash"
+excerpt: "The RG-M230BN-KMH16, for example, has a beam angle that can make it appear brighter than a wash light with a higher output."
 image: "assets/images/products/rg-m230bn-kmh16.jpg"
 imageAlt: "RG-M230BN-KMH16 beam moving head light"
 tags:

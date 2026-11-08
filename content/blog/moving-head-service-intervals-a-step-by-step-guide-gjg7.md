@@ -4,7 +4,7 @@ slug: "moving-head-service-intervals-a-step-by-step-guide-gjg7"
 date: "2026-10-22T19:21:20.671Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Clean every 2200 hours"
+excerpt: "Clean your moving heads every 2200 hours, and replace the belt when it shows signs of wear."
 image: "assets/images/products/new-295w-10r-beam-moving.jpg"
 imageAlt: "New 295W 10R beam moving head"
 tags:

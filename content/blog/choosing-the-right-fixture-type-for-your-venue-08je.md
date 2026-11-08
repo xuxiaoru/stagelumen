@@ -7,7 +7,7 @@ author: "RiGeBa Lighting Team"
 category: "How-To"
 image: "assets/images/products/rg-ml150bp-knnw1h16.jpg"
 imageAlt: "150W LED beam moving head light for venue installation"
-excerpt: "Fixed PAR, LED bar, profile, moving head or wash: which family does which job, with real EXW prices from US$45 to US$223 per fixture."
+excerpt: "Fixed PAR, LED bar, profile, moving head or wash: which fixture family does which job, and how to choose for a venue."
 tags:
   - fixture selection
   - lighting design

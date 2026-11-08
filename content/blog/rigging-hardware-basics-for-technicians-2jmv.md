@@ -4,7 +4,7 @@ slug: "rigging-hardware-basics-for-technicians-2jmv"
 date: "2026-11-06T20:59:04.427Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Inspect 1024 LEDs before every show"
+excerpt: "On the other hand, if you're working with heavier loads, you may want to consider the TS-WJHZB156X107X50-W30 Single Hook Clamp with Connecting Piece."
 image: "assets/images/products/ts-wjhzb156x107x50-w30.jpg"
 imageAlt: "LED digital dance floor"
 tags:

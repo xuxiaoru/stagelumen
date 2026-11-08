@@ -4,7 +4,7 @@ slug: "fan-noise-in-led-fixtures-a-practical-guide-s61h"
 date: "2026-10-23T19:26:53.929Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check RG-PS200A110-W for silent running"
+excerpt: "The RG-PS200A110-W, for example, is a 200W LED tricolor soft light with a relatively low fan noise level, making it suitable for quiet environments."
 image: "assets/images/products/rg-ps200a110-w.jpg"
 imageAlt: "RG-PS200A110-W LED fixture"
 tags:

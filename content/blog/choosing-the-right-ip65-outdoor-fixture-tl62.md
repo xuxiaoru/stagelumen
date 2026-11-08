@@ -7,7 +7,7 @@ author: "RiGeBa Lighting Team"
 category: "How-To"
 image: "assets/images/products/rg-ml420wc-kch93.jpg"
 imageAlt: "RG-ML420WC-KCH93 IP65 outdoor LED moving head wash light"
-excerpt: "IP65 covers dust-tight and water jets, not immersion. Which rating you actually need outdoors, and real EXW prices from US$185 to US$757."
+excerpt: "IP65 covers dust-tight and water jets, not immersion; the second digit of the rating is the one that matters outdoors."
 tags:
   - outdoor lighting
   - IP65 rating

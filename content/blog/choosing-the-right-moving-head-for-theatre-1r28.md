@@ -7,7 +7,7 @@ author: "RiGeBa Lighting Team"
 category: "How-To"
 image: "assets/images/products/rg-ps200a20t50-k.jpg"
 imageAlt: "200W LED zoom profile light used for theatre front light"
-excerpt: "Noise, colour temperature and a clean beam edge matter more than output in a theatre. What to specify, with EXW prices from US$64 to US$223."
+excerpt: "Noise, colour temperature and a clean beam edge matter more than output in a theatre."
 tags:
   - Moving Heads
   - Theatre Lighting

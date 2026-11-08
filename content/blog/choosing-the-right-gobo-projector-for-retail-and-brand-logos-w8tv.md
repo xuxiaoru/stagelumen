@@ -4,7 +4,7 @@ slug: "choosing-the-right-gobo-projector-for-retail-and-brand-logos-w8tv"
 date: "2026-10-21T19:27:09.273Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "Select a gobo projector with a throw distance of up to 100M"
+excerpt: "A 400W projector, such as the RG-GB400L6C0-ZK, will be brighter and have a longer throw distance than a 200W projector, such as the RG-GB200L6C0-ZK."
 image: "assets/images/products/rg-gb750l4c0-bk.jpg"
 imageAlt: "Gobo projector"
 tags:

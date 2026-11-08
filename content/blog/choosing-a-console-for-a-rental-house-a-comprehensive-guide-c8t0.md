@@ -4,7 +4,7 @@ slug: "choosing-a-console-for-a-rental-house-a-comprehensive-guide-c8t0"
 date: "2026-11-05T21:33:06.174Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Consider 28 channels"
+excerpt: "Yes, some consoles offer expandability options, such as the RG-CTD40S6F-K, which can be expanded to 48 channels."
 image: "assets/images/products/rg-ctd40s4f-k.jpg"
 imageAlt: "LED Operator 3 Lighting Controller"
 tags:

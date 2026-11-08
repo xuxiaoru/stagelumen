@@ -4,7 +4,7 @@ slug: "kinetic-winches-and-lifting-balls-a-comprehensive-guide-362z"
 date: "2026-11-04T21:25:06.393Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check 5KG load limit"
+excerpt: "The EP-LFBA067L-DhWf 3KG DMX winch/lifting football light has a lifting range of 0-4m and uses DMX protocols for control."
 image: "assets/images/products/5kg-dmx-control-winch-lifting-machine.jpg"
 imageAlt: "5KG DMX control winch"
 tags:

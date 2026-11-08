@@ -4,7 +4,7 @@ slug: "creating-intentional-movement-macros-on-moving-heads-7717"
 date: "2026-10-22T19:20:13.779Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Use 6W moving heads"
+excerpt: "The figure-8 cue requires more precise programming and a moving head with a faster movement range, such as the RG-M230BN-KMH16."
 image: "assets/images/products/new-295w-10r-beam-moving.jpg"
 imageAlt: "6W moving head"
 tags:

@@ -4,7 +4,7 @@ slug: "choosing-the-right-atmospheric-machine-for-your-venue-5grv"
 date: "2026-10-19T20:42:37.505Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "RG-FO600V17DW hazer machine costs $175"
+excerpt: "The RG-FO600V17DW hazer machine, for example, features a digital display that allows for easy control and adjustment of the machine's settings."
 image: "assets/images/products/water-based-oil-for-mist.jpg"
 imageAlt: "hazer machine"
 tags:

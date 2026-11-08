@@ -4,7 +4,7 @@ slug: "kinetic-winches-and-lifting-balls-a-comprehensive-guide-w6jv"
 date: "2026-10-12T22:32:50.149Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check 5KG load limit"
+excerpt: "The 5KG DMX Control winch/lifting machine, for example, has a load limit of 5KG and a control mode of 6/10 CH."
 image: "assets/images/products/5kg-dmx-control-winch-lifting-machine.jpg"
 imageAlt: "5KG DMX winch"
 tags:

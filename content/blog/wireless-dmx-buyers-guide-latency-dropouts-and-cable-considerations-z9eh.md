@@ -4,7 +4,7 @@ slug: "wireless-dmx-buyers-guide-latency-dropouts-and-cable-considerations-z9eh"
 date: "2026-10-13T20:46:28.563Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "RG-CTCWILDR-RS wireless remote control from $41"
+excerpt: "For example, the RG-CTCWILDR-RS wireless remote control has a latency of less than 1 ms."
 image: "assets/images/products/rg-ctcwildr-rs.jpg"
 imageAlt: "Wireless remote control"
 tags:

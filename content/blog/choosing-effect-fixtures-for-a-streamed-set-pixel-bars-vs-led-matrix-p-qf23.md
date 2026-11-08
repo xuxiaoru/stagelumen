@@ -4,7 +4,7 @@ slug: "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-qf
 date: "2026-10-07T20:42:17.944Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "Select fixtures with DMX512 control protocol"
+excerpt: "The RG-EL004FL-3e42 3D Corn Pixel Matrix light, for example, has a size of 500X500X205MM and can create a wide range of effects."
 image: "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg"
 imageAlt: "RGB Outdoor LED bar"
 tags:

@@ -4,7 +4,7 @@ slug: "fan-noise-in-led-fixtures-a-technicians-guide-0orv"
 date: "2026-11-04T21:24:14.516Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check RG-PS200A110-W for silent running"
+excerpt: "Look for fixtures with low decibel ratings, such as the RG-PS200A110-W, and consider fanless options if possible."
 image: "assets/images/products/rg-ps200a110-w.jpg"
 imageAlt: "RG-PS200A110-W LED fixture"
 tags:

@@ -4,7 +4,7 @@ slug: "ground-support-and-stage-platforms-a-buyers-guide-mjbw"
 date: "2026-11-07T19:32:19.770Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check load capacity, like 200kg/㎡ for RG-DDF40S45-V32"
+excerpt: "For example, the RG-DDF40S45-V32 has a static load capacity of 200kg/㎡ and a dynamic load capacity of 100kg/㎡."
 image: "assets/images/products/rg-ddf40s45-v32.jpg"
 imageAlt: "Led pole dance stage"
 tags:

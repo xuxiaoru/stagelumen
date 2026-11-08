@@ -4,7 +4,7 @@ slug: "wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-c2r7"
 date: "2026-10-24T18:18:59.084Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "RG-CTCWILDR-RS wireless remote control from $41"
+excerpt: "The RG-CTCWILDR-RS wireless remote control, for example, has a transmission power of 20dBm and a receiver sensitivity of 94dBm."
 image: "assets/images/products/rg-ctcwildr-rs.jpg"
 imageAlt: "Wireless remote control"
 tags:

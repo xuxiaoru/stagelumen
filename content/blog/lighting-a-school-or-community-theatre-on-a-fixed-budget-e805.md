@@ -4,7 +4,7 @@ slug: "lighting-a-school-or-community-theatre-on-a-fixed-budget-e805"
 date: "2026-10-16T18:53:54.442Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "RG-M300BH-KYH16M for $205"
+excerpt: "Also, consider using a lighting controller, such as the RG-CTD40S6F-K, to optimize your lighting system and reduce energy waste."
 image: "assets/images/products/rg-m300bh-kyh16m.jpg"
 imageAlt: "Moving head light strip"
 tags:

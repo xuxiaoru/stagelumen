@@ -4,7 +4,7 @@ slug: "sound-activated-vs-dmx-control-for-small-venues-wwo3"
 date: "2026-10-16T18:55:26.134Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "RG-CTD192S8F5-K for $50"
+excerpt: "To learn more about the RG-CTD192S8F5-K DMX controller and other lighting control systems, visit our website at RG-CTD192S8F5-K."
 image: "assets/images/products/rg-ctd192s8f5-k.jpg"
 imageAlt: "DMX controller"
 tags:

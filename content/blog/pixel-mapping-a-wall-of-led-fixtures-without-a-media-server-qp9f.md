@@ -4,7 +4,7 @@ slug: "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-qp9f"
 date: "2026-10-07T20:43:09.700Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Use 24pcs 1.5W RGB Outdoor LED bar"
+excerpt: "Controllers like the RG-CTCLEDPEIN-1 support multiple control modes, making it easy to integrate with existing systems."
 image: "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg"
 imageAlt: "24pcs 1.5W RGB Outdoor LED bar"
 tags:

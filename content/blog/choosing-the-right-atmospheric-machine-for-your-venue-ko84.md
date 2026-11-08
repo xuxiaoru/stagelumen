@@ -4,7 +4,7 @@ slug: "choosing-the-right-atmospheric-machine-for-your-venue-ko84"
 date: "2026-10-06T13:54:24.254Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "RG-FO600V17DW hazer machine costs $175"
+excerpt: "For example, a small room may require a smaller machine, while a large room may require a more powerful one."
 image: "assets/images/products/rg-fo600v17dw.jpg"
 imageAlt: "hazer machine"
 tags:

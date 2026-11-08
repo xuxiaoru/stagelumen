@@ -4,7 +4,7 @@ slug: "understanding-cold-start-behaviour-in-led-fixtures-geg5"
 date: "2026-11-03T21:12:11.321Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Derating in winter affects 300W LED Panel light"
+excerpt: "The RG-P58TC10-Ke18A, a 4leds 50W 200w Cold-warm 2in1 white zoom led par light, is an example of a fixture that may be affected by cold-start behaviour."
 image: "assets/images/products/rg-pds28s100ia-v25.jpg"
 imageAlt: "300W LED Panel light"
 tags:

@@ -4,7 +4,7 @@ slug: "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-l9
 date: "2026-10-15T19:19:19.633Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "Use 3200K colour temperature"
+excerpt: "The RG-ST112A-S20f336A RGB LED 1008 Colouring Strobe Light has a high brightness LED5050SMD light source, which can help reduce flicker."
 image: "assets/images/products/300w-led-panel-light-warm.jpg"
 imageAlt: "300W LED Panel light"
 tags:

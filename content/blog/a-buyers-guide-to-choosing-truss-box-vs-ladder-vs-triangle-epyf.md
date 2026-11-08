@@ -4,7 +4,7 @@ slug: "a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-epyf"
 date: "2026-11-06T21:01:38.947Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Choose HJ-L1TMY303010T50-W for $29.7"
+excerpt: "Ladder truss, such as HJ-L1TMY303010T50-W, has a ladder-like structure that provides excellent strength and stability."
 image: "assets/images/products/hj-l1tmy303010t50-w.jpg"
 imageAlt: "Ladder Truss 300x300mm"
 tags:

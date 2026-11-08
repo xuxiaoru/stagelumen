@@ -4,7 +4,7 @@ slug: "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-3mz
 date: "2026-10-12T22:34:00.721Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Choose the right LED dance floor with a panel pitch of 2.976mm"
+excerpt: "For example, the RG-VDF44S2976-KV0 has a panel pitch of 2.976mm, while the RG-VDF44S391-KV0 has a panel pitch of 3.91mm."
 image: "assets/images/products/rg-vdf44s2976-kv0.jpg"
 imageAlt: "LED dance floor with a panel pitch of 2.976mm"
 tags:

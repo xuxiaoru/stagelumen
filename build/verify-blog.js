@@ -147,6 +147,25 @@ const GEO = {
   maxFaq: 6,
 };
 
+// Mirrors EXCERPT_RULES / excerptIssues() in functions/_lib/content.js.
+// The 2026-11-08 audit of the live catalogue found 89 of 126 excerpts under
+// 45 characters and 28 leaking EXW prices into og:description and llms.txt.
+const EXCERPT = { minChars: 60, maxChars: 155, minWords: 10 };
+const EXCERPT_IMPERATIVE = /^(?:check|choose|compare|use|see|learn|read|find|get|pick|avoid|plan|measure|ask|review|verify|set|match|test|buy|order|select|consider|calculate)\b/i;
+
+function excerptProblems(s) {
+  const t = String(s == null ? '' : s).trim();
+  const out = [];
+  if (!t) return ['no excerpt — og:description and the news card will be empty'];
+  if (t.length < EXCERPT.minChars) out.push('excerpt is ' + t.length + ' chars (need ' + EXCERPT.minChars + '+)');
+  if (t.length > EXCERPT.maxChars) out.push('excerpt is ' + t.length + ' chars (max ' + EXCERPT.maxChars + ')');
+  const words = t.match(/[A-Za-z][A-Za-z'-]*/g) || [];
+  if (words.length < EXCERPT.minWords) out.push('excerpt has only ' + words.length + ' words (need ' + EXCERPT.minWords + '+)');
+  if (/(?:\$|US\$|USD)\s?\d/.test(t)) out.push('excerpt leaks an EXW price — never publish unit prices in a public snippet');
+  if (EXCERPT_IMPERATIVE.test(t) && words.length < 14) out.push('excerpt is a command fragment, not a declarative sentence');
+  return out;
+}
+
 let realProductPaths = null;
 
 function geoChecks(body, data) {
@@ -237,10 +256,9 @@ function check(file, cat) {
 
   if (!data.title) problems.push(['ERROR', 'no title in front matter']);
   if (!data.category) problems.push(['WARN', 'no category — cards fall back to "Article"']);
-  if (!data.excerpt) problems.push(['WARN', 'no excerpt — search snippets will be poor']);
-  if (data.excerpt && data.excerpt.length > 155) {
-    problems.push(['WARN', 'excerpt is ' + data.excerpt.length + ' chars (keep under 155)']);
-  }
+  // Excerpt defects are ERRORs, not WARNs: the same string is published
+  // as og:description, the news card, the llms.txt line and the FB card.
+  for (const msg of excerptProblems(data.excerpt)) problems.push(['ERROR', msg]);
   if (!data.image) {
     notes.push('no image — the card renders a slim placeholder band instead of a photo');
   } else if (!/^(https?:)?\/\//.test(data.image) && !fs.existsSync(path.join(ROOT, data.image))) {

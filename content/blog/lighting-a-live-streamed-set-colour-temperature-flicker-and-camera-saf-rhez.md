@@ -4,7 +4,7 @@ slug: "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-rh
 date: "2026-10-27T20:10:19.917Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Use 3200K colour temperature"
+excerpt: "For live streaming, use a colour temperature of 3200K, such as the 300W LED Panel light -warm, and ensure camera-safe dimming to avoid flicker."
 image: "assets/images/products/rg-st112a-s20f336a.jpg"
 imageAlt: "300W LED Panel light"
 tags:

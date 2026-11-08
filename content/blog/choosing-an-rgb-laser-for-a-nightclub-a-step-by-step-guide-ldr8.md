@@ -4,7 +4,7 @@ slug: "choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-ldr8"
 date: "2026-10-29T20:28:11.422Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check 10W output"
+excerpt: "However, a 10W output is a good starting point. For example, the RG-LL10000f1LM model has a 10W output and is suitable for indoor use."
 image: "assets/images/products/rg-ll10000f1lm.jpg"
 imageAlt: "RGB laser light"
 tags:

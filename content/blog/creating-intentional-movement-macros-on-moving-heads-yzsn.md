@@ -4,7 +4,7 @@ slug: "creating-intentional-movement-macros-on-moving-heads-yzsn"
 date: "2026-10-10T19:26:35.274Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Use 6W Moving head full color laser"
+excerpt: "The New 295W 10R beam moving head and the RG-M230BN-KMH16 are popular options for their versatility and affordability."
 image: "assets/images/products/6w-moving-head-full-color.jpg"
 imageAlt: "6W Moving head full color laser"
 tags:

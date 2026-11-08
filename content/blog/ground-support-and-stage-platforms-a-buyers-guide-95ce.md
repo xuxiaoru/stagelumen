@@ -4,7 +4,7 @@ slug: "ground-support-and-stage-platforms-a-buyers-guide-95ce"
 date: "2026-10-15T19:18:05.385Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check load capacity before load-in"
+excerpt: "For more information on stage platforms and ground support systems, visit the TS-ST100100BFY-K60T100 and TS-ST120120BF-R40T60 product pages."
 image: "assets/images/products/ts-st100100bfy-k60t100.jpg"
 imageAlt: "Circular stage"
 tags:

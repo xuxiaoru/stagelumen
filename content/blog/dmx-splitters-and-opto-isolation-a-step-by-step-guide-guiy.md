@@ -4,7 +4,7 @@ slug: "dmx-splitters-and-opto-isolation-a-step-by-step-guide-guiy"
 date: "2026-10-24T18:18:08.357Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Use 4 DMX splitters"
+excerpt: "For example, the RG-CA8402C has a voltage requirement of AC90V-240V and supports up to 4 outputs."
 image: "assets/images/products/rg-ca8402c.jpg"
 imageAlt: "DMX splitter"
 tags:

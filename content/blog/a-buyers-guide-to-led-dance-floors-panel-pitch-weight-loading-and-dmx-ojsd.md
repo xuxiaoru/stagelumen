@@ -4,7 +4,7 @@ slug: "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-ojs
 date: "2026-10-24T18:17:12.342Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Choose the right LED dance floor with a panel pitch of 2.976mm"
+excerpt: "The RG-VDF44S2976-KV0 has a panel pitch of 2.976mm and a weight loading capacity of 18.5Kg, and can be controlled using DMX."
 image: "assets/images/products/rg-vdf44s391-kv0.jpg"
 imageAlt: "P2.976 Led Video Dance Floor"
 tags:

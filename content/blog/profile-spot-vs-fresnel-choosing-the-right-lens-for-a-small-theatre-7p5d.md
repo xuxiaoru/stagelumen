@@ -4,7 +4,7 @@ slug: "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-7p5d"
 date: "2026-10-09T20:15:14.165Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "RG-PS200A20T50-W costs $95"
+excerpt: "There are several different types of profile spot lenses available, including the RG-PS200A20T50-W and the RG-PS200A14S-W."
 image: "assets/images/products/rg-ps200a20t50-k.jpg"
 imageAlt: "RG-PS200A20T50-W fixture"
 tags:

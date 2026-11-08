@@ -4,7 +4,7 @@ slug: "choosing-the-right-led-strobes-and-audience-blinders-for-live-music-e0pi"
 date: "2026-10-19T20:41:33.147Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Selecting 600W strobes"
+excerpt: "For live music applications, consider LED strobes with an output of at least 600W, such as the RG-TH8B600S, and a flash rate of up to 25 times per second."
 image: "assets/images/products/rg-th2b250-w2.jpg"
 imageAlt: "LED strobe light"
 tags:

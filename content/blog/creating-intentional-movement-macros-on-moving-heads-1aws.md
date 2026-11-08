@@ -4,7 +4,7 @@ slug: "creating-intentional-movement-macros-on-moving-heads-1aws"
 date: "2026-11-02T23:14:01.623Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Use 6W Moving head full color laser"
+excerpt: "The NEW outdoor IP65 7leds60w LED moving head light RG-ML420WC-KCH93 is suitable for outdoor use and can create a variety of effects."
 image: "assets/images/products/6w-moving-head-full-color.jpg"
 imageAlt: "6W moving head full color laser"
 tags:

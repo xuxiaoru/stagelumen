@@ -4,7 +4,7 @@ slug: "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-h9h
 date: "2026-10-20T19:27:48.793Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "RG-W18IB8-Ke8AM offers 8 hours runtime"
+excerpt: "No, not all battery uplights have wireless DMX control. However, some models like the RG-W18IB8-Ke8AM offer wireless control options."
 image: "assets/images/products/rg-w18ib8-ke8am.jpg"
 imageAlt: "Battery uplight"
 tags:

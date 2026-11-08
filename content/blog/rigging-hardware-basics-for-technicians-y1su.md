@@ -4,7 +4,7 @@ slug: "rigging-hardware-basics-for-technicians-y1su"
 date: "2026-10-25T18:32:08.467Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Inspect 1024 LEDs before every show"
+excerpt: "There are several types of safety bonds available, including TS-WJHZB156X107X50-W30 single hook clamps with connecting pieces."
 image: "assets/images/products/rg-ddf56s125-v8.jpg"
 imageAlt: "LED digital dance floor"
 tags:

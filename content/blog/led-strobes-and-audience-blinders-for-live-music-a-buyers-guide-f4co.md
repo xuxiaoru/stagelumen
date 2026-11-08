@@ -4,7 +4,7 @@ slug: "led-strobes-and-audience-blinders-for-live-music-a-buyers-guide-f4co"
 date: "2026-10-06T13:53:29.564Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Choose 600W strobes like RG-TH8B600S"
+excerpt: "For live music events, consider 600W strobes like the RG-TH8B600S, which offers a high output and adjustable flash rate."
 image: "assets/images/products/rg-th8b600s.jpg"
 imageAlt: "RG-TH8B600S LED strobe"
 tags:

@@ -4,7 +4,7 @@ slug: "laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-02s
 date: "2026-10-06T20:29:53.634Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "6W Moving head full color laser costs $375"
+excerpt: "The RG-ML100BD-KC6AH40, for example, is a 610w led moving head beam+RGB laser light that combines the benefits of both technologies."
 image: "assets/images/products/6w-moving-head-full-color.jpg"
 imageAlt: "6W moving head full color laser"
 tags:

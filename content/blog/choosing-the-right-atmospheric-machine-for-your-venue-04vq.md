@@ -4,7 +4,7 @@ slug: "choosing-the-right-atmospheric-machine-for-your-venue-04vq"
 date: "2026-10-08T20:45:44.434Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "RG-FR2400H8S-D spark fog machine"
+excerpt: "The FG-CSDM2KYW-W oil for spark fog machine, for example, should be used according to the manufacturer's instructions to ensure optimal performance."
 image: "assets/images/products/rg-fr2400h8s-d.jpg"
 imageAlt: "Spark fog machine"
 tags:

@@ -7,7 +7,7 @@ author: "RiGeBa Lighting Team"
 category: "How-To"
 image: "assets/images/products/rg-el00db-8e2a.jpg"
 imageAlt: "LED moving head wash light used as rental stock"
-excerpt: "Ten fixtures and about US$1,500 EXW is enough to accept most small-venue work. Which two types to buy, and why quantity beats variety."
+excerpt: "If the budget reaches further, the next dollar is better spent on two more washes than on one flagship BSW."
 tags:
   - Rental Houses
   - Moving Heads

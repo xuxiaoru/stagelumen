@@ -4,7 +4,7 @@ slug: "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-hxrl"
 date: "2026-10-21T19:28:29.304Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "RG-PS200A20T50-W costs $95"
+excerpt: "For example, the RG-PS200A20T50-W, a 200W Led Fresnel Zoom Spot light, has a beam angle of 3200K-5600K and can be controlled using DMX512."
 image: "assets/images/products/rg-ps200a20t50-k.jpg"
 imageAlt: "RG-PS200A20T50-W fixture"
 tags:

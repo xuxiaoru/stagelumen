@@ -4,7 +4,7 @@ slug: "lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-9v
 date: "2026-10-04T18:42:51.334Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "Use 300W LED Panel light for front light"
+excerpt: "The two catalogue pages that carry the configurations in these tables are RG-PDS28S10IA-V25 and 300W LED Panel light -warm."
 image: "assets/images/products/300w-led-panel-light-warm.jpg"
 imageAlt: "300W LED Panel light"
 tags:

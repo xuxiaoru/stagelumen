@@ -4,7 +4,7 @@ slug: "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-ajya"
 date: "2026-10-08T20:47:55.266Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check 24pcs 1.5W RGB Outdoor LED bar"
+excerpt: "The RG-W38TB30-Ke14 is an example of a 4-in-1 LED wall washer. Yes, some LED wall washers are designed for both indoor and outdoor use."
 image: "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg"
 imageAlt: "LED wall washer"
 tags:

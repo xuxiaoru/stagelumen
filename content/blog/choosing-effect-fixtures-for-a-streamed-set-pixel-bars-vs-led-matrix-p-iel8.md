@@ -4,7 +4,7 @@ slug: "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-ie
 date: "2026-10-30T20:02:13.335Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "Select fixtures with DMX512 control protocol"
+excerpt: "For example, the RG-EL004FL-3e42 3D Corn Pixel Matrix light offers a high-resolution visual effect with its 729/720/480/489 pixel configuration."
 image: "assets/images/products/full-moon-scimitar-led-effect.jpg"
 imageAlt: "RGB Outdoor LED bar"
 tags:

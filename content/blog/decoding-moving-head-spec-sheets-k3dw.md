@@ -5,7 +5,7 @@ date: "2026-09-27T19:08:03.242Z"
 updated: "2026-09-29"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Compare moving heads on beam angle, lux at a stated distance, LED configuration and IP rating — not wattage. Real EXW prices from US$96 to US$757."
+excerpt: "Then ask for the EXW price at your order quantity, because two fixtures with identical wattage can differ in price by more than 2×."
 image: "assets/images/products/rg-ml400rs-knnw1h21.jpg"
 imageAlt: "400W LED CMY 3-in-1 BSW moving head light"
 tags:

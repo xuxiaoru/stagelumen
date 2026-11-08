@@ -4,7 +4,7 @@ slug: "laser-safety-for-live-events-a-buyers-guide-5hi0"
 date: "2026-10-29T20:27:10.384Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Choose between class 3B and class 4 lasers"
+excerpt: "For example, the RG-ML100BD-KC6AH40 6头10瓦光束LED摇头+RGB激光灯 has an IP rating that makes it suitable for outdoor use."
 image: "assets/images/products/bx-l1f65x50t28-w.jpg"
 imageAlt: "6W Moving head full color laser"
 tags:

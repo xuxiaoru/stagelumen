@@ -4,7 +4,7 @@ slug: "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-qhlu"
 date: "2026-11-02T23:11:39.202Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "RG-PS200A20T50-W costs $95"
+excerpt: "A COB LED, such as the one used in the RG-PS200A20T50-W, has a higher lumen output and a more even light distribution than a traditional LED."
 image: "assets/images/products/rg-ps200a20t50-w.jpg"
 imageAlt: "RG-PS200A20T50-W LED Fresnel Zoom Spot light"
 tags:

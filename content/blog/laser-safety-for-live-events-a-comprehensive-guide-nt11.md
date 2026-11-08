@@ -4,7 +4,7 @@ slug: "laser-safety-for-live-events-a-comprehensive-guide-nt11"
 date: "2026-10-16T18:56:26.099Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Class 3B vs class 4 laser safety"
+excerpt: "Class 3B lasers have a lower output power than class 4 lasers, making them safer for use in live events."
 image: "assets/images/products/6-heads-full-color-swinging-laser.jpg"
 imageAlt: "6W Moving head full color laser"
 tags:

@@ -4,7 +4,7 @@ slug: "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-z7
 date: "2026-11-07T19:33:15.976Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Use 3200K colour temperature"
+excerpt: "For more information on the RG-ST112A-S20f336A, visit the RG-ST112A-S20f336A product page."
 image: "assets/images/products/300w-led-panel-light-warm.jpg"
 imageAlt: "300W LED Panel light"
 tags:

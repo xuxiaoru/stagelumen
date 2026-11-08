@@ -4,7 +4,7 @@ slug: "planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-g9jn"
 date: "2026-11-06T21:00:07.122Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Check 12W power"
+excerpt: "For example, the RG-EL0001FL-3e576 has a recommended maintenance schedule that includes regular cleaning and inspection."
 image: "assets/images/products/6w-moving-head-full-color.jpg"
 imageAlt: "Full moon scimitar LED effect"
 tags:

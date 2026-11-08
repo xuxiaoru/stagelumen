@@ -4,7 +4,7 @@ slug: "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-udu
 date: "2026-10-31T19:27:53.046Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "RG-W18IB8-Ke8AM offers 8 hours runtime"
+excerpt: "The RG-W18IB8-Ke8AM offers up to 8 hours of runtime and supports wireless DMX control, making it a suitable choice for weddings and corporate events."
 image: "assets/images/products/rg-w18ib8-ke8am.jpg"
 imageAlt: "Battery uplight"
 tags:

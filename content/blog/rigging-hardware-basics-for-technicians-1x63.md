@@ -4,7 +4,7 @@ slug: "rigging-hardware-basics-for-technicians-1x63"
 date: "2026-11-07T19:31:22.287Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Inspect 1024 LEDs before every show"
+excerpt: "The RG-DDF56S125-V8 1m1m Basic Version led digital dance floor, for example, has 1024 LEDs that must be inspected before every show."
 image: "assets/images/products/ts-wjhzb156x107x50-w30.jpg"
 imageAlt: "LED digital dance floor"
 tags:

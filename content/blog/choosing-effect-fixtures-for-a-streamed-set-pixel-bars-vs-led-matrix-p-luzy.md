@@ -4,7 +4,7 @@ slug: "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-lu
 date: "2026-10-18T18:15:49.245Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "Select fixtures with DMX512 control protocol"
+excerpt: "Outdoor-rated fixtures, such as the 24pcs 1.5W RGB Outdoor LED bar, have a higher IP rating and are designed to withstand the elements."
 image: "assets/images/products/300w-led-panel-light-warm.jpg"
 imageAlt: "RGB Outdoor LED bar"
 tags:

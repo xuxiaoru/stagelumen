@@ -4,7 +4,7 @@ slug: "lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-tz
 date: "2026-10-15T19:20:30.012Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "Use 300W LED Panel light for front light"
+excerpt: "The RG-CTD40S4F-K and RG-CTD40S6F-K are popular options for small to medium-sized conferences."
 image: "assets/images/products/300w-led-panel-light-warm.jpg"
 imageAlt: "300W LED Panel light"
 tags:

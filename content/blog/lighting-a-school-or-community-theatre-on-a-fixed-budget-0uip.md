@@ -4,7 +4,7 @@ slug: "lighting-a-school-or-community-theatre-on-a-fixed-budget-0uip"
 date: "2026-10-27T20:12:31.693Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "RG-M300BH-KYH16M for $205"
+excerpt: "To learn more about the RG-M300BH-KYH16M, visit the RG-M300BH-KYH16M product page."
 image: "assets/images/products/rg-m300bh-kyh16m.jpg"
 imageAlt: "RG-M300BH-KYH16M beam moving head light"
 tags:

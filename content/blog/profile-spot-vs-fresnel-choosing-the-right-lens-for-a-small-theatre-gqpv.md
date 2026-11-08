@@ -4,7 +4,7 @@ slug: "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv"
 date: "2026-10-06T03:02:24.388Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "RG-PS200A20T50-W costs $95"
+excerpt: "Some popular models of profile spots and fresnel lenses include the RG-PS200A20T50-W, the RG-PS200A15T65M-W, and the RG-PS20A19-W."
 image: "assets/images/products/rg-ps200a20t50-w.jpg"
 imageAlt: "RG-PS200A20T50-W LED Fresnel Zoom Spot light"
 tags:
