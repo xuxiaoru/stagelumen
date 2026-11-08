@@ -40,7 +40,11 @@ social:
   # avoid name collisions; it is NOT the public entity and must not be
   # used in sameAs.
   facebook: "https://www.facebook.com/103654045148031"
-  linkedin: ""
+  # Company Page, not a personal /in/ profile. Verified live 2026-11-08.
+  # This Page already links back to us: its own JSON-LD carries
+  # sameAs -> https://www.rigebalighting.com. Filling this key adds
+  # our side of the two-way entity link to Organization.sameAs.
+  linkedin: "https://www.linkedin.com/company/rigeba-lighting"
   tiktok: ""
 
 

@@ -143,6 +143,15 @@ jobs:
       # still new. Turn it on under:
       #   Settings > Secrets and variables > Actions > Variables >
       #   New repository variable: SOCIAL_AUTO = 1
+      #
+      # NOTE (2026-11-08): SOCIAL_AUTO has been REMOVED on purpose. Meta flagged
+      # the developer account for unusual activity and revoked the Page token,
+      # so every nightly share failed with a Cloudflare 502 from 11-05 onward.
+      # Keep the variable unset until: (1) the Meta developer account is
+      # verified, (2) a fresh FB_PAGE_TOKEN is installed in Cloudflare and a
+      # new commit refreshes the binding, (3) a dry-run returns tokenValid:true.
+      # The step stays here so re-enabling needs no code change.
+      #
       # The IndexNow step above already slept 180s, so the article is live and
       # its og:title is scrapable by the time this runs.
       - name: Share one post on the Facebook Page
@@ -159,12 +168,31 @@ jobs:
             console.log(JSON.stringify([...new Set(u)]));
           ')
           echo "sharing at most one of: ${URLS}"
-          curl -sS -X POST "https://www.rigebalighting.com/api/social" \
+          HTTP=$(curl -sS -X POST "https://www.rigebalighting.com/api/social" \
             -H "authorization: Bearer ${ADMIN_TOKEN}" \
             -H "content-type: application/json" \
             -d "{\"urls\":${URLS},\"limit\":1}" \
-            -o /tmp/social-resp.json \
-            || echo "::warning::Facebook request failed (non-fatal — the posts are already live)"
-          echo "---- /api/social response ----"
+            -o /tmp/social-resp.json -w "%{http_code}") \
+            || echo "::warning::Facebook request failed (the response check below will fail this step)"
+          echo "---- /api/social response (HTTP ${HTTP}) ----"
           cat /tmp/social-resp.json 2>/dev/null || true
           echo
+          # A Cloudflare "error code: 502" is plain text, not JSON, and curl
+          # still exits 0. Without this check the job reports success while
+          # nothing was ever published — exactly what happened on Nov 5/6.
+          # An ::error:: annotation alone does NOT fail a job, so exit 1 here.
+          node -e '
+            const fs = require("fs");
+            let r = null;
+            try { r = JSON.parse(fs.readFileSync("/tmp/social-resp.json", "utf8")); } catch (e) {}
+            const shipped = r && r.ok && (r.posted > 0 ||
+              (r.results || []).some((x) => x.skipped));
+            if (!shipped) {
+              console.error("::error::Facebook share did not publish a post. HTTP " +
+                process.argv[1] + ", body: " +
+                (r ? JSON.stringify(r).slice(0, 700) : "non-JSON (likely Cloudflare 502)"));
+              process.exit(1);
+            } else {
+              console.log("FACEBOOK OK:", JSON.stringify(r.results[0]));
+            }
+          ' "${HTTP}"

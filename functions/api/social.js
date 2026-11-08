@@ -132,15 +132,25 @@ export async function onRequest(context) {
     }
   }
 
+  // A failed Graph API self-check used to be invisible in POST responses:
+  // dry-run still returned ok:true with tokenValid:false. Surface the raw
+  // Graph API error (never the token) and make a dry-run fail loudly.
+  const graphError = page.ok ? null : (page.error || {
+    message: 'Facebook page self-check failed',
+    configured: page.configured !== false,
+    missing: page.missing || null,
+  });
+  const healthy = !!(cfg.ok && page.ok);
   return json({
-    ok: failed === 0,
+    ok: failed === 0 && (dryRun ? healthy : true),
     mode: dryRun ? 'dry-run' : (unpublished ? 'unpublished-draft' : 'publish'),
     page: { id: cfg.pageId, name: page.name || null, link: page.link || null },
     tokenValid: !!page.ok,
+    graphError,
     selected: picked,
     candidates: urls.length,
     posted,
     failed,
     results,
-  }, failed ? 502 : 200);
+  }, (failed || (dryRun && !healthy)) ? 502 : 200);
 }

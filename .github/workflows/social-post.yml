@@ -48,6 +48,10 @@ jobs:
     steps:
       - name: Call /api/social
         run: |
+          echo "---- /api/social live self-check (GET, shows Graph API errors) ----"
+          curl -sS -H "authorization: Bearer ${ADMIN_TOKEN}" \
+            "https://www.rigebalighting.com/api/social"
+          echo
           PAYLOAD=$(node -e '
             const raw = (process.env.INPUT_URLS || "").trim();
             const p = raw
