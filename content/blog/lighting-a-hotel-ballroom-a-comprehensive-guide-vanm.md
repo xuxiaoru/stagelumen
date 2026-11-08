@@ -61,3 +61,21 @@ Troubleshooting common issues with a hotel ballroom lighting system requires a s
 | RG-TH4B450S | 4*100W Cool white+Warm white high power led | $112 | - |
 
 To learn more about the 300W LED Panel light -warm white and cold white 2in1, visit the [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm) product page. For more information on the RG-CA8802PRO-A DMX Smart Splitter, visit the [RG-CA8802PRO-A](/products/controller/rg-ca8802pro-a) product page. Contact us to discuss your hotel ballroom lighting needs and to get a quote for your project.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8802 | 16 outputs | US$84 |
+| RG-CA8802 | 32 outputs | US$119 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-CA8402MINI | 8 outputs | US$84 |
+| RG-CA8402MINI | 16 outputs | US$119 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-M300BH-KYH16M](/products/moving/rg-m300bh-kyh16m). Open each one for the full spec list, the volume tiers and the current EXW price.
