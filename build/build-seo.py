@@ -15,6 +15,9 @@
 注意：
   - sitemap.xml 保留 <!-- SITEMAP:BEGIN/END --> 标记，Pages 构建时 build-blog.js
     会重写其中的博客段；两者都读 data/posts.json 且都用同一个 SITE，结果一致。
+  - llms.txt 的文章段保留 <!-- ARTICLES:BEGIN/END --> 标记，同样由 build-blog.js
+    在每次 Pages 构建时整段替换。本脚本是手动运行的，只靠它会导致新文章不进
+    llms.txt（2026-11-08 实测滞后 90 篇）。
   - URL 一律用「无扩展名 pretty 形式」：线上 /x.html 会 308 到 /x。
 """
 import json, os, sys, datetime
@@ -261,7 +264,8 @@ def main():
     if posts:
         L += ["", "## Buying guides & technical articles",
               "Written by the RiGeBa engineering and export team. Each link is a standalone",
-              "page carrying the full answer, plus the tables and figures behind it.", ""]
+              "page carrying the full answer, plus the tables and figures behind it.", "",
+              "<!-- ARTICLES:BEGIN -->"]
         for p in posts:
             title = " ".join(str(p.get("title", "")).split())
             slug = p.get("slug", "")
@@ -272,6 +276,7 @@ def main():
             if exc:
                 line += ": " + exc
             L.append(line)
+        L += ["<!-- ARTICLES:END -->"]
 
     L += ["## Key pages",
           "- Home: %s/" % SITE,

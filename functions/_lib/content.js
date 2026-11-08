@@ -81,57 +81,155 @@ const KIND_BRIEF = {
  * angle has to be answerable from the catalogue, or the model drifts onto a
  * subject with no real facts behind it.
  *
- * The fifteen original entries were removed on 2026-09-30 because all fifteen
- * had shipped as articles by then, and re-covering a topic publishes a
- * near-duplicate. Keep it that way: when the walk reaches the end of this list,
- * EXTEND it with fresh angles rather than letting the agent loop back over its
- * own back catalogue. At three slots a day this pool is about eleven days.
+ * 2026-11-08: the 35-entry pool had been walked ~3.3 times, so 29 groups of
+ * articles shared an identical title (82 of 126 posts) and every one sat in
+ * the sitemap with a self-canonical. Two fixes, both needed:
+ *   1. This pool is now 137 fresh angles, each verified to retrieve at least
+ *      MIN_FACT_PRODUCTS catalogue fixtures and to be a Jaccard distance away
+ *      from all 73 already-published titles (see _validate_topics.mjs).
+ *   2. api/content.js reads the live data/posts.json title ledger and skips
+ *      any candidate that overlaps a published article. Even when the walk
+ *      eventually loops, a covered subject is never rewritten.
+ * When adding subjects, keep both guarantees: catalogue backing + no overlap.
  */
 const EDITORIAL_POOL = [
-  { kind: 'how-to', topic: 'Colour mixing in moving heads: CMY vs RGB, and why a clean white still matters' },
-  // lasers and beam effects
-  { kind: 'buyer-guide', topic: 'Laser safety for live events: class 3B vs class 4, beam shows and what a venue needs on paper' },
-  { kind: 'how-to', topic: 'Choosing an RGB laser for a nightclub: output, scanning angle and ILDA control' },
-  { kind: 'comparison', topic: 'Laser vs moving head beam effects: where each one earns its place on a rig' },
-  // pixel, effect and atmosphere
-  { kind: 'buyer-guide', topic: 'Pixel bars vs LED matrix panels: choosing effect fixtures for a streamed set' },
-  { kind: 'how-to', topic: 'Pixel mapping a wall of LED fixtures without a media server' },
-  { kind: 'buyer-guide', topic: 'LED strobes and audience blinders: picking output and flash rate for live music' },
-  { kind: 'how-to', topic: 'Haze, fog and spark effects: which atmospheric machine suits which room' },
-  // par, wash and uplighting
-  { kind: 'buyer-guide', topic: 'Battery uplights for weddings and corporate events: runtime, wireless DMX and charging logistics' },
-  { kind: 'how-to', topic: 'LED wall washers for facades and ballrooms: beam angle, throw distance and evenness' },
-  { kind: 'comparison', topic: 'RGBW vs RGBA vs RGBAL: what the extra emitter actually buys you' },
-  // profile, spot and gobo projection
-  { kind: 'buyer-guide', topic: 'Gobo projectors for retail and brand logos: throw distance, image size and print resolution' },
-  { kind: 'comparison', topic: 'Profile spot vs fresnel: which lens a small theatre should buy' },
-  // moving heads
-  { kind: 'how-to', topic: 'Beam angle vs output: why a 230 W beam can read brighter than a 400 W wash' },
-  { kind: 'how-to', topic: 'Movement macros on a moving head: circles, ballyhoo and figure-8 cues that look intentional' },
-  { kind: 'how-to', topic: 'Moving head service intervals: what to clean, when to replace a belt, how to store fixtures between tours' },
-  { kind: 'how-to', topic: 'Cold-start behaviour: why LED fixtures derate in winter and how to plan a show around it' },
-  { kind: 'buyer-guide', topic: 'Renting vs buying moving heads: the crossover point for a working rental house' },
-  { kind: 'how-to', topic: 'Fan noise in LED fixtures: which rooms need silent running and how to measure it' },
-  // floor and kinetic
-  { kind: 'how-to', topic: 'Kinetic winches and lifting balls: load limits, control and rigging basics' },
-  { kind: 'buyer-guide', topic: 'LED dance floors: panel pitch, weight loading and how the DMX is mapped' },
-  // control
-  { kind: 'how-to', topic: 'DMX splitters and opto-isolation: when one universe needs four cable runs' },
-  { kind: 'buyer-guide', topic: 'Wireless DMX: latency, dropouts and when to run cable anyway' },
-  { kind: 'buyer-guide', topic: 'Choosing a console for a rental house: channel count, universe count and operator familiarity' },
-  { kind: 'how-to', topic: 'Backup and failover: what happens when the console dies mid-show' },
-  { kind: 'how-to', topic: 'Planning power and phase balance for a stage full of LED fixtures' },
-  // truss and rigging
-  { kind: 'buyer-guide', topic: 'Choosing truss: box vs ladder vs triangle, and how to size a span' },
-  { kind: 'how-to', topic: 'Rigging hardware basics: clamps, couplers and safety bonds, and what to inspect before every show' },
-  { kind: 'buyer-guide', topic: 'Ground support and stage platforms: what to confirm before load-in' },
-  // applications
-  { kind: 'application', topic: 'Lighting a live-streamed set: colour temperature, flicker and camera-safe dimming' },
-  { kind: 'application', topic: 'Lighting a corporate conference: front light, screen wash and keeping spill off the presenter' },
-  { kind: 'application', topic: 'Lighting a school or community theatre on a fixed budget' },
-  { kind: 'application', topic: 'Sound-activated vs DMX control: what a small venue should run' },
-  { kind: 'buyer-guide', topic: 'Touring a small show: what fits in a van and what is cheaper to hire at the other end' },
-  { kind: 'comparison', topic: 'EXW vs FOB vs CIF vs DDP: what each shipping term does to your invoice and your risk' },
+  { kind: 'how-to', topic: 'Reading truss load tables: uniformly distributed load versus point load before you hang a rig' },
+  { kind: 'comparison', topic: 'Spigot, bolt and conical truss connectors: which joint suits a touring frame' },
+  { kind: 'how-to', topic: 'Truss corner blocks and two-way and three-way junctions: planning a trade show booth frame' },
+  { kind: 'how-to', topic: 'Truss span and deflection: when a 12 m box truss needs a centre pick' },
+  { kind: 'buyer-guide', topic: 'Ground support towers for outdoor stages: base plates, ballast and wind limits' },
+  { kind: 'how-to', topic: 'Truss trolleys and wheel assemblies: moving a loaded span without twisting the joints' },
+  { kind: 'how-to', topic: 'Circle and octagon truss segments: designing a featured overhead ring' },
+  { kind: 'comparison', topic: 'Truss clamps, half-couplers and swivel couplers: matching tube diameter and load' },
+  { kind: 'buyer-guide', topic: 'Folding truss and portable stands for mobile DJs and small productions' },
+  { kind: 'how-to', topic: 'Truss transport planning: case counts, weights and trailer space for a 20 m span' },
+  { kind: 'how-to', topic: 'Pixel tube spacing and pitch: how many LED tubes a 6 m backdrop really needs' },
+  { kind: 'how-to', topic: 'Pixel bar power budgeting: amps per bar and daisy-chain limits on one circuit' },
+  { kind: 'application', topic: 'Retro hexagonal pixel fixtures: building a low-resolution video wall for a club' },
+  { kind: 'comparison', topic: 'Bee-eye and six-arm effect heads versus a conventional moving head wash' },
+  { kind: 'how-to', topic: 'Pixel-controlled LED strips on set: diffusers, mounting and camera artefacts' },
+  { kind: 'how-to', topic: 'Art-Net universes for pixel tubes: channel maths for a 60-bar rig' },
+  { kind: 'comparison', topic: 'RGB versus RGBW pixel tubes: colour depth and white point trade-offs' },
+  { kind: 'how-to', topic: 'Pixel fixture PWM and refresh rates: shooting under a 1/1000 s camera shutter' },
+  { kind: 'comparison', topic: 'LED matrix panels versus pixel tubes: coverage per square metre' },
+  { kind: 'buyer-guide', topic: 'Weatherproof pixel bars for facade installs: IP ratings and cable glands' },
+  { kind: 'how-to', topic: 'Pixel mapping coordinate systems: laying out a 12 by 4 grid by hand' },
+  { kind: 'how-to', topic: 'Console fader count versus channel count: what a 240-channel desk actually covers' },
+  { kind: 'buyer-guide', topic: 'Digital dimmer packs and 12-channel dimmers: when tungsten still earns a place' },
+  { kind: 'how-to', topic: 'Console wings and fader expansion: growing a lighting desk with the show' },
+  { kind: 'how-to', topic: 'Scene stacks, chases and cue lists: structuring a 90-minute live set' },
+  { kind: 'how-to', topic: 'DMX termination and cable topology: diagnosing random fixture flicker' },
+  { kind: 'comparison', topic: 'RDM feedback versus a plain DMX console: what a rental tech can read from the desk' },
+  { kind: 'how-to', topic: 'Lighting desk backup: saving show files and running a show from a laptop' },
+  { kind: 'how-to', topic: 'Universe budgeting on a large rig: where 512 channels actually go' },
+  { kind: 'comparison', topic: 'Simple LED controllers versus a DMX console for a one-room install' },
+  { kind: 'how-to', topic: 'Zoom range maths: calculating beam diameter at a 12 m throw' },
+  { kind: 'comparison', topic: 'IP65 moving heads versus indoor heads: what the rating does to weight and price' },
+  { kind: 'comparison', topic: '19x40 W versus 7x60 W LED engines in an outdoor moving wash' },
+  { kind: 'how-to', topic: 'Pan and tilt ranges and hang positions for moving heads: avoiding cable wrap' },
+  { kind: 'application', topic: 'Beam moving heads with built-in LED strips on a festival rig' },
+  { kind: 'buyer-guide', topic: 'LED moving head life hours: total cost over a five-year rental inventory' },
+  { kind: 'buyer-guide', topic: 'Mini 150 W moving heads for low ceilings: output versus throw distance' },
+  { kind: 'how-to', topic: 'Moving head gobos and animation wheels: building texture for a theatre set' },
+  { kind: 'how-to', topic: 'Fixture personalities and profile files: what a console needs from the factory' },
+  { kind: 'how-to', topic: 'LED PAR lens options: 8, 25 and 45 degrees and what they do to a 6 m wash' },
+  { kind: 'application', topic: 'Outdoor city colour floods: aiming a building facade with 24x10 W fixtures' },
+  { kind: 'comparison', topic: 'Battery PAR uplights versus mains-fed cans: runtime maths for a six-hour event' },
+  { kind: 'comparison', topic: 'RGBW 4-in-1 versus 3-in-1 LED pars: output and colour mixing differences' },
+  { kind: 'how-to', topic: 'LED matrix wall washers: spacing and overlap for an even 10 m wall' },
+  { kind: 'how-to', topic: 'PAR can yoke mounts and floor stands: safe positioning on a stage deck' },
+  { kind: 'buyer-guide', topic: 'IP-rated PAR fixtures for garden weddings: cable management in the rain' },
+  { kind: 'how-to', topic: 'DMX channel modes on LED pars: 4-channel versus 8-channel trade-offs' },
+  { kind: 'comparison', topic: 'Smoke bubble machines versus haze generators: what a camera actually sees' },
+  { kind: 'how-to', topic: 'Snow machine fluid and fall distance: setting a winter scene indoors' },
+  { kind: 'buyer-guide', topic: 'Spark flame machines and cold spark units: fire marshal paperwork for a venue' },
+  { kind: 'how-to', topic: 'Fog machine warm-up and duty cycle: planning cue timing for a musical' },
+  { kind: 'comparison', topic: 'Low fog versus standard haze: fluid types, chillers and floor coverage' },
+  { kind: 'how-to', topic: 'Atmospheric effects and smoke detectors: coordinating with the venue' },
+  { kind: 'how-to', topic: 'Bubble machine output and fan direction: keeping a dance floor dry' },
+  { kind: 'buyer-guide', topic: 'Confetti and CO2 jets versus LED effect fixtures for a rental inventory' },
+  { kind: 'buyer-guide', topic: 'Laser wattage and beam visibility: matching 3 W, 6 W and 20 W to room size' },
+  { kind: 'comparison', topic: 'ILDA versus DMX laser control: what a graphics show actually needs' },
+  { kind: 'how-to', topic: 'RGB laser colour balance and white beams: reading diode specifications' },
+  { kind: 'how-to', topic: 'Laser scanner speed in kpps: why 30 kpps matters for text and logos' },
+  { kind: 'buyer-guide', topic: 'Audience-scanning laser compliance: variances, scanner safeguards and zone maps' },
+  { kind: 'comparison', topic: 'Laser projectors versus LED beam fixtures on a nightclub ceiling' },
+  { kind: 'application', topic: 'Outdoor laser shows and haze: beam visibility at 40 m' },
+  { kind: 'how-to', topic: 'Custom gobo artwork: glass versus metal, line width and burn-through' },
+  { kind: 'how-to', topic: 'Logo projector throw ratios: sizing a 3 m image from 12 m away' },
+  { kind: 'application', topic: 'Water ripple and wave effect projectors: layering movement on a cyclorama' },
+  { kind: 'how-to', topic: 'Rotating four-pattern gobo projectors: wheel speed and pattern change control' },
+  { kind: 'buyer-guide', topic: 'Waterproof logo projectors for retail facades: mounting and weatherproofing' },
+  { kind: 'how-to', topic: 'LED profile spot shutter blades: shaping a hard-edged pool on stage' },
+  { kind: 'comparison', topic: 'Fresnel wash versus profile spot: soft edges and spill control in a black box' },
+  { kind: 'buyer-guide', topic: 'LED panel lights for broadcast: CRI, TLCI and flicker-free dimming' },
+  { kind: 'comparison', topic: 'Zoom profile versus fixed-angle profile lens options for a 200 W LED engine' },
+  { kind: 'how-to', topic: 'Theatre blinder fixtures and 1000 W strobes: cue safety and audience comfort' },
+  { kind: 'comparison', topic: 'Warm-white versus cool-white 2-in-1 blinders: matching camera white balance' },
+  { kind: 'how-to', topic: 'Colour temperature in LED profiles: 3200 K versus 5600 K for a house rig' },
+  { kind: 'how-to', topic: 'Barn doors and gel frames on LED profiles: what still fits' },
+  { kind: 'application', topic: 'Replacing house lights with LED panels: dimming curves and DMX zones' },
+  { kind: 'comparison', topic: 'Dance floor panel sizes: 50 cm, 60 cm and 1.22 m layout maths' },
+  { kind: 'buyer-guide', topic: 'Wireless magnetic LED dance floors: battery, controller and setup time' },
+  { kind: 'comparison', topic: 'Starry and 3D mirror dance floors: which effect suits a wedding' },
+  { kind: 'how-to', topic: 'Dance floor load rating and subfloor: what a venue has to confirm' },
+  { kind: 'how-to', topic: 'DMX mapping a 6 by 6 dance floor: universes, channels and chase patterns' },
+  { kind: 'how-to', topic: 'Dance floor cleaning and storage: protecting edge connectors between events' },
+  { kind: 'how-to', topic: 'DMX lifting tubes and winches: travel, speed and minimum ceiling height' },
+  { kind: 'application', topic: 'Kinetic jellyfish and meteor tube effects: rigging a moving ceiling' },
+  { kind: 'application', topic: 'LED ring and circle kinetic fixtures: building a three-piece overhead set' },
+  { kind: 'how-to', topic: 'Winch safety: secondary safeties, load limits and emergency stop wiring' },
+  { kind: 'how-to', topic: 'Point-controlled kinetic tubes: one universe per fixture or a shared bus' },
+  { kind: 'how-to', topic: 'Commissioning checklist for a new rig: addressing, patching and focus' },
+  { kind: 'how-to', topic: 'Fault finding a dead DMX run: cable testers and the split-by-half method' },
+  { kind: 'how-to', topic: 'Calculating rig power from fixture spec sheets and a diversity factor' },
+  { kind: 'how-to', topic: 'Dimming curves: linear, square-law and how LED drivers read DMX values' },
+  { kind: 'buyer-guide', topic: 'Colour consistency across LED fixture batches: binning and reorder risk' },
+  { kind: 'how-to', topic: 'Heat load from a stage rig: what it does to a venue HVAC plan' },
+  { kind: 'how-to', topic: 'Cable labelling and loom standards for a touring lighting package' },
+  { kind: 'buyer-guide', topic: 'Specifying waterproof connectors and cable glands for permanent outdoor installs' },
+  { kind: 'how-to', topic: 'Two-year maintenance plan for a 100-fixture rental inventory' },
+  { kind: 'how-to', topic: 'Reading a DMX channel chart: modes, fine channels and macro rows' },
+  { kind: 'how-to', topic: 'Fixture mounting heights and throw distances for a 12 m wide stage' },
+  { kind: 'application', topic: 'Lighting a hotel ballroom: ceiling height, truss and warm-white washes' },
+  { kind: 'application', topic: 'Layering beam, wash and strobe fixtures on a festival main stage' },
+  { kind: 'application', topic: 'Lighting a museum or gallery launch: high CRI and UV-free LED sources' },
+  { kind: 'application', topic: 'Lighting a fashion runway: front light, side light and camera positions' },
+  { kind: 'application', topic: 'Lighting a cruise ship lounge: salt air, vibration and IP-rated fixtures' },
+  { kind: 'application', topic: 'Lighting a university lecture theatre: quiet fixtures and DMX zones' },
+  { kind: 'application', topic: 'Lighting an esports arena: audience blinders and camera-safe strobe rates' },
+  { kind: 'application', topic: 'Lighting a Christmas market outdoor trail: weatherproofing and power distribution' },
+  { kind: 'how-to', topic: 'Retrofitting a tungsten rig to LED: dimmer racks, load and cable reuse' },
+  { kind: 'application', topic: 'Stage lighting for a product launch: matching a brand colour with LED mixing' },
+  { kind: 'application', topic: 'Lighting for livestream worship: camera-safe dimming and fan noise' },
+  { kind: 'buyer-guide', topic: 'Buying a first 30-fixture lighting package for a new rental company' },
+  { kind: 'buyer-guide', topic: 'Sample approval before a bulk moving head order: what to test on a pre-production fixture' },
+  { kind: 'buyer-guide', topic: 'Spare parts to order with 50 moving heads: fans, drivers, belts and lenses' },
+  { kind: 'buyer-guide', topic: 'Warranty claims on LED fixtures: what a factory needs to see in a photo' },
+  { kind: 'buyer-guide', topic: 'Private-label housing colour and logo options on an OEM moving head run' },
+  { kind: 'how-to', topic: 'Preparing moving heads and truss for shipping: case counts and packing lists' },
+  { kind: 'buyer-guide', topic: 'Voltage and plug standards for touring LED fixtures in 110 V and 220 V markets' },
+  { kind: 'how-to', topic: 'Flight case counts and trailer space for a 40-fixture moving head package' },
+  { kind: 'buyer-guide', topic: 'Bolt truss and spigot connector certificates: what a rigging inspector asks to see' },
+  { kind: 'how-to', topic: 'Truss base plates and top pieces with wheels: assembling a ground support tower' },
+  { kind: 'how-to', topic: 'Single plate and two-face 45 degree truss connectors: building an angled frame' },
+  { kind: 'how-to', topic: 'Six-side spigot connectors for hexagonal and octagon truss structures' },
+  { kind: 'how-to', topic: 'RGBW moving head colour macros: matching a gel palette on a rental rig' },
+  { kind: 'how-to', topic: 'Outdoor LED par wall washer spacing for an even marquee wall' },
+  { kind: 'how-to', topic: 'Glass and metal gobo holders for LED logo projectors: sizes and heat limits' },
+  { kind: 'how-to', topic: 'DMX addressing a mixed rig of moving heads and LED par cans' },
+  { kind: 'buyer-guide', topic: 'Silent LED profile spots for a lecture theatre: fan modes and noise specs' },
+  { kind: 'how-to', topic: 'DMX patching moving heads and pixel bars on one console' },
+  { kind: 'how-to', topic: 'Replacing halogen PAR cans with RGBW LED pars in a club' },
+  { kind: 'how-to', topic: 'DMX channel mode changes on LED moving heads: 16-channel versus 24-channel' },
+  { kind: 'how-to', topic: 'LED lifting tube and jellyfish kinetic fixtures: DMX channel counts per tube' },
+  { kind: 'application', topic: 'Snow machine and bubble machine combinations for a winter themed party' },
+  { kind: 'how-to', topic: 'Spark flame machine positioning and safe distances on a stage' },
+  { kind: 'application', topic: '1000 W RGB strobe and four-lens blinder cues for a concert climax' },
+  { kind: 'buyer-guide', topic: 'Outdoor LED blinder fixtures for stadium audience lighting' },
+  { kind: 'application', topic: 'Water ripple LED effect light with RGBW DMX on a stage backdrop' },
+  { kind: 'comparison', topic: 'Profile spot zoom lens ranges: 15 to 30 degrees versus 25 to 50 degrees' },
+  { kind: 'buyer-guide', topic: 'Comparing prices of 19x40 W IP65 moving heads across a 20-fixture order' },
 ];
 
 /**
@@ -147,6 +245,50 @@ export function pickTopic(slotIndex) {
 }
 
 /** How many slots the nightly scheduler asks for. Kept next to the pool. */
+export const EDITORIAL_POOL_SIZE = EDITORIAL_POOL.length;
+
+// Filler words carry no subject information. Dropping them makes "Choosing the
+// Right LED PAR" and "LED PAR: How to Choose" compare as the same topic.
+const DUP_STOP = new Set((
+  'a an the and or for vs of to in on with how what why which your you is are ' +
+  'when where can does do from at by it its into before after versus each every per without ' +
+  'choosing choose chosen choice right guide practical comprehensive step understanding ' +
+  'buyer buyers buyers stage lighting light lights fixture fixtures led'
+).split(' '));
+
+function topicTokens(t) {
+  return new Set(
+    (String(t || '').toLowerCase().match(/[a-z0-9]+/g) || [])
+      .filter((w) => w.length > 2 && !DUP_STOP.has(w))
+  );
+}
+
+/** Jaccard overlap of two titles after the filler words are removed. */
+export function topicSimilarity(a, b) {
+  const A = topicTokens(a);
+  const B = topicTokens(b);
+  if (!A.size || !B.size) return 0;
+  let shared = 0;
+  for (const w of A) if (B.has(w)) shared++;
+  return shared / (A.size + B.size - shared);
+}
+
+/**
+ * Is this subject close enough to something already published that a new post
+ * would just be a rewrite? 0.34 is the offline pool-audit threshold; callers
+ * can pass a stricter value for the post-draft title check.
+ * An empty or missing ledger always returns false so a failed fetch can never
+ * block the nightly article.
+ */
+export function isNearDuplicateTopic(topic, titles, threshold) {
+  if (!Array.isArray(titles) || !titles.length) return false;
+  const limit = Number(threshold) || 0.34;
+  for (const title of titles) {
+    if (topicSimilarity(topic, title) >= limit) return true;
+  }
+  return false;
+}
+
 export const SLOTS_PER_DAY = 3;
 
 const SYSTEM =

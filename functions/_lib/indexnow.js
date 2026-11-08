@@ -60,11 +60,19 @@ export async function submitUrls(urls) {
   } catch (e) {
     return { ok: false, error: 'fetch failed: ' + (e && e.message ? e.message : String(e)), submitted: 0 };
   }
+  // IndexNow answers 200/202 with an empty body, but a rejection explains why
+  // (unknown key, host mismatch, too many URLs). Read it: from 2026-11-04 the
+  // nightly ping kept returning "error code: 502" with no diagnostics at all.
+  // Cloudflare Pages discards the JSON body of a Functions 5xx, so the reason
+  // has to travel inside a 200 response (see api/indexnow.js).
+  let upstreamBody = '';
+  try { upstreamBody = (await res.text()).trim().slice(0, 300); } catch (e) { /* empty is fine */ }
   return {
     ok: res.status === 200 || res.status === 202,
     status: res.status,
     submitted: list.length,
     urls: list,
+    upstreamBody: upstreamBody || null,
   };
 }
 

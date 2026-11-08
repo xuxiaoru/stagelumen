@@ -56,5 +56,9 @@ export async function onRequest(context) {
   }
 
   const res = await submitUrls(urls);
-  return json(res, res.ok ? 200 : 502);
+  // Deliberately NOT a 502. Cloudflare Pages replaces a Functions 5xx body with
+  // the plain text "error code: 502", which erased every diagnostic from the
+  // nightly logs for four days. A 200 with ok:false keeps the upstream status
+  // and body readable; callers must check .ok, not the HTTP status.
+  return json(res, 200);
 }

@@ -121,22 +121,40 @@ jobs:
           cat /tmp/published.txt
           echo "waiting 180s for the Pages deployments to go live…"
           sleep 180
-          URLS=$(node -e '
+          # Post to the public IndexNow endpoint rather than our own Function.
+          # The key is public by design (it lives at /<key>.txt on the site), so
+          # no admin token is needed, and a plain curl sees the real HTTP status
+          # instead of Cloudflare's body-less "error code: 502".
+          # 2026-11-08: /api/indexnow had returned 502 on every run since 11-04
+          # while `curl || echo warning` kept the job green. Direct submission
+          # was verified 200 with the same URL list.
+          PAYLOAD=$(node -e '
             const fs = require("fs");
             const u = fs.readFileSync("/tmp/published.txt", "utf8")
               .split("\n").map(s => s.trim()).filter(Boolean);
-            console.log(JSON.stringify([...new Set(u)]));
+            const urls = [...new Set(u)]
+              .filter(x => x.startsWith("https://www.rigebalighting.com/"));
+            const key = "c2fc5c421c4bfcc380a51db243e46071";
+            process.stdout.write(JSON.stringify({
+              host: "www.rigebalighting.com",
+              key,
+              keyLocation: "https://www.rigebalighting.com/" + key + ".txt",
+              urlList: urls,
+            }));
           ')
-          echo "submitting: ${URLS}"
-          curl -sS -X POST "https://www.rigebalighting.com/api/indexnow" \
-            -H "authorization: Bearer ${ADMIN_TOKEN}" \
-            -H "content-type: application/json" \
-            -d "{\"urls\":${URLS}}" \
-            -o /tmp/indexnow-resp.json \
-            || echo "::warning::IndexNow request failed (non-fatal — the posts are already live)"
-          echo "---- indexnow response ----"
-          cat /tmp/indexnow-resp.json 2>/dev/null || true
+          echo "submitting: $(echo "${PAYLOAD}" | node -e 'let s="";process.stdin.on("data",d=>s+=d).on("end",()=>console.log(JSON.parse(s).urlList.join(", ")))')"
+          HTTP=$(curl -sS -X POST "https://api.indexnow.org/indexnow" \
+            -H "content-type: application/json; charset=utf-8" \
+            -d "${PAYLOAD}" \
+            -o /tmp/indexnow-resp.txt -w "%{http_code}") || HTTP="000"
+          echo "---- indexnow response (HTTP ${HTTP}) ----"
+          cat /tmp/indexnow-resp.txt 2>/dev/null || true
           echo
+          if [ "${HTTP}" != "200" ] && [ "${HTTP}" != "202" ]; then
+            echo "::error::IndexNow rejected the batch (HTTP ${HTTP}) — new posts are not indexed"
+            exit 1
+          fi
+          echo "INDEXNOW OK: HTTP ${HTTP}"
 
       # Share ONE article a day on the company Facebook Page. Gated on a
       # repository variable so the nightly job stays quiet while the page is

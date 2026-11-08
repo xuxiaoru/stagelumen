@@ -22,7 +22,10 @@
 
 import { ok, fail, handleOptions, adminAuthorized, readBody, str, uid, nowIso } from '../_lib/util.js';
 import { hitRate, logAgentRun, hasDb } from '../_lib/db.js';
-import { draft, expandDraft, pickTopic, hasCatalogueBacking } from '../_lib/content.js';
+import {
+  draft, expandDraft, pickTopic, hasCatalogueBacking,
+  isNearDuplicateTopic, topicSimilarity, EDITORIAL_POOL_SIZE,
+} from '../_lib/content.js';
 import {
   ghConfigured,
   proposeFiles,
@@ -49,6 +52,31 @@ const RECENT_HINT = 18;
 // skipped topic on the same slot of a later night rather than stealing the next
 // slot's subject.
 const TOPIC_TRIES = 4;
+// Once the walk reaches a part of the pool whose subjects have already shipped,
+// four candidates are not enough. Keep scanning forward on this slot instead of
+// falling back to a duplicate. 24 steps is roughly eight nights of subjects.
+const TOPIC_SCAN = 24;
+
+/**
+ * Titles already live on the site. data/posts.json is a Pages build product,
+ * regenerated on every merge, so it is the freshest possible inventory of
+ * published articles. A minute-resolution cache-buster keeps the CDN from
+ * handing us yesterday's copy. If this fails we return [] and lean on the
+ * enlarged pool — a missing ledger must never stop the nightly article.
+ */
+async function readPublishedTitles() {
+  try {
+    const url = 'https://www.rigebalighting.com/data/posts.json?t=' + Math.floor(Date.now() / 60000);
+    const r = await fetch(url, { headers: { accept: 'application/json' }, cf: { cacheTtl: 0 } });
+    if (!r.ok) return [];
+    const j = await r.json();
+    const posts = Array.isArray(j) ? j : (Array.isArray(j.posts) ? j.posts : []);
+    return posts.map((p) => String(p.title || '').trim()).filter(Boolean);
+  } catch (e) {
+    console.error('[content] published-title ledger unavailable: ' + (e && e.message ? e.message : String(e)));
+    return [];
+  }
+}
 
 async function readImageLedger(env) {
   try {
@@ -285,17 +313,29 @@ export async function onRequest(context) {
   // The index is day * slots + slot, so a single nightly run asking for three
   // slots gets three different subjects instead of three drafts of the same
   // one. Callers that send nothing keep the old one-post-a-day behaviour.
+  // One ledger read per request; used for subject selection and again after
+  // drafting to hold a near-identical title for review instead of publishing it.
+  const publishedTitles = auto ? await readPublishedTitles() : [];
+
   if (auto && !topic) {
     const slots = Math.min(6, Math.max(1, Math.round(Number(body.slots) || 1)));
     const slot = Math.min(slots - 1, Math.max(0, Math.round(Number(body.slot) || 0)));
     const base = Math.floor(Date.now() / 86400000) * slots + slot;
-    // Walk forward until a topic the catalogue can actually support turns up.
-    // A subject with no products behind it cannot produce the two real data
-    // tables the GEO gate requires, so it would only ever become a NEEDS REVIEW
-    // PR. This is what stops three slots from turning into zero published posts.
+    // Walk forward until a subject is BOTH fresh (no published near-duplicate)
+    // and backed by enough real catalogue products to satisfy the GEO gate.
+    // Advancing by `slots` keeps a skipped subject on the same slot of a later
+    // night rather than stealing the next slot's subject.
     let chosen = null;
-    for (let i = 0; i < TOPIC_TRIES; i++) {
+    const considered = new Set();
+    const maxSteps = Math.min(TOPIC_TRIES + TOPIC_SCAN, EDITORIAL_POOL_SIZE);
+    for (let i = 0; i < maxSteps && !chosen; i++) {
       const pick = pickTopic(base + i * slots);
+      if (considered.has(pick.topic)) continue;
+      considered.add(pick.topic);
+      if (isNearDuplicateTopic(pick.topic, publishedTitles)) {
+        console.error('[content] title ledger: already covered, skipping: ' + pick.topic);
+        continue;
+      }
       const backing = await hasCatalogueBacking(request, pick.topic);
       if (backing.ok) {
         chosen = pick;
@@ -357,6 +397,7 @@ export async function onRequest(context) {
     model: res.model,
     markdown: res.markdown,
     auto,
+    duplicateOf: null,
     pr: null,
     merged: false,
     github: ghConfigured(env),
@@ -365,7 +406,14 @@ export async function onRequest(context) {
   if (ghConfigured(env)) {
     try {
       const branch = 'ai/blog-' + res.slug;
-      const hasError = (res.checks || []).some((c) => c.level === 'error');
+      // Second line of defence: a model can drift back onto an old headline
+      // even when the assigned subject was fresh. 0.6 only catches near-exact
+      // repeats, so it does not hold up legitimately adjacent articles.
+      const dupTitle = auto && publishedTitles.length
+        ? publishedTitles.find((x) => topicSimilarity(res.title, x) >= 0.6) || null
+        : null;
+      if (dupTitle) out.duplicateOf = dupTitle;
+      const hasError = (res.checks || []).some((c) => c.level === 'error') || !!dupTitle;
       const files = [{ path: res.path, content: res.markdown }];
       // Advance the ledger only when this run is certain to publish (auto,
       // fact-check clean) and the post actually carries a hero image. Manual
@@ -399,7 +447,7 @@ export async function onRequest(context) {
           out.mergeError = 'merge was rejected: ' + merged.error;
         }
       } else if (auto && hasError) {
-        out.needsReview = true;
+        out.needsReview = dupTitle ? 'near-duplicate of published: ' + dupTitle : true;
       }
     } catch (e) {
       out.prError = (e && e.message) || String(e);

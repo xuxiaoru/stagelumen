@@ -147,6 +147,97 @@ A: Every fixture passes final QC before packing and ships with a limited warrant
 Written by the RiGeBa engineering and export team. Each link is a standalone
 page carrying the full answer, plus the tables and figures behind it.
 
+<!-- ARTICLES:BEGIN -->
+- [Lighting a Live-Streamed Set: Colour Temperature, Flicker and Camera-Safe Dimming](https://www.rigebalighting.com/content/blog/lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-z7d2): Use 3200K colour temperature
+- [Ground Support and Stage Platforms: A Buyer's Guide](https://www.rigebalighting.com/content/blog/ground-support-and-stage-platforms-a-buyers-guide-mjbw): Check load capacity, like 200kg/㎡ for RG-DDF40S45-V32
+- [Rigging Hardware Basics for Technicians](https://www.rigebalighting.com/content/blog/rigging-hardware-basics-for-technicians-1x63): Inspect 1024 LEDs before every show
+- [A Buyer's Guide to Choosing Truss: Box vs Ladder vs Triangle](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-epyf): Choose HJ-L1TMY303010T50-W for $29.7
+- [Planning Power and Phase Balance for a Stage Full of LED Fixtures](https://www.rigebalighting.com/content/blog/planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-g9jn): Check 12W power
+- [Rigging Hardware Basics for Technicians](https://www.rigebalighting.com/content/blog/rigging-hardware-basics-for-technicians-2jmv): Inspect 1024 LEDs before every show
+- [Choosing a Console for a Rental House: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/choosing-a-console-for-a-rental-house-a-comprehensive-guide-c8t0): Consider 28 channels
+- [Wireless DMX: Latency, Dropouts, and When to Run Cable Anyway](https://www.rigebalighting.com/content/blog/wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-2718): RG-CTCWILDR-RS wireless remote control from $41
+- [DMX Splitters and Opto-Isolation: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/dmx-splitters-and-opto-isolation-a-step-by-step-guide-7st3): Use 4 DMX splitters
+- [A Buyer's Guide to LED Dance Floors: Panel Pitch, Weight Loading, and DMX Mapping](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-ujpr): Choose the right LED dance floor with a panel pitch of 2.976mm
+- [Kinetic Winches and Lifting Balls: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/kinetic-winches-and-lifting-balls-a-comprehensive-guide-362z): Check 5KG load limit
+- [Fan Noise in LED Fixtures: A Technician's Guide](https://www.rigebalighting.com/content/blog/fan-noise-in-led-fixtures-a-technicians-guide-0orv): Check RG-PS200A110-W for silent running
+- [Renting vs Buying Moving Heads: The Crossover Point for a Working Rental House](https://www.rigebalighting.com/content/blog/renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-3qly): New 295W 10R beam moving head costs $332
+- [Understanding Cold-Start Behaviour in LED Fixtures](https://www.rigebalighting.com/content/blog/understanding-cold-start-behaviour-in-led-fixtures-geg5): Derating in winter affects 300W LED Panel light
+- [Moving Head Service Intervals: A Practical Guide](https://www.rigebalighting.com/content/blog/moving-head-service-intervals-a-practical-guide-au04): Clean every 2200 hours
+- [Creating Intentional Movement Macros on Moving Heads](https://www.rigebalighting.com/content/blog/creating-intentional-movement-macros-on-moving-heads-1aws): Use 6W Moving head full color laser
+- [Beam Angle vs Output: Understanding the Relationship](https://www.rigebalighting.com/content/blog/beam-angle-vs-output-understanding-the-relationship-6dfz): 230W beam reads brighter than 400W wash
+- [Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre](https://www.rigebalighting.com/content/blog/profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-qhlu): RG-PS200A20T50-W costs $95
+- [Choosing the Right Gobo Projector for Retail and Brand Logos](https://www.rigebalighting.com/content/blog/choosing-the-right-gobo-projector-for-retail-and-brand-logos-pz40): Select a gobo projector with a throw distance of up to 100M
+- [LED Wall Washers for Facades and Ballrooms: A Practical Guide](https://www.rigebalighting.com/content/blog/led-wall-washers-for-facades-and-ballrooms-a-practical-guide-c5y1): Check 24pcs 1.5W RGB Outdoor LED bar
+- [Choosing the Right Battery Uplights for Weddings and Corporate Events](https://www.rigebalighting.com/content/blog/choosing-the-right-battery-uplights-for-weddings-and-corporate-events-udu7): RG-W18IB8-Ke8AM offers 8 hours runtime
+- [Choosing the Right Atmospheric Machine for Your Venue](https://www.rigebalighting.com/content/blog/choosing-the-right-atmospheric-machine-for-your-venue-gvw7): Check the room size and mounting height
+- [Pixel Mapping a Wall of LED Fixtures Without a Media Server](https://www.rigebalighting.com/content/blog/pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-jrlz): Use 24pcs 1.5W RGB Outdoor LED bar
+- [Choosing Effect Fixtures for a Streamed Set: Pixel Bars vs LED Matrix Panels](https://www.rigebalighting.com/content/blog/choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-iel8): Select fixtures with DMX512 control protocol
+- [Choosing an RGB Laser for a Nightclub: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-ldr8): Check 10W output
+- [Laser Safety for Live Events: A Buyer's Guide](https://www.rigebalighting.com/content/blog/laser-safety-for-live-events-a-buyers-guide-5hi0): Choose between class 3B and class 4 lasers
+- [Colour Mixing in Moving Heads: CMY vs RGB and the Importance of Clean White](https://www.rigebalighting.com/content/blog/colour-mixing-in-moving-heads-cmy-vs-rgb-and-the-importance-of-clean-w-3e6j): Check 1000W RGB strobe
+- [Laser Safety for Live Events: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/laser-safety-for-live-events-a-comprehensive-guide-l3t8): Class 3B vs class 4 laser safety
+- [Sound-Activated vs DMX Control for Small Venues](https://www.rigebalighting.com/content/blog/sound-activated-vs-dmx-control-for-small-venues-7lb3): Use DMX control for 192 channels
+- [Lighting a School or Community Theatre on a Fixed Budget](https://www.rigebalighting.com/content/blog/lighting-a-school-or-community-theatre-on-a-fixed-budget-0uip): RG-M300BH-KYH16M for $205
+- [Lighting a Corporate Conference: A Guide to Front Light, Screen Wash, and Spill Control](https://www.rigebalighting.com/content/blog/lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-jn00): Use 300W LED Panel light for front light
+- [Lighting a Live-Streamed Set: Colour Temperature, Flicker and Camera-Safe Dimming](https://www.rigebalighting.com/content/blog/lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-rhez): Use 3200K colour temperature
+- [Rigging Hardware Basics for Technicians](https://www.rigebalighting.com/content/blog/rigging-hardware-basics-for-technicians-5bt4): Inspect 1024 LEDs before every show
+- [Choosing the Right Truss: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/choosing-the-right-truss-a-comprehensive-guide-xnvs): Select from 300x300mm truss models
+- [Planning Power and Phase Balance for a Stage Full of LED Fixtures](https://www.rigebalighting.com/content/blog/planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-g6yg): Check the power consumption of each fixture, like the Full Moon Scimitar LED effect light
+- [Rigging Hardware Basics for Technicians](https://www.rigebalighting.com/content/blog/rigging-hardware-basics-for-technicians-y1su): Inspect 1024 LEDs before every show
+- [Choosing a Console for a Rental House: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/choosing-a-console-for-a-rental-house-a-comprehensive-guide-18xr): Consider 24 channels
+- [Wireless DMX: Latency, Dropouts, and When to Run Cable Anyway](https://www.rigebalighting.com/content/blog/wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-c2r7): RG-CTCWILDR-RS wireless remote control from $41
+- [DMX Splitters and Opto-Isolation: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/dmx-splitters-and-opto-isolation-a-step-by-step-guide-guiy): Use 4 DMX splitters
+- [A Buyer's Guide to LED Dance Floors: Panel Pitch, Weight Loading, and DMX Mapping](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-ojsd): Choose the right LED dance floor with a panel pitch of 2.976mm
+- [Kinetic Winches and Lifting Balls: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/kinetic-winches-and-lifting-balls-a-comprehensive-guide-5uxq): Check 5KG load limits
+- [Fan Noise in LED Fixtures: A Practical Guide](https://www.rigebalighting.com/content/blog/fan-noise-in-led-fixtures-a-practical-guide-s61h): Check RG-PS200A110-W for silent running
+- [Renting vs Buying Moving Heads: The Crossover Point for a Working Rental House](https://www.rigebalighting.com/content/blog/renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-687c): New 295W 10R beam moving head costs $332
+- [Moving Head Service Intervals: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/moving-head-service-intervals-a-step-by-step-guide-gjg7): Clean every 2200 hours
+- [Creating Intentional Movement Macros on Moving Heads](https://www.rigebalighting.com/content/blog/creating-intentional-movement-macros-on-moving-heads-7717): Use 6W moving heads
+- [Understanding Beam Angle vs Output in Stage Lighting](https://www.rigebalighting.com/content/blog/understanding-beam-angle-vs-output-in-stage-lighting-5rcc): 230W beam reads brighter than 400W wash
+- [Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre](https://www.rigebalighting.com/content/blog/profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-hxrl): RG-PS200A20T50-W costs $95
+- [Choosing the Right Gobo Projector for Retail and Brand Logos](https://www.rigebalighting.com/content/blog/choosing-the-right-gobo-projector-for-retail-and-brand-logos-w8tv): Select a gobo projector with a throw distance of up to 100M
+- [RGBW vs RGBA vs RGBAL: Understanding the Impact of Extra Emitters](https://www.rigebalighting.com/content/blog/rgbw-vs-rgba-vs-rgbal-understanding-the-impact-of-extra-emitters-4brf): 300AZ-RGBAL costs $930
+- [LED Wall Washers for Facades and Ballrooms: A Practical Guide](https://www.rigebalighting.com/content/blog/led-wall-washers-for-facades-and-ballrooms-a-practical-guide-pmpq): Check 24pcs 1.5W RGB Outdoor LED bar
+- [Choosing the Right Battery Uplights for Weddings and Corporate Events](https://www.rigebalighting.com/content/blog/choosing-the-right-battery-uplights-for-weddings-and-corporate-events-h9h8): RG-W18IB8-Ke8AM offers 8 hours runtime
+- [Choosing the Right Atmospheric Machine for Your Venue](https://www.rigebalighting.com/content/blog/choosing-the-right-atmospheric-machine-for-your-venue-5grv): RG-FO600V17DW hazer machine costs $175
+- [Choosing the Right LED Strobes and Audience Blinders for Live Music](https://www.rigebalighting.com/content/blog/choosing-the-right-led-strobes-and-audience-blinders-for-live-music-e0pi): Selecting 600W strobes
+- [Pixel Mapping a Wall of LED Fixtures Without a Media Server](https://www.rigebalighting.com/content/blog/pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-nfr7): Use 24pcs 1.5W RGB Outdoor LED bar
+- [Choosing Effect Fixtures for a Streamed Set: Pixel Bars vs LED Matrix Panels](https://www.rigebalighting.com/content/blog/choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-luzy): Select fixtures with DMX512 control protocol
+- [Laser vs Moving Head Beam Effects: Where Each One Earns Its Place on a Rig](https://www.rigebalighting.com/content/blog/laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-iycj): 6W Moving head full color laser costs $375
+- [Choosing an RGB Laser for a Nightclub: Output, Scanning Angle, and ILDA Control](https://www.rigebalighting.com/content/blog/choosing-an-rgb-laser-for-a-nightclub-output-scanning-angle-and-ilda-c-6gvm): Check 10W output
+- [Laser Safety for Live Events: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/laser-safety-for-live-events-a-comprehensive-guide-a879): Class 3B vs class 4 lasers
+- [Laser Safety for Live Events: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/laser-safety-for-live-events-a-comprehensive-guide-nt11): Class 3B vs class 4 laser safety
+- [Sound-Activated vs DMX Control for Small Venues](https://www.rigebalighting.com/content/blog/sound-activated-vs-dmx-control-for-small-venues-wwo3): RG-CTD192S8F5-K for $50
+- [Lighting a School or Community Theatre on a Fixed Budget](https://www.rigebalighting.com/content/blog/lighting-a-school-or-community-theatre-on-a-fixed-budget-e805): RG-M300BH-KYH16M for $205
+- [Lighting a Corporate Conference: A Guide to Front Light, Screen Wash, and Spill Control](https://www.rigebalighting.com/content/blog/lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-tzp6): Use 300W LED Panel light for front light
+- [Lighting a Live-Streamed Set: Colour Temperature, Flicker and Camera-Safe Dimming](https://www.rigebalighting.com/content/blog/lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-l9vn): Use 3200K colour temperature
+- [Ground Support and Stage Platforms: A Buyer's Guide](https://www.rigebalighting.com/content/blog/ground-support-and-stage-platforms-a-buyers-guide-95ce): Check load capacity before load-in
+- [Rigging Hardware Basics for Technicians](https://www.rigebalighting.com/content/blog/rigging-hardware-basics-for-technicians-1g4s): Inspect 1024 LEDs before every show
+- [A Buyer's Guide to Choosing Truss: Box vs Ladder vs Triangle](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-rufc): Choose HJ-L1TMY303010T50-W for $29.7
+- [Planning Power and Phase Balance for a Stage Full of LED Fixtures](https://www.rigebalighting.com/content/blog/planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-2fty): Check the power consumption of each fixture, like the Full Moon Scimitar LED effect light
+- [Rigging Hardware Basics for Technicians](https://www.rigebalighting.com/content/blog/rigging-hardware-basics-for-technicians-xxjk): Inspect 1024 LEDs before every show
+- [Choosing a Console for a Rental House: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/choosing-a-console-for-a-rental-house-a-comprehensive-guide-4w8o): Consider 24 channels
+- [Wireless DMX Buyer's Guide: Latency, Dropouts, and Cable Considerations](https://www.rigebalighting.com/content/blog/wireless-dmx-buyers-guide-latency-dropouts-and-cable-considerations-z9eh): RG-CTCWILDR-RS wireless remote control from $41
+- [DMX Splitters and Opto-Isolation: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/dmx-splitters-and-opto-isolation-a-step-by-step-guide-etgx): Use 4 DMX splitters
+- [A Buyer's Guide to LED Dance Floors: Panel Pitch, Weight Loading, and DMX Mapping](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-3mz1): Choose the right LED dance floor with a panel pitch of 2.976mm
+- [Kinetic Winches and Lifting Balls: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/kinetic-winches-and-lifting-balls-a-comprehensive-guide-w6jv): Check 5KG load limit
+- [Renting vs Buying Moving Heads: The Crossover Point for a Working Rental House](https://www.rigebalighting.com/content/blog/renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-m63m): New 295W 10R beam moving head costs $332
+- [Understanding Cold-Start Behaviour in LED Fixtures](https://www.rigebalighting.com/content/blog/understanding-cold-start-behaviour-in-led-fixtures-yyxd): Derating in winter affects 300W LED Panel light
+- [Moving Head Service Intervals: A Practical Guide](https://www.rigebalighting.com/content/blog/moving-head-service-intervals-a-practical-guide-23b4): Clean every 2200 hours
+- [Creating Intentional Movement Macros on Moving Heads](https://www.rigebalighting.com/content/blog/creating-intentional-movement-macros-on-moving-heads-yzsn): Use 6W Moving head full color laser
+- [Understanding Beam Angle vs Output in Stage Lighting](https://www.rigebalighting.com/content/blog/understanding-beam-angle-vs-output-in-stage-lighting-h47s): 230W beam reads brighter than 400W wash
+- [Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre](https://www.rigebalighting.com/content/blog/profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-7p5d): RG-PS200A20T50-W costs $95
+- [Choosing the Right Gobo Projector for Retail and Brand Logos](https://www.rigebalighting.com/content/blog/choosing-the-right-gobo-projector-for-retail-and-brand-logos-4jk6): Select a gobo projector with a throw distance of 30M
+- [RGBW vs RGBA vs RGBAL: What the Extra Emitter Actually Buys You](https://www.rigebalighting.com/content/blog/rgbw-vs-rgba-vs-rgbal-what-the-extra-emitter-actually-buys-you-h1ck): 300AZ-RGBAL costs $930
+- [LED Wall Washers for Facades and Ballrooms: A Practical Guide](https://www.rigebalighting.com/content/blog/led-wall-washers-for-facades-and-ballrooms-a-practical-guide-ajya): Check 24pcs 1.5W RGB Outdoor LED bar
+- [Choosing the Right Battery Uplights for Weddings and Corporate Events](https://www.rigebalighting.com/content/blog/choosing-the-right-battery-uplights-for-weddings-and-corporate-events-sxpg): RG-W18IB8-Ke8AM offers 8 hours runtime
+- [Choosing the Right Atmospheric Machine for Your Venue](https://www.rigebalighting.com/content/blog/choosing-the-right-atmospheric-machine-for-your-venue-04vq): RG-FR2400H8S-D spark fog machine
+- [Choosing the Right LED Strobes and Audience Blinders for Live Music](https://www.rigebalighting.com/content/blog/choosing-the-right-led-strobes-and-audience-blinders-for-live-music-7w5q): Select RG-TH8B600S for 600W output
+- [Pixel Mapping a Wall of LED Fixtures Without a Media Server](https://www.rigebalighting.com/content/blog/pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-qp9f): Use 24pcs 1.5W RGB Outdoor LED bar
+- [Choosing Effect Fixtures for a Streamed Set: Pixel Bars vs LED Matrix Panels](https://www.rigebalighting.com/content/blog/choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-qf23): Select fixtures with DMX512 control protocol
+- [Laser vs Moving Head Beam Effects: Where Each One Earns Its Place on a Rig](https://www.rigebalighting.com/content/blog/laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-02s0): 6W Moving head full color laser costs $375
+- [Choosing the Right RGB Laser for a Nightclub](https://www.rigebalighting.com/content/blog/choosing-the-right-rgb-laser-for-a-nightclub-dxqi): Check 10W output
+- [Laser Safety for Live Events: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/laser-safety-for-live-events-a-comprehensive-guide-dgan): Class 3B vs class 4 laser safety
 - [Choosing the Right Atmospheric Machine for Your Venue](https://www.rigebalighting.com/content/blog/choosing-the-right-atmospheric-machine-for-your-venue-ko84): RG-FO600V17DW hazer machine costs $175
 - [LED Strobes and Audience Blinders for Live Music: A Buyer's Guide](https://www.rigebalighting.com/content/blog/led-strobes-and-audience-blinders-for-live-music-a-buyers-guide-f4co): Choose 600W strobes like RG-TH8B600S
 - [A Step-by-Step Guide to Pixel Mapping a Wall of LED Fixtures Without a Media Server](https://www.rigebalighting.com/content/blog/a-step-by-step-guide-to-pixel-mapping-a-wall-of-led-fixtures-without-a-z4td): Use 24pcs 1.5W RGB Outdoor LED bar
@@ -183,6 +274,7 @@ page carrying the full answer, plus the tables and figures behind it.
 - [OEM Stage Lighting: A Buyer's Guide](https://www.rigebalighting.com/content/blog/oem-stage-lighting-a-buyers-guide-ptfr): What OEM actually buys you, what it costs in MOQ, and the six terms that decide whether a private-label order goes well.
 - [How to Choose IP65 Outdoor Stage Lights for Festivals and Seaside Venues](https://www.rigebalighting.com/content/blog/ip65-outdoor-stage-lights-buyer-guide): Festivals and coastal venues fail fixtures two different ways. What to specify for each, with real outdoor models and prices.
 - [How to Set Up DMX Lighting for a Small Venue (Step-by-Step)](https://www.rigebalighting.com/content/blog/how-to-set-up-dmx-lighting): Channel math, addressing and controller choice for a small bar rig — with real EXW prices for 192-, 408- and 1024-channel DMX controllers.
+<!-- ARTICLES:END -->
 ## Key pages
 - Home: https://www.rigebalighting.com/
 - All 632 models: https://www.rigebalighting.com/products
