@@ -4,7 +4,7 @@ slug: "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-nfr7"
 date: "2026-10-19T20:40:25.536Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "To learn more about the RG-CTCLEDPEIN-1, visit RG-CTCLEDPEIN-1. To learn more about the RG-PDS56S125IA-V0, visit RG-PDS56S125IA-V0."
+excerpt: "Next, review the specifications of the RG-EL004FL-3e42 and RG-EL006FL-3e42 to determine which one is best suited for your pixel mapping project."
 image: "assets/images/products/dmx-control-pixel-led-lifting.jpg"
 imageAlt: "24pcs 1.5W RGB Outdoor LED bar"
 tags:

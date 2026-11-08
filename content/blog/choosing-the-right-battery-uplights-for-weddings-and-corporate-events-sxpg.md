@@ -4,7 +4,7 @@ slug: "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-sxp
 date: "2026-10-08T20:46:35.017Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "The RG-W18IB8-Ke8AM, for example, offers up to 8 hours of runtime, while the RG-TB140S28D-f60 has a maximum running time of up to 12 hours."
+excerpt: "The RG-W18IB8-Ke8AM, for example, has a beam angle of 30 degrees and is suitable for small to medium-sized events."
 image: "assets/images/products/rg-w18ib8-ke8am.jpg"
 imageAlt: "Battery uplight"
 tags:

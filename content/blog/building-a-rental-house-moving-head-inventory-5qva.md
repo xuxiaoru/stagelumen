@@ -7,7 +7,7 @@ author: "RiGeBa Lighting Team"
 category: "How-To"
 image: "assets/images/products/rg-el00db-8e2a.jpg"
 imageAlt: "LED moving head wash light used as rental stock"
-excerpt: "If the budget reaches further, the next dollar is better spent on two more washes than on one flagship BSW."
+excerpt: "Buy two fixture types in quantity rather than five types in pairs: a small beam and a zoom wash, eight to twelve units in total."
 tags:
   - Rental Houses
   - Moving Heads

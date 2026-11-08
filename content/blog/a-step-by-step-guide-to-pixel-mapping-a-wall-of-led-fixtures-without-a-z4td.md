@@ -4,7 +4,7 @@ slug: "a-step-by-step-guide-to-pixel-mapping-a-wall-of-led-fixtures-without-a-z4
 date: "2026-10-06T13:52:34.427Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The RG-CTCLEDPEIN-1, for example, can control up to 40 LEDs, making it a good choice for smaller to medium-sized installations."
+excerpt: "The two catalogue pages that carry the configurations in these tables are RG-PDS28S10IA-V25 and DMX Control Pixel LED Lifting."
 image: "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg"
 imageAlt: "24pcs 1.5W RGB Outdoor LED bar"
 tags:

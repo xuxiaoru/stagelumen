@@ -4,7 +4,7 @@ slug: "choosing-the-right-gobo-projector-for-retail-and-brand-logos-pz40"
 date: "2026-11-01T19:52:48.133Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "For example, the RG-GB750L4C0-BK has a throw distance of up to 100M, while the RG-PJ60LE4R1Y1-BK has a throw distance of up to 15M."
+excerpt: "The RG-GB200L4C0-BK and RG-GB200L6C0-ZK are examples of outdoor gobo projectors. Gobo projectors can be controlled using various protocols, such as DMX."
 image: "assets/images/products/rg-pj600bl1s0n1-wk.jpg"
 imageAlt: "Gobo projector"
 tags:

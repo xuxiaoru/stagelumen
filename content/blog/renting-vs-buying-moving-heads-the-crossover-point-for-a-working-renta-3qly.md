@@ -4,7 +4,7 @@ slug: "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-3q
 date: "2026-11-03T21:13:10.732Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "For example, the RG-ST864A-S20f96A has a control protocol of DMX512, self-propelled, master-slave, voice control, with RDM function."
+excerpt: "The decision depends on various factors, including the frequency and duration of events, the type of events, and the budget."
 image: "assets/images/products/6w-moving-head-full-color.jpg"
 imageAlt: "New 295W 10R beam moving head"
 tags:

@@ -4,7 +4,7 @@ slug: "dmx-splitters-and-opto-isolation-a-step-by-step-guide-etgx"
 date: "2026-10-12T22:34:54.269Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "For more information on the RG-CA8402MINI DMX mini splitter, visit the RG-CA8402MINI product page."
+excerpt: "DMX splitters are available in different configurations, including 1-in, 4-out and 1-in, 8-out."
 image: "assets/images/products/rg-ca8402c.jpg"
 imageAlt: "DMX splitter"
 tags:

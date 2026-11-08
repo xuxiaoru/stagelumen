@@ -4,7 +4,7 @@ slug: "laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-iyc
 date: "2026-10-18T18:14:59.104Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "For example, the 6W Moving head full color laser uses a 6W laser module and has a beam range of 540 degrees on the X axis and 270 degrees on the Y axis."
+excerpt: "Both have their own unique advantages and disadvantages, and the choice between them depends on the specific needs of the production."
 image: "assets/images/products/new-295w-10r-beam-moving.jpg"
 imageAlt: "6W Moving head full color laser"
 tags:

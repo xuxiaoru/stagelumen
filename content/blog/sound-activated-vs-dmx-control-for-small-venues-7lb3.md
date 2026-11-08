@@ -4,7 +4,7 @@ slug: "sound-activated-vs-dmx-control-for-small-venues-7lb3"
 date: "2026-10-28T20:26:14.927Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "RiGeBa Lighting offers a range of LED lighting fixtures, including the RG-PS20A19-W and RG-PS200A110-W, that can be used for various applications."
+excerpt: "When it comes to lighting control, two popular options are sound-activated control and DMX control."
 image: "assets/images/products/rg-ctd192s8f5-k.jpg"
 imageAlt: "DMX controller"
 tags:

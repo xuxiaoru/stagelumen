@@ -4,7 +4,7 @@ slug: "choosing-the-right-gobo-projector-for-retail-and-brand-logos-4jk6"
 date: "2026-10-09T20:14:20.639Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "For example, the RG-GB750L4C0-BK has a throw distance of within 50M, while the RG-PJ60LE4R1Y1-BK has a throw distance of within 10M."
+excerpt: "The typical throw distance for a gobo projector can range from 10M to 100M, depending on the model and its specifications."
 image: "assets/images/products/rg-pj60le4r1y1-bk.jpg"
 imageAlt: "Gobo projector"
 tags:

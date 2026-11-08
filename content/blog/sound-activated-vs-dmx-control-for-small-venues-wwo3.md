@@ -4,7 +4,7 @@ slug: "sound-activated-vs-dmx-control-for-small-venues-wwo3"
 date: "2026-10-16T18:55:26.134Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "To learn more about the RG-CTD192S8F5-K DMX controller and other lighting control systems, visit our website at RG-CTD192S8F5-K."
+excerpt: "For small venues, DMX control is generally the better option, offering more precise control and flexibility."
 image: "assets/images/products/rg-ctd192s8f5-k.jpg"
 imageAlt: "DMX controller"
 tags:

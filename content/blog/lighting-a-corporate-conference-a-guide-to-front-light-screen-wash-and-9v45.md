@@ -4,7 +4,7 @@ slug: "lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-9v
 date: "2026-10-04T18:42:51.334Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "The two catalogue pages that carry the configurations in these tables are RG-PDS28S10IA-V25 and 300W LED Panel light -warm."
+excerpt: "Corporate conferences require careful lighting design to ensure that the presenter is well-lit, the screen is visible, and the audience is comfortable."
 image: "assets/images/products/300w-led-panel-light-warm.jpg"
 imageAlt: "300W LED Panel light"
 tags:

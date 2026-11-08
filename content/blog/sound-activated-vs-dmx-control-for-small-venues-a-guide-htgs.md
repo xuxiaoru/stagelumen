@@ -4,7 +4,7 @@ slug: "sound-activated-vs-dmx-control-for-small-venues-a-guide-htgs"
 date: "2026-10-04T18:44:57.958Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "The RG-CTD192S8F5-K DMX controller, for example, offers 192 channels and is compatible with a wide range of lighting fixtures."
+excerpt: "The RG-CTD192S8F5-K DMX controller, for example, can be used with sound-activated systems, allowing for more precise control and flexibility."
 image: "assets/images/products/rg-ctd192s8f5-k.jpg"
 imageAlt: "DMX controller"
 tags:

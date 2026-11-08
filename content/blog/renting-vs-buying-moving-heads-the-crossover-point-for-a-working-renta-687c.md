@@ -4,7 +4,7 @@ slug: "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-68
 date: "2026-10-23T19:25:54.718Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "For example, the RG-ST864A-S20f96A has a control protocol of DMX512, self-propelled, and master-slave."
+excerpt: "The RG-ML420WC-KCH93 moving head light has an IP65 rating, a control protocol of DMX512, and an LED configuration of 7leds60w."
 image: "assets/images/products/new-295w-10r-beam-moving.jpg"
 imageAlt: "New 295W 10R beam moving head"
 tags:

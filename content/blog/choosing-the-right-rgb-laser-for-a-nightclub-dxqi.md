@@ -4,7 +4,7 @@ slug: "choosing-the-right-rgb-laser-for-a-nightclub-dxqi"
 date: "2026-10-06T20:28:40.960Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The RG-LL10000f1LM supports ILDA control, making it a suitable choice for nightclubs that require precise control over their lighting."
+excerpt: "Check the output, scanning angle, and ILDA control of the laser, such as the RG-LL10000f1LM, which has a 10W output and supports ILDA control."
 image: "assets/images/products/rg-ll10000f1lm.jpg"
 imageAlt: "RGB laser light"
 tags:

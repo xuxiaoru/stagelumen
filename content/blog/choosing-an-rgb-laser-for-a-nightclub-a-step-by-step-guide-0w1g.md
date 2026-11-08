@@ -4,7 +4,7 @@ slug: "choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-0w1g"
 date: "2026-10-06T03:07:08.392Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The RG-LL10000f1LM, for example, has a 10W output and is suitable for indoor use. ILDA control is a protocol used to control laser lights."
+excerpt: "Check the output, scanning angle, and ILDA control of the laser, such as the RG-LL10000f1LM, which has a 10W output and ILDA control."
 image: "assets/images/products/rg-ll10000f1lm.jpg"
 imageAlt: "RGB laser light"
 tags:

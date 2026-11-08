@@ -4,7 +4,7 @@ slug: "rigging-hardware-basics-for-technicians-1g4s"
 date: "2026-10-14T19:35:33.918Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "For more information on the DG-LS52F-200 and TS-WJHZB156X107X50-W30, please visit our website."
+excerpt: "The rigging system includes various components, such as clamps, couplers, and safety bonds, each with its own specific function and requirements."
 image: "assets/images/products/rg-ddf56s125-v8.jpg"
 imageAlt: "LED digital dance floor"
 tags:

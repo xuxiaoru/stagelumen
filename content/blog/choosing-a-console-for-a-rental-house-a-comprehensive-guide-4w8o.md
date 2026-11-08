@@ -4,7 +4,7 @@ slug: "choosing-a-console-for-a-rental-house-a-comprehensive-guide-4w8o"
 date: "2026-10-13T20:47:51.232Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The RG-CS0302 DMX512 mixer offers expandable output ports, which can enhance the equipment load capacity and provide more universes as needed."
+excerpt: "The minimum channel count you should consider for a rental house depends on the size and complexity of your typical events."
 image: "assets/images/products/rg-ctd40s6f-k.jpg"
 imageAlt: "LED Operator 3 Lighting Controller"
 tags:

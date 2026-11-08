@@ -4,7 +4,7 @@ slug: "lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-jn
 date: "2026-10-27T20:11:21.041Z"
 author: "RiGeBa Lighting Team"
 category: "Application"
-excerpt: "The RG-M300BH-KYH16M is a good option, with a beam angle of 16º and a color rendering index of Ra≥90."
+excerpt: "Use a 300W LED Panel light for front light, with a beam angle of 2º to 8 meters, and consider a separate screen wash fixture to reduce glare."
 image: "assets/images/products/rg-m300bh-kyh16m.jpg"
 imageAlt: "300W LED Panel light"
 tags:

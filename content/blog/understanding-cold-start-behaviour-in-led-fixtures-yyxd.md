@@ -4,7 +4,7 @@ slug: "understanding-cold-start-behaviour-in-led-fixtures-yyxd"
 date: "2026-10-11T19:37:56.398Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The RG-PDS28S100IA-V25 and RG-PDS28S100IB-V25, for example, require regular cleaning to ensure optimal performance."
+excerpt: "To purchase LED fixtures from RiGeBa Lighting, visit our website and navigate to the RG-P58TC10-Ke18A or RG-EL0001FL-3e844 product pages."
 image: "assets/images/products/300w-led-panel-light-warm.jpg"
 imageAlt: "300W LED Panel light"
 tags:

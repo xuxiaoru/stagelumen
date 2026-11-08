@@ -4,7 +4,7 @@ slug: "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-jrlz"
 date: "2026-10-30T20:03:18.380Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The RG-CTCLEDPEIN-1, for example, can control up to 40 LEDs and supports DMX512, Art-Net, and Kling-Net control modes."
+excerpt: "Next, review the specifications of the RG-CTCLEDPEIN-1 and 24pcs 1.5W RGB Outdoor LED bar to determine if they meet your requirements for pixel mapping."
 image: "assets/images/products/dmx-control-pixel-led-lifting.jpg"
 imageAlt: "24pcs 1.5W RGB Outdoor LED bar"
 tags:

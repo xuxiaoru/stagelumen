@@ -4,7 +4,7 @@ slug: "rigging-hardware-basics-for-technicians-xxjk"
 date: "2026-10-13T20:48:56.605Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The TS-WJHZB156X107X50-W30 Single Hook Clamp with Connecting Piece is an example of a coupler that can be used with a safety bond."
+excerpt: "The BX-L1F65x50T28-W Safety Bar is an example of a safety bond that can be used in rigging systems."
 image: "assets/images/products/rg-ddf56s125-v8.jpg"
 imageAlt: "LED digital dance floor"
 tags:

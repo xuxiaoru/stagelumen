@@ -4,7 +4,7 @@ slug: "choosing-the-right-atmospheric-machine-for-your-venue-gvw7"
 date: "2026-10-31T19:27:01.497Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The FG-CSDM2KYW-W oil, for example, is specifically designed for use with spark fog machines, such as the RG-FR2400H8S-D."
+excerpt: "Haze, fog, and spark effects are essential components of many live events and performances."
 image: "assets/images/products/water-based-oil-for-mist-2.jpg"
 imageAlt: "Spark fog machine"
 tags:

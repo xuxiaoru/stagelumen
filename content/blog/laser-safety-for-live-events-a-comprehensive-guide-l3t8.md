@@ -4,7 +4,7 @@ slug: "laser-safety-for-live-events-a-comprehensive-guide-l3t8"
 date: "2026-10-28T20:27:26.388Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The EP-LFBA010B1-DhWf has a high IP rating and is designed for use in harsh environments."
+excerpt: "Laser safety is a critical concern for live events, and it's essential to understand the differences between class 3B and class 4 lasers."
 image: "assets/images/products/bx-l1f65x50t28-w.jpg"
 imageAlt: "6W Moving head full color laser"
 tags:

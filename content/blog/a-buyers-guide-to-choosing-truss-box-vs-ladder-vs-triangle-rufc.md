@@ -4,7 +4,7 @@ slug: "a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-rufc"
 date: "2026-10-14T19:34:26.100Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "For example, HJ-L1SCY303010T50-W has a length of 1000mm and a weight of 6.3425 kg, making it suitable for certain applications."
+excerpt: "Ladder truss, such as HJ-L1TMY303010T50-W, has a ladder-like shape, while triangle truss, such as HJ-L1SMY303010T50-W, has a triangular shape."
 image: "assets/images/products/hj-l1tmy303010t50-w.jpg"
 imageAlt: "Ladder truss"
 tags:

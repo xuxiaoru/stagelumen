@@ -4,7 +4,7 @@ slug: "choosing-the-right-truss-a-comprehensive-guide-xnvs"
 date: "2026-10-26T20:39:56.881Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The two catalogue pages that carry the configurations in these tables are RG-PDS28S10IA-V25."
+excerpt: "Ladder truss, such as the HJ-L1TMY303010T50-W, offers a lightweight and versatile option for event and production installations."
 image: "assets/images/products/hj-l1smy303010t50-w.jpg"
 imageAlt: "Ladder truss"
 tags:

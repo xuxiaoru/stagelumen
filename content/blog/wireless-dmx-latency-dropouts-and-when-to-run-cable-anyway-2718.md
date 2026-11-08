@@ -4,7 +4,7 @@ slug: "wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-2718"
 date: "2026-11-05T21:32:03.959Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The following table compares some of the key features of the FG-W3PE3L100H13-KDp power cable and the FG-W3P7PX1L80H22-KDp signal cable:"
+excerpt: "However, they can also be prone to latency and dropouts, which can be a problem in applications that require precise control and reliability."
 image: "assets/images/products/rg-ctcwildr-rs.jpg"
 imageAlt: "Wireless remote control"
 tags:
