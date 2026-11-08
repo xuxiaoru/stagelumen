@@ -61,3 +61,19 @@ To choose the right truss system, consider the stage width, fixture weight, and 
 | RG-PJ12-S | 12W Cree LED Indoor stationary/ rotating projector | $36 | 1-10 | 1 |
 
 Next, review the specifications and features of the RG-W25TB10-Ke120A and TS-ST122244BTZ-K41T61 to determine the best fit for your stage design. Consider the stage width, fixture beam angle, and desired illumination area to ensure optimal lighting effects.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| DZ-LYM1200x1200x12M-W | Round Single Plate Aluminum Base | USD 238.7 |
+| HJ-L1FSY353510T50-W | 12mm screw-type Aluminum frame 350x350mm | USD 60.5 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| TS-ST100100BFY-K60T100 | Circular Stage 1000x1000mm | USD 106 |
+| RG-DDF40S45-V32 | LED pole dance stage | USD 1490 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [DZ-LYM1200x1200x12M-W](/products/truss/dz-lym1200x1200x12m-w) and [RG-FR350H3-D3](/products/effect/rg-fr350h3-d3). Open each one for the full spec list, the volume tiers and the current EXW price.
