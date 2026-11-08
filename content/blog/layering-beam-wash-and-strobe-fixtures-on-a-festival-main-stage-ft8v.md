@@ -64,3 +64,25 @@ To choose the right lighting fixtures, consider the stage size, power requiremen
 | RG-PDS20S50IC-V0W36 | 260w | AC90-240V 50-60HZ | DMX512, master slave, self-propelled and voice controlled |
 
 Contact us to discuss your festival main stage lighting requirements and determine the best fixtures for your setup.
+
+## How can I ensure that my festival main stage lighting setup is compliant with local electrical codes and regulations?
+
+To ensure that a festival main stage lighting setup is compliant with local electrical codes and regulations, it is essential to consult with local authorities and obtain the necessary permits and certifications. This may involve hiring a licensed electrician to design and install the electrical system, as well as ensuring that all lighting fixtures and equipment meet local safety standards. Additionally, festival organizers should ensure that their electrical system is properly grounded and that all cables and connections are secure and meet local electrical codes. By taking these steps, festival organizers can ensure that their lighting setup is safe, reliable, and compliant with local regulations.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-EL0001FL-3e260 | 3 pieces 60w golden cob(main light),36 pieces 3535 3 in 1 led RGB,One 40w RGBW 4 in 1 wash beam led | USD 190 |
+| RG-PDS56S36TB-V0 | 36 x15W 4in1 LED beam matrix lights | USD 125 |
+| RG-PDS20S50IC-V0W36 | 36*5w RGB 3in1 led matrix beam light | USD 115 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RGWS100A-36P3W | LED matrix pixel beam light | USD 65 |
+| New 295W 10R beam moving head | 10R beam moving head light | USD 332 |
+| RG-ML240WD-KTXe6AH3 | 6x40w Zoom Pixel Beam Wash Bar Moving Head Light With Base | USD 192 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-EL0001FL-3e260](/products/pixel/rg-el0001fl-3e260) and [RGWS100A-36P3W](/products/par/rgws100a-36p3w). Open each one for the full spec list, the volume tiers and the current EXW price.
