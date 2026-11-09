@@ -106,7 +106,7 @@ Most sourcing advice lists certifications to demand; fewer articles list the beh
 - **Spec sheets that will not sit still.** If the luminous flux, channel count or power draw changes between the quotation and the proforma invoice without an explanation, the spec sheet was marketing copy, not engineering data. Consistency between documents is the cheapest integrity test there is.
 - **No named engineering contact.** Sales staff are essential translators, but somewhere behind them there must be an engineer who can answer "can this fixture run in a 14-channel mode" without checking with someone. Factories without engineers on the floor are assembly shops at best.
 - **Refusal of video verification.** A factory tour by video call during active production is a five-minute ask. Hesitation, rescheduling, or "the line is busy this week" — during a period when you are considering wiring them a deposit — is information.
-- **Warranty answers without a spares list.** "Two-year warranty" is a sentence; a published spares price list with mainboards, yokes, LED engines and the procedure for dispatching them is a program. Ask for the list. Factories that have one planned for warranty cases; factories that improvise one did not.
+- **Warranty answers without a spares list.** "A warranty period" is a sentence; a published spares price list with mainboards, yokes, LED engines and the procedure for dispatching them is a program. Ask for the list. Factories that have one planned for warranty cases; factories that improvise one did not.
 
 None of these red flags involves certificates. That is deliberate: certificates can be borrowed, bought or photo-shopped, but operational habits have to be lived.
 

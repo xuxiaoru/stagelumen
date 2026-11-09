@@ -147,7 +147,7 @@ function parseNestedYaml(text, blockKey) {
   return out;
 }
 
-/** "320+" -> 320. Returns null when the value is not numeric. */
+/** Parse a headcount such as "300" or "300+". Returns null when the value is not numeric. */
 function toCount(v) {
   const n = parseInt(String(v || '').replace(/[^\d]/g, ''), 10);
   return Number.isFinite(n) && n > 0 ? n : null;
