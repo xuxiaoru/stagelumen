@@ -31,6 +31,54 @@ SITE = "https://www.rigebalighting.com"
 TEMPLATE = os.path.join(ROOT, "product-detail.html")
 OUTDIR = os.path.join(ROOT, "products")
 
+BRAND = "RiGeBa Lighting"
+MAX_TITLE = 65
+TITLE_CAT = {
+    "moving": "Moving Head Light", "pixel": "LED Pixel Light", "theatre": "Theatre Light",
+    "par": "LED PAR Light", "laser": "Stage Laser", "controller": "DMX Controller",
+    "profile": "LED Profile Spot", "effect": "Stage Effect Machine",
+    "kinetic": "Kinetic LED Winch", "gobo": "Gobo Projector",
+    "truss": "Stage Truss", "floor": "LED Dance Floor",
+}
+
+
+def tidy(s):
+    """Deterministic cleanup only - never invents product facts."""
+    s = re.sub(r"\s+", " ", str(s or "")).strip()
+    s = re.sub(r"(?i)^\s*(new|hot|brand new)\s+", "", s)
+    out = []
+    for w in s.split():
+        if w.isalpha() and w.islower() and len(w) > 2:
+            w = w.capitalize()
+        out.append(w)
+    return " ".join(out).strip(" -,")
+
+
+def new_title(p):
+    """<category> <up to 3 spec words from name> <model> | RiGeBa Lighting, <=65 chars."""
+    cat = TITLE_CAT.get(p["category"], p["category"].replace("-", " ").title())
+    model = (p.get("model") or p["id"]).strip()
+    spec = tidy(str(p.get("name") or "").replace(model, " "))
+    cat_words = {re.sub(r"[^a-z0-9]", "", w.lower()) for w in cat.split()}
+    cand = [w for w in spec.split()
+            if re.sub(r"[^a-z0-9]", "", w.lower()) not in cat_words]
+    suffix = " | " + BRAND
+    for n in (3, 2, 1, 0):
+        base = " ".join(x for x in (cat, " ".join(cand[:n]), model) if x)
+        title = base + suffix
+        if len(title) <= MAX_TITLE:
+            return title
+    return "%s %s%s" % (cat, model, suffix)
+
+
+def strip_exw(s):
+    """shortDesc -> keep the complete first sentence, drop the 'Factory EXW ...' quote clause."""
+    s = re.sub(r"\s+", " ", str(s or "")).strip()
+    s2 = re.sub(r"\.\s*Factory EXW.*$", ".", s, flags=re.S)
+    if "EXW" in s2 or "$" in s2:
+        raise ValueError("EXW clause not fully removed from shortDesc: %r" % s[:160])
+    return s2.strip()
+
 
 def load(name):
     with open(os.path.join(ROOT, "data", name), encoding="utf-8") as f:
@@ -58,13 +106,14 @@ def build_page(tpl, p):
         "profile": "LED Profile Spot", "effect": "Stage Effect Machines",
         "kinetic": "LED Kinetic Winch & Lighting Ball",
         "gobo": "LED Gobo & Logo Projector Light",
+        "truss": "Aluminum Truss and Stage", "floor": "LED Dance Floor Light",
     }
     url = page_url(p)
     name = p.get("name") or p["id"]
     # title 不拼 tagline：库里 tagline 多为截断文本（如 "Outdoor 360 degree emittin"），
     # name 本身已含型号 + 完整描述，SEO 价值更高
-    title = "%s | RiGeBa Lighting" % name
-    desc = "%s: %s OEM / ODM ready." % (name, p.get("shortDesc") or name)
+    title = new_title(p)
+    desc = "%s: %s OEM / ODM ready." % (name, strip_exw(p.get("shortDesc") or name))
     images = (p.get("images") or ([p["image"]] if p.get("image") else []))
     imgs_abs = [u if u.startswith("http") else SITE + "/" + u.lstrip("/") for u in images]
     price = float(p.get("price") or 0)
@@ -171,6 +220,12 @@ def build_page(tpl, p):
     assert src.count(anchor) == 1, "stylesheet anchor"
     src = src.replace(anchor, head_extra + anchor, 1)
 
+    # ---------- 1b) 剥掉运行时 SEO 覆盖：静态页的 title / description 以 <head> 为准 ----------
+    m_seo = re.search(
+        r"\n *// 1\. SEO 元数据[^\n]*\n *document\.title[^\n]*\n"
+        r" *document\.getElementById\('pageDescription'\)[^\n]*\n", src)
+    assert m_seo, "runtime SEO override block not found"
+    src = src[:m_seo.start()] + "\n" + src[m_seo.end():]
     # ---------- 2) 剥掉运行时 JSON-LD try/catch（静态页用静态块） ----------
     m = re.search(r"\n    // 1b\. 结构化数据[\s\S]*?\n    \} catch \(e\) \{[^}]*\}", src)
     if not m:
