@@ -152,6 +152,8 @@ def main():
     body.append("  <!-- WARNING: do not index the Cloudflare preview host stagelumen.pages.dev -->")
     blog_entries = []
     for p in posts:
+        if p.get("noindex"):
+            continue  # canonicalised duplicate — never submit a noindex URL
         slug = p["slug"]
         d = (p.get("date") or TODAY)[:10]
         blog_entries.append(url_block("%s/content/blog/%s" % (SITE, slug), d, "monthly", "0.6"))
@@ -227,10 +229,10 @@ def main():
             desc = (p.get("tagline") or p.get("shortDesc") or "").strip().replace("\n", " ")
             if len(desc) > 96:
                 desc = desc[:93].rsplit(" ", 1)[0] + "..."
-            price = p.get("price")
-            inc = p.get("incoterm") or "EXW"
-            tail_ = " — %s from US$%s" % (inc, f"{price:,.0f}") if price else ""
-            L.append("- %s — %s%s — %s/products/%s/%s" % (p["model"], desc, tail_, SITE, p["category"], p["id"]))
+            # 2026-11-09 owner decision: EXW prices are NOT published in llms.txt.
+            # Keep price/incoterm in data/products.json for quotes; this file is
+            # a public machine-readable brief, not a price list.
+            L.append("- %s — %s — %s/products/%s/%s" % (p["model"], desc, SITE, p["category"], p["id"]))
 
     kb = load("kb.json")
     entries = kb.get("entries", [])
@@ -267,6 +269,8 @@ def main():
               "page carrying the full answer, plus the tables and figures behind it.", "",
               "<!-- ARTICLES:BEGIN -->"]
         for p in posts:
+            if p.get("noindex"):
+                continue
             title = " ".join(str(p.get("title", "")).split())
             slug = p.get("slug", "")
             if not title or not slug:

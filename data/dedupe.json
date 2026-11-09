@@ -1,0 +1,274 @@
+{
+  "version": 1,
+  "mode": "canonical-noindex",
+  "created": "2026-11-09",
+  "note": "Owner chose option C on 2026-11-09. These articles stay published and readable; build/build-blog.js points their canonical at the keeper and marks them noindex, and excludes them from sitemap / llms article block / news cards / related reading. Review GSC after 4-8 weeks before converting to 301. Deleting this file fully reverts.",
+  "keeperRule": "earliest published in each identical-title group",
+  "pairs": [
+    {
+      "slug": "lighting-a-school-or-community-theatre-on-a-fixed-budget-e805",
+      "keep": "lighting-a-school-or-community-theatre-on-a-fixed-budget-irru",
+      "title": "Lighting a School or Community Theatre on a Fixed Budget"
+    },
+    {
+      "slug": "lighting-a-school-or-community-theatre-on-a-fixed-budget-0uip",
+      "keep": "lighting-a-school-or-community-theatre-on-a-fixed-budget-irru",
+      "title": "Lighting a School or Community Theatre on a Fixed Budget"
+    },
+    {
+      "slug": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-7p5d",
+      "keep": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv",
+      "title": "Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre"
+    },
+    {
+      "slug": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-hxrl",
+      "keep": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv",
+      "title": "Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre"
+    },
+    {
+      "slug": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-qhlu",
+      "keep": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv",
+      "title": "Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre"
+    },
+    {
+      "slug": "choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-ldr8",
+      "keep": "choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-0w1g",
+      "title": "Choosing an RGB Laser for a Nightclub: A Step-by-Step Guide"
+    },
+    {
+      "slug": "choosing-the-right-atmospheric-machine-for-your-venue-04vq",
+      "keep": "choosing-the-right-atmospheric-machine-for-your-venue-ko84",
+      "title": "Choosing the Right Atmospheric Machine for Your Venue"
+    },
+    {
+      "slug": "choosing-the-right-atmospheric-machine-for-your-venue-5grv",
+      "keep": "choosing-the-right-atmospheric-machine-for-your-venue-ko84",
+      "title": "Choosing the Right Atmospheric Machine for Your Venue"
+    },
+    {
+      "slug": "choosing-the-right-atmospheric-machine-for-your-venue-gvw7",
+      "keep": "choosing-the-right-atmospheric-machine-for-your-venue-ko84",
+      "title": "Choosing the Right Atmospheric Machine for Your Venue"
+    },
+    {
+      "slug": "laser-safety-for-live-events-a-comprehensive-guide-nt11",
+      "keep": "laser-safety-for-live-events-a-comprehensive-guide-dgan",
+      "title": "Laser Safety for Live Events: A Comprehensive Guide"
+    },
+    {
+      "slug": "laser-safety-for-live-events-a-comprehensive-guide-a879",
+      "keep": "laser-safety-for-live-events-a-comprehensive-guide-dgan",
+      "title": "Laser Safety for Live Events: A Comprehensive Guide"
+    },
+    {
+      "slug": "laser-safety-for-live-events-a-comprehensive-guide-l3t8",
+      "keep": "laser-safety-for-live-events-a-comprehensive-guide-dgan",
+      "title": "Laser Safety for Live Events: A Comprehensive Guide"
+    },
+    {
+      "slug": "laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-iycj",
+      "keep": "laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-02s0",
+      "title": "Laser vs Moving Head Beam Effects: Where Each One Earns Its Place on a Rig"
+    },
+    {
+      "slug": "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-luzy",
+      "keep": "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-qf23",
+      "title": "Choosing Effect Fixtures for a Streamed Set: Pixel Bars vs LED Matrix Panels"
+    },
+    {
+      "slug": "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-iel8",
+      "keep": "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-qf23",
+      "title": "Choosing Effect Fixtures for a Streamed Set: Pixel Bars vs LED Matrix Panels"
+    },
+    {
+      "slug": "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-nfr7",
+      "keep": "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-qp9f",
+      "title": "Pixel Mapping a Wall of LED Fixtures Without a Media Server"
+    },
+    {
+      "slug": "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-jrlz",
+      "keep": "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-qp9f",
+      "title": "Pixel Mapping a Wall of LED Fixtures Without a Media Server"
+    },
+    {
+      "slug": "choosing-the-right-led-strobes-and-audience-blinders-for-live-music-e0pi",
+      "keep": "choosing-the-right-led-strobes-and-audience-blinders-for-live-music-7w5q",
+      "title": "Choosing the Right LED Strobes and Audience Blinders for Live Music"
+    },
+    {
+      "slug": "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-h9h8",
+      "keep": "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-sxpg",
+      "title": "Choosing the Right Battery Uplights for Weddings and Corporate Events"
+    },
+    {
+      "slug": "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-udu7",
+      "keep": "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-sxpg",
+      "title": "Choosing the Right Battery Uplights for Weddings and Corporate Events"
+    },
+    {
+      "slug": "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-pmpq",
+      "keep": "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-ajya",
+      "title": "LED Wall Washers for Facades and Ballrooms: A Practical Guide"
+    },
+    {
+      "slug": "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-c5y1",
+      "keep": "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-ajya",
+      "title": "LED Wall Washers for Facades and Ballrooms: A Practical Guide"
+    },
+    {
+      "slug": "choosing-the-right-gobo-projector-for-retail-and-brand-logos-w8tv",
+      "keep": "choosing-the-right-gobo-projector-for-retail-and-brand-logos-4jk6",
+      "title": "Choosing the Right Gobo Projector for Retail and Brand Logos"
+    },
+    {
+      "slug": "choosing-the-right-gobo-projector-for-retail-and-brand-logos-pz40",
+      "keep": "choosing-the-right-gobo-projector-for-retail-and-brand-logos-4jk6",
+      "title": "Choosing the Right Gobo Projector for Retail and Brand Logos"
+    },
+    {
+      "slug": "understanding-beam-angle-vs-output-in-stage-lighting-5rcc",
+      "keep": "understanding-beam-angle-vs-output-in-stage-lighting-h47s",
+      "title": "Understanding Beam Angle vs Output in Stage Lighting"
+    },
+    {
+      "slug": "creating-intentional-movement-macros-on-moving-heads-7717",
+      "keep": "creating-intentional-movement-macros-on-moving-heads-yzsn",
+      "title": "Creating Intentional Movement Macros on Moving Heads"
+    },
+    {
+      "slug": "creating-intentional-movement-macros-on-moving-heads-1aws",
+      "keep": "creating-intentional-movement-macros-on-moving-heads-yzsn",
+      "title": "Creating Intentional Movement Macros on Moving Heads"
+    },
+    {
+      "slug": "moving-head-service-intervals-a-practical-guide-au04",
+      "keep": "moving-head-service-intervals-a-practical-guide-23b4",
+      "title": "Moving Head Service Intervals: A Practical Guide"
+    },
+    {
+      "slug": "understanding-cold-start-behaviour-in-led-fixtures-geg5",
+      "keep": "understanding-cold-start-behaviour-in-led-fixtures-yyxd",
+      "title": "Understanding Cold-Start Behaviour in LED Fixtures"
+    },
+    {
+      "slug": "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-687c",
+      "keep": "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-m63m",
+      "title": "Renting vs Buying Moving Heads: The Crossover Point for a Working Rental House"
+    },
+    {
+      "slug": "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-3qly",
+      "keep": "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-m63m",
+      "title": "Renting vs Buying Moving Heads: The Crossover Point for a Working Rental House"
+    },
+    {
+      "slug": "kinetic-winches-and-lifting-balls-a-comprehensive-guide-5uxq",
+      "keep": "kinetic-winches-and-lifting-balls-a-comprehensive-guide-w6jv",
+      "title": "Kinetic Winches and Lifting Balls: A Comprehensive Guide"
+    },
+    {
+      "slug": "kinetic-winches-and-lifting-balls-a-comprehensive-guide-362z",
+      "keep": "kinetic-winches-and-lifting-balls-a-comprehensive-guide-w6jv",
+      "title": "Kinetic Winches and Lifting Balls: A Comprehensive Guide"
+    },
+    {
+      "slug": "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-ojsd",
+      "keep": "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-3mz1",
+      "title": "A Buyer's Guide to LED Dance Floors: Panel Pitch, Weight Loading, and DMX Mapping"
+    },
+    {
+      "slug": "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-ujpr",
+      "keep": "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-3mz1",
+      "title": "A Buyer's Guide to LED Dance Floors: Panel Pitch, Weight Loading, and DMX Mapping"
+    },
+    {
+      "slug": "dmx-splitters-and-opto-isolation-a-step-by-step-guide-guiy",
+      "keep": "dmx-splitters-and-opto-isolation-a-step-by-step-guide-etgx",
+      "title": "DMX Splitters and Opto-Isolation: A Step-by-Step Guide"
+    },
+    {
+      "slug": "dmx-splitters-and-opto-isolation-a-step-by-step-guide-7st3",
+      "keep": "dmx-splitters-and-opto-isolation-a-step-by-step-guide-etgx",
+      "title": "DMX Splitters and Opto-Isolation: A Step-by-Step Guide"
+    },
+    {
+      "slug": "choosing-a-console-for-a-rental-house-a-comprehensive-guide-18xr",
+      "keep": "choosing-a-console-for-a-rental-house-a-comprehensive-guide-4w8o",
+      "title": "Choosing a Console for a Rental House: A Comprehensive Guide"
+    },
+    {
+      "slug": "choosing-a-console-for-a-rental-house-a-comprehensive-guide-c8t0",
+      "keep": "choosing-a-console-for-a-rental-house-a-comprehensive-guide-4w8o",
+      "title": "Choosing a Console for a Rental House: A Comprehensive Guide"
+    },
+    {
+      "slug": "rigging-hardware-basics-for-technicians-1g4s",
+      "keep": "rigging-hardware-basics-for-technicians-xxjk",
+      "title": "Rigging Hardware Basics for Technicians"
+    },
+    {
+      "slug": "rigging-hardware-basics-for-technicians-y1su",
+      "keep": "rigging-hardware-basics-for-technicians-xxjk",
+      "title": "Rigging Hardware Basics for Technicians"
+    },
+    {
+      "slug": "rigging-hardware-basics-for-technicians-5bt4",
+      "keep": "rigging-hardware-basics-for-technicians-xxjk",
+      "title": "Rigging Hardware Basics for Technicians"
+    },
+    {
+      "slug": "rigging-hardware-basics-for-technicians-2jmv",
+      "keep": "rigging-hardware-basics-for-technicians-xxjk",
+      "title": "Rigging Hardware Basics for Technicians"
+    },
+    {
+      "slug": "rigging-hardware-basics-for-technicians-1x63",
+      "keep": "rigging-hardware-basics-for-technicians-xxjk",
+      "title": "Rigging Hardware Basics for Technicians"
+    },
+    {
+      "slug": "planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-g6yg",
+      "keep": "planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-2fty",
+      "title": "Planning Power and Phase Balance for a Stage Full of LED Fixtures"
+    },
+    {
+      "slug": "planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-g9jn",
+      "keep": "planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-2fty",
+      "title": "Planning Power and Phase Balance for a Stage Full of LED Fixtures"
+    },
+    {
+      "slug": "a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-epyf",
+      "keep": "a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-rufc",
+      "title": "A Buyer's Guide to Choosing Truss: Box vs Ladder vs Triangle"
+    },
+    {
+      "slug": "ground-support-and-stage-platforms-a-buyers-guide-mjbw",
+      "keep": "ground-support-and-stage-platforms-a-buyers-guide-95ce",
+      "title": "Ground Support and Stage Platforms: A Buyer's Guide"
+    },
+    {
+      "slug": "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-rhez",
+      "keep": "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-l9vn",
+      "title": "Lighting a Live-Streamed Set: Colour Temperature, Flicker and Camera-Safe Dimming"
+    },
+    {
+      "slug": "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-z7d2",
+      "keep": "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-l9vn",
+      "title": "Lighting a Live-Streamed Set: Colour Temperature, Flicker and Camera-Safe Dimming"
+    },
+    {
+      "slug": "lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-jn00",
+      "keep": "lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-tzp6",
+      "title": "Lighting a Corporate Conference: A Guide to Front Light, Screen Wash, and Spill Control"
+    },
+    {
+      "slug": "sound-activated-vs-dmx-control-for-small-venues-7lb3",
+      "keep": "sound-activated-vs-dmx-control-for-small-venues-wwo3",
+      "title": "Sound-Activated vs DMX Control for Small Venues"
+    },
+    {
+      "slug": "wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-2718",
+      "keep": "wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-c2r7",
+      "title": "Wireless DMX: Latency, Dropouts, and When to Run Cable Anyway"
+    }
+  ]
+}
