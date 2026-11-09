@@ -64,3 +64,18 @@ You can find more information about the [RG-M300BH-KYH16M](/products/moving/rg-m
 
 ## What is the next step in designing a lighting system for my cruise ship lounge?
 The next step in designing a lighting system for your cruise ship lounge is to contact a lighting professional who can help you determine the right size and configuration for your system, choose the right fixtures, and ensure that the system is safe and reliable. You can also visit our website to learn more about our range of lighting fixtures and controllers, including the RG-M300BH-KYH16M and RG-CTD40S4F-K.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8802 | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-M300BH-KYH16M](/products/moving/rg-m300bh-kyh16m). Open each one for the full spec list, the volume tiers and the current EXW price.
