@@ -65,3 +65,21 @@ To troubleshoot common lighting issues on a fashion runway, consider checking th
 | RG-M300BH-KYH16M | $205 | 1-30 | 1 |
 
 To get started with designing a lighting system for a fashion runway, contact RiGeBa Lighting to discuss your specific needs and requirements.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$84 |
+| RG-CA8802PRO-A | 8 outputs | US$84 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+| RG-CA8402 | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 6pcs 5050 RGB | US$75 |
+| RG-M300BH-KYH16M | 16CH Beam moving head | US$205 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm). Open each one for the full spec list, the volume tiers and the current EXW price.
