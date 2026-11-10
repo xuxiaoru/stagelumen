@@ -63,3 +63,23 @@ When troubleshooting common issues with outdoor lighting, consider factors such 
 To learn more about the 24pcs 1.5W RGB Outdoor LED bar Wall Washer, visit [24pcs 1.5W RGB Outdoor LED bar](/products/par/24pcs-1-5w-rgb-outdoor-led). To learn more about the RG-PJ30-Outdoor 30W Creen LED Outdoor rotating projector, visit [RG-PJ30-Outdoor](/products/gobo/rg-pj30-outdoor). 
 
 Next, contact us to discuss your outdoor lighting needs and determine the best fixtures and configuration for your Christmas market outdoor trail.
+
+## What are the implications of using different beam angles for outdoor lighting?
+
+When choosing the right beam angle for your outdoor lighting, it is essential to consider the distance between the light source and the intended viewing area. A wider beam angle can illuminate a larger area, but may also lead to excessive light spillage. On the other hand, a narrower beam angle can provide more focused light, but may not reach as far. In the case of a Christmas market outdoor trail, a beam angle of 15 degrees can provide a good balance between illumination and light spillage. However, this may vary depending on the specific layout and design of the trail.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PJ30-Outdoor | 30W Creen LED Outdoor rotating projector | US$99 |
+| RG-PJ100-Outdoor | 100W Cree LED outdoor rotating projector | US$199 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [24pcs 1.5W RGB Outdoor LED bar](/products/par/24pcs-1-5w-rgb-outdoor-led) and [RG-PJ30-Outdoor](/products/gobo/rg-pj30-outdoor). Open each one for the full spec list, the volume tiers and the current EXW price.
