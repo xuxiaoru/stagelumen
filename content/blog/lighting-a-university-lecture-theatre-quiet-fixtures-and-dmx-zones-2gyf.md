@@ -66,3 +66,23 @@ To control multiple fixtures with a single DMX controller, you will need to ensu
 A DMX splitter, such as the [RG-CA8802PRO-A](/products/controller/rg-ca8802pro-a), allows you to control multiple fixtures with a single DMX controller, expanding the number of channels available and providing more flexibility in your lighting system.
 
 To get started with lighting your university lecture theatre, contact us to discuss your specific needs and requirements. We can help you choose the right fixtures and DMX controller for your application, and provide guidance on installation and configuration.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$84 |
+| RG-ST112A-S20f336A | 1008 Colouring Strobe Light | US$58 |
+| RG-TH8B600S | Eight eyes audience light | US$194 |
+| RG-TH4B450S | Four eyes audience light | US$112 |
+| RG-M300BH-KYH16M | 300W 16CH Beam moving head light | US$205 |
+| RG-CTD40S4F-K | LED Operator 2 Lighting Controller | US$28 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802PRO-A | DMX Smart Splitter | US$84 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-CA8802PRO-A](/products/controller/rg-ca8802pro-a) and [RG-ST112A-S20f336A](/products/theatre/rg-st112a-s20f336a). Open each one for the full spec list, the volume tiers and the current EXW price.
