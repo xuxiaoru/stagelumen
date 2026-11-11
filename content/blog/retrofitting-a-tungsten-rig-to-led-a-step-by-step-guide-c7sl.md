@@ -63,3 +63,19 @@ LED lights require minimal maintenance, as they have a long lifespan and are res
 To learn more about the RG-PS200A110-W 200W LED tricolor soft light, visit [RG-PS200A110-W](/products/profile/rg-ps200a110-w). For more information on the FG-W3PE3L100H13-KDp power cable, visit [FG-W3PE3L100H13-KDp](/products/par/fg-w3pe3l100h13-kdp). 
 
 Next, review the specifications of the RG-P58OB10-Kf18 18LEDS 18w high brightness outdoor waterproof led par light and determine if it meets your specific needs.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+| RG-P58OB10-Kf18 | 18LEDS 18w high brightness outdoor waterproof led par light | US$75 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-EL0001FL-3e504 | Infinite whirlwind LED fan light | US$159 |
+| RG-IDF41S30W36A4-f150A | LED Piaono interactive dance floor IP65 Indoor tin paint Base | US$45 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-EL0001FL-3e504](/products/pixel/rg-el0001fl-3e504). Open each one for the full spec list, the volume tiers and the current EXW price.
