@@ -62,3 +62,27 @@ The RG-GB200L4C0-BK 200W OSRAM LED IP65 outdoor LED Gobo Light has a projection 
 To determine the right moving head fixture for your application, consider the venue size, throw distance, and desired beam angle. You can also visit our product pages, such as the [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) and [RG-ML420WC-KCH93](/products/moving/rg-ml420wc-kch93), to learn more about our products and find the right one for your needs.
 
 To proceed with your sample approval, please contact us with the model and your country, and we will provide you with a quote for the sample pricing and lead time.
+
+## What are the implications of a moving head fixture's beam angle on its application?
+
+When selecting a moving head fixture, it is essential to consider the beam angle and its impact on the desired lighting effect. A moving head fixture's beam angle determines the distance and spread of the light, which can significantly affect the overall aesthetic and functionality of the lighting setup. For instance, a wider beam angle may be suitable for larger venues or events, while a narrower beam angle may be more suitable for smaller spaces or more precise control. Understanding the beam angle and its implications is crucial for selecting the right moving head fixture for a specific application.
+
+## How does the control protocol of a moving head fixture interact with the user interface?
+
+The control protocol of a moving head fixture plays a vital role in determining the user interface and overall control experience. Different control protocols, such as DMX 512 or Art-Net, can affect the user interface, making it more or less intuitive to operate the fixture. Additionally, the control protocol can also impact the fixture's compatibility with various lighting control systems and software. When selecting a moving head fixture, it is essential to consider the control protocol and its implications on the user interface and overall control experience.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML420WC-KCH93 | 7 LEDs*60W | US$590 |
+| RG-ML760WC-KCH99 | 19 LEDs*40W | US$560 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
