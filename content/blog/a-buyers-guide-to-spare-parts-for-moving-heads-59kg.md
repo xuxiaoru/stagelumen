@@ -59,3 +59,25 @@ To get a quote for spare parts for your moving heads, send the model number and 
 To learn more about the RG-ML500RS-KNNW1H20, visit [RG-ML500RS-KNNW1H20](/products/moving/rg-ml500rs-knnw1h20). For more information on the RG-EL00DB-8e2A, visit [RG-EL00DB-8e2A](/products/moving/rg-el00db-8e2a).
 
 Next, contact us to get a quote for the spare parts you need for your moving heads.
+
+## What are the implications of using a moving head light in a fixed installation?
+
+Moving head lights are designed to be highly portable and versatile, making them ideal for touring productions and events. However, when used in a fixed installation, they can be prone to damage from repeated movement and exposure to the elements. To mitigate this risk, it's essential to choose a moving head light that is designed for fixed installations and to ensure that it is properly secured and maintained. This may involve using a specialized mounting system or adjusting the light's settings to reduce its movement. By taking these precautions, you can help extend the life of your moving head light and ensure that it continues to perform reliably over time.
+
+## How do moving head lights compare to other types of lighting in terms of their energy efficiency?
+
+Moving head lights are generally more energy-efficient than traditional lighting sources, such as incandescent bulbs or halogen lamps. This is because they use light-emitting diodes (LEDs) to produce light, which are more energy-efficient than traditional lighting sources. Additionally, moving head lights often have adjustable brightness settings, which allow you to optimize their energy usage based on the specific needs of your event or installation. By choosing a moving head light with an energy-efficient LED and adjusting its brightness settings, you can help reduce your energy costs and minimize your environmental impact.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-EL00DB-8e2A | 2*30w 4*10w 2*10w 2*6*8w | US$259 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| New 295W 10R beam moving head | 295W 10R beam moving head | US$332 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-EL00DB-8e2A](/products/moving/rg-el00db-8e2a) and [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving). Open each one for the full spec list, the volume tiers and the current EXW price.
