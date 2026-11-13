@@ -64,3 +64,27 @@ The factory EXW price of the RG-PJ30-Multi-Indoor 30W LED Indoor DMX512 Multi-Pa
 | RG-PJ30-Multi-Indoor | 30W LED Indoor DMX512 Multi-Pattern LED projector | US$152 | - | 1 |
 
 To learn more about the [EP-LFBA010B1-DhWf Mini 1KG DMX Lifting Motor](/products/kinetic/ep-lfba010b1-dhwf) and the [RG-PJ30-Multi-Indoor 30W LED Indoor DMX512 Multi-Pattern LED projector](/products/gobo/rg-pj30-multi-indoor), visit the RiGeBa Lighting website. Contact RiGeBa Lighting to book a factory visit and to discuss your specific needs and requirements.
+
+## What are the implications of a faulty warranty claim process?
+
+A faulty warranty claim process can lead to delays in resolving issues, increased costs for the buyer, and a negative impact on the overall customer experience. It is essential for buyers to understand the warranty claim process and to have a clear understanding of what is required to initiate a claim. This includes knowing the warranty terms, the process for submitting a claim, and the expected response time from the manufacturer. By understanding the warranty claim process, buyers can minimize delays and ensure that issues are resolved efficiently and effectively.
+
+## How do manufacturers ensure that their products meet the required standards?
+
+Manufacturers ensure that their products meet the required standards through a combination of design, testing, and quality control processes. This includes conducting thorough testing of the product to ensure that it meets the specified requirements, and implementing quality control measures to detect any defects or issues. Additionally, manufacturers must comply with relevant industry standards and regulations, such as those related to safety, environmental impact, and performance. By following these processes, manufacturers can ensure that their products meet the required standards and provide a high level of quality and reliability.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-DDF56S125-V4 | 2048 pixels | US$299 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-DDF56S125-V4 | 2048 pixels | US$299 |
+| RG-DDF56S125-V4 | 2048 pixels | US$299 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-DDF56S125-V4](/products/floor/rg-ddf56s125-v4). Open each one for the full spec list, the volume tiers and the current EXW price.
