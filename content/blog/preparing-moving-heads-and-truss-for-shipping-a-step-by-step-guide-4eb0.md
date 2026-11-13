@@ -56,3 +56,19 @@ To track your shipment and ensure that it arrives on time, you can use a shippin
 
 ## What are the next steps after my moving heads and truss have been shipped?
 After your moving heads and truss have been shipped, you can track the shipment and ensure that it arrives on time. You can also begin preparing for the production or event, including setting up the equipment and conducting any necessary tests or rehearsals. Contact RiGeBa Lighting to discuss your specific shipping needs and requirements.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML420WC-KCH93 | 7leds*60w | US$590 |
+| RG-ML760WC-KCH99 | 19leds 40w zoom | US$560 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| New 295W 10R beam moving head | 295W 10R beam | US$332 |
+| 6W Moving head full color laser | 6W full-color laser | US$375 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) and [6W Moving head full color laser](/products/laser/6w-moving-head-full-color). Open each one for the full spec list, the volume tiers and the current EXW price.
