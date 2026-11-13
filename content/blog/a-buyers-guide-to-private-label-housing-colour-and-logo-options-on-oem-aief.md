@@ -61,3 +61,25 @@ The lead times for OEM moving head runs with custom housing colour and logo opti
 | 6W Moving head full color laser | US$375 | 1-20 units | 5 units |
 
 To learn more about RiGeBa Lighting's OEM moving head runs with custom housing colour and logo options, visit their website at [20W Single green label](/products/laser/20w-single-green-label) or [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving). Contact their sales team directly to discuss your custom housing colour and logo options and to get a quote for your OEM moving head run.
+
+## What are the implications of private-label housing on the overall cost of the moving head?
+
+When it comes to private-label housing, the cost of the moving head can vary depending on the configuration and the EXW price. In general, a higher configuration and a lower EXW price can result in a lower overall cost. However, it's also important to consider the cost of customization, such as logo printing and custom packaging, which can add to the overall cost. For example, the RG-CA8802 moving head has an EXW price of US$51, while the RG-CA8402MINI has an EXW price of US$51, but with a lower configuration. This means that the RG-CA8402MINI may be a more cost-effective option for some users. On the other hand, the RG-CA8802 may be a better option for users who need a higher configuration. Ultimately, the choice between the two moving heads will depend on the specific needs and budget of the user.
+
+## How does RiGeBa Lighting ensure the quality of its private-label moving heads?
+
+RiGeBa Lighting takes pride in the quality of its private-label moving heads, and ensures that they meet the highest standards of quality and reliability. The company uses only the highest-quality components and materials, and conducts rigorous testing and quality control measures to ensure that the moving heads meet the required specifications. Additionally, RiGeBa Lighting provides excellent customer service and support, which helps to ensure that customers are satisfied with their purchase. By combining high-quality components, rigorous testing, and excellent customer service, RiGeBa Lighting is able to ensure that its private-label moving heads meet the needs of its customers.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [20W Single green label](/products/laser/20w-single-green-label) and [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving). Open each one for the full spec list, the volume tiers and the current EXW price.
