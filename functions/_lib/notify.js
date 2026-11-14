@@ -133,7 +133,7 @@ const REPLY_FOOTER = [
   '',
   '---',
   'RiGeBa Lighting — professional stage lighting manufacturer',
-  'GuangZhou GeLiang Lighting Technology Co.,Ltd',
+  'Guangzhou Geliang Lighting Technology Co., Ltd.',
   'No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China',
   'Vivian (Export Sales)  |  sales20@rigelighting.com  |  Mobile / WhatsApp / WeChat / IMS / Facebook: +86 134 3026 2182',
   'www.rigebalighting.com',

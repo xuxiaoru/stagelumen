@@ -1,13 +1,13 @@
 {
   "version": "1.0",
-  "updated": "2026-09-19",
-  "note": "Facts extracted verbatim from about.html / support.html / solutions pages. Never invent figures: if a value is not published, route the buyer to an RFQ instead of guessing.",
+  "updated": "2026-11-14",
+  "note": "Facts for the AI receptionist. MOQ, lead time, payment terms and warranty coverage are stated in the order confirmation; never quote a fixed figure for them. Do not invent certificate numbers or warranty periods. Route buyers to an RFQ.",
   "entries": [
     {
       "id": "kb-lead-time",
       "topic": "shipping",
       "q": "What is the typical lead time?",
-      "a": "Standard products typically ship within 7-15 days from order confirmation. OEM and custom projects require additional prototyping and approval time.",
+      "a": "Lead time is stated in the order confirmation. We do not publish a fixed production window on this site; tell us the model, quantity and destination and we will state the schedule in the quotation.",
       "tags": [
         "lead time",
         "delivery",
@@ -23,7 +23,7 @@
       "id": "kb-moq",
       "topic": "order",
       "q": "What is your MOQ (minimum order quantity)?",
-      "a": "MOQ depends on the model. Large OEM and private-label programmes are typically planned around a 1,000-unit container. For an exact MOQ per model, send an RFQ — we reply within 24 hours with pricing, MOQ and lead time.",
+      "a": "MOQ is confirmed per model in the order confirmation. We do not publish a fixed minimum on this site; send the model and quantity with your RFQ and we will state the applicable MOQ in the quotation.",
       "tags": [
         "moq",
         "minimum",
@@ -36,7 +36,7 @@
       "id": "kb-payment",
       "topic": "payment",
       "q": "What payment terms do you accept?",
-      "a": "Standard production starts with a 30% T/T deposit, with the balance settled before shipment. Exact terms for your order are confirmed on the quotation.",
+      "a": "Prices are quoted EXW Guangzhou; FOB, CIF and DDP shipping can be arranged to your port or door, and we provide CE / RoHS documentation for customs. Payment terms are stated in the order confirmation; we do not publish a fixed deposit schedule here.",
       "tags": [
         "payment",
         "t/t",
@@ -106,7 +106,7 @@
       "id": "kb-warranty",
       "topic": "warranty",
       "q": "What is the warranty?",
-      "a": "Every fixture passes final QC before packing and ships with a limited warranty against manufacturing defects. Coverage terms are stated on your order confirmation, and spare parts are held in Guangzhou stock.",
+      "a": "Warranty coverage is stated in the order confirmation. We do not publish a warranty period on this site. Spare parts (boards, drivers, lamps, bearings) are held in Guangzhou stock.",
       "tags": [
         "warranty",
         "guarantee",
@@ -185,7 +185,7 @@
       "id": "kb-company",
       "topic": "company",
       "q": "Who are you and how long have you been manufacturing?",
-      "a": "RiGeBa Lighting is the stage lighting brand of GuangZhou GeLiang Lighting Technology Co.,Ltd, a manufacturer-direct factory at No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China, founded in 2010. 16+ years in, three factories and 10,000 m2 of engineering space, shipping to 60+ countries. Our R&D team covers optical, mechanical, electronic and firmware design in-house.",
+      "a": "RiGeBa Lighting is the stage lighting brand of Guangzhou Geliang Lighting Technology Co., Ltd., a manufacturer-direct factory at No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China, founded in 2010. 16+ years in, three factories and 10,000 m2 of engineering space, shipping to 60+ countries. Our R&D team covers optical, mechanical, electronic and firmware design in-house.",
       "tags": [
         "about",
         "company",
@@ -202,7 +202,7 @@
       "id": "kb-process",
       "topic": "order",
       "q": "What does the ordering process look like?",
-      "a": "Four steps: 1) Inquiry & brief — submit an RFQ, we respond within 24h with pricing, MOQ and lead time. 2) Spec & sample — sign an NDA if needed, receive a PDF spec pack plus a refundable sample. 3) Production — 30% T/T deposit, weekly photo updates. 4) QC & ship — final QC report, FOB/CIF/DDP shipping and a limited warranty whose terms are stated on your order confirmation.",
+      "a": "Four steps: 1) Inquiry & brief — submit an RFQ, we respond within 24h with pricing and the terms for your order. 2) Spec & sample — sign an NDA if needed, receive a PDF spec pack plus a sample. 3) Production — terms as stated in the order confirmation, with weekly photo updates. 4) QC & ship — final QC report and FOB/CIF/DDP shipping. Warranty coverage is stated in the order confirmation.",
       "tags": [
         "process",
         "steps",
@@ -288,7 +288,7 @@
       "id": "kb-address",
       "topic": "company",
       "q": "What is your company name, address, and who is my sales contact?",
-      "a": "Our company is GuangZhou GeLiang Lighting Technology Co.,Ltd, trading as RiGeBa Lighting, at No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China. Your sales contact is Vivian (Export Sales): email sales20@rigelighting.com, or call her on Mobile / WhatsApp / WeChat / IMS / Facebook at +86 134 3026 2182.",
+      "a": "Our company is Guangzhou Geliang Lighting Technology Co., Ltd., trading as RiGeBa Lighting, at No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China. Your sales contact is Vivian (Export Sales): email sales20@rigelighting.com, or call her on Mobile / WhatsApp / WeChat / IMS / Facebook at +86 134 3026 2182.",
       "tags": [
         "company name",
         "legal name",

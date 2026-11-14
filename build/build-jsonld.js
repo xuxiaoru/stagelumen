@@ -278,10 +278,19 @@ function main() {
 
   // knowsAbout comes from the live catalogue so it can never drift from products.json
   let knowsAbout = [];
+  let catalogCats = {};
   try {
-    const cats = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'products.json'), 'utf8')).categories || {};
-    knowsAbout = Object.values(cats).map((c) => c.label).filter(Boolean);
+    catalogCats = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'products.json'), 'utf8')).categories || {};
+    knowsAbout = Object.values(catalogCats).map((c) => c.label).filter(Boolean);
   } catch (e) { /* optional */ }
+  /** Entity-ify knowsAbout so the graph has edges to real category pages. */
+  const knowsAboutThings = Object.entries(catalogCats)
+    .filter(([, c]) => c && c.label)
+    .map(([key, c]) => ({
+      '@type': 'Thing',
+      name: c.label,
+      url: SITE + '/products?cat=' + encodeURIComponent(key),
+    }));
 
   const address = toAddress(settings.address);
 
@@ -290,7 +299,25 @@ function main() {
   // sameAs is, to them, an unattributed claim — which is why a page can rank in
   // Google and still never be quoted by ChatGPT.
   const social = parseNestedYaml(settingsRaw, 'social');
-  const sameAs = Object.values(social).filter((u) => /^https?:\/\//i.test(u));
+  const rawSameAs = Object.values(social).filter((u) => /^https?:\/\//i.test(u));
+  /** One URL per platform. A /channel/ URL and its /@handle alias are the same
+   *  entity; listing both looks like padding and splits the graph. */
+  const canonicalSameAs = (urls) => {
+    const seen = new Set();
+    return urls.filter((u) => {
+      let host = '';
+      try { host = new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return false; }
+      const platform = /youtube\.com|youtu\.be/.test(host) ? 'youtube'
+                     : host.endsWith('facebook.com') ? 'facebook'
+                     : host.endsWith('linkedin.com') ? 'linkedin'
+                     : host.endsWith('instagram.com') ? 'instagram'
+                     : u;
+      if (seen.has(platform)) return false;
+      seen.add(platform);
+      return true;
+    });
+  };
+  const sameAs = canonicalSameAs(rawSameAs);
 
   const employees = toCount(settings.teamSize);
 
@@ -302,6 +329,7 @@ function main() {
     '@id': orgId,
     name: brand,
     legalName: settings.companyLegalName || brand,
+    ...(settings.companyLegalNameCn ? { alternateName: settings.companyLegalNameCn } : {}),
     url: SITE + '/',
     ...(settings.tagline ? { slogan: settings.tagline } : {}),
     // Google and Bing use `logo` as the brand mark in knowledge panels and
@@ -320,7 +348,7 @@ function main() {
     ...(address ? { address } : {}),
     ...(settings.email ? { email: settings.email } : {}),
     ...(settings.phone ? { telephone: e164(settings.phone) } : {}),
-    ...(knowsAbout.length ? { knowsAbout } : {}),
+    ...(knowsAboutThings.length ? { knowsAbout: knowsAboutThings } : {}),
     ...(sameAs.length ? { sameAs } : {}),
     ...(employees ? { numberOfEmployees: { '@type': 'QuantitativeValue', value: employees } } : {}),
     ...(settings.founded
@@ -332,6 +360,16 @@ function main() {
         }
       : {}),
     areaServed: { '@type': 'Place', name: 'Worldwide' },
+    hasOfferCatalog: {
+      '@type': 'OfferCatalog',
+      name: 'Stage lighting catalogue',
+      numberOfItems: siteData().products.length,
+      itemListElement: Object.keys(catalogCats).map((key) => ({
+        '@type': 'OfferCatalog',
+        name: (catalogCats[key] && catalogCats[key].label) || key,
+        url: SITE + '/products?cat=' + encodeURIComponent(key),
+      })),
+    },
     knowsLanguage: ['en', 'zh'],
     contactPoint: [
       {

@@ -30,7 +30,7 @@ demo/index.html
 ## Design System Snapshot
 
 - **Brand**: RiGeBa Lighting ("R" mark + gradient orange→purple→cyan)
-- **Legal entity**: GuangZhou GeLiang Lighting Technology Co.,Ltd · No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China
+- **Legal entity**: Guangzhou Geliang Lighting Technology Co., Ltd. · No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China
 - **Sales contact**: Vivian · sales20@rigelighting.com · +86 134 3026 2182 (Mobile / WhatsApp / WeChat / IMS / Facebook)
 - **Slogan**: Light Up Every Stage
 - **Theme**: Dark `#0a0a0a` base, primary `#ff6b00` (orange), accents cyan `#00d4ff` / violet `#7c3aed`

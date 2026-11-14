@@ -12,7 +12,7 @@ tags:
   - IP-rated fixtures
   - salt air resistance
 faq:
-  - "What is the typical lead time for RiGeBa Lighting products?::Standard products typically ship within 7-15 days from order confirmation. OEM and custom projects require additional prototyping and approval time."
+  - "What is the typical lead time for RiGeBa Lighting products?::Lead time is stated in the order confirmation. We do not publish a fixed production window on this site; tell us the model, quantity and destination and we will state the schedule in the quotation."
   - "Do RiGeBa Lighting products have IP65 outdoor fixtures?::Yes, RiGeBa Lighting builds outdoor-rated fixtures alongside indoor IP20 models. Check the IP Rating line in each product's specification table, or tell us the installation environment and we will shortlist suitable models."
   - "What is the price of the RG-M300BH-KYH16M moving head light?::The EXW price of the RG-M300BH-KYH16M is US$205 per unit, with a volume price of US$197 for orders over 30 pieces."
   - "What is the input voltage of the RG-TH8B600S audience light?::The input voltage of the RG-TH8B600S is AC110V / 220V 50HZ / 60HZ."

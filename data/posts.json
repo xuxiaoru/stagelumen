@@ -1,14 +1,1732 @@
 {
-  "generated": "2026-10-06T14:01:51.028Z",
-  "count": 36,
+  "generated": "2026-11-14T14:38:36.823Z",
+  "count": 143,
   "posts": [
+    {
+      "title": "Preparing Moving Heads and Truss for Shipping: A Step-by-Step Guide",
+      "slug": "preparing-moving-heads-and-truss-for-shipping-a-step-by-step-guide-4eb0",
+      "date": "2026-11-13T21:32:06.741Z",
+      "datePretty": "November 13, 2026",
+      "category": "How-To",
+      "excerpt": "The New 295W 10R beam moving head light has a life of 2200 hours",
+      "tags": [
+        "moving heads",
+        "truss",
+        "shipping"
+      ],
+      "url": "content/blog/preparing-moving-heads-and-truss-for-shipping-a-step-by-step-guide-4eb0.html",
+      "image": "assets/images/products/flycase.jpg"
+    },
+    {
+      "title": "A Buyer's Guide to Private-Label Housing Colour and Logo Options on OEM Moving Head Runs",
+      "slug": "a-buyers-guide-to-private-label-housing-colour-and-logo-options-on-oem-aief",
+      "date": "2026-11-13T21:30:08.140Z",
+      "datePretty": "November 13, 2026",
+      "category": "How-To",
+      "excerpt": "Private-label housing colour and logo options on OEM moving head runs are a great way for professional buyers to customize their lighting fixtures.",
+      "tags": [
+        "OEM",
+        "moving heads",
+        "private label"
+      ],
+      "url": "content/blog/a-buyers-guide-to-private-label-housing-colour-and-logo-options-on-oem-aief.html",
+      "image": "assets/images/products/20w-single-green-label.jpg"
+    },
+    {
+      "title": "Warranty Claims on LED Fixtures: A Guide for Professional Buyers",
+      "slug": "warranty-claims-on-led-fixtures-a-guide-for-professional-buyers-63uh",
+      "date": "2026-11-13T21:28:57.298Z",
+      "datePretty": "November 13, 2026",
+      "category": "How-To",
+      "excerpt": "What to document and photograph before filing a warranty claim on LED fixtures, and where coverage is defined in the order confirmation.",
+      "tags": [
+        "LED fixtures",
+        "warranty claims",
+        "professional buyers"
+      ],
+      "url": "content/blog/warranty-claims-on-led-fixtures-a-guide-for-professional-buyers-63uh.html",
+      "image": "assets/images/products/ep-lfba040b1-dhwf.jpg"
+    },
+    {
+      "title": "A Buyer's Guide to Spare Parts for Moving Heads",
+      "slug": "a-buyers-guide-to-spare-parts-for-moving-heads-59kg",
+      "date": "2026-11-12T21:55:15.271Z",
+      "datePretty": "November 12, 2026",
+      "category": "How-To",
+      "excerpt": "50 moving heads require specific spare parts like fans and drivers",
+      "tags": [
+        "moving heads",
+        "spare parts",
+        "lighting equipment"
+      ],
+      "url": "content/blog/a-buyers-guide-to-spare-parts-for-moving-heads-59kg.html",
+      "image": "assets/images/products/rg-ml500rs-knnw1h20.jpg"
+    },
+    {
+      "title": "A Buyer's Guide to Sample Approval for Bulk Moving Head Orders",
+      "slug": "a-buyers-guide-to-sample-approval-for-bulk-moving-head-orders-lyy4",
+      "date": "2026-11-12T21:54:05.042Z",
+      "datePretty": "November 12, 2026",
+      "category": "How-To",
+      "excerpt": "New 295W 10R beam moving head light has a life of 2200 hours",
+      "tags": [
+        "moving heads",
+        "sample approval",
+        "bulk orders"
+      ],
+      "url": "content/blog/a-buyers-guide-to-sample-approval-for-bulk-moving-head-orders-lyy4.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg"
+    },
+    {
+      "title": "A Buyer's Guide to Choosing the Right Lighting Package for a New Rental Company",
+      "slug": "a-buyers-guide-to-choosing-the-right-lighting-package-for-a-new-rental-rf7h",
+      "date": "2026-11-12T21:53:02.287Z",
+      "datePretty": "November 12, 2026",
+      "category": "How-To",
+      "excerpt": "Buying a first 30-fixture lighting package for a new rental company can be a daunting task, especially with the numerous options available in the market.",
+      "tags": [
+        "lighting",
+        "rental",
+        "fixtures"
+      ],
+      "url": "content/blog/a-buyers-guide-to-choosing-the-right-lighting-package-for-a-new-rental-rf7h.html",
+      "image": "assets/images/products/rg-m300bh-kyh16.jpg"
+    },
+    {
+      "title": "Lighting for Livestream Worship: Camera-Safe Dimming and Fan Noise",
+      "slug": "lighting-for-livestream-worship-camera-safe-dimming-and-fan-noise-b6xb",
+      "date": "2026-11-11T22:08:17.082Z",
+      "datePretty": "November 11, 2026",
+      "category": "Application",
+      "excerpt": "RG-EL0001FL-3e504 Infinite whirlwind LED fan light has 504 SMD three in one RGB high brightness LEDs",
+      "tags": [
+        "Livestream Worship",
+        "Camera-Safe Dimming",
+        "Fan Noise"
+      ],
+      "url": "content/blog/lighting-for-livestream-worship-camera-safe-dimming-and-fan-noise-b6xb.html",
+      "image": "assets/images/products/rg-el0001fl-3e504.jpg"
+    },
+    {
+      "title": "Stage Lighting for Product Launches: Matching Brand Colors with LED Mixing",
+      "slug": "stage-lighting-for-product-launches-matching-brand-colors-with-led-mix-auwb",
+      "date": "2026-11-11T22:07:11.277Z",
+      "datePretty": "November 11, 2026",
+      "category": "Application",
+      "excerpt": "Stage lighting for product launches requires careful consideration of the brand's color scheme and the overall aesthetic of the event.",
+      "tags": [
+        "stage lighting",
+        "product launch",
+        "LED mixing"
+      ],
+      "url": "content/blog/stage-lighting-for-product-launches-matching-brand-colors-with-led-mix-auwb.html",
+      "image": "assets/images/products/rg-st112a-s20f336a.jpg"
+    },
+    {
+      "title": "Retrofitting a Tungsten Rig to LED: A Step-by-Step Guide",
+      "slug": "retrofitting-a-tungsten-rig-to-led-a-step-by-step-guide-c7sl",
+      "date": "2026-11-11T22:06:09.141Z",
+      "datePretty": "November 11, 2026",
+      "category": "How-To",
+      "excerpt": "For rental houses, touring productions, theatres, clubs, churches, and event companies, making the switch to LED can be a smart investment.",
+      "tags": [
+        "LED Lighting",
+        "Retrofitting",
+        "Stage Lighting"
+      ],
+      "url": "content/blog/retrofitting-a-tungsten-rig-to-led-a-step-by-step-guide-c7sl.html",
+      "image": "assets/images/products/fg-w3pe3l100h13-kdp.jpg"
+    },
+    {
+      "title": "Lighting a Christmas Market Outdoor Trail: Weatherproofing and Power Distribution",
+      "slug": "lighting-a-christmas-market-outdoor-trail-weatherproofing-and-power-di-jn8h",
+      "date": "2026-11-10T21:24:57.176Z",
+      "datePretty": "November 10, 2026",
+      "category": "Application",
+      "excerpt": "Christmas market outdoor trails require specialized lighting to create a festive and inviting atmosphere.",
+      "tags": [
+        "outdoor lighting",
+        "weatherproofing",
+        "power distribution"
+      ],
+      "url": "content/blog/lighting-a-christmas-market-outdoor-trail-weatherproofing-and-power-di-jn8h.html",
+      "image": "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg"
+    },
+    {
+      "title": "Lighting an Esports Arena: Audience Blinders and Camera-Safe Strobe Rates",
+      "slug": "lighting-an-esports-arena-audience-blinders-and-camera-safe-strobe-rat-8cju",
+      "date": "2026-11-10T21:24:06.618Z",
+      "datePretty": "November 10, 2026",
+      "category": "Application",
+      "excerpt": "The RG-TH8B600S has a total power of 600W and can be used as an audience blinder, with a camera-safe strobe rate of 0-25 times per second.",
+      "tags": [
+        "esports",
+        "lighting",
+        "arena"
+      ],
+      "url": "content/blog/lighting-an-esports-arena-audience-blinders-and-camera-safe-strobe-rat-8cju.html",
+      "image": "assets/images/products/rg-th8b600s.jpg"
+    },
+    {
+      "title": "Lighting a University Lecture Theatre: Quiet Fixtures and DMX Zones",
+      "slug": "lighting-a-university-lecture-theatre-quiet-fixtures-and-dmx-zones-2gyf",
+      "date": "2026-11-10T21:22:58.212Z",
+      "datePretty": "November 10, 2026",
+      "category": "Application",
+      "excerpt": "The RG-TH8B600S, with its 8 high power LEDs, is a suitable option for lecture theatres, providing 600W of power and a color temperature of 6500K.",
+      "tags": [
+        "theatre lighting",
+        "DMX zones",
+        "quiet fixtures"
+      ],
+      "url": "content/blog/lighting-a-university-lecture-theatre-quiet-fixtures-and-dmx-zones-2gyf.html",
+      "image": "assets/images/products/rg-th8b600s.jpg"
+    },
+    {
+      "title": "Lighting a Cruise Ship Lounge: A Guide to Salt Air, Vibration, and IP-Rated Fixtures",
+      "slug": "lighting-a-cruise-ship-lounge-a-guide-to-salt-air-vibration-and-ip-rat-ciao",
+      "date": "2026-11-09T23:51:48.366Z",
+      "datePretty": "November 9, 2026",
+      "category": "Application",
+      "excerpt": "RG-M300BH-KYH16M 300W 16CH Beam moving head light strip auxiliary lighting",
+      "tags": [
+        "cruise ship lighting",
+        "IP-rated fixtures",
+        "salt air resistance"
+      ],
+      "url": "content/blog/lighting-a-cruise-ship-lounge-a-guide-to-salt-air-vibration-and-ip-rat-ciao.html",
+      "image": "assets/images/products/rg-m300bh-kyh16m.jpg"
+    },
+    {
+      "title": "Lighting a Fashion Runway: A Guide to Front Light, Side Light, and Camera Positions",
+      "slug": "lighting-a-fashion-runway-a-guide-to-front-light-side-light-and-camera-brvu",
+      "date": "2026-11-09T23:50:49.353Z",
+      "datePretty": "November 9, 2026",
+      "category": "Application",
+      "excerpt": "The 300W LED Panel light -warm has a color temperature of 3200K/5600K/2-in-1 optional",
+      "tags": [
+        "fashion runway",
+        "lighting design",
+        "stage lighting"
+      ],
+      "url": "content/blog/lighting-a-fashion-runway-a-guide-to-front-light-side-light-and-camera-brvu.html",
+      "image": "assets/images/products/300w-led-panel-light-warm.jpg"
+    },
+    {
+      "title": "Lighting a Museum or Gallery Launch: High CRI and UV-Free LED Sources",
+      "slug": "lighting-a-museum-or-gallery-launch-high-cri-and-uv-free-led-sources-h8cx",
+      "date": "2026-11-09T23:49:41.072Z",
+      "datePretty": "November 9, 2026",
+      "category": "Application",
+      "excerpt": "RG-W12IUV10-Ke6A has 24 LEDs and a 10W UV LED city color light",
+      "tags": [
+        "Museum Lighting",
+        "Gallery Lighting",
+        "High CRI LED"
+      ],
+      "url": "content/blog/lighting-a-museum-or-gallery-launch-high-cri-and-uv-free-led-sources-h8cx.html",
+      "image": "assets/images/products/300w-led-panel-light-warm.jpg"
+    },
+    {
+      "title": "Layering Beam, Wash, and Strobe Fixtures on a Festival Main Stage",
+      "slug": "layering-beam-wash-and-strobe-fixtures-on-a-festival-main-stage-ft8v",
+      "date": "2026-11-08T19:53:27.608Z",
+      "datePretty": "November 8, 2026",
+      "category": "Application",
+      "excerpt": "The RG-EL0001FL-3e260 LED background stage fan light has 3 pieces 60w golden cob",
+      "tags": [
+        "stage lighting",
+        "festival lighting",
+        "beam fixtures"
+      ],
+      "url": "content/blog/layering-beam-wash-and-strobe-fixtures-on-a-festival-main-stage-ft8v.html",
+      "image": "assets/images/products/rg-el0001fl-3e260.jpg"
+    },
+    {
+      "title": "Lighting a Hotel Ballroom: A Comprehensive Guide",
+      "slug": "lighting-a-hotel-ballroom-a-comprehensive-guide-vanm",
+      "date": "2026-11-08T19:52:24.080Z",
+      "datePretty": "November 8, 2026",
+      "category": "Application",
+      "excerpt": "The 300W LED Panel light -warm white and cold white 2in1 is suitable for hotel ballrooms",
+      "tags": [
+        "hotel ballroom lighting",
+        "truss lighting",
+        "warm-white washes"
+      ],
+      "url": "content/blog/lighting-a-hotel-ballroom-a-comprehensive-guide-vanm.html",
+      "image": "assets/images/products/300w-led-panel-light-warm.jpg"
+    },
+    {
+      "title": "Lighting a Live-Streamed Set: Colour Temperature, Flicker and Camera-Safe Dimming",
+      "slug": "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-z7d2",
+      "date": "2026-11-07T19:33:15.976Z",
+      "datePretty": "November 7, 2026",
+      "category": "How-To",
+      "excerpt": "For live streaming, a colour temperature of 3200K is often preferred as it provides a warm and natural look.",
+      "tags": [
+        "live streaming",
+        "stage lighting",
+        "colour temperature"
+      ],
+      "url": "content/blog/lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-z7d2.html",
+      "image": "assets/images/products/300w-led-panel-light-warm.jpg",
+      "noindex": true,
+      "canonicalTo": "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-l9vn"
+    },
+    {
+      "title": "Ground Support and Stage Platforms: A Buyer's Guide",
+      "slug": "ground-support-and-stage-platforms-a-buyers-guide-mjbw",
+      "date": "2026-11-07T19:32:19.770Z",
+      "datePretty": "November 7, 2026",
+      "category": "How-To",
+      "excerpt": "Ground support and stage platforms are crucial components of any live event or performance.",
+      "tags": [
+        "stage platforms",
+        "ground support",
+        "load capacity"
+      ],
+      "url": "content/blog/ground-support-and-stage-platforms-a-buyers-guide-mjbw.html",
+      "image": "assets/images/products/rg-ddf40s45-v32.jpg",
+      "noindex": true,
+      "canonicalTo": "ground-support-and-stage-platforms-a-buyers-guide-95ce"
+    },
+    {
+      "title": "Rigging Hardware Basics for Technicians",
+      "slug": "rigging-hardware-basics-for-technicians-1x63",
+      "date": "2026-11-07T19:31:22.287Z",
+      "datePretty": "November 7, 2026",
+      "category": "How-To",
+      "excerpt": "Rigging Hardware Basics for Technicians: what to compare, which specifications matter, and the checks to run before you order.",
+      "tags": [
+        "rigging",
+        "clamps",
+        "safety bonds"
+      ],
+      "url": "content/blog/rigging-hardware-basics-for-technicians-1x63.html",
+      "image": "assets/images/products/ts-wjhzb156x107x50-w30.jpg",
+      "noindex": true,
+      "canonicalTo": "rigging-hardware-basics-for-technicians-xxjk"
+    },
+    {
+      "title": "A Buyer's Guide to Choosing Truss: Box vs Ladder vs Triangle",
+      "slug": "a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-epyf",
+      "date": "2026-11-06T21:01:38.947Z",
+      "datePretty": "November 6, 2026",
+      "category": "How-To",
+      "excerpt": "Ladder truss, such as HJ-L1TMY303010T50-W, has a ladder-like structure that provides excellent strength and stability.",
+      "tags": [
+        "truss",
+        "stage lighting",
+        "event production"
+      ],
+      "url": "content/blog/a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-epyf.html",
+      "image": "assets/images/products/hj-l1tmy303010t50-w.jpg",
+      "noindex": true,
+      "canonicalTo": "a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-rufc"
+    },
+    {
+      "title": "Planning Power and Phase Balance for a Stage Full of LED Fixtures",
+      "slug": "planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-g9jn",
+      "date": "2026-11-06T21:00:07.122Z",
+      "datePretty": "November 6, 2026",
+      "category": "How-To",
+      "excerpt": "For example, the Full Moon Scimitar LED effect light has a power rating of 12W, while the 6W Moving head full color laser has a power rating of 6W.",
+      "tags": [
+        "stage lighting",
+        "power balance",
+        "LED fixtures"
+      ],
+      "url": "content/blog/planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-g9jn.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg",
+      "noindex": true,
+      "canonicalTo": "planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-2fty"
+    },
+    {
+      "title": "Rigging Hardware Basics for Technicians",
+      "slug": "rigging-hardware-basics-for-technicians-2jmv",
+      "date": "2026-11-06T20:59:04.427Z",
+      "datePretty": "November 6, 2026",
+      "category": "How-To",
+      "excerpt": "A single malfunction or failure can have serious consequences, including injury or damage to equipment.",
+      "tags": [
+        "rigging",
+        "hardware",
+        "safety"
+      ],
+      "url": "content/blog/rigging-hardware-basics-for-technicians-2jmv.html",
+      "image": "assets/images/products/ts-wjhzb156x107x50-w30.jpg",
+      "noindex": true,
+      "canonicalTo": "rigging-hardware-basics-for-technicians-xxjk"
+    },
+    {
+      "title": "Choosing a Console for a Rental House: A Comprehensive Guide",
+      "slug": "choosing-a-console-for-a-rental-house-a-comprehensive-guide-c8t0",
+      "date": "2026-11-05T21:33:06.174Z",
+      "datePretty": "November 5, 2026",
+      "category": "How-To",
+      "excerpt": "The minimum channel count you should consider for a rental house depends on the size and complexity of your lighting setups.",
+      "tags": [
+        "console selection",
+        "rental house",
+        "lighting control"
+      ],
+      "url": "content/blog/choosing-a-console-for-a-rental-house-a-comprehensive-guide-c8t0.html",
+      "image": "assets/images/products/rg-ctd40s4f-k.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-a-console-for-a-rental-house-a-comprehensive-guide-4w8o"
+    },
+    {
+      "title": "Wireless DMX: Latency, Dropouts, and When to Run Cable Anyway",
+      "slug": "wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-2718",
+      "date": "2026-11-05T21:32:03.959Z",
+      "datePretty": "November 5, 2026",
+      "category": "How-To",
+      "excerpt": "However, they can also be prone to latency and dropouts, which can be a problem in applications that require precise control and reliability.",
+      "tags": [
+        "Wireless DMX",
+        "Latency",
+        "Dropouts"
+      ],
+      "url": "content/blog/wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-2718.html",
+      "image": "assets/images/products/rg-ctcwildr-rs.jpg",
+      "noindex": true,
+      "canonicalTo": "wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-c2r7"
+    },
+    {
+      "title": "DMX Splitters and Opto-Isolation: A Step-by-Step Guide",
+      "slug": "dmx-splitters-and-opto-isolation-a-step-by-step-guide-7st3",
+      "date": "2026-11-05T21:30:54.289Z",
+      "datePretty": "November 5, 2026",
+      "category": "How-To",
+      "excerpt": "When one universe needs four cable runs, use 4 DMX splitters, such as the RG-CA8402C, to ensure opto-isolation and reliable signal transmission.",
+      "tags": [
+        "DMX splitters",
+        "opto-isolation",
+        "lighting control"
+      ],
+      "url": "content/blog/dmx-splitters-and-opto-isolation-a-step-by-step-guide-7st3.html",
+      "image": "assets/images/products/ep-lfba010b1-dhwf.jpg",
+      "noindex": true,
+      "canonicalTo": "dmx-splitters-and-opto-isolation-a-step-by-step-guide-etgx"
+    },
+    {
+      "title": "A Buyer's Guide to LED Dance Floors: Panel Pitch, Weight Loading, and DMX Mapping",
+      "slug": "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-ujpr",
+      "date": "2026-11-04T21:26:23.896Z",
+      "datePretty": "November 4, 2026",
+      "category": "How-To",
+      "excerpt": "For example, the RG-VDF44S2976-KV0 has a panel pitch of 2.976mm, while the RG-VDF44S391-KV0 has a panel pitch of 3.91mm.",
+      "tags": [
+        "LED dance floors",
+        "panel pitch",
+        "weight loading",
+        "DMX mapping"
+      ],
+      "url": "content/blog/a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-ujpr.html",
+      "image": "assets/images/products/rg-vdf44s391-kv0.jpg",
+      "noindex": true,
+      "canonicalTo": "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-3mz1"
+    },
+    {
+      "title": "Kinetic Winches and Lifting Balls: A Comprehensive Guide",
+      "slug": "kinetic-winches-and-lifting-balls-a-comprehensive-guide-362z",
+      "date": "2026-11-04T21:25:06.393Z",
+      "datePretty": "November 4, 2026",
+      "category": "How-To",
+      "excerpt": "The EP-LFBA067L-DhWf 3KG DMX winch/lifting football light has a lifting range of 0-4m and uses DMX protocols for control.",
+      "tags": [
+        "kinetic winches",
+        "lifting balls",
+        "rigging basics"
+      ],
+      "url": "content/blog/kinetic-winches-and-lifting-balls-a-comprehensive-guide-362z.html",
+      "image": "assets/images/products/5kg-dmx-control-winch-lifting-machine.jpg",
+      "noindex": true,
+      "canonicalTo": "kinetic-winches-and-lifting-balls-a-comprehensive-guide-w6jv"
+    },
+    {
+      "title": "Fan Noise in LED Fixtures: A Technician's Guide",
+      "slug": "fan-noise-in-led-fixtures-a-technicians-guide-0orv",
+      "date": "2026-11-04T21:24:14.516Z",
+      "datePretty": "November 4, 2026",
+      "category": "How-To",
+      "excerpt": "Look for fixtures with low decibel ratings, such as the RG-PS200A110-W, and consider fanless options if possible.",
+      "tags": [
+        "LED fixtures",
+        "fan noise",
+        "silent running"
+      ],
+      "url": "content/blog/fan-noise-in-led-fixtures-a-technicians-guide-0orv.html",
+      "image": "assets/images/products/rg-ps200a110-w.jpg"
+    },
+    {
+      "title": "Renting vs Buying Moving Heads: The Crossover Point for a Working Rental House",
+      "slug": "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-3qly",
+      "date": "2026-11-03T21:13:10.732Z",
+      "datePretty": "November 3, 2026",
+      "category": "How-To",
+      "excerpt": "The decision depends on various factors, including the frequency and duration of events, the type of events, and the budget.",
+      "tags": [
+        "moving heads",
+        "rental houses",
+        "lighting fixtures"
+      ],
+      "url": "content/blog/renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-3qly.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg",
+      "noindex": true,
+      "canonicalTo": "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-m63m"
+    },
+    {
+      "title": "Understanding Cold-Start Behaviour in LED Fixtures",
+      "slug": "understanding-cold-start-behaviour-in-led-fixtures-geg5",
+      "date": "2026-11-03T21:12:11.321Z",
+      "datePretty": "November 3, 2026",
+      "category": "How-To",
+      "excerpt": "The RG-P58TC10-Ke18A, a 4leds 50W 200w Cold-warm 2in1 white zoom led par light, is an example of a fixture that may be affected by cold-start behaviour.",
+      "tags": [
+        "LED fixtures",
+        "cold-start behaviour",
+        "winter derating"
+      ],
+      "url": "content/blog/understanding-cold-start-behaviour-in-led-fixtures-geg5.html",
+      "image": "assets/images/products/rg-pds28s100ia-v25.jpg",
+      "noindex": true,
+      "canonicalTo": "understanding-cold-start-behaviour-in-led-fixtures-yyxd"
+    },
+    {
+      "title": "Moving Head Service Intervals: A Practical Guide",
+      "slug": "moving-head-service-intervals-a-practical-guide-au04",
+      "date": "2026-11-03T21:11:06.594Z",
+      "datePretty": "November 3, 2026",
+      "category": "How-To",
+      "excerpt": "Clean your moving heads every 2200 hours, replace the belt when it shows signs of wear, and store them in a dry, cool place.",
+      "tags": [
+        "moving heads",
+        "maintenance",
+        "storage"
+      ],
+      "url": "content/blog/moving-head-service-intervals-a-practical-guide-au04.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg",
+      "noindex": true,
+      "canonicalTo": "moving-head-service-intervals-a-practical-guide-23b4"
+    },
+    {
+      "title": "Creating Intentional Movement Macros on Moving Heads",
+      "slug": "creating-intentional-movement-macros-on-moving-heads-1aws",
+      "date": "2026-11-02T23:14:01.623Z",
+      "datePretty": "November 2, 2026",
+      "category": "How-To",
+      "excerpt": "The NEW outdoor IP65 7leds60w LED moving head light RG-ML420WC-KCH93 is suitable for outdoor use and can create a variety of effects.",
+      "tags": [
+        "moving heads",
+        "lighting design",
+        "macros"
+      ],
+      "url": "content/blog/creating-intentional-movement-macros-on-moving-heads-1aws.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg",
+      "noindex": true,
+      "canonicalTo": "creating-intentional-movement-macros-on-moving-heads-yzsn"
+    },
+    {
+      "title": "Beam Angle vs Output: Understanding the Relationship",
+      "slug": "beam-angle-vs-output-understanding-the-relationship-6dfz",
+      "date": "2026-11-02T23:12:38.015Z",
+      "datePretty": "November 2, 2026",
+      "category": "How-To",
+      "excerpt": "For technicians and lighting professionals, it's not uncommon to encounter situations where a 230W beam appears brighter than a 400W wash.",
+      "tags": [
+        "beam angle",
+        "output",
+        "lighting"
+      ],
+      "url": "content/blog/beam-angle-vs-output-understanding-the-relationship-6dfz.html",
+      "image": "assets/images/products/rg-m230b-koh20.jpg"
+    },
+    {
+      "title": "Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre",
+      "slug": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-qhlu",
+      "date": "2026-11-02T23:11:39.202Z",
+      "datePretty": "November 2, 2026",
+      "category": "Application",
+      "excerpt": "A LED profile spot, such as the RG-PS20A19-W, has a fixed beam angle and is designed to create a tight, focused beam of light.",
+      "tags": [
+        "theatre lighting",
+        "lens selection",
+        "stage lighting"
+      ],
+      "url": "content/blog/profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-qhlu.html",
+      "image": "assets/images/products/rg-ps200a20t50-w.jpg",
+      "noindex": true,
+      "canonicalTo": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv"
+    },
+    {
+      "title": "Choosing the Right Gobo Projector for Retail and Brand Logos",
+      "slug": "choosing-the-right-gobo-projector-for-retail-and-brand-logos-pz40",
+      "date": "2026-11-01T19:52:48.133Z",
+      "datePretty": "November 1, 2026",
+      "category": "Application",
+      "excerpt": "The RG-GB200L4C0-BK and RG-GB200L6C0-ZK are examples of outdoor gobo projectors. Gobo projectors can be controlled using various protocols, such as DMX.",
+      "tags": [
+        "gobo projectors",
+        "retail logos",
+        "brand logos"
+      ],
+      "url": "content/blog/choosing-the-right-gobo-projector-for-retail-and-brand-logos-pz40.html",
+      "image": "assets/images/products/rg-pj600bl1s0n1-wk.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-the-right-gobo-projector-for-retail-and-brand-logos-4jk6"
+    },
+    {
+      "title": "LED Wall Washers for Facades and Ballrooms: A Practical Guide",
+      "slug": "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-c5y1",
+      "date": "2026-11-01T19:50:53.628Z",
+      "datePretty": "November 1, 2026",
+      "category": "How-To",
+      "excerpt": "For example, if you want to achieve 100 lux with an LED wall washer producing 1000 lumens, the throw distance would be approximately 5m.",
+      "tags": [
+        "LED wall washers",
+        "facade lighting",
+        "ballroom lighting"
+      ],
+      "url": "content/blog/led-wall-washers-for-facades-and-ballrooms-a-practical-guide-c5y1.html",
+      "image": "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg",
+      "noindex": true,
+      "canonicalTo": "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-ajya"
+    },
+    {
+      "title": "Choosing the Right Battery Uplights for Weddings and Corporate Events",
+      "slug": "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-udu7",
+      "date": "2026-10-31T19:27:53.046Z",
+      "datePretty": "October 31, 2026",
+      "category": "Application",
+      "excerpt": "The RG-W18IB8-Ke8AM offers up to 8 hours of runtime and supports wireless DMX control, making it a suitable choice for weddings and corporate events.",
+      "tags": [
+        "uplights",
+        "weddings",
+        "corporate events"
+      ],
+      "url": "content/blog/choosing-the-right-battery-uplights-for-weddings-and-corporate-events-udu7.html",
+      "image": "assets/images/products/rg-w18ib8-ke8am.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-sxpg"
+    },
+    {
+      "title": "Choosing the Right Atmospheric Machine for Your Venue",
+      "slug": "choosing-the-right-atmospheric-machine-for-your-venue-gvw7",
+      "date": "2026-10-31T19:27:01.497Z",
+      "datePretty": "October 31, 2026",
+      "category": "How-To",
+      "excerpt": "Haze, fog, and spark effects are essential components of many live events and performances.",
+      "tags": [
+        "haze",
+        "fog",
+        "spark effects"
+      ],
+      "url": "content/blog/choosing-the-right-atmospheric-machine-for-your-venue-gvw7.html",
+      "image": "assets/images/products/water-based-oil-for-mist-2.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-the-right-atmospheric-machine-for-your-venue-ko84"
+    },
+    {
+      "title": "Pixel Mapping a Wall of LED Fixtures Without a Media Server",
+      "slug": "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-jrlz",
+      "date": "2026-10-30T20:03:18.380Z",
+      "datePretty": "October 30, 2026",
+      "category": "How-To",
+      "excerpt": "Next, review the specifications of the RG-CTCLEDPEIN-1 and 24pcs 1.5W RGB Outdoor LED bar to determine if they meet your requirements for pixel mapping.",
+      "tags": [
+        "LED fixtures",
+        "pixel mapping",
+        "media server"
+      ],
+      "url": "content/blog/pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-jrlz.html",
+      "image": "assets/images/products/dmx-control-pixel-led-lifting.jpg",
+      "noindex": true,
+      "canonicalTo": "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-qp9f"
+    },
+    {
+      "title": "Choosing Effect Fixtures for a Streamed Set: Pixel Bars vs LED Matrix Panels",
+      "slug": "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-iel8",
+      "date": "2026-10-30T20:02:13.335Z",
+      "datePretty": "October 30, 2026",
+      "category": "Application",
+      "excerpt": "For example, the RG-EL004FL-3e42 3D Corn Pixel Matrix light offers a high-resolution visual effect with its 729/720/480/489 pixel configuration.",
+      "tags": [
+        "stage lighting",
+        "effect fixtures",
+        "streamed sets"
+      ],
+      "url": "content/blog/choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-iel8.html",
+      "image": "assets/images/products/full-moon-scimitar-led-effect.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-qf23"
+    },
+    {
+      "title": "Choosing an RGB Laser for a Nightclub: A Step-by-Step Guide",
+      "slug": "choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-ldr8",
+      "date": "2026-10-29T20:28:11.422Z",
+      "datePretty": "October 29, 2026",
+      "category": "How-To",
+      "excerpt": "Check the output, scanning angle, and ILDA control of the laser light, such as the 10W output and 50° scanning angle of the RG-LL10000f1LM model.",
+      "tags": [
+        "laser lighting",
+        "nightclub lighting",
+        "ILDA control"
+      ],
+      "url": "content/blog/choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-ldr8.html",
+      "image": "assets/images/products/rg-ll10000f1lm.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-an-rgb-laser-for-a-nightclub-a-step-by-step-guide-0w1g"
+    },
+    {
+      "title": "Laser Safety for Live Events: A Buyer's Guide",
+      "slug": "laser-safety-for-live-events-a-buyers-guide-5hi0",
+      "date": "2026-10-29T20:27:10.384Z",
+      "datePretty": "October 29, 2026",
+      "category": "How-To",
+      "excerpt": "For example, the RG-ML100BD-KC6AH40 6头10瓦光束LED摇头+RGB激光灯 is a moving head laser that can produce a wide range of beam shows.",
+      "tags": [
+        "Laser Safety",
+        "Live Events",
+        "Stage Lighting"
+      ],
+      "url": "content/blog/laser-safety-for-live-events-a-buyers-guide-5hi0.html",
+      "image": "assets/images/products/bx-l1f65x50t28-w.jpg"
+    },
+    {
+      "title": "Colour Mixing in Moving Heads: CMY vs RGB and the Importance of Clean White",
+      "slug": "colour-mixing-in-moving-heads-cmy-vs-rgb-and-the-importance-of-clean-w-3e6j",
+      "date": "2026-10-29T20:26:02.687Z",
+      "datePretty": "October 29, 2026",
+      "category": "How-To",
+      "excerpt": "Some moving heads, like the RG-ML400RS-KNNW1H21, have a high IP rating and can withstand outdoor use.",
+      "tags": [
+        "colour mixing",
+        "moving heads",
+        "lighting"
+      ],
+      "url": "content/blog/colour-mixing-in-moving-heads-cmy-vs-rgb-and-the-importance-of-clean-w-3e6j.html",
+      "image": "assets/images/products/rg-ml500rs-knnw1h20.jpg"
+    },
+    {
+      "title": "Laser Safety for Live Events: A Comprehensive Guide",
+      "slug": "laser-safety-for-live-events-a-comprehensive-guide-l3t8",
+      "date": "2026-10-28T20:27:26.388Z",
+      "datePretty": "October 28, 2026",
+      "category": "How-To",
+      "excerpt": "Laser safety is a critical concern for live events, and it's essential to understand the differences between class 3B and class 4 lasers.",
+      "tags": [
+        "Laser Safety",
+        "Live Events",
+        "Class 3B",
+        "Class 4"
+      ],
+      "url": "content/blog/laser-safety-for-live-events-a-comprehensive-guide-l3t8.html",
+      "image": "assets/images/products/bx-l1f65x50t28-w.jpg",
+      "noindex": true,
+      "canonicalTo": "laser-safety-for-live-events-a-comprehensive-guide-dgan"
+    },
+    {
+      "title": "Sound-Activated vs DMX Control for Small Venues",
+      "slug": "sound-activated-vs-dmx-control-for-small-venues-7lb3",
+      "date": "2026-10-28T20:26:14.927Z",
+      "datePretty": "October 28, 2026",
+      "category": "Application",
+      "excerpt": "When it comes to lighting control, two popular options are sound-activated control and DMX control.",
+      "tags": [
+        "lighting control",
+        "small venues",
+        "DMX"
+      ],
+      "url": "content/blog/sound-activated-vs-dmx-control-for-small-venues-7lb3.html",
+      "image": "assets/images/products/rg-ctd192s8f5-k.jpg",
+      "noindex": true,
+      "canonicalTo": "sound-activated-vs-dmx-control-for-small-venues-wwo3"
+    },
+    {
+      "title": "Lighting a School or Community Theatre on a Fixed Budget",
+      "slug": "lighting-a-school-or-community-theatre-on-a-fixed-budget-0uip",
+      "date": "2026-10-27T20:12:31.693Z",
+      "datePretty": "October 27, 2026",
+      "category": "Application",
+      "excerpt": "School and community theatres often face the challenge of lighting their spaces on a limited budget.",
+      "tags": [
+        "theatre lighting",
+        "budget lighting",
+        "community theatre"
+      ],
+      "url": "content/blog/lighting-a-school-or-community-theatre-on-a-fixed-budget-0uip.html",
+      "image": "assets/images/products/rg-m300bh-kyh16m.jpg",
+      "noindex": true,
+      "canonicalTo": "lighting-a-school-or-community-theatre-on-a-fixed-budget-irru"
+    },
+    {
+      "title": "Lighting a Corporate Conference: A Guide to Front Light, Screen Wash, and Spill Control",
+      "slug": "lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-jn00",
+      "date": "2026-10-27T20:11:21.041Z",
+      "datePretty": "October 27, 2026",
+      "category": "Application",
+      "excerpt": "Use a 300W LED Panel light for front light, with a beam angle of 2º to 8 meters, and consider a separate screen wash fixture to reduce glare.",
+      "tags": [
+        "corporate conference",
+        "lighting design",
+        "stage lighting"
+      ],
+      "url": "content/blog/lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-jn00.html",
+      "image": "assets/images/products/rg-m300bh-kyh16m.jpg",
+      "noindex": true,
+      "canonicalTo": "lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-tzp6"
+    },
+    {
+      "title": "Lighting a Live-Streamed Set: Colour Temperature, Flicker and Camera-Safe Dimming",
+      "slug": "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-rhez",
+      "date": "2026-10-27T20:10:19.917Z",
+      "datePretty": "October 27, 2026",
+      "category": "How-To",
+      "excerpt": "For live streaming, use a colour temperature of 3200K, such as the 300W LED Panel light -warm, and ensure camera-safe dimming to avoid flicker.",
+      "tags": [
+        "live streaming",
+        "lighting",
+        "colour temperature"
+      ],
+      "url": "content/blog/lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-rhez.html",
+      "image": "assets/images/products/rg-st112a-s20f336a.jpg",
+      "noindex": true,
+      "canonicalTo": "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-l9vn"
+    },
+    {
+      "title": "Rigging Hardware Basics for Technicians",
+      "slug": "rigging-hardware-basics-for-technicians-5bt4",
+      "date": "2026-10-26T20:41:08.423Z",
+      "datePretty": "October 26, 2026",
+      "category": "How-To",
+      "excerpt": "There are different types of clamps available for rigging hardware, including the DG-LS52F-200 Single Hook Clamp and the DG-LS52F-400 Double Hook Clamp.",
+      "tags": [
+        "rigging",
+        "hardware",
+        "safety"
+      ],
+      "url": "content/blog/rigging-hardware-basics-for-technicians-5bt4.html",
+      "image": "assets/images/products/rg-ddf56s125-v8.jpg",
+      "noindex": true,
+      "canonicalTo": "rigging-hardware-basics-for-technicians-xxjk"
+    },
+    {
+      "title": "Choosing the Right Truss: A Comprehensive Guide",
+      "slug": "choosing-the-right-truss-a-comprehensive-guide-xnvs",
+      "date": "2026-10-26T20:39:56.881Z",
+      "datePretty": "October 26, 2026",
+      "category": "How-To",
+      "excerpt": "Ladder truss, such as the HJ-L1TMY303010T50-W, offers a lightweight and versatile option for event and production installations.",
+      "tags": [
+        "truss",
+        "stage lighting",
+        "event production"
+      ],
+      "url": "content/blog/choosing-the-right-truss-a-comprehensive-guide-xnvs.html",
+      "image": "assets/images/products/hj-l1smy303010t50-w.jpg"
+    },
+    {
+      "title": "Planning Power and Phase Balance for a Stage Full of LED Fixtures",
+      "slug": "planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-g6yg",
+      "date": "2026-10-25T18:33:07.154Z",
+      "datePretty": "October 25, 2026",
+      "category": "How-To",
+      "excerpt": "Check the power consumption of each fixture, like the Full Moon Scimitar LED effect light",
+      "tags": [
+        "stage lighting",
+        "power balance",
+        "LED fixtures"
+      ],
+      "url": "content/blog/planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-g6yg.html",
+      "image": "assets/images/products/full-moon-scimitar-led-effect.jpg",
+      "noindex": true,
+      "canonicalTo": "planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-2fty"
+    },
+    {
+      "title": "Rigging Hardware Basics for Technicians",
+      "slug": "rigging-hardware-basics-for-technicians-y1su",
+      "date": "2026-10-25T18:32:08.467Z",
+      "datePretty": "October 25, 2026",
+      "category": "How-To",
+      "excerpt": "As a general rule, rigging hardware should be replaced every 5-10 years, or as recommended by the manufacturer.",
+      "tags": [
+        "rigging",
+        "hardware",
+        "safety"
+      ],
+      "url": "content/blog/rigging-hardware-basics-for-technicians-y1su.html",
+      "image": "assets/images/products/rg-ddf56s125-v8.jpg",
+      "noindex": true,
+      "canonicalTo": "rigging-hardware-basics-for-technicians-xxjk"
+    },
+    {
+      "title": "Choosing a Console for a Rental House: A Comprehensive Guide",
+      "slug": "choosing-a-console-for-a-rental-house-a-comprehensive-guide-18xr",
+      "date": "2026-10-25T18:31:06.784Z",
+      "datePretty": "October 25, 2026",
+      "category": "How-To",
+      "excerpt": "The RG-CS0302 DMX512 mixer, for example, can be used in conjunction with a console to enhance the equipment load capacity.",
+      "tags": [
+        "console selection",
+        "rental house",
+        "lighting control"
+      ],
+      "url": "content/blog/choosing-a-console-for-a-rental-house-a-comprehensive-guide-18xr.html",
+      "image": "assets/images/products/rg-ctd40s6f-k.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-a-console-for-a-rental-house-a-comprehensive-guide-4w8o"
+    },
+    {
+      "title": "Wireless DMX: Latency, Dropouts, and When to Run Cable Anyway",
+      "slug": "wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-c2r7",
+      "date": "2026-10-24T18:18:59.084Z",
+      "datePretty": "October 24, 2026",
+      "category": "How-To",
+      "excerpt": "The RG-CTCWILDR-RS wireless remote control, for example, has a transmission power of 20dBm and a receiver sensitivity of 94dBm.",
+      "tags": [
+        "Wireless DMX",
+        "Latency",
+        "Dropouts"
+      ],
+      "url": "content/blog/wireless-dmx-latency-dropouts-and-when-to-run-cable-anyway-c2r7.html",
+      "image": "assets/images/products/rg-ctcwildr-rs.jpg"
+    },
+    {
+      "title": "DMX Splitters and Opto-Isolation: A Step-by-Step Guide",
+      "slug": "dmx-splitters-and-opto-isolation-a-step-by-step-guide-guiy",
+      "date": "2026-10-24T18:18:08.357Z",
+      "datePretty": "October 24, 2026",
+      "category": "How-To",
+      "excerpt": "DMX splitters and opto-isolation are essential components in any DMX setup, especially when one universe needs to support multiple cable runs.",
+      "tags": [
+        "DMX",
+        "opto-isolation",
+        "cable runs"
+      ],
+      "url": "content/blog/dmx-splitters-and-opto-isolation-a-step-by-step-guide-guiy.html",
+      "image": "assets/images/products/rg-ca8402c.jpg",
+      "noindex": true,
+      "canonicalTo": "dmx-splitters-and-opto-isolation-a-step-by-step-guide-etgx"
+    },
+    {
+      "title": "A Buyer's Guide to LED Dance Floors: Panel Pitch, Weight Loading, and DMX Mapping",
+      "slug": "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-ojsd",
+      "date": "2026-10-24T18:17:12.342Z",
+      "datePretty": "October 24, 2026",
+      "category": "How-To",
+      "excerpt": "The RG-VDF44S2976-KV0 has a panel pitch of 2.976mm and a weight loading capacity of 18.5Kg, and can be controlled using DMX.",
+      "tags": [
+        "LED dance floors",
+        "panel pitch",
+        "weight loading",
+        "DMX mapping"
+      ],
+      "url": "content/blog/a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-ojsd.html",
+      "image": "assets/images/products/rg-vdf44s391-kv0.jpg",
+      "noindex": true,
+      "canonicalTo": "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-3mz1"
+    },
+    {
+      "title": "Kinetic Winches and Lifting Balls: A Comprehensive Guide",
+      "slug": "kinetic-winches-and-lifting-balls-a-comprehensive-guide-5uxq",
+      "date": "2026-10-23T19:28:00.254Z",
+      "datePretty": "October 23, 2026",
+      "category": "How-To",
+      "excerpt": "The EP-LFBA067L-DhWf 3KG DMX winch/lifting football light, for example, can be controlled using DMX, master-slave, or voice control.",
+      "tags": [
+        "kinetic winches",
+        "lifting balls",
+        "load limits"
+      ],
+      "url": "content/blog/kinetic-winches-and-lifting-balls-a-comprehensive-guide-5uxq.html",
+      "image": "assets/images/products/5kg-dmx-control-winch-lifting-machine.jpg",
+      "noindex": true,
+      "canonicalTo": "kinetic-winches-and-lifting-balls-a-comprehensive-guide-w6jv"
+    },
+    {
+      "title": "Fan Noise in LED Fixtures: A Practical Guide",
+      "slug": "fan-noise-in-led-fixtures-a-practical-guide-s61h",
+      "date": "2026-10-23T19:26:53.929Z",
+      "datePretty": "October 23, 2026",
+      "category": "How-To",
+      "excerpt": "The RG-PS200A110-W, for example, is a 200W LED tricolor soft light with a relatively low fan noise level, making it suitable for quiet environments.",
+      "tags": [
+        "LED fixtures",
+        "fan noise",
+        "silent running"
+      ],
+      "url": "content/blog/fan-noise-in-led-fixtures-a-practical-guide-s61h.html",
+      "image": "assets/images/products/rg-ps200a110-w.jpg"
+    },
+    {
+      "title": "Renting vs Buying Moving Heads: The Crossover Point for a Working Rental House",
+      "slug": "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-687c",
+      "date": "2026-10-23T19:25:54.718Z",
+      "datePretty": "October 23, 2026",
+      "category": "How-To",
+      "excerpt": "The RG-ML420WC-KCH93 moving head light has an IP65 rating, a control protocol of DMX512, and an LED configuration of 7leds60w.",
+      "tags": [
+        "moving heads",
+        "rental houses",
+        "lighting fixtures"
+      ],
+      "url": "content/blog/renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-687c.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg",
+      "noindex": true,
+      "canonicalTo": "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-m63m"
+    },
+    {
+      "title": "Moving Head Service Intervals: A Step-by-Step Guide",
+      "slug": "moving-head-service-intervals-a-step-by-step-guide-gjg7",
+      "date": "2026-10-22T19:21:20.671Z",
+      "datePretty": "October 22, 2026",
+      "category": "How-To",
+      "excerpt": "Clean your moving heads every 2200 hours, and replace the belt when it shows signs of wear.",
+      "tags": [
+        "moving heads",
+        "maintenance",
+        "lighting"
+      ],
+      "url": "content/blog/moving-head-service-intervals-a-step-by-step-guide-gjg7.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+    },
+    {
+      "title": "Creating Intentional Movement Macros on Moving Heads",
+      "slug": "creating-intentional-movement-macros-on-moving-heads-7717",
+      "date": "2026-10-22T19:20:13.779Z",
+      "datePretty": "October 22, 2026",
+      "category": "How-To",
+      "excerpt": "The figure-8 cue requires more precise programming and a moving head with a faster movement range, such as the RG-M230BN-KMH16.",
+      "tags": [
+        "moving heads",
+        "lighting design",
+        "macros"
+      ],
+      "url": "content/blog/creating-intentional-movement-macros-on-moving-heads-7717.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg",
+      "noindex": true,
+      "canonicalTo": "creating-intentional-movement-macros-on-moving-heads-yzsn"
+    },
+    {
+      "title": "Understanding Beam Angle vs Output in Stage Lighting",
+      "slug": "understanding-beam-angle-vs-output-in-stage-lighting-5rcc",
+      "date": "2026-10-21T19:29:28.581Z",
+      "datePretty": "October 21, 2026",
+      "category": "How-To",
+      "excerpt": "The RG-M230BN-KMH16, for example, is a beam moving head light that can produce a brighter light than a 400W wash light with a wider beam angle.",
+      "tags": [
+        "stage lighting",
+        "beam angle",
+        "output"
+      ],
+      "url": "content/blog/understanding-beam-angle-vs-output-in-stage-lighting-5rcc.html",
+      "image": "assets/images/products/rg-m230bn-kmh16.jpg",
+      "noindex": true,
+      "canonicalTo": "understanding-beam-angle-vs-output-in-stage-lighting-h47s"
+    },
+    {
+      "title": "Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre",
+      "slug": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-hxrl",
+      "date": "2026-10-21T19:28:29.304Z",
+      "datePretty": "October 21, 2026",
+      "category": "Application",
+      "excerpt": "For example, the RG-PS200A20T50-W, a 200W Led Fresnel Zoom Spot light, has a beam angle of 3200K-5600K and can be controlled using DMX512.",
+      "tags": [
+        "stage lighting",
+        "theatre lighting",
+        "lens selection"
+      ],
+      "url": "content/blog/profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-hxrl.html",
+      "image": "assets/images/products/rg-ps200a20t50-k.jpg",
+      "noindex": true,
+      "canonicalTo": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv"
+    },
+    {
+      "title": "Choosing the Right Gobo Projector for Retail and Brand Logos",
+      "slug": "choosing-the-right-gobo-projector-for-retail-and-brand-logos-w8tv",
+      "date": "2026-10-21T19:27:09.273Z",
+      "datePretty": "October 21, 2026",
+      "category": "Application",
+      "excerpt": "A 400W projector, such as the RG-GB400L6C0-ZK, will be brighter and have a longer throw distance than a 200W projector, such as the RG-GB200L6C0-ZK.",
+      "tags": [
+        "gobo projectors",
+        "retail logos",
+        "brand logos"
+      ],
+      "url": "content/blog/choosing-the-right-gobo-projector-for-retail-and-brand-logos-w8tv.html",
+      "image": "assets/images/products/rg-gb750l4c0-bk.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-the-right-gobo-projector-for-retail-and-brand-logos-4jk6"
+    },
+    {
+      "title": "RGBW vs RGBA vs RGBAL: Understanding the Impact of Extra Emitters",
+      "slug": "rgbw-vs-rgba-vs-rgbal-understanding-the-impact-of-extra-emitters-4brf",
+      "date": "2026-10-20T19:30:05.920Z",
+      "datePretty": "October 20, 2026",
+      "category": "Application",
+      "excerpt": "The RG-PS180A19-RGBW and RG-PS180A19F-RGBW offer different beam angles and configurations, making them suitable for different applications.",
+      "tags": [
+        "stage lighting",
+        "LED fixtures",
+        "color mixing"
+      ],
+      "url": "content/blog/rgbw-vs-rgba-vs-rgbal-understanding-the-impact-of-extra-emitters-4brf.html",
+      "image": "assets/images/products/300az-rgbal.jpg"
+    },
+    {
+      "title": "LED Wall Washers for Facades and Ballrooms: A Practical Guide",
+      "slug": "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-pmpq",
+      "date": "2026-10-20T19:28:58.040Z",
+      "datePretty": "October 20, 2026",
+      "category": "How-To",
+      "excerpt": "LED Wall Washers for Facades and Ballrooms: A Practical: what to compare, which specifications matter, and the checks to run before you order.",
+      "tags": [
+        "LED wall washers",
+        "facade lighting",
+        "ballroom lighting"
+      ],
+      "url": "content/blog/led-wall-washers-for-facades-and-ballrooms-a-practical-guide-pmpq.html",
+      "image": "assets/images/products/rg-w38tb30-ke14.jpg",
+      "noindex": true,
+      "canonicalTo": "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-ajya"
+    },
+    {
+      "title": "Choosing the Right Battery Uplights for Weddings and Corporate Events",
+      "slug": "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-h9h8",
+      "date": "2026-10-20T19:27:48.793Z",
+      "datePretty": "October 20, 2026",
+      "category": "Application",
+      "excerpt": "No, not all battery uplights have wireless DMX control. However, some models like the RG-W18IB8-Ke8AM offer wireless control options.",
+      "tags": [
+        "uplights",
+        "weddings",
+        "corporate events"
+      ],
+      "url": "content/blog/choosing-the-right-battery-uplights-for-weddings-and-corporate-events-h9h8.html",
+      "image": "assets/images/products/rg-w18ib8-ke8am.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-sxpg"
+    },
+    {
+      "title": "Choosing the Right Atmospheric Machine for Your Venue",
+      "slug": "choosing-the-right-atmospheric-machine-for-your-venue-5grv",
+      "date": "2026-10-19T20:42:37.505Z",
+      "datePretty": "October 19, 2026",
+      "category": "How-To",
+      "excerpt": "The RG-FO600V17DW hazer machine, for example, features a digital display that allows for easy control and adjustment of the machine's settings.",
+      "tags": [
+        "haze",
+        "fog",
+        "spark effects"
+      ],
+      "url": "content/blog/choosing-the-right-atmospheric-machine-for-your-venue-5grv.html",
+      "image": "assets/images/products/water-based-oil-for-mist.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-the-right-atmospheric-machine-for-your-venue-ko84"
+    },
+    {
+      "title": "Choosing the Right LED Strobes and Audience Blinders for Live Music",
+      "slug": "choosing-the-right-led-strobes-and-audience-blinders-for-live-music-e0pi",
+      "date": "2026-10-19T20:41:33.147Z",
+      "datePretty": "October 19, 2026",
+      "category": "How-To",
+      "excerpt": "For live music applications, consider LED strobes with an output of at least 600W, such as the RG-TH8B600S, and a flash rate of up to 25 times per second.",
+      "tags": [
+        "live music",
+        "LED strobes",
+        "audience blinders"
+      ],
+      "url": "content/blog/choosing-the-right-led-strobes-and-audience-blinders-for-live-music-e0pi.html",
+      "image": "assets/images/products/rg-th2b250-w2.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-the-right-led-strobes-and-audience-blinders-for-live-music-7w5q"
+    },
+    {
+      "title": "Pixel Mapping a Wall of LED Fixtures Without a Media Server",
+      "slug": "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-nfr7",
+      "date": "2026-10-19T20:40:25.536Z",
+      "datePretty": "October 19, 2026",
+      "category": "How-To",
+      "excerpt": "Next, review the specifications of the RG-EL004FL-3e42 and RG-EL006FL-3e42 to determine which one is best suited for your pixel mapping project.",
+      "tags": [
+        "pixel mapping",
+        "LED fixtures",
+        "media server"
+      ],
+      "url": "content/blog/pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-nfr7.html",
+      "image": "assets/images/products/dmx-control-pixel-led-lifting.jpg",
+      "noindex": true,
+      "canonicalTo": "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-qp9f"
+    },
+    {
+      "title": "Choosing Effect Fixtures for a Streamed Set: Pixel Bars vs LED Matrix Panels",
+      "slug": "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-luzy",
+      "date": "2026-10-18T18:15:49.245Z",
+      "datePretty": "October 18, 2026",
+      "category": "How-To",
+      "excerpt": "Outdoor-rated fixtures, such as the 24pcs 1.5W RGB Outdoor LED bar, have a higher IP rating and are designed to withstand the elements.",
+      "tags": [
+        "stage lighting",
+        "effect fixtures",
+        "streamed sets"
+      ],
+      "url": "content/blog/choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-luzy.html",
+      "image": "assets/images/products/300w-led-panel-light-warm.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-qf23"
+    },
+    {
+      "title": "Laser vs Moving Head Beam Effects: Where Each One Earns Its Place on a Rig",
+      "slug": "laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-iycj",
+      "date": "2026-10-18T18:14:59.104Z",
+      "datePretty": "October 18, 2026",
+      "category": "Application",
+      "excerpt": "Both have their own unique advantages and disadvantages, and the choice between them depends on the specific needs of the production.",
+      "tags": [
+        "laser",
+        "moving head",
+        "beam effects"
+      ],
+      "url": "content/blog/laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-iycj.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg",
+      "noindex": true,
+      "canonicalTo": "laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-02s0"
+    },
+    {
+      "title": "Choosing an RGB Laser for a Nightclub: Output, Scanning Angle, and ILDA Control",
+      "slug": "choosing-an-rgb-laser-for-a-nightclub-output-scanning-angle-and-ilda-c-6gvm",
+      "date": "2026-10-18T18:13:58.183Z",
+      "datePretty": "October 18, 2026",
+      "category": "How-To",
+      "excerpt": "A 10W output, such as the RG-LL10000f1LM, is a good starting point. This output can provide a sufficient amount of light to cover a moderate-sized venue.",
+      "tags": [
+        "laser lighting",
+        "nightclub lighting",
+        "ILDA control"
+      ],
+      "url": "content/blog/choosing-an-rgb-laser-for-a-nightclub-output-scanning-angle-and-ilda-c-6gvm.html",
+      "image": "assets/images/products/rg-ll10000f1lm.jpg"
+    },
+    {
+      "title": "Laser Safety for Live Events: A Comprehensive Guide",
+      "slug": "laser-safety-for-live-events-a-comprehensive-guide-a879",
+      "date": "2026-10-17T17:58:16.262Z",
+      "datePretty": "October 17, 2026",
+      "category": "How-To",
+      "excerpt": "For live events, class 3B lasers are generally safer than class 4 lasers, with a lower power output of 5-50mW.",
+      "tags": [
+        "Laser Safety",
+        "Live Events",
+        "Class 3B",
+        "Class 4"
+      ],
+      "url": "content/blog/laser-safety-for-live-events-a-comprehensive-guide-a879.html",
+      "image": "assets/images/products/6-heads-full-color-swinging-laser.jpg",
+      "noindex": true,
+      "canonicalTo": "laser-safety-for-live-events-a-comprehensive-guide-dgan"
+    },
+    {
+      "title": "Laser Safety for Live Events: A Comprehensive Guide",
+      "slug": "laser-safety-for-live-events-a-comprehensive-guide-nt11",
+      "date": "2026-10-16T18:56:26.099Z",
+      "datePretty": "October 16, 2026",
+      "category": "How-To",
+      "excerpt": "Class 3B lasers have a lower output power than class 4 lasers, making them safer for use in live events.",
+      "tags": [
+        "Laser Safety",
+        "Live Events",
+        "Venue Requirements"
+      ],
+      "url": "content/blog/laser-safety-for-live-events-a-comprehensive-guide-nt11.html",
+      "image": "assets/images/products/6-heads-full-color-swinging-laser.jpg",
+      "noindex": true,
+      "canonicalTo": "laser-safety-for-live-events-a-comprehensive-guide-dgan"
+    },
+    {
+      "title": "Sound-Activated vs DMX Control for Small Venues",
+      "slug": "sound-activated-vs-dmx-control-for-small-venues-wwo3",
+      "date": "2026-10-16T18:55:26.134Z",
+      "datePretty": "October 16, 2026",
+      "category": "Application",
+      "excerpt": "For small venues, DMX control is generally the better option, offering more precise control and flexibility.",
+      "tags": [
+        "lighting control",
+        "small venues",
+        "DMX"
+      ],
+      "url": "content/blog/sound-activated-vs-dmx-control-for-small-venues-wwo3.html",
+      "image": "assets/images/products/rg-ctd192s8f5-k.jpg"
+    },
+    {
+      "title": "Lighting a School or Community Theatre on a Fixed Budget",
+      "slug": "lighting-a-school-or-community-theatre-on-a-fixed-budget-e805",
+      "date": "2026-10-16T18:53:54.442Z",
+      "datePretty": "October 16, 2026",
+      "category": "How-To",
+      "excerpt": "School and community theatres often face the challenge of providing high-quality lighting on a limited budget.",
+      "tags": [
+        "theatre lighting",
+        "budget lighting",
+        "stage lighting"
+      ],
+      "url": "content/blog/lighting-a-school-or-community-theatre-on-a-fixed-budget-e805.html",
+      "image": "assets/images/products/rg-m300bh-kyh16m.jpg",
+      "noindex": true,
+      "canonicalTo": "lighting-a-school-or-community-theatre-on-a-fixed-budget-irru"
+    },
+    {
+      "title": "Lighting a Corporate Conference: A Guide to Front Light, Screen Wash, and Spill Control",
+      "slug": "lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-tzp6",
+      "date": "2026-10-15T19:20:30.012Z",
+      "datePretty": "October 15, 2026",
+      "category": "Application",
+      "excerpt": "Use a lighting controller, such as the RG-CTD40S4F-K or RG-CTD40S6F-K, to control the lighting levels and colors.",
+      "tags": [
+        "corporate conference",
+        "lighting design",
+        "stage lighting"
+      ],
+      "url": "content/blog/lighting-a-corporate-conference-a-guide-to-front-light-screen-wash-and-tzp6.html",
+      "image": "assets/images/products/300w-led-panel-light-warm.jpg"
+    },
+    {
+      "title": "Lighting a Live-Streamed Set: Colour Temperature, Flicker and Camera-Safe Dimming",
+      "slug": "lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-l9vn",
+      "date": "2026-10-15T19:19:19.633Z",
+      "datePretty": "October 15, 2026",
+      "category": "Application",
+      "excerpt": "The RG-ST112A-S20f336A RGB LED 1008 Colouring Strobe Light has a high brightness LED5050SMD light source, which can help reduce flicker.",
+      "tags": [
+        "live streaming",
+        "colour temperature",
+        "flicker"
+      ],
+      "url": "content/blog/lighting-a-live-streamed-set-colour-temperature-flicker-and-camera-saf-l9vn.html",
+      "image": "assets/images/products/300w-led-panel-light-warm.jpg"
+    },
+    {
+      "title": "Ground Support and Stage Platforms: A Buyer's Guide",
+      "slug": "ground-support-and-stage-platforms-a-buyers-guide-95ce",
+      "date": "2026-10-15T19:18:05.385Z",
+      "datePretty": "October 15, 2026",
+      "category": "How-To",
+      "excerpt": "Check the load capacity and size of the stage platform before load-in, and ensure it meets your specific needs.",
+      "tags": [
+        "stage platforms",
+        "ground support",
+        "load-in"
+      ],
+      "url": "content/blog/ground-support-and-stage-platforms-a-buyers-guide-95ce.html",
+      "image": "assets/images/products/ts-st100100bfy-k60t100.jpg"
+    },
+    {
+      "title": "Rigging Hardware Basics for Technicians",
+      "slug": "rigging-hardware-basics-for-technicians-1g4s",
+      "date": "2026-10-14T19:35:33.918Z",
+      "datePretty": "October 14, 2026",
+      "category": "How-To",
+      "excerpt": "The rigging system includes various components, such as clamps, couplers, and safety bonds, each with its own specific function and requirements.",
+      "tags": [
+        "rigging",
+        "hardware",
+        "safety"
+      ],
+      "url": "content/blog/rigging-hardware-basics-for-technicians-1g4s.html",
+      "image": "assets/images/products/rg-ddf56s125-v8.jpg",
+      "noindex": true,
+      "canonicalTo": "rigging-hardware-basics-for-technicians-xxjk"
+    },
+    {
+      "title": "A Buyer's Guide to Choosing Truss: Box vs Ladder vs Triangle",
+      "slug": "a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-rufc",
+      "date": "2026-10-14T19:34:26.100Z",
+      "datePretty": "October 14, 2026",
+      "category": "How-To",
+      "excerpt": "Ladder truss, such as HJ-L1TMY303010T50-W, has a ladder-like shape, while triangle truss, such as HJ-L1SMY303010T50-W, has a triangular shape.",
+      "tags": [
+        "truss",
+        "stage lighting",
+        "event production"
+      ],
+      "url": "content/blog/a-buyers-guide-to-choosing-truss-box-vs-ladder-vs-triangle-rufc.html",
+      "image": "assets/images/products/hj-l1tmy303010t50-w.jpg"
+    },
+    {
+      "title": "Planning Power and Phase Balance for a Stage Full of LED Fixtures",
+      "slug": "planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-2fty",
+      "date": "2026-10-14T19:33:18.678Z",
+      "datePretty": "October 14, 2026",
+      "category": "How-To",
+      "excerpt": "Check the power consumption of each fixture, like the Full Moon Scimitar LED effect light",
+      "tags": [
+        "stage lighting",
+        "power balance",
+        "LED fixtures"
+      ],
+      "url": "content/blog/planning-power-and-phase-balance-for-a-stage-full-of-led-fixtures-2fty.html",
+      "image": "assets/images/products/full-moon-scimitar-led-effect.jpg"
+    },
+    {
+      "title": "Rigging Hardware Basics for Technicians",
+      "slug": "rigging-hardware-basics-for-technicians-xxjk",
+      "date": "2026-10-13T20:48:56.605Z",
+      "datePretty": "October 13, 2026",
+      "category": "How-To",
+      "excerpt": "The BX-L1F65x50T28-W Safety Bar is an example of a safety bond that can be used in rigging systems.",
+      "tags": [
+        "rigging",
+        "hardware",
+        "safety"
+      ],
+      "url": "content/blog/rigging-hardware-basics-for-technicians-xxjk.html",
+      "image": "assets/images/products/rg-ddf56s125-v8.jpg"
+    },
+    {
+      "title": "Choosing a Console for a Rental House: A Comprehensive Guide",
+      "slug": "choosing-a-console-for-a-rental-house-a-comprehensive-guide-4w8o",
+      "date": "2026-10-13T20:47:51.232Z",
+      "datePretty": "October 13, 2026",
+      "category": "How-To",
+      "excerpt": "The minimum channel count you should consider for a rental house depends on the size and complexity of your typical events.",
+      "tags": [
+        "console selection",
+        "rental house",
+        "lighting control"
+      ],
+      "url": "content/blog/choosing-a-console-for-a-rental-house-a-comprehensive-guide-4w8o.html",
+      "image": "assets/images/products/rg-ctd40s6f-k.jpg"
+    },
+    {
+      "title": "Wireless DMX Buyer's Guide: Latency, Dropouts, and Cable Considerations",
+      "slug": "wireless-dmx-buyers-guide-latency-dropouts-and-cable-considerations-z9eh",
+      "date": "2026-10-13T20:46:28.563Z",
+      "datePretty": "October 13, 2026",
+      "category": "How-To",
+      "excerpt": "For example, the RG-CTCWILDR-RS wireless remote control has a latency of less than 1 ms.",
+      "tags": [
+        "Wireless DMX",
+        "Latency",
+        "Dropouts",
+        "Cable"
+      ],
+      "url": "content/blog/wireless-dmx-buyers-guide-latency-dropouts-and-cable-considerations-z9eh.html",
+      "image": "assets/images/products/rg-ctcwildr-rs.jpg"
+    },
+    {
+      "title": "DMX Splitters and Opto-Isolation: A Step-by-Step Guide",
+      "slug": "dmx-splitters-and-opto-isolation-a-step-by-step-guide-etgx",
+      "date": "2026-10-12T22:34:54.269Z",
+      "datePretty": "October 12, 2026",
+      "category": "How-To",
+      "excerpt": "DMX splitters are available in different configurations, including 1-in, 4-out and 1-in, 8-out.",
+      "tags": [
+        "DMX",
+        "splitters",
+        "opto-isolation"
+      ],
+      "url": "content/blog/dmx-splitters-and-opto-isolation-a-step-by-step-guide-etgx.html",
+      "image": "assets/images/products/rg-ca8402c.jpg"
+    },
+    {
+      "title": "A Buyer's Guide to LED Dance Floors: Panel Pitch, Weight Loading, and DMX Mapping",
+      "slug": "a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-3mz1",
+      "date": "2026-10-12T22:34:00.721Z",
+      "datePretty": "October 12, 2026",
+      "category": "How-To",
+      "excerpt": "For example, the RG-VDF44S2976-KV0 has a panel pitch of 2.976mm, while the RG-VDF44S391-KV0 has a panel pitch of 3.91mm.",
+      "tags": [
+        "LED dance floors",
+        "panel pitch",
+        "weight loading",
+        "DMX mapping"
+      ],
+      "url": "content/blog/a-buyers-guide-to-led-dance-floors-panel-pitch-weight-loading-and-dmx-3mz1.html",
+      "image": "assets/images/products/rg-vdf44s2976-kv0.jpg"
+    },
+    {
+      "title": "Kinetic Winches and Lifting Balls: A Comprehensive Guide",
+      "slug": "kinetic-winches-and-lifting-balls-a-comprehensive-guide-w6jv",
+      "date": "2026-10-12T22:32:50.149Z",
+      "datePretty": "October 12, 2026",
+      "category": "How-To",
+      "excerpt": "The 5KG DMX Control winch/lifting machine, for example, has a load limit of 5KG and a control mode of 6/10 CH.",
+      "tags": [
+        "kinetic winches",
+        "lifting balls",
+        "load limits"
+      ],
+      "url": "content/blog/kinetic-winches-and-lifting-balls-a-comprehensive-guide-w6jv.html",
+      "image": "assets/images/products/5kg-dmx-control-winch-lifting-machine.jpg"
+    },
+    {
+      "title": "Renting vs Buying Moving Heads: The Crossover Point for a Working Rental House",
+      "slug": "renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-m63m",
+      "date": "2026-10-11T19:38:50.885Z",
+      "datePretty": "October 11, 2026",
+      "category": "How-To",
+      "excerpt": "For example, the New 295W 10R beam moving head may be more suitable for smaller venues, while the RG-ML420WC-KCH93 may be more suitable for larger venues.",
+      "tags": [
+        "moving heads",
+        "rental houses",
+        "lighting equipment"
+      ],
+      "url": "content/blog/renting-vs-buying-moving-heads-the-crossover-point-for-a-working-renta-m63m.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+    },
+    {
+      "title": "Understanding Cold-Start Behaviour in LED Fixtures",
+      "slug": "understanding-cold-start-behaviour-in-led-fixtures-yyxd",
+      "date": "2026-10-11T19:37:56.398Z",
+      "datePretty": "October 11, 2026",
+      "category": "How-To",
+      "excerpt": "To purchase LED fixtures from RiGeBa Lighting, visit our website and navigate to the RG-P58TC10-Ke18A or RG-EL0001FL-3e844 product pages.",
+      "tags": [
+        "LED fixtures",
+        "cold-start behaviour",
+        "winter derating"
+      ],
+      "url": "content/blog/understanding-cold-start-behaviour-in-led-fixtures-yyxd.html",
+      "image": "assets/images/products/300w-led-panel-light-warm.jpg"
+    },
+    {
+      "title": "Moving Head Service Intervals: A Practical Guide",
+      "slug": "moving-head-service-intervals-a-practical-guide-23b4",
+      "date": "2026-10-10T19:27:40.085Z",
+      "datePretty": "October 10, 2026",
+      "category": "How-To",
+      "excerpt": "Clean your moving heads every 2200 hours, and replace the belt when it shows signs of wear.",
+      "tags": [
+        "moving heads",
+        "maintenance",
+        "lighting"
+      ],
+      "url": "content/blog/moving-head-service-intervals-a-practical-guide-23b4.html",
+      "image": "assets/images/products/new-295w-10r-beam-moving.jpg"
+    },
+    {
+      "title": "Creating Intentional Movement Macros on Moving Heads",
+      "slug": "creating-intentional-movement-macros-on-moving-heads-yzsn",
+      "date": "2026-10-10T19:26:35.274Z",
+      "datePretty": "October 10, 2026",
+      "category": "How-To",
+      "excerpt": "The New 295W 10R beam moving head and the RG-M230BN-KMH16 are popular options for their versatility and affordability.",
+      "tags": [
+        "moving heads",
+        "lighting design",
+        "macros"
+      ],
+      "url": "content/blog/creating-intentional-movement-macros-on-moving-heads-yzsn.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg"
+    },
+    {
+      "title": "Understanding Beam Angle vs Output in Stage Lighting",
+      "slug": "understanding-beam-angle-vs-output-in-stage-lighting-h47s",
+      "date": "2026-10-10T19:25:30.164Z",
+      "datePretty": "October 10, 2026",
+      "category": "How-To",
+      "excerpt": "The RG-M230BN-KMH16, for example, has a beam angle that can make it appear brighter than a wash light with a higher output.",
+      "tags": [
+        "stage lighting",
+        "beam angle",
+        "output"
+      ],
+      "url": "content/blog/understanding-beam-angle-vs-output-in-stage-lighting-h47s.html",
+      "image": "assets/images/products/rg-m230bn-kmh16.jpg"
+    },
+    {
+      "title": "Profile Spot vs Fresnel: Choosing the Right Lens for a Small Theatre",
+      "slug": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-7p5d",
+      "date": "2026-10-09T20:15:14.165Z",
+      "datePretty": "October 9, 2026",
+      "category": "Application",
+      "excerpt": "There are several different types of profile spot lenses available, including the RG-PS200A20T50-W and the RG-PS200A14S-W.",
+      "tags": [
+        "theatre lighting",
+        "profile spot",
+        "fresnel"
+      ],
+      "url": "content/blog/profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-7p5d.html",
+      "image": "assets/images/products/rg-ps200a20t50-k.jpg",
+      "noindex": true,
+      "canonicalTo": "profile-spot-vs-fresnel-choosing-the-right-lens-for-a-small-theatre-gqpv"
+    },
+    {
+      "title": "Choosing the Right Gobo Projector for Retail and Brand Logos",
+      "slug": "choosing-the-right-gobo-projector-for-retail-and-brand-logos-4jk6",
+      "date": "2026-10-09T20:14:20.639Z",
+      "datePretty": "October 9, 2026",
+      "category": "Application",
+      "excerpt": "The typical throw distance for a gobo projector can range from 10M to 100M, depending on the model and its specifications.",
+      "tags": [
+        "gobo projectors",
+        "retail logos",
+        "brand logos"
+      ],
+      "url": "content/blog/choosing-the-right-gobo-projector-for-retail-and-brand-logos-4jk6.html",
+      "image": "assets/images/products/rg-pj60le4r1y1-bk.jpg"
+    },
+    {
+      "title": "RGBW vs RGBA vs RGBAL: What the Extra Emitter Actually Buys You",
+      "slug": "rgbw-vs-rgba-vs-rgbal-what-the-extra-emitter-actually-buys-you-h1ck",
+      "date": "2026-10-09T20:12:42.171Z",
+      "datePretty": "October 9, 2026",
+      "category": "Application",
+      "excerpt": "The RG-PS180A19-RGBW also uses the DMX control protocol, which provides a high level of control and flexibility.",
+      "tags": [
+        "stage lighting",
+        "LED fixtures",
+        "color changing"
+      ],
+      "url": "content/blog/rgbw-vs-rgba-vs-rgbal-what-the-extra-emitter-actually-buys-you-h1ck.html",
+      "image": "assets/images/products/300az-rgbal.jpg"
+    },
+    {
+      "title": "LED Wall Washers for Facades and Ballrooms: A Practical Guide",
+      "slug": "led-wall-washers-for-facades-and-ballrooms-a-practical-guide-ajya",
+      "date": "2026-10-08T20:47:55.266Z",
+      "datePretty": "October 8, 2026",
+      "category": "How-To",
+      "excerpt": "The RG-W38TB30-Ke14 is an example of a 4-in-1 LED wall washer. Yes, some LED wall washers are designed for both indoor and outdoor use.",
+      "tags": [
+        "LED wall washers",
+        "facade lighting",
+        "ballroom lighting"
+      ],
+      "url": "content/blog/led-wall-washers-for-facades-and-ballrooms-a-practical-guide-ajya.html",
+      "image": "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg"
+    },
+    {
+      "title": "Choosing the Right Battery Uplights for Weddings and Corporate Events",
+      "slug": "choosing-the-right-battery-uplights-for-weddings-and-corporate-events-sxpg",
+      "date": "2026-10-08T20:46:35.017Z",
+      "datePretty": "October 8, 2026",
+      "category": "Application",
+      "excerpt": "The RG-W18IB8-Ke8AM, for example, has a beam angle of 30 degrees and is suitable for small to medium-sized events.",
+      "tags": [
+        "uplights",
+        "weddings",
+        "corporate events"
+      ],
+      "url": "content/blog/choosing-the-right-battery-uplights-for-weddings-and-corporate-events-sxpg.html",
+      "image": "assets/images/products/rg-w18ib8-ke8am.jpg"
+    },
+    {
+      "title": "Choosing the Right Atmospheric Machine for Your Venue",
+      "slug": "choosing-the-right-atmospheric-machine-for-your-venue-04vq",
+      "date": "2026-10-08T20:45:44.434Z",
+      "datePretty": "October 8, 2026",
+      "category": "How-To",
+      "excerpt": "The FG-CSDM2KYW-W oil for spark fog machine, for example, should be used according to the manufacturer's instructions to ensure optimal performance.",
+      "tags": [
+        "haze",
+        "fog",
+        "spark effects"
+      ],
+      "url": "content/blog/choosing-the-right-atmospheric-machine-for-your-venue-04vq.html",
+      "image": "assets/images/products/rg-fr2400h8s-d.jpg",
+      "noindex": true,
+      "canonicalTo": "choosing-the-right-atmospheric-machine-for-your-venue-ko84"
+    },
+    {
+      "title": "Choosing the Right LED Strobes and Audience Blinders for Live Music",
+      "slug": "choosing-the-right-led-strobes-and-audience-blinders-for-live-music-7w5q",
+      "date": "2026-10-07T20:44:20.588Z",
+      "datePretty": "October 7, 2026",
+      "category": "Application",
+      "excerpt": "For live music applications, consider the RG-TH8B600S, which offers 600W of output and a flash rate of up to 25 times per second.",
+      "tags": [
+        "LED strobes",
+        "audience blinders",
+        "live music"
+      ],
+      "url": "content/blog/choosing-the-right-led-strobes-and-audience-blinders-for-live-music-7w5q.html",
+      "image": "assets/images/products/rg-th8b600s.jpg"
+    },
+    {
+      "title": "Pixel Mapping a Wall of LED Fixtures Without a Media Server",
+      "slug": "pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-qp9f",
+      "date": "2026-10-07T20:43:09.700Z",
+      "datePretty": "October 7, 2026",
+      "category": "How-To",
+      "excerpt": "Fixtures like the 24pcs 1.5W RGB Outdoor LED bar are suitable for pixel mapping. They have a high resolution and can display a wide range of colors.",
+      "tags": [
+        "LED fixtures",
+        "pixel mapping",
+        "media server"
+      ],
+      "url": "content/blog/pixel-mapping-a-wall-of-led-fixtures-without-a-media-server-qp9f.html",
+      "image": "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg"
+    },
+    {
+      "title": "Choosing Effect Fixtures for a Streamed Set: Pixel Bars vs LED Matrix Panels",
+      "slug": "choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-qf23",
+      "date": "2026-10-07T20:42:17.944Z",
+      "datePretty": "October 7, 2026",
+      "category": "Application",
+      "excerpt": "The RG-EL004FL-3e42 3D Corn Pixel Matrix light, for example, has a size of 500X500X205MM and can create a wide range of effects.",
+      "tags": [
+        "stage lighting",
+        "effect fixtures",
+        "streamed sets"
+      ],
+      "url": "content/blog/choosing-effect-fixtures-for-a-streamed-set-pixel-bars-vs-led-matrix-p-qf23.html",
+      "image": "assets/images/products/24pcs-1-5w-rgb-outdoor-led.jpg"
+    },
+    {
+      "title": "Laser vs Moving Head Beam Effects: Where Each One Earns Its Place on a Rig",
+      "slug": "laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-02s0",
+      "date": "2026-10-06T20:29:53.634Z",
+      "datePretty": "October 6, 2026",
+      "category": "Application",
+      "excerpt": "The RG-ML100BD-KC6AH40, for example, is a 610w led moving head beam+RGB laser light that combines the benefits of both technologies.",
+      "tags": [
+        "laser effects",
+        "moving head beam",
+        "stage lighting"
+      ],
+      "url": "content/blog/laser-vs-moving-head-beam-effects-where-each-one-earns-its-place-on-a-02s0.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg"
+    },
+    {
+      "title": "Choosing the Right RGB Laser for a Nightclub",
+      "slug": "choosing-the-right-rgb-laser-for-a-nightclub-dxqi",
+      "date": "2026-10-06T20:28:40.960Z",
+      "datePretty": "October 6, 2026",
+      "category": "How-To",
+      "excerpt": "Check the output, scanning angle, and ILDA control of the laser, such as the RG-LL10000f1LM, which has a 10W output and supports ILDA control.",
+      "tags": [
+        "laser",
+        "nightclub",
+        "lighting"
+      ],
+      "url": "content/blog/choosing-the-right-rgb-laser-for-a-nightclub-dxqi.html",
+      "image": "assets/images/products/rg-ll10000f1lm.jpg"
+    },
+    {
+      "title": "Laser Safety for Live Events: A Comprehensive Guide",
+      "slug": "laser-safety-for-live-events-a-comprehensive-guide-dgan",
+      "date": "2026-10-06T20:27:38.729Z",
+      "datePretty": "October 6, 2026",
+      "category": "How-To",
+      "excerpt": "Class 3B lasers have a lower power output than class 4 lasers, making them safer for use in live events.",
+      "tags": [
+        "Laser Safety",
+        "Live Events",
+        "Class 3B",
+        "Class 4"
+      ],
+      "url": "content/blog/laser-safety-for-live-events-a-comprehensive-guide-dgan.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg"
+    },
     {
       "title": "Choosing the Right Atmospheric Machine for Your Venue",
       "slug": "choosing-the-right-atmospheric-machine-for-your-venue-ko84",
       "date": "2026-10-06T13:54:24.254Z",
       "datePretty": "October 6, 2026",
       "category": "How-To",
-      "excerpt": "RG-FO600V17DW hazer machine costs $175",
+      "excerpt": "Haze, fog, and spark effects can add a lot of depth and atmosphere to a venue, but choosing the right machine can be overwhelming.",
       "tags": [
         "haze",
         "fog",
@@ -23,7 +1741,7 @@
       "date": "2026-10-06T13:53:29.564Z",
       "datePretty": "October 6, 2026",
       "category": "How-To",
-      "excerpt": "Choose 600W strobes like RG-TH8B600S",
+      "excerpt": "For live music events, consider 600W strobes like the RG-TH8B600S, which offers a high output and adjustable flash rate.",
       "tags": [
         "live music",
         "LED strobes",
@@ -38,7 +1756,7 @@
       "date": "2026-10-06T13:52:34.427Z",
       "datePretty": "October 6, 2026",
       "category": "How-To",
-      "excerpt": "Use 24pcs 1.5W RGB Outdoor LED bar",
+      "excerpt": "The two catalogue pages that carry the configurations in these tables are RG-PDS28S10IA-V25 and DMX Control Pixel LED Lifting.",
       "tags": [
         "pixel mapping",
         "LED fixtures",
@@ -53,7 +1771,7 @@
       "date": "2026-10-06T03:07:08.392Z",
       "datePretty": "October 6, 2026",
       "category": "How-To",
-      "excerpt": "Check 10W output",
+      "excerpt": "Check the output, scanning angle, and ILDA control of the laser, such as the RG-LL10000f1LM, which has a 10W output and ILDA control.",
       "tags": [
         "laser lighting",
         "nightclub lighting",
@@ -68,7 +1786,7 @@
       "date": "2026-10-06T03:02:24.388Z",
       "datePretty": "October 6, 2026",
       "category": "Application",
-      "excerpt": "RG-PS200A20T50-W costs $95",
+      "excerpt": "Some popular models of profile spots and fresnel lenses include the RG-PS200A20T50-W, the RG-PS200A15T65M-W, and the RG-PS20A19-W.",
       "tags": [
         "stage lighting",
         "theatre lighting",
@@ -83,7 +1801,7 @@
       "date": "2026-10-04T18:44:57.958Z",
       "datePretty": "October 4, 2026",
       "category": "Application",
-      "excerpt": "RG-CTD192S8F5-K for $50",
+      "excerpt": "The RG-CTD192S8F5-K DMX controller, for example, can be used with sound-activated systems, allowing for more precise control and flexibility.",
       "tags": [
         "sound-activated",
         "DMX control",
@@ -98,7 +1816,7 @@
       "date": "2026-10-04T18:43:55.476Z",
       "datePretty": "October 4, 2026",
       "category": "Application",
-      "excerpt": "RG-M300BH-KYH16M for $205",
+      "excerpt": "School and community theatres often have limited budgets, which can make it difficult to create a high-quality lighting system.",
       "tags": [
         "theatre lighting",
         "budget lighting",
@@ -113,7 +1831,7 @@
       "date": "2026-10-04T18:42:51.334Z",
       "datePretty": "October 4, 2026",
       "category": "Application",
-      "excerpt": "Use 300W LED Panel light for front light",
+      "excerpt": "Corporate conferences require careful lighting design to ensure that the presenter is well-lit, the screen is visible, and the audience is comfortable.",
       "tags": [
         "corporate conference",
         "lighting design",
@@ -128,7 +1846,7 @@
       "date": "2026-10-04T12:30:04.739Z",
       "datePretty": "October 4, 2026",
       "category": "How-To",
-      "excerpt": "Choose a DMX splitter with IP65 rating",
+      "excerpt": "The RG-CA8802 DMX Splitter and the RG-CA8402C Waterproof DMX Splitter are examples of DMX splitters that can be used in a touring rig.",
       "tags": [
         "DMX Splitter",
         "Opto-Isolator",
@@ -159,7 +1877,7 @@
       "date": "2026-09-27T19:08:03.242Z",
       "datePretty": "September 27, 2026",
       "category": "How-To",
-      "excerpt": "Compare moving heads on beam angle, lux at a stated distance, LED configuration and IP rating — not wattage. Real EXW prices from US$96 to US$757.",
+      "excerpt": "Then ask for the EXW price at your order quantity, because two fixtures with identical wattage can differ in price by more than 2×.",
       "tags": [
         "moving heads",
         "lighting specs",
@@ -390,7 +2108,7 @@
       "date": "2026-09-17T19:09:33.504Z",
       "datePretty": "September 17, 2026",
       "category": "How-To",
-      "excerpt": "Noise, colour temperature and a clean beam edge matter more than output in a theatre. What to specify, with EXW prices from US$64 to US$223.",
+      "excerpt": "Noise, colour temperature and a clean beam edge matter more than output in a theatre.",
       "tags": [
         "Moving Heads",
         "Theatre Lighting",
@@ -454,7 +2172,7 @@
       "date": "2026-09-14T14:23:21.546Z",
       "datePretty": "September 14, 2026",
       "category": "How-To",
-      "excerpt": "Ten fixtures and about US$1,500 EXW is enough to accept most small-venue work. Which two types to buy, and why quantity beats variety.",
+      "excerpt": "Buy two fixture types in quantity rather than five types in pairs: a small beam and a zoom wash, eight to twelve units in total.",
       "tags": [
         "Rental Houses",
         "Moving Heads",
@@ -470,7 +2188,7 @@
       "date": "2026-09-12T14:01:53.575Z",
       "datePretty": "September 12, 2026",
       "category": "How-To",
-      "excerpt": "IP65 covers dust-tight and water jets, not immersion. Which rating you actually need outdoors, and real EXW prices from US$185 to US$757.",
+      "excerpt": "IP65 covers dust-tight and water jets, not immersion; the second digit of the rating is the one that matters outdoors.",
       "tags": [
         "outdoor lighting",
         "IP65 rating",
@@ -486,7 +2204,7 @@
       "date": "2026-09-12T13:59:03.947Z",
       "datePretty": "September 12, 2026",
       "category": "How-To",
-      "excerpt": "Fixed PAR, LED bar, profile, moving head or wash: which family does which job, with real EXW prices from US$45 to US$223 per fixture.",
+      "excerpt": "Fixed PAR, LED bar, profile, moving head or wash: which fixture family does which job, and how to choose for a venue.",
       "tags": [
         "fixture selection",
         "lighting design",

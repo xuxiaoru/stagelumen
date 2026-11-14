@@ -4,7 +4,7 @@ slug: "warranty-claims-on-led-fixtures-a-guide-for-professional-buyers-63uh"
 date: "2026-11-13T21:28:57.298Z"
 author: "RiGeBa Lighting Team"
 category: "How-To"
-excerpt: "The EP-LFBA010B1-DhWf Mini 1KG DMX Lifting Motor has a limited warranty against manufacturing defects"
+excerpt: "What to document and photograph before filing a warranty claim on LED fixtures, and where coverage is defined in the order confirmation."
 image: "assets/images/products/ep-lfba040b1-dhwf.jpg"
 imageAlt: "EP-LFBA010B1-DhWf Mini 1KG DMX Lifting Motor"
 tags:
@@ -12,7 +12,7 @@ tags:
   - warranty claims
   - professional buyers
 faq:
-  - "What is the warranty period for RiGeBa Lighting fixtures?::Every fixture passes final QC before packing and ships with a limited warranty against manufacturing defects. Coverage terms are stated on your order confirmation, and spare parts are held in Guangzhou stock."
+  - "What is the warranty period for RiGeBa Lighting fixtures?::Warranty coverage is stated in the order confirmation. We do not publish a warranty period on this site. Spare parts are held in Guangzhou stock."
   - "Can I visit the RiGeBa Lighting factory?::Yes, RiGeBa Lighting hosts buyers at their Guangzhou facility every week, including test lab, assembly line, and showroom. Book a factory visit and they will confirm the itinerary."
   - "What is the IP rating of RiGeBa Lighting outdoor fixtures?::RiGeBa Lighting builds outdoor-rated fixtures alongside indoor IP20 models. Check the IP Rating line in each product's specification table, or tell them the installation environment and they will shortlist suitable models."
   - "How do I choose the right fixture type for my application?::Consider factors such as wattage, beam angle, IP rating, and control protocol. For example, the RG-PJ30-Multi-Indoor 30W LED Indoor DMX512 Multi-Pattern LED projector has a projection distance of within 8M and a maximum projection distance of within 15M."
@@ -22,7 +22,7 @@ faq:
 Warranty claims on LED fixtures can be a complex and time-consuming process, especially when it comes to determining the cause of the issue. For professional buyers, it is essential to understand what a factory needs to see in a photo to process a warranty claim efficiently. 
 
 ## The short answer
-A clear photo of the faulty fixture, including the model number and serial number, is required to process a warranty claim, with a limited warranty against manufacturing defects, such as the EP-LFBA010B1-DhWf Mini 1KG DMX Lifting Motor.
+A clear photo of the faulty fixture, including the model number and serial number, is required to process a warranty claim. Check the order confirmation for the coverage that applies to your fixtures.
 
 ## What is the purpose of a warranty claim photo?
 The primary purpose of a warranty claim photo is to provide visual evidence of the issue, allowing the factory to assess the problem and determine the cause. This helps to ensure that the claim is legitimate and that the issue is not due to user error or misuse.

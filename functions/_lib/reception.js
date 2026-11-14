@@ -355,7 +355,7 @@ export function templateReply(lead, base) {
   if (zh) {
     body =
       name + ' 您好，\n\n' +
-      '感谢您的询盘，我是 RiGeBa Lighting（GuangZhou GeLiang Lighting Technology Co.,Ltd）的外贸经理 Vivian，已收到您的需求。\n\n' +
+      '感谢您的询盘，我是 RiGeBa Lighting（Guangzhou Geliang Lighting Technology Co., Ltd.）的外贸经理 Vivian，已收到您的需求。\n\n' +
       '在我们准备正式报价前，想先和您确认几个关键点，以确保方案精准：\n' +
       '1. 具体应用场景与安装高度（这决定光束角与功率选型）\n' +
       '2. 预计数量与是否需要 OEM/ODM（丝印 logo、包装定制）\n' +
@@ -364,7 +364,7 @@ export function templateReply(lead, base) {
       '确认后我们将在 24 小时内提供含阶梯价格、MOQ 与交期的正式报价单。\n\n' +
       '顺祝商祺\n' +
       'Vivian ｜ RiGeBa Lighting 外贸部\n' +
-      'GuangZhou GeLiang Lighting Technology Co.,Ltd\n' +
+      'Guangzhou Geliang Lighting Technology Co., Ltd.\n' +
       'No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China\n' +
       '手机 / WhatsApp / 微信 / IMS / Facebook：+86 134 3026 2182\n' +
       '邮件 sales20@rigelighting.com';
@@ -382,7 +382,7 @@ export function templateReply(lead, base) {
       'lead time within 24 hours.\n\n' +
       'Best regards,\n' +
       'Vivian, Export Sales, RiGeBa Lighting\n' +
-      'GuangZhou GeLiang Lighting Technology Co.,Ltd\n' +
+      'Guangzhou Geliang Lighting Technology Co., Ltd.\n' +
       'No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China\n' +
       'Mobile / WhatsApp / WeChat / IMS / Facebook: +86 134 3026 2182\n' +
       'sales20@rigelighting.com';

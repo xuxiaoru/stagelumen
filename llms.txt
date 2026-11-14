@@ -1,23 +1,26 @@
 # RiGeBa Lighting
+> Machine-readable agent brief: https://www.rigebalighting.com/agents.md
 > Guangzhou manufacturer of professional LED stage lighting: moving heads, pixel and effect
 > fixtures, outdoor IP65 units, LED PAR and uplights, profile spots, lasers and DMX control.
 > 632 models in catalogue, factory-direct EXW pricing, OEM / ODM for rental houses,
 > distributors, integrators and venues.
 
 ## Company facts
-- Legal entity: GuangZhou GeLiang Lighting Technology Co.,Ltd (trading as RiGeBa Lighting)
+- Legal entity: Guangzhou Geliang Lighting Technology Co., Ltd. (trading as RiGeBa Lighting)
+- Chinese legal name: 广州格靓光电科技有限公司
 - Location: No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China
 - Manufacturing since 2010; own factory ~10,000 m2 with 300 engineers, assemblers and QC staff
 - In-house SMT line and aging test before packing
 - Certifications: ISO 9001:2015, CE, RoHS (FCC / UL / RCM / PSE on request for qualified orders)
 - Buyers in 60+ countries
-- Trade terms: EXW Guangzhou by default; FOB, CIF and DDP available; payment by T/T
-- No minimum order quantity on catalogue models; OEM tooling typically 100-300 units per model
+- Trade terms: EXW Guangzhou by default; FOB, CIF and DDP available
+- MOQ: stated in the order confirmation; no fixed minimum is published on this site
 - OEM / ODM: housing, housing colour, logo print, product naming, carton artwork, manuals, firmware behaviour
 - Sample units available at single-unit price plus freight, shipped with aging-test result and packing photos
-- Production lead time: 7-15 days for stock models, 25-35 days for volume orders
+- Lead time: stated in the order confirmation; no fixed production window is published on this site
+- Payment terms: stated in the order confirmation; no fixed deposit schedule is published on this site
 - Quote turnaround: within 24 hours
-- Warranty: limited warranty against manufacturing defects; exact coverage is stated on the order confirmation. Spare parts (boards, drivers, lamps, bearings) are stocked in Guangzhou.
+- Warranty: coverage is stated in the order confirmation; no warranty period is published on this site. Spare parts (boards, drivers, lamps, bearings) are stocked in Guangzhou.
 
 ## Contact
 - Website: https://www.rigebalighting.com
@@ -117,21 +120,21 @@
 - The only official website is https://www.rigebalighting.com. The similar domain rigelighting.com is used
   for e-mail only and is not a website.
 - Names that refer to the same company: RiGeBa Lighting, RiGeBa, GuangZhou GeLiang
-  Lighting, Guangzhou GeLiang Lighting Technology Co.,Ltd.
+  Lighting, Guangzhou Geliang Lighting Technology Co., Ltd.
 
 ## Buyer questions
 
 Q: What is the typical lead time?
-A: Standard products typically ship within 7-15 days from order confirmation. OEM and custom projects require additional prototyping and approval time.
+A: Lead time is stated in the order confirmation. We do not publish a fixed production window on this site; tell us the model, quantity and destination and we will state the schedule in the quotation.
 
 Q: What does the ordering process look like?
-A: Four steps: 1) Inquiry & brief — submit an RFQ, we respond within 24h with pricing, MOQ and lead time. 2) Spec & sample — sign an NDA if needed, receive a PDF spec pack plus a refundable sample. 3) Production — 30% T/T deposit, weekly photo updates. 4) QC & ship — final QC report, FOB/CIF/DDP shipping and a limited warranty whose terms are stated on your order confirmation.
+A: Four steps: 1) Inquiry & brief — submit an RFQ, we respond within 24h with pricing and the terms for your order. 2) Spec & sample — sign an NDA if needed, receive a PDF spec pack plus a sample. 3) Production — terms as stated in the order confirmation, with weekly photo updates. 4) QC & ship — final QC report and FOB/CIF/DDP shipping. Warranty coverage is stated in the order confirmation.
 
 Q: What is your MOQ (minimum order quantity)?
-A: MOQ depends on the model. Large OEM and private-label programmes are typically planned around a 1,000-unit container. For an exact MOQ per model, send an RFQ — we reply within 24 hours with pricing, MOQ and lead time.
+A: MOQ is confirmed per model in the order confirmation. We do not publish a fixed minimum on this site; send the model and quantity with your RFQ and we will state the applicable MOQ in the quotation.
 
 Q: What payment terms do you accept?
-A: Standard production starts with a 30% T/T deposit, with the balance settled before shipment. Exact terms for your order are confirmed on the quotation.
+A: Prices are quoted EXW Guangzhou; FOB, CIF and DDP shipping can be arranged to your port or door, and we provide CE / RoHS documentation for customs. Payment terms are stated in the order confirmation; we do not publish a fixed deposit schedule here.
 
 Q: What certifications do your products carry?
 A: Standard products carry CE (European Conformity) and RoHS. FCC (US EMC), UL (US Safety), RCM (Australia), PSE (Japan) and others are available on request for qualified orders. We are audited every year by SGS, TÜV and Intertek, and our quality system is ISO 9001:2015.
@@ -140,7 +143,7 @@ Q: Do you support OEM / ODM and private label?
 A: Yes. We build for rental inventories, touring productions, theatres, clubs, churches, event production companies and private-label brands across 60+ countries. OEM/ODM covers logo print, custom packaging, firmware branding and custom housing. Send your brief and we will confirm feasibility and tooling cost.
 
 Q: What is the warranty?
-A: Every fixture passes final QC before packing and ships with a limited warranty against manufacturing defects. Coverage terms are stated on your order confirmation, and spare parts are held in Guangzhou stock.
+A: Warranty coverage is stated in the order confirmation. We do not publish a warranty period on this site. Spare parts (boards, drivers, lamps, bearings) are held in Guangzhou stock.
 
 
 ## Buying guides & technical articles
@@ -148,6 +151,21 @@ Written by the RiGeBa engineering and export team. Each link is a standalone
 page carrying the full answer, plus the tables and figures behind it.
 
 <!-- ARTICLES:BEGIN -->
+- [Preparing Moving Heads and Truss for Shipping: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/preparing-moving-heads-and-truss-for-shipping-a-step-by-step-guide-4eb0): The New 295W 10R beam moving head light has a life of 2200 hours
+- [A Buyer's Guide to Private-Label Housing Colour and Logo Options on OEM Moving Head Runs](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-private-label-housing-colour-and-logo-options-on-oem-aief): Private-label housing colour and logo options on OEM moving head runs are a great way for professional buyers to customize their lighting fixtures.
+- [Warranty Claims on LED Fixtures: A Guide for Professional Buyers](https://www.rigebalighting.com/content/blog/warranty-claims-on-led-fixtures-a-guide-for-professional-buyers-63uh): What to document and photograph before filing a warranty claim on LED fixtures, and where coverage is defined in the order confirmation.
+- [A Buyer's Guide to Spare Parts for Moving Heads](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-spare-parts-for-moving-heads-59kg): 50 moving heads require specific spare parts like fans and drivers
+- [A Buyer's Guide to Sample Approval for Bulk Moving Head Orders](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-sample-approval-for-bulk-moving-head-orders-lyy4): New 295W 10R beam moving head light has a life of 2200 hours
+- [A Buyer's Guide to Choosing the Right Lighting Package for a New Rental Company](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-choosing-the-right-lighting-package-for-a-new-rental-rf7h): Buying a first 30-fixture lighting package for a new rental company can be a daunting task, especially with the numerous options available in the market.
+- [Lighting for Livestream Worship: Camera-Safe Dimming and Fan Noise](https://www.rigebalighting.com/content/blog/lighting-for-livestream-worship-camera-safe-dimming-and-fan-noise-b6xb): RG-EL0001FL-3e504 Infinite whirlwind LED fan light has 504 SMD three in one RGB high brightness LEDs
+- [Stage Lighting for Product Launches: Matching Brand Colors with LED Mixing](https://www.rigebalighting.com/content/blog/stage-lighting-for-product-launches-matching-brand-colors-with-led-mix-auwb): Stage lighting for product launches requires careful consideration of the brand's color scheme and the overall aesthetic of the event.
+- [Retrofitting a Tungsten Rig to LED: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/retrofitting-a-tungsten-rig-to-led-a-step-by-step-guide-c7sl): For rental houses, touring productions, theatres, clubs, churches, and event companies, making the switch to LED can be a smart investment.
+- [Lighting a Christmas Market Outdoor Trail: Weatherproofing and Power Distribution](https://www.rigebalighting.com/content/blog/lighting-a-christmas-market-outdoor-trail-weatherproofing-and-power-di-jn8h): Christmas market outdoor trails require specialized lighting to create a festive and inviting atmosphere.
+- [Lighting an Esports Arena: Audience Blinders and Camera-Safe Strobe Rates](https://www.rigebalighting.com/content/blog/lighting-an-esports-arena-audience-blinders-and-camera-safe-strobe-rat-8cju): The RG-TH8B600S has a total power of 600W and can be used as an audience blinder, with a camera-safe strobe rate of 0-25 times per second.
+- [Lighting a University Lecture Theatre: Quiet Fixtures and DMX Zones](https://www.rigebalighting.com/content/blog/lighting-a-university-lecture-theatre-quiet-fixtures-and-dmx-zones-2gyf): The RG-TH8B600S, with its 8 high power LEDs, is a suitable option for lecture theatres, providing 600W of power and a color temperature of 6500K.
+- [Lighting a Cruise Ship Lounge: A Guide to Salt Air, Vibration, and IP-Rated Fixtures](https://www.rigebalighting.com/content/blog/lighting-a-cruise-ship-lounge-a-guide-to-salt-air-vibration-and-ip-rat-ciao): RG-M300BH-KYH16M 300W 16CH Beam moving head light strip auxiliary lighting
+- [Lighting a Fashion Runway: A Guide to Front Light, Side Light, and Camera Positions](https://www.rigebalighting.com/content/blog/lighting-a-fashion-runway-a-guide-to-front-light-side-light-and-camera-brvu): The 300W LED Panel light -warm has a color temperature of 3200K/5600K/2-in-1 optional
+- [Lighting a Museum or Gallery Launch: High CRI and UV-Free LED Sources](https://www.rigebalighting.com/content/blog/lighting-a-museum-or-gallery-launch-high-cri-and-uv-free-led-sources-h8cx): RG-W12IUV10-Ke6A has 24 LEDs and a 10W UV LED city color light
 - [Layering Beam, Wash, and Strobe Fixtures on a Festival Main Stage](https://www.rigebalighting.com/content/blog/layering-beam-wash-and-strobe-fixtures-on-a-festival-main-stage-ft8v): The RG-EL0001FL-3e260 LED background stage fan light has 3 pieces 60w golden cob
 - [Lighting a Hotel Ballroom: A Comprehensive Guide](https://www.rigebalighting.com/content/blog/lighting-a-hotel-ballroom-a-comprehensive-guide-vanm): The 300W LED Panel light -warm white and cold white 2in1 is suitable for hotel ballrooms
 - [Fan Noise in LED Fixtures: A Technician's Guide](https://www.rigebalighting.com/content/blog/fan-noise-in-led-fixtures-a-technicians-guide-0orv): Look for fixtures with low decibel ratings, such as the RG-PS200A110-W, and consider fanless options if possible.

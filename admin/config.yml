@@ -123,6 +123,7 @@ collections:
           - { name: brand, label: "Brand Name", widget: string }
           - { name: tagline, label: "Site Tagline", widget: string }
           - { name: companyLegalName, label: "Legal Company Name", widget: string }
+          - { name: companyLegalNameCn, label: "Legal Company Name (Chinese)", widget: string }
           - { name: email, label: "Sales Email", widget: string }
           - { name: phone, label: "Sales Phone", widget: string }
           - { name: mobile, label: "Mobile", widget: string, required: false }

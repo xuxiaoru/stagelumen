@@ -12,7 +12,7 @@ tags:
   - truss
   - shipping
 faq:
-  - "What is the typical lead time for shipping?::Standard products typically ship within 7-15 days from order confirmation. OEM and custom projects require additional prototyping and approval time."
+  - "What is the typical lead time for shipping?::Lead time is stated in the order confirmation. We do not publish a fixed production window on this site; tell us the model, quantity and destination and we will state the schedule in the quotation."
   - "How do I determine the right case count for my moving heads?::The case count depends on the model and configuration of the moving heads. For example, the Flycase comes in cases of 6 or 12 units."
   - "What information should be included in the packing list?::The packing list should include the model number, quantity, and configuration of each item, as well as any special instructions or requirements."
   - "Can I customize the packing list to fit my specific needs?::Yes, you can work with the manufacturer to create a customized packing list that meets your specific requirements."
@@ -22,7 +22,7 @@ faq:
 Preparing moving heads and truss for shipping requires careful planning and attention to detail. Rental houses, touring productions, and event companies need to ensure that their equipment is properly packed and secured to prevent damage during transit. In this article, we will provide a step-by-step guide on how to prepare moving heads and truss for shipping.
 
 ## The short answer
-The typical lead time for shipping is 7-15 days, and the case count depends on the model and configuration of the moving heads, such as the Flycase which comes in cases of 6 or 12 units.
+Lead time is stated in the order confirmation, and the case count depends on the model and configuration of the moving heads, such as the Flycase which comes in cases of 6 or 12 units.
 
 ## What is the first step in preparing moving heads for shipping?
 The first step is to determine the case count and configuration of the moving heads. This will depend on the model and type of moving head, as well as the specific requirements of the production or event. For example, the [New 295W 10R beam moving head](/products/moving/new-295w-10r-beam-moving) comes in a single unit, while the [Flycase](/products/par/flycase) comes in cases of 6 or 12 units.

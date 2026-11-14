@@ -597,7 +597,7 @@ ${p.tags.length ? '      <div class="blog-tags">' + p.tags.map((t) => '<span>' +
       <div class="footer-brand">
         <a href="../../index.html" class="logo"><span class="logo-mark">R</span> RiGeBa Lighting</a>
         <p>Professional Stage Lighting for Rental, Events &amp; Venues.</p>
-        <p>RiGeBa Lighting · GuangZhou GeLiang Lighting Technology Co.,Ltd<br/>No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China</p>
+        <p>RiGeBa Lighting · Guangzhou Geliang Lighting Technology Co., Ltd.<br/>No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China</p>
       </div>
       <div class="footer-col">
         <h4>Company</h4>
@@ -617,7 +617,7 @@ ${p.tags.length ? '      <div class="blog-tags">' + p.tags.map((t) => '<span>' +
       </div>
     </div>
     <div class="footer-bottom">
-      <div>© 2026 GuangZhou GeLiang Lighting Technology Co., Ltd. All rights reserved.</div>
+      <div>© 2026 Guangzhou Geliang Lighting Technology Co., Ltd. All rights reserved.</div>
     </div>
   </div>
 </footer>

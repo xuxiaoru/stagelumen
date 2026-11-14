@@ -12,7 +12,7 @@ tags:
   - sample approval
   - bulk orders
 faq:
-  - "What is the typical lead time for a bulk moving head order?::Standard products typically ship within 7-15 days from order confirmation. OEM and custom projects require additional prototyping and approval time."
+  - "What is the typical lead time for a bulk moving head order?::Lead time is stated in the order confirmation. We do not publish a fixed production window on this site; tell us the model, quantity and destination and we will state the schedule in the quotation."
   - "Can I request a sample before a bulk order?::Yes, sample orders are available for evaluation. Sample pricing and lead time depend on the specific product and destination — tell us the model and your country and we will quote it."
   - "What should I test on a pre-production fixture?::You should test the fixture's beam angle, wattage, IP rating, and control protocol to ensure it meets your requirements."
   - "How do I determine the right size and configuration for my moving head order?::Consider the venue size, throw distance, and desired beam angle to determine the right size and configuration for your moving head order."
@@ -40,7 +40,7 @@ When choosing a moving head fixture, consider the wattage, beam angle, IP rating
 To test the control protocol of a moving head fixture, check if it supports DMX 512, self-walking, and voice control. The 6W Moving head full color laser light with led circle supports DMX 512, self-walking, and voice control, making it easy to integrate into existing lighting systems.
 
 ## What is the typical lead time for a bulk moving head order?
-The typical lead time for a bulk moving head order is 7-15 days from order confirmation for standard products. However, OEM and custom projects require additional prototyping and approval time.
+Lead time is stated in the order confirmation. We do not publish a fixed production window on this site; tell us the model, quantity and destination and we will state the schedule in the quotation.
 
 ## Can I request a sample before a bulk order?
 Yes, sample orders are available for evaluation. Sample pricing and lead time depend on the specific product and destination — tell us the model and your country and we will quote it.

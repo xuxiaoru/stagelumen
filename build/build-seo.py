@@ -130,7 +130,9 @@ def main():
               "User-agent: %s" % bot,
               "Allow: /",
               ""]
-    r += ["Sitemap: %s/sitemap.xml" % SITE,
+    r += ["# Machine-readable agent brief: %s/agents.md" % SITE,
+          "",
+          "Sitemap: %s/sitemap.xml" % SITE,
           "Sitemap: %s/sitemap-products.xml" % SITE if with_products else "# Sitemap: %s/sitemap-products.xml  (enable after product pages are prerendered)" % SITE,
           ""]
     write("robots.txt", "\n".join(r))
@@ -192,25 +194,28 @@ def main():
 
     L = []
     L += ["# RiGeBa Lighting",
+          "> Machine-readable agent brief: %s/agents.md" % SITE,
           "> Guangzhou manufacturer of professional LED stage lighting: moving heads, pixel and effect",
           "> fixtures, outdoor IP65 units, LED PAR and uplights, profile spots, lasers and DMX control.",
           "> %d models in catalogue, factory-direct EXW pricing, OEM / ODM for rental houses," % len(products),
           "> distributors, integrators and venues.",
           "",
           "## Company facts",
-          "- Legal entity: GuangZhou GeLiang Lighting Technology Co.,Ltd (trading as RiGeBa Lighting)",
+          "- Legal entity: Guangzhou Geliang Lighting Technology Co., Ltd. (trading as RiGeBa Lighting)",
+          "- Chinese legal name: 广州格靓光电科技有限公司",
           "- Location: No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China",
           "- Manufacturing since 2010; own factory ~10,000 m2 with 300 engineers, assemblers and QC staff",
           "- In-house SMT line and aging test before packing",
           "- Certifications: ISO 9001:2015, CE, RoHS (FCC / UL / RCM / PSE on request for qualified orders)",
           "- Buyers in 60+ countries",
-          "- Trade terms: EXW Guangzhou by default; FOB, CIF and DDP available; payment by T/T",
-          "- No minimum order quantity on catalogue models; OEM tooling typically 100-300 units per model",
+          "- Trade terms: EXW Guangzhou by default; FOB, CIF and DDP available",
+          "- MOQ: stated in the order confirmation; no fixed minimum is published on this site",
           "- OEM / ODM: housing, housing colour, logo print, product naming, carton artwork, manuals, firmware behaviour",
           "- Sample units available at single-unit price plus freight, shipped with aging-test result and packing photos",
-          "- Production lead time: 7-15 days for stock models, 25-35 days for volume orders",
+          "- Lead time: stated in the order confirmation; no fixed production window is published on this site",
+          "- Payment terms: stated in the order confirmation; no fixed deposit schedule is published on this site",
           "- Quote turnaround: within 24 hours",
-          "- Warranty: limited warranty against manufacturing defects; exact coverage is stated on the order confirmation. Spare parts (boards, drivers, lamps, bearings) are stocked in Guangzhou.",
+          "- Warranty: coverage is stated in the order confirmation; no warranty period is published on this site. Spare parts (boards, drivers, lamps, bearings) are stocked in Guangzhou.",
           "",
           "## Contact",
           "- Website: %s" % SITE,
@@ -250,7 +255,7 @@ def main():
           "- The only official website is %s. The similar domain rigelighting.com is used" % SITE,
           "  for e-mail only and is not a website.",
           "- Names that refer to the same company: RiGeBa Lighting, RiGeBa, GuangZhou GeLiang",
-          "  Lighting, Guangzhou GeLiang Lighting Technology Co.,Ltd.",
+          "  Lighting, Guangzhou Geliang Lighting Technology Co., Ltd.",
           ""]
 
     L += ["## Buyer questions", ""]

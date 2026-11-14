@@ -22,7 +22,7 @@ faq:
 
 Importing stage lighting from China is a mature, well-served trade — and also one where the difference between a good supplier decision and a bad one is measured in entire product lines, not percentage points. The market concentrates overwhelmingly in one city: Guangzhou, and within it the Huadu District, where the component markets, assembly lines and tooling shops sit within a few kilometres of each other. If you are buying stage lights from China, you are almost certainly buying from this cluster — the only question is whether you are buying well.
 
-This guide is the due-diligence framework we would hand a friend starting an import brand or upgrading a rental fleet. We run our own factory here (RiGeBa Lighting / GuangZhou GeLiang Lighting Technology Co., Ltd., Huadu District), so unlike most advice on this topic, every example in it is drawn from the inside of the process.
+This guide is the due-diligence framework we would hand a friend starting an import brand or upgrading a rental fleet. We run our own factory here (RiGeBa Lighting / Guangzhou Geliang Lighting Technology Co., Ltd., Huadu District), so unlike most advice on this topic, every example in it is drawn from the inside of the process.
 
 ## The short answer
 
