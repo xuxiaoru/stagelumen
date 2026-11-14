@@ -62,3 +62,21 @@ Common problems that can occur with LED fixtures during a tour include malfuncti
 You can find more information about the RG-PS200A110-W on our [RG-PS200A110-W](/products/profile/rg-ps200a110-w) product page. For information about the RG-PS150A110-Wg, please visit our [RG-PS150A110-Wg](/products/profile/rg-ps150a110-wg) product page.
 
 To determine the right voltage standard for your touring LED fixtures, you can start by researching the voltage standards of the regions you will be touring in. You can then choose fixtures that are compatible with those standards, such as the RG-PS200A110-W. If you have any further questions or concerns, please do not hesitate to contact us.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS200A20T50-K | 2in1 | US$168 |
+| RG-EL0001FL-3e106 | Retro RGB COB | US$129 |
+| RG-GB300L4C0-BKP | 3-prisms effect | US$315 |
+| RG-GB200L4C0-WK | IP65 outdoor | US$300 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| TS-MG2D1H4LBS14YT1-N1 | 5KG DMX winch | US$705 |
+| EP-LFBA0B1-DhWf | DMX Winch led lifting | US$355 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [TS-MG2D1H4LBS14YT1-N1](/products/kinetic/ts-mg2d1h4lbs14yt1-n1) and [EP-LFBA0B1-DhWf](/products/kinetic/ep-lfba0b1-dhwf). Open each one for the full spec list, the volume tiers and the current EXW price.
