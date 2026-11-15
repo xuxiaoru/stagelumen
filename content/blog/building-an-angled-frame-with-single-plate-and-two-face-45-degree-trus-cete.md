@@ -65,3 +65,17 @@ To purchase a truss connector from RiGeBa Lighting, visit the company's website 
 
 ## What is the next step in building an angled frame with truss connectors?
 The next step in building an angled frame with truss connectors is to assemble the frame and ensure that it is stable and secure. This includes properly securing the connectors to the truss sections, and ensuring that the truss sections are level and plumb. It's also important to regularly inspect the frame and connectors for any signs of wear or damage, and to make any necessary adjustments or repairs. Visit the [WT-L1F30b45C-W30](/products/truss/wt-l1f30b45c-w30) product page to learn more about this product and how it can be used to build an angled frame.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| WT-L1T30b45C-W30 | Spigot Single Plate two face 45° connector | US$66 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| WT-L1U30b45C-W30 | Spigot Single Plate two face 45° connector | US$55 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [WT-L1T30b45C-W30](/products/truss/wt-l1t30b45c-w30) and [WT-L1U30b45C-W30](/products/truss/wt-l1u30b45c-w30). Open each one for the full spec list, the volume tiers and the current EXW price.
