@@ -63,3 +63,17 @@ Troubleshooting common issues with gobo holders is relatively straightforward. I
 You can find more information about the [RG-GB200L6C0-ZK](/products/gobo/rg-gb200l6c0-zk) and [RG-GB400L6C0-ZK](/products/gobo/rg-gb400l6c0-zk) models on our website.
 
 Next, you should review the specifications of your LED logo projector and choose a gobo holder that is compatible with it. You can then install the gobo holder and start using it to create custom patterns and images on surfaces.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-GB200L6C0-ZK | 6 logos in one light | US$388 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-GB400L6C0-ZK | 6 logos in one light | US$465 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-GB200L6C0-ZK](/products/gobo/rg-gb200l6c0-zk) and [RG-GB400L6C0-ZK](/products/gobo/rg-gb400l6c0-zk). Open each one for the full spec list, the volume tiers and the current EXW price.
