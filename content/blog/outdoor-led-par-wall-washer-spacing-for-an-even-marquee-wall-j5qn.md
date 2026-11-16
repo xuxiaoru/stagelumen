@@ -72,3 +72,23 @@ Common issues with outdoor LED par wall washers include uneven illumination, col
 | RG-W35TB10-Ke18 | 18x10w 4in1 | $58 |
 
 To achieve an even marquee wall, visit the [RG-W28TB8-Ke60A](/products/par/rg-w28tb8-ke60a) product page and review the specifications to determine the optimal spacing for your outdoor LED par wall washers. Next, calculate the number of units required based on the desired level of brightness and beam angle, and consider factors such as the wall's surface texture and color. Then, proceed to install the fixtures according to the manufacturer's instructions, ensuring secure mounting and connection to a power source.
+
+## How do I determine the optimal spacing between outdoor LED par wall washers for an even marquee wall?
+
+Determining the optimal spacing between outdoor LED par wall washers is crucial for achieving an even marquee wall. The spacing depends on several factors, including the beam angle, the distance between the wall washers, and the desired effect. A general rule of thumb is to space the wall washers 1-2 meters apart, depending on the beam angle and the distance between them. For example, if using a beam angle of 30-40 degrees, a spacing of 1.5-2 meters may be suitable. However, this is just a rough estimate, and the optimal spacing may vary depending on the specific product and installation conditions. It is recommended to consult the manufacturer's guidelines and conduct a site survey to determine the optimal spacing for a specific application.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-W28TB8-Ke60A | 60 LEDs, 10W, RGBW 4-in-1 | US$275 |
+| RG-W38TB30-Ke14 | 14x30W, 3-in-1, RGBW | US$137 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [24pcs 1.5W RGB Outdoor LED bar](/products/par/24pcs-1-5w-rgb-outdoor-led) and [RG-W28TB8-Ke60A](/products/par/rg-w28tb8-ke60a). Open each one for the full spec list, the volume tiers and the current EXW price.
