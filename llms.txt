@@ -144,7 +144,7 @@ Q: What is your MOQ (minimum order quantity)?
 A: MOQ is confirmed per model in the order confirmation. We do not publish a fixed minimum on this site; send the model and quantity with your RFQ and we will state the applicable MOQ in the quotation.
 
 Q: What payment terms do you accept?
-A: Prices are quoted EXW Guangzhou; FOB, CIF and DDP shipping can be arranged to your port or door, and we provide CE / RoHS documentation for customs. Payment terms are stated in the order confirmation; we do not publish a fixed deposit schedule here.
+A: Prices are quoted EXW Guangzhou; FOB, CIF and DDP shipping can be arranged to your port or door, and destination-market documentation is supplied with the quotation on request. Payment terms are stated in the order confirmation; we do not publish a fixed deposit schedule here.
 
 Q: What certifications do your products carry?
 A: CE test reports (EMC and LVD) are available for the models listed on our certificates page, with certificate numbers and issuing laboratories. An SGS-conducted onsite supplier assessment is documented under Alibaba Gold Plus certificate 498917075_P+T (valid to 21 Oct 2027). Documentation for other destination markets is supplied with the quotation on request.

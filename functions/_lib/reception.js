@@ -360,7 +360,7 @@ export function templateReply(lead, base) {
       '1. 具体应用场景与安装高度（这决定光束角与功率选型）\n' +
       '2. 预计数量与是否需要 OEM/ODM（丝印 logo、包装定制）\n' +
       '3. 目标交期与贸易条款（FOB 深圳 / CIF / DDP）\n' +
-      '4. 是否需要认证文件（CE / RoHS / ETL）\n\n' +
+      '4. 目的市场及所需的合规文件要求（可提供范围随报价确认）\n\n' +
       '确认后我们将在 24 小时内提供含阶梯价格、MOQ 与交期的正式报价单。\n\n' +
       '顺祝商祺\n' +
       'Vivian ｜ RiGeBa Lighting 外贸部\n' +
@@ -377,7 +377,7 @@ export function templateReply(lead, base) {
       '1. Application & mounting height (drives beam angle and wattage selection)\n' +
       '2. Estimated quantity and whether OEM/ODM is required (logo print, custom packaging)\n' +
       '3. Target lead time and Incoterms (FOB Shenzhen / CIF / DDP)\n' +
-      '4. Certification documents needed (CE / RoHS / ETL)\n\n' +
+      '4. Destination market and any compliance documents you need (we will confirm what is available with the quotation)\n\n' +
       'Once confirmed, you will have a formal quote with tiered pricing, MOQ and ' +
       'lead time within 24 hours.\n\n' +
       'Best regards,\n' +
