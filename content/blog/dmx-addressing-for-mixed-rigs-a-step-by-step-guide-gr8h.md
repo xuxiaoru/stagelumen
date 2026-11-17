@@ -65,3 +65,19 @@ Planning for future expansion of a rig involves considering the number of device
 The best practices for DMX addressing include using unique addresses for each device, checking the DMX cable connections, and following the correct procedures for assigning DMX addresses. It is also essential to consult the user manual for each device and to follow the manufacturer's recommendations for DMX addressing. For more information on the 6W Moving head full color laser, visit [6W Moving head full color laser](/products/laser/6w-moving-head-full-color).
 
 Next, review the DMX address settings for each device in your rig and ensure that they are unique and correctly assigned.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 6pcs 5050 RGB | US$75 |
+| RG-P58OB10-Kf18 | RGBWA+UV 6in1 | US$75 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-EL0001FL-3e504 | 504 SMD three in one RGB | US$159 |
+| RG-CTD240S8J-K | 240 channels | US$109 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-EL0001FL-3e504](/products/pixel/rg-el0001fl-3e504). Open each one for the full spec list, the volume tiers and the current EXW price.
