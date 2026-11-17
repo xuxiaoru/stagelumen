@@ -1,0 +1,86 @@
+/* W2 verification pages: /certificates, /supplier-verification.
+ * Own file with a `v-` prefix so style.css (immutably cached, ~690 pages)
+ * never needs a version bump for these two pages.
+ */
+.short-answer {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 22px 26px;
+  border-left: 4px solid var(--primary);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  background: var(--surface);
+  color: var(--text-1);
+  font-size: 1.04rem;
+  line-height: 1.72;
+}
+.v-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 0.91rem;
+}
+.v-table caption {
+  text-align: left;
+  font-size: 0.8rem;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--text-3);
+  padding-bottom: 12px;
+}
+.v-table th, .v-table td {
+  padding: 11px 14px;
+  border: 1px solid var(--border);
+  text-align: left;
+  vertical-align: top;
+  color: var(--text-2);
+}
+.v-table thead th {
+  background: var(--surface);
+  color: var(--text-1);
+  font-weight: 700;
+}
+.v-table tbody th {
+  width: 210px;
+  background: var(--surface);
+  color: var(--text-1);
+  font-weight: 600;
+}
+.v-table a { color: var(--primary); }
+.v-table code {
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.88em;
+  color: var(--text-1);
+  word-break: break-word;
+}
+.v-note, .v-warn {
+  margin: 18px 0;
+  padding: 14px 18px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text-2);
+  line-height: 1.65;
+  font-size: 0.93rem;
+}
+.v-warn { border-left: 4px solid var(--primary); }
+.v-figure { margin: 26px 0; text-align: center; }
+.v-figure img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+}
+.v-figure figcaption {
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: var(--text-3);
+}
+.v-figure figcaption a { color: var(--primary); }
+.v-model-table tbody td:nth-child(1) { font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+.section .section-title { margin-top: 38px; }
+@media (max-width: 700px) {
+  .v-table { font-size: 0.84rem; }
+  .v-table tbody th { width: auto; }
+  .v-table th, .v-table td { padding: 8px 9px; }
+}

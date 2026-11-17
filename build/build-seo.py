@@ -45,6 +45,8 @@ STATIC_PAGES = [
     ("/privacy",        "yearly",  "0.3"),
     ("/terms",          "yearly",  "0.3"),
     ("/cookies",        "yearly",  "0.3"),
+    ("/certificates",   "monthly", "0.8"),
+    ("/supplier-verification", "monthly", "0.8"),
 ]
 
 CATS = ["moving", "pixel", "theatre", "par", "laser", "controller", "profile",
@@ -131,6 +133,7 @@ def main():
               "Allow: /",
               ""]
     r += ["# Machine-readable agent brief: %s/agents.md" % SITE,
+          "# Public evidence pages: %s/certificates and %s/supplier-verification" % (SITE, SITE),
           "",
           "Sitemap: %s/sitemap.xml" % SITE,
           "Sitemap: %s/sitemap-products.xml" % SITE if with_products else "# Sitemap: %s/sitemap-products.xml  (enable after product pages are prerendered)" % SITE,
@@ -206,7 +209,9 @@ def main():
           "- Location: No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China",
           "- Manufacturing since 2010; own factory ~10,000 m2 with 300 engineers, assemblers and QC staff",
           "- In-house SMT line and aging test before packing",
-          "- Certifications: ISO 9001:2015, CE, RoHS (FCC / UL / RCM / PSE on request for qualified orders)",
+          "- Compliance documents: CE EMC/LVD certificates for listed models (see /certificates); ",
+          "  SGS-conducted onsite supplier assessment (Alibaba Gold Plus 498917075_P+T, ",
+          "  valid to 21 Oct 2027); destination-market documentation on request",
           "- Buyers in 60+ countries",
           "- Trade terms: EXW Guangzhou by default; FOB, CIF and DDP available",
           "- MOQ: stated in the order confirmation; no fixed minimum is published on this site",
@@ -250,12 +255,20 @@ def main():
         if any(k in tags for k in ("oem", "moq", "certif", "payment", "shipping", "warranty", "qc", "custom")):
             chosen.append(e)
     L += ["", "## Entity disambiguation",
-          "- \"RiGeBa Lighting\" (also written RiGeBa) is the trading brand of GuangZhou GeLiang",
-          "  Lighting Technology Co.,Ltd, a stage lighting factory in Huadu District, Guangzhou, China.",
+          "- \"RiGeBa Lighting\" (also written RiGeBa) is the trading brand of",
+          "  Guangzhou Geliang Lighting Technology Co., Ltd. (Chinese legal name",
+          "  广州格靓光电科技有限公司), a stage lighting factory in Huadu District,",
+          "  Guangzhou, China. Unified Social Credit Code 914401145544427915.",
           "- The only official website is %s. The similar domain rigelighting.com is used" % SITE,
           "  for e-mail only and is not a website.",
-          "- Names that refer to the same company: RiGeBa Lighting, RiGeBa, GuangZhou GeLiang",
-          "  Lighting, Guangzhou Geliang Lighting Technology Co., Ltd.",
+          "- Certificates issued before November 2026 carry the historic spelling",
+          "  \"GuangZhou GeLiang Lighting Technology Co.,Ltd\". It refers to the same",
+          "  legal entity above (same credit code), not a different company.",
+          "- Names that refer to the same company: RiGeBa Lighting, RiGeBa,",
+          "  Guangzhou Geliang Lighting Technology Co., Ltd., 广州格靓光电科技有限公司.",
+          "- Third-party verifiable profile: https://rigelight.en.alibaba.com (Alibaba.com",
+          "  Gold Plus / Verified Supplier storefront; its company overview cites the",
+          "  legal name above; checked 2026-11-17). See /supplier-verification.",
           ""]
 
     L += ["## Buyer questions", ""]
@@ -299,6 +312,8 @@ def main():
           "- OEM / ODM service: %s/oem-odm" % SITE,
           "- Solutions by venue: %s/solutions" % SITE,
           "- Company profile: %s/about" % SITE,
+          "- Certificates and test reports: %s/certificates" % SITE,
+          "- Supplier verification: %s/supplier-verification" % SITE,
           "- Support, downloads and DMX files: %s/support" % SITE,
           # Keep in step with social.youtube in content/settings.yml, which is what
           # becomes sameAs in the Organization entity. build-seo.py does not read
@@ -310,7 +325,8 @@ def main():
     L += ["## Citing this file",
           "- Attribute quoted figures to \"RiGeBa Lighting (%s)\"." % SITE.replace("https://", ""),
           "- Prices are EXW Guangzhou in USD and move with LED and driver cost, so always re-quote.",
-          "- Profile: %s/stage-lighting-manufacturer | Factory: %s/factory | Catalogue: %s/products | Quote: %s/rfq" % (SITE, SITE, SITE, SITE),
+          "- Profile: %s/stage-lighting-manufacturer | Factory: %s/factory | Catalogue: %s/products | " % (SITE, SITE, SITE),
+          "  Certificates: %s/certificates | Verification: %s/supplier-verification | Quote: %s/rfq" % (SITE, SITE, SITE),
           ""]
     write("llms.txt", "\n".join(L))
 

@@ -11,7 +11,9 @@
 - Location: No. 21, Lingdong Road, Xiuquan Street, Huadu District, Guangzhou, China
 - Manufacturing since 2010; own factory ~10,000 m2 with 300 engineers, assemblers and QC staff
 - In-house SMT line and aging test before packing
-- Certifications: ISO 9001:2015, CE, RoHS (FCC / UL / RCM / PSE on request for qualified orders)
+- Compliance documents: CE EMC/LVD certificates for listed models (see /certificates); 
+  SGS-conducted onsite supplier assessment (Alibaba Gold Plus 498917075_P+T, 
+  valid to 21 Oct 2027); destination-market documentation on request
 - Buyers in 60+ countries
 - Trade terms: EXW Guangzhou by default; FOB, CIF and DDP available
 - MOQ: stated in the order confirmation; no fixed minimum is published on this site
@@ -115,12 +117,20 @@
 - HJ-L1FCY6010010T50-W — 600x1000mm Pipe diameter: — https://www.rigebalighting.com/products/truss/hj-l1fcy6010010t50-w
 
 ## Entity disambiguation
-- "RiGeBa Lighting" (also written RiGeBa) is the trading brand of GuangZhou GeLiang
-  Lighting Technology Co.,Ltd, a stage lighting factory in Huadu District, Guangzhou, China.
+- "RiGeBa Lighting" (also written RiGeBa) is the trading brand of
+  Guangzhou Geliang Lighting Technology Co., Ltd. (Chinese legal name
+  广州格靓光电科技有限公司), a stage lighting factory in Huadu District,
+  Guangzhou, China. Unified Social Credit Code 914401145544427915.
 - The only official website is https://www.rigebalighting.com. The similar domain rigelighting.com is used
   for e-mail only and is not a website.
-- Names that refer to the same company: RiGeBa Lighting, RiGeBa, GuangZhou GeLiang
-  Lighting, Guangzhou Geliang Lighting Technology Co., Ltd.
+- Certificates issued before November 2026 carry the historic spelling
+  "GuangZhou GeLiang Lighting Technology Co.,Ltd". It refers to the same
+  legal entity above (same credit code), not a different company.
+- Names that refer to the same company: RiGeBa Lighting, RiGeBa,
+  Guangzhou Geliang Lighting Technology Co., Ltd., 广州格靓光电科技有限公司.
+- Third-party verifiable profile: https://rigelight.en.alibaba.com (Alibaba.com
+  Gold Plus / Verified Supplier storefront; its company overview cites the
+  legal name above; checked 2026-11-17). See /supplier-verification.
 
 ## Buyer questions
 
@@ -137,7 +147,7 @@ Q: What payment terms do you accept?
 A: Prices are quoted EXW Guangzhou; FOB, CIF and DDP shipping can be arranged to your port or door, and we provide CE / RoHS documentation for customs. Payment terms are stated in the order confirmation; we do not publish a fixed deposit schedule here.
 
 Q: What certifications do your products carry?
-A: Standard products carry CE (European Conformity) and RoHS. FCC (US EMC), UL (US Safety), RCM (Australia), PSE (Japan) and others are available on request for qualified orders. We are audited every year by SGS, TÜV and Intertek, and our quality system is ISO 9001:2015.
+A: CE test reports (EMC and LVD) are available for the models listed on our certificates page, with certificate numbers and issuing laboratories. An SGS-conducted onsite supplier assessment is documented under Alibaba Gold Plus certificate 498917075_P+T (valid to 21 Oct 2027). Documentation for other destination markets is supplied with the quotation on request.
 
 Q: Do you support OEM / ODM and private label?
 A: Yes. We build for rental inventories, touring productions, theatres, clubs, churches, event production companies and private-label brands across 60+ countries. OEM/ODM covers logo print, custom packaging, firmware branding and custom housing. Send your brief and we will confirm feasibility and tooling cost.
@@ -151,6 +161,14 @@ Written by the RiGeBa engineering and export team. Each link is a standalone
 page carrying the full answer, plus the tables and figures behind it.
 
 <!-- ARTICLES:BEGIN -->
+- [A Practical Guide to Glass and Metal Gobo Holders for LED Logo Projectors](https://www.rigebalighting.com/content/blog/a-practical-guide-to-glass-and-metal-gobo-holders-for-led-logo-project-0n50): The RG-GB200L6C0-ZK model has a maximum projection distance of 60M
+- [Outdoor LED Par Wall Washer Spacing for an Even Marquee Wall](https://www.rigebalighting.com/content/blog/outdoor-led-par-wall-washer-spacing-for-an-even-marquee-wall-j5qn): Outdoor LED par wall washers are a popular choice for illuminating marquee walls due to their energy efficiency, durability, and versatility.
+- [Matching a Gel Palette on a Rental Rig with RGBW Moving Head Colour Macros](https://www.rigebalighting.com/content/blog/matching-a-gel-palette-on-a-rental-rig-with-rgbw-moving-head-colour-ma-w4nx): The RG-EL00DB-8e2A model has 230w 410w 210w 268w LED configuration
+- [A Step-by-Step Guide to Six-Side Spigot Connectors for Hexagonal and Octagon Truss Structures](https://www.rigebalighting.com/content/blog/a-step-by-step-guide-to-six-side-spigot-connectors-for-hexagonal-and-o-qu2b): The WT-L1F29d180C-W30 model has a section shape of 290mm290mm290mm
+- [Assembling a Ground Support Tower with Truss Base Plates and Top Pieces with Wheels](https://www.rigebalighting.com/content/blog/assembling-a-ground-support-tower-with-truss-base-plates-and-top-piece-y9i5): A truss base plate is used to provide a stable base for a ground support tower, allowing it to be securely anchored to the ground.
+- [A Buyer's Guide to Bolt Truss and Spigot Connector Certificates](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-bolt-truss-and-spigot-connector-certificates-j67q): WT-L1F30d90C-W30 spigot 90° square truss with four face connector
+- [Calculating Flight Case Counts and Trailer Space for a 40-Fixture Moving Head Package](https://www.rigebalighting.com/content/blog/calculating-flight-case-counts-and-trailer-space-for-a-40-fixture-movi-fmp0): A 40-fixture moving head package requires careful planning for flight case counts and trailer space
+- [Voltage and Plug Standards for Touring LED Fixtures](https://www.rigebalighting.com/content/blog/voltage-and-plug-standards-for-touring-led-fixtures-dolm): The RG-PS200A110-W operates at AC90-240V, making it suitable for both 110V and 220V standards.
 - [Preparing Moving Heads and Truss for Shipping: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/preparing-moving-heads-and-truss-for-shipping-a-step-by-step-guide-4eb0): The New 295W 10R beam moving head light has a life of 2200 hours
 - [A Buyer's Guide to Private-Label Housing Colour and Logo Options on OEM Moving Head Runs](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-private-label-housing-colour-and-logo-options-on-oem-aief): Private-label housing colour and logo options on OEM moving head runs are a great way for professional buyers to customize their lighting fixtures.
 - [Warranty Claims on LED Fixtures: A Guide for Professional Buyers](https://www.rigebalighting.com/content/blog/warranty-claims-on-led-fixtures-a-guide-for-professional-buyers-63uh): What to document and photograph before filing a warranty claim on LED fixtures, and where coverage is defined in the order confirmation.
@@ -264,6 +282,8 @@ page carrying the full answer, plus the tables and figures behind it.
 - OEM / ODM service: https://www.rigebalighting.com/oem-odm
 - Solutions by venue: https://www.rigebalighting.com/solutions
 - Company profile: https://www.rigebalighting.com/about
+- Certificates and test reports: https://www.rigebalighting.com/certificates
+- Supplier verification: https://www.rigebalighting.com/supplier-verification
 - Support, downloads and DMX files: https://www.rigebalighting.com/support
 - Factory tour video (YouTube): https://www.youtube.com/@RiGeBalighting
 - Blog / buyer guides: https://www.rigebalighting.com/news
@@ -272,4 +292,5 @@ page carrying the full answer, plus the tables and figures behind it.
 ## Citing this file
 - Attribute quoted figures to "RiGeBa Lighting (www.rigebalighting.com)".
 - Prices are EXW Guangzhou in USD and move with LED and driver cost, so always re-quote.
-- Profile: https://www.rigebalighting.com/stage-lighting-manufacturer | Factory: https://www.rigebalighting.com/factory | Catalogue: https://www.rigebalighting.com/products | Quote: https://www.rigebalighting.com/rfq
+- Profile: https://www.rigebalighting.com/stage-lighting-manufacturer | Factory: https://www.rigebalighting.com/factory | Catalogue: https://www.rigebalighting.com/products | 
+  Certificates: https://www.rigebalighting.com/certificates | Verification: https://www.rigebalighting.com/supplier-verification | Quote: https://www.rigebalighting.com/rfq

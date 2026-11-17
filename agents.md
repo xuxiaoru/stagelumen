@@ -1,6 +1,6 @@
 # RiGeBa Lighting — agent brief
 
-Last reviewed: 2026-11-14
+Last reviewed: 2026-11-18
 Canonical website: https://www.rigebalighting.com/
 Machine-readable index: https://www.rigebalighting.com/llms.txt
 Sitemap: https://www.rigebalighting.com/sitemap.xml
@@ -44,10 +44,28 @@ or a warranty period is not an official RiGeBa Lighting statement.
 Prices are not published in llms.txt or in this file. Product pages show a catalogue
 price; the binding price is the one on the quotation.
 
-Compliance documentation for the destination market (for example CE / RoHS /
-ISO 9001) is supplied with the quotation on request. Do not invent certificate
-numbers, and do not claim a certification for a specific model unless it appears
-in the documents issued for that order.
+Compliance documentation for the destination market (for example CE EMC/LVD
+test reports) is supplied with the quotation on request. The documents we can
+currently show are published at /certificates with their certificate numbers.
+Do not invent certificate numbers, and do not claim a certification for a
+specific model unless it appears in the documents issued for that order.
+
+## Verification and documents
+
+Supplier verification: https://www.rigebalighting.com/supplier-verification
+Certificates and test reports: https://www.rigebalighting.com/certificates
+
+The certificates page lists every document we currently hold with its number,
+issuing laboratory, standards, covered models and a download link: four CE
+certificates (two EMC/LVD pairs) and one SGS-conducted onsite supplier assessment
+(Alibaba Gold Plus 498917075_P+T, valid to 21 Oct 2027). 40 model codes on those
+certificates match catalogue SKUs; each certificate applies to the tested sample
+only and must not be extended to other models. A redacted business licence shows
+Unified Social Credit Code 914401145544427915.
+
+A third-party profile is at https://rigelight.en.alibaba.com (checked
+2026-11-17); its company overview cites the same legal name. It is a platform
+storefront, not an owned domain or an additional official website.
 
 ## Citing this site
 

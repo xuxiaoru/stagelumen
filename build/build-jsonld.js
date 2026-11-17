@@ -46,7 +46,20 @@ const ENTITY_PAGES = {
   'news.html': { crumb: 'News', kind: 'blogIndex' },
   'contact.html': { crumb: 'Contact', kind: 'contact' },
   'about.html': { crumb: 'About', kind: 'about' },
+  // W2 2026-11-18: evidence pages. Their structured data is produced here,
+  // never hand-written in the page (inject() strips data-jsonld blocks).
+  'certificates.html': { crumb: 'Certificates', kind: 'certificates' },
+  'supplier-verification.html': { crumb: 'Supplier Verification', kind: 'about' },
 };
+
+/** Documents actually held, mirrored on /certificates. identifier = certificate no. */
+const CERTIFICATES = [
+  { identifier: 'MAX3605A0118EC', name: 'CE EMC Certificate of Conformity - LED stage light', url: '/assets/downloads/MAXLAB_CE-EMC_MAX3605A0118EC_20261008.pdf', datePublished: '2026-10-08' },
+  { identifier: 'MAX3605A0119EC', name: 'CE LVD Certificate of Conformity - LED stage light', url: '/assets/downloads/MAXLAB_CE-LVD_MAX3605A0119EC_20261008.pdf', datePublished: '2026-10-08' },
+  { identifier: 'TST26231300421SC', name: 'CE LVD Certificate - DMX control winch', url: '/assets/downloads/TST_CE-LVD-DMX-winch_TST26231300421SC_20260515.pdf', datePublished: '2026-05-15' },
+  { identifier: '26052219216EC', name: 'CE EMC Certificate - DMX control winch', url: '/assets/downloads/HONGHUI_CE-EMC-DMX-winch_26052219216EC_20260529.pdf', datePublished: '2026-05-29' },
+  { identifier: '498917075_P+T', name: 'Alibaba Gold Plus Supplier Assessment (SGS onsite assessment)', url: '/assets/downloads/Alibaba_GoldPlus-Supplier-Assessment_498917075_PT_20261022.jpg', datePublished: '2026-10-22' },
+];
 
 /**
  * Take N products spread across the categories, round by round.
@@ -448,6 +461,38 @@ function main() {
           '@id': pageUrl(rel) + '#collection',
           url: pageUrl(rel),
           name: pageTitle(src) || 'All Stage Lighting Products',
+          isPartOf: { '@id': SITE + '/#website' },
+          mainEntity: list,
+        },
+      });
+      blocks.push({ id: 'itemlist', data: { '@context': 'https://schema.org', ...list, '@id': pageUrl(rel) + '#itemlist' } });
+    }
+
+    if (extra && extra.kind === 'certificates') {
+      const list = {
+        '@type': 'ItemList',
+        numberOfItems: CERTIFICATES.length,
+        itemListElement: CERTIFICATES.map((c, i) => ({
+          '@type': 'ListItem',
+          position: i + 1,
+          item: {
+            '@type': 'CreativeWork',
+            '@id': pageUrl(rel) + '#document-' + (i + 1),
+            identifier: c.identifier,
+            name: c.name,
+            url: SITE + c.url,
+            datePublished: c.datePublished,
+          },
+        })),
+      };
+      blocks.push({
+        id: 'collection',
+        data: {
+          '@context': 'https://schema.org',
+          '@type': 'CollectionPage',
+          '@id': pageUrl(rel) + '#collection',
+          url: pageUrl(rel),
+          name: pageTitle(src) || 'Certificates and Test Reports',
           isPartOf: { '@id': SITE + '/#website' },
           mainEntity: list,
         },
