@@ -65,3 +65,27 @@ To troubleshoot DMX channel mode issues, check that your controller and LED movi
 For more information on the RG-ML360WD-KTXe36AH16, visit [RG-ML360WD-KTXe36AH16](/products/moving/rg-ml360wd-ktxe36ah16). For more information on the RG-CTD1024S16F-K, visit [RG-CTD1024S16F-K](/products/controller/rg-ctd1024s16f-k).
 
 Next, review your DMX setup and ensure that your controller and LED moving heads are configured correctly for 24-channel mode. If you have any further questions or concerns, contact us for assistance.
+
+## How do I ensure compatibility between my DMX controller and LED moving head?
+
+To ensure compatibility between your DMX controller and LED moving head, consult the documentation for both devices to determine the required DMX protocol and channel configuration. Verify that the controller supports the same DMX protocol as the LED moving head, such as DMX 512 or RDM. Additionally, check the channel configuration to ensure that the controller has the necessary channels to control the LED moving head. If you're still unsure, contact the manufacturer or a technical support specialist for assistance. By taking these steps, you can ensure a smooth and trouble-free integration of your DMX controller and LED moving head.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CTD1024S16F-K | 1024 channel 16 slider | US$298 |
+| RG-ML360WD-KTXe36AH16 | 36x10w 4in1  zoom | US$159 |
+| RG-ML500BR-KNNd16AH79 | 360 Roller 16*25W RGBA | US$418 |
+| RG-ML240WD-KTXe6AH3 | 6x40w Zoom Pixel Beam Wash | US$192 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-ML360WD-KTXe36AH16 | 36x10w 4in1  zoom | US$159 |
+| RG-ML500BR-KNNd16AH79 | 360 Roller 16*25W RGBA | US$418 |
+| RG-ML240WD-KTXe6AH3 | 6x40w Zoom Pixel Beam Wash | US$192 |
+| 6W Moving head full color laser | 6W Moving head full color laser | US$375 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [6W Moving head full color laser](/products/laser/6w-moving-head-full-color) and [RG-CTD1024S16F-K](/products/controller/rg-ctd1024s16f-k). Open each one for the full spec list, the volume tiers and the current EXW price.
