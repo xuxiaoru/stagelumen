@@ -63,3 +63,18 @@ To compare different RGBW LED par models, consider factors such as LED configura
 RiGeBa Lighting products, such as the [RG-P47OB10-Kf18](/products/par/rg-p47ob10-kf18) and the [RG-P56IB3-Kf27](/products/par/rg-p56ib3-kf27), offer high-quality LED pars with a range of features and configurations. They can provide a more energy-efficient and engaging lighting experience for club patrons.
 
 Next, review the specifications of the RG-P47OB10-Kf18 and consider how it can meet your club's lighting needs.
+
+## How do I choose the right beam angle for my LED par lights?
+
+Choosing the right beam angle for your LED par lights is crucial to achieving the desired lighting effect. A beam angle of 30-50 degrees is suitable for most club lighting applications, as it provides a focused beam that can be adjusted to suit different areas of the room. However, if you need to cover a larger area, a wider beam angle of 60-90 degrees may be more suitable. It's essential to consider the size of the room, the type of lighting effect you want to achieve, and the position of the LED par lights when selecting a beam angle. Additionally, some LED par lights have adjustable beam angles, which can be adjusted using a remote control or a dimmer switch.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$32 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [Mini LED Par 36 New](/products/par/mini-led-par-36-new) and [RG-P47OB10-Kf18](/products/par/rg-p47ob10-kf18). Open each one for the full spec list, the volume tiers and the current EXW price.
