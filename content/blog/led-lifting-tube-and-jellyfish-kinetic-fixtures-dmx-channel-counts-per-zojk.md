@@ -67,3 +67,17 @@ Kinetic fixtures offer dynamic effects and versatility in stage lighting. They c
 | EP-LFBA020L-DhWA | USD 92 | available |
 
 Next, review the product specifications and configure the DMX channels according to your console model. Contact RiGeBa Lighting for more information on DMX personality files and control modes.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| DMX LED lifting Jellyfish light RGB | RGB | US$16.5 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| DMX Control LED Lifting Tube | 0.5M | US$15 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [DMX LED lifting Jellyfish light](/products/kinetic/dmx-led-lifting-jellyfish-light) and [DMX Control LED Lifting Tube](/products/kinetic/dmx-control-led-lifting-tube). Open each one for the full spec list, the volume tiers and the current EXW price.
