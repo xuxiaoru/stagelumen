@@ -1,7 +1,52 @@
 {
-  "generated": "2026-11-17T17:57:07.500Z",
-  "count": 151,
+  "generated": "2026-11-18T17:02:25.153Z",
+  "count": 154,
   "posts": [
+    {
+      "title": "A Step-by-Step Guide to DMX Patching Moving Heads and Pixel Bars on One Console",
+      "slug": "a-step-by-step-guide-to-dmx-patching-moving-heads-and-pixel-bars-on-on-rw2z",
+      "date": "2026-11-17T23:04:27.180Z",
+      "datePretty": "November 17, 2026",
+      "category": "How-To",
+      "excerpt": "The 6W Moving head full color laser has a beam range of 540 degrees on the X axis",
+      "tags": [
+        "DMX patching",
+        "moving heads",
+        "pixel bars"
+      ],
+      "url": "content/blog/a-step-by-step-guide-to-dmx-patching-moving-heads-and-pixel-bars-on-on-rw2z.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg"
+    },
+    {
+      "title": "Choosing Silent LED Profile Spots for Lecture Theatres: A Buyer's Guide",
+      "slug": "choosing-silent-led-profile-spots-for-lecture-theatres-a-buyers-guide-2ihs",
+      "date": "2026-11-17T23:03:31.456Z",
+      "datePretty": "November 17, 2026",
+      "category": "How-To",
+      "excerpt": "Silent LED profile spots are a crucial component of lecture theatre lighting, providing a quiet and efficient way to illuminate the stage.",
+      "tags": [
+        "LED profile spots",
+        "lecture theatre lighting",
+        "silent fixtures"
+      ],
+      "url": "content/blog/choosing-silent-led-profile-spots-for-lecture-theatres-a-buyers-guide-2ihs.html",
+      "image": "assets/images/products/rg-ps200a20t50-w.jpg"
+    },
+    {
+      "title": "DMX Addressing for Mixed Rigs: A Step-by-Step Guide",
+      "slug": "dmx-addressing-for-mixed-rigs-a-step-by-step-guide-gr8h",
+      "date": "2026-11-17T23:02:29.170Z",
+      "datePretty": "November 17, 2026",
+      "category": "How-To",
+      "excerpt": "The 6W Moving head full color laser has a beam range of 540 degrees on the X axis",
+      "tags": [
+        "DMX addressing",
+        "moving heads",
+        "LED par cans"
+      ],
+      "url": "content/blog/dmx-addressing-for-mixed-rigs-a-step-by-step-guide-gr8h.html",
+      "image": "assets/images/products/6w-moving-head-full-color.jpg"
+    },
     {
       "title": "A Practical Guide to Glass and Metal Gobo Holders for LED Logo Projectors",
       "slug": "a-practical-guide-to-glass-and-metal-gobo-holders-for-led-logo-project-0n50",

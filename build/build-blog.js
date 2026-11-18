@@ -605,6 +605,8 @@ ${p.tags.length ? '      <div class="blog-tags">' + p.tags.map((t) => '<span>' +
           <li><a href="../../stage-lighting-manufacturer.html">Stage Lighting Manufacturer</a></li>
           <li><a href="../../about.html">About</a></li>
           <li><a href="../../factory.html">Factory</a></li>
+          <li><a href="/certificates">Certificates &amp; Test Reports</a></li>
+          <li><a href="/supplier-verification">Supplier Verification</a></li>
           <li><a href="../../contact.html">Contact</a></li>
         </ul>
       </div>

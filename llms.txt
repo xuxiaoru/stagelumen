@@ -161,6 +161,9 @@ Written by the RiGeBa engineering and export team. Each link is a standalone
 page carrying the full answer, plus the tables and figures behind it.
 
 <!-- ARTICLES:BEGIN -->
+- [A Step-by-Step Guide to DMX Patching Moving Heads and Pixel Bars on One Console](https://www.rigebalighting.com/content/blog/a-step-by-step-guide-to-dmx-patching-moving-heads-and-pixel-bars-on-on-rw2z): The 6W Moving head full color laser has a beam range of 540 degrees on the X axis
+- [Choosing Silent LED Profile Spots for Lecture Theatres: A Buyer's Guide](https://www.rigebalighting.com/content/blog/choosing-silent-led-profile-spots-for-lecture-theatres-a-buyers-guide-2ihs): Silent LED profile spots are a crucial component of lecture theatre lighting, providing a quiet and efficient way to illuminate the stage.
+- [DMX Addressing for Mixed Rigs: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/dmx-addressing-for-mixed-rigs-a-step-by-step-guide-gr8h): The 6W Moving head full color laser has a beam range of 540 degrees on the X axis
 - [A Practical Guide to Glass and Metal Gobo Holders for LED Logo Projectors](https://www.rigebalighting.com/content/blog/a-practical-guide-to-glass-and-metal-gobo-holders-for-led-logo-project-0n50): The RG-GB200L6C0-ZK model has a maximum projection distance of 60M
 - [Outdoor LED Par Wall Washer Spacing for an Even Marquee Wall](https://www.rigebalighting.com/content/blog/outdoor-led-par-wall-washer-spacing-for-an-even-marquee-wall-j5qn): Outdoor LED par wall washers are a popular choice for illuminating marquee walls due to their energy efficiency, durability, and versatility.
 - [Matching a Gel Palette on a Rental Rig with RGBW Moving Head Colour Macros](https://www.rigebalighting.com/content/blog/matching-a-gel-palette-on-a-rental-rig-with-rgbw-moving-head-colour-ma-w4nx): The RG-EL00DB-8e2A model has 230w 410w 210w 268w LED configuration
