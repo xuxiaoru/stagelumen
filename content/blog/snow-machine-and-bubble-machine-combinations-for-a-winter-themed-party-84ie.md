@@ -62,3 +62,17 @@ The main difference between the RG-SN2000C7 and the RG-SN3000C7 snow machines is
 | RG-BM500C8 | 500W (smoke), 300W (bubble) | - | 1L (smoke), 2.5L (bubble) | US$142 |
 
 To learn more about the RG-SN2000C7 snow machine, visit its [product page](/products/effect/rg-sn2000c7). For more information about the RG-BM100C48 bubble machine, visit its [product page](/products/effect/rg-bm100c48). Contact us to discuss your winter themed party lighting needs and to get a quote for the snow machine and bubble machine combination that best fits your venue.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-SN2000C7 | 2000W Moving head snow machine | US$149 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-SN3000C7 | 3000W Moving head snow machine | US$375 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-SN2000C7](/products/effect/rg-sn2000c7) and [RG-SN3000C7](/products/effect/rg-sn3000c7). Open each one for the full spec list, the volume tiers and the current EXW price.
