@@ -66,3 +66,25 @@ The benefits of using a spark flame machine include creating a unique and impres
 For more information on spark flame machines, visit the [RG-FR350H3-D3](/products/effect/rg-fr350h3-d3) and [RG-FR600H2-D5](/products/effect/rg-fr600h2-d5) product pages.
 
 Next, review the specifications and guidelines for your spark flame machine and ensure that it is properly positioned and maintained for a safe and successful show.
+
+## How do I ensure that my spark flame machine is properly maintained to prevent damage and ensure optimal performance?
+
+To ensure that your spark flame machine is properly maintained, it is essential to follow the manufacturer's instructions for cleaning and maintenance. This may include regular cleaning of the machine's exterior and interior, as well as checking and replacing any worn or damaged parts. It is also essential to check the machine's power cord and connections regularly to ensure that they are secure and not damaged. Additionally, it is a good idea to store the machine in a dry and secure location when not in use, and to check the machine's operation regularly to ensure that it is functioning properly. By following these steps, you can help to extend the life of your spark flame machine and ensure that it continues to provide optimal performance.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-FR350H3-D3 | 2.4G Wireless Remote Control | US$185 |
+| RG-FR350H2-D3 | Wireless remote | US$75 |
+| RG-FR600H2-D5 | DMX-512&Remote control&LCD Screen | US$219 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-FR600H5S-H | DMX-512&Remote control&LCD | US$285 |
+| RG-FR750-B1 | 3-meter charging power cord | US$349 |
+| RG-FR500H2-H | DMX-512&Remote control,LCD screen | US$451 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-FR350H3-D3](/products/effect/rg-fr350h3-d3) and [RG-FR350H2-D3](/products/effect/rg-fr350h2-d3). Open each one for the full spec list, the volume tiers and the current EXW price.
