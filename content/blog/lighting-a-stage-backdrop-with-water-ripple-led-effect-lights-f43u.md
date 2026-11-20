@@ -65,3 +65,17 @@ The RG-GB200L0C4-BK model has a number of key features, including a rated power 
 To learn more about the RG-W40IB1-Kf100F model, visit [RG-W40IB1-Kf100F](/products/gobo/rg-w40ib1-kf100f). To learn more about the RG-GB200L0C4-BK model, visit [RG-GB200L0C4-BK](/products/gobo/rg-gb200l0c4-bk).
 
 Next, contact us to discuss your specific needs and determine which water ripple LED effect light is best for your application.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-GB200L0C4-BK | 200W OSRAM LED IP65 200W LED Water Ripple Light | US$258 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-W40IB1-Kf100F | RGBW Full Color DMX512 | US$52 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [300W LED Panel light -warm](/products/profile/300w-led-panel-light-warm) and [RG-GB200L0C4-BK](/products/gobo/rg-gb200l0c4-bk). Open each one for the full spec list, the volume tiers and the current EXW price.
