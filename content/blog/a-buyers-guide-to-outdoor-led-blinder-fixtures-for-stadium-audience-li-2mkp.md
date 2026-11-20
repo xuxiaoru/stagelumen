@@ -63,3 +63,15 @@ The price point for outdoor LED blinder fixtures varies depending on factors suc
 
 ## What are the benefits of using RiGeBa Lighting outdoor LED blinder fixtures?
 RiGeBa Lighting outdoor LED blinder fixtures offer reliability, efficiency, and flexibility, making them a suitable choice for stadium audience lighting. Visit the [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4) and [RG-TH8B600S](/products/theatre/rg-th8b600s) product pages to learn more about these models and determine which one is right for your application. Consider contacting RiGeBa Lighting to discuss your specific needs and determine the best course of action for your stadium audience lighting requirements.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-TH4B400-W4 | Cool White + Warm White | US$196 |
+| RG-TH4B400-W4 | RGB | US$199 |
+| RG-TH8B600S | 8 LEDs | US$194 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-TH8B600S](/products/theatre/rg-th8b600s) and [RG-TH4B400-W4](/products/theatre/rg-th4b400-w4). Open each one for the full spec list, the volume tiers and the current EXW price.
