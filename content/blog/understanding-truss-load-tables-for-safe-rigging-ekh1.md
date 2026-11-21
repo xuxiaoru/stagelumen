@@ -70,3 +70,25 @@ To choose the right truss for your event, you need to consider the weight and si
 | XY-L50Y120T30-W | 0.5kg | 1M |
 
 Next, review the truss load table for the [DMX Point controlled meteor tube](/products/kinetic/dmx-point-controlled-meteor-tube) and calculate the weight capacity for your specific event.
+
+## What are the implications of a truss's structural integrity on the overall safety of a stage setup?
+
+A truss's structural integrity is crucial in ensuring the safety of a stage setup. If a truss is overloaded or compromised, it can lead to catastrophic failures, resulting in injuries or even fatalities. A well-designed and properly maintained truss is essential for a safe and successful event. The weight capacity of a truss is determined by its material, size, and configuration, and it is essential to choose a truss that can support the weight of the equipment and performers. A truss that is overloaded can lead to a collapse, which can have devastating consequences. Therefore, it is essential to carefully calculate the weight capacity of a truss and to ensure that it is properly maintained to prevent any potential hazards.
+
+## How do the different types of trusses affect the overall rigging system?
+
+The type of truss used can significantly affect the overall rigging system. Different types of trusses have different weight capacities, sizes, and configurations, which can impact the overall safety and efficiency of the rigging system. For example, a truss with a high weight capacity may be suitable for heavy equipment, while a truss with a smaller size and configuration may be more suitable for lighter equipment. Additionally, the type of truss used can also impact the overall aesthetics of the stage setup. A truss with a unique design or color scheme can add visual interest to the stage, while a truss with a more traditional design may blend in with the existing stage setup. Therefore, it is essential to carefully consider the type of truss used and to ensure that it is properly integrated into the overall rigging system.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| BX-L1F65x50T28-W | Safety Bar | US$12.1 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CS0302 | DMX512 mixer | US$148 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [BX-L1F65x50T28-W](/products/truss/bx-l1f65x50t28-w) and [RG-CS0302](/products/controller/rg-cs0302). Open each one for the full spec list, the volume tiers and the current EXW price.
