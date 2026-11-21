@@ -62,3 +62,26 @@ To determine the right fixture type, consider the size of the venue, the type of
 
 ## What is the next step in choosing the right fixture type for my venue?
 The next step is to contact us to discuss your specific requirements and we will provide a quote for the recommended fixture type. We can also provide samples for evaluation and answer any questions you may have about our products. Visit our website to learn more about our products and services, such as the [RG-M420BN-KH24](/products/moving/rg-m420bn-kh24) and [RG-PS200A20T50-W](/products/profile/rg-ps200a20t50-w).
+
+## What factors influence the choice of a fixture type for a specific application?
+
+When selecting a fixture type for a venue, several factors must be considered. The type of event, the size and layout of the space, the desired lighting effect, and the budget are all important considerations. For example, a concert tour may require a different type of lighting than a theatre production. Similarly, a church may require a different type of lighting than a nightclub. By considering these factors, buyers can choose the right fixture type for their venue and achieve the desired lighting effect.
+
+## How do different fixture types handle varying levels of light intensity?
+
+Fixture types can be designed to handle varying levels of light intensity, making them suitable for different applications. For example, a fixture designed for a dimly lit space may not be suitable for a brightly lit area. Conversely, a fixture designed for a brightly lit area may not be suitable for a dimly lit space. By choosing a fixture type that is suitable for the level of light intensity required, buyers can ensure that their lighting system is effective and efficient.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PS200A110-W | 200W LED tricolor soft light/surface light/fill light/flat light | US$115 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25) and [RG-PS200A110-W](/products/profile/rg-ps200a110-w). Open each one for the full spec list, the volume tiers and the current EXW price.
