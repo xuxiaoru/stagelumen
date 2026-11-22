@@ -62,3 +62,21 @@ When transporting and storing ground support towers, you need to consider the si
 To learn more about the DZ-LYM300x300x10M-W round single plate iron base, visit [DZ-LYM300x300x10M-W](/products/truss/dz-lym300x300x10m-w). For more information on the DZ-LYM1200x1200x12M-W round single plate aluminum base, visit [DZ-LYM1200x1200x12M-W](/products/truss/dz-lym1200x1200x12m-w).
 
 Next, contact us to discuss your ground support tower needs and determine the best solution for your outdoor stage.
+
+## What factors influence the choice of ground support tower for outdoor stages?
+
+When selecting a ground support tower for outdoor stages, several factors must be considered to ensure stability, safety, and optimal performance. These factors include the size and configuration of the tower, the type of base plate, and the wind load on the tower. The choice of ground support tower can significantly impact the overall success of an outdoor event or stage production. In this article, we will explore the key considerations for choosing the right ground support tower for outdoor stages.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-EL0001FL-3e260](/products/pixel/rg-el0001fl-3e260) and [RG-PS200A110-W](/products/profile/rg-ps200a110-w). Open each one for the full spec list, the volume tiers and the current EXW price.
