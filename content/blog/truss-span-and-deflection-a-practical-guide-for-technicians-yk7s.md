@@ -72,3 +72,21 @@ The [TS-ST122122WFM-M25](/products/truss/ts-st122122wfm-m25) is an MDF wooden da
 | TS-ST122122GF-W60T120 | 1220x1220mm | Toughened Glass | - |
 
 Next, review the specifications of the [EP-LFBA040B1-DhWf](/products/kinetic/ep-lfba040b1-dhwf) and [TS-ST122122WFM-M25](/products/truss/ts-st122122wfm-m25) to determine the best solution for your truss system.
+
+## What is the impact of truss span and deflection on stage rigging safety?
+
+Truss span and deflection refer to the distance between the points where the truss is attached to the stage and the distance between the points where the truss is deflected by wind or other external forces. This can have a significant impact on the safety of the stage rigging, as well as the overall stability of the truss system. Inadequate truss span and deflection can lead to a range of problems, including truss collapse, stage collapse, and even injury to performers or crew members. Therefore, it is essential to understand the factors that affect truss span and deflection and to take steps to minimize their impact. By choosing the right truss for the job and ensuring that it is properly rigged and maintained, you can help to ensure a safe and successful show.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-PDS28S10IA-V25](/products/pixel/rg-pds28s10ia-v25). Open each one for the full spec list, the volume tiers and the current EXW price.
