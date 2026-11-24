@@ -63,3 +63,23 @@ Using a truss transport planning template can help you save time and money, redu
 | Flycase | Truss transport case | USD 173 | 1-10 cases | 1 case |
 
 For more information on truss transport planning, consider visiting the [HJ-L1FMY202010T30-W](/products/truss/hj-l1fmy202010t30-w) product page or the [Flycase](/products/par/flycase) product page. Next, review your truss transport plan and make any necessary adjustments to ensure safe and efficient transport of your truss system.
+
+## How do I balance truss transport costs and safety?
+
+When planning truss transport, it's essential to balance costs and safety. While using a smaller truss transport case may save money, it may compromise the safety of the truss during transport. On the other hand, using a larger case may provide extra protection but increase costs. A good balance can be achieved by choosing a case that is specifically designed for the type and size of truss being transported. For example, the TS-ST4102BFFS-hT30 stage stairs can be easily transported in a smaller case due to its compact size and lightweight design. In contrast, the HJ-L1SCY587210T50-W triangle truss requires a larger case due to its size and weight. By choosing the right case, you can ensure safe and cost-effective truss transport. Additionally, it's also important to consider the type of truss transport case, such as a soft case or a hard case, and the material used to make the case, such as foam or wood. The right combination of case type and material can provide the necessary protection for the truss during transport while minimizing costs.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| TS-ST4102BFFS-hT30 | 300x1220mm | US$40 |
+| HJ-L1SCY587210T50-W | 580x720mm | US$214.5 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-RM20M6-K | 6-7m | US$88 |
+| RG-PDS28S10IA-V25 | 500x500mm | US$75 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [TS-ST4102BFFS-hT30](/products/truss/ts-st4102bffs-ht30) and [RG-RM20M6-K](/products/effect/rg-rm20m6-k). Open each one for the full spec list, the volume tiers and the current EXW price.
