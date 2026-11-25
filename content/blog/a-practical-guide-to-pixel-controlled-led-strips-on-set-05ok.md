@@ -64,3 +64,23 @@ If you're experiencing issues with your pixel-controlled LED strips, such as fli
 | RG-W39IB1-Kf84A | DC24V | 28w / piece | - |
 
 To get started with pixel-controlled LED strips, consider visiting the [DMX Control Pixel LED Lifting](/products/kinetic/dmx-control-pixel-led-lifting) product page to learn more about the features and specifications of this versatile and affordable option.
+
+## How do pixel-controlled LED strips interact with other lighting fixtures and control systems?
+
+Pixel-controlled LED strips can be integrated with a wide range of lighting fixtures and control systems, including DMX512, Art-Net, and Kling-Net. These strips can be controlled using a variety of methods, including manual adjustment, automated programming, and remote control via a computer or mobile device. When integrating pixel-controlled LED strips with other lighting fixtures and control systems, it is essential to ensure compatibility and to follow proper installation and configuration procedures to avoid any potential issues or conflicts. By carefully planning and executing the integration process, users can take full advantage of the capabilities and flexibility of pixel-controlled LED strips.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light LED Guide Column | US$75 |
+| RG-W39IB1-Kf84A | 360 degree 3D round led pixel strip tube L1000mm | US$22 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [DMX Control LED Lifting Tube](/products/kinetic/dmx-control-led-lifting-tube) and [DMX Point controlled meteor tube](/products/kinetic/dmx-point-controlled-meteor-tube). Open each one for the full spec list, the volume tiers and the current EXW price.
