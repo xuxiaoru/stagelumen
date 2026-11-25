@@ -59,3 +59,25 @@ To choose the right fixture for your application, you will need to consider a fe
 For more information on the RGEL004FL-3e60, please visit [RGEL004FL-3e60](/products/pixel/rgel004fl-3e60). For more information on the RG-DDF56S250-V32, please visit [RG-DDF56S250-V32](/products/pixel/rg-ddf56s250-v32).
 
 Next, consider the size and configuration of your video wall and choose the right fixture for your application. With the right fixture and a little creativity, you can create a unique and visually striking display that meets your needs and exceeds your expectations.
+
+## Can a low-resolution video wall be used for a club's main stage?
+
+A low-resolution video wall can be an effective solution for a club's main stage, especially if the stage is not the main focus of the club. The retro hexagonal pixel fixtures can provide a unique and eye-catching visual effect, and the low resolution can be compensated by the high brightness and color accuracy of the fixtures. Additionally, the low resolution can make the video wall more forgiving of minor imperfections, such as dust or dirt on the screen.
+
+## How do I ensure that my video wall is stable and secure?
+
+To ensure that your video wall is stable and secure, it's essential to follow proper installation and maintenance procedures. This includes using a sturdy mounting system, ensuring that the video wall is level and plumb, and testing the video wall regularly to ensure that it's functioning properly. Additionally, it's a good idea to consult with a professional installer or electrician to ensure that the video wall is installed correctly and safely.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-EL0001FL-3e106 | 200W Retro RGB COB led effect light | US$129 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-DDF56S250-V32 | Triangular LED Retro Effect Light | US$148 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RGEL004FL-3e60](/products/pixel/rgel004fl-3e60) and [RG-DDF56S250-V32](/products/pixel/rg-ddf56s250-v32). Open each one for the full spec list, the volume tiers and the current EXW price.
