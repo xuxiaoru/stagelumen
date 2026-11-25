@@ -62,3 +62,27 @@ Common mistakes to avoid when configuring Art-Net universes for pixel tubes incl
 For more information on the RG-TB100S20D-f60, visit [RG-TB100S20D-f60](/products/pixel/rg-tb100s20d-f60). For more information on the RG-TB120S28D-f60, visit [RG-TB120S28D-f60](/products/pixel/rg-tb120s28d-f60).
 
 Next, review your pixel tube configuration and calculate the required number of Art-Net universes based on the number of pixels per tube and the total number of bars.
+
+## How do I determine the required number of Art-Net universes for my pixel tube rig?
+
+Determining the required number of Art-Net universes for your pixel tube rig involves considering several factors, including the number of pixels, the number of outputs, and the desired level of control. A general rule of thumb is to allocate one universe per 16-32 pixels, depending on the specific requirements of your rig. However, this can vary depending on the complexity of your lighting design and the desired level of control. It is essential to consult the manufacturer's documentation and perform a thorough analysis of your rig's requirements to determine the optimal number of universes.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| DMX Control Pixel LED Lifting Tube | 0.5M | US$18.5 |
+| DMX Control LED Lifting Tube | 0.5M | US$15 |
+| DMX Point controlled meteor tube | 1M | US$14.5 |
+| RG-W39IB1-Kf48A | 48 LEDs | US$22 |
+| RG-W39IB1-Kf40A | 40 LEDs | US$30 |
+| RG-PDS28S10IA-V25 | 500×500 Prismatic Light | US$75 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CA8802 | 8 outputs | US$51 |
+| RG-CA8402MINI | 4 outputs | US$51 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [DMX Control Pixel LED Lifting](/products/kinetic/dmx-control-pixel-led-lifting) and [DMX Control LED Lifting Tube](/products/kinetic/dmx-control-led-lifting-tube). Open each one for the full spec list, the volume tiers and the current EXW price.
