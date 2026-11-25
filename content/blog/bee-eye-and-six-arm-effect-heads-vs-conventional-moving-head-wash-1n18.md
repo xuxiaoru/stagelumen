@@ -122,3 +122,21 @@ When choosing a DMX512 controller for your conventional moving head wash, consid
 
 ## What are the benefits of using a DMX512 controller with my conventional moving head wash?
 Using a DMX512
+
+## How do the beam angles and projection distances of different lighting fixtures impact the event space?
+
+The beam angle and projection distance of a lighting fixture can significantly impact the event space. A wider beam angle can cover a larger area, while a narrower beam angle can create a more focused effect. Different lighting fixtures, such as moving head washes and effect heads, offer varying beam angles and projection distances that can be adjusted to suit the specific needs of the event. Understanding these factors is crucial in determining the optimal lighting setup for your event.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-EL00SH-0q14G50 | Bee-eyed six-armed little King Kong laser effect light | US$68 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-FLO10WF | Bee Eye Six-Arm Diamond Laser Light | US$85 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-EL00SH-0q14G50](/products/pixel/rg-el00sh-0q14g50) and [RG-FLO10WF](/products/laser/rg-flo10wf). Open each one for the full spec list, the volume tiers and the current EXW price.
