@@ -69,3 +69,17 @@ To determine the right size and configuration for your bee-eye effect head, cons
 The typical maintenance costs associated with bee-eye effect heads can vary depending on the fixture and usage. Regular cleaning and maintenance can help extend the lifespan of the fixture and reduce maintenance costs. Consult the user manual and manufacturer's guidelines for specific instructions on maintenance and troubleshooting.
 
 To get started with bee-eye and six-arm effect heads, visit the RiGeBa Lighting website and explore the various models and options available. Contact the sales team to discuss your specific needs and requirements, and to determine the best fixture for your application.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-EL00SH-0q14G50 | Bee-eyed six-armed little King Kong laser effect light | US$68 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-FLO10WF | Bee Eye Six-Arm Diamond Laser Light | US$85 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-EL00SH-0q14G50](/products/pixel/rg-el00sh-0q14g50) and [RG-FLO10WF](/products/laser/rg-flo10wf). Open each one for the full spec list, the volume tiers and the current EXW price.
