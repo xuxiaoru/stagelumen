@@ -356,7 +356,8 @@ function main() {
     image: SITE + '/assets/images/brand/og-image.jpg',
     description:
       'Professional stage lighting manufacturer in Guangzhou, China. Moving heads, pixel and effect fixtures, ' +
-      'LED PAR and wall washers, lasers, controllers and theatre lighting, supplied factory-direct with OEM / ODM service.',
+      'LED PAR and wall washers, lasers, controllers, theatre lighting and stage truss (square, triangle, ladder ' +
+      'and custom), supplied factory-direct with OEM / ODM service.',
     ...(settings.founded ? { foundingDate: String(settings.founded).replace(/\D/g, '').slice(0, 4) } : {}),
     ...(address ? { address } : {}),
     ...(settings.email ? { email: settings.email } : {}),

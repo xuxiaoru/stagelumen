@@ -1,7 +1,8 @@
 # RiGeBa Lighting
 > Machine-readable agent brief: https://www.rigebalighting.com/agents.md
-> Guangzhou manufacturer of professional LED stage lighting: moving heads, pixel and effect
-> fixtures, outdoor IP65 units, LED PAR and uplights, profile spots, lasers and DMX control.
+> Guangzhou manufacturer of professional LED stage lighting and stage truss: moving heads,
+> pixel and effect fixtures, outdoor IP65 units, LED PAR, profile spots, lasers, DMX
+> control, and square, triangle, ladder and custom aluminum truss; 128 truss and stage SKUs.
 > 632 models in catalogue, factory-direct EXW pricing, OEM / ODM for rental houses,
 > distributors, integrators and venues.
 
@@ -14,6 +15,7 @@
 - Compliance documents: CE EMC/LVD certificates for listed models (see /certificates); 
   SGS-conducted onsite supplier assessment (Alibaba Gold Plus 498917075_P+T, 
   valid to 21 Oct 2027); destination-market documentation on request
+- Stage truss: 128 SKUs — square, triangle, ladder, circle and custom truss, stage platforms and accessories; see /products?cat=truss
 - Buyers in 60+ countries
 - Trade terms: EXW Guangzhou by default; FOB, CIF and DDP available
 - MOQ: stated in the order confirmation; no fixed minimum is published on this site

@@ -1,0 +1,75 @@
+/* Small homepage additions (2026-11-26).
+   Scoped prefixes: hmf- (hero factory collage), hv6-truss- (reused section).
+   Loaded by index.html only — no global :root override, no impact on other pages. */
+
+/* --- Hero: factory stills collage replacing the white-background product card --- */
+.hmf-plate { background: linear-gradient(180deg, #11151c 0%, #1a2029 100%); }
+.hmf-grid {
+  display: grid; grid-template-columns: 1.45fr 1fr; grid-template-rows: 1fr 1fr;
+  gap: 6px; padding: 14px 14px 10px; aspect-ratio: 4/3.35; box-sizing: border-box;
+}
+.hmf-main, .hmf-sub { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 10px; }
+.hmf-main { grid-row: span 2; }
+.hmf-foot { background: #fff; }
+.hmf-link {
+  color: #d94f00; font-size: .8rem; font-weight: 700; white-space: nowrap;
+  text-decoration: none; border: 1px solid #e2e6ea; border-radius: 8px; padding: 8px 11px;
+}
+.hmf-link:hover { background: #fff5ee; border-color: #d94f00; }
+@media (max-width: 560px) {
+  .hmf-grid { aspect-ratio: auto; grid-template-columns: 1fr 1fr; grid-template-rows: 170px 110px; }
+  .hmf-main { grid-column: span 2; grid-row: auto; }
+  .hmf-foot { flex-direction: column; align-items: flex-start; }
+}
+
+/* Stage truss section: product shots are small catalogue thumbnails, so they
+   sit on the same light spotlight plate used elsewhere instead of stretching. */
+.hv6-truss { border-top: 1px solid var(--border); }
+.hv6-truss-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; }
+.hv6-truss-card {
+  display: flex; flex-direction: column; border-radius: 14px; overflow: hidden;
+  border: 1px solid var(--border); background: var(--bg-2);
+  transition: transform .25s ease, border-color .25s ease;
+}
+.hv6-truss-card:hover { transform: translateY(-5px); border-color: rgba(255, 107, 0, .55); }
+.hv6-truss-shot {
+  position: relative; isolation: isolate; aspect-ratio: 4/3; overflow: hidden;
+  background: radial-gradient(130% 105% at 50% 12%, #ffffff 0%, #e8ecf1 62%, #d2d9e1 100%);
+}
+.hv6-truss-shot img {
+  display: block; width: 100%; height: 100%; object-fit: contain; padding: 20px;
+  mix-blend-mode: multiply;
+}
+.hv6-truss-spec {
+  position: absolute; top: 12px; right: 12px; z-index: 2;
+  padding: 4px 10px; border-radius: 100px; background: rgba(10, 10, 10, .86);
+  color: #fff; font-size: .7rem; font-weight: 600; letter-spacing: .03em;
+}
+.hv6-truss-body { padding: 18px 20px 20px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
+.hv6-truss-body h3 { font-size: 1.05rem; letter-spacing: -.3px; }
+.hv6-truss-body p { color: var(--text-2); font-size: .85rem; line-height: 1.55; margin: 0; }
+.hv6-truss-body .hv2-more { margin-top: auto; }
+
+.hv6-truss-proof {
+  display: grid; grid-template-columns: repeat(4, 1fr) auto; gap: 1px;
+  margin-top: 26px; border: 1px solid var(--border); border-radius: 14px; overflow: hidden;
+  background: var(--border);
+}
+.hv6-truss-proof-item { background: var(--bg-2); padding: 20px 18px; }
+.hv6-truss-proof-item b { display: block; font-size: 1.4rem; font-weight: 800; letter-spacing: -.5px; }
+.hv6-truss-proof-item b i { font-style: normal; color: var(--primary); }
+.hv6-truss-proof-item span { display: block; margin-top: 5px; color: var(--text-3); font-size: .78rem; }
+.hv6-truss-cta { align-self: center; margin: 0 18px; white-space: nowrap; }
+.hv6-truss-note { color: var(--text-3); font-size: .84rem; margin: 18px 0 0; }
+.hv6-truss-note a { color: var(--primary); text-decoration: none; }
+.hv6-truss-note a:hover { text-decoration: underline; }
+
+@media (max-width: 1100px) {
+  .hv6-truss-grid { grid-template-columns: repeat(2, 1fr); }
+  .hv6-truss-proof { grid-template-columns: repeat(2, 1fr); }
+  .hv6-truss-cta { margin: 18px; justify-self: center; }
+}
+@media (max-width: 560px) {
+  .hv6-truss-grid { grid-template-columns: 1fr; }
+  .hv6-truss-proof { grid-template-columns: 1fr; }
+}
