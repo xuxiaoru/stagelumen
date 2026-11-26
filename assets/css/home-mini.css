@@ -2,25 +2,36 @@
    Scoped prefixes: hmf- (hero factory collage), hv6-truss- (reused section).
    Loaded by index.html only — no global :root override, no impact on other pages. */
 
-/* --- Hero: factory stills collage replacing the white-background product card --- */
+/* --- Hero: 5-photo factory carousel (replaces the white-background product card) --- */
 .hmf-plate { background: linear-gradient(180deg, #11151c 0%, #1a2029 100%); }
-.hmf-grid {
-  display: grid; grid-template-columns: 1.45fr 1fr; grid-template-rows: 1fr 1fr;
-  gap: 6px; padding: 14px 14px 10px; aspect-ratio: 4/3.35; box-sizing: border-box;
+.hmf-slides { position: relative; width: 100%; aspect-ratio: 4/3.35; overflow: hidden; }
+.hmf-slide { position: absolute; inset: 0; opacity: 0; transition: opacity .5s ease; pointer-events: none; }
+.hmf-slide.is-on { opacity: 1; pointer-events: auto; }
+.hmf-slide img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.hmf-arrow {
+  position: absolute; top: calc((100% - 20px) / 2); z-index: 3;
+  width: 34px; height: 46px; border: 0; border-radius: 8px;
+  background: rgba(10, 10, 10, .62); color: #fff; font-size: 26px; line-height: 1;
+  cursor: pointer; transition: background .2s ease;
 }
-.hmf-main, .hmf-sub { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 10px; }
-.hmf-main { grid-row: span 2; }
+.hmf-arrow:hover { background: rgba(255, 107, 0, .9); }
+.hmf-prev { left: 10px; }
+.hmf-next { right: 10px; }
+.hmf-dots {
+  position: absolute; left: 0; right: 0; bottom: 14px; z-index: 3;
+  display: flex; justify-content: center; gap: 7px;
+}
+.hmf-dot {
+  width: 8px; height: 8px; padding: 0; border: 0; border-radius: 50%;
+  background: rgba(255, 255, 255, .5); cursor: pointer; transition: background .2s ease, transform .2s ease;
+}
+.hmf-dot.is-on { background: #ff6b00; transform: scale(1.35); }
 .hmf-foot { background: #fff; }
 .hmf-link {
   color: #d94f00; font-size: .8rem; font-weight: 700; white-space: nowrap;
   text-decoration: none; border: 1px solid #e2e6ea; border-radius: 8px; padding: 8px 11px;
 }
 .hmf-link:hover { background: #fff5ee; border-color: #d94f00; }
-@media (max-width: 560px) {
-  .hmf-grid { aspect-ratio: auto; grid-template-columns: 1fr 1fr; grid-template-rows: 170px 110px; }
-  .hmf-main { grid-column: span 2; grid-row: auto; }
-  .hmf-foot { flex-direction: column; align-items: flex-start; }
-}
 
 /* Stage truss section: product shots are small catalogue thumbnails, so they
    sit on the same light spotlight plate used elsewhere instead of stretching. */
@@ -72,4 +83,12 @@
 @media (max-width: 560px) {
   .hv6-truss-grid { grid-template-columns: 1fr; }
   .hv6-truss-proof { grid-template-columns: 1fr; }
+}
+
+
+/* Application shots are real stage photos (not white studio product shots):
+   cover the plate, no padding, no multiply blend. */
+.hv2-app .hv2-shot { background: #0b0b0e; }
+.hv2-app .hv2-shot img {
+  object-fit: cover; padding: 0; mix-blend-mode: normal; isolation: auto;
 }
