@@ -65,3 +65,27 @@ Best practices for using a lighting console include careful planning and design,
 | RG-EL004FL-3e6 | Six-eyes rotating vintage lamps | 240 | $186 |
 
 Next, review the specifications of the [RG-CTD240S8L-K](/products/controller/rg-ctd240s8l-k) and consider how it can be used to control your lighting design.
+
+## What is the relationship between fader count and channel count in a lighting console?
+
+When choosing a lighting console, it's essential to understand the relationship between fader count and channel count. The fader count refers to the number of physical sliders or faders on the console, which control the intensity of the lights. The channel count, on the other hand, refers to the number of individual channels that can be controlled by the console. In a 240-channel desk, for example, the console can control 240 individual channels, but the fader count may be limited to 8 or 16 sliders. This means that each fader can control multiple channels, and the console can be configured to allow for different fader-to-channel ratios. For instance, a console with 8 faders and 240 channels can be configured to allow each fader to control 30 channels, or 4 faders to control 60 channels. This flexibility allows lighting designers to choose the right configuration for their specific needs and to optimize the use of the console's capabilities.
+
+## How do I ensure that my lighting console is compatible with my fixtures?
+
+To ensure compatibility between your lighting console and your fixtures, you need to check the DMX protocol and channel count of both the console and the fixtures. The DMX protocol is a standard communication protocol used in the lighting industry, and it's essential to ensure that the console and the fixtures use the same protocol. Additionally, you need to check the channel count of the console and the fixtures to ensure that they match. If the console has a higher channel count than the fixtures, you can use the console's channel mapping feature to map the console's channels to the fixtures' channels. However, if the console has a lower channel count than the fixtures, you may need to use a DMX splitter or a DMX merger to expand the console's channel count. It's also essential to check the console's and fixtures' documentation to ensure that they are compatible with each other.
+
+## What the catalogue actually charges for these
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CTD240S8L-K | 240 channels, 8 sliders | US$78 |
+| RG-CTD240S8J-K | 240 channels, 8 sliders | US$109 |
+
+| Model | Configuration | EXW |
+|---|---|---|
+| RG-CS0302 | DMX512 mixer | US$148 |
+| RG-CS0302 | DMX512 mixer | US$148 |
+
+## Where to compare the models mentioned above
+
+The two catalogue pages that carry the configurations in these tables are [RG-CTD240S8L-K](/products/controller/rg-ctd240s8l-k) and [RG-CTD240S8J-K](/products/controller/rg-ctd240s8j-k). Open each one for the full spec list, the volume tiers and the current EXW price.
