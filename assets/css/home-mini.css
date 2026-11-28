@@ -92,3 +92,27 @@
 .hv2-app .hv2-shot img {
   object-fit: cover; padding: 0; mix-blend-mode: normal; isolation: auto;
 }
+
+
+/* ============================================================ 2026-11-28 hero tuning */
+/* Left column: the long lead plus a 5-line H1 pushed the copy well below the
+   visual. Tighten type and rhythm so the two columns read as one balanced row. */
+.hv2-hero-inner { gap: 48px; }
+.hv2-kicker { margin-bottom: 18px; }
+.hv2-hero h1 {
+  font-size: clamp(2rem, 3.15vw, 2.9rem); line-height: 1.1;
+  letter-spacing: -1.2px; margin-bottom: 16px;
+}
+.hv2-hero p.lead { font-size: 1rem; line-height: 1.6; margin-bottom: 18px; }
+.hv2-checks { gap: 8px 18px; margin-bottom: 22px; }
+.hv2-hero .hv2-cta-note { margin-top: 10px; }
+
+/* Right column: silent looping factory footage replaces the 5-still carousel.
+   Same 4/3.35 plate ratio keeps the layout stable at every breakpoint. */
+video.hmf-video {
+  display: block; width: 100%; aspect-ratio: 4/3.35;
+  object-fit: cover; background: #0b0b0e;
+}
+@media (max-width: 900px) {
+  .hv2-hero h1 { font-size: clamp(1.9rem, 5.4vw, 2.4rem); }
+}

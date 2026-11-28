@@ -12,7 +12,7 @@
   <link rel="alternate" hreflang="x-default" href="https://www.rigebalighting.com" />
   <link rel="stylesheet" href="assets/css/style.css?v=18" />
   <link rel="stylesheet" href="assets/css/home-v2.css?v=2" />
-  <link rel="stylesheet" href="assets/css/home-mini.css?v=2" />
+  <link rel="stylesheet" href="assets/css/home-mini.css?v=3" />
   <link rel="icon" href="/favicon.ico" sizes="any" />
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/brand/favicon-32.png" />
   <style>
@@ -445,28 +445,17 @@
         <a href="rfq.html" class="btn btn-primary btn-lg" data-set="homeHeroCtaQuoteLabel" data-target="href:homeHeroCtaQuoteHref">Get a quote in 24 hours</a>
         <a href="products.html" class="btn btn-ghost btn-lg" data-set="homeHeroCtaBrowseLabel" data-target="href:homeHeroCtaBrowseHref">Browse 632 SKUs →</a>
       </div>
-      <p class="hv2-cta-note" style="margin-top:16px;" data-set="homeHeroCtaNote">Send a model list or just describe the venue — you get pricing, lead time and a freight option back.</p>
+      <p class="hv2-cta-note" data-set="homeHeroCtaNote">Send a model list or just describe the venue — you get pricing, lead time and a freight option back.</p>
     </div>
 
     <div class="hv2-visual">
-      <div class="hv2-plate hmf-plate hmf-carousel" id="hmfCarousel">
-        <span class="hv2-plate-tag">Inside our Guangzhou factory &middot; real photos</span>
-        <div class="hmf-slides">
-          <div class="hmf-slide is-on"><img src="assets/images/factory/stills/factory-aging-test-line.jpg" alt="Aging-test room: rows of LED stage lights under final QC" loading="eager" /></div>
-          <div class="hmf-slide"><img src="assets/images/factory/stills/factory-assembly-floor.jpg" alt="Assembly floor with technicians building fixtures" loading="lazy" /></div>
-          <div class="hmf-slide"><img src="assets/images/factory/stills/factory-qc-line.jpg" alt="Production line: fixtures on the QC bench" loading="lazy" /></div>
-          <div class="hmf-slide"><img src="assets/images/factory/stills/factory-assembly-hands.jpg" alt="Close-up of a technician assembling an LED fixture" loading="lazy" /></div>
-          <div class="hmf-slide"><img src="assets/images/factory/stills/factory-engineering-rnd.jpg" alt="Engineering team working on fixture design" loading="lazy" /></div>
-        </div>
-        <button class="hmf-arrow hmf-prev" type="button" aria-label="Previous photo">&#8249;</button>
-        <button class="hmf-arrow hmf-next" type="button" aria-label="Next photo">&#8250;</button>
-        <div class="hmf-dots">
-          <button class="hmf-dot is-on" type="button" data-go="0" aria-label="Show factory photo 1"></button>
-          <button class="hmf-dot" type="button" data-go="1" aria-label="Show factory photo 2"></button>
-          <button class="hmf-dot" type="button" data-go="2" aria-label="Show factory photo 3"></button>
-          <button class="hmf-dot" type="button" data-go="3" aria-label="Show factory photo 4"></button>
-          <button class="hmf-dot" type="button" data-go="4" aria-label="Show factory photo 5"></button>
-        </div>
+      <div class="hv2-plate hmf-plate hmf-video-plate">
+        <span class="hv2-plate-tag">Inside our Guangzhou factory &middot; real footage</span>
+        <video class="hmf-video" autoplay muted loop playsinline preload="metadata"
+               poster="assets/images/factory/video/rigeba-factory-poster-clean.jpg"
+               aria-label="RiGeBa Guangzhou factory: assembly, aging test and QC">
+          <source src="assets/images/factory/video/rigeba-factory-clean.mp4" type="video/mp4" />
+        </video>
         <div class="hv2-plate-foot hmf-foot">
           <div>
             <strong>10,000 m&sup2; own plant</strong>
@@ -1093,44 +1082,6 @@
     document.addEventListener('click', function () { w.classList.remove('open'); });
   })();
 
-  /* Factory photo carousel — 5 stills, arrows + dots + touch swipe. */
-  (function () {
-    var root = document.getElementById('hmfCarousel');
-    if (!root) return;
-    var slides = root.querySelectorAll('.hmf-slide');
-    var dots = root.querySelectorAll('.hmf-dot');
-    var idx = 0, timer = null;
-    function show(n) {
-      idx = (n + slides.length) % slides.length;
-      for (var i = 0; i < slides.length; i++) {
-        slides[i].classList.toggle('is-on', i === idx);
-        dots[i].classList.toggle('is-on', i === idx);
-      }
-    }
-    function play() { if (!timer) timer = setInterval(function () { show(idx + 1); }, 4500); }
-    function stop() { if (timer) { clearInterval(timer); timer = null; } }
-    var prev = root.querySelector('.hmf-prev');
-    var next = root.querySelector('.hmf-next');
-    if (prev) prev.addEventListener('click', function () { show(idx - 1); play(); });
-    if (next) next.addEventListener('click', function () { show(idx + 1); play(); });
-    for (var d = 0; d < dots.length; d++) {
-      (function (n) { dots[n].addEventListener('click', function () { show(n); play(); }); })(d);
-    }
-    var x0 = null;
-    var stage = root.querySelector('.hmf-slides');
-    if (stage) {
-      stage.addEventListener('touchstart', function (e) { x0 = e.touches[0].clientX; stop(); }, { passive: true });
-      stage.addEventListener('touchend', function (e) {
-        if (x0 === null) return;
-        var dx = e.changedTouches[0].clientX - x0;
-        if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1));
-        x0 = null; play();
-      }, { passive: true });
-    }
-    root.addEventListener('mouseenter', stop);
-    root.addEventListener('mouseleave', play);
-    show(0); play();
-  })();
 </script>
 <script src="assets/js/track.js?v=4"></script>
 </body>
