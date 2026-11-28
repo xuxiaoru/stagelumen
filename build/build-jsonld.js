@@ -59,6 +59,15 @@ const CERTIFICATES = [
   { identifier: 'TST26231300421SC', name: 'CE LVD Certificate - DMX control winch', url: '/assets/downloads/TST_CE-LVD-DMX-winch_TST26231300421SC_20260515.pdf', datePublished: '2026-05-15' },
   { identifier: '26052219216EC', name: 'CE EMC Certificate - DMX control winch', url: '/assets/downloads/HONGHUI_CE-EMC-DMX-winch_26052219216EC_20260529.pdf', datePublished: '2026-05-29' },
   { identifier: '498917075_P+T', name: 'Alibaba Gold Plus Supplier Assessment (SGS onsite assessment)', url: '/assets/downloads/Alibaba_GoldPlus-Supplier-Assessment_498917075_PT_20261022.jpg', datePublished: '2026-10-22' },
+  // Second batch (2026-11-28): supporting test reports, truss RoHS, invention patent, second winch LVD certificate
+  { identifier: '26052219216SC', name: 'CE LVD Certificate - DMX control winch (EN IEC 60335-1)', url: '/assets/downloads/HONGHUI_CE-LVD-DMX-winch_26052219216SC_20260529.pdf', datePublished: '2026-05-29' },
+  { identifier: 'MAX3605A0118E', name: 'CE EMC Test Report - LED stage light', url: '/assets/downloads/MAXLAB_CE-EMC-Report_MAX3605A0118E_20261008.pdf', datePublished: '2026-10-08' },
+  { identifier: 'MAX3605A0119E', name: 'CE LVD Test Report - LED stage light', url: '/assets/downloads/MAXLAB_CE-LVD-Report_MAX3605A0119E_20261008.pdf', datePublished: '2026-10-08' },
+  { identifier: '26052219216ER', name: 'CE EMC Test Report - DMX control winch', url: '/assets/downloads/HONGHUI_CE-EMC-Report-DMX-winch_26052219216ER_20260529.pdf', datePublished: '2026-05-29' },
+  { identifier: '26052219216SR', name: 'CE LVD Test Report - DMX control winch', url: '/assets/downloads/HONGHUI_CE-LVD-Report-DMX-winch_26052219216SR_20260529.pdf', datePublished: '2026-05-29' },
+  { identifier: 'RBT2611048401E', name: 'RoHS Test Report - Stage Truss', url: '/assets/downloads/RAINBOW_RoHS-TestReport-Stage-truss_RBT2611048401E_20261125.pdf', datePublished: '2026-11-25' },
+  { identifier: 'RBT26110484C01E', name: 'RoHS Verification of Conformity - Stage Truss', url: '/assets/downloads/RAINBOW_RoHS-Verification-Stage-truss_RBT26110484C01E_20261125.pdf', datePublished: '2026-11-25' },
+  { identifier: 'ZL 2015 1 0185621.6', name: 'Chinese Invention Patent - dynamic lattice control method and apparatus', url: '/assets/downloads/CN-patent-invention-dynamic-lattice_ZL2015101856216.jpg', datePublished: '2017-12-29' },
 ];
 
 /**
