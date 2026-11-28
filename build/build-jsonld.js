@@ -50,6 +50,32 @@ const ENTITY_PAGES = {
   // never hand-written in the page (inject() strips data-jsonld blocks).
   'certificates.html': { crumb: 'Certificates', kind: 'certificates' },
   'supplier-verification.html': { crumb: 'Supplier Verification', kind: 'about' },
+  // Added 2026-11-28: the OEM/ODM page had no canonical, description or JSON-LD.
+  'oem-odm.html': { crumb: 'OEM & ODM', kind: 'service' },
+};
+
+/** Factory footage used on the homepage and factory page. */
+const VIDEOS = {
+  'index.html': {
+    name: 'Inside the RiGeBa Lighting factory in Guangzhou',
+    description: 'Assembly, aging test and QC inside the RiGeBa Lighting factory in Huadu, Guangzhou.',
+    contentUrl: '/assets/images/factory/video/rigeba-factory-clean.mp4',
+    thumbnailUrl: '/assets/images/factory/video/rigeba-factory-poster-clean.jpg',
+    uploadDate: '2026-11-28',
+    duration: 'PT22S',
+    width: 854,
+    height: 484,
+  },
+  'factory.html': {
+    name: 'RiGeBa Lighting factory tour, Guangzhou',
+    description: 'A walk through SMT, assembly, optical calibration, aging test and QC at the RiGeBa Lighting factory in Huadu, Guangzhou.',
+    contentUrl: '/assets/video/factory-tour.mp4',
+    thumbnailUrl: '/assets/images/factory/video/rigeba-factory-poster-clean.jpg',
+    uploadDate: '2026-09-27',
+    duration: 'PT41S',
+    width: 960,
+    height: 540,
+  },
 };
 
 /** Documents actually held, mirrored on /certificates. identifier = certificate no. */
@@ -243,11 +269,15 @@ function strip(src) {
 function inject(src, blocks) {
   if (!blocks.length) return src;
   const out = strip(src);
-  const markup = blocks
+  // Preserve the host file's line endings: oem-odm.html is CRLF while most
+  // pages are LF, and mixing them makes every future diff unreadable.
+  const nl = src.includes('\r\n') ? '\r\n' : '\n';
+  let markup = blocks
     .map((b) => '<script type="application/ld+json" data-jsonld="' + b.id + '">\n' + ld(b.data) + '\n</script>')
     .join('\n');
+  if (nl === '\r\n') markup = markup.replace(/\n/g, '\r\n');
   if (!out.includes('</head>')) return src;
-  return out.replace('</head>', markup + '\n</head>');
+  return out.replace('</head>', markup + nl + '</head>');
 }
 
 /* ------------------------------------------------------------- FAQ extractor */
@@ -305,8 +335,16 @@ function main() {
     catalogCats = JSON.parse(fs.readFileSync(path.join(ROOT, 'data', 'products.json'), 'utf8')).categories || {};
     knowsAbout = Object.values(catalogCats).map((c) => c.label).filter(Boolean);
   } catch (e) { /* optional */ }
+  /** Brand positioning (2026-11-28): dance floors and kinetic pixel lighting lead
+   *  the entity graph; everything else follows in catalogue order. */
+  const CAT_ORDER = ['floor', 'kinetic', 'pixel', 'moving', 'truss', 'controller', 'par', 'effect', 'laser', 'gobo', 'profile', 'theatre'];
+  const orderedCats = Object.entries(catalogCats).sort((a, b) => {
+    const ia = CAT_ORDER.indexOf(a[0]);
+    const ib = CAT_ORDER.indexOf(b[0]);
+    return (ia === -1 ? 99 : ia) - (ib === -1 ? 99 : ib);
+  });
   /** Entity-ify knowsAbout so the graph has edges to real category pages. */
-  const knowsAboutThings = Object.entries(catalogCats)
+  const knowsAboutThings = orderedCats
     .filter(([, c]) => c && c.label)
     .map(([key, c]) => ({
       '@type': 'Thing',
@@ -364,9 +402,10 @@ function main() {
     },
     image: SITE + '/assets/images/brand/og-image.jpg',
     description:
-      'Professional stage lighting manufacturer in Guangzhou, China. Moving heads, pixel and effect fixtures, ' +
-      'LED PAR and wall washers, lasers, controllers, theatre lighting and stage truss (square, triangle, ladder ' +
-      'and custom), supplied factory-direct with OEM / ODM service.',
+      'RiGeBa Lighting is the source factory for LED dance floors and kinetic pixel lighting in Guangzhou, China: ' +
+      'interactive and 3D infinity-mirror dance floors, DMX winch-lifted kinetic balls, LED pixel matrix and 3D pixel ' +
+      'column lights, moving heads, wall washers, lasers and the aluminium truss that carries them. Factory-direct ' +
+      'supply with OEM / ODM service.',
     ...(settings.founded ? { foundingDate: String(settings.founded).replace(/\D/g, '').slice(0, 4) } : {}),
     ...(address ? { address } : {}),
     ...(settings.email ? { email: settings.email } : {}),
@@ -387,7 +426,7 @@ function main() {
       '@type': 'OfferCatalog',
       name: 'Stage lighting catalogue',
       numberOfItems: siteData().products.length,
-      itemListElement: Object.keys(catalogCats).map((key) => ({
+      itemListElement: orderedCats.map(([key]) => ({
         '@type': 'OfferCatalog',
         name: (catalogCats[key] && catalogCats[key].label) || key,
         url: SITE + '/products?cat=' + encodeURIComponent(key),
@@ -428,6 +467,27 @@ function main() {
     if (rel === 'index.html') {
       blocks.push({ id: 'organization', data: organization });
       blocks.push({ id: 'website', data: website });
+    }
+
+    if (VIDEOS[rel]) {
+      const v = VIDEOS[rel];
+      blocks.push({
+        id: 'video',
+        data: {
+          '@context': 'https://schema.org',
+          '@type': 'VideoObject',
+          '@id': pageUrl(rel) + '#video',
+          name: v.name,
+          description: v.description,
+          thumbnailUrl: SITE + v.thumbnailUrl,
+          contentUrl: SITE + v.contentUrl,
+          uploadDate: v.uploadDate,
+          duration: v.duration,
+          width: v.width,
+          height: v.height,
+          publisher: { '@id': orgId },
+        },
+      });
     }
 
     const extra = ENTITY_PAGES[rel];
@@ -561,6 +621,25 @@ function main() {
           name: pageTitle(src) || 'About',
           isPartOf: { '@id': SITE + '/#website' },
           mainEntity: { '@id': orgId },
+        },
+      });
+    }
+
+    if (extra && extra.kind === 'service') {
+      blocks.push({
+        id: 'service',
+        data: {
+          '@context': 'https://schema.org',
+          '@type': 'Service',
+          '@id': pageUrl(rel) + '#service',
+          name: 'OEM and ODM stage lighting manufacturing',
+          serviceType: 'OEM and ODM stage lighting manufacturing',
+          provider: { '@id': orgId },
+          areaServed: { '@type': 'Place', name: 'Worldwide' },
+          url: pageUrl(rel),
+          description:
+            'Product customisation, private-label manufacturing and tailored stage lighting solutions for ' +
+            'distributors, lighting brands and professional buyers.',
         },
       });
     }
