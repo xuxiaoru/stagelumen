@@ -34,14 +34,6 @@
 - Mobile / WhatsApp / WeChat: +86 134 3026 2182
 
 ## Catalogue — 632 models in 12 ranges
-
-### Moving Heads — 64 models (Beam · Spot · Wash · Hybrid · Outdoor IP65)
-- Category page: https://www.rigebalighting.com/products?cat=moving
-- RG-M420BN-KH24 — NEW 420W IP65 Outdoor beam — https://www.rigebalighting.com/products/moving/rg-m420bn-kh24
-- 380W Indoor Beam Light Indoor — 380W Indoor Beam Light Ind — https://www.rigebalighting.com/products/moving/380w-indoor-beam-light-indoor
-- RG-M380B-KOH16 — 380W Outdoor Beam spot was — https://www.rigebalighting.com/products/moving/rg-m380b-koh16
-- RG-M380B-KOH20 — 380W Waterproof New outdoo — https://www.rigebalighting.com/products/moving/rg-m380b-koh20
-
 ### Pixel & Effects — 81 models (Pixel Bar · Pixel Matrix · Effect Light)
 - Category page: https://www.rigebalighting.com/products?cat=pixel
 - RG-TB120S28D-8 — IP65 Outdoor 360 degree ve — https://www.rigebalighting.com/products/pixel/rg-tb120s28d-8
@@ -49,47 +41,12 @@
 - RG-EL0001FL-3e844 — 7 Halo Hexagon LED Pixel L — https://www.rigebalighting.com/products/pixel/rg-el0001fl-3e844
 - RG-TB120S28D-2 — IP65 Outdoor 360 degree ve — https://www.rigebalighting.com/products/pixel/rg-tb120s28d-2
 
-### Theatre Lighting — 17 models (Audience Blinder · LED Strobe)
-- Category page: https://www.rigebalighting.com/products?cat=theatre
-- RG-TH4B400-W4 — Outdoor led Blinder RGB — https://www.rigebalighting.com/products/theatre/rg-th4b400-w4-2
-- RG-TH4B400-W4 — Outdoor led Blinder White — https://www.rigebalighting.com/products/theatre/rg-th4b400-w4
-- RG-TH8B600S — Eight eyes audience light — https://www.rigebalighting.com/products/theatre/rg-th8b600s
-- RG-TH8B800S — 8eyes audience light — https://www.rigebalighting.com/products/theatre/rg-th8b800s
-
-### LED PAR & Uplights — 62 models (LED PAR · Battery / Wireless Uplight · Wall Washer & City Color)
-- Category page: https://www.rigebalighting.com/products?cat=par
-- RG-W25TB10-Ke120A — 120*10W RGBW 4in1 LED City — https://www.rigebalighting.com/products/par/rg-w25tb10-ke120a
-- RG-W25TB10-Ke96A — 96*10W RGBW 4in1 outdoor L — https://www.rigebalighting.com/products/par/rg-w25tb10-ke96a
-- RG-W25TB8-Ke72 — New Version 72leds 8W outd — https://www.rigebalighting.com/products/par/rg-w25tb8-ke72
-- RG-W35TB3-Kf180A — 180*3W RGB 3in1 outdoor le — https://www.rigebalighting.com/products/par/rg-w35tb3-kf180a
-
-### Lasers — 37 models (RGB Laser Systems)
-- Category page: https://www.rigebalighting.com/products?cat=laser
-- RG-LL60000f1LN — Laser — https://www.rigebalighting.com/products/laser/rg-ll60000f1ln
-- 20W Single green label — 20W Single green label — https://www.rigebalighting.com/products/laser/20w-single-green-label
-- 30W Color landmarks — 30W Color landmarks — https://www.rigebalighting.com/products/laser/30w-color-landmarks
-- RG-LL30000G1LN — Laser — https://www.rigebalighting.com/products/laser/rg-ll30000g1ln
-
-### Controllers — 67 models (DMX · Art-Net / sACN Consoles)
-- Category page: https://www.rigebalighting.com/products?cat=controller
-- MA-G3A — Controller — https://www.rigebalighting.com/products/controller/ma-g3a
-- MA-G2A — Controller — https://www.rigebalighting.com/products/controller/ma-g2a
-- MA2 — MA2 — https://www.rigebalighting.com/products/controller/ma2
-- MA LAPTOP — MA LAPTOP — https://www.rigebalighting.com/products/controller/ma-laptop
-
-### LED Profile Spot — 33 models (Ellipsoidal · Fixed 19°/26°/36° · Zoom 15–30° / 25–50° · Tunable · RGBW / RGBAL)
-- Category page: https://www.rigebalighting.com/products?cat=profile
-- 300AZ-RGBAL — IP65 PROFILE outdoor RGBAL — https://www.rigebalighting.com/products/profile/300az-rgbal
-- RG-PS300A17T50-W — 300W LED Zoom Profile Ligh — https://www.rigebalighting.com/products/profile/rg-ps300a17t50-w
-- RG-PS300A19F-W — 300W LED Profile Light-Whi — https://www.rigebalighting.com/products/profile/rg-ps300a19f-w
-- RG-PS200A15T65M-W — 200W LED Zoom Fresnel Ligh — https://www.rigebalighting.com/products/profile/rg-ps200a15t65m-w
-
-### Stage Effect Machines — 59 models (Spark & Flame · CO2 · Fog & Haze · Snow · Bubble & Foam · Dry Ice · Confetti)
-- Category page: https://www.rigebalighting.com/products?cat=effect
-- RG-FR2400H8S-D — Spark Fog Machine — https://www.rigebalighting.com/products/effect/rg-fr2400h8s-d
-- RG-FO800V250DP-K — strong CO2 jet — https://www.rigebalighting.com/products/effect/rg-fo800v250dp-k
-- RG-FR750H5-D8 — New high quality moving he — https://www.rigebalighting.com/products/effect/rg-fr750h5-d8
-- RG-BM1200C500H-K — hang foam machine — https://www.rigebalighting.com/products/effect/rg-bm1200c500h-k
+### LED Dance Floor Light — 28 models (3D Mirror · Interactive · Magnetic · Starry · Video · Digital dance floors)
+- Category page: https://www.rigebalighting.com/products?cat=floor
+- RG-DDF40S45-V32 — led pole dance stage — https://www.rigebalighting.com/products/floor/rg-ddf40s45-v32
+- RG-VDF44S2976-KV0 — P2.976 Led Video Dance Flo — https://www.rigebalighting.com/products/floor/rg-vdf44s2976-kv0
+- RG-VDF44S391-KV0 — P3.91 Led Video Dance Floo — https://www.rigebalighting.com/products/floor/rg-vdf44s391-kv0
+- RG-DDF56S125-V4 — 1m*1m Professional Version — https://www.rigebalighting.com/products/floor/rg-ddf56s125-v4
 
 ### LED Kinetic Winch & Lighting Ball — 19 models (Kinetic Winch · Lifting Ball · Ring · Tube · Special Effects)
 - Category page: https://www.rigebalighting.com/products?cat=kinetic
@@ -98,6 +55,41 @@
 - EP-LFBA040B1-DhWf — 10KG DMX winch kinetic mot — https://www.rigebalighting.com/products/kinetic/ep-lfba040b1-dhwf
 - TS-MTD8H2LBS30YT1-N — 20KG DMX control Winch lif — https://www.rigebalighting.com/products/kinetic/ts-mtd8h2lbs30yt1-n
 
+### Moving Heads — 64 models (Beam · Spot · Wash · Hybrid · Outdoor IP65)
+- Category page: https://www.rigebalighting.com/products?cat=moving
+- RG-M420BN-KH24 — NEW 420W IP65 Outdoor beam — https://www.rigebalighting.com/products/moving/rg-m420bn-kh24
+- 380W Indoor Beam Light Indoor — 380W Indoor Beam Light Ind — https://www.rigebalighting.com/products/moving/380w-indoor-beam-light-indoor
+- RG-M380B-KOH16 — 380W Outdoor Beam spot was — https://www.rigebalighting.com/products/moving/rg-m380b-koh16
+- RG-M380B-KOH20 — 380W Waterproof New outdoo — https://www.rigebalighting.com/products/moving/rg-m380b-koh20
+
+### LED PAR & Uplights — 62 models (LED PAR · Battery / Wireless Uplight · Wall Washer & City Color)
+- Category page: https://www.rigebalighting.com/products?cat=par
+- RG-W25TB10-Ke120A — 120*10W RGBW 4in1 LED City — https://www.rigebalighting.com/products/par/rg-w25tb10-ke120a
+- RG-W25TB10-Ke96A — 96*10W RGBW 4in1 outdoor L — https://www.rigebalighting.com/products/par/rg-w25tb10-ke96a
+- RG-W25TB8-Ke72 — New Version 72leds 8W outd — https://www.rigebalighting.com/products/par/rg-w25tb8-ke72
+- RG-W35TB3-Kf180A — 180*3W RGB 3in1 outdoor le — https://www.rigebalighting.com/products/par/rg-w35tb3-kf180a
+
+### LED Profile Spot — 33 models (Ellipsoidal · Fixed 19°/26°/36° · Zoom 15–30° / 25–50° · Tunable · RGBW / RGBAL)
+- Category page: https://www.rigebalighting.com/products?cat=profile
+- 300AZ-RGBAL — IP65 PROFILE outdoor RGBAL — https://www.rigebalighting.com/products/profile/300az-rgbal
+- RG-PS300A17T50-W — 300W LED Zoom Profile Ligh — https://www.rigebalighting.com/products/profile/rg-ps300a17t50-w
+- RG-PS300A19F-W — 300W LED Profile Light-Whi — https://www.rigebalighting.com/products/profile/rg-ps300a19f-w
+- RG-PS200A15T65M-W — 200W LED Zoom Fresnel Ligh — https://www.rigebalighting.com/products/profile/rg-ps200a15t65m-w
+
+### Theatre Lighting — 17 models (Audience Blinder · LED Strobe)
+- Category page: https://www.rigebalighting.com/products?cat=theatre
+- RG-TH4B400-W4 — Outdoor led Blinder RGB — https://www.rigebalighting.com/products/theatre/rg-th4b400-w4-2
+- RG-TH4B400-W4 — Outdoor led Blinder White — https://www.rigebalighting.com/products/theatre/rg-th4b400-w4
+- RG-TH8B600S — Eight eyes audience light — https://www.rigebalighting.com/products/theatre/rg-th8b600s
+- RG-TH8B800S — 8eyes audience light — https://www.rigebalighting.com/products/theatre/rg-th8b800s
+
+### Lasers — 37 models (RGB Laser Systems)
+- Category page: https://www.rigebalighting.com/products?cat=laser
+- RG-LL60000f1LN — Laser — https://www.rigebalighting.com/products/laser/rg-ll60000f1ln
+- 20W Single green label — 20W Single green label — https://www.rigebalighting.com/products/laser/20w-single-green-label
+- 30W Color landmarks — 30W Color landmarks — https://www.rigebalighting.com/products/laser/30w-color-landmarks
+- RG-LL30000G1LN — Laser — https://www.rigebalighting.com/products/laser/rg-ll30000g1ln
+
 ### LED Gobo & Logo Projector Light — 37 models (Logo & Gobo · Water Wave & Ripple · Aurora & Water Pattern · Multi-Pattern DMX)
 - Category page: https://www.rigebalighting.com/products?cat=gobo
 - RG-GB750L4C0-BK — IP65 High power 700W outdo — https://www.rigebalighting.com/products/gobo/rg-gb750l4c0-bk
@@ -105,12 +97,19 @@
 - RG-GB500L4C0-BK — RG-GB500L4C0-BK IP65 500W — https://www.rigebalighting.com/products/gobo/rg-gb500l4c0-bk
 - RG-GB400L6C0-ZK — NEW ZOOM 400W Waterproof L — https://www.rigebalighting.com/products/gobo/rg-gb400l6c0-zk
 
-### LED Dance Floor Light — 28 models (3D Mirror · Interactive · Magnetic · Starry · Video · Digital dance floors)
-- Category page: https://www.rigebalighting.com/products?cat=floor
-- RG-DDF40S45-V32 — led pole dance stage — https://www.rigebalighting.com/products/floor/rg-ddf40s45-v32
-- RG-VDF44S2976-KV0 — P2.976 Led Video Dance Flo — https://www.rigebalighting.com/products/floor/rg-vdf44s2976-kv0
-- RG-VDF44S391-KV0 — P3.91 Led Video Dance Floo — https://www.rigebalighting.com/products/floor/rg-vdf44s391-kv0
-- RG-DDF56S125-V4 — 1m*1m Professional Version — https://www.rigebalighting.com/products/floor/rg-ddf56s125-v4
+### Controllers — 67 models (DMX · Art-Net / sACN Consoles)
+- Category page: https://www.rigebalighting.com/products?cat=controller
+- MA-G3A — Controller — https://www.rigebalighting.com/products/controller/ma-g3a
+- MA-G2A — Controller — https://www.rigebalighting.com/products/controller/ma-g2a
+- MA2 — MA2 — https://www.rigebalighting.com/products/controller/ma2
+- MA LAPTOP — MA LAPTOP — https://www.rigebalighting.com/products/controller/ma-laptop
+
+### Stage Effect Machines — 59 models (Spark & Flame · CO2 · Fog & Haze · Snow · Bubble & Foam · Dry Ice · Confetti)
+- Category page: https://www.rigebalighting.com/products?cat=effect
+- RG-FR2400H8S-D — Spark Fog Machine — https://www.rigebalighting.com/products/effect/rg-fr2400h8s-d
+- RG-FO800V250DP-K — strong CO2 jet — https://www.rigebalighting.com/products/effect/rg-fo800v250dp-k
+- RG-FR750H5-D8 — New high quality moving he — https://www.rigebalighting.com/products/effect/rg-fr750h5-d8
+- RG-BM1200C500H-K — hang foam machine — https://www.rigebalighting.com/products/effect/rg-bm1200c500h-k
 
 ### Aluminum Truss and Stage — 128 models (Square · Triangle · Ladder · Circle truss, truss accessories, stage platform & stairs)
 - Category page: https://www.rigebalighting.com/products?cat=truss
@@ -164,6 +163,31 @@ Written by the RiGeBa engineering and export team. Each link is a standalone
 page carrying the full answer, plus the tables and figures behind it.
 
 <!-- ARTICLES:BEGIN -->
+- [Choosing the Right Weatherproof Pixel Bar for Facade Installs](https://www.rigebalighting.com/content/blog/choosing-the-right-weatherproof-pixel-bar-for-facade-installs-0kp6): Weatherproof pixel bars are a popular choice for facade installs due to their durability and ability to withstand the elements.
+- [Understanding Console Fader Count vs Channel Count for 240-Channel Desks](https://www.rigebalighting.com/content/blog/understanding-console-fader-count-vs-channel-count-for-240-channel-des-d9b3): A 240-channel desk can control 240 channels, with each channel controlling a single fixture or a group of fixtures.
+- [Laying Out a 12 by 4 Grid by Hand for Pixel Mapping Coordinate Systems](https://www.rigebalighting.com/content/blog/laying-out-a-12-by-4-grid-by-hand-for-pixel-mapping-coordinate-systems-vgtx): The RG-TB120S28D-f60, with its 96PCS 5050 RGB 3in 1 LED, is a popular choice for such applications.
+- [RGB versus RGBW Pixel Tubes: Colour Depth and White Point Trade-offs](https://www.rigebalighting.com/content/blog/rgb-versus-rgbw-pixel-tubes-colour-depth-and-white-point-trade-offs-9z6z): RGB and RGBW pixel tubes are two popular options for lighting applications, each with its own strengths and weaknesses.
+- [LED Matrix Panels vs Pixel Tubes: Coverage per Square Meter](https://www.rigebalighting.com/content/blog/led-matrix-panels-vs-pixel-tubes-coverage-per-square-meter-5qht): LED matrix panels and pixel tubes are two popular options for stage lighting, but they have different designs and functions.
+- [Pixel Fixture PWM and Refresh Rates for High-Speed Camera Shooting](https://www.rigebalighting.com/content/blog/pixel-fixture-pwm-and-refresh-rates-for-high-speed-camera-shooting-2a36): The RGWS100A-36P3W has a 10KHz dimming refresh PWM strobe, making it suitable for high-speed camera shooting.
+- [Configuring Art-Net Universes for Pixel Tubes: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/configuring-art-net-universes-for-pixel-tubes-a-step-by-step-guide-pmpi): Art-Net universes are a crucial aspect of configuring pixel tubes for large-scale lighting installations.
+- [A Practical Guide to Pixel-Controlled LED Strips on Set](https://www.rigebalighting.com/content/blog/a-practical-guide-to-pixel-controlled-led-strips-on-set-05ok): The DMX Control Pixel LED Lifting Tube has 0.5M lifting range
+- [Building a Low-Resolution Video Wall for a Club with Retro Hexagonal Pixel Fixtures](https://www.rigebalighting.com/content/blog/building-a-low-resolution-video-wall-for-a-club-with-retro-hexagonal-p-477y): Retro hexagonal pixel fixtures are a popular choice for building low-resolution video walls in clubs due to their unique appearance and versatility.
+- [Pixel Bar Power Budgeting: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/pixel-bar-power-budgeting-a-step-by-step-guide-ulpw): Pixel bar power budgeting is a critical aspect of designing and installing a reliable and efficient lighting system.
+- [Calculating Pixel Tube Spacing and Pitch for a 6m Backdrop](https://www.rigebalighting.com/content/blog/calculating-pixel-tube-spacing-and-pitch-for-a-6m-backdrop-ar3u): A 6m backdrop requires careful consideration of pixel tube spacing and pitch
+- [Truss Transport Planning for a 20m Span: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/truss-transport-planning-for-a-20m-span-a-step-by-step-guide-8zcj): A 20m span requires careful truss transport planning with case counts and weights
+- [A Buyer's Guide to Folding Truss and Portable Stands for Mobile DJs and Small Productions](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-folding-truss-and-portable-stands-for-mobile-djs-and-nzt9): When choosing a folding truss or portable stand, it is crucial to consider factors such as weight, dimensions, and price.
+- [Truss Span and Deflection: A Practical Guide for Technicians](https://www.rigebalighting.com/content/blog/truss-span-and-deflection-a-practical-guide-for-technicians-yk7s): A 12 m box truss needs a centre pick at 6 m to ensure stability and safety.
+- [Planning a Trade Show Booth Frame with Truss Corner Blocks and Junctions](https://www.rigebalighting.com/content/blog/planning-a-trade-show-booth-frame-with-truss-corner-blocks-and-junctio-v9jj): The TO-L1M4Y303030T30-W1 corner block is used for rectangular shapes
+- [Spigot, Bolt, and Conical Truss Connectors: A Comparison for Touring Frames](https://www.rigebalighting.com/content/blog/spigot-bolt-and-conical-truss-connectors-a-comparison-for-touring-fram-r73i): WT-L1F30d90C-W30 spigot 90° square truss with four face connector
+- [Understanding Truss Load Tables for Safe Rigging](https://www.rigebalighting.com/content/blog/understanding-truss-load-tables-for-safe-rigging-ekh1): Truss load tables are a critical component of safe rigging, providing essential information about the weight capacity and configuration of trusses.
+- [Profile Spot Zoom Lens Ranges: 15 to 30 Degrees versus 25 to 50 Degrees](https://www.rigebalighting.com/content/blog/profile-spot-zoom-lens-ranges-15-to-30-degrees-versus-25-to-50-degrees-mbrl): Profile spot zoom lens ranges are a critical factor in stage lighting, as they determine the precision and control of the light beam.
+- [A Buyer's Guide to Outdoor LED Blinder Fixtures for Stadium Audience Lighting](https://www.rigebalighting.com/content/blog/a-buyers-guide-to-outdoor-led-blinder-fixtures-for-stadium-audience-li-2mkp): RG-TH4B400-W4 Outdoor led Blinder White OR WW CW 2 in 1 has 24500lux illumination
+- [Lighting a Concert Climax with 1000 W RGB Strobe and Four-Lens Blinder Cues](https://www.rigebalighting.com/content/blog/lighting-a-concert-climax-with-1000-w-rgb-strobe-and-four-lens-blinder-zu9o): Concert lighting requires a combination of creativity and technical expertise to create an immersive experience for the audience.
+- [Spark Flame Machine Positioning and Safe Distances on a Stage](https://www.rigebalighting.com/content/blog/spark-flame-machine-positioning-and-safe-distances-on-a-stage-th0z): The RG-FR350H3-D3 has a height of 2-3.5 meters and should be positioned at a safe distance from flammable materials and the audience.
+- [Snow Machine and Bubble Machine Combinations for a Winter Themed Party](https://www.rigebalighting.com/content/blog/snow-machine-and-bubble-machine-combinations-for-a-winter-themed-party-84ie): Snow machine and bubble machine combinations are essential for creating a winter wonderland atmosphere at a themed party.
+- [LED Lifting Tube and Jellyfish Kinetic Fixtures: DMX Channel Counts per Tube](https://www.rigebalighting.com/content/blog/led-lifting-tube-and-jellyfish-kinetic-fixtures-dmx-channel-counts-per-zojk): The DMX Control Pixel LED Lifting Tube has 10CH, and the EP-LFBA020L-DhWA has 10CH.
+- [DMX Channel Mode Changes on LED Moving Heads: 16-Channel vs 24-Channel](https://www.rigebalighting.com/content/blog/dmx-channel-mode-changes-on-led-moving-heads-16-channel-vs-24-channel-9n40): DMX channel mode changes on LED moving heads can be a crucial aspect of lighting design, especially when working with complex setups.
+- [Replacing Halogen PAR Cans with RGBW LED Pars in a Club](https://www.rigebalighting.com/content/blog/replacing-halogen-par-cans-with-rgbw-led-pars-in-a-club-0psc): When selecting RGBW LED pars, consider factors such as LED configuration, voltage, and price.
 - [A Step-by-Step Guide to DMX Patching Moving Heads and Pixel Bars on One Console](https://www.rigebalighting.com/content/blog/a-step-by-step-guide-to-dmx-patching-moving-heads-and-pixel-bars-on-on-rw2z): The 6W Moving head full color laser has a beam range of 540 degrees on the X axis
 - [Choosing Silent LED Profile Spots for Lecture Theatres: A Buyer's Guide](https://www.rigebalighting.com/content/blog/choosing-silent-led-profile-spots-for-lecture-theatres-a-buyers-guide-2ihs): Silent LED profile spots are a crucial component of lecture theatre lighting, providing a quiet and efficient way to illuminate the stage.
 - [DMX Addressing for Mixed Rigs: A Step-by-Step Guide](https://www.rigebalighting.com/content/blog/dmx-addressing-for-mixed-rigs-a-step-by-step-guide-gr8h): The 6W Moving head full color laser has a beam range of 540 degrees on the X axis
@@ -266,20 +290,21 @@ page carrying the full answer, plus the tables and figures behind it.
 - [How to Choose IP65 Outdoor Stage Lights for Festivals and Seaside Venues](https://www.rigebalighting.com/content/blog/ip65-outdoor-stage-lights-buyer-guide): Festivals and coastal venues fail fixtures two different ways. What to specify for each, with real outdoor models and prices.
 - [How to Set Up DMX Lighting for a Small Venue (Step-by-Step)](https://www.rigebalighting.com/content/blog/how-to-set-up-dmx-lighting): Channel math, addressing and controller choice for a small bar rig — with real EXW prices for 192-, 408- and 1024-channel DMX controllers.
 <!-- ARTICLES:END -->
+
 ## Key pages
 - Home: https://www.rigebalighting.com/
 - All 632 models: https://www.rigebalighting.com/products
-- Moving Heads: https://www.rigebalighting.com/products?cat=moving
 - Pixel & Effects: https://www.rigebalighting.com/products?cat=pixel
-- Theatre Lighting: https://www.rigebalighting.com/products?cat=theatre
-- LED PAR & Uplights: https://www.rigebalighting.com/products?cat=par
-- Lasers: https://www.rigebalighting.com/products?cat=laser
-- Controllers: https://www.rigebalighting.com/products?cat=controller
-- LED Profile Spot: https://www.rigebalighting.com/products?cat=profile
-- Stage Effect Machines: https://www.rigebalighting.com/products?cat=effect
-- LED Kinetic Winch & Lighting Ball: https://www.rigebalighting.com/products?cat=kinetic
-- LED Gobo & Logo Projector Light: https://www.rigebalighting.com/products?cat=gobo
 - LED Dance Floor Light: https://www.rigebalighting.com/products?cat=floor
+- LED Kinetic Winch & Lighting Ball: https://www.rigebalighting.com/products?cat=kinetic
+- Moving Heads: https://www.rigebalighting.com/products?cat=moving
+- LED PAR & Uplights: https://www.rigebalighting.com/products?cat=par
+- LED Profile Spot: https://www.rigebalighting.com/products?cat=profile
+- Theatre Lighting: https://www.rigebalighting.com/products?cat=theatre
+- Lasers: https://www.rigebalighting.com/products?cat=laser
+- LED Gobo & Logo Projector Light: https://www.rigebalighting.com/products?cat=gobo
+- Controllers: https://www.rigebalighting.com/products?cat=controller
+- Stage Effect Machines: https://www.rigebalighting.com/products?cat=effect
 - Aluminum Truss and Stage: https://www.rigebalighting.com/products?cat=truss
 - Stage lighting manufacturer (entity page): https://www.rigebalighting.com/stage-lighting-manufacturer
 - Factory, process and QC evidence: https://www.rigebalighting.com/factory

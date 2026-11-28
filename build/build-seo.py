@@ -49,8 +49,8 @@ STATIC_PAGES = [
     ("/supplier-verification", "monthly", "0.8"),
 ]
 
-CATS = ["moving", "pixel", "theatre", "par", "laser", "controller", "profile",
-        "effect", "kinetic", "gobo", "floor", "truss"]
+CATS = ["pixel", "floor", "kinetic", "moving", "par", "profile",
+        "theatre", "laser", "gobo", "controller", "effect", "truss"]
 
 # W9-10 multilingual: /de/ + /es/ core funnel pages (self-canonical, hreflang cluster
 # injected in each HTML head; alternates mirrored here for search engines).

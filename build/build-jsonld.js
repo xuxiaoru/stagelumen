@@ -336,8 +336,9 @@ function main() {
     knowsAbout = Object.values(catalogCats).map((c) => c.label).filter(Boolean);
   } catch (e) { /* optional */ }
   /** Brand positioning (2026-11-28): dance floors and kinetic pixel lighting lead
-   *  the entity graph; everything else follows in catalogue order. */
-  const CAT_ORDER = ['floor', 'kinetic', 'pixel', 'moving', 'truss', 'controller', 'par', 'effect', 'laser', 'gobo', 'profile', 'theatre'];
+   *  the entity graph. Catalogue order below mirrors the owner-supplied sequence
+   *  used by the products sidebar and the Products nav dropdown — keep in step. */
+  const CAT_ORDER = ['pixel', 'floor', 'kinetic', 'moving', 'par', 'profile', 'theatre', 'laser', 'gobo', 'controller', 'effect', 'truss'];
   const orderedCats = Object.entries(catalogCats).sort((a, b) => {
     const ia = CAT_ORDER.indexOf(a[0]);
     const ib = CAT_ORDER.indexOf(b[0]);
