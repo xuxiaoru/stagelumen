@@ -198,9 +198,10 @@ def main():
     L = []
     L += ["# RiGeBa Lighting",
           "> Machine-readable agent brief: %s/agents.md" % SITE,
-          "> Guangzhou manufacturer of professional LED stage lighting and stage truss: moving heads,",
-          "> pixel and effect fixtures, outdoor IP65 units, LED PAR, profile spots, lasers, DMX",
-          "> control, and square, triangle, ladder and custom aluminum truss; 128 truss and stage SKUs.",
+          "> Guangzhou manufacturer of LED dance floors, kinetic pixel lighting and stage truss:",
+          "> 3D infinity-mirror and interactive dance floors, DMX kinetic winch balls, moving heads,",
+          "> pixel and effect fixtures, outdoor IP65 units, LED PAR, lasers, DMX control, and square,",
+          "> triangle, ladder and custom aluminum truss; 128 truss and stage SKUs.",
           "> %d models in catalogue, factory-direct EXW pricing, OEM / ODM for rental houses," % len(products),
           "> distributors, integrators and venues.",
           "",

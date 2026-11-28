@@ -67,10 +67,10 @@ social:
 
 # The h1 is three marked spans so the <em> emphasis survives; one key would
 # be escaped flat. The editor presents them as one headline in three parts.
-homeHeroTitleLead: "Stage lighting"
+homeHeroTitleLead: "LED dance floors & stage lighting"
 homeHeroTitleAccent: "built for real shows"
-homeHeroTitleTail: ", priced from the factory floor."
-homeHeroLead: "We manufacture LED moving heads, pixel and effect fixtures, outdoor IP65 units, profile spots, lasers and DMX control — for rental houses, distributors, integrators and venues in 60+ countries."
+homeHeroTitleTail: ", direct from our Guangzhou factory."
+homeHeroLead: "We have manufactured LED dance floors and dynamic pixel lighting in Guangzhou since 2010 — interactive and 3D infinity-mirror floors, DMX kinetic winch balls, moving heads and the aluminium truss that carries them. One supplier from floor to ceiling."
 
 homeHeroCheck1: "Factory-direct EXW pricing, no middleman margin"
 
@@ -108,7 +108,7 @@ homeSecBestsellersTitle: "What buyers are ordering right now"
 
 homeSecFactoryEyebrow: "Factory & quality"
 
-homeSecFactoryTitle: "You are buying from the factory, not a trading desk."
+homeSecFactoryTitle: "We make it, we test it, we ship it."
 
 homeSecHowtoorderEyebrow: "How to order"
 
